@@ -559,7 +559,7 @@ function Com_DL_Begin(localName, remoteURL) {
 }
 
 
-function CL_BeginDownload(localName, remoteURL) {
+function CL_cURL_BeginDownload(localName, remoteURL) {
   Cvar_Set(stringToAddress('cl_downloadName'), localName)
   Cvar_SetIntegerValue(stringToAddress('cl_downloadSize'), 0)
   Cvar_SetIntegerValue(stringToAddress('cl_downloadCount'), 0)
@@ -759,7 +759,7 @@ var NET = {
   Sys_NET_MulticastLocal: Sys_NET_MulticastLocal,
   CL_Download: CL_Download,
   Com_DL_Cleanup: Com_DL_Cleanup,
-  CL_BeginDownload: CL_BeginDownload,
+  CL_cURL_BeginDownload: CL_cURL_BeginDownload,
 }
 
 

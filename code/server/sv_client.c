@@ -2312,10 +2312,6 @@ void SV_ExecuteClientMessage( client_t *cl, msg_t *msg ) {
 			// send initial gamestate, client may not acknowledge it in next command but start downloading after SV_ClientCommand()
 			if ( !SVC_RateLimit( &cl->gamestate_rate, 2, 1000 ) ) {
 				SV_SendClientGameState( cl );
-#ifdef __WASM__
-				SV_SendClientGameState( cl );
-				SV_SendClientGameState( cl );
-#endif
 			}
 			return;
 		}
