@@ -1631,6 +1631,7 @@ static void R_AddEntitySurfaces( void ) {
 				case MOD_BRUSH:
 					R_AddBrushModelSurfaces( ent );
 					break;
+				case MOD_OBJ:
 				case MOD_BAD:		// null model axis
 					if ( (ent->e.renderfx & RF_THIRD_PERSON) && (tr.viewParms.portalView == PV_NONE) ) {
 						break;
@@ -1660,6 +1661,8 @@ static void R_GenerateDrawSurfs( void ) {
 	R_AddWorldSurfaces ();
 
 	R_AddPolygonSurfaces();
+
+	R_AddPolygonBufferSurfaces();
 
 	// set the projection matrix with the minimum zfar
 	// now that we have the world bounded

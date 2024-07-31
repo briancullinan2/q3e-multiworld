@@ -660,6 +660,10 @@ function CL_Download(cmd, name, auto) {
     }
   }
 
+  var server = SYSC.Cvar_VariableString('cl_currentServerAddress')
+  if(server.length && !window.location.includes(server))
+    history.pushState({location: window.location.toString()}, window.title, '?connect ' + server)
+
   let mapname = ''
   let waitFor = Promise.resolve((async function () {
     try {

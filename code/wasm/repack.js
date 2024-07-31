@@ -18,7 +18,7 @@ const SUPPORTED_FORMATS = [
   // camera files
   '.cam',
   // can load async, but new repacking system includes small ones
-  '.md5', '.md3', '.iqm', '.mdr',
+  //'.md5', '.md3', '.iqm', '.mdr',
   '.dat', 
   //'.map', '.aas', '.bsp', 
 ]
