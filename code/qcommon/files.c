@@ -230,7 +230,6 @@ static unsigned pak8ajs[] = {0,4168817368,648165122,3945419347,1851007370,420276
 
 static unsigned pak8pk3[] = {0,695294960,269430381,2656948387,485997170,1095318617};
 
-
 #include "./files_checksums.h"
 
 static altChecksumFiles_t hardcoded_checksums[] = {
@@ -4408,8 +4407,6 @@ qboolean FS_ComparePaks( char *neededpaks, int len, qboolean dlstring ) {
 	char *origpos = neededpaks;
 	int i;
 
-		Com_Printf("Checking referenced paks %i\n", fs_numServerReferencedPaks);
-
 	if (!fs_numServerReferencedPaks)
 		return qfalse; // Server didn't send any pack information along
 
@@ -5176,7 +5173,7 @@ const char *FS_ReferencedPakChecksums( void ) {
 					if(Q_stristr(search->pack->pakFilename, alt->pakFilename)) {
 						found = qtrue;
 						alt->headerLongs[0] = 0;
-						altChecksum = Com_BlockChecksum( alt->headerLongs, sizeof( alt->headerLongs[0] ) * alt->numHeaderLongs );
+						altChecksum = Com_BlockChecksum( alt->headerLongs + 1, sizeof( alt->headerLongs[0] ) * (alt->numHeaderLongs - 1) );
 						Q_strcat( info, sizeof( info ), va( "%i ", LittleLong(altChecksum) ) );
 						break;
 					}
@@ -5555,7 +5552,6 @@ void FS_PureServerSetReferencedPaks( const char *pakSums, const char *pakNames )
 	if ( d < c )
 		c = d;
 
-	Com_Printf("referenced paks %i: %s\n", c, pakNames);
 	fs_numServerReferencedPaks = c;	
 }
 
