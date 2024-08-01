@@ -9,7 +9,7 @@ function getQueryCommands() {
 		'quake3e_web',
 		'+set', 'fs_basepath', '/base',
 		'+set', 'fs_homepath', '/home',
-		//'+set', 'sv_pure', '0', // require for now, TODO: server side zips
+		'+set', 'sv_pure', '0', // require for now, TODO: server side zips
 		'+set', 'r_mode', '-2',
 		'+set', 'net_socksServer', window.location.hostname || '',
 		'+set', 'net_socksPort', window.location.port 
