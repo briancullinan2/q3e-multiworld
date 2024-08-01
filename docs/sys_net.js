@@ -660,7 +660,7 @@ function CL_Download(cmd, name, auto) {
     }
   }
 
-  var server = SYSC.Cvar_VariableString('cl_currentServerAddress')
+  var server = addressToString(Cvar_VariableString('cl_currentServerAddress'))
   if(server.length && !window.location.includes(server))
     history.pushState({location: window.location.toString()}, window.title, '?connect ' + server)
 
@@ -703,7 +703,14 @@ function CL_Download(cmd, name, auto) {
             }
             return responseData
           }),
-          
+          await Com_DL_Begin(localName + '.bsp', gamedir + '/pak0.pk3dir/maps/' + localName + '.bsp')
+          .then(responseData => {
+            if(responseData && !nameStr.match(/\.bsp$/)) {
+              mapname = nameStr
+              nameStr = 'maps/' + nameStr + '.bsp'
+            }
+            return responseData
+          }),
         ])).filter(f => f)[0]
       } else {
         // valid from disk

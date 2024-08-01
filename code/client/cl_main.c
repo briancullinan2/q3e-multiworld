@@ -2253,8 +2253,6 @@ void CL_InitDownloads( void ) {
 	}
 	else if ( FS_ComparePaks( clc.downloadList, sizeof( clc.downloadList ) , qtrue ) ) {
 
-		Com_Printf( "Need paks: %s\n", clc.downloadList );
-
 		if ( *clc.downloadList ) {
 			// if autodownloading is not enabled on the server
 			cls.state = CA_CONNECTED;

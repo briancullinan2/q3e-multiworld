@@ -1253,7 +1253,7 @@ void CL_InitUI( void ) {
 
 	uivm = VM_Create( VM_UI, CL_UISystemCalls, UI_DllSyscall, interpret );
 	if ( !uivm ) {
-		if ( cl_connectedToPureServer && CL_GameSwitch() ) {
+		if ( cl_connectedToPureServer /*&& CL_GameSwitch()*/ ) {
 			// server-side modification may require and reference only single custom ui.qvm
 			// so allow referencing everything until we download all files
 			// new gamestate will be requested after downloads complete
@@ -1261,21 +1261,13 @@ void CL_InitUI( void ) {
 			fs_reordered = qfalse;
 			FS_PureServerSetLoadedPaks( "", "" );
 			uivm = VM_Create( VM_UI, CL_UISystemCalls, UI_DllSyscall, interpret );
-#ifndef __WASM__
 			if ( !uivm ) {
 				Com_Error( ERR_DROP, "VM_Create on UI failed" );
 			}
 		} else {
 			Com_Error( ERR_DROP, "VM_Create on UI failed" );
-#endif
 		}
 	}
-#ifdef __WASM__
-	if(!uivm) {
-		cls.uiStarted = qfalse;
-		return;
-	}
-#endif
 
 	// sanity check
 	v = VM_Call( uivm, 0, UI_GETAPIVERSION );

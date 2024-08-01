@@ -866,12 +866,7 @@ void CL_InitCGame( void ) {
 
 	cgvm = VM_Create( VM_CGAME, CL_CgameSystemCalls, CL_DllSyscall, interpret );
 	if ( !cgvm ) {
-#ifndef __WASM__
 		Com_Error( ERR_DROP, "VM_Create on cgame failed" );
-#else
-		cls.cgameStarted = qfalse;
-		return;
-#endif
 	}
 	cls.state = CA_LOADING;
 

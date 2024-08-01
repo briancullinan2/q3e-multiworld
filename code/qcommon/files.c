@@ -4408,6 +4408,8 @@ qboolean FS_ComparePaks( char *neededpaks, int len, qboolean dlstring ) {
 	char *origpos = neededpaks;
 	int i;
 
+		Com_Printf("Checking referenced paks %i\n", fs_numServerReferencedPaks);
+
 	if (!fs_numServerReferencedPaks)
 		return qfalse; // Server didn't send any pack information along
 
@@ -5163,12 +5165,15 @@ const char *FS_ReferencedPakChecksums( void ) {
 			if ( search->pack->exclude ) {
 				continue;
 			}
+#ifndef __WASM__
 			if ( search->pack->referenced || !FS_IsBaseGame( search->pack->pakGamename ) ) {
+#endif
 #if defined(USE_ALTCHECKSUM) || defined(__WASM__)
+				found = qfalse;
 				// serve the original checksum if running the server from the web
 				for(c = 0; c < ARRAY_LEN(hardcoded_checksums); c++) {
 					alt = &hardcoded_checksums[c];
-					if(Q_stristr(search->pack->pakGamename, alt->pakFilename)) {
+					if(Q_stristr(search->pack->pakFilename, alt->pakFilename)) {
 						found = qtrue;
 						alt->headerLongs[0] = 0;
 						altChecksum = Com_BlockChecksum( alt->headerLongs, sizeof( alt->headerLongs[0] ) * alt->numHeaderLongs );
@@ -5178,14 +5183,15 @@ const char *FS_ReferencedPakChecksums( void ) {
 				}
 
 				if(!found) {
-				} else {
 				Com_Printf("FS_ReferencedPakChecksums: %s not found in hardcoded_checksums\n", search->pack->pakFilename);
 #endif
 				Q_strcat( info, sizeof( info ), va( "%i ", search->pack->checksum ) );
 #if defined(USE_ALTCHECKSUM) || defined(__WASM__)
 				}
 #endif
+#ifndef __WASM__
 			}
+#endif
 		}
 	}
 
@@ -5372,13 +5378,17 @@ const char *FS_ReferencedPakNames( void ) {
 			if ( search->pack->exclude ) {
 				continue;
 			}
+#ifndef __WASM__
 			if ( search->pack->referenced || !FS_IsBaseGame( search->pack->pakGamename ) ) {
+#endif
 				pakName = va( "%s/%s", search->pack->pakGamename, search->pack->pakBasename );
 				if ( *info != '\0' ) {
 					Q_strcat( info, sizeof( info ), " " );
 				}
 				Q_strcat( info, sizeof( info ), pakName );
+#ifndef __WASM__
 			}
+#endif
 		}
 	}
 
@@ -5545,6 +5555,7 @@ void FS_PureServerSetReferencedPaks( const char *pakSums, const char *pakNames )
 	if ( d < c )
 		c = d;
 
+	Com_Printf("referenced paks %i: %s\n", c, pakNames);
 	fs_numServerReferencedPaks = c;	
 }
 

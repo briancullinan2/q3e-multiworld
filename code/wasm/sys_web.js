@@ -9,7 +9,7 @@ function getQueryCommands() {
 		'quake3e_web',
 		'+set', 'fs_basepath', '/base',
 		'+set', 'fs_homepath', '/home',
-		'+set', 'sv_pure', '0', // require for now, TODO: server side zips
+		//'+set', 'sv_pure', '0', // require for now, TODO: server side zips
 		'+set', 'r_mode', '-2',
 		'+set', 'net_socksServer', window.location.hostname || '',
 		'+set', 'net_socksPort', window.location.port 
@@ -102,9 +102,9 @@ function getQueryCommands() {
 
 
 	// TODO: from URL or default.cfg?
-	if(!startup.includes('fs_basegame')) {
+	if(!startup.includes('fs_game')) {
 		startup.push.apply(startup, [
-			'+set', 'fs_basegame', 'demoq3',
+			'+set', 'fs_game', 'demoq3',
 		])
 		if(typeof FS.virtual['demoq3'] == 'undefined') {
 			FS.virtual['demoq3'] = {
