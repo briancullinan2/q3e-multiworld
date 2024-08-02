@@ -1253,7 +1253,7 @@ void CL_InitUI( void ) {
 
 	uivm = VM_Create( VM_UI, CL_UISystemCalls, UI_DllSyscall, interpret );
 	if ( !uivm ) {
-		if ( cl_connectedToPureServer /*&& CL_GameSwitch()*/ ) {
+		if ( cl_connectedToPureServer && CL_GameSwitch() ) {
 			// server-side modification may require and reference only single custom ui.qvm
 			// so allow referencing everything until we download all files
 			// new gamestate will be requested after downloads complete
