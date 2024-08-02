@@ -11,7 +11,7 @@
 /* mmap uses malloc, so malloc can't use mmap */
 #define HAVE_MMAP 0
 /* we can only grow the heap up anyhow, so don't try to trim */
-//#define MORECORE_CANNOT_TRIM 1
+#define MORECORE_CANNOT_TRIM 1
 #ifndef DLMALLOC_DEBUG
 /* dlmalloc has many checks, calls to abort() increase code size,
    leave them only in debug builds */
@@ -21,11 +21,11 @@
 
 #define NO_MALLOC_STATS 1
 
-//#define PROCEED_ON_ERROR 1
+#define PROCEED_ON_ERROR 1
 
-//#define ABORT_ON_ASSERT_FAILURE 0
+#define ABORT_ON_ASSERT_FAILURE 0
 
-//#define MALLOC_FAILURE_ACTION 
+#define MALLOC_FAILURE_ACTION 
 
 /* XXX Emscripten Tracing API. This defines away the code if tracing is disabled. */
 //#include <emscripten/trace.h>

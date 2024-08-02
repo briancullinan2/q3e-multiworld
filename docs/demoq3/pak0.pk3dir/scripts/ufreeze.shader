@@ -84,7 +84,7 @@ quad_nocull
 freezeShader
 {
 	nopicmip
-	deformvertexes wave 100 sin 0.5 0 0 0
+	deformvertexes wave 100 sin 1 0 0 0
 	{
 		map textures/effects/envmap.tga
 		blendfunc gl_one gl_one
@@ -95,7 +95,7 @@ freezeShader
 		map gfx/ice/icechunks.tga
 		blendfunc gl_one gl_one
     rgbgen const ( 0.20 0.20 0.20 )
-		tcmod scale 8 8
+		tcmod scale 4 4
 	}
 }
 

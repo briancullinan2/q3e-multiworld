@@ -24,7 +24,7 @@ const SUPPORTED_FORMATS = [
 ]
 
 // include icons because menu uses it to load, not a lazy check unforntunatly
-const FILE_TYPES = new RegExp('(' + SUPPORTED_FORMATS.join('|') + ')$|menu\/|gfx\/2d\/|players\/[^\/]*?\/icon.*\.tga|_tracemap\.tga', 'ig')
+const FILE_TYPES = new RegExp('menu\/|gfx\/2d\/|players\/[^\/]*?\/icon.*\.tga|players\/sarge\/|_tracemap\.tga', 'ig')
 
 let lockFunc = false
 let lockPromise
@@ -48,7 +48,7 @@ async function compareZip(pk3File) {
     const textFiles = (await glob('**/*', { 
       ignore: 'node_modules/**', 
       cwd: sourcePath 
-    })).filter(f => f.match(FILE_TYPES))
+    })).filter(f => SUPPORTED_FORMATS.includes(path.extname(f).toLocaleLowerCase()) || f.match(FILE_TYPES))
 
     // TODO: repack the pk3 file
     let tempFile = 'Archive.' + (Date.now() + '').substring(20, -5)
@@ -271,7 +271,7 @@ async function convertAudio(pk3File) {
     return
   }
 
-  let audioProcess = await spawnSync('oggenc', ['-q', '7', '--downmix', '--resample', '11025', '--quiet', pk3Path, '-n', altPath], {
+  let audioProcess = await spawnSync('oggenc', ['-q', '7', '--quiet', pk3Path, '-n', altPath], {
     cwd: sourcePath,
     timeout: 3000,
   })
