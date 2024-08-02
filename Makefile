@@ -447,7 +447,7 @@ CLIENT_LDFLAGS  = $(LDFLAGS) code/wasm/stack_ops.S \
   -Wl,--export=s_soundStarted,--export=s_soundMuted,--export=s_knownSfx \
   -Wl,--export=stackRestore,--export=stackSave,--export=stackAlloc \
   -Wl,--export=dma,--export=S_SoundInfo,--export=Cbuf_ExecuteText \
-  -Wl,--export=Cbuf_AddText,--export=gw_minimized \
+  -Wl,--export=Cbuf_AddText,--export=gw_minimized,--export=FS_RecordFile \
   -Wl,--export=gw_active,--export=Z_Free,--export=CL_R_FinishImage3 \
   -Wl,--export=CL_NextDownload,--export=com_fullyInitialized \
   -Wl,--export=Z_Malloc,--export=Sys_QueEvent,--export=MSG_Init \

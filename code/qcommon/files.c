@@ -5198,6 +5198,43 @@ const char *FS_ReferencedPakChecksums( void ) {
 
 #ifdef __WASM__
 
+qboolean fs_cgameSawAsync = qfalse;
+qboolean fs_uiSawAsync = qfalse;
+qboolean fs_gameSawAsync = qfalse;
+
+char asyncFiles[1024][MAX_QPATH];
+int numAsyncFiles = 0;
+
+int FS_GetAsyncFiles(char **files, int max) {
+	int i;
+	for(i = 0; i < max && i < numAsyncFiles; i++) {
+		files[i] = asyncFiles[i];
+	}
+	return i;
+}
+
+
+Q_EXPORT void FS_RecordFile(const char *file) {
+
+	if(fs_cgameSawAsync && fs_uiSawAsync
+		&& (!com_sv_running->integer || fs_gameSawAsync)) {
+		numAsyncFiles = 0;
+		asyncFiles[numAsyncFiles][0] = '\0';
+	}
+
+	if(!Q_stristr(file, ".md3")) {
+		return;
+	}
+
+	fs_cgameSawAsync = qfalse;
+	fs_uiSawAsync = qfalse;
+	fs_gameSawAsync = qfalse;
+
+	Q_strncpy(asyncFiles[numAsyncFiles], (char *)file, MAX_QPATH);
+	numAsyncFiles++;
+}
+
+
 
 static int getAltChecksum(const char *pakName, int *altChecksum) {
 	const altChecksumFiles_t *alt;
