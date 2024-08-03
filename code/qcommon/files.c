@@ -5216,8 +5216,9 @@ int FS_GetAsyncFiles(char **files, int max) {
 
 Q_EXPORT void FS_RecordFile(const char *file) {
 
-	if(fs_cgameSawAsync && fs_uiSawAsync
-		&& (!com_sv_running->integer || fs_gameSawAsync)) {
+	if(fs_cgameSawAsync /*&& fs_uiSawAsync
+		&& (!com_sv_running->integer || fs_gameSawAsync)*/
+	) {
 		numAsyncFiles = 0;
 		asyncFiles[numAsyncFiles][0] = '\0';
 	}

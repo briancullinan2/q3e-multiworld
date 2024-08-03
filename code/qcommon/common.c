@@ -2950,11 +2950,9 @@ int Com_EventLoop( void ) {
 		case SE_MOUSE:
 			CL_MouseEvent( ev.evValue, ev.evValue2 /*, ev.evTime*/, qfalse );
 			break;
-#ifdef __WASM__
 		case SE_MOUSE_ABS:
 			CL_MouseEvent( ev.evValue, ev.evValue2, qtrue );
 			break;
-#endif
 		case SE_JOYSTICK_AXIS:
 			CL_JoystickEvent( ev.evValue, ev.evValue2, ev.evTime );
 			break;
