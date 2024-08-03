@@ -96,7 +96,6 @@ S_PaintChannel
 
 Sys_FreeFileList
 Sys_Return
-CL_BeginDownload
 CL_cURL_BeginDownload
 CL_Download
 CL_MenuModified

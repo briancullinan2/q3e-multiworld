@@ -757,13 +757,12 @@ function convertBMP(imgData, quality) {
 
 const RENDER_IMAGES = []
 
-function createImageFromBuffer(filenameStr, imageView) {
+function createImageFromBuffer(filenameStr, imageView, mimeType) {
   let thisImage = document.createElement('IMG')
   let utfEncoded = imageView.map(function (c) {
     return String.fromCharCode(c)
   }).join('')
-  thisImage.src = 'data:image/' + (/\.(.+)$/gi).exec(filenameStr)[1]
-    + ';base64,' + btoa(utfEncoded)
+  thisImage.src = 'data:image/' + mimeType + ';base64,' + btoa(utfEncoded)
   thisImage.name = filenameStr
   thisImage.setAttribute('title', filenameStr)
   RENDER_IMAGES.push(thisImage)
@@ -779,18 +778,18 @@ async function R_LoadRemote(filename, widthAddress, heightAddress, imageAddress)
     filenameStr += ext
   }
 
+  /*
   let localName = filenameStr
   if (localName[0] == '/')
     localName = localName.substring(1)
   if (localName.startsWith(gamedir + '/'))
     localName = localName.substring(gamedir.length  +1)
-
+  */
 
   let buf = Z_Malloc(8) // pointer to pointer
   HEAPU32[buf >> 2] = 0
 
 
-  let length = FS_ReadFile(filename, buf)
   let thisImage
   for (let i = 0; i < RENDER_IMAGES.length; i++) {
     if (RENDER_IMAGES[i].name == filenameStr) {
@@ -799,23 +798,44 @@ async function R_LoadRemote(filename, widthAddress, heightAddress, imageAddress)
     }
   }
 
+  
 
-  if (!thisImage && HEAPU32[buf >> 2]) {
-    imageView = Array.from(HEAPU8.slice(HEAPU32[buf >> 2],
-      HEAPU32[buf >> 2] + length))
-    thisImage = createImageFromBuffer(filenameStr, imageView)
+  if (!thisImage) {
+    let length = FS_ReadFile(stringToAddress(filenameStr.replace(/\..*?$/, '.png')), buf)
+    let mime = 'png'
+    if(!HEAPU32[buf >> 2]) {
+      length = FS_ReadFile(stringToAddress(filenameStr.replace(/\..*?$/, '.jpg')), buf)
+      mime = 'jpg'
+    }
+    if(!HEAPU32[buf >> 2]) {
+      length = FS_ReadFile(stringToAddress(filenameStr.replace(/\..*?$/, '.jpeg')), buf)
+      mime = 'jpg'
+    }
+    /*
+    if(!HEAPU32[buf >> 2]) {
+      length = FS_ReadFile(filename.replace(/\..*?$/, '.bmp'), buf)
+    }
+    if(!HEAPU32[buf >> 2]) {
+      length = FS_ReadFile(filename.replace(/\..*?$/, '.pcx'), buf)
+    }
+    */
+    if(HEAPU32[buf >> 2]) {
+      imageView = Array.from(HEAPU8.slice(HEAPU32[buf >> 2],
+        HEAPU32[buf >> 2] + length))
+      thisImage = createImageFromBuffer(filenameStr, imageView, mime)
+      FS_FreeFile(HEAPU32[buf >> 2])
+      Z_Free(buf)
+    }
   }
 
 
-  if (HEAPU32[buf >> 2]) {
-    FS_FreeFile(HEAPU32[buf >> 2])
-    Z_Free(buf)
-  } else {
+  if (!thisImage) {
     let remoteFile = gamedir + '/pak0.pk3dir/' + filenameStr
     if (!remoteFile.includes('.')) {
       remoteFile += '.tga'
     }
 
+    let mimes = []
     let responseData = (await Promise.all([
       Com_DL_Begin(remoteFile, '/' + remoteFile.toLocaleLowerCase()
         .replace(/\.[^\/]*?$/, '.jpg') + '?alt')
@@ -823,6 +843,7 @@ async function R_LoadRemote(filename, widthAddress, heightAddress, imageAddress)
           if(!responseData) {
             return
           }
+          mimes[0] = 'jpg'
           Com_DL_Perform(remoteFile
             .replace(/\.[^\/]*?$/, '.jpg'), remoteFile, responseData)
           return responseData
@@ -833,14 +854,24 @@ async function R_LoadRemote(filename, widthAddress, heightAddress, imageAddress)
           if(!responseData) {
             return
           }
+          mimes[1] = 'png'
           Com_DL_Perform(remoteFile
             .replace(/\.[^\/]*?$/, '.png'), remoteFile, responseData)
           return responseData
-        })])).filter(f => f)[0]
+    })]))
 
-    thisImage = createImageFromBuffer(filenameStr, Array.from(new Uint8Array(responseData)))
+    if(responseData[0]) {
+      thisImage = createImageFromBuffer(filenameStr, Array.from(new Uint8Array(responseData[0])), mimes[0])
+    } else
+    if(responseData[1]) {
+      thisImage = createImageFromBuffer(filenameStr, Array.from(new Uint8Array(responseData[1])), mimes[1])
+    }
+
   }
 
+  if(!thisImage) {
+    return
+  }
 
   thisImage.addEventListener('load', function () {
     GL.canvas2D.width = thisImage.width
@@ -849,15 +880,16 @@ async function R_LoadRemote(filename, widthAddress, heightAddress, imageAddress)
     const rgba = GL.context2D.getImageData( 
       0, 0, thisImage.width, thisImage.height 
     ).data;
-    let location = Z_Malloc(rgba.length)
-    HEAPU8.set(rgba, location)
+    if(!EMGL.location) {
+      EMGL.location = Z_Malloc(20 * 1024 * 1024)
+    }
+    HEAPU8.set(rgba.slice(0, 20 * 1024 * 1024), EMGL.location)
 
     HEAP32[widthAddress >> 2] = thisImage.width
     HEAP32[heightAddress >> 2] = thisImage.height
     // notify engine that pixel data is ready
-    CL_R_FinishImage3(imageAddress, location, 0x1908 /* GL_RGBA */, 0)
+    CL_R_FinishImage3(imageAddress, EMGL.location, 0x1908 /* GL_RGBA */, 0)
 
-    Z_Free(location)
   }, false)
 
 }
