@@ -1287,7 +1287,8 @@ endif
 ifdef WASM
 
 Q3OBJ += \
-    $(B)/client/sys_main.o $(B)/client/dlmalloc.o \
+    $(B)/client/sys_main.o \
+    $(B)/client/dlmalloc.o \
     $(B)/client/sbrk.o
 
 else

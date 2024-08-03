@@ -1606,6 +1606,7 @@ void *stackAlloc(int);
 void S_SoundInfo( void );
 void CL_NextDownload( void );
 void CL_R_FinishImage3( void *img, byte *pic, int picFormat, int numMips );
+void FS_RecordFile(const char *file);
 
 Q_EXPORT intptr_t sprintfLocation = (intptr_t)sprintf;
 Q_EXPORT intptr_t mallocLocation = (intptr_t)malloc;
@@ -1644,6 +1645,7 @@ Q_EXPORT intptr_t FS_GetCurrentGameDirLocation = (intptr_t)FS_GetCurrentGameDir;
 Q_EXPORT intptr_t Key_KeynumToStringLocation = (intptr_t)Key_KeynumToString;
 Q_EXPORT intptr_t VM_CallLocation = (intptr_t)VM_Call;
 Q_EXPORT intptr_t CL_R_FinishImage3Location = (intptr_t)CL_R_FinishImage3;
+Q_EXPORT intptr_t FS_RecordFileLocation = (intptr_t)FS_RecordFile;
 
 #endif
 
