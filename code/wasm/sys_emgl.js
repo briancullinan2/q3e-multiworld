@@ -881,7 +881,13 @@ async function R_LoadRemote(filename, widthAddress, heightAddress, imageAddress)
       0, 0, thisImage.width, thisImage.height 
     ).data;
     if(!EMGL.location) {
+      // this causes the engine to crash, it doesn't like a random allocs
+      //EMGL.location = Z_Malloc(rgba.length)
       EMGL.location = Z_Malloc(20 * 1024 * 1024)
+    }
+    if(rgba.length > 20 * 1024 * 1024) {
+      thisImage.height = floor(20 * 1024 * 1024 / 4 / thisImage.width) 
+      // truncate image because what else can we do?
     }
     HEAPU8.set(rgba.slice(0, 20 * 1024 * 1024), EMGL.location)
 
