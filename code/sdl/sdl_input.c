@@ -1219,8 +1219,12 @@ void HandleEvents( void )
 			case SDL_MOUSEMOTION:
 				if(in_nograb->integer < 0) {
 					if (Key_GetCatcher() != 0) {
+						SDL_SetRelativeMouseMode( SDL_FALSE );
+						SDL_SetWindowGrab( SDL_window, SDL_FALSE );
 						SDL_ShowCursor( SDL_TRUE );
 					} else {
+						SDL_SetRelativeMouseMode( SDL_TRUE );
+						SDL_SetWindowGrab( SDL_window, SDL_TRUE );
 						SDL_ShowCursor( SDL_FALSE );
 					}
 				}
