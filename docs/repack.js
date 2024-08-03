@@ -185,7 +185,7 @@ const IMAGE_TYPES = new RegExp('(' + [
   '.dds',
 ].join('|') + ')$')
 
-const MATCH_PALETTE = /palette\s"(.*?)"\s([0-9]+,[0-9]+,[0-9]+)/ig
+const MATCH_PALETTE = /palette\s"(.*?)"\s([0-9]+(,[0-9]+)*)/ig
 
 async function generatePalette(pk3File) {
   let sourcePath = path.join(__dirname, '../../docs/')

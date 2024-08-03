@@ -2405,7 +2405,7 @@ static image_t *R_CreateImage3( const char *name, byte *pic, GLenum picFormat, i
 	strcpy( image->imgName, name );
 	image->width = 0;
 	image->height = 0;
-	qglGenTextures(1, &image->texnum);
+	//qglGenTextures(1, &image->texnum);
 	tr.numImages++;
 
 	image->type = type;
@@ -2420,7 +2420,7 @@ static image_t *R_CreateImage3( const char *name, byte *pic, GLenum picFormat, i
 	//if (!internalFormat)
 	//	internalFormat = RawImage_GetFormat(pic, width * height, picFormat, isLightmap, image->type, image->flags);
 
-	image->internalFormat = PixelDataFormatFromInternalFormat(internalFormat);
+	//image->internalFormat = PixelDataFormatFromInternalFormat(internalFormat);
 
 	//if(image->width > 1 && image->height > 1) {
 	//	R_FinishImage3( image, pic, picFormat, 0 );
@@ -2458,7 +2458,7 @@ void R_FinishImage3( image_t *image, byte *pic, GLenum picFormat, int numMips ) 
 		ri.Free(altImage);
 	}
 
-	R_CreateImage2(image->imgName, pic, image->width, image->height, picFormat, numMips, image->type, image->flags, image->internalFormat, image);
+	R_CreateImage2(image->imgName, pic, image->width, image->height, picFormat, 0, image->type, image->flags, image->internalFormat, image);
 
 	if(variableImage && variableImage != pic) {
 		ri.Free(variableImage);
@@ -2984,7 +2984,7 @@ Returns NULL if it fails, not a default image.
 image_t	*R_FindImageFile( const char *name, imgType_t type, imgFlags_t flags )
 {
 	image_t	*image;
-	int		width, height;
+	int		width, height, error;
 	byte	*pic;
 	GLenum  picFormat;
 	int picNumMips;
@@ -3015,7 +3015,12 @@ image_t	*R_FindImageFile( const char *name, imgType_t type, imgFlags_t flags )
 	//
 	// see if the image is already loaded
 	//
+	error = 0;
 	for (image=hashTable[hash]; image; image=image->next) {
+		if(error > MAX_DRAWIMAGES) {
+			return NULL;
+		}
+		error++;
 		if ( !strcmp( name, image->imgName ) ) {
 			// the white image can be used with any set of parms, but other mismatches are errors
 			if ( strcmp( name, "*white" ) ) {
@@ -3055,7 +3060,7 @@ image_t	*R_FindImageFile( const char *name, imgType_t type, imgFlags_t flags )
 		if(palette) { // because we know it's supposed to be there it's listed in a file
 #ifdef __WASM__
 			// create a placeholder image for async loading
-			image = R_CreateImage3( ( char * ) name, pic, picFormat, picNumMips, type, flags & ~IMGFLAG_MIPMAP & ~IMGFLAG_PICMIP, GL_RGBA );
+			image = R_CreateImage3( ( char * ) name, pic, picFormat, picNumMips, type, flags & ~IMGFLAG_MIPMAP & ~IMGFLAG_PICMIP, 0 );
 			image->palette = palette;
 			Q_strncpyz(image->variables, variables, MAX_QPATH);
 			R_LoadRemote(strippedName2, &image->width, &image->height, image); // initiate async load

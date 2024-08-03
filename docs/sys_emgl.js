@@ -190,6 +190,9 @@ let GL = {
     let ctx = canvas.getContext("webgl2", webGLContextAttributes);
     if (!ctx) return 0;
     let handle = GL.registerContext(ctx, webGLContextAttributes);
+    if(!EMGL.location) {
+      EMGL.location = Z_Malloc(MAX_IMAGE_SIZE)
+    }
     return handle;
   },
   registerContext: function (ctx, webGLContextAttributes) {
@@ -771,6 +774,9 @@ function createImageFromBuffer(filenameStr, imageView, mimeType) {
 }
 
 
+const MAX_IMAGE_SIZE = 20 * 1024 * 1024
+
+
 async function R_LoadRemote(filename, widthAddress, heightAddress, imageAddress) {
   let gamedir = addressToString(FS_GetCurrentGameDir())
   let filenameStr = addressToString(filename)
@@ -881,12 +887,18 @@ async function R_LoadRemote(filename, widthAddress, heightAddress, imageAddress)
       0, 0, thisImage.width, thisImage.height 
     ).data;
     if(!EMGL.location) {
-      EMGL.location = Z_Malloc(20 * 1024 * 1024)
+      // this causes the engine to crash, it doesn't like a random allocs
+      //EMGL.location = Z_Malloc(rgba.length)
+      EMGL.location = Z_Malloc(MAX_IMAGE_SIZE)
     }
-    HEAPU8.set(rgba.slice(0, 20 * 1024 * 1024), EMGL.location)
+    HEAPU8.set(rgba.slice(0, MAX_IMAGE_SIZE), EMGL.location)
 
     HEAP32[widthAddress >> 2] = thisImage.width
-    HEAP32[heightAddress >> 2] = thisImage.height
+    if(rgba.length > MAX_IMAGE_SIZE) {
+      // truncate image because what else can we do?
+      thisImage.height = HEAP32[heightAddress >> 2] = floor(MAX_IMAGE_SIZE / 4 / thisImage.width) 
+    } else
+      HEAP32[heightAddress >> 2] = thisImage.height
     // notify engine that pixel data is ready
     CL_R_FinishImage3(imageAddress, EMGL.location, 0x1908 /* GL_RGBA */, 0)
 
