@@ -3037,6 +3037,7 @@ image_t	*R_FindImageFile( const char *name, imgType_t type, imgFlags_t flags )
 	if(pal) {
 		Q_strncpy(paletteName, (char *)va("*pal%i-%i-%i-%i", pal[0], pal[1], pal[2], pal[3]), sizeof(paletteName));
 		palette = R_CreateImage(paletteName, pal, 16, 16, IMGTYPE_NORMAL, IMGFLAG_CLAMPTOEDGE | IMGFLAG_MIPMAP, 0 );
+		Com_Printf("image: %s\n", palette->imgName);
 	}
 
 
