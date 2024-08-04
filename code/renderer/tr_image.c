@@ -1200,7 +1200,7 @@ void R_UpdateAlternateImages( void ) {
 
 	for(int i = 0; i < tr.numImages; i++) {
 		image_t *image = tr.images[i];
-		if(image->imgName[0] == '*') {
+		if(!image->imgName || image->imgName[0] == '*') {
 			continue;
 		}
 		if(Q_stristr(image->imgName, "-alternate")) {

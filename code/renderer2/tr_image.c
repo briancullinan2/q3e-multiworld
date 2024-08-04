@@ -2196,12 +2196,6 @@ static image_t *R_CreateImage2( const char *name, byte *pic, int width, int heig
 	}
 
 	image = tr.images[tr.numImages] = ri.Hunk_Alloc( sizeof( *image ) + namelen + 1, h_low );
-
-#ifdef __WASM__
-	} else {
-		image = existing;
-	}
-#endif
 	qglGenTextures(1, &image->texnum);
 	tr.numImages++;
 
@@ -2214,6 +2208,13 @@ static image_t *R_CreateImage2( const char *name, byte *pic, int width, int heig
 
 	image->width = width;
 	image->height = height;
+
+#ifdef __WASM__
+	} else {
+		image = existing;
+		qglGenTextures(1, &image->texnum);
+	}
+#endif
 	if (flags & IMGFLAG_CLAMPTOEDGE)
 		glWrapClampMode = GL_CLAMP_TO_EDGE;
 	else
@@ -2379,6 +2380,12 @@ static image_t *R_CreateImage2( const char *name, byte *pic, int width, int heig
 
 #ifdef __WASM__
 
+
+
+#ifdef __WASM__
+extern  cvar_t  *r_paletteMode;
+#endif
+extern qboolean shouldUseAlternate;
 
 void R_FinishImage3( image_t *, byte *pic, GLenum picFormat, int numMips );
 /*
@@ -2749,12 +2756,6 @@ void R_LoadImage( const char *name, byte **pic, int *width, int *height, GLenum 
 
 
 
-#ifdef __WASM__
-extern  cvar_t  *r_paletteMode;
-#endif
-extern qboolean shouldUseAlternate;
-
-
 byte *R_LoadAlternateImage_real( byte *pic, int width, int height, float greyscale, int invert, int edgy, int rainbow, 
 	int berserk, float hueShift, float satShift, float lumShift ) {
 	qboolean any = qfalse;
@@ -2855,6 +2856,11 @@ byte *R_LoadAlternateImage( byte *pic, int width, int height ) {
 }
 
 
+#ifdef __WASM__
+void R_LoadRemote( const char *name, int *width, int *height, image_t *image );
+#endif
+
+
 byte *R_LoadAlternateImageVariables( byte *pic, int width, int height, const char *variables) {
 	const char *start;
 	float hueShift = 0.0f;
@@ -2895,8 +2901,6 @@ byte *R_LoadAlternateImageVariables( byte *pic, int width, int height, const cha
 
 
 void R_UpdateAlternateImages( void ) {
-	GLenum  picFormat;
-	int picNumMips;
 
 	// load or discard a new alternate image for every image
 	Com_Printf("Updating %i images, this may take a minute.\n", tr.numImages);
@@ -2933,14 +2937,14 @@ void R_UpdateAlternateImages( void ) {
 		// so original images dont get freed, only alternates
 	  //image->lastTimeUsed = tr.lastRegistrationTime;
 
+#ifdef __WASM__
+		R_LoadRemote( image->imgName, &image->width, &image->height, image );
+#else
+		GLenum  picFormat;
+		int picNumMips;
 		byte	*pic;
 		int width, height;
-#if 0 //def __WASM__
-		qboolean dynamicLoad = qfalse;
-		R_LoadImage( image->imgName, &pic, &width, &height, &picFormat, &picNumMips, &dynamicLoad );
-#else
 		R_LoadImage( image->imgName, &pic, &width, &height, &picFormat, &picNumMips );
-#endif
 		if(pic) {
 			byte *altImage = R_LoadAlternateImage(pic, width, height);
 			if(altImage && altImage != pic) {
@@ -2949,6 +2953,7 @@ void R_UpdateAlternateImages( void ) {
 			}
 			ri.Free(pic);
 		}
+#endif
 	}
 
 }
@@ -2971,11 +2976,6 @@ void COM_StripVariables( const char *in, char *out, int destsize )
 	else
 		Q_strncpyz(out, in, destsize);
 }
-
-
-#ifdef __WASM__
-void R_LoadRemote( const char *name, int *width, int *height, image_t *image );
-#endif
 
 
 
