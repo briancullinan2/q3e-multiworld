@@ -124,11 +124,19 @@ async function convertImage(pk3File) {
         return
     }
   
-
-    await spawnSync('convert', ['-strip', '-interlace', 'Plane', '-sampling-factor', '4:2:0', '-quality', '10%', '-auto-orient', altPath, pk3Path], {
+    let imageProcess
+    if(pk3File.indexOf('.png') != -1) {
+      imageProcess = await spawnSync('magick', [altPath, altPath, '-alpha', 'off', '-compose', 'copy_opacity', '-composite', '-strip', '-interlace', 'Plane', '-sampling-factor', '4:2:0', '-quality', '50%', '-auto-orient', pk3Path], {
+        cwd: sourcePath,
+        timeout: 3000,
+      })
+  
+    } else
+    imageProcess = await spawnSync('magick', [altPath, '-quality', '50%', pk3Path], {
       cwd: sourcePath,
       timeout: 3000,
     })
+    console.log('magick', [altPath, '-quality', '50%', pk3Path], imageProcess.stdout.toString('utf-8'))
     
     await new Promise((resolve) => setTimeout(resolve, 100))
 
