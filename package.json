@@ -7,9 +7,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "start": "live-server --middleware=/Users/briancullinan/portals/code/wasm/repack.js docs/ ",
     "checksum": "node ./code/wasm/proxy/checksum.js",
-    "proxy": "node ./code/wasm/proxy/web.js",
+    "start": "node ./code/wasm/proxy/web.js",
     "repack": "node ./code/wasm/repack.js"
   },
   "repository": {
