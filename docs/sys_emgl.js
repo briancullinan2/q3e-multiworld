@@ -190,9 +190,6 @@ let GL = {
     let ctx = canvas.getContext("webgl2", webGLContextAttributes);
     if (!ctx) return 0;
     let handle = GL.registerContext(ctx, webGLContextAttributes);
-    if(!EMGL.location) {
-      EMGL.location = Z_Malloc(MAX_IMAGE_SIZE)
-    }
     return handle;
   },
   registerContext: function (ctx, webGLContextAttributes) {
@@ -228,6 +225,13 @@ let GL = {
   makeContextCurrent: function (contextHandle) {
     GL.currentContext = GL.contexts[contextHandle];
     window.ctx = GLctx = GL.currentContext && GL.currentContext.GLctx;
+
+    if(!EMGL.location) {
+      // this causes the engine to crash, it doesn't like a random allocs
+      //EMGL.location = Z_Malloc(rgba.length)
+      EMGL.location = malloc(MAX_IMAGE_SIZE)
+      EMGL.locationBuffer = malloc(8)
+    }
     return !(contextHandle && !GLctx);
   },
   getContext: function (contextHandle) {
@@ -789,9 +793,10 @@ async function R_LoadRemote(filename, widthAddress, heightAddress, imageAddress)
   if (localName.startsWith(gamedir + '/'))
     localName = localName.substring(gamedir.length  +1)
   */
-
-  let buf = Z_Malloc(8) // pointer to pointer
-  HEAPU32[buf >> 2] = 0
+  if(!EMGL.locationBuffer) {
+    throw new Error('EMGL.locationBuffer not initialized')
+  }
+  HEAPU32[EMGL.locationBuffer >> 2] = 0
 
 
   let thisImage
@@ -805,30 +810,29 @@ async function R_LoadRemote(filename, widthAddress, heightAddress, imageAddress)
   
 
   if (!thisImage) {
-    let length = FS_ReadFile(stringToAddress(filenameStripped + '.png'), buf)
+    let length = FS_ReadFile(stringToAddress(filenameStripped + '.png'), EMGL.locationBuffer)
     let mime = 'png'
-    if(!HEAPU32[buf >> 2]) {
-      length = FS_ReadFile(stringToAddress(filenameStripped + '.jpg'), buf)
+    if(!HEAPU32[EMGL.locationBuffer >> 2]) {
+      length = FS_ReadFile(stringToAddress(filenameStripped + '.jpg'), EMGL.locationBuffer)
       mime = 'jpg'
     }
-    if(!HEAPU32[buf >> 2]) {
-      length = FS_ReadFile(stringToAddress(filenameStripped + '.jpeg'), buf)
+    if(!HEAPU32[EMGL.locationBuffer >> 2]) {
+      length = FS_ReadFile(stringToAddress(filenameStripped + '.jpeg'), EMGL.locationBuffer)
       mime = 'jpg'
     }
     /*
-    if(!HEAPU32[buf >> 2]) {
-      length = FS_ReadFile(filename.replace(/\..*?$/, '.bmp'), buf)
+    if(!HEAPU32[EMGL.locationBuffer >> 2]) {
+      length = FS_ReadFile(filename.replace(/\..*?$/, '.bmp'), EMGL.locationBuffer)
     }
-    if(!HEAPU32[buf >> 2]) {
-      length = FS_ReadFile(filename.replace(/\..*?$/, '.pcx'), buf)
+    if(!HEAPU32[EMGL.locationBuffer >> 2]) {
+      length = FS_ReadFile(filename.replace(/\..*?$/, '.pcx'), EMGL.locationBuffer)
     }
     */
-    if(HEAPU32[buf >> 2]) {
-      imageView = Array.from(HEAPU8.slice(HEAPU32[buf >> 2],
-        HEAPU32[buf >> 2] + length))
+    if(HEAPU32[EMGL.locationBuffer >> 2]) {
+      imageView = Array.from(HEAPU8.slice(HEAPU32[EMGL.locationBuffer >> 2],
+        HEAPU32[EMGL.locationBuffer >> 2] + length))
       thisImage = createImageFromBuffer(filenameStr, imageView, mime)
-      FS_FreeFile(HEAPU32[buf >> 2])
-      Z_Free(buf)
+      FS_FreeFile(HEAPU32[EMGL.locationBuffer >> 2])
     }
   }
 
@@ -877,11 +881,6 @@ async function R_LoadRemote(filename, widthAddress, heightAddress, imageAddress)
     const rgba = GL.context2D.getImageData( 
       0, 0, thisImage.width, thisImage.height 
     ).data;
-    if(!EMGL.location) {
-      // this causes the engine to crash, it doesn't like a random allocs
-      //EMGL.location = Z_Malloc(rgba.length)
-      EMGL.location = Z_Malloc(MAX_IMAGE_SIZE)
-    }
     HEAPU8.set(rgba.slice(0, MAX_IMAGE_SIZE), EMGL.location)
 
     HEAP32[widthAddress >> 2] = thisImage.width
