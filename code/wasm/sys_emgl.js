@@ -762,7 +762,7 @@ function convertBMP(imgData, quality) {
 };
 
 
-const RENDER_IMAGES = []
+//const RENDER_IMAGES = []
 
 function createImageFromBuffer(filenameStr, imageView, mimeType) {
   let thisImage = document.createElement('IMG')
@@ -772,7 +772,7 @@ function createImageFromBuffer(filenameStr, imageView, mimeType) {
   thisImage.src = 'data:image/' + mimeType + ';base64,' + btoa(utfEncoded)
   thisImage.name = filenameStr
   thisImage.setAttribute('title', filenameStr)
-  RENDER_IMAGES.push(thisImage)
+  //RENDER_IMAGES.push(thisImage)
   //document.body.appendChild(thisImage)
   return thisImage
 }
@@ -800,12 +800,12 @@ async function R_LoadRemote(filename, widthAddress, heightAddress, imageAddress)
 
 
   let thisImage
-  for (let i = 0; i < RENDER_IMAGES.length; i++) {
-    if (RENDER_IMAGES[i].name == filenameStr) {
-      thisImage = RENDER_IMAGES[i]
-      break
-    }
-  }
+  //for (let i = 0; i < RENDER_IMAGES.length; i++) {
+  //  if (RENDER_IMAGES[i].name == filenameStr) {
+  //    thisImage = RENDER_IMAGES[i]
+  //    break
+  //  }
+  //}
 
   
 
