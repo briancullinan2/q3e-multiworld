@@ -780,9 +780,7 @@ const MAX_IMAGE_SIZE = 20 * 1024 * 1024
 async function R_LoadRemote(filename, widthAddress, heightAddress, imageAddress) {
   let gamedir = addressToString(FS_GetCurrentGameDir())
   let filenameStr = addressToString(filename)
-  if (!filenameStr.match(/\.jpeg$|\.jpg$|\.png$|/gi)) {
-    filenameStr += ext
-  }
+  let filenameStripped = filenameStr.replace(/\.[^\/\\]*?$/, '')
 
   /*
   let localName = filenameStr
@@ -807,14 +805,14 @@ async function R_LoadRemote(filename, widthAddress, heightAddress, imageAddress)
   
 
   if (!thisImage) {
-    let length = FS_ReadFile(stringToAddress(filenameStr.replace(/\..*?$/, '.png')), buf)
+    let length = FS_ReadFile(stringToAddress(filenameStripped + '.png'), buf)
     let mime = 'png'
     if(!HEAPU32[buf >> 2]) {
-      length = FS_ReadFile(stringToAddress(filenameStr.replace(/\..*?$/, '.jpg')), buf)
+      length = FS_ReadFile(stringToAddress(filenameStripped + '.jpg'), buf)
       mime = 'jpg'
     }
     if(!HEAPU32[buf >> 2]) {
-      length = FS_ReadFile(stringToAddress(filenameStr.replace(/\..*?$/, '.jpeg')), buf)
+      length = FS_ReadFile(stringToAddress(filenameStripped + '.jpeg'), buf)
       mime = 'jpg'
     }
     /*
@@ -836,33 +834,26 @@ async function R_LoadRemote(filename, widthAddress, heightAddress, imageAddress)
 
 
   if (!thisImage) {
-    let remoteFile = gamedir + '/pak0.pk3dir/' + filenameStr
-    if (!remoteFile.includes('.')) {
-      remoteFile += '.tga'
-    }
+    let remoteFile = gamedir + '/pak0.pk3dir/' + filenameStripped
 
     let mimes = []
     let responseData = (await Promise.all([
-      Com_DL_Begin(remoteFile, '/' + remoteFile.toLocaleLowerCase()
-        .replace(/\.[^\/]*?$/, '.jpg') + '?alt')
+      Com_DL_Begin(remoteFile, '/' + remoteFile + '.jpg?alt')
         .then(responseData => {
           if(!responseData) {
             return
           }
           mimes[0] = 'jpg'
-          Com_DL_Perform(remoteFile
-            .replace(/\.[^\/]*?$/, '.jpg'), remoteFile, responseData)
+          Com_DL_Perform(remoteFile + '.jpg', remoteFile, responseData)
           return responseData
         }),
-      Com_DL_Begin(remoteFile, '/' + remoteFile.toLocaleLowerCase()
-        .replace(/\.[^\/]*?$/, '.png') + '?alt')
+      Com_DL_Begin(remoteFile, '/' + remoteFile + '.png?alt')
         .then(responseData => {
           if(!responseData) {
             return
           }
           mimes[1] = 'png'
-          Com_DL_Perform(remoteFile
-            .replace(/\.[^\/]*?$/, '.png'), remoteFile, responseData)
+          Com_DL_Perform(remoteFile + '.png', remoteFile, responseData)
           return responseData
     })]))
 
