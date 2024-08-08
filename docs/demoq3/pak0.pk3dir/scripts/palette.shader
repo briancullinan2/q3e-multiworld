@@ -8281,5 +8281,34 @@ palettes/default
   palette "models/players/monsters/boss3/rider/pain_bump.png" 22,127,127,247
   palette "models/players/monsters/boss3/rider/pain.tga" 255,39,24,18
   palette "models/players/monsters/boss3/rider/pain.jpg" 255,38,24,19
+  palette "textures/oa/water.jpg" 255,2,28,39
+  palette "textures/oa/oldfiar2.jpg" 255,85,54,14
+  palette "textures/oa/grenfiar.jpg" 255,89,43,23
+  palette "textures/oa/flamelet.jpg" 255,83,15,15
+  palette "textures/oa/fiar2.jpg" 255,61,30,2
+  palette "textures/oa/fiar.jpg" 255,48,11,3
+  palette "textures/oa/bloodbg.jpg" 255,74,21,20
+  palette "textures/oa/bfgfiar.jpg" 255,28,60,9
+  palette "textures/liquids/lavahelldark.tga" 255,126,35,13
+  palette "textures/liquids/lavahelldark.jpg" 255,126,35,13
+  palette "gfx/damage/hole_lg_mrk.tga" 255,86,86,86
+  palette "gfx/damage/hole_lg_mrk.jpeg" 255,87,87,87
+  palette "gfx/damage/burn_med_mrk.tga" 255,69,69,69
+  palette "gfx/damage/burn_med_mrk.jpeg" 255,70,70,70
+  palette "gfx/damage/bullet_mrk.tga" 255,79,78,78
+  palette "gfx/damage/bullet_mrk.jpeg" 255,80,80,80
+  palette "textures/oa/muzzle/muz8.tga" 255,23,23,23
+  palette "textures/oa/muzzle/muz7.tga" 255,30,30,30
+  palette "textures/oa/muzzle/muz6.tga" 255,25,25,25
+  palette "textures/oa/muzzle/muz5.tga" 255,45,45,45
+  palette "textures/oa/muzzle/muz4.tga" 255,33,33,33
+  palette "textures/oa/muzzle/muz3.tga" 255,40,40,40
+  palette "textures/oa/muzzle/muz2.tga" 255,19,19,19
+  palette "textures/oa/muzzle/muz1.tga" 255,27,27,27
+  palette "models/powerups/ammo/flamammo copy 2.tga" 255,151,67,20
+  palette "models/players/wrath/icon_default.tga" 255,17,16,14
+  palette "models/players/sealord/icon_default.tga" 255,124,74,65
+  palette "models/players/metlar/icon_default.tga" 255,55,54,66
+  palette "models/players/enyo/icon_default.tga" 255,47,34,34
   }
   
