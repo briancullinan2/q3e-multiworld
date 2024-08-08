@@ -852,6 +852,10 @@ image_t *R_CreateImage( const char *name, const char *name2, byte *pic, int widt
 	hashTable[ hash ] = image;
 
 	tr.images[ tr.numImages++ ] = image;
+#ifdef USE_MULTIVM_RENDERER
+	if(rwi != 0)
+		trWorlds[0].images[ trWorlds[0].numImages++ ] = image;
+#endif
 
 	image->flags = flags;
 	image->width = width;
@@ -1247,6 +1251,28 @@ void COM_StripVariables( const char *in, char *out, int destsize )
 
 
 /*
+============
+COM_StripExtension
+============
+*/
+void COM_StripFilename( const char *in, char *out, int destsize )
+{
+	const char *dot = strrchr(in, '\\'), *slash;
+	if(!dot) {
+		dot = strrchr(in, '/');
+	}
+
+	if (dot && ((slash = strchr(in, '/')) == NULL || slash < dot))
+		destsize = (destsize < dot-in+1 ? destsize : dot-in+1);
+
+	if ( in == out && destsize > 1 )
+		out[destsize-1] = '\0';
+	else
+		Q_strncpyz(out, in, destsize);
+}
+
+
+/*
 ===============
 R_FindImageFile
 
@@ -1413,6 +1439,12 @@ void R_InitFogTable( void ) {
 
 		tr.fogTable[i] = d;
 	}
+
+#ifdef USE_MULTIVM_RENDERER
+	for(i = 1; i < MAX_NUM_WORLDS; i++) {
+		memcpy(trWorlds[i].fogTable, tr.fogTable, sizeof(tr.fogTable));
+	}
+#endif
 }
 
 
@@ -1776,6 +1808,17 @@ void R_InitImages( void ) {
 
 	// create default texture and white texture
 	R_CreateBuiltinImages();
+
+#ifdef USE_MULTIVM_RENDERER
+	for(i = 1; i < MAX_NUM_WORLDS; i++) {
+		trWorlds[i].whiteImage = tr.whiteImage;
+		trWorlds[i].defaultImage = tr.defaultImage;
+		trWorlds[i].identityLightImage = tr.identityLightImage;
+		trWorlds[i].dlightImage = tr.dlightImage;
+		trWorlds[i].fogImage = tr.fogImage;
+		trWorlds[i].numImages = 5;
+	}
+#endif
 }
 
 
@@ -1947,6 +1990,7 @@ qhandle_t RE_RegisterSkin( const char *name ) {
 	int			totalSurfaces;
 	char	strippedName[ MAX_QPATH ];
 	char	variables[ MAX_QPATH ];
+	char	dirName[ MAX_QPATH ];
 
 	if ( !name || !name[0] ) {
 		ri.Printf( PRINT_DEVELOPER, "Empty name passed to RE_RegisterSkin\n" );
@@ -1989,6 +2033,7 @@ qhandle_t RE_RegisterSkin( const char *name ) {
 		variables[0] = '\0';
 	}
 	COM_StripVariables(name, strippedName, MAX_QPATH);
+	COM_StripFilename(strippedName, dirName, MAX_QPATH);
 
 
 	// If not a .skin file, load as a single shader
@@ -2021,6 +2066,17 @@ qhandle_t RE_RegisterSkin( const char *name ) {
 				// reload shaders with variable args
 				for(int i = 0; i < skin->numSurfaces; i++) {
 					skin->surfaces[i].shader = R_FindShader(va("%s%s", skin->surfaces[i].shader->name, variables), LIGHTMAP_NONE, qtrue);
+					if(!skin->surfaces[i].shader || skin->surfaces[i].shader->defaultShader) {
+						const char *temp;
+						const char *fname;
+						fname = strrchr(skin->surfaces[i].shader->name, '/');
+						if(!fname) {
+							fname = strrchr(skin->surfaces[i].shader->name, '\\');
+						}
+						temp = va("%s%s%s", dirName, fname, variables);
+
+						skin->surfaces[i].shader = R_FindShader( temp, LIGHTMAP_NONE, qtrue );
+					}
 				}
 
 				return hSkin;
@@ -2035,6 +2091,9 @@ qhandle_t RE_RegisterSkin( const char *name ) {
 	totalSurfaces = 0;
 	text_p = text.c;
 	while ( text_p && *text_p ) {
+		const char *temp;
+		const char *fname;
+
 		// get surface name
 		token = CommaParse( &text_p );
 		Q_strncpyz( surfName, token, sizeof( surfName ) );
@@ -2055,14 +2114,26 @@ qhandle_t RE_RegisterSkin( const char *name ) {
 
 		// parse the shader name
 		token = CommaParse( &text_p );
+		fname = strrchr(token, '/');
+		if(!fname) {
+			fname = strrchr(token, '\\');
+		}
 
 		if ( skin->numSurfaces < MAX_SKIN_SURFACES ) {
 			surf = &parseSurfaces[skin->numSurfaces];
 			Q_strncpyz( surf->name, surfName, sizeof( surf->name ) );
 			if(varStart) {
 				surf->shader = R_FindShader( va("%s%s", token, variables), LIGHTMAP_NONE, qtrue );
+				if(!surf->shader || surf->shader->defaultShader) {
+					temp = va("%s%s%s", dirName, fname, variables);
+					surf->shader = R_FindShader( temp, LIGHTMAP_NONE, qtrue );
+				}
 			} else {
 				surf->shader = R_FindShader( token, LIGHTMAP_NONE, qtrue );
+				if(!surf->shader || surf->shader->defaultShader) {
+					temp = va("%s%s", dirName, fname);
+					surf->shader = R_FindShader( temp, LIGHTMAP_NONE, qtrue );
+				}
 			}
 			skin->numSurfaces++;
 		}
@@ -2106,6 +2177,14 @@ void	R_InitSkins( void ) {
 	skin->numSurfaces = 1;
 	skin->surfaces = ri.Hunk_Alloc( sizeof( skinSurface_t ), h_low );
 	skin->surfaces[0].shader = tr.defaultShader;
+
+#ifdef USE_MULTIVM_RENDERER
+	int i;
+	for(i = 1; i < MAX_NUM_WORLDS; i++) {
+		trWorlds[i].skins[0] = skin;
+		trWorlds[i].numSkins = 3;
+	}
+#endif
 }
 
 

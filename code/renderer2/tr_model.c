@@ -308,6 +308,12 @@ model_t *R_AllocModel( void ) {
 	mod = ri.Hunk_Alloc( sizeof( *tr.models[tr.numModels] ), h_low );
 	mod->index = tr.numModels;
 	tr.models[tr.numModels] = mod;
+
+#ifdef USE_MULTIVM_RENDERER
+	if(rwi != 0)
+		trWorlds[0].models[trWorlds[0].numModels++] = mod;
+#endif
+
 	tr.numModels++;
 
 	return mod;
@@ -466,6 +472,9 @@ qhandle_t RE_RegisterModel( const char *name ) {
 	return hModel;
 }
 
+
+void COM_StripFilename( const char *in, char *out, int destsize );
+
 /*
 =================
 R_LoadMD3
@@ -496,6 +505,7 @@ static qboolean R_LoadMD3(model_t * mod, int lod, void *buffer, int bufferSize, 
 
 	int             version;
 	int             size;
+	char	dirName[ MAX_QPATH ];
 
 	md3Model = (md3Header_t *) buffer;
 
@@ -628,6 +638,8 @@ static qboolean R_LoadMD3(model_t * mod, int lod, void *buffer, int bufferSize, 
 		surf->numShaderIndexes = md3Surf->numShaders;
 		surf->shaderIndexes = shaderIndex = ri.Hunk_Alloc(sizeof(*shaderIndex) * md3Surf->numShaders, h_low);
 
+		COM_StripFilename(mod->name, dirName, MAX_QPATH);
+
 		md3Shader = (md3Shader_t *) ((byte *) md3Surf + md3Surf->ofsShaders);
 		for(j = 0; j < md3Surf->numShaders; j++, shaderIndex++, md3Shader++)
 		{
@@ -636,7 +648,23 @@ static qboolean R_LoadMD3(model_t * mod, int lod, void *buffer, int bufferSize, 
 			sh = R_FindShader(md3Shader->name, LIGHTMAP_NONE, qtrue);
 			if(sh->defaultShader)
 			{
-				*shaderIndex = 0;
+				const char *temp;
+				const char *fname = strrchr(md3Shader->name, '/');
+				if(!fname) {
+					fname = strrchr(md3Shader->name, '\\');
+				}
+				temp = va("%s%s", dirName, fname);
+				if(fname) {
+					sh = R_FindShader( temp, LIGHTMAP_NONE, qtrue );
+					//Com_Printf("shader found! %s, %s, %s\n", dirName, fname, shader->name);
+				}
+				if ( sh->defaultShader ) {
+					*shaderIndex = 0;
+				} else {
+					*shaderIndex = sh->index;
+					if(makeSkin)
+						R_AddSkinSurface((char *)temp, sh);
+				}
 			}
 			else
 			{
@@ -1313,6 +1341,12 @@ void R_ModelInit( void ) {
 
 	mod = R_AllocModel();
 	mod->type = MOD_BAD;
+#ifdef USE_MULTIVM_RENDERER
+	for(int i = 1; i < MAX_NUM_WORLDS; i++) {
+		trWorlds[i].models[0] = mod;
+		trWorlds[i].numModels = 1;
+	}
+#endif
 }
 
 

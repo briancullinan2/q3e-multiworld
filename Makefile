@@ -1034,6 +1034,7 @@ Q3RENDVOBJ = \
   $(B)/rendv/tr_marks.o \
   $(B)/rendv/tr_mesh.o \
   $(B)/rendv/tr_model.o \
+  $(B)/rendv/tr_manipulation.o \
   $(B)/rendv/tr_model_iqm.o \
   $(B)/rendv/tr_noise.o \
   $(B)/rendv/tr_scene.o \
@@ -1191,6 +1192,7 @@ Q3OBJ = \
   $(B)/client/sv_main.o \
   $(B)/client/sv_net_chan.o \
   $(B)/client/sv_snapshot.o \
+  $(B)/client/sv_teleport.o \
   $(B)/client/sv_world.o \
   \
   $(B)/client/q_math.o \
@@ -1432,6 +1434,7 @@ Q3DOBJ = \
   $(B)/ded/sv_main.o \
   $(B)/ded/sv_net_chan.o \
   $(B)/ded/sv_snapshot.o \
+  $(B)/ded/sv_teleport.o \
   $(B)/ded/sv_world.o \
   \
   $(B)/ded/cm_load.o \
