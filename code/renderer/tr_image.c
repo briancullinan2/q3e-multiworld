@@ -840,7 +840,7 @@ void R_FinishImage3( image_t *image, byte *pic ) {
 
 	byte *altImage = R_LoadAlternateImage(pic, image->width, image->height);
 	if(altImage && altImage != pic) {
-		image->alternate = R_CreateImage( va("-alternate%s", image->imgName), va("-alternate%s", image->imgName2), altImage, image->width, image->height, image->flags);
+		image->alternate = R_CreateImage( va("-alt%s", image->imgName), va("-alt%s", image->imgName2), altImage, image->width, image->height, image->flags);
 		ri.free(altImage);
 	}
 
@@ -1418,7 +1418,7 @@ void R_UpdateAlternateImages( void ) {
 		if(localName && pic) {
 			byte *altImage = R_LoadAlternateImage(pic, width, height);
 			if(altImage && altImage != pic) {
-				image->alternate = R_CreateImage( va("-alternate%s", image->imgName), va("-alternate%s", localName), altImage, width, height, image->flags);
+				image->alternate = R_CreateImage( va("-alt%s", image->imgName), va("-alt%s", localName), altImage, width, height, image->flags);
 #ifdef USE_PTHREADS
 				ri.free(altImage);
 #else
@@ -1619,7 +1619,7 @@ image_t	*R_FindImageFile( const char *name, imgFlags_t flags )
 	image = R_CreateImage( name, localName, pic, width, height, flags );
 	image->palette = palette;
 	if(altImage && altImage != pic) {
-		image->alternate = R_CreateImage( va("-alternate%s", name), va("-alternate%s", localName), altImage, width, height, flags );
+		image->alternate = R_CreateImage( va("-alt%s", name), va("-alt%s", localName), altImage, width, height, flags );
 #ifdef USE_PTHREADS
 		ri.free(altImage);
 #else

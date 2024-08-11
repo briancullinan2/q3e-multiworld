@@ -2463,7 +2463,7 @@ void R_FinishImage3( image_t *image, byte *pic, GLenum picFormat, int numMips ) 
 
 	byte *altImage = R_LoadAlternateImage(pic, image->width, image->height);
 	if(altImage && altImage != pic) {
-		image->alternate = R_CreateImage( va("-alternate%s", image->imgName), altImage, image->width, image->height, image->type, image->flags, 0 );
+		image->alternate = R_CreateImage( va("-alt%s", image->imgName), altImage, image->width, image->height, image->type, image->flags, 0 );
 		ri.Free(altImage);
 	}
 
@@ -2869,7 +2869,7 @@ void R_UpdateAlternateImages( void ) {
 		if(pic) {
 			byte *altImage = R_LoadAlternateImage(pic, width, height);
 			if(altImage && altImage != pic) {
-				image->alternate = R_CreateImage( va("-alternate%s", image->imgName), altImage, width, height, IMGTYPE_NORMAL, image->flags, 0);
+				image->alternate = R_CreateImage( va("-alt%s", image->imgName), altImage, width, height, IMGTYPE_NORMAL, image->flags, 0);
 				ri.Free(altImage);
 			}
 			ri.Free(pic);
@@ -3141,23 +3141,6 @@ image_t	*R_FindImageFile( const char *name, imgType_t type, imgFlags_t flags )
 			flags &= ~IMGFLAG_MIPMAP;
 	}
 
-
-
-#if 0 //def __WASM__
-	// skip this entirely and upload directly to openGL then
-	//   insert the image handle in image->texnum for future use
-	// by this point we think the image is out there so register it in 
-	//   the system, then we can update the glBind-ing when it loads async
-	if(dynamicLoad) { // done from emgl.js
-		image = R_CreateImage3( ( char * ) name, pic, picFormat, picNumMips, type, 
-			flags & 	~IMGFLAG_MIPMAP & ~IMGFLAG_PICMIP, GL_RGBA );
-		if(variables[0] != '\0') {
-			Q_strncpyz(image->variables, variables, MAX_QPATH);
-		}
-		return image;
-	}
-#endif
-
 	// do this in a separate step in case the game loads with r_invert and the mod loads an inverted model, it's back to normal, funnier
 	if(variables[0] != '\0') {
 		byte *variableImage = R_LoadAlternateImageVariables(pic, width, height, variables);
@@ -3172,7 +3155,7 @@ image_t	*R_FindImageFile( const char *name, imgType_t type, imgFlags_t flags )
 	image = R_CreateImage2( ( char * ) name, pic, width, height, picFormat, picNumMips, type, flags, 0, NULL );
 	image->palette = palette;
 	if(altImage && altImage != pic) {
-		image->alternate = R_CreateImage( va("-alternate%s", name), altImage, width, height, type, flags, 0 );
+		image->alternate = R_CreateImage( va("-alt%s", name), altImage, width, height, type, flags, 0 );
 		ri.Free(altImage);
 	}
 
