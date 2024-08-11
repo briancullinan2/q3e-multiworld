@@ -2,6 +2,17 @@
 // CPM skins
 // KHB  9-Mar-01	single shader for both v and lm, all standard models now supported, and a WICKED trick...  :)
 
+flightTrail
+{
+	cull disable
+	{
+		clampmap models/weapons3/railgun/f_railgun2.tga
+		blendfunc add
+		rgbGen vertex
+		//tcmod rotate 130
+	}
+}
+
 models/players/anarki/pm
 {
 	nopicmip
@@ -273,12 +284,12 @@ models/players/hunter/pmf
 		alphaFunc GE128
 		rgbGen entity
 	}
-//	{
-//		map models/players/hunter/color_x.tga
-//		blendFunc GL_ONE GL_ZERO
-//		alphaFunc LT128
-//		rgbGen identity
-//	}
+	//	{
+		//		map models/players/hunter/color_x.tga
+		//		blendFunc GL_ONE GL_ZERO
+		//		alphaFunc LT128
+		//		rgbGen identity
+	//	}
 }
 
 
@@ -749,12 +760,12 @@ models/players/uriel/pmw
 		alphaFunc GE128
 		rgbGen entity
 	}
-//	{
-//		map models/players/uriel/color_x.tga
-//		blendFunc GL_ONE GL_ZERO
-//		alphaFunc LT128
-//		rgbGen identity
-//	}
+	//	{
+		//		map models/players/uriel/color_x.tga
+		//		blendFunc GL_ONE GL_ZERO
+		//		alphaFunc LT128
+		//		rgbGen identity
+	//	}
 }
 
 

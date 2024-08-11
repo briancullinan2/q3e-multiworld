@@ -1,0 +1,93 @@
+//=====================================================
+//
+// map file created with BSPC 2.2
+//
+// BSPC is designed to decompile material in which you own the copyright
+// or have obtained permission to decompile from the copyright owner. Unless
+// you own the copyright or have permission to decompile from the copyright
+// owner, you may be violating copyright law and be subject to payment of
+// damages and other remedies. If you are uncertain about your rights, contact
+// your legal advisor.
+//
+//
+//=====================================================
+{
+ "classname" "worldspawn"
+ "classname" "worldspawn"
+ { //brush 0
+  ( 0 65535 65535 ) ( 0 -65535 65535 ) ( 0 65535 -65535 ) gothic_floor/q1metal7_97 0 0 0 1 1 0 0 0
+  ( 512 -65535 65535 ) ( 512 65535 65535 ) ( 512 65535 -65535 ) gothic_floor/q1metal7_97 0 0 0 1 1 0 0 0
+  ( -65535 0 65535 ) ( 65535 0 65535 ) ( -65535 0 -65535 ) gothic_floor/q1metal7_97 0 0 0 1 1 0 0 0
+  ( 65535 512 65535 ) ( -65535 512 65535 ) ( -65535 512 -65535 ) gothic_floor/q1metal7_97 0 0 0 1 1 0 0 0
+  ( 65535 -65535 -8 ) ( 65535 65535 -8 ) ( -65535 -65535 -8 ) gothic_floor/q1metal7_97 0 0 0 1 1 0 0 0
+  ( 65535 65535 0 ) ( 65535 -65535 0 ) ( -65535 -65535 0 ) gothic_floor/q1metal7_97 0 0 0 1 1 0 0 0
+ }
+ { //brush 1
+  ( 0 65535 65535 ) ( 0 -65535 65535 ) ( 0 65535 -65535 ) gothic_floor/q1metal7_97 0 0 0 1 1 0 0 0
+  ( 512 -65535 65535 ) ( 512 65535 65535 ) ( 512 65535 -65535 ) gothic_floor/q1metal7_97 0 0 0 1 1 0 0 0
+  ( -65535 0 65535 ) ( 65535 0 65535 ) ( -65535 0 -65535 ) gothic_floor/q1metal7_97 0 0 0 1 1 0 0 0
+  ( 65535 512 65535 ) ( -65535 512 65535 ) ( -65535 512 -65535 ) gothic_floor/q1metal7_97 0 0 0 1 1 0 0 0
+  ( 65535 -65535 128 ) ( 65535 65535 128 ) ( -65535 -65535 128 ) gothic_floor/q1metal7_97 0 0 0 1 1 0 0 0
+  ( 65535 65535 136 ) ( 65535 -65535 136 ) ( -65535 -65535 136 ) gothic_floor/q1metal7_97 0 0 0 1 1 0 0 0
+ }
+ { //brush 2
+  ( 0 65535 65535 ) ( 0 -65535 65535 ) ( 0 65535 -65535 ) gothic_floor/q1metal7_97 0 0 0 1 1 0 0 0
+  ( 512 -65535 65535 ) ( 512 65535 65535 ) ( 512 65535 -65535 ) gothic_floor/q1metal7_97 0 0 0 1 1 0 0 0
+  ( -65535 0 65535 ) ( 65535 0 65535 ) ( -65535 0 -65535 ) gothic_floor/q1metal7_97 0 0 0 1 1 0 0 0
+  ( 65535 8 65535 ) ( -65535 8 65535 ) ( -65535 8 -65535 ) gothic_floor/q1metal7_97 0 0 0 1 1 0 0 0
+  ( 65535 -65535 -8 ) ( 65535 65535 -8 ) ( -65535 -65535 -8 ) gothic_floor/q1metal7_97 0 0 0 1 1 0 0 0
+  ( 65535 65535 136 ) ( 65535 -65535 136 ) ( -65535 -65535 136 ) gothic_floor/q1metal7_97 0 0 0 1 1 0 0 0
+ }
+ { //brush 3
+  ( 504 65535 65535 ) ( 504 -65535 65535 ) ( 504 65535 -65535 ) gothic_floor/q1metal7_97 0 0 0 1 1 0 0 0
+  ( 512 -65535 65535 ) ( 512 65535 65535 ) ( 512 65535 -65535 ) gothic_floor/q1metal7_97 0 0 0 1 1 0 0 0
+  ( -65535 0 65535 ) ( 65535 0 65535 ) ( -65535 0 -65535 ) gothic_floor/q1metal7_97 0 0 0 1 1 0 0 0
+  ( 65535 512 65535 ) ( -65535 512 65535 ) ( -65535 512 -65535 ) gothic_floor/q1metal7_97 0 0 0 1 1 0 0 0
+  ( 65535 -65535 -8 ) ( 65535 65535 -8 ) ( -65535 -65535 -8 ) gothic_floor/q1metal7_97 0 0 0 1 1 0 0 0
+  ( 65535 65535 136 ) ( 65535 -65535 136 ) ( -65535 -65535 136 ) gothic_floor/q1metal7_97 0 0 0 1 1 0 0 0
+ }
+ { //brush 4
+  ( 0 65535 65535 ) ( 0 -65535 65535 ) ( 0 65535 -65535 ) gothic_floor/q1metal7_97 0 0 0 1 1 0 0 0
+  ( 512 -65535 65535 ) ( 512 65535 65535 ) ( 512 65535 -65535 ) gothic_floor/q1metal7_97 0 0 0 1 1 0 0 0
+  ( -65535 504 65535 ) ( 65535 504 65535 ) ( -65535 504 -65535 ) gothic_floor/q1metal7_97 0 0 0 1 1 0 0 0
+  ( 65535 512 65535 ) ( -65535 512 65535 ) ( -65535 512 -65535 ) gothic_floor/q1metal7_97 0 0 0 1 1 0 0 0
+  ( 65535 -65535 -8 ) ( 65535 65535 -8 ) ( -65535 -65535 -8 ) gothic_floor/q1metal7_97 0 0 0 1 1 0 0 0
+  ( 65535 65535 136 ) ( 65535 -65535 136 ) ( -65535 -65535 136 ) gothic_floor/q1metal7_97 0 0 0 1 1 0 0 0
+ }
+ { //brush 5
+  ( 0 65535 65535 ) ( 0 -65535 65535 ) ( 0 65535 -65535 ) gothic_floor/q1metal7_97 0 0 0 1 1 0 0 0
+  ( 8 -65535 65535 ) ( 8 65535 65535 ) ( 8 65535 -65535 ) gothic_floor/q1metal7_97 0 0 0 1 1 0 0 0
+  ( -65535 0 65535 ) ( 65535 0 65535 ) ( -65535 0 -65535 ) gothic_floor/q1metal7_97 0 0 0 1 1 0 0 0
+  ( 65535 512 65535 ) ( -65535 512 65535 ) ( -65535 512 -65535 ) gothic_floor/q1metal7_97 0 0 0 1 1 0 0 0
+  ( 65535 -65535 -8 ) ( 65535 65535 -8 ) ( -65535 -65535 -8 ) gothic_floor/q1metal7_97 0 0 0 1 1 0 0 0
+  ( 65535 65535 136 ) ( 65535 -65535 136 ) ( -65535 -65535 136 ) gothic_floor/q1metal7_97 0 0 0 1 1 0 0 0
+ }
+}
+{
+ "light" "10000"
+ "origin" "56 40 96"
+ "classname" "light"
+ "origin" "56 40 96"
+ "classname" "light"
+}
+{
+ "light" "10000"
+ "origin" "56 208 96"
+ "classname" "light"
+ "origin" "56 208 96"
+ "classname" "light"
+}
+{
+ "light" "10000"
+ "origin" "224 136 96"
+ "classname" "light"
+ "origin" "224 136 96"
+ "classname" "light"
+}
+{
+ "classname" "info_player_start"
+ "origin" "48 280 32"
+ "classname" "info_player_start"
+ "origin" "48 280 32"
+}
+//total of 6 brushes

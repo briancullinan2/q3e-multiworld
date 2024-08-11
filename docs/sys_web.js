@@ -57,6 +57,7 @@ function getQueryCommands() {
 		//'+set', 'r_deluxeMapping', '0',
 		//'+set', 'r_normalMapping', '0',
 		//'+set', 'r_specularMapping', '0',
+		'+map', 'loading-program',
 	]
 	startup.push.apply(startup, window.preStart)
 	// TODO: full screen by default? I suppose someone might 

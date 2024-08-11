@@ -26,3 +26,28 @@ gfx/misc/raindrop
 		alphagen vertex
 	}
 }
+
+snowflake
+{
+	nopicmip
+	sort nearest
+
+	{
+		clampmap gfx/misc/raildisc_mono2.tga 
+		blendFunc GL_ONE GL_ONE
+		rgbGen vertex
+	}
+}
+
+rain
+{
+	nopicmip
+	cull none
+	sort nearest
+
+	{
+		map gfx/misc/raindrop.tga
+		blendFunc GL_ONE GL_ONE
+		rgbGen vertex
+	}
+}
