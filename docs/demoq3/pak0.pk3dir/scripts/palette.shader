@@ -1,14 +1,13 @@
 palettes/default
   {
-    palette "sprites/splash.jpg" 255,4,5,7
+    palette "textures/proto_sky.tga" 255,4,3,3
+  palette "sprites/splash.tga" 255,4,5,7
+  palette "sprites/splash.jpg" 255,4,5,7
+  palette "sprites/plasmaa.tga" 255,14,58,65
   palette "sprites/plasmaa.jpg" 255,14,58,65
   palette "sprites/foe2.tga" 106,224,158,8
   palette "sprites/bubble.tga" 65,116,118,124
   palette "sprites/balloon4.tga" 184,69,69,188
-  palette "levelshots/Q3TOURNEY2.jpg" 255,48,18,13
-  palette "levelshots/Q3DM7.jpg" 255,77,53,29
-  palette "levelshots/Q3DM17.jpg" 255,45,39,35
-  palette "levelshots/Q3DM1.jpg" 255,73,34,27
   palette "icons/teleporter.tga" 50,0,236,255
   palette "icons/regen.tga" 76,209,10,0
   palette "icons/quad.tga" 69,0,227,241
@@ -45,163 +44,536 @@ palettes/default
   palette "icons/haste.tga" 42,183,229,0
   palette "icons/flight.tga" 72,192,23,160
   palette "icons/envirosuit.tga" 131,255,168,0
+  palette "env/xnight2_up.tga" 255,13,13,13
+  palette "env/xnight2_up.jpg" 255,13,13,13
+  palette "env/xnight2_rt.tga" 255,1,1,1
+  palette "env/xnight2_rt.jpg" 255,1,1,1
+  palette "env/xnight2_lf.tga" 255,1,1,1
+  palette "env/xnight2_lf.jpg" 255,1,1,1
+  palette "env/xnight2_ft.tga" 255,1,1,1
+  palette "env/xnight2_ft.jpg" 255,1,1,1
+  palette "env/xnight2_dn.tga" 255,1,1,1
+  palette "env/xnight2_dn.jpg" 255,1,1,1
+  palette "env/xnight2_bk.tga" 255,1,1,1
+  palette "env/xnight2_bk.jpg" 255,1,1,1
+  palette "env/space1_up.tga" 255,4,3,5
+  palette "env/space1_up.jpg" 255,4,3,5
+  palette "env/space1_rt.tga" 255,7,2,4
+  palette "env/space1_rt.jpg" 255,7,2,4
+  palette "env/space1_lf.tga" 255,11,7,16
+  palette "env/space1_lf.jpg" 255,11,7,16
+  palette "env/space1_ft.tga" 255,7,3,18
+  palette "env/space1_ft.jpg" 255,7,3,18
+  palette "env/space1_dn.tga" 255,2,1,2
+  palette "env/space1_dn.jpg" 255,2,1,2
+  palette "env/space1_bk.tga" 255,33,15,13
+  palette "env/space1_bk.jpg" 255,33,15,13
+  palette "levelshots/Q3TOURNEY6.tga" 255,24,19,18
+  palette "levelshots/Q3TOURNEY6.jpg" 255,24,19,18
+  palette "levelshots/Q3TOURNEY5.tga" 255,137,76,18
+  palette "levelshots/Q3TOURNEY5.jpg" 255,137,76,18
+  palette "levelshots/Q3TOURNEY4.tga" 255,60,47,42
+  palette "levelshots/Q3TOURNEY4.jpg" 255,60,47,42
+  palette "levelshots/Q3TOURNEY3.tga" 255,73,34,25
+  palette "levelshots/Q3TOURNEY3.jpg" 255,73,34,25
+  palette "levelshots/Q3TOURNEY2.tga" 255,48,18,13
+  palette "levelshots/Q3TOURNEY2.jpg" 255,48,18,13
+  palette "levelshots/Q3TOURNEY1.tga" 255,44,32,37
+  palette "levelshots/Q3TOURNEY1.jpg" 255,44,32,37
+  palette "levelshots/Q3DM9.tga" 255,74,34,18
+  palette "levelshots/Q3DM9.jpg" 255,74,34,18
+  palette "levelshots/Q3DM8.tga" 255,68,34,16
+  palette "levelshots/Q3DM8.jpg" 255,68,34,16
+  palette "levelshots/Q3DM7.tga" 255,77,53,29
+  palette "levelshots/Q3DM7.jpg" 255,77,53,29
+  palette "levelshots/Q3DM6.tga" 255,74,55,49
+  palette "levelshots/Q3DM6.jpg" 255,74,55,49
+  palette "levelshots/Q3DM5.tga" 255,62,45,34
+  palette "levelshots/Q3DM5.jpg" 255,62,45,34
+  palette "levelshots/Q3DM4.tga" 255,88,75,63
+  palette "levelshots/Q3DM4.jpg" 255,88,75,63
+  palette "levelshots/Q3DM3.tga" 255,68,42,31
+  palette "levelshots/Q3DM3.jpg" 255,68,42,31
+  palette "levelshots/Q3DM2.tga" 255,70,44,20
+  palette "levelshots/Q3DM2.jpg" 255,70,44,20
+  palette "levelshots/Q3DM19.tga" 255,28,25,25
+  palette "levelshots/Q3DM19.jpg" 255,28,25,25
+  palette "levelshots/Q3DM18.tga" 255,61,47,37
+  palette "levelshots/Q3DM18.jpg" 255,61,47,37
+  palette "levelshots/Q3DM17.tga" 255,45,39,35
+  palette "levelshots/Q3DM17.jpg" 255,45,39,35
+  palette "levelshots/Q3DM16.tga" 255,49,46,46
+  palette "levelshots/Q3DM16.jpg" 255,49,46,46
+  palette "levelshots/Q3DM15.tga" 255,64,26,16
+  palette "levelshots/Q3DM15.jpg" 255,64,26,16
+  palette "levelshots/Q3DM14.tga" 255,68,47,26
+  palette "levelshots/Q3DM14.jpg" 255,68,47,26
+  palette "levelshots/Q3DM13.tga" 255,84,39,25
+  palette "levelshots/Q3DM13.jpg" 255,84,39,25
+  palette "levelshots/Q3DM12.tga" 255,60,41,36
+  palette "levelshots/Q3DM12.jpg" 255,60,41,36
+  palette "levelshots/Q3DM11.tga" 255,58,55,35
+  palette "levelshots/Q3DM11.jpg" 255,58,55,35
+  palette "levelshots/Q3DM10.tga" 255,45,29,18
+  palette "levelshots/Q3DM10.jpg" 255,45,29,18
+  palette "levelshots/Q3DM1.tga" 255,73,34,27
+  palette "levelshots/Q3DM1.jpg" 255,73,34,27
+  palette "levelshots/Q3DM0.tga" 255,69,60,56
+  palette "levelshots/Q3DM0.jpg" 255,69,60,56
+  palette "levelshots/Q3CTF4.tga" 255,8,13,16
+  palette "levelshots/Q3CTF4.jpg" 255,8,13,16
+  palette "levelshots/Q3CTF3.tga" 255,94,76,72
+  palette "levelshots/Q3CTF3.jpg" 255,94,76,72
+  palette "levelshots/Q3CTF2.tga" 255,61,44,43
+  palette "levelshots/Q3CTF2.jpg" 255,61,44,43
+  palette "levelshots/Q3CTF1.tga" 255,85,56,50
+  palette "levelshots/Q3CTF1.jpg" 255,85,56,50
+  palette "textures/skin/tongue.tga" 255,130,74,64
   palette "textures/skin/tongue.jpg" 255,130,74,64
+  palette "textures/skin/surface8.tga" 255,133,88,82
   palette "textures/skin/surface8.jpg" 255,133,88,82
+  palette "textures/skin/skin7_teeth.tga" 255,98,71,68
   palette "textures/skin/skin7_teeth.jpg" 255,98,71,68
+  palette "textures/skin/skin6thrust.tga" 255,104,47,39
+  palette "textures/skin/skin6thrust.jpg" 255,104,47,39
+  palette "textures/skin/skin6move.tga" 255,104,47,39
+  palette "textures/skin/skin6move.jpg" 255,104,47,39
+  palette "textures/skin/skin6.tga" 255,104,47,39
   palette "textures/skin/skin6.jpg" 255,104,47,39
+  palette "textures/skin/skin5.tga" 255,141,64,45
+  palette "textures/skin/skin5.jpg" 255,141,64,45
+  palette "textures/skin/skin1.tga" 255,147,80,63
+  palette "textures/skin/skin1.jpg" 255,147,80,63
+  palette "textures/skin/pjwal2k.tga" 255,92,82,74
+  palette "textures/skin/pjwal2k.jpg" 255,92,82,74
+  palette "textures/skin/nibbles.tga" 23,165,98,82
   palette "textures/skin/chapthroatooz.tga" 227,128,70,55
+  palette "textures/skin/chapthroat2.tga" 255,118,65,53
   palette "textures/skin/chapthroat2.jpg" 255,118,65,53
+  palette "textures/skin/chapthroat.tga" 255,125,68,54
   palette "textures/skin/chapthroat.jpg" 255,125,68,54
+  palette "textures/terrain/pjrock9c.tga" 148,43,53,21
+  palette "textures/terrain/pjrock12c.tga" 255,84,77,52
+  palette "textures/terrain/pjrock10c.tga" 255,193,165,140
+  palette "textures/stone/rockwall.tga" 255,67,50,51
+  palette "textures/stone/rockwall.jpg" 255,67,50,51
+  palette "textures/stone/pjrock9c.tga" 255,43,53,21
+  palette "textures/stone/pjrock9b_2.tga" 255,72,71,69
+  palette "textures/stone/pjrock912c.tga" 255,56,60,31
+  palette "textures/stone/pjrock7.tga" 255,64,48,46
+  palette "textures/stone/pjrock6.tga" 255,72,68,33
+  palette "textures/stone/pjrock6.jpg" 255,72,68,33
+  palette "textures/stone/pjrock5.tga" 255,68,51,49
+  palette "textures/stone/pjrock21.tga" 255,87,61,41
+  palette "textures/stone/pjrock21.jpg" 255,87,61,41
+  palette "textures/stone/pjrock17.tga" 255,54,52,31
+  palette "textures/stone/pjrock17.jpg" 255,54,52,31
+  palette "textures/stone/pjrock16.tga" 255,56,40,21
+  palette "textures/stone/pjrock16.jpg" 255,56,40,21
+  palette "textures/stone/pjrock15.tga" 255,63,49,37
+  palette "textures/stone/pjrock12c.tga" 255,84,77,52
+  palette "textures/stone/pjrock12b_2.tga" 255,106,110,116
+  palette "textures/stone/pjrock1210c.tga" 255,105,90,66
+  palette "textures/stone/pjrock10c.tga" 255,112,95,71
+  palette "textures/stone/pjrock10b_2.tga" 255,186,190,196
+  palette "textures/stone/pjrock1.tga" 255,66,47,44
+  palette "textures/stone/pjrock1.jpg" 255,66,47,44
+  palette "textures/rota3dm2_trims/grate_grey2.jpg" 255,19,19,19
+  palette "textures/skies2/nebula3.tga" 255,53,30,17
+  palette "textures/skies2/hell1.tga" 255,185,0,3
+  palette "textures/skies2/ctf6skyb.tga" 255,16,22,23
+  palette "textures/skies2/ctf6sky2b.tga" 255,19,19,19
+  palette "textures/skies2/ctf6sky2.tga" 255,19,19,19
+  palette "textures/skies2/ctf6sky.tga" 255,25,18,14
+  palette "textures/skies2/clouds2.tga" 255,205,205,205
+  palette "textures/skies2/clouds.tga" 255,183,183,183
+  palette "textures/rota3dm2_trim/u_trm16_1.jpg" 255,64,63,62
+  palette "textures/rota3dm2_bmtls/e6dmetal_darker.jpg" 255,35,35,35
+  palette "textures/skies/toxicbluesky.tga" 255,1,1,1
+  palette "textures/skies/topclouds.tga" 255,12,24,26
+  palette "textures/skies/topclouds.jpg" 255,12,24,26
+  palette "textures/skies/proto_sky2.tga" 255,17,17,17
+  palette "textures/skies/proto_sky.tga" 255,4,3,3
+  palette "textures/skies/pjbasesky.tga" 255,61,70,97
+  palette "textures/skies/pjbasesky.jpg" 255,61,70,97
+  palette "textures/skies/nightsky_nocloud.tga" 0,0,0,0
+  palette "textures/skies/nightsky.tga" 255,133,133,133
+  palette "textures/skies/myskydark.jpg" 255,11,11,21
+  palette "textures/skies/killsky_2.tga" 255,20,7,1
   palette "textures/skies/killsky_2.jpg" 255,20,7,1
+  palette "textures/skies/killsky_1.tga" 255,54,0,0
   palette "textures/skies/killsky_1.jpg" 255,54,0,0
+  palette "textures/skies/intelredclouds.tga" 255,97,83,55
   palette "textures/skies/intelredclouds.jpg" 255,97,83,55
+  palette "textures/skies/inteldimclouds.tga" 255,75,38,5
   palette "textures/skies/inteldimclouds.jpg" 255,75,38,5
+  palette "textures/skies/dimclouds.tga" 255,43,43,43
+  palette "textures/skies/dimclouds.jpg" 255,43,43,43
+  palette "textures/skies/bluedimclouds.tga" 255,56,31,15
+  palette "textures/skies/bluedimclouds.jpg" 255,56,31,15
+  palette "textures/skies/blacksky.tga" 255,0,0,0
+  palette "textures/rota3ctf1_walls/wall_12or_plain.jpg" 255,116,54,31
+  palette "textures/rota3ctf1_walls/wall_12e.jpg" 255,59,60,60
+  palette "textures/rota3ctf1_walls/wall_12d.jpg" 255,59,61,61
+  palette "textures/rota3ctf1_walls/wall_12_plain.jpg" 255,59,61,61
+  palette "textures/rota3ctf1_walls/ubase_pan_trix.jpg" 255,61,63,63
+  palette "textures/rota3ctf1_walls/ubase_pan4.jpg" 255,55,54,54
+  palette "textures/rota3ctf1_walls/ubase_holes.jpg" 255,49,51,52
+  palette "textures/rota3ctf1_walls/u_base_orange1.jpg" 255,123,53,28
+  palette "textures/rota3ctf1_walls/u_45deg.jpg" 255,61,63,63
+  palette "textures/rota3ctf1_trim/ubase_trim7.jpg" 255,62,61,61
+  palette "textures/rota3ctf1_trim/ubase_trim45.jpg" 255,52,53,53
+  palette "textures/rota3ctf1_trim/ubase_trim4.jpg" 255,48,48,47
+  palette "textures/rota3ctf1_trim/ubase_trim.jpg" 255,52,53,53
+  palette "textures/rota3ctf1_trim/u_trm8_6.jpg" 255,93,48,31
+  palette "textures/rota3ctf1_trim/u_trm8_5.jpg" 255,58,57,56
+  palette "textures/rota3ctf1_trim/u_trm8_3.jpg" 255,52,54,55
+  palette "textures/rota3ctf1_trim/u_trm8_2.jpg" 255,56,59,60
+  palette "textures/rota3ctf1_trim/u_trm64_1.jpg" 255,51,52,53
+  palette "textures/rota3ctf1_trim/u_trm16_2.jpg" 255,64,63,62
+  palette "textures/rota3ctf1_trim/u_trm16_1.jpg" 255,64,63,62
+  palette "textures/rota3ctf1_trim/r_trim_22l.jpg" 255,40,45,45
+  palette "textures/rota3ctf1_trim/r_trim_22j.jpg" 255,43,48,49
+  palette "textures/rota3ctf1_trim/r_trim_22i.jpg" 255,51,53,53
+  palette "textures/rota3ctf1_trim/r_trim_22h.jpg" 255,50,53,54
+  palette "textures/rota3ctf1_trim/r_trim_17b.jpg" 255,83,58,50
+  palette "textures/rota3ctf1_trim/r_trim_16.jpg" 255,60,63,64
+  palette "textures/rota3ctf1_grates/u_gr8_5b.tga" 198,56,59,60
+  palette "textures/rota3ctf1_grates/u_gr8_5.tga" 198,56,59,60
+  palette "textures/rota3ctf1_grates/u_gr8_4.tga" 199,52,56,57
+  palette "textures/rota3ctf1_grates/u_gr8_2b.tga" 135,53,55,56
+  palette "textures/rota3ctf1_grates/u_gr8_10.tga" 197,49,54,55
+  palette "textures/rota3ctf1_floors/u_floor_pan5.jpg" 255,50,50,49
+  palette "textures/rota3ctf1_floors/u_floor_pan4_l_blend.jpg" 255,3,4,5
+  palette "textures/rota3ctf1_floors/u_floor_gr8.jpg" 255,37,38,39
+  palette "textures/rota3ctf1_floors/u_floor3_pad_8.jpg" 255,57,60,62
+  palette "textures/rota3ctf1_floors/u_floor.jpg" 255,48,52,54
+  palette "textures/rota3ctf1_floors/e6bmetal_darker2.jpg" 255,18,18,20
+  palette "textures/rota3ctf1_floors/e6bmetal_darker.jpg" 255,36,36,38
+  palette "textures/rota3ctf1_floors/e6bmetal.jpg" 255,50,50,52
+  palette "textures/rota3ctf1_terrain/tr.jpg" 255,37,72,92
+  palette "textures/rota3ctf1_terrain/ter_rock3b.tga" 255,42,43,41
+  palette "textures/rota3ctf1_terrain/ter_rock2.tga" 255,61,62,60
+  palette "textures/rota3ctf1_terrain/ter_moss1.tga" 233,63,73,48
+  palette "textures/rota3ctf1_terrain/sklo2_efekt.jpg" 255,27,27,27
+  palette "textures/rota3ctf1_terrain/sklo2.jpg" 255,150,149,148
+  palette "textures/rota3ctf1_terrain/rrrtt.jpg" 255,18,72,108
+  palette "textures/rota3ctf1_terrain/rrota.jpg" 255,0,95,148
+  palette "textures/rota3ctf1_terrain/rota.jpg" 255,7,88,137
+  palette "textures/rota3ctf1_terrain/nebe.jpg" 255,93,56,163
+  palette "textures/rota3ctf1_terrain/list.tga" 82,75,110,40
+  palette "textures/rota3ctf1_terrain/iris.jpg" 255,10,10,10
+  palette "textures/rota3ctf1_terrain/grate_grey2.jpg" 255,19,19,19
+  palette "textures/rota3ctf1_terrain/e6strimlightb.jpg" 255,88,52,32
+  palette "textures/rota3ctf1_terrain/e6strimlight_blendb.jpg" 255,71,32,7
+  palette "textures/rota3ctf1_terrain/e6strimlight_blend.jpg" 255,26,43,81
+  palette "textures/rota3ctf1_terrain/e6strimlight.jpg" 255,53,64,82
+  palette "textures/rota3ctf1_terrain/e6boltstrip.jpg" 255,68,68,70
+  palette "textures/rota3ctf1_terrain/diry.tga" 167,57,59,60
+  palette "textures/rota3ctf1_terrain/d.jpg" 255,32,59,77
+  palette "textures/rota3ctf1_terrain/bld_rock2rock3.jpg" 255,65,69,101
+  palette "textures/rota3ctf1_terrain/bld_rock2moss1.jpg" 255,64,71,101
+  palette "textures/rota3ctf1_terrain/alpha_100.tga" 255,112,41,112
+  palette "textures/rota3ctf1_terrain/alpha_085.tga" 255,134,134,67
+  palette "textures/rota3ctf1_terrain/alpha_075.tga" 255,85,131,85
+  palette "textures/rota3ctf1_terrain/alpha_050.tga" 255,133,87,87
+  palette "textures/rota3ctf1_terrain/alpha_025.tga" 255,87,87,133
+  palette "textures/rota3ctf1_terrain/alpha_000.tga" 255,111,111,111
+  palette "textures/rota3ctf1_lights/u_trlight3_or.jpg" 255,78,59,47
+  palette "textures/rota3ctf1_lights/u_trlight3_blue_blend.jpg" 255,11,29,49
+  palette "textures/rota3ctf1_lights/u_trlight3_blue.jpg" 255,54,64,86
+  palette "textures/rota3ctf1_lights/u_trlight2_or_blend.jpg" 255,49,30,16
+  palette "textures/rota3ctf1_lights/u_thinline1_or_blend.jpg" 255,66,58,25
+  palette "textures/rota3ctf1_lights/u_thinline1_or.jpg" 255,114,100,81
+  palette "textures/rota3ctf1_lights/u_thinline1_blue_blend.jpg" 255,15,22,64
+  palette "textures/rota3ctf1_lights/u_thinline1_blue.jpg" 255,84,86,110
+  palette "textures/rota3ctf1_lights/u_py1_or_glow.jpg" 255,91,44,11
+  palette "textures/rota3ctf1_lights/u_py1_or_2.jpg" 255,97,57,34
+  palette "textures/rota3ctf1_lights/u_py1_or128.jpg" 255,55,52,50
+  palette "textures/rota3ctf1_lights/u_py1_or.jpg" 255,94,55,34
+  palette "textures/rota3ctf1_lights/u_py1_blue_glow.jpg" 255,11,71,90
+  palette "textures/rota3ctf1_lights/u_py1_blue.jpg" 255,38,99,119
+  palette "textures/rota3ctf1_lights/u_lamplong1_or_blend.jpg" 255,61,40,18
+  palette "textures/rota3ctf1_lights/u_lamplong1_or.jpg" 255,75,52,36
+  palette "textures/rota3ctf1_lights/u_lamplong1_blue_blend.jpg" 255,33,46,63
+  palette "textures/rota3ctf1_lights/u_lamplong1_blue.jpg" 255,41,60,85
+  palette "textures/rota3ctf1_lights/u_lamplong1_blend.jpg" 255,42,45,46
+  palette "textures/rota3ctf1_lights/u_lamplong1.jpg" 255,55,58,59
+  palette "textures/rota3ctf1_lights/u_lamp_blend.jpg" 255,11,14,18
+  palette "textures/rota3ctf1_lights/u_lamp7_blue_blend.jpg" 255,28,50,65
+  palette "textures/rota3ctf1_lights/u_lamp7_blue.jpg" 255,48,59,67
+  palette "textures/rota3ctf1_lights/u_lamp7_blend.jpg" 255,43,46,47
+  palette "textures/rota3ctf1_lights/u_lamp7.jpg" 255,55,57,58
+  palette "textures/rota3ctf1_lights/u_lamp5_or_blend.jpg" 255,101,66,28
+  palette "textures/rota3ctf1_lights/u_lamp5_or.jpg" 255,95,56,33
+  palette "textures/rota3ctf1_lights/u_lamp5_blue_blend.jpg" 255,42,82,103
+  palette "textures/rota3ctf1_lights/u_lamp5_blue.jpg" 255,48,68,93
+  palette "textures/rota3ctf1_lights/u_lamp4_or_blend_puvodni.jpg" 255,140,78,45
+  palette "textures/rota3ctf1_lights/u_lamp4_or_blend.jpg" 255,151,106,78
+  palette "textures/rota3ctf1_lights/u_lamp4_or.jpg" 255,97,61,28
+  palette "textures/rota3ctf1_lights/u_lamp4_blue_blend.jpg" 255,43,99,148
+  palette "textures/rota3ctf1_lights/u_lamp4_blue.jpg" 255,40,75,106
+  palette "textures/rota3ctf1_lights/u_lamp3_or_blend.jpg" 255,159,87,65
+  palette "textures/rota3ctf1_lights/u_lamp3_or.jpg" 255,105,69,42
+  palette "textures/rota3ctf1_lights/u_lamp3_blue_blend.jpg" 255,82,123,161
+  palette "textures/rota3ctf1_lights/u_lamp3_blue.jpg" 255,52,83,119
+  palette "textures/rota3ctf1_lights/u_lamp3_blend.jpg" 255,121,126,127
+  palette "textures/rota3ctf1_lights/u_lamp3.jpg" 255,75,78,79
+  palette "textures/proto/rustytotum.tga" 255,75,48,38
+  palette "textures/proto/rustytotum.jpg" 255,75,48,38
+  palette "textures/proto/rottblock.tga" 255,69,56,49
+  palette "textures/proto/rottblock.jpg" 255,69,56,49
+  palette "textures/proto/meaty_skull.tga" 255,45,28,23
+  palette "textures/proto/meaty_skull.jpg" 255,45,28,23
+  palette "textures/proto/dirty.tga" 255,76,58,44
+  palette "textures/proto/dirty.jpg" 255,76,58,44
+  palette "textures/organics/wire02a_f.tga" 255,77,55,40
+  palette "textures/organics/wire02a_f.jpg" 255,77,55,40
+  palette "textures/organics/trainpart12C.tga" 255,70,50,40
+  palette "textures/organics/trainpart12C.jpg" 255,70,50,40
+  palette "textures/organics/pjrock7d.tga" 255,66,58,43
+  palette "textures/organics/pjrock7d.jpg" 255,66,58,43
+  palette "textures/organics/grass3.tga" 255,71,55,50
+  palette "textures/organics/grass3.jpg" 255,71,55,50
+  palette "textures/organics/dirt2.tga" 255,51,32,24
   palette "textures/organics/dirt2.jpg" 255,51,32,24
+  palette "textures/organics/dirt.tga" 255,76,59,51
   palette "textures/organics/dirt.jpg" 255,76,59,51
-  palette "textures/sfx/x_conduit3.jpg" 255,14,10,10
-  palette "textures/sfx/x_conduit2.jpg" 255,22,15,14
-  palette "textures/sfx/x_conduit.jpg" 255,48,43,39
-  palette "textures/sfx/specular.jpg" 255,82,64,68
-  palette "textures/sfx/snow.jpg" 255,41,41,41
-  palette "textures/sfx/shadow.jpg" 255,147,147,147
-  palette "textures/sfx/proto_zzztblu2.jpg" 255,85,116,154
-  palette "textures/sfx/proto_zzzt.jpg" 255,175,47,22
-  palette "textures/sfx/portalfog.jpg" 255,184,184,184
-  palette "textures/sfx/portal_sfx_ring_electric.jpg" 255,13,8,14
-  palette "textures/sfx/portal_sfx_ring_blue1.tga" 149,235,229,251
-  palette "textures/sfx/portal_sfx_ring.jpg" 255,148,148,148
-  palette "textures/sfx/portal_sfx3.tga" 107,194,192,244
-  palette "textures/sfx/portal_sfx1.tga" 109,244,241,242
-  palette "textures/sfx/portal_sfx.jpg" 255,131,131,131
-  palette "textures/sfx/pentfloorq1metal7_99.jpg" 255,99,75,60
-  palette "textures/sfx/pentfloor_diamond2c.jpg" 255,89,67,59
-  palette "textures/sfx/pentdirt2_@256.jpg" 255,88,61,52
-  palette "textures/sfx/pentagramfloor_red_glow.jpg" 255,41,23,12
-  palette "textures/sfx/metalbridge06_bounce.jpg" 255,76,66,58
-  palette "textures/sfx/logo512.jpg" 255,5,1,1
-  palette "textures/sfx/launchpad_dot.jpg" 255,45,27,18
-  palette "textures/sfx/launchpad_diamond.jpg" 255,92,85,82
-  palette "textures/sfx/launchpad_arrow2.jpg" 255,0,0,0
-  palette "textures/sfx/launchpad_arrow.tga" 3,216,88,8
-  palette "textures/sfx/kenelectric.jpg" 255,30,16,8
-  palette "textures/sfx/jumppadsmall.jpg" 255,14,7,0
-  palette "textures/sfx/hologirl.jpg" 255,14,17,16
-  palette "textures/sfx/flameball.jpg" 255,17,5,4
-  palette "textures/sfx/flame8.jpg" 255,28,16,4
-  palette "textures/sfx/flame7.jpg" 255,26,16,4
-  palette "textures/sfx/flame6.jpg" 255,24,15,4
-  palette "textures/sfx/flame5.jpg" 255,24,16,4
-  palette "textures/sfx/flame4.jpg" 255,21,13,3
-  palette "textures/sfx/flame3.jpg" 255,23,14,4
-  palette "textures/sfx/flame2.jpg" 255,27,17,4
-  palette "textures/sfx/flame1.jpg" 255,31,19,5
-  palette "textures/sfx/firewalla.tga" 47,132,61,0
-  palette "textures/sfx/fireswirl2.jpg" 255,183,116,37
-  palette "textures/sfx/firegorre2.jpg" 255,111,55,6
-  palette "textures/sfx/firegorre.tga" 47,171,66,0
-  palette "textures/sfx/electricslime.jpg" 255,116,76,32
-  palette "textures/sfx/electricgrade3.jpg" 255,5,30,49
-  palette "textures/sfx/detail.jpg" 255,101,100,98
-  palette "textures/sfx/computerpurptileb.jpg" 255,80,62,55
-  palette "textures/sfx/computer_blocks17.jpg" 255,77,62,54
-  palette "textures/sfx/bouncepad1q1metal7_99.jpg" 255,83,73,61
-  palette "textures/sfx/bouncepad01block18b.jpg" 255,77,66,58
-  palette "textures/sfx/bouncepad01b_layer1.jpg" 255,9,5,3
-  palette "textures/sfx/bouncepad01_diamond2cTGA.jpg" 255,74,65,58
-  palette "textures/sfx/bolts.jpg" 255,17,8,3
-  palette "textures/sfx/beam_1.jpg" 255,11,9,9
-  palette "textures/sfx/beam.jpg" 255,24,21,19
+  palette "textures/organics/awall4j.tga" 255,92,80,62
+  palette "textures/organics/awall4j.jpg" 255,92,80,62
+  palette "textures/liquids/slime7c.tga" 255,10,86,22
+  palette "textures/liquids/slime7c.jpg" 255,10,86,22
+  palette "textures/liquids/slime7.tga" 255,11,88,23
+  palette "textures/liquids/slime7.jpg" 255,11,88,23
+  palette "textures/liquids/protolava2.tga" 255,171,53,3
+  palette "textures/liquids/protolava2.jpg" 255,171,53,3
+  palette "textures/liquids/protolava.tga" 186,120,31,10
+  palette "textures/liquids/proto_poolpass.tga" 255,22,15,9
+  palette "textures/liquids/proto_poolpass.jpg" 255,22,15,9
+  palette "textures/liquids/proto_grueldark2.tga" 255,64,11,9
   palette "textures/liquids/proto_grueldark2.jpg" 255,64,11,9
+  palette "textures/liquids/proto_grueldark.tga" 255,33,2,1
+  palette "textures/liquids/proto_grueldark.jpg" 255,33,2,1
+  palette "textures/liquids/proto_gruel3.tga" 255,80,43,28
   palette "textures/liquids/proto_gruel3.jpg" 255,80,43,28
+  palette "textures/liquids/proto_gruel2.tga" 0,0,0,0
+  palette "textures/liquids/pool3d_6c2.tga" 255,145,156,148
+  palette "textures/liquids/pool3d_6c2.jpg" 255,145,156,148
+  palette "textures/liquids/pool3d_6.tga" 255,33,33,33
+  palette "textures/liquids/pool3d_6.jpg" 255,33,33,33
+  palette "textures/liquids/pool3d_5e.tga" 255,58,53,52
+  palette "textures/liquids/pool3d_5e.jpg" 255,58,53,52
+  palette "textures/liquids/pool3d_5c2.tga" 255,167,166,178
+  palette "textures/liquids/pool3d_5c2.jpg" 255,167,166,178
+  palette "textures/liquids/pool3d_5.tga" 255,30,30,30
+  palette "textures/liquids/pool3d_5.jpg" 255,30,30,30
+  palette "textures/liquids/pool3d_4b2.tga" 255,4,10,7
+  palette "textures/liquids/pool3d_4b2.jpg" 255,4,10,7
+  palette "textures/liquids/pool3d_3e.tga" 255,51,46,59
+  palette "textures/liquids/pool3d_3e.jpg" 255,51,46,59
+  palette "textures/liquids/pool3d_3c2.tga" 255,198,190,196
+  palette "textures/liquids/pool3d_3c2.jpg" 255,198,190,196
+  palette "textures/liquids/pool3d_3.tga" 255,69,61,66
+  palette "textures/liquids/pool3d_3.jpg" 255,69,61,66
+  palette "textures/liquids/pool2.tga" 255,2,28,27
+  palette "textures/liquids/pool2.jpg" 255,2,28,27
+  palette "textures/liquids/lavahell.tga" 255,126,35,13
   palette "textures/liquids/lavahell.jpg" 255,126,35,13
+  palette "textures/liquids/lavafloor.tga" 255,171,120,94
+  palette "textures/liquids/lavafloor.jpg" 255,172,120,94
+  palette "textures/liquids/kc_fogcloud3.tga" 255,243,243,243
   palette "textures/liquids/kc_fogcloud3.jpg" 255,243,243,243
+  palette "textures/liquids/bubbles.tga" 255,101,101,100
+  palette "textures/liquids/bubbles.jpg" 255,101,101,100
+  palette "textures/gothic_light/skulllight01.tga" 255,65,56,51
+  palette "textures/gothic_light/skulllight01.jpg" 255,65,56,51
+  palette "textures/gothic_light/pentagram_light1_blend.tga" 255,105,86,13
   palette "textures/gothic_light/pentagram_light1_blend.jpg" 255,104,86,16
+  palette "textures/gothic_light/pentagram_light1.tga" 255,140,121,72
   palette "textures/gothic_light/pentagram_light1.jpg" 255,140,121,72
+  palette "textures/gothic_light/ironcrossltbkgrd.tga" 255,25,24,25
+  palette "textures/gothic_light/ironcrossltbkgrd.jpg" 255,25,24,25
+  palette "textures/gothic_light/ironcrosslt2.tga" 255,76,60,43
   palette "textures/gothic_light/ironcrosslt2.jpg" 255,76,60,43
+  palette "textures/gothic_light/ironcrosslt2.blend.tga" 255,46,34,21
   palette "textures/gothic_light/ironcrosslt2.blend.jpg" 255,46,34,21
+  palette "textures/gothic_light/gothic_light3.tga" 255,114,100,95
   palette "textures/gothic_light/gothic_light3.jpg" 255,114,100,95
+  palette "textures/gothic_light/gothic_light2_lrg.tga" 255,118,105,101
+  palette "textures/gothic_light/gothic_light2_lrg.jpg" 255,118,105,101
+  palette "textures/gothic_light/gothic_light2_blend.tga" 255,116,107,110
   palette "textures/gothic_light/gothic_light2_blend.jpg" 255,116,107,110
+  palette "textures/gothic_light/gothic_light2.tga" 255,118,106,101
+  palette "textures/gothic_light/gothic_light2.jpg" 255,118,106,101
+  palette "textures/gothic_light/border_ceil39.blend.tga" 255,7,6,4
+  palette "textures/gothic_light/border_ceil39.blend.jpg" 255,7,6,4
+  palette "textures/gothic_light/border7_ceil39b.tga" 255,61,60,54
+  palette "textures/gothic_light/border7_ceil39b.jpg" 255,61,60,54
+  palette "textures/gothic_light/border7_ceil39b.blend.tga" 255,5,4,3
+  palette "textures/gothic_light/border7_ceil39b.blend.jpg" 255,5,4,3
+  palette "textures/gothic_light/border7_ceil39.tga" 255,59,58,51
+  palette "textures/gothic_light/border7_ceil39.jpg" 255,59,58,51
+  palette "textures/gothic_wall/xpipecolumn_gray_shiny.tga" 226,30,28,26
+  palette "textures/gothic_wall/xpipecolumn_gray128.tga" 255,36,32,30
+  palette "textures/gothic_wall/xpipecolumn_gray128.jpg" 255,36,32,30
+  palette "textures/gothic_wall/xoct20c_shiney.tga" 63,85,75,64
+  palette "textures/gothic_wall/xiantourneywall_R1.tga" 255,73,60,55
   palette "textures/gothic_wall/xiantourneywall_R1.jpg" 255,73,60,55
+  palette "textures/gothic_wall/xiantourneywall_C1.tga" 255,84,50,41
   palette "textures/gothic_wall/xiantourneywall_C1.jpg" 255,84,50,41
+  palette "textures/gothic_wall/xiantourneycolumn_b8_128.tga" 255,47,35,29
+  palette "textures/gothic_wall/xiantourneycolumn_b8_128.jpg" 255,47,35,29
+  palette "textures/gothic_wall/xiantourneycolumn_b6.tga" 255,59,48,41
+  palette "textures/gothic_wall/xiantourneycolumn_b6.jpg" 255,59,48,41
+  palette "textures/gothic_wall/xiantourneycolumn_b4.tga" 255,54,42,35
   palette "textures/gothic_wall/xiantourneycolumn_b4.jpg" 255,54,42,35
+  palette "textures/gothic_wall/window_evil6a_glow.tga" 255,13,1,1
   palette "textures/gothic_wall/window_evil6a_glow.jpg" 255,12,1,1
+  palette "textures/gothic_wall/window_evil6a.tga" 255,84,59,60
   palette "textures/gothic_wall/window_evil6a.jpg" 255,84,59,60
+  palette "textures/gothic_wall/supportborder_blue_c.tga" 255,72,61,59
   palette "textures/gothic_wall/supportborder_blue_c.jpg" 255,72,61,59
+  palette "textures/gothic_wall/supportborder_blue_b.tga" 255,73,62,57
   palette "textures/gothic_wall/supportborder_blue_b.jpg" 255,73,62,57
+  palette "textures/gothic_wall/support2b.tga" 255,173,142,114
+  palette "textures/gothic_wall/support2b.jpg" 255,173,142,114
+  palette "textures/gothic_wall/streetbricks14.tga" 255,48,38,32
+  palette "textures/gothic_wall/streetbricks14.jpg" 255,48,38,32
+  palette "textures/gothic_wall/streetbricks11.tga" 255,71,68,72
   palette "textures/gothic_wall/streetbricks11.jpg" 255,71,68,72
+  palette "textures/gothic_wall/streetbricks10.tga" 255,69,55,55
   palette "textures/gothic_wall/streetbricks10.jpg" 255,69,55,55
+  palette "textures/gothic_wall/streetbricks.tga" 255,116,80,80
+  palette "textures/gothic_wall/streetbricks.jpg" 255,116,80,80
+  palette "textures/gothic_wall/slateroofc.tga" 255,51,54,54
   palette "textures/gothic_wall/slateroofc.jpg" 255,51,54,54
+  palette "textures/gothic_wall/skull4.tga" 255,73,60,56
   palette "textures/gothic_wall/skull4.jpg" 255,73,60,56
+  palette "textures/gothic_wall/skull2.tga" 255,103,93,89
+  palette "textures/gothic_wall/skull2.jpg" 255,103,93,89
+  palette "textures/gothic_wall/sidetower3d_front.tga" 255,47,36,34
+  palette "textures/gothic_wall/sidetower3d_front.jpg" 255,47,36,34
+  palette "textures/gothic_wall/sidetower3a_dm15fin.tga" 255,38,32,31
+  palette "textures/gothic_wall/sidetower3a_dm15fin.jpg" 255,38,32,31
+  palette "textures/gothic_wall/purptileb.tga" 255,94,67,62
   palette "textures/gothic_wall/purptileb.jpg" 255,94,67,62
+  palette "textures/gothic_wall/proto_brik.tga" 255,53,27,17
+  palette "textures/gothic_wall/proto_brik.jpg" 255,53,27,17
+  palette "textures/gothic_wall/pitted_rust3blood2.tga" 255,70,12,14
+  palette "textures/gothic_wall/pitted_rust3blood2.jpg" 255,70,12,14
+  palette "textures/gothic_wall/oct20clava.tga" 255,62,52,44
+  palette "textures/gothic_wall/oct20clava.jpg" 255,62,52,44
+  palette "textures/gothic_wall/oct20c.tga" 255,67,58,49
+  palette "textures/gothic_wall/oct20c.jpg" 255,67,58,49
+  palette "textures/gothic_wall/metaltech16gold.tga" 255,97,46,15
+  palette "textures/gothic_wall/metaltech16gold.jpg" 255,96,46,16
+  palette "textures/gothic_wall/metalciclesrust_pipe.tga" 255,68,42,41
+  palette "textures/gothic_wall/metalciclesrust_pipe.jpg" 255,68,42,41
+  palette "textures/gothic_wall/metalciclesrust.tga" 255,72,42,40
+  palette "textures/gothic_wall/metalciclesrust.jpg" 255,72,42,40
+  palette "textures/gothic_wall/metalciclesdark_supportb.tga" 255,40,34,32
+  palette "textures/gothic_wall/metalciclesdark_supportb.jpg" 255,40,34,32
+  palette "textures/gothic_wall/metalciclesdark_support.tga" 255,41,34,32
+  palette "textures/gothic_wall/metalciclesdark_support.jpg" 255,41,34,32
+  palette "textures/gothic_wall/metalciclesdark_pipe.tga" 255,34,32,32
+  palette "textures/gothic_wall/metalciclesdark_pipe.jpg" 255,34,32,32
+  palette "textures/gothic_wall/metalciclesdark.tga" 255,32,31,31
+  palette "textures/gothic_wall/metalciclesdark.jpg" 255,32,31,31
+  palette "textures/gothic_wall/jumptowerwork3g.tga" 255,54,40,37
+  palette "textures/gothic_wall/jumptowerwork3g.jpg" 255,54,40,37
+  palette "textures/gothic_wall/jumptower_top.tga" 0,0,0,0
+  palette "textures/gothic_wall/jumptower_bottom.tga" 0,0,0,0
+  palette "textures/gothic_wall/iron1_brickrust.tga" 255,78,57,54
+  palette "textures/gothic_wall/iron1_brickrust.jpg" 255,78,57,54
+  palette "textures/gothic_wall/iron01_p5.tga" 255,49,36,32
+  palette "textures/gothic_wall/iron01_p5.jpg" 255,49,36,32
+  palette "textures/gothic_wall/iron01_p2.tga" 255,51,38,34
   palette "textures/gothic_wall/iron01_p2.jpg" 255,51,38,34
+  palette "textures/gothic_wall/iron01_p.tga" 255,60,46,42
+  palette "textures/gothic_wall/iron01_p.jpg" 255,60,46,42
+  palette "textures/gothic_wall/iron01_ntech4.tga" 255,55,43,34
+  palette "textures/gothic_wall/iron01_ntech4.jpg" 255,55,43,34
+  palette "textures/gothic_wall/iron01_ntech3.tga" 255,56,44,37
   palette "textures/gothic_wall/iron01_ntech3.jpg" 255,56,44,37
   palette "textures/gothic_wall/iron01_ndark.tga" 10,70,59,50
   palette "textures/gothic_wall/iron01_m.tga" 12,79,67,56
+  palette "textures/gothic_wall/iron01_g.tga" 255,64,46,42
+  palette "textures/gothic_wall/iron01_g.jpg" 255,64,46,42
+  palette "textures/gothic_wall/iron01_e.tga" 255,70,50,47
   palette "textures/gothic_wall/iron01_e.jpg" 255,70,50,47
+  palette "textures/gothic_wall/iron01_c5.tga" 255,65,46,45
+  palette "textures/gothic_wall/iron01_c5.jpg" 255,65,46,45
+  palette "textures/gothic_wall/iron01_c3_rust.tga" 255,66,49,46
+  palette "textures/gothic_wall/iron01_c3_rust.jpg" 255,66,49,46
+  palette "textures/gothic_wall/iron01_c3.tga" 255,59,42,43
+  palette "textures/gothic_wall/iron01_c3.jpg" 255,59,42,43
+  palette "textures/gothic_wall/iron01_c2.tga" 255,69,54,51
+  palette "textures/gothic_wall/iron01_c2.jpg" 255,69,54,51
+  palette "textures/gothic_wall/iron01_c.tga" 255,71,55,52
+  palette "textures/gothic_wall/iron01_c.jpg" 255,71,55,52
+  palette "textures/gothic_wall/iron01_b.tga" 255,72,54,50
   palette "textures/gothic_wall/iron01_b.jpg" 255,72,54,50
+  palette "textures/gothic_wall/goldbrick.tga" 255,110,56,12
+  palette "textures/gothic_wall/goldbrick.jpg" 255,110,56,12
+  palette "textures/gothic_wall/dm5_archkfin.tga" 255,87,65,64
+  palette "textures/gothic_wall/dm5_archkfin.jpg" 255,87,65,64
+  palette "textures/gothic_wall/dm5_archifin.tga" 255,62,40,39
+  palette "textures/gothic_wall/dm5_archifin.jpg" 255,62,40,39
+  palette "textures/gothic_wall/crack5c.tga" 255,90,73,84
   palette "textures/gothic_wall/crack5c.jpg" 255,90,73,84
-  palette "textures/gothic_trim/xsupportborderside_shiney.tga" 60,68,63,64
-  palette "textures/gothic_trim/xian_tourney_trim.jpg" 255,71,56,46
-  palette "textures/gothic_trim/x_noblightfx.jpg" 255,7,6,5
-  palette "textures/gothic_trim/x_noblight.tga" 241,72,53,47
-  palette "textures/gothic_trim/window_a_bottom2.jpg" 255,93,81,65
-  palette "textures/gothic_trim/window_a_bottom1.jpg" 255,99,85,67
-  palette "textures/gothic_trim/window_a_base.jpg" 255,115,101,82
-  palette "textures/gothic_trim/window_a2.jpg" 255,109,94,72
-  palette "textures/gothic_trim/window_a1.jpg" 255,93,76,52
-  palette "textures/gothic_trim/tower_top.jpg" 255,136,70,6
-  palette "textures/gothic_trim/tower_side2b.jpg" 255,110,90,67
-  palette "textures/gothic_trim/tower_side2.jpg" 255,138,89,60
-  palette "textures/gothic_trim/tower_front.jpg" 255,158,89,9
-  palette "textures/gothic_trim/supportborderside.jpg" 255,61,57,58
-  palette "textures/gothic_trim/supportborder.jpg" 255,89,57,50
-  palette "textures/gothic_trim/skullsvertgray02b.jpg" 255,66,63,62
-  palette "textures/gothic_trim/q1metal7.jpg" 255,60,47,45
-  palette "textures/gothic_trim/pitted_rust3.jpg" 255,67,50,46
-  palette "textures/gothic_trim/pitted_rust2.jpg" 255,61,39,29
-  palette "textures/gothic_trim/pitted_rust.jpg" 255,62,47,38
-  palette "textures/gothic_trim/metalsupsolid.jpg" 255,85,59,62
-  palette "textures/gothic_trim/metalsupport4b.jpg" 255,64,50,50
-  palette "textures/gothic_trim/metaldemonkillblock.jpg" 255,75,66,62
-  palette "textures/gothic_trim/metalbase8a_brick.jpg" 255,48,34,30
-  palette "textures/gothic_trim/km_arena1tower_short.tga" 0,0,0,0
-  palette "textures/gothic_trim/km_arena1tower4_a.jpg" 255,91,62,65
-  palette "textures/gothic_trim/km_arena1tower4.jpg" 255,91,62,65
-  palette "textures/gothic_trim/columnsupportops.jpg" 255,119,87,70
-  palette "textures/gothic_trim/columnsupportbottoms.jpg" 255,93,73,62
-  palette "textures/gothic_trim/column2c_test.jpg" 255,58,60,72
-  palette "textures/gothic_trim/border12.jpg" 255,102,75,62
-  palette "textures/gothic_trim/baseboard10_d.jpg" 255,69,46,39
-  palette "textures/gothic_trim/baseboard09_o3.jpg" 255,81,66,57
-  palette "textures/gothic_trim/baseboard09_l2.jpg" 255,40,30,23
-  palette "textures/gothic_trim/baseboard09_l.jpg" 255,52,39,33
-  palette "textures/gothic_trim/baseboard09_g3.jpg" 255,52,39,33
-  palette "textures/gothic_trim/baseboard09_g.jpg" 255,62,47,40
-  palette "textures/gothic_trim/baseboard09_e2.jpg" 255,61,45,36
-  palette "textures/gothic_trim/baseboard09_e.jpg" 255,61,45,36
-  palette "textures/gothic_trim/baseboard09_c3.jpg" 255,61,49,40
-  palette "textures/gothic_trim/baseboard09.jpg" 255,54,40,31
-  palette "textures/gothic_trim/baseboard08_d.jpg" 255,54,39,32
-  palette "textures/gothic_trim/baseboard07.jpg" 255,74,59,50
-  palette "textures/gothic_trim/baseboard04.jpg" 255,68,55,47
-  palette "textures/gothic_button/timbuttonside.jpg" 255,147,132,133
-  palette "textures/gothic_button/timbutton2.jpg" 255,24,37,4
-  palette "textures/gothic_button/timbutton.jpg" 255,124,112,108
-  palette "textures/gothic_ceiling/woodceiling1b_dark.jpg" 255,76,56,47
-  palette "textures/gothic_ceiling/woodceiling1a.jpg" 255,79,57,47
-  palette "textures/gothic_ceiling/stucco7top.jpg" 255,124,112,98
-  palette "textures/gothic_ceiling/ceilingtechplain.jpg" 255,74,56,48
-  palette "textures/gothic_ceiling/ceilingtech03_afinal.jpg" 255,89,70,62
-  palette "textures/gothic_ceiling/ceilingtech02_d.jpg" 255,87,68,54
-  palette "textures/gothic_ceiling/ceilingtech02_c2.jpg" 255,84,64,52
-  palette "textures/gothic_ceiling/ceilingtech02_b.jpg" 255,53,42,34
-  palette "textures/gothic_ceiling/ceilingtech02_a.jpg" 255,50,40,32
-  palette "textures/gothic_ceiling/ceilingtech01_f.jpg" 255,123,80,54
+  palette "textures/gothic_wall/church_brick3b.tga" 255,66,48,44
+  palette "textures/gothic_wall/church_brick3b.jpg" 255,66,48,44
+  palette "textures/gothic_wall/church_brick3.tga" 255,63,42,36
+  palette "textures/gothic_wall/church_brick3.jpg" 255,63,42,36
+  palette "textures/gothic_wall/brickwindow_top.tga" 255,69,48,44
+  palette "textures/gothic_wall/brickwindow_top.jpg" 255,69,48,44
+  palette "textures/gothic_wall/brickwindow_mid.tga" 255,71,50,45
+  palette "textures/gothic_wall/brickwindow_mid.jpg" 255,71,50,45
+  palette "textures/gothic_wall/brickwindow_bot.tga" 255,67,50,46
+  palette "textures/gothic_wall/brickwindow_bot.jpg" 255,67,50,46
+  palette "textures/gothic_wall/backtower4b.tga" 255,41,36,35
+  palette "textures/gothic_wall/backtower4b.jpg" 255,41,36,35
+  palette "textures/gothic_wall/backtower4.tga" 255,42,38,37
+  palette "textures/gothic_wall/backtower4.jpg" 255,42,38,37
+  palette "textures/gothic_wall/backtower3b.tga" 255,53,44,42
+  palette "textures/gothic_wall/backtower3b.jpg" 255,53,44,42
+  palette "textures/gothic_wall/backtower3.tga" 255,56,47,45
+  palette "textures/gothic_wall/backtower3.jpg" 255,56,47,45
+  palette "textures/gothic_wall/backtower2b.tga" 255,51,43,41
+  palette "textures/gothic_wall/backtower2b.jpg" 255,51,43,41
+  palette "textures/gothic_wall/backtower2.tga" 255,54,46,43
+  palette "textures/gothic_wall/backtower2.jpg" 255,54,46,43
+  palette "textures/gothic_wall/backtower1b.tga" 255,38,35,34
+  palette "textures/gothic_wall/backtower1b.jpg" 255,38,35,34
+  palette "textures/gothic_wall/backtower1.tga" 255,39,36,35
+  palette "textures/gothic_wall/backtower1.jpg" 255,39,36,35
+  palette "textures/gothic_door/xiandm3talldoorright.tga" 255,51,41,42
+  palette "textures/gothic_door/xiandm3talldoorright.jpg" 255,51,41,42
+  palette "textures/gothic_door/xiandm3talldoorleft.tga" 255,49,41,46
+  palette "textures/gothic_door/xiandm3talldoorleft.jpg" 255,49,41,46
+  palette "textures/gothic_door/xiandm3talldoorinside.tga" 255,115,95,108
+  palette "textures/gothic_door/xiandm3talldoorinside.jpg" 255,115,95,108
+  palette "textures/gothic_door/xiandm3talldoor.tga" 255,26,22,22
+  palette "textures/gothic_door/xiandm3talldoor.jpg" 255,26,22,22
+  palette "textures/gothic_door/xian_tourneyarch_tall2b.tga" 255,40,32,30
   palette "textures/gothic_door/xian_tourneyarch_tall2b.jpg" 255,40,32,30
+  palette "textures/gothic_door/xian_tourneyarch_tall1c.tga" 255,81,56,46
   palette "textures/gothic_door/xian_tourneyarch_tall1c.jpg" 255,81,56,47
+  palette "textures/gothic_door/xian_tourneyarch_med1b.tga" 255,38,29,27
   palette "textures/gothic_door/xian_tourneyarch_med1b.jpg" 255,38,29,27
+  palette "textures/gothic_door/xian_tourneyarch_inside2.tga" 255,83,51,37
   palette "textures/gothic_door/xian_tourneyarch_inside2.jpg" 255,83,51,37
+  palette "textures/gothic_door/xian_tourneyarch_bottom2.tga" 255,55,30,24
   palette "textures/gothic_door/xian_tourneyarch_bottom2.jpg" 255,55,30,24
+  palette "textures/gothic_door/xian_dm3arch.tga" 255,21,18,17
+  palette "textures/gothic_door/xian_dm3arch.jpg" 255,21,18,17
+  palette "textures/gothic_door/tim_dmarch03.tga" 0,0,0,0
+  palette "textures/gothic_door/tim_dmarch02.tga" 255,20,17,16
+  palette "textures/gothic_door/tim_dmarch02.jpg" 255,20,17,16
+  palette "textures/gothic_door/tim_dmarch01.tga" 255,20,16,15
+  palette "textures/gothic_door/tim_dmarch01.jpg" 255,20,16,15
+  palette "textures/gothic_door/smalldoor_xiandm3a.tga" 255,63,52,47
+  palette "textures/gothic_door/smalldoor_xiandm3a.jpg" 255,63,52,47
   palette "textures/gothic_door/skullarch_c.tga" 0,0,0,0
   palette "textures/gothic_door/skullarch_b.tga" 248,58,46,41
   palette "textures/gothic_door/skullarch_a.tga" 0,0,0,0
@@ -211,188 +583,1873 @@ palettes/default
   palette "textures/gothic_door/skull_door_c.tga" 0,0,0,0
   palette "textures/gothic_door/skull_door_b.tga" 0,0,0,0
   palette "textures/gothic_door/skull_door_a.tga" 0,0,0,0
+  palette "textures/gothic_door/metal_door_d.tga" 0,0,0,0
+  palette "textures/gothic_door/metal_door_c.tga" 0,0,0,0
+  palette "textures/gothic_door/metal_door_b.tga" 0,0,0,0
+  palette "textures/gothic_door/metal_door_a.tga" 0,0,0,0
+  palette "textures/gothic_door/km_arena1columna2R.tga" 255,90,72,65
   palette "textures/gothic_door/km_arena1columna2R.jpg" 255,90,72,65
+  palette "textures/gothic_door/km_arena1columna2L.tga" 255,73,54,46
+  palette "textures/gothic_door/km_arena1columna2L.jpg" 255,73,54,45
+  palette "textures/gothic_door/km_arena1archsmallfinala.tga" 255,41,29,25
+  palette "textures/gothic_door/km_arena1archsmallfinala.jpg" 255,41,29,25
+  palette "textures/gothic_door/km_arena1archfinald_top.tga" 255,53,42,38
+  palette "textures/gothic_door/km_arena1archfinald_top.jpg" 255,53,42,38
+  palette "textures/gothic_door/km_arena1archfinald_mid.tga" 255,60,47,42
   palette "textures/gothic_door/km_arena1archfinald_mid.jpg" 255,60,47,42
+  palette "textures/gothic_door/km_arena1archfinald_bot.tga" 255,58,43,36
   palette "textures/gothic_door/km_arena1archfinald_bot.jpg" 255,58,43,36
+  palette "textures/gothic_door/km_arena1archfinalc_top.tga" 255,53,43,39
   palette "textures/gothic_door/km_arena1archfinalc_top.jpg" 255,53,43,39
+  palette "textures/gothic_door/km_arena1archfinalc_mid.tga" 255,58,46,42
+  palette "textures/gothic_door/km_arena1archfinalc_mid.jpg" 255,58,46,42
+  palette "textures/gothic_door/km_arena1archfinalc_bot.tga" 255,28,14,6
+  palette "textures/gothic_door/km_arena1archfinalc_bot.jpg" 255,28,14,6
+  palette "textures/gothic_door/km_arena1archfinalc.tga" 255,89,67,64
+  palette "textures/gothic_door/km_arena1archfinalc.jpg" 255,89,67,64
+  palette "textures/gothic_door/door02_k2b.tga" 255,84,64,54
+  palette "textures/gothic_door/door02_k2b.jpg" 255,84,64,54
+  palette "textures/gothic_door/door02_j4.tga" 255,105,65,46
+  palette "textures/gothic_door/door02_j4.jpg" 255,105,65,46
+  palette "textures/gothic_door/door02_j.tga" 255,105,64,43
+  palette "textures/gothic_door/door02_j.jpg" 255,105,64,43
+  palette "textures/gothic_door/door02_i_ornate5_fin.tga" 54,101,85,78
+  palette "textures/gothic_door/door02_eblue2.tga" 58,105,98,101
+  palette "textures/gothic_door/door02_bred2.tga" 39,139,99,93
+  palette "textures/gothic_door/archxiandm1dblack.tga" 255,61,56,54
+  palette "textures/gothic_door/archxiandm1dblack.jpg" 255,61,56,54
+  palette "textures/gothic_door/archxiandm1b.tga" 255,77,65,62
+  palette "textures/gothic_door/archxiandm1b.jpg" 255,77,65,62
+  palette "textures/gothic_door/archpart9.tga" 255,80,58,41
   palette "textures/gothic_door/archpart9.jpg" 255,80,58,41
+  palette "textures/gothic_door/archpart8.tga" 255,66,52,45
+  palette "textures/gothic_door/archpart8.jpg" 255,66,52,45
+  palette "textures/gothic_door/archpart7.tga" 255,77,65,60
   palette "textures/gothic_door/archpart7.jpg" 255,77,65,60
+  palette "textures/gothic_door/archpart6.tga" 255,87,60,52
   palette "textures/gothic_door/archpart6.jpg" 255,87,60,52
+  palette "textures/gothic_door/archpart2.tga" 255,75,56,46
   palette "textures/gothic_door/archpart2.jpg" 255,75,56,46
+  palette "textures/gothic_door/archpart10.tga" 255,92,71,60
   palette "textures/gothic_door/archpart10.jpg" 255,92,71,60
+  palette "textures/gothic_door/archpart1.tga" 255,81,62,51
   palette "textures/gothic_door/archpart1.jpg" 255,81,62,51
+  palette "textures/gothic_door/arch_tall2b.tga" 255,73,56,52
+  palette "textures/gothic_door/arch_tall2b.jpg" 255,73,56,52
+  palette "textures/gothic_door/arch_tall2a.tga" 255,73,57,53
+  palette "textures/gothic_door/arch_tall2a.jpg" 255,73,57,53
+  palette "textures/gothic_floor/xstepborder9.tga" 255,57,57,51
   palette "textures/gothic_floor/xstepborder9.jpg" 255,57,57,51
+  palette "textures/gothic_floor/xstepborder8.tga" 255,57,56,51
   palette "textures/gothic_floor/xstepborder8.jpg" 255,57,56,51
+  palette "textures/gothic_floor/xstepborder7.tga" 255,58,57,51
   palette "textures/gothic_floor/xstepborder7.jpg" 255,58,57,51
+  palette "textures/gothic_floor/xstepborder5.tga" 255,57,64,62
+  palette "textures/gothic_floor/xstepborder5.jpg" 255,57,64,62
+  palette "textures/gothic_floor/xstepborder3brn.tga" 255,80,53,34
   palette "textures/gothic_floor/xstepborder3brn.jpg" 255,80,53,34
+  palette "textures/gothic_floor/xstepborder3_alpha.tga" 50,80,78,70
+  palette "textures/gothic_floor/xstepborder3.tga" 255,58,57,52
   palette "textures/gothic_floor/xstepborder3.jpg" 255,58,57,52
+  palette "textures/gothic_floor/xstepborder13.tga" 255,57,60,56
   palette "textures/gothic_floor/xstepborder13.jpg" 255,57,60,56
+  palette "textures/gothic_floor/xstepborder12.tga" 255,57,60,57
   palette "textures/gothic_floor/xstepborder12.jpg" 255,57,60,57
+  palette "textures/gothic_floor/xstepborder10.tga" 255,58,57,52
   palette "textures/gothic_floor/xstepborder10.jpg" 255,58,57,52
+  palette "textures/gothic_floor/xstairtop8.tga" 255,57,59,56
   palette "textures/gothic_floor/xstairtop8.jpg" 255,57,59,56
+  palette "textures/gothic_floor/xstairtop7.tga" 255,57,59,56
   palette "textures/gothic_floor/xstairtop7.jpg" 255,57,59,56
+  palette "textures/gothic_floor/xstairtop6.tga" 255,73,70,70
+  palette "textures/gothic_floor/xstairtop6.jpg" 255,73,70,70
+  palette "textures/gothic_floor/xstairtop5.tga" 255,90,88,78
+  palette "textures/gothic_floor/xstairtop5.jpg" 255,90,88,78
+  palette "textures/gothic_floor/xstairtop4bbrn.tga" 255,82,53,39
   palette "textures/gothic_floor/xstairtop4bbrn.jpg" 255,82,53,39
+  palette "textures/gothic_floor/xstairtop4.tga" 255,88,85,76
   palette "textures/gothic_floor/xstairtop4.jpg" 255,88,85,76
+  palette "textures/gothic_floor/xq1metalbig_ow.tga" 246,77,63,54
+  palette "textures/gothic_floor/xq1metalbig.tga" 255,85,84,76
+  palette "textures/gothic_floor/xq1metalbig.jpg" 255,85,84,76
+  palette "textures/gothic_floor/q1metal7_99stair3.tga" 255,99,86,66
   palette "textures/gothic_floor/q1metal7_99stair3.jpg" 255,99,86,66
+  palette "textures/gothic_floor/q1metal7_99stair2.tga" 255,103,93,78
   palette "textures/gothic_floor/q1metal7_99stair2.jpg" 255,103,93,78
+  palette "textures/gothic_floor/q1metal7_99stair.tga" 255,105,91,77
   palette "textures/gothic_floor/q1metal7_99stair.jpg" 255,105,91,77
+  palette "textures/gothic_floor/q1metal7_99spot.tga" 146,99,86,59
+  palette "textures/gothic_floor/q1metal7_99_broke.tga" 255,102,94,64
   palette "textures/gothic_floor/q1metal7_99_broke.jpg" 255,102,94,64
+  palette "textures/gothic_floor/q1metal7_99.tga" 255,106,101,69
   palette "textures/gothic_floor/q1metal7_99.jpg" 255,106,101,69
+  palette "textures/gothic_floor/q1metal7_98d_256x256.tga" 255,85,84,76
+  palette "textures/gothic_floor/q1metal7_98d_256x256.jpg" 255,85,84,76
+  palette "textures/gothic_floor/q1metal7_98.jpg" 255,108,106,93
+  palette "textures/gothic_floor/q1metal7_97.tga" 255,102,88,88
+  palette "textures/gothic_floor/q1metal7_97.jpg" 255,102,88,88
+  palette "textures/gothic_floor/pj_e3_center2_r.tga" 255,61,49,41
+  palette "textures/gothic_floor/pj_e3_center2_r.jpg" 255,61,49,41
+  palette "textures/gothic_floor/pj_e3_center2_b.tga" 255,59,57,44
+  palette "textures/gothic_floor/pj_e3_center2_b.jpg" 255,59,57,44
+  palette "textures/gothic_floor/pj_e3_center2.tga" 255,68,57,37
+  palette "textures/gothic_floor/pj_e3_center2.jpg" 255,68,57,38
+  palette "textures/gothic_floor/pent_metalbridge06.tga" 255,91,67,58
+  palette "textures/gothic_floor/pent_metalbridge06.jpg" 255,91,67,58
+  palette "textures/gothic_floor/pent_metalbridge02.tga" 255,98,72,62
+  palette "textures/gothic_floor/pent_metalbridge02.jpg" 255,98,72,62
+  palette "textures/gothic_floor/pent_glow.tga" 255,24,16,8
+  palette "textures/gothic_floor/pent_glow.jpg" 255,24,16,9
+  palette "textures/gothic_floor/metalbridge06brokeb.tga" 247,68,63,62
+  palette "textures/gothic_floor/metalbridge06broke.tga" 255,67,63,61
   palette "textures/gothic_floor/metalbridge06broke.jpg" 255,67,63,61
+  palette "textures/gothic_floor/metalbridge06bbroke.tga" 255,85,80,83
+  palette "textures/gothic_floor/metalbridge06bbroke.jpg" 255,85,80,83
+  palette "textures/gothic_floor/metalbridge06b_blood.tga" 255,98,39,40
+  palette "textures/gothic_floor/metalbridge06b_blood.jpg" 255,98,39,40
+  palette "textures/gothic_floor/metalbridge06b.tga" 255,87,80,84
   palette "textures/gothic_floor/metalbridge06b.jpg" 255,87,80,84
+  palette "textures/gothic_floor/metalbridge06_pent.tga" 255,90,62,53
+  palette "textures/gothic_floor/metalbridge06_pent.jpg" 255,90,62,53
+  palette "textures/gothic_floor/metalbridge06.tga" 255,66,61,59
   palette "textures/gothic_floor/metalbridge06.jpg" 255,66,61,59
+  palette "textures/gothic_floor/metalbridge02b.tga" 255,88,85,91
+  palette "textures/gothic_floor/metalbridge02b.jpg" 255,88,85,91
+  palette "textures/gothic_floor/metalbridge02.tga" 255,100,83,76
+  palette "textures/gothic_floor/metalbridge02.jpg" 255,100,84,76
   palette "textures/gothic_floor/largerblock3b_ow.tga" 251,83,56,38
+  palette "textures/gothic_floor/largerblock3b4.tga" 255,74,47,32
   palette "textures/gothic_floor/largerblock3b4.jpg" 255,74,47,32
+  palette "textures/gothic_floor/largerblock3b3x128.tga" 255,78,56,43
+  palette "textures/gothic_floor/largerblock3b3x128.jpg" 255,78,56,43
+  palette "textures/gothic_floor/largerblock3b3dim.tga" 255,54,44,39
+  palette "textures/gothic_floor/largerblock3b3dim.jpg" 255,54,44,39
+  palette "textures/gothic_floor/largerblock3b3.tga" 255,76,52,37
   palette "textures/gothic_floor/largerblock3b3.jpg" 255,76,52,37
+  palette "textures/gothic_floor/largerblock3b2.tga" 255,89,59,42
+  palette "textures/gothic_floor/largerblock3b2.jpg" 255,89,59,42
+  palette "textures/gothic_floor/largerblock3b.tga" 255,89,59,40
   palette "textures/gothic_floor/largerblock3b.jpg" 255,89,59,40
+  palette "textures/gothic_floor/largeblockfloor4broke.tga" 255,55,62,61
   palette "textures/gothic_floor/largeblockfloor4broke.jpg" 255,55,62,61
+  palette "textures/gothic_floor/largeblockfloor4.tga" 255,57,65,64
   palette "textures/gothic_floor/largeblockfloor4.jpg" 255,57,65,64
+  palette "textures/gothic_floor/largeblockfloor3.tga" 255,57,44,34
   palette "textures/gothic_floor/largeblockfloor3.jpg" 255,57,44,34
+  palette "textures/gothic_floor/largeblock3b3broke.tga" 255,71,49,38
+  palette "textures/gothic_floor/largeblock3b3broke.jpg" 255,71,49,38
+  palette "textures/gothic_floor/goopq1metal7_98e.tga" 255,101,93,78
   palette "textures/gothic_floor/goopq1metal7_98e.jpg" 255,101,93,78
+  palette "textures/gothic_floor/goopq1metal7_98d.tga" 255,96,92,82
+  palette "textures/gothic_floor/goopq1metal7_98d.jpg" 255,96,92,82
   palette "textures/gothic_floor/center2trn.tga" 232,64,51,43
+  palette "textures/gothic_floor/blocks17floor3.tga" 255,104,55,44
   palette "textures/gothic_floor/blocks17floor3.jpg" 255,104,55,44
+  palette "textures/gothic_floor/blocks17floor2.tga" 255,92,57,49
   palette "textures/gothic_floor/blocks17floor2.jpg" 255,92,57,49
+  palette "textures/gothic_floor/blocks17floor.tga" 255,90,74,71
+  palette "textures/gothic_floor/blocks17floor.jpg" 255,90,74,71
+  palette "textures/gothic_ceiling/xstucco7top.tga" 255,63,52,40
+  palette "textures/gothic_ceiling/xstucco7top.jpg" 255,63,52,40
+  palette "textures/gothic_ceiling/woodceiling1b_dark.tga" 255,76,56,47
+  palette "textures/gothic_ceiling/woodceiling1b_dark.jpg" 255,76,56,47
+  palette "textures/gothic_ceiling/woodceiling1a.tga" 255,79,57,47
+  palette "textures/gothic_ceiling/woodceiling1a.jpg" 255,79,57,47
+  palette "textures/gothic_ceiling/stucco7top.tga" 255,124,112,98
+  palette "textures/gothic_ceiling/stucco7top.jpg" 255,124,112,98
+  palette "textures/gothic_ceiling/ceilingtechplain.tga" 255,74,56,48
+  palette "textures/gothic_ceiling/ceilingtechplain.jpg" 255,74,56,48
+  palette "textures/gothic_ceiling/ceilingtech_big.tga" 255,83,64,52
+  palette "textures/gothic_ceiling/ceilingtech_big.jpg" 255,83,64,52
+  palette "textures/gothic_ceiling/ceilingtech03_afinal.tga" 255,89,70,62
+  palette "textures/gothic_ceiling/ceilingtech03_afinal.jpg" 255,89,70,62
+  palette "textures/gothic_ceiling/ceilingtech02_d.tga" 255,87,68,54
+  palette "textures/gothic_ceiling/ceilingtech02_d.jpg" 255,87,68,54
+  palette "textures/gothic_ceiling/ceilingtech02_c2.tga" 255,84,64,52
+  palette "textures/gothic_ceiling/ceilingtech02_c2.jpg" 255,84,64,52
+  palette "textures/gothic_ceiling/ceilingtech02_b.tga" 255,53,42,34
+  palette "textures/gothic_ceiling/ceilingtech02_b.jpg" 255,53,42,34
+  palette "textures/gothic_ceiling/ceilingtech02_a.tga" 255,50,40,32
+  palette "textures/gothic_ceiling/ceilingtech02_a.jpg" 255,50,40,32
+  palette "textures/gothic_ceiling/ceilingtech01_f.tga" 255,123,80,54
+  palette "textures/gothic_ceiling/ceilingtech01_f.jpg" 255,123,80,54
+  palette "textures/gothic_cath/xiandm9doore2_invert.tga" 255,81,65,62
+  palette "textures/gothic_cath/xiandm9doore2_invert.jpg" 255,81,65,62
+  palette "textures/gothic_cath/xiandm9doore2.tga" 255,81,73,70
+  palette "textures/gothic_cath/xiandm9doore2.jpg" 255,81,73,70
+  palette "textures/gothic_cath/xiandm9doorc.tga" 255,142,137,135
+  palette "textures/gothic_cath/xiandm9doorc.jpg" 255,142,137,135
+  palette "textures/gothic_cath/smalldoor_xiandm9i.tga" 255,70,60,56
+  palette "textures/gothic_cath/smalldoor_xiandm9i.jpg" 255,70,60,56
+  palette "textures/gothic_cath/smalldoor_xiandm9f.tga" 255,46,41,39
+  palette "textures/gothic_cath/smalldoor_xiandm9f.jpg" 255,46,41,39
+  palette "textures/gothic_cath/smalldoor_xiandm9a.tga" 255,70,59,55
+  palette "textures/gothic_cath/smalldoor_xiandm9a.jpg" 255,70,59,55
+  palette "textures/gothic_cath/graycathflesh5R.tga" 255,86,73,72
+  palette "textures/gothic_cath/graycathflesh5R.jpg" 255,86,73,72
+  palette "textures/gothic_cath/graycathflesh5L.tga" 255,85,74,75
+  palette "textures/gothic_cath/graycathflesh5L.jpg" 255,85,74,75
+  palette "textures/gothic_cath/graycathflesh4R.tga" 255,89,75,75
+  palette "textures/gothic_cath/graycathflesh4R.jpg" 255,89,75,75
+  palette "textures/gothic_cath/graycathflesh4L.tga" 255,89,78,79
+  palette "textures/gothic_cath/graycathflesh4L.jpg" 255,89,78,79
+  palette "textures/gothic_cath/graycathflesh3R.tga" 255,107,92,97
+  palette "textures/gothic_cath/graycathflesh3R.jpg" 255,107,92,97
+  palette "textures/gothic_cath/graycathflesh3L.tga" 255,104,88,94
+  palette "textures/gothic_cath/graycathflesh3L.jpg" 255,104,88,94
+  palette "textures/gothic_cath/graycathflesh2R.tga" 255,111,89,91
+  palette "textures/gothic_cath/graycathflesh2R.jpg" 255,111,89,91
+  palette "textures/gothic_cath/graycathflesh2L.tga" 255,103,84,87
+  palette "textures/gothic_cath/graycathflesh2L.jpg" 255,103,84,87
+  palette "textures/gothic_cath/graycathflesh1R.tga" 255,118,84,86
+  palette "textures/gothic_cath/graycathflesh1R.jpg" 255,118,84,86
+  palette "textures/gothic_cath/graycathflesh1L.tga" 255,109,79,81
+  palette "textures/gothic_cath/graycathflesh1L.jpg" 255,109,79,81
+  palette "textures/gothic_trim/zinc_shiny.tga" 154,73,63,54
+  palette "textures/gothic_trim/zinc.tga" 255,71,61,52
+  palette "textures/gothic_trim/zinc.jpg" 255,71,61,52
+  palette "textures/gothic_trim/xsupportborderside_shiney.tga" 60,68,63,64
+  palette "textures/gothic_trim/xmetalsupport4i_alpha.tga" 62,70,61,52
+  palette "textures/gothic_trim/xian_tourney_trim.tga" 255,71,56,46
+  palette "textures/gothic_trim/xian_tourney_trim.jpg" 255,71,56,46
+  palette "textures/gothic_trim/x_noblightfx.tga" 255,7,6,5
+  palette "textures/gothic_trim/x_noblightfx.jpg" 255,7,6,5
+  palette "textures/gothic_trim/x_noblight.tga" 241,72,53,47
+  palette "textures/gothic_trim/wood2.tga" 255,66,46,33
+  palette "textures/gothic_trim/wood2.jpg" 255,66,46,33
+  palette "textures/gothic_trim/window_pitted_rust.tga" 255,71,31,24
+  palette "textures/gothic_trim/window_pitted_rust.jpg" 255,71,31,24
+  palette "textures/gothic_trim/window_a_bottom2.tga" 255,93,81,65
+  palette "textures/gothic_trim/window_a_bottom2.jpg" 255,93,81,65
+  palette "textures/gothic_trim/window_a_bottom1.tga" 255,99,85,67
+  palette "textures/gothic_trim/window_a_bottom1.jpg" 255,99,85,67
+  palette "textures/gothic_trim/window_a_base.tga" 255,115,101,82
+  palette "textures/gothic_trim/window_a_base.jpg" 255,115,101,82
+  palette "textures/gothic_trim/window_a2.tga" 255,109,94,72
+  palette "textures/gothic_trim/window_a2.jpg" 255,109,94,72
+  palette "textures/gothic_trim/window_a1.tga" 255,93,76,52
+  palette "textures/gothic_trim/window_a1.jpg" 255,93,76,52
+  palette "textures/gothic_trim/tower_top.tga" 255,136,70,6
+  palette "textures/gothic_trim/tower_top.jpg" 255,136,70,6
+  palette "textures/gothic_trim/tower_side2b.tga" 255,110,90,67
+  palette "textures/gothic_trim/tower_side2b.jpg" 255,110,90,67
+  palette "textures/gothic_trim/tower_side2.tga" 255,138,89,60
+  palette "textures/gothic_trim/tower_side2.jpg" 255,138,89,60
+  palette "textures/gothic_trim/tower_front.tga" 255,158,89,9
+  palette "textures/gothic_trim/tower_front.jpg" 255,158,89,9
+  palette "textures/gothic_trim/supportborderside_rot.tga" 255,61,57,58
+  palette "textures/gothic_trim/supportborderside_rot.jpg" 255,61,57,58
+  palette "textures/gothic_trim/supportborderside.tga" 255,61,57,58
+  palette "textures/gothic_trim/supportborderside.jpg" 255,61,57,58
+  palette "textures/gothic_trim/supportborder.tga" 255,89,57,50
+  palette "textures/gothic_trim/supportborder.jpg" 255,89,57,50
+  palette "textures/gothic_trim/stucco7trim.tga" 255,121,108,94
+  palette "textures/gothic_trim/stucco7trim.jpg" 255,121,108,94
+  palette "textures/gothic_trim/stucco7top.tga" 255,124,112,98
+  palette "textures/gothic_trim/stucco7top.jpg" 255,124,112,98
+  palette "textures/gothic_trim/stucco7bord1.tga" 255,89,78,68
+  palette "textures/gothic_trim/stucco7bord1.jpg" 255,89,78,68
+  palette "textures/gothic_trim/skullsvertgrayslot02a.tga" 255,78,67,61
+  palette "textures/gothic_trim/skullsvertgrayslot02a.jpg" 255,78,67,61
+  palette "textures/gothic_trim/skullsvertgray02b.tga" 255,66,63,62
+  palette "textures/gothic_trim/skullsvertgray02b.jpg" 255,66,63,62
+  palette "textures/gothic_trim/skullsvertgray02a.tga" 255,77,66,61
+  palette "textures/gothic_trim/skullsvertgray02a.jpg" 255,77,66,61
+  palette "textures/gothic_trim/q_waste1.tga" 255,77,61,46
+  palette "textures/gothic_trim/q_waste1.jpg" 255,77,61,46
+  palette "textures/gothic_trim/q1metal7_12.tga" 255,73,51,52
+  palette "textures/gothic_trim/q1metal7_12.jpg" 255,73,51,52
+  palette "textures/gothic_trim/q1metal7.tga" 255,60,47,45
+  palette "textures/gothic_trim/q1metal7.jpg" 255,60,47,45
+  palette "textures/gothic_trim/pjwal5q.tga" 255,101,99,88
+  palette "textures/gothic_trim/pjwal5q.jpg" 255,101,99,88
+  palette "textures/gothic_trim/pitted_rustred.tga" 255,69,7,4
+  palette "textures/gothic_trim/pitted_rustred.jpg" 255,69,7,4
+  palette "textures/gothic_trim/pitted_rustblack.tga" 255,32,28,30
+  palette "textures/gothic_trim/pitted_rustblack.jpg" 255,32,28,30
+  palette "textures/gothic_trim/pitted_rust_small.tga" 255,63,48,39
+  palette "textures/gothic_trim/pitted_rust_small.jpg" 255,63,48,39
+  palette "textures/gothic_trim/pitted_rust3_dkred.tga" 255,44,9,7
+  palette "textures/gothic_trim/pitted_rust3_dkred.jpg" 255,44,9,7
+  palette "textures/gothic_trim/pitted_rust3_black.tga" 255,32,28,27
+  palette "textures/gothic_trim/pitted_rust3_black.jpg" 255,32,28,27
+  palette "textures/gothic_trim/pitted_rust3.tga" 255,67,50,46
+  palette "textures/gothic_trim/pitted_rust3.jpg" 255,67,50,46
+  palette "textures/gothic_trim/pitted_rust2.tga" 255,61,39,29
+  palette "textures/gothic_trim/pitted_rust2.jpg" 255,61,39,29
+  palette "textures/gothic_trim/pitted_rust.tga" 255,62,47,38
+  palette "textures/gothic_trim/pitted_rust.jpg" 255,62,47,38
+  palette "textures/gothic_trim/pitted_roof.tga" 255,88,54,39
+  palette "textures/gothic_trim/pitted_roof.jpg" 255,88,54,39
+  palette "textures/gothic_trim/newskull.tga" 255,105,95,97
+  palette "textures/gothic_trim/newskull.jpg" 255,105,95,97
+  palette "textures/gothic_trim/metalsupsolid.tga" 255,85,59,62
+  palette "textures/gothic_trim/metalsupsolid.jpg" 255,85,59,62
+  palette "textures/gothic_trim/metalsupport4small.tga" 0,0,0,0
+  palette "textures/gothic_trim/metalsupport4j.tga" 255,65,54,45
+  palette "textures/gothic_trim/metalsupport4j.jpg" 255,65,54,45
+  palette "textures/gothic_trim/metalsupport4i_bit.tga" 255,69,60,51
+  palette "textures/gothic_trim/metalsupport4i_bit.jpg" 255,69,60,51
+  palette "textures/gothic_trim/metalsupport4i.tga" 255,64,55,46
+  palette "textures/gothic_trim/metalsupport4i.jpg" 255,64,55,46
+  palette "textures/gothic_trim/metalsupport4h_shiny.tga" 134,80,68,77
+  palette "textures/gothic_trim/metalsupport4h.tga" 255,75,62,71
+  palette "textures/gothic_trim/metalsupport4h.jpg" 255,75,62,71
+  palette "textures/gothic_trim/metalsupport4g_2.tga" 255,78,54,59
+  palette "textures/gothic_trim/metalsupport4g_2.jpg" 255,78,54,59
+  palette "textures/gothic_trim/metalsupport4g_1.tga" 255,78,54,59
+  palette "textures/gothic_trim/metalsupport4g_1.jpg" 255,78,54,59
+  palette "textures/gothic_trim/metalsupport4g.tga" 255,81,55,60
+  palette "textures/gothic_trim/metalsupport4g.jpg" 255,81,55,60
+  palette "textures/gothic_trim/metalsupport4d.tga" 255,83,67,76
+  palette "textures/gothic_trim/metalsupport4d.jpg" 255,83,67,76
+  palette "textures/gothic_trim/metalsupport4c.tga" 255,55,46,52
+  palette "textures/gothic_trim/metalsupport4c.jpg" 255,55,46,52
+  palette "textures/gothic_trim/metalsupport4b.tga" 255,64,50,50
+  palette "textures/gothic_trim/metalsupport4b.jpg" 255,64,50,50
+  palette "textures/gothic_trim/metalsupport4.tga" 255,54,45,51
+  palette "textures/gothic_trim/metalsupport4.jpg" 255,54,45,51
+  palette "textures/gothic_trim/metaldemonkillblock.tga" 255,75,66,62
+  palette "textures/gothic_trim/metaldemonkillblock.jpg" 255,75,66,62
+  palette "textures/gothic_trim/metalbase8a_brick.tga" 255,48,34,30
+  palette "textures/gothic_trim/metalbase8a_brick.jpg" 255,48,34,30
+  palette "textures/gothic_trim/metalbase09b_brick.tga" 255,67,42,35
+  palette "textures/gothic_trim/metalbase09b_brick.jpg" 255,67,42,35
+  palette "textures/gothic_trim/metalbase09_killblock.tga" 255,56,49,49
+  palette "textures/gothic_trim/metalbase09_killblock.jpg" 255,56,49,49
+  palette "textures/gothic_trim/metalbase09_green.tga" 255,51,49,56
+  palette "textures/gothic_trim/metalbase09_green.jpg" 255,51,49,56
+  palette "textures/gothic_trim/metalbase09_gold.tga" 255,49,53,55
+  palette "textures/gothic_trim/metalbase09_gold.jpg" 255,49,53,55
+  palette "textures/gothic_trim/metalbase09_b_blocks15.tga" 28,116,100,85
+  palette "textures/gothic_trim/metalbase03a_blocks18c2.tga" 255,61,54,50
+  palette "textures/gothic_trim/metalbase03a_blocks18c2.jpg" 255,61,54,50
+  palette "textures/gothic_trim/metalbase03a_blocks11b4.tga" 255,65,53,51
+  palette "textures/gothic_trim/metalbase03a_blocks11b4.jpg" 255,65,53,51
+  palette "textures/gothic_trim/km_arena1tower_short.tga" 0,0,0,0
+  palette "textures/gothic_trim/km_arena1tower8.tga" 255,114,95,96
+  palette "textures/gothic_trim/km_arena1tower8.jpg" 255,114,95,96
+  palette "textures/gothic_trim/km_arena1tower7.tga" 255,55,38,39
+  palette "textures/gothic_trim/km_arena1tower7.jpg" 255,55,38,39
+  palette "textures/gothic_trim/km_arena1tower6.tga" 255,93,76,77
+  palette "textures/gothic_trim/km_arena1tower6.jpg" 255,93,76,77
+  palette "textures/gothic_trim/km_arena1tower4_shiny.tga" 132,97,67,70
+  palette "textures/gothic_trim/km_arena1tower4_a.tga" 255,91,62,65
+  palette "textures/gothic_trim/km_arena1tower4_a.jpg" 255,91,62,65
+  palette "textures/gothic_trim/km_arena1tower4.tga" 255,91,62,65
+  palette "textures/gothic_trim/km_arena1tower4.jpg" 255,91,62,65
+  palette "textures/gothic_trim/km_arena1tower2.tga" 255,104,86,87
+  palette "textures/gothic_trim/km_arena1tower2.jpg" 255,104,86,87
+  palette "textures/gothic_trim/km_arena1tower1.tga" 255,51,51,59
+  palette "textures/gothic_trim/km_arena1tower1.jpg" 255,51,51,59
+  palette "textures/gothic_trim/iron01_e_mbase14_r.tga" 255,70,37,35
+  palette "textures/gothic_trim/iron01_e_mbase14_r.jpg" 255,70,37,35
+  palette "textures/gothic_trim/iron01_e_mbase14_b.tga" 255,48,37,58
+  palette "textures/gothic_trim/iron01_e_mbase14_b.jpg" 255,48,37,58
+  palette "textures/gothic_trim/gothgrate2.tga" 116,194,132,83
+  palette "textures/gothic_trim/goldsupport_a.tga" 255,140,78,11
+  palette "textures/gothic_trim/goldsupport_a.jpg" 255,140,78,11
+  palette "textures/gothic_trim/columnsupportops.tga" 255,119,87,70
+  palette "textures/gothic_trim/columnsupportops.jpg" 255,119,87,70
+  palette "textures/gothic_trim/columnsupportbottoms.tga" 255,93,73,62
+  palette "textures/gothic_trim/columnsupportbottoms.jpg" 255,93,73,62
+  palette "textures/gothic_trim/column2c_test.tga" 255,58,60,72
+  palette "textures/gothic_trim/column2c_test.jpg" 255,58,60,72
+  palette "textures/gothic_trim/column2c_notrans.jpg" 255,58,60,72
+  palette "textures/gothic_trim/border7.tga" 255,55,55,50
+  palette "textures/gothic_trim/border7.jpg" 255,55,55,50
+  palette "textures/gothic_trim/border6.tga" 255,65,64,60
+  palette "textures/gothic_trim/border6.jpg" 255,65,64,60
+  palette "textures/gothic_trim/border2.tga" 255,95,75,68
+  palette "textures/gothic_trim/border2.jpg" 255,95,75,68
+  palette "textures/gothic_trim/border12.tga" 255,102,75,61
+  palette "textures/gothic_trim/border12.jpg" 255,102,75,62
+  palette "textures/gothic_trim/border11.tga" 255,85,76,67
+  palette "textures/gothic_trim/border11.jpg" 255,85,76,67
+  palette "textures/gothic_trim/border10.tga" 255,91,79,68
+  palette "textures/gothic_trim/border10.jpg" 255,91,79,68
+  palette "textures/gothic_trim/blocks17g_stairtread.tga" 255,80,72,61
+  palette "textures/gothic_trim/blocks17g_stairtread.jpg" 255,80,72,61
+  palette "textures/gothic_trim/blocks15_bb09e.tga" 255,71,52,32
+  palette "textures/gothic_trim/blocks15_bb09e.jpg" 255,71,52,32
+  palette "textures/gothic_trim/baseboard9c_com_r.tga" 255,78,38,32
+  palette "textures/gothic_trim/baseboard9c_com_r.jpg" 255,78,38,32
+  palette "textures/gothic_trim/baseboard9c_com_b.tga" 255,50,47,62
+  palette "textures/gothic_trim/baseboard9c_com_b.jpg" 255,50,46,62
+  palette "textures/gothic_trim/baseboard10_h.tga" 255,53,36,31
+  palette "textures/gothic_trim/baseboard10_h.jpg" 255,53,36,31
+  palette "textures/gothic_trim/baseboard10_f.tga" 255,78,48,37
+  palette "textures/gothic_trim/baseboard10_f.jpg" 255,78,49,37
+  palette "textures/gothic_trim/baseboard10_e.tga" 255,62,50,47
+  palette "textures/gothic_trim/baseboard10_e.jpg" 255,62,50,47
+  palette "textures/gothic_trim/baseboard10_d.tga" 255,69,46,39
+  palette "textures/gothic_trim/baseboard10_d.jpg" 255,69,46,39
+  palette "textures/gothic_trim/baseboard10.tga" 255,69,59,57
+  palette "textures/gothic_trim/baseboard10.jpg" 255,69,59,57
+  palette "textures/gothic_trim/baseboard09_red.tga" 255,68,31,25
+  palette "textures/gothic_trim/baseboard09_red.jpg" 255,68,31,25
+  palette "textures/gothic_trim/baseboard09_p_shiny.tga" 62,78,58,51
+  palette "textures/gothic_trim/baseboard09_p.tga" 255,59,43,38
+  palette "textures/gothic_trim/baseboard09_p.jpg" 255,59,43,38
+  palette "textures/gothic_trim/baseboard09_o3.tga" 255,81,66,58
+  palette "textures/gothic_trim/baseboard09_o3.jpg" 255,81,66,57
+  palette "textures/gothic_trim/baseboard09_l2.tga" 255,40,30,24
+  palette "textures/gothic_trim/baseboard09_l2.jpg" 255,40,30,23
+  palette "textures/gothic_trim/baseboard09_l.tga" 255,52,39,33
+  palette "textures/gothic_trim/baseboard09_l.jpg" 255,52,39,33
+  palette "textures/gothic_trim/baseboard09_kgreen.tga" 255,39,51,41
+  palette "textures/gothic_trim/baseboard09_kgreen.jpg" 255,39,51,41
+  palette "textures/gothic_trim/baseboard09_kgold.tga" 255,50,52,40
+  palette "textures/gothic_trim/baseboard09_kgold.jpg" 255,50,52,40
+  palette "textures/gothic_trim/baseboard09_kblue.tga" 255,40,42,51
+  palette "textures/gothic_trim/baseboard09_kblue.jpg" 255,40,42,51
+  palette "textures/gothic_trim/baseboard09_ired.tga" 255,62,32,27
+  palette "textures/gothic_trim/baseboard09_ired.jpg" 255,62,32,27
+  palette "textures/gothic_trim/baseboard09_i.tga" 255,81,66,61
+  palette "textures/gothic_trim/baseboard09_i.jpg" 255,81,66,61
+  palette "textures/gothic_trim/baseboard09_h.tga" 255,60,49,45
+  palette "textures/gothic_trim/baseboard09_h.jpg" 255,60,49,45
+  palette "textures/gothic_trim/baseboard09_green.tga" 255,41,39,45
+  palette "textures/gothic_trim/baseboard09_green.jpg" 255,41,39,45
+  palette "textures/gothic_trim/baseboard09_gold.tga" 255,39,43,45
+  palette "textures/gothic_trim/baseboard09_gold.jpg" 255,39,43,45
+  palette "textures/gothic_trim/baseboard09_g3.tga" 255,52,39,33
+  palette "textures/gothic_trim/baseboard09_g3.jpg" 255,52,39,33
+  palette "textures/gothic_trim/baseboard09_g.tga" 255,62,47,40
+  palette "textures/gothic_trim/baseboard09_g.jpg" 255,62,47,40
+  palette "textures/gothic_trim/baseboard09_f2.tga" 255,65,47,40
+  palette "textures/gothic_trim/baseboard09_f2.jpg" 255,65,47,40
+  palette "textures/gothic_trim/baseboard09_f.tga" 255,63,46,40
+  palette "textures/gothic_trim/baseboard09_f.jpg" 255,63,46,40
+  palette "textures/gothic_trim/baseboard09_e2.tga" 255,61,45,36
+  palette "textures/gothic_trim/baseboard09_e2.jpg" 255,61,45,36
+  palette "textures/gothic_trim/baseboard09_e.tga" 255,61,45,36
+  palette "textures/gothic_trim/baseboard09_e.jpg" 255,61,45,36
+  palette "textures/gothic_trim/baseboard09_c3.tga" 255,61,49,40
+  palette "textures/gothic_trim/baseboard09_c3.jpg" 255,61,49,40
+  palette "textures/gothic_trim/baseboard09_c2b.tga" 255,48,34,27
+  palette "textures/gothic_trim/baseboard09_c2b.jpg" 255,48,34,27
+  palette "textures/gothic_trim/baseboard09_c2.tga" 255,53,39,33
+  palette "textures/gothic_trim/baseboard09_c2.jpg" 255,53,39,33
+  palette "textures/gothic_trim/baseboard09_c.tga" 255,52,39,32
+  palette "textures/gothic_trim/baseboard09_c.jpg" 255,52,39,32
+  palette "textures/gothic_trim/baseboard09_blue.tga" 255,45,39,39
+  palette "textures/gothic_trim/baseboard09_blue.jpg" 255,45,39,39
+  palette "textures/gothic_trim/baseboard09_2.tga" 255,55,41,33
+  palette "textures/gothic_trim/baseboard09_2.jpg" 255,55,41,33
+  palette "textures/gothic_trim/baseboard09.tga" 255,54,40,31
+  palette "textures/gothic_trim/baseboard09.jpg" 255,54,40,31
+  palette "textures/gothic_trim/baseboard08_ered.tga" 255,87,37,31
+  palette "textures/gothic_trim/baseboard08_ered.jpg" 255,87,37,31
+  palette "textures/gothic_trim/baseboard08_e.tga" 255,56,36,30
+  palette "textures/gothic_trim/baseboard08_e.jpg" 255,56,36,30
+  palette "textures/gothic_trim/baseboard08_dblue.tga" 255,48,51,63
+  palette "textures/gothic_trim/baseboard08_dblue.jpg" 255,48,51,63
+  palette "textures/gothic_trim/baseboard08_d.tga" 255,54,39,32
+  palette "textures/gothic_trim/baseboard08_d.jpg" 255,54,39,32
+  palette "textures/gothic_trim/baseboard08_b.tga" 255,58,48,36
+  palette "textures/gothic_trim/baseboard08_b.jpg" 255,58,48,36
+  palette "textures/gothic_trim/baseboard08.tga" 255,58,43,35
+  palette "textures/gothic_trim/baseboard08.jpg" 255,58,43,35
+  palette "textures/gothic_trim/baseboard07.tga" 255,74,59,50
+  palette "textures/gothic_trim/baseboard07.jpg" 255,74,59,50
+  palette "textures/gothic_trim/baseboard04.tga" 255,68,55,47
+  palette "textures/gothic_trim/baseboard04.jpg" 255,68,55,47
+  palette "textures/gothic_trim/baseboard03_a.tga" 255,41,65,46
+  palette "textures/gothic_trim/baseboard03_a.jpg" 255,41,65,46
+  palette "textures/gothic_trim/baseboard03.tga" 255,81,52,39
+  palette "textures/gothic_trim/baseboard03.jpg" 255,81,52,39
+  palette "textures/gothic_trim/baseboard01.tga" 255,43,36,32
+  palette "textures/gothic_trim/baseboard01.jpg" 255,43,36,32
+  palette "textures/gothic_button/timbuttonside.tga" 255,147,132,133
+  palette "textures/gothic_button/timbuttonside.jpg" 255,147,132,133
+  palette "textures/gothic_button/timbutton2.tga" 255,24,37,4
+  palette "textures/gothic_button/timbutton2.jpg" 255,24,37,4
+  palette "textures/gothic_button/timbutton.tga" 255,124,112,108
+  palette "textures/gothic_button/timbutton.jpg" 255,124,112,108
+  palette "textures/egyptsoc_wall/stone10d.jpg" 255,97,71,42
+  palette "textures/egyptsoc_wall/stone09c.jpg" 255,90,80,70
+  palette "textures/egyptsoc_wall/stone09a.jpg" 255,98,88,77
+  palette "textures/egyptsoc_wall/stone08c.jpg" 255,90,81,70
+  palette "textures/egyptsoc_wall/stone08a.jpg" 255,99,89,78
+  palette "textures/egyptsoc_wall/stone07d.jpg" 255,51,61,67
+  palette "textures/egyptsoc_wall/stone04d.jpg" 255,95,72,45
+  palette "textures/egyptsoc_wall/stone04a.jpg" 255,100,90,78
+  palette "textures/egyptsoc_wall/stone03d.jpg" 255,94,71,44
+  palette "textures/egyptsoc_wall/stone03a.jpg" 255,98,88,77
+  palette "textures/egyptsoc_wall/stone01a.jpg" 255,94,84,73
+  palette "textures/egyptsoc_trimd/v128-03cr.jpg" 255,81,66,56
+  palette "textures/egyptsoc_trimd/v064-03cr.jpg" 255,82,57,48
+  palette "textures/egyptsoc_trimd/s128-01cr.jpg" 255,87,72,62
+  palette "textures/sfx/zap_scroll2.tga" 255,5,4,3
+  palette "textures/sfx/zap_scroll2.jpg" 255,5,4,3
+  palette "textures/sfx/zap_scroll.tga" 255,4,2,2
+  palette "textures/sfx/zap_scroll.jpg" 255,4,2,2
+  palette "textures/sfx/xian_dm3padwallglow.tga" 255,4,3,5
+  palette "textures/sfx/xian_dm3padwallglow.jpg" 255,4,3,5
+  palette "textures/sfx/xian_dm3padwall.tga" 255,57,46,40
+  palette "textures/sfx/xian_dm3padwall.jpg" 255,57,46,40
+  palette "textures/sfx/x_conduit3.tga" 255,14,10,10
+  palette "textures/sfx/x_conduit3.jpg" 255,14,10,10
+  palette "textures/sfx/x_conduit2.tga" 255,22,15,14
+  palette "textures/sfx/x_conduit2.jpg" 255,22,15,14
+  palette "textures/sfx/x_conduit.tga" 255,48,43,39
+  palette "textures/sfx/x_conduit.jpg" 255,48,43,39
+  palette "textures/sfx/tesla1b.tga" 255,16,9,6
+  palette "textures/sfx/tesla1b.jpg" 255,16,9,6
+  palette "textures/sfx/tesla1.tga" 255,32,25,50
+  palette "textures/sfx/tesla1.jpg" 255,32,25,50
+  palette "textures/sfx/surface6jumppad.blend.tga" 255,60,27,2
+  palette "textures/sfx/surface6jumppad.blend.jpg" 255,60,27,2
+  palette "textures/sfx/specular5.tga" 255,84,71,52
+  palette "textures/sfx/specular5.jpg" 255,84,71,52
+  palette "textures/sfx/specular.tga" 255,82,64,68
+  palette "textures/sfx/specular.jpg" 255,82,64,68
+  palette "textures/sfx/spawn_floord2c.tga" 217,55,55,55
+  palette "textures/sfx/spawn_floor.tga" 217,54,47,42
+  palette "textures/sfx/snow.tga" 255,41,41,41
+  palette "textures/sfx/snow.jpg" 255,41,41,41
+  palette "textures/sfx/smallerblock3b3dim_pent.tga" 255,89,64,54
+  palette "textures/sfx/smallerblock3b3dim_pent.jpg" 255,89,64,54
+  palette "textures/sfx/shadow.tga" 255,147,147,147
+  palette "textures/sfx/shadow.jpg" 255,147,147,147
+  palette "textures/sfx/r_flameball.tga" 255,19,2,7
+  palette "textures/sfx/r_flameball.jpg" 255,19,2,7
+  palette "textures/sfx/r_flame8.tga" 255,31,5,3
+  palette "textures/sfx/r_flame8.jpg" 255,31,5,3
+  palette "textures/sfx/r_flame7.tga" 255,29,5,3
+  palette "textures/sfx/r_flame7.jpg" 255,29,5,3
+  palette "textures/sfx/r_flame6.tga" 255,28,4,3
+  palette "textures/sfx/r_flame6.jpg" 255,28,4,3
+  palette "textures/sfx/r_flame5.tga" 255,28,4,3
+  palette "textures/sfx/r_flame5.jpg" 255,28,4,3
+  palette "textures/sfx/r_flame4.tga" 255,24,4,2
+  palette "textures/sfx/r_flame4.jpg" 255,24,4,2
+  palette "textures/sfx/r_flame3.tga" 255,27,5,3
+  palette "textures/sfx/r_flame3.jpg" 255,27,5,3
+  palette "textures/sfx/r_flame2.tga" 255,31,5,3
+  palette "textures/sfx/r_flame2.jpg" 255,31,5,3
+  palette "textures/sfx/r_flame1.tga" 255,27,7,1
+  palette "textures/sfx/r_flame1.jpg" 255,27,7,1
+  palette "textures/sfx/proto_zzztpink.tga" 255,183,143,126
+  palette "textures/sfx/proto_zzztpink.jpg" 255,183,143,126
+  palette "textures/sfx/proto_zzztblu3.tga" 255,20,43,74
+  palette "textures/sfx/proto_zzztblu3.jpg" 255,20,43,73
+  palette "textures/sfx/proto_zzztblu2.tga" 255,85,116,154
+  palette "textures/sfx/proto_zzztblu2.jpg" 255,85,116,154
+  palette "textures/sfx/proto_zzztblu.tga" 255,102,113,139
+  palette "textures/sfx/proto_zzztblu.jpg" 255,102,113,139
+  palette "textures/sfx/proto_zzzt.tga" 255,175,47,22
+  palette "textures/sfx/proto_zzzt.jpg" 255,175,47,22
+  palette "textures/sfx/portalfog.tga" 255,184,184,184
+  palette "textures/sfx/portalfog.jpg" 255,184,184,184
+  palette "textures/sfx/portal_sfx_ring_electric.tga" 255,13,8,14
+  palette "textures/sfx/portal_sfx_ring_electric.jpg" 255,13,8,14
+  palette "textures/sfx/portal_sfx_ring_blue1.tga" 149,235,229,251
+  palette "textures/sfx/portal_sfx_ring.tga" 255,148,148,148
+  palette "textures/sfx/portal_sfx_ring.jpg" 255,148,148,148
+  palette "textures/sfx/portal_sfx3.tga" 107,194,192,244
+  palette "textures/sfx/portal_sfx1.tga" 109,244,241,242
+  palette "textures/sfx/portal_sfx.tga" 255,131,131,131
+  palette "textures/sfx/portal_sfx.jpg" 255,131,131,131
+  palette "textures/sfx/pentfloorq1metal7_99.tga" 255,99,75,60
+  palette "textures/sfx/pentfloorq1metal7_99.jpg" 255,99,75,60
+  palette "textures/sfx/pentfloor_diamond2c.tga" 255,89,67,58
+  palette "textures/sfx/pentfloor_diamond2c.jpg" 255,89,67,59
+  palette "textures/sfx/pentdirt2_@256.tga" 255,88,61,52
+  palette "textures/sfx/pentdirt2_@256.jpg" 255,88,61,52
+  palette "textures/sfx/pentagramfloor_red_glow.tga" 255,41,23,11
+  palette "textures/sfx/pentagramfloor_red_glow.jpg" 255,41,23,12
+  palette "textures/sfx/pentagramfloor_blue3glowtest.tga" 255,46,36,77
+  palette "textures/sfx/pentagramfloor_blue3glowtest.jpg" 255,45,36,76
+  palette "textures/sfx/omm.tga" 216,173,173,173
+  palette "textures/sfx/mirrorkc.tga" 247,43,36,44
+  palette "textures/sfx/mirror.tga" 255,59,47,28
+  palette "textures/sfx/mirror.jpg" 255,59,47,28
+  palette "textures/sfx/metaltechfloor02final_pent2.tga" 255,105,73,64
+  palette "textures/sfx/metaltechfloor02final_pent2.jpg" 255,105,73,64
+  palette "textures/sfx/metaltech12final_bounce.tga" 255,76,67,59
+  palette "textures/sfx/metaltech12final_bounce.jpg" 255,76,67,59
+  palette "textures/sfx/metalfloor_wall_9bglow.tga" 255,44,13,13
+  palette "textures/sfx/metalfloor_wall_9bglow.jpg" 255,43,14,14
+  palette "textures/sfx/metalfloor_wall_9b.tga" 255,98,47,48
+  palette "textures/sfx/metalfloor_wall_9b.jpg" 255,98,47,48
+  palette "textures/sfx/metalfloor_wall_7b.tga" 255,47,56,60
+  palette "textures/sfx/metalfloor_wall_7b.jpg" 255,47,56,60
+  palette "textures/sfx/metalfloor_wall_5bglowblu.tga" 255,20,13,44
+  palette "textures/sfx/metalfloor_wall_5bglowblu.jpg" 255,20,13,43
+  palette "textures/sfx/metalfloor_wall_14bglow2.tga" 255,3,5,15
+  palette "textures/sfx/metalfloor_wall_14bglow2.jpg" 255,2,5,14
+  palette "textures/sfx/metalfloor_wall_14b.tga" 255,74,83,92
+  palette "textures/sfx/metalfloor_wall_14b.jpg" 255,74,83,92
+  palette "textures/sfx/metalbridge06_bounce.tga" 255,76,66,58
+  palette "textures/sfx/metalbridge06_bounce.jpg" 255,76,66,58
+  palette "textures/sfx/logo512.tga" 255,5,1,1
+  palette "textures/sfx/logo512.jpg" 255,5,1,1
+  palette "textures/sfx/lavabeam.tga" 255,25,3,0
+  palette "textures/sfx/lavabeam.jpg" 255,25,3,0
+  palette "textures/sfx/launchpad_metalbridge04d.tga" 255,101,91,88
+  palette "textures/sfx/launchpad_metalbridge04d.jpg" 255,101,91,88
+  palette "textures/sfx/launchpad_dot.tga" 255,45,27,18
+  palette "textures/sfx/launchpad_dot.jpg" 255,45,27,18
+  palette "textures/sfx/launchpad_diamond.tga" 255,92,85,82
+  palette "textures/sfx/launchpad_diamond.jpg" 255,92,85,82
+  palette "textures/sfx/launchpad_blocks18d.tga" 255,90,82,78
+  palette "textures/sfx/launchpad_blocks18d.jpg" 255,90,82,78
+  palette "textures/sfx/launchpad_blocks17.tga" 0,0,0,0
+  palette "textures/sfx/launchpad_arrow2.tga" 255,0,0,0
+  palette "textures/sfx/launchpad_arrow2.jpg" 255,0,0,0
+  palette "textures/sfx/launchpad_arrow.tga" 3,216,88,8
+  palette "textures/sfx/largerblock3b3x128_pent.tga" 255,93,66,54
+  palette "textures/sfx/largerblock3b3x128_pent.jpg" 255,93,66,54
+  palette "textures/sfx/largerblock3b3_pent.tga" 255,95,60,47
+  palette "textures/sfx/largerblock3b3_pent.jpg" 255,95,60,47
+  palette "textures/sfx/kenelectric.tga" 255,30,16,8
+  palette "textures/sfx/kenelectric.jpg" 255,30,16,8
+  palette "textures/sfx/jumppadsmall.tga" 255,14,7,0
+  palette "textures/sfx/jumppadsmall.jpg" 255,14,7,0
+  palette "textures/sfx/jacobs_x.tga" 255,27,24,20
+  palette "textures/sfx/jacobs_x.jpg" 255,27,24,20
+  palette "textures/sfx/hologirl2.tga" 0,0,0,0
+  palette "textures/sfx/hologirl.tga" 255,14,17,16
+  palette "textures/sfx/hologirl.jpg" 255,14,17,16
+  palette "textures/sfx/healthfloor.tga" 214,55,49,44
+  palette "textures/sfx/g_flameball.tga" 255,2,13,7
+  palette "textures/sfx/g_flameball.jpg" 255,2,13,6
+  palette "textures/sfx/g_flame8.tga" 255,2,30,10
+  palette "textures/sfx/g_flame8.jpg" 255,3,30,10
+  palette "textures/sfx/g_flame7.tga" 255,2,29,9
+  palette "textures/sfx/g_flame7.jpg" 255,2,28,9
+  palette "textures/sfx/g_flame6.tga" 255,2,27,8
+  palette "textures/sfx/g_flame6.jpg" 255,2,27,8
+  palette "textures/sfx/g_flame5.tga" 255,2,27,8
+  palette "textures/sfx/g_flame5.jpg" 255,2,27,9
+  palette "textures/sfx/g_flame4.tga" 255,2,23,8
+  palette "textures/sfx/g_flame4.jpg" 255,2,23,8
+  palette "textures/sfx/g_flame3.tga" 255,2,26,9
+  palette "textures/sfx/g_flame3.jpg" 255,2,26,9
+  palette "textures/sfx/g_flame2.tga" 255,3,30,10
+  palette "textures/sfx/g_flame2.jpg" 255,3,30,10
+  palette "textures/sfx/g_flame1.tga" 255,4,33,12
+  palette "textures/sfx/g_flame1.jpg" 255,4,33,11
+  palette "textures/sfx/flameball.tga" 255,18,5,4
+  palette "textures/sfx/flameball.jpg" 255,17,5,4
+  palette "textures/sfx/flame8.tga" 255,28,17,4
+  palette "textures/sfx/flame8.jpg" 255,28,16,4
+  palette "textures/sfx/flame7.tga" 255,26,16,4
+  palette "textures/sfx/flame7.jpg" 255,26,16,4
+  palette "textures/sfx/flame6.tga" 255,24,15,4
+  palette "textures/sfx/flame6.jpg" 255,24,15,4
+  palette "textures/sfx/flame5.tga" 255,24,16,4
+  palette "textures/sfx/flame5.jpg" 255,24,16,4
+  palette "textures/sfx/flame4.tga" 255,21,13,3
+  palette "textures/sfx/flame4.jpg" 255,21,13,3
+  palette "textures/sfx/flame3.tga" 255,24,14,4
+  palette "textures/sfx/flame3.jpg" 255,23,14,4
+  palette "textures/sfx/flame2.tga" 255,27,17,4
+  palette "textures/sfx/flame2.jpg" 255,27,17,4
+  palette "textures/sfx/flame1.tga" 255,31,19,5
+  palette "textures/sfx/flame1.jpg" 255,31,19,5
+  palette "textures/sfx/fishy.tga" 162,51,41,28
+  palette "textures/sfx/firewalla.tga" 47,132,61,0
+  palette "textures/sfx/fireswirl2blue.tga" 255,46,110,117
+  palette "textures/sfx/fireswirl2blue.jpg" 255,46,110,117
+  palette "textures/sfx/fireswirl2.tga" 255,183,116,37
+  palette "textures/sfx/fireswirl2.jpg" 255,183,116,37
+  palette "textures/sfx/firegorre2.tga" 255,111,55,6
+  palette "textures/sfx/firegorre2.jpg" 255,111,55,6
+  palette "textures/sfx/firegorre.tga" 47,171,66,0
+  palette "textures/sfx/fire_ctfred.tga" 255,160,2,10
+  palette "textures/sfx/fire_ctfred.jpg" 255,160,2,10
+  palette "textures/sfx/fire_ctfgreen.tga" 255,12,159,2
+  palette "textures/sfx/fire_ctfgreen.jpg" 255,11,159,2
+  palette "textures/sfx/fire_ctfgold.tga" 255,159,149,1
+  palette "textures/sfx/fire_ctfgold.jpg" 255,159,149,1
+  palette "textures/sfx/fire_ctfblue.tga" 255,1,61,159
+  palette "textures/sfx/fire_ctfblue.jpg" 255,1,61,159
+  palette "textures/sfx/fanfx.tga" 255,63,63,63
+  palette "textures/sfx/fanfx.jpg" 255,63,63,63
+  palette "textures/sfx/fan_grate.tga" 153,52,40,30
+  palette "textures/sfx/fan3bladeb.tga" 28,61,49,41
+  palette "textures/sfx/fan3.tga" 153,65,48,38
+  palette "textures/sfx/fan.tga" 111,82,59,43
+  palette "textures/sfx/electricslime_old.tga" 0,0,0,0
+  palette "textures/sfx/electricslime2.tga" 255,24,17,31
+  palette "textures/sfx/electricslime2.jpg" 255,24,17,31
+  palette "textures/sfx/electricslime.tga" 255,116,76,32
+  palette "textures/sfx/electricslime.jpg" 255,116,76,32
+  palette "textures/sfx/electricgrade3.tga" 255,5,30,49
+  palette "textures/sfx/electricgrade3.jpg" 255,5,30,49
+  palette "textures/sfx/electric2.blend.tga" 255,1,2,39
+  palette "textures/sfx/electric2.blend.jpg" 255,1,2,39
+  palette "textures/sfx/dust_puppy2.tga" 109,96,91,85
+  palette "textures/sfx/detail.tga" 255,101,100,98
+  palette "textures/sfx/detail.jpg" 255,101,100,98
+  palette "textures/sfx/demonltblackfinal_glow2.tga" 255,21,18,16
+  palette "textures/sfx/demonltblackfinal_glow2.jpg" 255,21,17,16
+  palette "textures/sfx/demonltblackfinal.tga" 255,65,57,54
+  palette "textures/sfx/demonltblackfinal.jpg" 255,65,57,54
+  palette "textures/sfx/console03.tga" 255,47,1,2
+  palette "textures/sfx/console03.jpg" 255,47,1,2
+  palette "textures/sfx/console02.tga" 255,20,16,17
+  palette "textures/sfx/console02.jpg" 255,20,16,17
+  palette "textures/sfx/console01.tga" 255,3,70,45
+  palette "textures/sfx/console01.jpg" 255,3,70,45
+  palette "textures/sfx/computerpurptileb.tga" 255,80,62,55
+  palette "textures/sfx/computerpurptileb.jpg" 255,80,62,55
+  palette "textures/sfx/computerblocks15.tga" 255,78,61,52
+  palette "textures/sfx/computerblocks15.jpg" 255,78,61,52
+  palette "textures/sfx/computer_blocks17.tga" 255,77,62,54
+  palette "textures/sfx/computer_blocks17.jpg" 255,77,62,54
+  palette "textures/sfx/clangdark_bounce.tga" 255,72,62,53
+  palette "textures/sfx/clangdark_bounce.jpg" 255,72,62,52
+  palette "textures/sfx/cabletest2.tga" 31,19,19,21
+  palette "textures/sfx/bullseye.tga" 255,7,47,37
+  palette "textures/sfx/bullseye.jpg" 255,7,47,37
+  palette "textures/sfx/bouncepad1q1metal7_99.tga" 255,83,73,61
+  palette "textures/sfx/bouncepad1q1metal7_99.jpg" 255,83,73,61
+  palette "textures/sfx/bouncepad01block18b.tga" 255,77,66,58
+  palette "textures/sfx/bouncepad01block18b.jpg" 255,77,66,58
+  palette "textures/sfx/bouncepad01b_layer1.tga" 255,10,5,2
+  palette "textures/sfx/bouncepad01b_layer1.jpg" 255,9,5,3
+  palette "textures/sfx/bouncepad01_xarch.tga" 255,73,62,53
+  palette "textures/sfx/bouncepad01_xarch.jpg" 255,73,62,53
+  palette "textures/sfx/bouncepad01_diamond2cTGA.tga" 255,74,65,58
+  palette "textures/sfx/bouncepad01_diamond2cTGA.jpg" 255,74,65,58
+  palette "textures/sfx/bouncepad01_block17.tga" 255,79,67,59
+  palette "textures/sfx/bouncepad01_block17.jpg" 255,79,67,59
+  palette "textures/sfx/bounce_xq1metalbig.tga" 255,80,71,62
+  palette "textures/sfx/bounce_xq1metalbig.jpg" 255,80,71,62
+  palette "textures/sfx/bounce_largeblock3b.tga" 255,77,64,54
+  palette "textures/sfx/bounce_largeblock3b.jpg" 255,77,64,54
+  palette "textures/sfx/bounce_largeblock3.tga" 255,74,63,53
+  palette "textures/sfx/bounce_largeblock3.jpg" 255,74,63,53
+  palette "textures/sfx/bounce_dirt.tga" 0,0,0,0
+  palette "textures/sfx/bounce_concrete.tga" 255,82,72,63
+  palette "textures/sfx/bounce_concrete.jpg" 255,82,72,63
+  palette "textures/sfx/bolts.tga" 255,17,8,3
+  palette "textures/sfx/bolts.jpg" 255,17,8,3
+  palette "textures/sfx/blocks18ccomputer.tga" 255,71,58,50
+  palette "textures/sfx/blocks18ccomputer.jpg" 255,71,58,50
+  palette "textures/sfx/blocks17g_jumpad.tga" 0,0,0,0
+  palette "textures/sfx/blocks17final_pent.tga" 255,95,64,54
+  palette "textures/sfx/blocks17final_pent.jpg" 255,95,64,54
+  palette "textures/sfx/blackness.tga" 255,0,0,0
+  palette "textures/sfx/blackness.jpg" 255,0,0,0
+  palette "textures/sfx/beam_waterlight.tga" 255,27,50,39
+  palette "textures/sfx/beam_waterlight.jpg" 255,27,50,39
+  palette "textures/sfx/beam_red.tga" 255,44,0,0
+  palette "textures/sfx/beam_red.jpg" 255,44,0,0
+  palette "textures/sfx/beam_blue4.tga" 255,1,12,19
+  palette "textures/sfx/beam_blue4.jpg" 255,1,12,19
+  palette "textures/sfx/beam_1.tga" 255,11,9,9
+  palette "textures/sfx/beam_1.jpg" 255,11,9,9
+  palette "textures/sfx/beam.tga" 255,24,21,19
+  palette "textures/sfx/beam.jpg" 255,24,21,19
+  palette "textures/sfx/b_flameball.tga" 255,3,3,13
+  palette "textures/sfx/b_flameball.jpg" 255,3,3,13
+  palette "textures/sfx/b_flame8.tga" 255,3,4,30
+  palette "textures/sfx/b_flame8.jpg" 255,3,4,30
+  palette "textures/sfx/b_flame7.tga" 255,2,4,29
+  palette "textures/sfx/b_flame7.jpg" 255,2,4,29
+  palette "textures/sfx/b_flame6.tga" 255,2,4,27
+  palette "textures/sfx/b_flame6.jpg" 255,2,4,27
+  palette "textures/sfx/b_flame5.tga" 255,2,4,27
+  palette "textures/sfx/b_flame5.jpg" 255,2,4,27
+  palette "textures/sfx/b_flame4.tga" 255,2,3,23
+  palette "textures/sfx/b_flame4.jpg" 255,2,3,23
+  palette "textures/sfx/b_flame3.tga" 255,2,4,26
+  palette "textures/sfx/b_flame3.jpg" 255,2,4,26
+  palette "textures/sfx/b_flame2.tga" 255,3,4,30
+  palette "textures/sfx/b_flame2.jpg" 255,3,4,30
+  palette "textures/sfx/b_flame1.tga" 255,4,5,33
+  palette "textures/sfx/b_flame1.jpg" 255,4,5,33
+  palette "textures/egyptsoc_trim/v128-03g.jpg" 255,81,74,66
+  palette "textures/egyptsoc_trim/v128-03a.jpg" 255,80,71,60
+  palette "textures/egyptsoc_trim/v064-03a.jpg" 255,78,68,57
+  palette "textures/egyptsoc_trim/step01a.jpg" 255,68,61,53
+  palette "textures/egyptsoc_trim/s128-01e.jpg" 255,89,77,64
+  palette "textures/egyptsoc_trim/256-04b.jpg" 255,90,67,40
+  palette "textures/egyptsoc_trim/256-03d.jpg" 255,73,54,32
+  palette "textures/egyptsoc_trim/128-03a.jpg" 255,90,84,78
+  palette "textures/egyptsoc_trim/128-02pa.jpg" 255,80,71,61
+  palette "textures/egyptsoc_trim/064-08a.jpg" 255,60,50,40
+  palette "textures/egyptsoc_trim/064-04b.jpg" 255,89,73,51
+  palette "textures/egyptsoc_trim/064-02c.jpg" 255,71,66,58
+  palette "textures/egyptsoc_trim/064-02b.jpg" 255,83,67,46
+  palette "textures/egyptsoc_trim/032-05c.jpg" 255,64,60,54
+  palette "textures/egyptsoc_trim/032-04d.jpg" 255,90,63,36
+  palette "textures/egyptsoc_trim/032-04c.jpg" 255,68,62,54
+  palette "textures/egyptsoc_sfx/s128-01r.blend.jpg" 255,11,4,3
+  palette "textures/egyptsoc_sfx/lig_v192-01ba.jpg" 255,123,123,135
+  palette "textures/egyptsoc_sfx/lig_v192-01b.blend.jpg" 255,98,103,121
+  palette "textures/egyptsoc_sfx/lig_b064-02b.blend.jpg" 255,25,36,52
+  palette "textures/egyptsoc_sfx/lig_b064-02a.jpg" 255,84,89,99
+  palette "textures/egyptsoc_sfx/lig_064-04w2.jpg" 255,88,74,56
+  palette "textures/egyptsoc_sfx/lig_064-04w.blend.jpg" 255,20,18,15
+  palette "textures/egyptsoc_sfx/lig_064-02b2.jpg" 255,80,82,86
+  palette "textures/egyptsoc_sfx/lig_064-02b1.jpg" 255,74,82,94
+  palette "textures/egyptsoc_sfx/lig_064-02b.blend.jpg" 255,31,43,57
+  palette "textures/egyptsoc_sfx/lig_064-01b1.jpg" 255,88,87,87
+  palette "textures/egyptsoc_sfx/lig_064-01b.blend.jpg" 255,30,35,42
+  palette "textures/egyptsoc_floor/solidgrate1a.jpg" 255,49,43,34
+  palette "textures/egyptsoc_floor/grate4a.tga" 97,63,57,50
+  palette "textures/egyptsoc_floor/block10c.jpg" 255,59,60,59
+  palette "textures/egyptsoc_floor/block09a.jpg" 255,87,78,68
+  palette "textures/egyptsoc_floor/block08c.jpg" 255,81,73,63
+  palette "textures/egyptsoc_floor/block07b.jpg" 255,103,77,46
+  palette "textures/egyptsoc_floor/block01a.jpg" 255,86,77,67
+  palette "textures/egyptsoc_mat/wood18.jpg" 255,55,44,36
+  palette "textures/egyptsoc_mat/wood09.jpg" 255,62,43,31
+  palette "textures/egyptsoc_mat/wood07.jpg" 255,98,82,65
+  palette "textures/egyptsoc_mat/wood05a.jpg" 255,77,59,46
+  palette "textures/egyptsoc_mat/sand1b.jpg" 255,105,82,56
+  palette "textures/egyptsoc_mat/block02c.jpg" 255,55,45,34
+  palette "textures/egyptsoc_mat/block02a.jpg" 255,67,54,41
+  palette "textures/egyptsoc_mat/block01d.jpg" 255,101,77,48
+  palette "textures/egyptsoc_mat/block01c.jpg" 255,87,78,69
+  palette "textures/egyptsoc_mat/block01a.jpg" 255,106,96,84
+  palette "textures/common/watercaulk.tga" 255,64,106,132
+  palette "textures/common/transwater.tga" 255,64,106,132
+  palette "textures/common/slimecaulk.tga" 255,44,219,77
+  palette "textures/common/skip.tga" 255,35,51,146
+  palette "textures/common/mirror1.tga" 0,0,0,0
+  palette "textures/common/lavacaulk.tga" 255,255,92,38
+  palette "textures/common/invisible.tga" 0,0,0,0
+  palette "textures/common/hintlocal.tga" 255,57,229,57
+  palette "textures/common/antiportal.tga" 255,24,105,115
+  palette "textures/common/alpha_75.tga" 255,128,128,128
+  palette "textures/common/alpha_50.tga" 255,129,129,129
+  palette "textures/common/alpha_25.tga" 255,128,128,128
+  palette "textures/common/alpha_100.tga" 255,126,126,126
+  palette "textures/common/alpha_0.tga" 255,126,126,126
+  palette "textures/gothic_block/xgkc_lower.tga" 255,71,59,52
+  palette "textures/gothic_block/xgkc_lower.jpg" 255,71,59,52
+  palette "textures/gothic_block/xcurve_q3dm6.tga" 255,69,61,58
+  palette "textures/gothic_block/xcurve_q3dm6.jpg" 255,69,61,58
+  palette "textures/gothic_block/xblocks10.tga" 255,76,36,28
+  palette "textures/gothic_block/xblocks10.jpg" 255,76,36,28
+  palette "textures/gothic_block/xGkc15ba.tga" 255,82,65,54
+  palette "textures/gothic_block/xGkc15ba.jpg" 255,82,65,54
+  palette "textures/gothic_block/x1blocks.tga" 255,71,59,53
+  palette "textures/gothic_block/x1blocks.jpg" 255,71,59,53
+  palette "textures/gothic_block/windowevil2c_killblock.tga" 255,72,62,59
   palette "textures/gothic_block/windowevil2c_killblock.jpg" 255,72,62,59
+  palette "textures/gothic_block/windowevil2c_block18c.tga" 255,82,57,55
+  palette "textures/gothic_block/windowevil2c_block18c.jpg" 255,82,57,55
+  palette "textures/gothic_block/wetwallfx.tga" 255,24,21,13
+  palette "textures/gothic_block/wetwallfx.jpg" 255,24,21,13
+  palette "textures/gothic_block/wetwall.tga" 247,52,41,36
+  palette "textures/gothic_block/smblk3b3dim_wall.tga" 255,50,41,35
+  palette "textures/gothic_block/smblk3b3dim_wall.jpg" 255,50,41,35
+  palette "textures/gothic_block/pulpywalla.tga" 255,53,44,39
+  palette "textures/gothic_block/pulpywalla.jpg" 255,53,44,39
   palette "textures/gothic_block/largerblock3blood.tga" 146,82,52,34
+  palette "textures/gothic_block/killtrim.tga" 255,49,43,41
+  palette "textures/gothic_block/killtrim.jpg" 255,49,43,41
   palette "textures/gothic_block/killblockgeomtrn.tga" 227,66,58,55
+  palette "textures/gothic_block/killblock_relief1.tga" 255,82,67,70
+  palette "textures/gothic_block/killblock_relief1.jpg" 255,82,67,70
+  palette "textures/gothic_block/killblock_k.tga" 255,75,65,62
+  palette "textures/gothic_block/killblock_k.jpg" 255,75,65,62
+  palette "textures/gothic_block/killblock_j2.tga" 255,72,62,59
+  palette "textures/gothic_block/killblock_j2.jpg" 255,72,62,59
+  palette "textures/gothic_block/killblock_j.tga" 255,74,63,58
+  palette "textures/gothic_block/killblock_j.jpg" 255,74,63,58
+  palette "textures/gothic_block/killblock_iron_b.tga" 255,56,59,72
+  palette "textures/gothic_block/killblock_iron_b.jpg" 255,56,59,72
+  palette "textures/gothic_block/killblock_i4glow.tga" 255,1,0,0
+  palette "textures/gothic_block/killblock_i4glow.jpg" 255,1,0,0
+  palette "textures/gothic_block/killblock_i4.tga" 255,79,62,53
   palette "textures/gothic_block/killblock_i4.jpg" 255,79,62,53
+  palette "textures/gothic_block/killblock_i3.tga" 255,82,66,58
+  palette "textures/gothic_block/killblock_i3.jpg" 255,82,66,58
+  palette "textures/gothic_block/killblock_i2.tga" 255,77,61,53
+  palette "textures/gothic_block/killblock_i2.jpg" 255,77,61,53
+  palette "textures/gothic_block/killblock_i.tga" 255,76,62,55
   palette "textures/gothic_block/killblock_i.jpg" 255,76,62,55
+  palette "textures/gothic_block/killblock.tga" 255,75,67,65
   palette "textures/gothic_block/killblock.jpg" 255,75,67,65
+  palette "textures/gothic_block/gkc_large_right.tga" 255,74,64,60
+  palette "textures/gothic_block/gkc_large_right.jpg" 255,74,64,60
+  palette "textures/gothic_block/gkc_larg_left.tga" 255,74,64,60
+  palette "textures/gothic_block/gkc_larg_left.jpg" 255,74,64,60
+  palette "textures/gothic_block/gkc20b.tga" 255,75,65,60
   palette "textures/gothic_block/gkc20b.jpg" 255,75,65,60
+  palette "textures/gothic_block/gkc20a.tga" 255,75,65,60
   palette "textures/gothic_block/gkc20a.jpg" 255,75,65,60
+  palette "textures/gothic_block/gkc20_wide_right.tga" 255,75,66,62
+  palette "textures/gothic_block/gkc20_wide_right.jpg" 255,75,66,62
+  palette "textures/gothic_block/gkc19b.tga" 255,74,65,62
   palette "textures/gothic_block/gkc19b.jpg" 255,74,65,62
+  palette "textures/gothic_block/gkc19a.tga" 255,74,65,61
   palette "textures/gothic_block/gkc19a.jpg" 255,74,65,61
+  palette "textures/gothic_block/gkc19_wide_right.tga" 255,74,65,63
+  palette "textures/gothic_block/gkc19_wide_right.jpg" 255,74,65,63
+  palette "textures/gothic_block/gkc18b.tga" 255,72,60,53
+  palette "textures/gothic_block/gkc18b.jpg" 255,72,60,53
+  palette "textures/gothic_block/gkc17d.tga" 117,110,97,89
+  palette "textures/gothic_block/gkc16b.tga" 255,74,63,58
+  palette "textures/gothic_block/gkc16b.jpg" 255,74,63,58
+  palette "textures/gothic_block/gkc15c.tga" 255,75,64,58
   palette "textures/gothic_block/gkc15c.jpg" 255,75,64,58
+  palette "textures/gothic_block/gkc15b.tga" 255,73,64,59
   palette "textures/gothic_block/gkc15b.jpg" 255,73,64,59
+  palette "textures/gothic_block/gkc15_big.tga" 255,74,63,58
+  palette "textures/gothic_block/gkc15_big.jpg" 255,74,63,58
+  palette "textures/gothic_block/gkc14e.tga" 0,0,0,0
+  palette "textures/gothic_block/gkc14b.tga" 255,71,57,48
+  palette "textures/gothic_block/gkc14b.jpg" 255,71,57,48
+  palette "textures/gothic_block/gkc14.tga" 255,68,54,45
+  palette "textures/gothic_block/gkc14.jpg" 255,68,54,45
+  palette "textures/gothic_block/gkc10.tga" 255,58,47,41
+  palette "textures/gothic_block/gkc10.jpg" 255,58,47,41
+  palette "textures/gothic_block/evil2ckillblockglow.tga" 255,15,5,2
   palette "textures/gothic_block/evil2ckillblockglow.jpg" 255,15,5,2
+  palette "textures/gothic_block/evil2cglow.tga" 255,18,2,2
+  palette "textures/gothic_block/evil2cglow.jpg" 255,18,2,2
   palette "textures/gothic_block/demon_block15fx.tga" 252,84,65,58
+  palette "textures/gothic_block/dark_block.tga" 255,52,37,28
+  palette "textures/gothic_block/dark_block.jpg" 255,52,37,28
+  palette "textures/gothic_block/blocks9.tga" 255,79,71,71
+  palette "textures/gothic_block/blocks9.jpg" 255,79,71,71
+  palette "textures/gothic_block/blocks20b.tga" 255,105,72,55
   palette "textures/gothic_block/blocks20b.jpg" 255,105,72,55
+  palette "textures/gothic_block/blocks19.tga" 255,91,75,71
+  palette "textures/gothic_block/blocks19.jpg" 255,91,75,71
+  palette "textures/gothic_block/blocks18d.tga" 255,54,46,42
+  palette "textures/gothic_block/blocks18d.jpg" 255,54,46,42
+  palette "textures/gothic_block/blocks18cgeomtrnx.tga" 227,58,50,46
   palette "textures/gothic_block/blocks18cgeomtrn2.tga" 65,60,51,46
+  palette "textures/gothic_block/blocks18cgeom.tga" 255,60,50,46
+  palette "textures/gothic_block/blocks18cgeom.jpg" 255,60,50,46
+  palette "textures/gothic_block/blocks18cbloodhead.tga" 255,60,50,47
+  palette "textures/gothic_block/blocks18cbloodhead.jpg" 255,60,50,47
+  palette "textures/gothic_block/blocks18cblood.tga" 255,60,49,45
   palette "textures/gothic_block/blocks18cblood.jpg" 255,60,49,45
+  palette "textures/gothic_block/blocks18c_3.tga" 255,58,50,46
   palette "textures/gothic_block/blocks18c_3.jpg" 255,58,50,46
+  palette "textures/gothic_block/blocks18c_1a.tga" 255,60,50,47
+  palette "textures/gothic_block/blocks18c_1a.jpg" 255,60,50,47
+  palette "textures/gothic_block/blocks18c_1.tga" 255,60,50,46
+  palette "textures/gothic_block/blocks18c_1.jpg" 255,60,50,46
+  palette "textures/gothic_block/blocks18c.tga" 255,58,50,46
   palette "textures/gothic_block/blocks18c.jpg" 255,58,50,46
+  palette "textures/gothic_block/blocks18b_ow.tga" 239,77,61,58
+  palette "textures/gothic_block/blocks18b.tga" 255,75,63,61
   palette "textures/gothic_block/blocks18b.jpg" 255,75,63,61
+  palette "textures/gothic_block/blocks17slime.tga" 255,63,68,50
+  palette "textures/gothic_block/blocks17slime.jpg" 255,63,68,50
+  palette "textures/gothic_block/blocks17k.tga" 255,72,59,56
+  palette "textures/gothic_block/blocks17k.jpg" 255,72,59,56
+  palette "textures/gothic_block/blocks17j.tga" 255,79,65,63
+  palette "textures/gothic_block/blocks17j.jpg" 255,79,65,63
+  palette "textures/gothic_block/blocks17i.tga" 255,36,46,28
+  palette "textures/gothic_block/blocks17i.jpg" 255,36,46,28
+  palette "textures/gothic_block/blocks17g_owx.tga" 238,79,69,60
+  palette "textures/gothic_block/blocks17g_ow.tga" 238,79,69,60
+  palette "textures/gothic_block/blocks17g.tga" 255,79,71,61
   palette "textures/gothic_block/blocks17g.jpg" 255,79,71,61
+  palette "textures/gothic_block/blocks17e.tga" 255,71,55,42
   palette "textures/gothic_block/blocks17e.jpg" 255,71,55,42
+  palette "textures/gothic_block/blocks17bloody.tga" 146,79,55,50
   palette "textures/gothic_block/blocks17_ow.tga" 238,81,66,61
+  palette "textures/gothic_block/blocks17.tga" 255,82,68,65
   palette "textures/gothic_block/blocks17.jpg" 255,82,68,65
+  palette "textures/gothic_block/blocks15cgeomtrn.tga" 227,73,56,51
+  palette "textures/gothic_block/blocks15_relief2.tga" 255,92,76,70
+  palette "textures/gothic_block/blocks15_relief2.jpg" 255,92,76,70
+  palette "textures/gothic_block/blocks15_relief1.tga" 255,86,65,67
+  palette "textures/gothic_block/blocks15_relief1.jpg" 255,86,65,67
+  palette "textures/gothic_block/blocks15_iron_r.tga" 255,85,45,42
+  palette "textures/gothic_block/blocks15_iron_r.jpg" 255,85,45,42
+  palette "textures/gothic_block/blocks15_c.tga" 255,81,60,51
+  palette "textures/gothic_block/blocks15_c.jpg" 255,81,60,51
+  palette "textures/gothic_block/blocks15_blue.tga" 255,49,44,57
+  palette "textures/gothic_block/blocks15_blue.jpg" 255,49,44,57
+  palette "textures/gothic_block/blocks15.tga" 255,87,64,57
   palette "textures/gothic_block/blocks15.jpg" 255,87,64,57
+  palette "textures/gothic_block/blocks11d.tga" 255,57,49,47
+  palette "textures/gothic_block/blocks11d.jpg" 255,57,49,47
+  palette "textures/gothic_block/blocks11bbroke3.tga" 255,70,63,61
   palette "textures/gothic_block/blocks11bbroke3.jpg" 255,70,63,61
+  palette "textures/gothic_block/blocks11bbroke.tga" 255,65,57,54
+  palette "textures/gothic_block/blocks11bbroke.jpg" 255,65,57,54
+  palette "textures/gothic_block/blocks11b.tga" 255,75,67,65
   palette "textures/gothic_block/blocks11b.jpg" 255,75,67,65
+  palette "textures/gothic_block/blocks10.tga" 255,91,72,59
   palette "textures/gothic_block/blocks10.jpg" 255,91,72,59
+  palette "textures/gothic_block/block10d.tga" 255,92,75,64
+  palette "textures/gothic_block/block10d.jpg" 255,92,75,64
+  palette "textures/ctf/towerback.tga" 0,0,0,0
+  palette "textures/ctf/test2_r.tga" 255,101,12,12
+  palette "textures/ctf/test2.tga" 0,0,0,0
+  palette "textures/ctf/telep.tga" 23,55,45,39
+  palette "textures/ctf/tallblue_5esmallb_fin.tga" 16,92,85,89
+  palette "textures/ctf/tallblue_5_bfin.tga" 255,47,42,62
+  palette "textures/ctf/tallblue_5_bfin.jpg" 255,47,42,62
+  palette "textures/ctf/tallblue_4c_fin.tga" 39,75,66,88
+  palette "textures/ctf/tallblue_4bsmall_fin.tga" 31,79,67,84
+  palette "textures/ctf/tallblue_2bshort_fin.tga" 255,52,45,59
+  palette "textures/ctf/tallblue_2bshort_fin.jpg" 255,52,45,59
+  palette "textures/ctf/tallblue_2bshort2_fin.tga" 255,58,50,55
+  palette "textures/ctf/tallblue_2bshort2_fin.jpg" 255,58,50,55
+  palette "textures/ctf/tallblue_2b_fin.tga" 6,73,55,48
+  palette "textures/ctf/tallblue_2_fin.tga" 10,72,59,58
+  palette "textures/ctf/tallblue_1_fin.tga" 255,43,40,77
+  palette "textures/ctf/tallblue_1_fin.jpg" 255,43,40,77
+  palette "textures/ctf/tallblue_1R_fin.tga" 7,48,41,65
+  palette "textures/ctf/tallblue_1L_fin.tga" 5,51,43,60
+  palette "textures/ctf/supportborder_blueskull.tga" 255,70,60,71
+  palette "textures/ctf/supportborder_blueskull.jpg" 255,70,60,71
+  palette "textures/ctf/supportborder_blue_c.tga" 255,72,61,59
+  palette "textures/ctf/supportborder_blue_c.jpg" 255,72,61,59
+  palette "textures/ctf/supportborder_blue_b.tga" 255,73,62,57
+  palette "textures/ctf/supportborder_blue_b.jpg" 255,73,62,57
+  palette "textures/ctf/supportborder_blue.tga" 255,69,59,72
+  palette "textures/ctf/supportborder_blue.jpg" 255,69,59,72
+  palette "textures/ctf/red_telep2.tga" 255,20,1,1
+  palette "textures/ctf/red_telep2.jpg" 255,20,1,1
+  palette "textures/ctf/red_telep.tga" 255,20,1,1
+  palette "textures/ctf/red_telep.jpg" 255,20,1,1
+  palette "textures/ctf/red_scary4_dfin.tga" 255,67,29,28
+  palette "textures/ctf/red_scary4_dfin.jpg" 255,67,29,28
+  palette "textures/ctf/red_scary4_d3fin.tga" 27,90,52,51
+  palette "textures/ctf/red_scary4_cshortfin.tga" 255,76,47,43
+  palette "textures/ctf/red_scary4_cshortfin.jpg" 255,76,47,43
+  palette "textures/ctf/red_scary4_csansfacefin.tga" 9,87,60,56
+  palette "textures/ctf/red_scary4_cfin.tga" 6,89,62,62
+  palette "textures/ctf/red_scary4_bfin.tga" 255,68,30,29
+  palette "textures/ctf/red_scary4_bfin.jpg" 255,68,30,29
+  palette "textures/ctf/metalbase09_bluekillblock.tga" 29,94,79,69
+  palette "textures/ctf/killblock_i2_r.jpg" 255,77,56,53
+  palette "textures/ctf/killblock_i2_gold.tga" 255,64,69,64
+  palette "textures/ctf/killblock_i2_gold.jpg" 255,64,69,64
+  palette "textures/ctf/killblock_i2_g.jpg" 255,61,66,66
+  palette "textures/ctf/killblock_i2_b.jpg" 255,64,59,66
+  palette "textures/ctf/ctf_tower_redfin_bottom.tga" 255,65,53,49
+  palette "textures/ctf/ctf_tower_redfin_bottom.jpg" 255,65,53,49
+  palette "textures/ctf/ctf_tower_redfin.tga" 38,117,78,73
+  palette "textures/ctf/ctf_tower_bluefin_bottom.tga" 255,60,48,43
+  palette "textures/ctf/ctf_tower_bluefin_bottom.jpg" 255,60,48,43
+  palette "textures/ctf/ctf_tower_bluefin.tga" 38,107,94,98
+  palette "textures/ctf/ctf_redflag.tga" 241,175,13,6
+  palette "textures/ctf/ctf_greenflag.tga" 224,61,168,9
+  palette "textures/ctf/ctf_goldflag.tga" 224,168,119,9
+  palette "textures/ctf/ctf_goldflag.jpg" 255,179,136,44
+  palette "textures/ctf/ctf_blueflag.tga" 224,9,110,168
+  palette "textures/ctf/ctf_arch_r.tga" 209,44,29,26
+  palette "textures/ctf/ctf_arch_b.tga" 207,33,35,33
+  palette "textures/ctf/blue_telep2.tga" 255,1,13,20
+  palette "textures/ctf/blue_telep2.jpg" 255,1,12,20
+  palette "textures/ctf/blue_telep.tga" 255,1,13,20
+  palette "textures/ctf/blue_telep.jpg" 255,1,12,20
+  palette "textures/effects/tinfxb.tga" 255,72,66,66
   palette "textures/effects/tinfxb.jpg" 255,72,66,66
+  palette "textures/effects/tinfx3.tga" 255,13,13,13
   palette "textures/effects/tinfx3.jpg" 255,13,13,13
+  palette "textures/effects/tinfx2d.tga" 255,44,53,55
   palette "textures/effects/tinfx2d.jpg" 255,44,53,55
+  palette "textures/effects/tinfx2c.tga" 255,37,46,47
   palette "textures/effects/tinfx2c.jpg" 255,37,46,47
+  palette "textures/effects/tinfx2b.tga" 255,49,43,43
   palette "textures/effects/tinfx2b.jpg" 255,49,43,43
+  palette "textures/effects/tinfx2.tga" 255,20,20,20
   palette "textures/effects/tinfx2.jpg" 255,20,20,20
+  palette "textures/effects/tinfx.tga" 255,62,62,62
   palette "textures/effects/tinfx.jpg" 255,62,62,62
+  palette "textures/effects/regenmap2.tga" 255,83,3,2
   palette "textures/effects/regenmap2.jpg" 255,83,3,2
+  palette "textures/effects/redflagmap.tga" 0,0,0,0
+  palette "textures/effects/quadmap2.tga" 255,6,21,53
   palette "textures/effects/quadmap2.jpg" 255,6,21,53
+  palette "textures/effects/invismap.tga" 255,5,5,5
   palette "textures/effects/invismap.jpg" 255,5,5,5
+  palette "textures/effects/envmapyel.tga" 255,143,108,34
   palette "textures/effects/envmapyel.jpg" 255,143,108,34
+  palette "textures/effects/envmaproc.tga" 255,65,19,14
+  palette "textures/effects/envmaproc.jpg" 255,65,19,14
+  palette "textures/effects/envmapred.tga" 255,87,12,11
   palette "textures/effects/envmapred.jpg" 255,88,11,11
+  palette "textures/effects/envmaprail.tga" 255,38,79,31
   palette "textures/effects/envmaprail.jpg" 255,38,79,31
+  palette "textures/effects/envmappurp.tga" 255,138,46,137
   palette "textures/effects/envmappurp.jpg" 255,138,46,137
+  palette "textures/effects/envmapplas.tga" 255,84,36,86
   palette "textures/effects/envmapplas.jpg" 255,84,36,86
+  palette "textures/effects/envmapmach.tga" 255,63,53,12
   palette "textures/effects/envmapmach.jpg" 255,63,53,11
+  palette "textures/effects/envmapligh.tga" 255,86,61,33
   palette "textures/effects/envmapligh.jpg" 255,86,61,33
+  palette "textures/effects/envmapgold2.tga" 255,102,57,18
   palette "textures/effects/envmapgold2.jpg" 255,102,57,18
+  palette "textures/effects/envmapgold.tga" 255,121,77,40
   palette "textures/effects/envmapgold.jpg" 255,121,77,40
+  palette "textures/effects/envmapdimb.tga" 255,17,17,17
+  palette "textures/effects/envmapdimb.jpg" 255,17,17,17
+  palette "textures/effects/envmapdim.tga" 255,51,51,51
   palette "textures/effects/envmapdim.jpg" 255,51,51,51
+  palette "textures/effects/envmapblue2.tga" 255,24,65,127
   palette "textures/effects/envmapblue2.jpg" 255,24,65,127
+  palette "textures/effects/envmapblue.tga" 255,33,90,138
   palette "textures/effects/envmapblue.jpg" 255,33,90,138
+  palette "textures/effects/envmapbfg.tga" 255,35,49,82
   palette "textures/effects/envmapbfg.jpg" 255,35,49,82
+  palette "textures/effects/envmap2.tga" 255,10,10,9
+  palette "textures/effects/envmap2.jpg" 255,10,10,9
+  palette "textures/effects/envmap.tga" 255,104,104,107
   palette "textures/effects/envmap.jpg" 255,104,104,107
   palette "textures/effects/blueflagmap.tga" 0,0,0,0
-  palette "textures/base_wall/steed1gf.tga" 82,82,87,73
-  palette "textures/base_wall/steed1ge.jpg" 255,84,87,70
-  palette "textures/base_wall/protobanner.tga" 232,69,53,39
-  palette "textures/base_wall/patch10_beatup4.jpg" 255,79,67,59
-  palette "textures/base_wall/patch10_beatup2.jpg" 255,72,63,49
-  palette "textures/base_wall/metfloor_block_3.jpg" 255,94,82,77
-  palette "textures/base_wall/metaltech13final.jpg" 255,94,88,86
-  palette "textures/base_wall/metaltech12final.jpg" 255,65,62,63
-  palette "textures/base_wall/metaltech12darkfinal.jpg" 255,47,45,45
-  palette "textures/base_wall/metaltech06final.jpg" 255,69,56,51
-  palette "textures/base_wall/metalfloor_wall_15ow.tga" 248,76,65,62
-  palette "textures/base_wall/metalfloor_wall_15.jpg" 255,91,78,74
-  palette "textures/base_wall/metalfloor_wall_10.jpg" 255,76,38,39
-  palette "textures/base_wall/metalblack03.jpg" 255,47,44,43
-  palette "textures/base_wall/main_q3abanner.tga" 50,238,1,1
-  palette "textures/base_wall/comp3textb.jpg" 255,23,23,24
-  palette "textures/base_wall/comp3text.jpg" 255,3,1,1
-  palette "textures/base_wall/c_met7_2.jpg" 255,73,67,61
-  palette "textures/base_wall/c_met5_2.jpg" 255,73,68,62
-  palette "textures/base_wall/bluemetal2.jpg" 255,81,54,59
-  palette "textures/base_wall/atech1_e.jpg" 255,60,48,42
-  palette "textures/base_wall/atech1_alpha.tga" 244,59,42,29
-  palette "textures/base_wall/atech1_a.jpg" 255,58,41,28
-  palette "textures/base_trim/spiderbit4.jpg" 255,56,49,39
-  palette "textures/base_trim/pewter_shiney.tga" 145,60,55,51
-  palette "textures/base_trim/border11light.jpg" 255,87,77,67
-  palette "textures/base_trim/border11light.glow.jpg" 255,5,4,4
-  palette "textures/base_trim/border11b.jpg" 255,93,84,75
-  palette "textures/base_trim/basemetalsupport.jpg" 255,89,74,67
+  palette "textures/base_support/z_support.tga" 173,77,66,54
+  palette "textures/base_support/x_support3.tga" 143,71,53,41
+  palette "textures/base_support/x_support2.tga" 106,63,62,56
+  palette "textures/base_support/x_support.tga" 106,73,53,38
+  palette "textures/base_support/wplat1_1.tga" 255,67,51,39
+  palette "textures/base_support/wplat1_1.jpg" 255,67,51,39
+  palette "textures/base_support/vert_pipe1.tga" 255,86,69,52
+  palette "textures/base_support/vert_pipe1.jpg" 255,86,69,52
+  palette "textures/base_support/surface2.tga" 255,163,113,89
+  palette "textures/base_support/surface2.jpg" 255,163,113,89
+  palette "textures/base_support/support1shiny.tga" 206,68,57,51
+  palette "textures/base_support/support1rust.tga" 255,49,31,21
+  palette "textures/base_support/support1rust.jpg" 255,49,31,21
+  palette "textures/base_support/support1_1.tga" 255,68,55,44
+  palette "textures/base_support/support1_1.jpg" 255,68,55,44
+  palette "textures/base_support/plate2_5.tga" 255,55,44,37
+  palette "textures/base_support/plate2_5.jpg" 255,55,44,37
+  palette "textures/base_support/pipecolumn4.tga" 93,154,38,40
+  palette "textures/base_support/pip03_3.tga" 255,73,54,33
+  palette "textures/base_support/pip03_3.jpg" 255,73,54,33
+  palette "textures/base_support/pip03_2.tga" 255,49,44,34
+  palette "textures/base_support/pip03_2.jpg" 255,49,44,34
+  palette "textures/base_support/metal3_3.tga" 255,87,77,69
+  palette "textures/base_support/metal3_3.jpg" 255,87,77,69
+  palette "textures/base_support/metal1_1.tga" 255,78,70,67
+  palette "textures/base_support/metal1_1.jpg" 255,78,70,67
+  palette "textures/base_support/metal14_1.tga" 255,63,57,52
   palette "textures/base_support/metal14_1.jpg" 255,63,57,52
+  palette "textures/base_support/grate2_7_small.tga" 255,64,59,55
+  palette "textures/base_support/grate2_7_small.jpg" 255,64,59,55
+  palette "textures/base_support/grate1_4_small.tga" 255,62,54,47
+  palette "textures/base_support/grate1_4_small.jpg" 255,62,54,47
+  palette "textures/base_support/grate1_4.tga" 255,61,53,46
+  palette "textures/base_support/grate1_4.jpg" 255,61,53,46
+  palette "textures/base_support/grate1_3.tga" 86,129,119,100
+  palette "textures/base_support/flat1_1.tga" 255,29,26,21
+  palette "textures/base_support/flat1_1.jpg" 255,29,26,21
   palette "textures/base_support/cable_trans.tga" 0,0,0,0
+  palette "textures/base_support/cable.tga" 255,41,36,29
   palette "textures/base_support/cable.jpg" 255,41,36,29
+  palette "textures/base_support/basic1_1.tga" 255,60,49,38
+  palette "textures/base_support/basic1_1.jpg" 255,60,49,38
+  palette "textures/base_object/boxq3_4.tga" 69,172,118,82
+  palette "textures/base_object/boxQ3_4b.tga" 255,110,82,69
+  palette "textures/base_object/boxQ3_4b.jpg" 255,110,82,69
+  palette "textures/base_object/boxQ3_3b.tga" 255,113,76,67
+  palette "textures/base_object/boxQ3_3b.jpg" 255,112,76,67
+  palette "textures/base_object/boxQ3_3.tga" 86,120,63,49
+  palette "textures/base_floor/tilefloor7_owfx.tga" 255,3,2,2
+  palette "textures/base_floor/tilefloor7_owfx.jpg" 255,3,2,2
+  palette "textures/base_floor/tilefloor7_ow.tga" 255,28,24,18
+  palette "textures/base_floor/tilefloor7_ow.jpg" 255,28,24,18
+  palette "textures/base_floor/tilefloor7.tga" 255,35,28,21
+  palette "textures/base_floor/tilefloor7.jpg" 255,35,28,21
+  palette "textures/base_floor/techfloor2.tga" 106,62,53,48
+  palette "textures/base_floor/techfloor.tga" 214,55,47,42
+  palette "textures/base_floor/smallstone.tga" 255,80,63,57
+  palette "textures/base_floor/smallstone.jpg" 255,80,63,57
+  palette "textures/base_floor/skylight_spec.tga" 169,33,33,32
+  palette "textures/base_floor/skylight1_lm.tga" 255,6,7,4
+  palette "textures/base_floor/skylight1_lm.jpg" 255,6,7,4
+  palette "textures/base_floor/skylight1.tga" 255,29,26,24
+  palette "textures/base_floor/skylight1.jpg" 255,29,26,24
+  palette "textures/base_floor/rusty_pentagrate.tga" 178,48,33,25
+  palette "textures/base_floor/proto_rustygrate2.tga" 167,51,35,27
+  palette "textures/base_floor/proto_rustygrate.tga" 208,52,35,27
+  palette "textures/base_floor/proto_grill.tga" 255,44,36,31
+  palette "textures/base_floor/proto_grill.jpg" 255,44,35,31
+  palette "textures/base_floor/proto_grate4.tga" 146,50,36,30
+  palette "textures/base_floor/proto_grate3.tga" 208,52,33,19
+  palette "textures/base_floor/proto_grate.tga" 208,33,30,27
   palette "textures/base_floor/pjgrate2.tga" 255,24,14,9
+  palette "textures/base_floor/pjgrate1.tga" 255,27,26,22
+  palette "textures/base_floor/metfloor1.tga" 255,128,117,115
+  palette "textures/base_floor/metfloor1.jpg" 255,128,117,115
+  palette "textures/base_floor/metaltechfloor01final.tga" 255,108,102,102
+  palette "textures/base_floor/metaltechfloor01final.jpg" 255,108,102,102
+  palette "textures/base_floor/metalbridge06.tga" 255,66,61,59
+  palette "textures/base_floor/metalbridge06.jpg" 255,66,61,59
+  palette "textures/base_floor/metalbridge04dbroke2.tga" 243,98,84,86
+  palette "textures/base_floor/metalbridge04dbroke.tga" 243,100,86,88
+  palette "textures/base_floor/metalbridge04d.tga" 255,99,85,87
+  palette "textures/base_floor/metalbridge04d.jpg" 255,99,85,87
+  palette "textures/base_floor/manhole.tga" 255,45,32,24
+  palette "textures/base_floor/manhole.jpg" 255,45,32,24
+  palette "textures/base_floor/hfloor3.tga" 255,47,36,26
+  palette "textures/base_floor/hfloor3.jpg" 255,47,36,26
+  palette "textures/base_floor/floor3_3dark_ow.tga" 223,51,42,34
+  palette "textures/base_floor/floor3_3dark.tga" 255,82,70,60
+  palette "textures/base_floor/floor3_3dark.jpg" 255,82,70,61
+  palette "textures/base_floor/dirt.tga" 255,43,26,19
+  palette "textures/base_floor/dirt.jpg" 255,43,26,19
+  palette "textures/base_floor/diamond2cspot.tga" 146,55,52,51
   palette "textures/base_floor/diamond2c_ow.tga" 244,61,57,54
+  palette "textures/base_floor/diamond2c.tga" 255,58,58,58
   palette "textures/base_floor/diamond2c.jpg" 255,58,58,58
+  palette "textures/base_floor/diamond2.tga" 255,58,58,58
+  palette "textures/base_floor/diamond2.jpg" 255,58,58,58
+  palette "textures/base_floor/cybergrate3.tga" 82,62,56,50
+  palette "textures/base_floor/cybergrate2.tga" 101,64,57,50
+  palette "textures/base_floor/concretefloor1.tga" 91,97,89,81
+  palette "textures/base_floor/concrete.tga" 255,78,73,66
+  palette "textures/base_floor/concrete.jpg" 255,78,73,66
+  palette "textures/base_floor/clangspot2.tga" 121,77,64,53
+  palette "textures/base_floor/clanggrate2.tga" 255,40,32,28
+  palette "textures/base_floor/clanggrate2.jpg" 255,40,32,28
+  palette "textures/base_floor/clanggrate.tga" 255,33,27,24
+  palette "textures/base_floor/clanggrate.jpg" 255,33,27,24
+  palette "textures/base_floor/clangdark_ow2.tga" 255,58,36,20
+  palette "textures/base_floor/clangdark_ow2.jpg" 255,58,36,20
+  palette "textures/base_floor/clangdark_ow.tga" 255,44,38,25
+  palette "textures/base_floor/clangdark_ow.jpg" 255,44,38,25
+  palette "textures/base_floor/clangdark.tga" 255,48,39,30
+  palette "textures/base_floor/clangdark.jpg" 255,48,39,30
+  palette "textures/base_floor/clang_floor_ow2.tga" 255,82,73,63
+  palette "textures/base_floor/clang_floor_ow2.jpg" 255,82,73,63
+  palette "textures/base_floor/clang_floor3bstairtop2.tga" 255,43,35,29
+  palette "textures/base_floor/clang_floor3bstairtop2.jpg" 255,42,35,29
+  palette "textures/base_floor/clang_floor3bstairtop.tga" 255,43,37,32
+  palette "textures/base_floor/clang_floor3bstairtop.jpg" 255,43,37,32
+  palette "textures/base_floor/clang_floor3blava.tga" 89,89,26,0
+  palette "textures/base_floor/clang_floor3b.tga" 255,70,62,57
+  palette "textures/base_floor/clang_floor3b.jpg" 255,70,62,57
+  palette "textures/base_floor/clang_floor2.tga" 255,35,29,24
+  palette "textures/base_floor/clang_floor2.jpg" 255,35,29,24
+  palette "textures/base_floor/clang_floor.tga" 255,81,71,61
+  palette "textures/base_floor/clang_floor.jpg" 255,81,71,61
+  palette "textures/base_floor/achtung_clang.tga" 255,47,20,12
+  palette "textures/base_floor/achtung_clang.jpg" 255,47,20,12
+  palette "textures/base_light/xlight5.tga" 255,32,32,32
+  palette "textures/base_light/xlight5.jpg" 255,32,32,32
+  palette "textures/base_light/xlight5.blend.tga" 255,103,101,88
+  palette "textures/base_light/xlight5.blend.jpg" 255,102,101,88
+  palette "textures/base_light/wsupprt1_12.tga" 255,95,88,72
+  palette "textures/base_light/wsupprt1_12.jpg" 255,95,88,72
+  palette "textures/base_light/wsupprt1_12.blend.tga" 255,81,77,64
+  palette "textures/base_light/wsupprt1_12.blend.jpg" 255,81,77,64
+  palette "textures/base_light/trianglelight.tga" 47,82,64,61
+  palette "textures/base_light/trianglelight.blend.tga" 44,230,222,218
+  palette "textures/base_light/scrolllight2.tga" 255,14,11,8
+  palette "textures/base_light/scrolllight2.jpg" 255,14,11,8
+  palette "textures/base_light/scrolllight.tga" 255,22,17,14
+  palette "textures/base_light/scrolllight.jpg" 255,22,17,14
+  palette "textures/base_light/runwayb.tga" 255,29,17,4
+  palette "textures/base_light/runwayb.jpg" 255,29,17,4
+  palette "textures/base_light/runway_glow.tga" 255,8,7,0
+  palette "textures/base_light/runway_glow.jpg" 255,8,7,0
+  palette "textures/base_light/runway.tga" 203,70,66,61
+  palette "textures/base_light/proto_lightred.tga" 255,150,29,23
+  palette "textures/base_light/proto_lightred.jpg" 255,150,29,23
+  palette "textures/base_light/proto_lightmap.tga" 255,49,37,35
+  palette "textures/base_light/proto_lightmap.jpg" 255,49,37,35
+  palette "textures/base_light/proto_light2.tga" 255,13,10,9
+  palette "textures/base_light/proto_light2.jpg" 255,13,10,9
+  palette "textures/base_light/proto_light.tga" 255,93,81,77
+  palette "textures/base_light/proto_light.jpg" 255,93,81,77
+  palette "textures/base_light/patch10_pj_lite2.tga" 255,110,105,93
+  palette "textures/base_light/patch10_pj_lite2.jpg" 255,110,105,93
+  palette "textures/base_light/patch10_pj_lite2.blend.tga" 255,41,41,37
+  palette "textures/base_light/patch10_pj_lite2.blend.jpg" 255,41,41,37
+  palette "textures/base_light/patch10_pj_lite.tga" 255,107,102,91
+  palette "textures/base_light/patch10_pj_lite.jpg" 255,107,102,91
+  palette "textures/base_light/patch10_pj_lite.blend.tga" 255,41,41,36
+  palette "textures/base_light/patch10_pj_lite.blend.jpg" 255,41,41,36
+  palette "textures/base_light/light5.tga" 255,133,133,117
   palette "textures/base_light/light5.jpg" 255,133,133,117
+  palette "textures/base_light/light2.tga" 255,122,99,96
   palette "textures/base_light/light2.jpg" 255,122,99,96
+  palette "textures/base_light/light2.blend.tga" 255,136,119,121
   palette "textures/base_light/light2.blend.jpg" 255,136,119,121
+  palette "textures/base_light/light1red.tga" 255,142,86,81
+  palette "textures/base_light/light1red.jpg" 255,142,86,81
+  palette "textures/base_light/light1red.blend.tga" 255,98,55,58
+  palette "textures/base_light/light1red.blend.jpg" 255,98,55,58
+  palette "textures/base_light/light1blue.tga" 255,113,88,114
+  palette "textures/base_light/light1blue.jpg" 255,113,88,114
+  palette "textures/base_light/light1blue.blend.tga" 255,98,87,114
+  palette "textures/base_light/light1blue.blend.jpg" 255,98,87,114
+  palette "textures/base_light/light1.tga" 255,121,93,89
   palette "textures/base_light/light1.jpg" 255,121,93,89
+  palette "textures/base_light/light1.blend.tga" 255,94,67,71
   palette "textures/base_light/light1.blend.jpg" 255,94,67,71
+  palette "textures/base_light/jaildr1_3.tga" 255,65,33,24
+  palette "textures/base_light/jaildr1_3.jpg" 255,65,33,24
+  palette "textures/base_light/jaildr1_3.blend.tga" 255,49,19,13
+  palette "textures/base_light/jaildr1_3.blend.jpg" 255,48,19,13
+  palette "textures/base_light/jaildr03_2.tga" 255,50,49,41
+  palette "textures/base_light/jaildr03_2.jpg" 255,51,49,41
+  palette "textures/base_light/jaildr03_2.blend.tga" 255,25,32,14
+  palette "textures/base_light/jaildr03_2.blend.jpg" 255,25,32,14
+  palette "textures/base_light/jaildr03_1.tga" 255,51,48,49
+  palette "textures/base_light/jaildr03_1.jpg" 255,51,48,49
+  palette "textures/base_light/geolight_glow.tga" 255,55,47,49
+  palette "textures/base_light/geolight_glow.jpg" 255,55,47,49
+  palette "textures/base_light/geolight.tga" 55,82,70,63
+  palette "textures/base_light/cornerlight.tga" 27,63,77,77
+  palette "textures/base_light/cornerlight.glow.tga" 27,166,168,173
+  palette "textures/base_light/ceil1_4.tga" 255,108,87,26
+  palette "textures/base_light/ceil1_4.jpg" 255,109,87,27
+  palette "textures/base_light/ceil1_4.blend.tga" 255,86,41,26
+  palette "textures/base_light/ceil1_4.blend.jpg" 255,86,41,26
+  palette "textures/base_light/ceil1_39.tga" 255,101,86,57
   palette "textures/base_light/ceil1_39.jpg" 255,101,86,57
+  palette "textures/base_light/ceil1_39.blend.tga" 255,74,65,43
   palette "textures/base_light/ceil1_39.blend.jpg" 255,74,65,43
+  palette "textures/base_light/ceil1_38.tga" 255,103,96,77
   palette "textures/base_light/ceil1_38.jpg" 255,103,96,77
+  palette "textures/base_light/ceil1_38.blend.tga" 255,75,74,63
   palette "textures/base_light/ceil1_38.blend.jpg" 255,75,74,63
+  palette "textures/base_light/ceil1_37.tga" 255,80,98,99
   palette "textures/base_light/ceil1_37.jpg" 255,80,98,99
+  palette "textures/base_light/ceil1_37.blend.tga" 255,54,76,85
   palette "textures/base_light/ceil1_37.blend.jpg" 255,54,76,84
+  palette "textures/base_light/ceil1_34.tga" 255,68,117,101
+  palette "textures/base_light/ceil1_34.jpg" 255,68,117,101
+  palette "textures/base_light/ceil1_34.blend.tga" 255,43,96,86
+  palette "textures/base_light/ceil1_34.blend.jpg" 255,44,96,86
+  palette "textures/base_light/ceil1_30.tga" 255,51,68,128
+  palette "textures/base_light/ceil1_30.jpg" 255,50,68,128
+  palette "textures/base_light/ceil1_30.blend.tga" 255,25,47,114
+  palette "textures/base_light/ceil1_30.blend.jpg" 255,25,47,113
+  palette "textures/base_light/ceil1_22a.tga" 255,140,68,39
+  palette "textures/base_light/ceil1_22a.jpg" 255,140,68,39
+  palette "textures/base_light/ceil1_22a.blend.tga" 255,114,47,26
+  palette "textures/base_light/ceil1_22a.blend.jpg" 255,113,48,26
+  palette "textures/base_light/border7_ceil50glow.tga" 255,1,1,1
+  palette "textures/base_light/border7_ceil50glow.jpg" 255,1,1,1
+  palette "textures/base_light/border7_ceil50.tga" 255,56,56,51
+  palette "textures/base_light/border7_ceil50.jpg" 255,56,56,51
+  palette "textures/base_light/border11light.tga" 255,95,85,74
+  palette "textures/base_light/border11light.jpg" 255,95,85,74
+  palette "textures/base_light/border11light.blend.tga" 255,18,18,18
+  palette "textures/base_light/border11light.blend.jpg" 255,18,18,18
+  palette "textures/base_light/baslt4_1.tga" 255,111,99,81
   palette "textures/base_light/baslt4_1.jpg" 255,111,99,82
+  palette "textures/base_light/baslt4_1.blend.tga" 255,67,58,45
   palette "textures/base_light/baslt4_1.blend.jpg" 255,66,58,45
+  palette "textures/base_ceiling/metceil1d.tga" 255,145,142,136
+  palette "textures/base_ceiling/metceil1d.jpg" 255,145,142,136
+  palette "textures/base_wall/xian_q3dm12_leftwall4fin.tga" 255,41,38,37
+  palette "textures/base_wall/xian_q3dm12_leftwall4fin.jpg" 255,41,38,37
+  palette "textures/base_wall/xbasewall04.tga" 255,72,57,40
+  palette "textures/base_wall/xbasewall04.jpg" 255,72,57,40
+  palette "textures/base_wall/x_invertconcrete.tga" 255,67,59,52
+  palette "textures/base_wall/x_invertconcrete.jpg" 255,67,59,52
+  palette "textures/base_wall/x_concretelong.tga" 255,68,60,52
+  palette "textures/base_wall/x_concretelong.jpg" 255,68,60,52
+  palette "textures/base_wall/train1.tga" 167,186,166,156
+  palette "textures/base_wall/symbol_bluelt1_mask.tga" 255,14,14,15
+  palette "textures/base_wall/symbol_bluelt1_mask.jpg" 255,14,14,15
+  palette "textures/base_wall/symbol_bluelt1.tga" 255,56,48,47
+  palette "textures/base_wall/symbol_bluelt1.jpg" 255,56,48,47
+  palette "textures/base_wall/symbol_ball.tga" 255,49,45,42
+  palette "textures/base_wall/symbol_ball.jpg" 255,49,45,42
+  palette "textures/base_wall/steed2f.tga" 255,86,70,61
+  palette "textures/base_wall/steed2f.jpg" 255,86,70,61
+  palette "textures/base_wall/steed1gf.tga" 82,82,87,73
+  palette "textures/base_wall/steed1ge.tga" 255,84,87,70
+  palette "textures/base_wall/steed1ge.jpg" 255,84,87,70
+  palette "textures/base_wall/shinygrate1_4.tga" 76,124,114,105
+  palette "textures/base_wall/shinybluemetal1.tga" 102,120,100,114
+  palette "textures/base_wall/shiny3.tga" 255,84,83,82
+  palette "textures/base_wall/shiny3.jpg" 255,84,83,82
+  palette "textures/base_wall/rusted3.tga" 255,58,39,24
+  palette "textures/base_wall/rusted3.jpg" 255,58,39,24
+  palette "textures/base_wall/rusted.tga" 255,56,37,23
+  palette "textures/base_wall/rusted.jpg" 255,56,37,23
+  palette "textures/base_wall/redpad.tga" 255,56,43,18
+  palette "textures/base_wall/redpad.jpg" 255,56,43,18
+  palette "textures/base_wall/redmet4small.tga" 255,77,31,32
+  palette "textures/base_wall/redmet4small.jpg" 255,77,31,32
+  palette "textures/base_wall/redmet.tga" 255,79,34,34
+  palette "textures/base_wall/redmet.jpg" 255,79,34,34
+  palette "textures/base_wall/q3tourney5.tga" 255,201,117,28
+  palette "textures/base_wall/q3tourney5.jpg" 255,201,117,28
+  palette "textures/base_wall/q3tourney4.tga" 255,103,82,74
+  palette "textures/base_wall/q3tourney4.jpg" 255,103,82,74
+  palette "textures/base_wall/q3tourney3.tga" 255,135,63,46
+  palette "textures/base_wall/q3tourney3.jpg" 255,135,63,46
+  palette "textures/base_wall/q3tourney2.tga" 255,83,32,22
+  palette "textures/base_wall/q3tourney2.jpg" 255,83,32,22
+  palette "textures/base_wall/q3tourney1.tga" 255,100,74,85
+  palette "textures/base_wall/q3tourney1.jpg" 255,100,74,85
+  palette "textures/base_wall/protobanner_ow.tga" 125,61,49,40
+  palette "textures/base_wall/protobanner.tga" 232,69,53,39
+  palette "textures/base_wall/patch10rusty5.tga" 255,111,84,69
+  palette "textures/base_wall/patch10rusty5.jpg" 255,111,84,69
+  palette "textures/base_wall/patch10_beatup4_alpha.tga" 69,82,69,61
+  palette "textures/base_wall/patch10_beatup4.tga" 255,79,67,59
+  palette "textures/base_wall/patch10_beatup4.jpg" 255,79,67,59
+  palette "textures/base_wall/patch10_beatup3.tga" 255,85,69,59
+  palette "textures/base_wall/patch10_beatup3.jpg" 255,85,69,59
+  palette "textures/base_wall/patch10_beatup2.tga" 255,72,63,49
+  palette "textures/base_wall/patch10_beatup2.jpg" 255,72,63,49
+  palette "textures/base_wall/patch10.tga" 255,109,102,92
+  palette "textures/base_wall/patch10.jpg" 255,109,102,92
+  palette "textures/base_wall/metfloor_block_3.tga" 255,94,82,77
+  palette "textures/base_wall/metfloor_block_3.jpg" 255,94,82,77
+  palette "textures/base_wall/metaltechgeomtrn2.tga" 65,60,51,46
+  palette "textures/base_wall/metaltechgeomtrn.tga" 227,52,47,46
+  palette "textures/base_wall/metaltech17final.tga" 255,76,55,52
+  palette "textures/base_wall/metaltech17final.jpg" 255,76,55,52
+  palette "textures/base_wall/metaltech13final.tga" 255,94,88,86
+  palette "textures/base_wall/metaltech13final.jpg" 255,94,88,86
+  palette "textures/base_wall/metaltech12final.tga" 255,65,62,63
+  palette "textures/base_wall/metaltech12final.jpg" 255,65,62,63
+  palette "textures/base_wall/metaltech12darkfinal.tga" 255,47,45,45
+  palette "textures/base_wall/metaltech12darkfinal.jpg" 255,47,45,45
+  palette "textures/base_wall/metaltech12dark_support.tga" 255,49,43,41
+  palette "textures/base_wall/metaltech12dark_support.jpg" 255,49,43,41
+  palette "textures/base_wall/metaltech10final.tga" 255,81,77,77
+  palette "textures/base_wall/metaltech10final.jpg" 255,81,77,77
+  palette "textures/base_wall/metaltech08final.tga" 255,72,87,93
+  palette "textures/base_wall/metaltech08final.jpg" 255,72,87,93
+  palette "textures/base_wall/metaltech06final.tga" 255,69,56,51
+  palette "textures/base_wall/metaltech06final.jpg" 255,69,56,51
+  palette "textures/base_wall/metaltech04final.tga" 255,78,68,65
+  palette "textures/base_wall/metaltech04final.jpg" 255,78,68,65
+  palette "textures/base_wall/metalfloor_wall_3.tga" 255,90,76,70
+  palette "textures/base_wall/metalfloor_wall_3.jpg" 255,90,76,70
+  palette "textures/base_wall/metalfloor_wall_15ow.tga" 248,76,65,62
+  palette "textures/base_wall/metalfloor_wall_15.tga" 255,91,78,74
+  palette "textures/base_wall/metalfloor_wall_15.jpg" 255,91,78,74
+  palette "textures/base_wall/metalfloor_wall_14_specular.tga" 11,117,132,143
+  palette "textures/base_wall/metalfloor_wall_14.tga" 255,74,83,92
+  palette "textures/base_wall/metalfloor_wall_14.jpg" 255,74,83,92
+  palette "textures/base_wall/metalfloor_wall_12.tga" 255,100,87,82
+  palette "textures/base_wall/metalfloor_wall_12.jpg" 255,100,87,82
+  palette "textures/base_wall/metalfloor_wall_11.tga" 255,123,111,104
+  palette "textures/base_wall/metalfloor_wall_11.jpg" 255,123,111,104
+  palette "textures/base_wall/metalfloor_wall_10.tga" 255,76,38,39
+  palette "textures/base_wall/metalfloor_wall_10.jpg" 255,76,38,39
+  palette "textures/base_wall/metalblackbloody.tga" 255,48,32,28
+  palette "textures/base_wall/metalblackbloody.jpg" 255,48,32,28
+  palette "textures/base_wall/metalblack03.tga" 255,47,44,43
+  palette "textures/base_wall/metalblack03.jpg" 255,47,44,43
+  palette "textures/base_wall/medal_victory.tga" 92,5,61,23
+  palette "textures/base_wall/medal_impressive.tga" 255,2,42,42
+  palette "textures/base_wall/medal_impressive.jpg" 255,3,41,42
+  palette "textures/base_wall/medal_gauntlet.tga" 255,69,31,2
+  palette "textures/base_wall/medal_gauntlet.jpg" 255,69,31,2
+  palette "textures/base_wall/medal_frags.tga" 101,75,0,0
+  palette "textures/base_wall/medal_excellent.tga" 255,63,47,6
+  palette "textures/base_wall/medal_excellent.jpg" 255,63,47,7
+  palette "textures/base_wall/medal_accuracy.tga" 91,36,12,40
+  palette "textures/base_wall/main_q3abanner.tga" 50,238,1,1
+  palette "textures/base_wall/grill.tga" 19,75,76,73
+  palette "textures/base_wall/greenmet2b.tga" 255,57,50,46
+  palette "textures/base_wall/greenmet2b.jpg" 255,57,50,46
+  palette "textures/base_wall/glass_frame.tga" 82,58,49,42
+  palette "textures/base_wall/girders1i_yellodark_fin.tga" 171,90,66,31
+  palette "textures/base_wall/girders1i_128_yellofin.tga" 171,125,94,45
+  palette "textures/base_wall/dooreyelight.tga" 255,2,1,1
+  palette "textures/base_wall/dooreyelight.jpg" 255,2,1,1
+  palette "textures/base_wall/dooreye3.tga" 255,80,56,60
+  palette "textures/base_wall/dooreye3.jpg" 255,80,56,60
+  palette "textures/base_wall/dooreye2.tga" 255,112,93,105
+  palette "textures/base_wall/dooreye2.jpg" 255,112,93,105
+  palette "textures/base_wall/dooreye.tga" 66,78,66,58
+  palette "textures/base_wall/concretepipe01.tga" 255,84,74,65
+  palette "textures/base_wall/concretepipe01.jpg" 255,84,74,65
+  palette "textures/base_wall/concreteb2.tga" 255,94,85,77
+  palette "textures/base_wall/concreteb2.jpg" 255,94,85,77
+  palette "textures/base_wall/concrete_ow2.tga" 243,84,74,66
+  palette "textures/base_wall/concrete_ow.tga" 243,90,80,71
+  palette "textures/base_wall/concrete_dark2.tga" 255,67,58,51
+  palette "textures/base_wall/concrete_dark2.jpg" 255,67,58,51
+  palette "textures/base_wall/concrete_dark.tga" 255,69,61,54
+  palette "textures/base_wall/concrete_dark.jpg" 255,69,61,54
+  palette "textures/base_wall/concrete.tga" 255,97,89,81
+  palette "textures/base_wall/concrete.jpg" 255,97,89,81
+  palette "textures/base_wall/comp3textd.tga" 255,26,24,25
+  palette "textures/base_wall/comp3textd.jpg" 255,25,23,24
+  palette "textures/base_wall/comp3textb.tga" 255,24,23,25
+  palette "textures/base_wall/comp3textb.jpg" 255,23,23,24
+  palette "textures/base_wall/comp3text.tga" 255,4,1,0
+  palette "textures/base_wall/comp3text.jpg" 255,3,1,1
+  palette "textures/base_wall/comp3frame.tga" 96,62,58,54
+  palette "textures/base_wall/comp3env.tga" 255,49,55,58
+  palette "textures/base_wall/comp3env.jpg" 255,49,55,58
+  palette "textures/base_wall/comp3c.tga" 106,63,59,57
+  palette "textures/base_wall/comp3b.tga" 106,63,59,57
+  palette "textures/base_wall/comp3.tga" 106,63,59,57
+  palette "textures/base_wall/chrome_metal.tga" 255,37,36,38
+  palette "textures/base_wall/chrome_metal.jpg" 255,37,36,38
+  palette "textures/base_wall/chrome_env2.tga" 255,77,77,77
+  palette "textures/base_wall/chrome_env2.jpg" 255,77,77,77
+  palette "textures/base_wall/chrome_env.tga" 255,146,146,146
+  palette "textures/base_wall/chrome_env.jpg" 255,146,146,146
+  palette "textures/base_wall/c_met7_2.tga" 255,73,67,61
+  palette "textures/base_wall/c_met7_2.jpg" 255,73,67,61
+  palette "textures/base_wall/c_met5_2.tga" 255,73,68,62
+  palette "textures/base_wall/c_met5_2.jpg" 255,73,68,62
+  palette "textures/base_wall/blumtlspt2b.tga" 62,93,80,67
+  palette "textures/base_wall/bluemetalsupport2ftv_glow.tga" 255,6,17,0
+  palette "textures/base_wall/bluemetalsupport2ftv_glow.jpg" 255,6,17,0
+  palette "textures/base_wall/bluemetalsupport2ftv.tga" 145,100,91,81
+  palette "textures/base_wall/bluemetalsupport2fline_glow.tga" 255,2,0,73
+  palette "textures/base_wall/bluemetalsupport2fline_glow.jpg" 255,2,0,73
+  palette "textures/base_wall/bluemetalsupport2fline.tga" 115,103,97,86
+  palette "textures/base_wall/bluemetalsupport2f.tga" 74,100,93,80
+  palette "textures/base_wall/bluemetalsupport2eyel.tga" 255,7,5,4
+  palette "textures/base_wall/bluemetalsupport2eyel.jpg" 255,7,5,4
+  palette "textures/base_wall/bluemetalsupport2eye.tga" 184,100,93,82
+  palette "textures/base_wall/bluemetalsupport2e2.tga" 181,104,98,86
+  palette "textures/base_wall/bluemetalsupport2e.tga" 168,112,106,95
+  palette "textures/base_wall/bluemetalsupport2d_1.tga" 182,93,82,71
+  palette "textures/base_wall/bluemetalsupport2d.tga" 73,96,83,70
+  palette "textures/base_wall/bluemetalsupport2clight.tga" 215,84,84,78
+  palette "textures/base_wall/bluemetalsupport2clight.glow.tga" 40,6,6,6
+  palette "textures/base_wall/bluemetalsupport2c_1vent.tga" 197,79,68,55
+  palette "textures/base_wall/bluemetalsupport2c_1.tga" 186,92,80,68
+  palette "textures/base_wall/bluemetalsupport2c.tga" 68,91,80,67
+  palette "textures/base_wall/bluemetalsupport2bglow.tga" 255,1,0,18
+  palette "textures/base_wall/bluemetalsupport2bglow.jpg" 255,1,0,18
+  palette "textures/base_wall/bluemetalsupport2b.tga" 62,93,80,67
+  palette "textures/base_wall/bluemetalsupport2.tga" 81,136,104,128
+  palette "textures/base_wall/bluemetalsupport.tga" 255,115,95,108
+  palette "textures/base_wall/bluemetalsupport.jpg" 255,115,95,108
+  palette "textures/base_wall/bluemetal3b.tga" 255,115,88,86
+  palette "textures/base_wall/bluemetal3b.jpg" 255,115,88,86
+  palette "textures/base_wall/bluemetal3.tga" 255,113,87,85
+  palette "textures/base_wall/bluemetal3.jpg" 255,113,87,85
+  palette "textures/base_wall/bluemetal2_shiny.tga" 144,83,57,62
+  palette "textures/base_wall/bluemetal2.tga" 255,81,54,59
+  palette "textures/base_wall/bluemetal2.jpg" 255,81,54,59
+  palette "textures/base_wall/bluemetal1b_shiny.tga" 160,117,100,114
+  palette "textures/base_wall/basewallbobbin.tga" 255,62,52,38
+  palette "textures/base_wall/basewallbobbin.jpg" 255,62,52,38
+  palette "textures/base_wall/basewall04.tga" 255,72,57,40
+  palette "textures/base_wall/basewall04.jpg" 255,72,57,40
+  palette "textures/base_wall/basewall03.tga" 255,69,55,38
+  palette "textures/base_wall/basewall03.jpg" 255,69,55,38
+  palette "textures/base_wall/basewall02.tga" 255,63,51,36
+  palette "textures/base_wall/basewall02.jpg" 255,63,51,36
+  palette "textures/base_wall/basewall01bitfx.tga" 255,12,9,6
+  palette "textures/base_wall/basewall01bitfx.jpg" 255,12,9,6
+  palette "textures/base_wall/basewall01bit.tga" 204,66,54,40
+  palette "textures/base_wall/basewall01_owfx.tga" 255,3,4,3
+  palette "textures/base_wall/basewall01_owfx.jpg" 255,3,4,3
+  palette "textures/base_wall/basewall01_ow.tga" 255,63,48,33
+  palette "textures/base_wall/basewall01_ow.jpg" 255,63,48,33
+  palette "textures/base_wall/basewall01.tga" 255,64,52,37
+  palette "textures/base_wall/basewall01.jpg" 255,64,52,37
+  palette "textures/base_wall/atechengine_ax.tga" 236,76,60,49
+  palette "textures/base_wall/atechengine_a.tga" 255,73,58,47
+  palette "textures/base_wall/atechengine_a.jpg" 255,73,58,47
+  palette "textures/base_wall/atech3_a.tga" 255,56,43,38
+  palette "textures/base_wall/atech3_a.jpg" 255,56,43,38
+  palette "textures/base_wall/atech2_c.tga" 255,48,46,45
+  palette "textures/base_wall/atech2_c.jpg" 255,48,46,45
+  palette "textures/base_wall/atech1_e.tga" 255,60,48,42
+  palette "textures/base_wall/atech1_e.jpg" 255,60,48,42
+  palette "textures/base_wall/atech1_d.tga" 255,68,54,45
+  palette "textures/base_wall/atech1_d.jpg" 255,68,54,45
+  palette "textures/base_wall/atech1_b.tga" 255,69,56,46
+  palette "textures/base_wall/atech1_b.jpg" 255,69,56,46
+  palette "textures/base_wall/atech1_alpha.tga" 244,59,42,29
+  palette "textures/base_wall/atech1_a.tga" 255,58,41,28
+  palette "textures/base_wall/atech1_a.jpg" 255,58,41,28
+  palette "textures/base_wall/archpipe2_k_tall3fin.tga" 255,39,23,20
+  palette "textures/base_wall/archpipe2_k_tall3fin.jpg" 255,39,23,20
+  palette "textures/base_wall/archpipe2_ifin.tga" 255,45,33,29
+  palette "textures/base_wall/archpipe2_ifin.jpg" 255,45,33,29
+  palette "textures/base_button/shootme_glow.tga" 255,39,2,2
+  palette "textures/base_button/shootme_glow.jpg" 255,39,1,2
+  palette "textures/base_door/xdm2_right_e7fin.tga" 255,55,47,44
+  palette "textures/base_door/xdm2_right_e7fin.jpg" 255,55,47,44
+  palette "textures/base_door/xdm2_left_e7fin.tga" 255,54,47,43
+  palette "textures/base_door/xdm2_left_e7fin.jpg" 255,54,47,43
+  palette "textures/base_door/xdm2_left_e4fin.tga" 255,64,56,53
+  palette "textures/base_door/xdm2_left_e4fin.jpg" 255,64,56,53
+  palette "textures/base_door/xdm2_archsupport_sidea_fin.tga" 255,73,67,66
+  palette "textures/base_door/xdm2_archsupport_sidea_fin.jpg" 255,73,67,66
+  palette "textures/base_door/shinymetaldoor_outside3glow.tga" 156,10,7,5
+  palette "textures/base_door/shinymetaldoor_outside3a2.tga" 156,63,55,49
+  palette "textures/base_door/shinymetaldoor_outside.tga" 120,65,61,50
+  palette "textures/base_door/shinymetaldoor.tga" 175,77,82,83
+  palette "textures/base_door/quake3sign_outside.tga" 199,14,11,1
+  palette "textures/base_door/quake3sign.tga" 194,15,13,1
+  palette "textures/base_door/kcdm18talldoorpatch10top.tga" 255,82,70,62
+  palette "textures/base_door/kcdm18talldoorpatch10top.jpg" 255,82,70,62
+  palette "textures/base_door/kcdm18talldoorpatch10bottom.tga" 255,21,17,17
+  palette "textures/base_door/kcdm18talldoorpatch10bottom.jpg" 255,20,17,17
+  palette "textures/base_door/kcdm18talldoormetal_top.tga" 255,49,47,48
+  palette "textures/base_door/kcdm18talldoormetal_top.jpg" 255,49,47,48
+  palette "textures/base_door/kcdm18talldoormetal.tga" 255,17,14,16
+  palette "textures/base_door/kcdm18talldoormetal.jpg" 255,17,14,15
+  palette "textures/base_door/kcdm18door_top.tga" 255,61,49,47
+  palette "textures/base_door/kcdm18door_top.jpg" 255,61,49,47
+  palette "textures/base_door/kcdm18door_bot.tga" 255,18,14,15
+  palette "textures/base_door/kcdm18door_bot.jpg" 255,18,14,15
+  palette "textures/base_door/c_ggrate8_b.tga" 78,61,55,46
+  palette "textures/14gate_xt/sky.jpg" 255,29,1,70
+  palette "textures/14gate_xt/fog3.jpg" 255,184,184,184
+  palette "textures/14gate_xt/fog2.jpg" 255,184,184,184
+  palette "textures/14gate_xt/fog.jpg" 255,184,184,184
+  palette "textures/base_trim/yellow_rustbx128.tga" 255,66,31,10
+  palette "textures/base_trim/yellow_rustbx128.jpg" 255,66,31,10
+  palette "textures/base_trim/yellow_rustb_v1.tga" 255,71,34,10
+  palette "textures/base_trim/yellow_rustb_v1.jpg" 255,71,34,10
+  palette "textures/base_trim/yellow_rustb.tga" 255,71,34,10
+  palette "textures/base_trim/yellow_rustb.jpg" 255,71,34,10
+  palette "textures/base_trim/xspiderbit4.tga" 255,53,46,37
+  palette "textures/base_trim/xspiderbit4.jpg" 255,53,46,37
+  palette "textures/base_trim/xred1_2.tga" 255,134,56,5
+  palette "textures/base_trim/xred1_2.jpg" 255,133,56,5
+  palette "textures/base_trim/xian_dm3padwall_y.tga" 255,73,72,71
+  palette "textures/base_trim/xian_dm3padwall_y.jpg" 255,73,72,71
+  palette "textures/base_trim/xian_dm3padwall_x2.tga" 255,75,68,63
+  palette "textures/base_trim/xian_dm3padwall_x2.jpg" 255,75,68,63
+  palette "textures/base_trim/xian_dm3padwall_x.tga" 255,81,74,67
+  palette "textures/base_trim/xian_dm3padwall_x.jpg" 255,81,74,67
+  palette "textures/base_trim/xborder11b.tga" 255,93,84,74
+  palette "textures/base_trim/xborder11b.jpg" 255,93,84,74
+  palette "textures/base_trim/wires02.tga" 44,54,43,36
+  palette "textures/base_trim/wires01_ass.tga" 77,59,49,42
+  palette "textures/base_trim/wires01.tga" 86,67,55,47
+  palette "textures/base_trim/wire02a_f.tga" 255,77,55,40
+  palette "textures/base_trim/wire02a_f.jpg" 255,77,55,40
+  palette "textures/base_trim/wire02_f1.tga" 255,94,72,53
+  palette "textures/base_trim/wire02_f1.jpg" 255,94,72,53
+  palette "textures/base_trim/tinfx.tga" 255,62,62,62
+  palette "textures/base_trim/tinfx.jpg" 255,62,62,62
+  palette "textures/base_trim/tin.tga" 255,100,99,97
+  palette "textures/base_trim/tin.jpg" 255,100,99,97
+  palette "textures/base_trim/techborder_fx.tga" 255,4,2,2
+  palette "textures/base_trim/techborder_fx.jpg" 255,4,2,2
+  palette "textures/base_trim/techborder.tga" 255,46,40,31
+  palette "textures/base_trim/techborder.jpg" 255,46,40,31
+  palette "textures/base_trim/spidertrim4.tga" 204,57,49,43
+  palette "textures/base_trim/spidertrim3.tga" 148,68,60,51
+  palette "textures/base_trim/spidertrim.tga" 255,48,38,31
+  palette "textures/base_trim/spidertrim.jpg" 255,48,38,31
+  palette "textures/base_trim/spiderbite.tga" 173,63,57,50
+  palette "textures/base_trim/spiderbit_ow.tga" 255,57,45,36
+  palette "textures/base_trim/spiderbit_ow.jpg" 255,57,45,36
+  palette "textures/base_trim/spiderbit_fx.tga" 255,4,3,3
+  palette "textures/base_trim/spiderbit_fx.jpg" 255,4,3,3
+  palette "textures/base_trim/spiderbit6.tga" 255,49,37,30
+  palette "textures/base_trim/spiderbit6.jpg" 255,49,37,30
+  palette "textures/base_trim/spiderbit4.tga" 255,56,49,39
+  palette "textures/base_trim/spiderbit4.jpg" 255,56,49,39
+  palette "textures/base_trim/spiderbit3.tga" 255,58,50,40
+  palette "textures/base_trim/spiderbit3.jpg" 255,58,50,40
+  palette "textures/base_trim/spiderbit2.tga" 255,52,40,29
+  palette "textures/base_trim/spiderbit2.jpg" 255,52,40,29
+  palette "textures/base_trim/spiderbit.tga" 255,58,46,36
+  palette "textures/base_trim/spiderbit.jpg" 255,58,46,36
+  palette "textures/base_trim/slots1_1.tga" 255,58,53,49
+  palette "textures/base_trim/slots1_1.jpg" 255,58,53,49
+  palette "textures/base_trim/rusty_pewter_big.tga" 255,50,44,36
+  palette "textures/base_trim/rusty_pewter_big.jpg" 255,50,44,36
+  palette "textures/base_trim/proto_fence.tga" 67,65,51,41
+  palette "textures/base_trim/proto_comp2.tga" 255,8,1,1
+  palette "textures/base_trim/proto_comp2.jpg" 255,7,1,1
+  palette "textures/base_trim/proto_comp.tga" 74,52,49,46
+  palette "textures/base_trim/pewterstep.tga" 255,56,52,49
+  palette "textures/base_trim/pewterstep.jpg" 255,56,52,49
+  palette "textures/base_trim/pewter_spec.tga" 255,59,55,51
+  palette "textures/base_trim/pewter_spec.jpg" 255,59,55,51
+  palette "textures/base_trim/pewter_shiney.tga" 145,60,55,51
+  palette "textures/base_trim/pewter.tga" 255,59,55,51
+  palette "textures/base_trim/pewter.jpg" 255,59,55,51
+  palette "textures/base_trim/panelbrn01scr.tga" 255,79,56,37
+  palette "textures/base_trim/panelbrn01scr.jpg" 255,79,56,37
+  palette "textures/base_trim/panelbrn010w.tga" 248,76,54,36
+  palette "textures/base_trim/panel_shiny.tga" 225,71,58,47
+  palette "textures/base_trim/panel_glo.tga" 225,71,57,47
+  palette "textures/base_trim/panel_edged.tga" 255,67,53,43
+  palette "textures/base_trim/panel_edged.jpg" 255,66,53,43
+  palette "textures/base_trim/panel03.tga" 255,49,44,34
+  palette "textures/base_trim/panel03.jpg" 255,49,44,34
+  palette "textures/base_trim/panel02.tga" 255,49,42,29
+  palette "textures/base_trim/panel02.jpg" 255,49,42,29
+  palette "textures/base_trim/panel01.tga" 255,49,42,28
+  palette "textures/base_trim/panel01.jpg" 255,49,42,28
+  palette "textures/base_trim/metal2_2.tga" 181,64,63,59
+  palette "textures/base_trim/melty_pewter.tga" 255,79,52,32
+  palette "textures/base_trim/melty_pewter.jpg" 255,79,52,32
+  palette "textures/base_trim/holemech01_h.tga" 255,63,53,39
+  palette "textures/base_trim/holemech01_h.jpg" 255,63,53,39
+  palette "textures/base_trim/greenoct28.tga" 255,65,55,43
+  palette "textures/base_trim/greenoct28.jpg" 255,65,55,43
+  palette "textures/base_trim/dirty_pewter_big.tga" 255,49,44,37
+  palette "textures/base_trim/dirty_pewter_big.jpg" 255,49,44,37
+  palette "textures/base_trim/dirty_pewter.tga" 255,51,45,39
+  palette "textures/base_trim/dirty_pewter.jpg" 255,51,45,39
+  palette "textures/base_trim/deeprust.tga" 255,46,28,17
+  palette "textures/base_trim/deeprust.jpg" 255,46,28,17
+  palette "textures/base_trim/dark_tin2.tga" 172,63,43,23
+  palette "textures/base_trim/chrome_border.tga" 255,62,45,36
+  palette "textures/base_trim/chrome_border.jpg" 255,62,45,36
+  palette "textures/base_trim/bridgesupport1j_fin.tga" 255,60,38,32
+  palette "textures/base_trim/bridgesupport1j_fin.jpg" 255,60,38,32
+  palette "textures/base_trim/bridgesupport1e_fin.tga" 255,59,40,33
+  palette "textures/base_trim/bridgesupport1e_fin.jpg" 255,59,40,33
+  palette "textures/base_trim/border12bfx.tga" 255,50,32,25
+  palette "textures/base_trim/border12bfx.jpg" 255,50,32,25
+  palette "textures/base_trim/border12b.tga" 255,59,40,28
+  palette "textures/base_trim/border12b.jpg" 255,59,40,28
+  palette "textures/base_trim/border12.tga" 255,59,39,26
+  palette "textures/base_trim/border12.jpg" 255,59,39,26
+  palette "textures/base_trim/border11light.tga" 255,87,77,67
+  palette "textures/base_trim/border11light.jpg" 255,87,77,67
+  palette "textures/base_trim/border11light.glow.tga" 255,5,4,4
+  palette "textures/base_trim/border11light.glow.jpg" 255,5,4,4
+  palette "textures/base_trim/border11c_pulse1b.tga" 255,8,5,14
+  palette "textures/base_trim/border11c_pulse1b.jpg" 255,8,5,14
+  palette "textures/base_trim/border11c_light.tga" 255,1,1,1
+  palette "textures/base_trim/border11c_light.jpg" 255,1,1,1
+  palette "textures/base_trim/border11c.tga" 255,66,59,51
+  palette "textures/base_trim/border11c.jpg" 255,66,59,51
+  palette "textures/base_trim/border11b.tga" 255,93,84,75
+  palette "textures/base_trim/border11b.jpg" 255,93,84,75
+  palette "textures/base_trim/border11.tga" 255,85,76,67
+  palette "textures/base_trim/border11.jpg" 255,85,76,67
+  palette "textures/base_trim/basemetalsupport.tga" 255,89,74,67
+  palette "textures/base_trim/basemetalsupport.jpg" 255,89,74,67
+  palette "textures/13gate_xt/sky.jpg" 255,70,8,2
   palette "models/weaphits/ring02_4.tga" 9,160,125,108
   palette "models/weaphits/ring02_3.tga" 14,165,130,115
   palette "models/weaphits/ring02_2.tga" 20,172,137,122
   palette "models/weaphits/ring02_1.tga" 16,182,148,135
   palette "models/weaphits/ring01_1.tga" 44,77,87,156
+  palette "models/weaphits/plasmaboom.tga" 255,11,49,56
   palette "models/weaphits/plasmaboom.jpg" 255,11,49,56
+  palette "models/weaphits/newexplo1.tga" 255,48,21,18
   palette "models/weaphits/newexplo1.jpg" 255,48,21,18
+  palette "models/weaphits/electric.tga" 255,13,25,23
   palette "models/weaphits/electric.jpg" 255,13,25,23
+  palette "models/weaphits/bullet3.tga" 255,22,10,4
   palette "models/weaphits/bullet3.jpg" 255,21,10,4
+  palette "models/weaphits/bullet2.tga" 255,40,21,6
   palette "models/weaphits/bullet2.jpg" 255,40,21,7
+  palette "models/weaphits/bullet1.tga" 255,37,20,7
   palette "models/weaphits/bullet1.jpg" 255,37,21,7
   palette "models/weaphits/blood205.tga" 8,88,7,5
   palette "models/weaphits/blood204.tga" 25,85,7,4
   palette "models/weaphits/blood203.tga" 33,84,7,4
   palette "models/weaphits/blood202.tga" 47,82,6,4
   palette "models/weaphits/blood201.tga" 34,80,6,4
+  palette "models/weaphits/bfg03.tga" 255,15,18,13
   palette "models/weaphits/bfg03.jpg" 255,15,18,13
+  palette "models/weaphits/bfg02.tga" 255,12,11,10
   palette "models/weaphits/bfg02.jpg" 255,12,11,10
+  palette "models/weaphits/bfg01.tga" 255,18,41,26
   palette "models/weaphits/bfg01.jpg" 255,18,41,26
+  palette "models/flags/skull.tga" 255,79,69,62
+  palette "models/flags/skull.jpg" 255,79,69,62
+  palette "models/flags/red_fx.tga" 255,144,8,10
+  palette "models/flags/red_fx.jpg" 255,144,8,10
+  palette "models/flags/r_flag2.tga" 167,158,5,4
+  palette "models/flags/flagbits.tga" 95,80,66,57
+  palette "models/flags/blue_fx.tga" 255,5,60,144
+  palette "models/flags/blue_fx.jpg" 255,5,60,144
+  palette "models/flags/b_flag2.tga" 167,8,82,135
+  palette "models/gibs/gibs.tga" 255,68,32,23
   palette "models/gibs/gibs.jpg" 255,68,32,23
+  palette "models/mapobjects/wall_lamp3.tga" 255,32,23,18
   palette "models/mapobjects/wall_lamp3.jpg" 255,32,23,18
+  palette "models/mapobjects/visor_st.tga" 255,67,56,47
   palette "models/mapobjects/visor_st.jpg" 255,67,56,47
+  palette "models/mapobjects/pj_light.tga" 255,183,123,103
+  palette "models/mapobjects/pj_light.jpg" 255,183,123,103
+  palette "models/mapobjects/pj_lamp.tga" 255,63,50,42
+  palette "models/mapobjects/pj_lamp.jpg" 255,63,50,42
+  palette "models/mapobjects/pitted_rust_ps.tga" 255,62,48,39
+  palette "models/mapobjects/pitted_rust_ps.jpg" 255,62,48,39
+  palette "models/mapobjects/major_st.tga" 255,80,66,57
   palette "models/mapobjects/major_st.jpg" 255,80,66,57
+  palette "models/mapobjects/major_h_st.tga" 255,96,83,70
   palette "models/mapobjects/major_h_st.jpg" 255,96,83,70
+  palette "models/mapobjects/kmlamp1.tga" 255,69,62,45
   palette "models/mapobjects/kmlamp1.jpg" 255,69,62,45
+  palette "models/mapobjects/gargoyle.tga" 255,37,37,42
   palette "models/mapobjects/gargoyle.jpg" 255,37,37,42
+  palette "models/mapobjects/eagleban.tga" 255,64,55,45
   palette "models/mapobjects/eagleban.jpg" 255,64,55,45
+  palette "models/ammo/grenade_r.tga" 255,9,2,2
+  palette "models/ammo/grenade_r.jpg" 255,8,1,1
+  palette "models/ammo/grenade_g.tga" 255,8,4,3
+  palette "models/ammo/grenade_g.jpg" 255,8,4,3
+  palette "models/ammo/grenade.tga" 255,46,32,25
+  palette "models/ammo/grenade.jpg" 255,46,33,25
   palette "menu/tab/time.tga" 105,157,0,0
   palette "menu/tab/score.tga" 141,158,0,0
   palette "menu/tab/ping.tga" 110,160,0,0
   palette "menu/tab/name.tga" 126,164,0,0
-  palette "models/ammo/grenade_r.jpg" 255,8,1,1
-  palette "models/ammo/grenade_g.jpg" 255,8,4,3
-  palette "models/ammo/grenade.jpg" 255,46,33,25
   palette "menu/medals/medal_victory.tga" 93,21,229,88
   palette "menu/medals/medal_impressive.tga" 76,0,213,213
   palette "menu/medals/medal_gauntlet.tga" 128,232,97,0
   palette "menu/medals/medal_frags.tga" 101,219,0,0
   palette "menu/medals/medal_excellent.tga" 114,241,181,18
   palette "menu/medals/medal_accuracy.tga" 91,194,57,222
+  palette "gfx/misc/tracer2.tga" 255,35,20,16
+  palette "gfx/misc/tracer2.jpg" 255,36,20,16
+  palette "gfx/misc/teleportEffect2.tga" 255,59,39,35
+  palette "gfx/misc/teleportEffect2.jpg" 255,59,39,35
+  palette "gfx/misc/sun.tga" 255,78,78,78
+  palette "gfx/misc/sun.jpg" 255,78,78,78
+  palette "gfx/misc/smokepuffragepro.tga" 5,255,255,255
+  palette "gfx/misc/smokepuff3.tga" 83,168,134,119
+  palette "gfx/misc/smokepuff2b.tga" 50,167,133,117
+  palette "gfx/misc/raildisc_mono2.tga" 255,71,71,71
+  palette "gfx/misc/raildisc_mono2.jpg" 255,71,71,71
+  palette "gfx/misc/railcorethin_mono.tga" 255,55,55,55
+  palette "gfx/misc/railcorethin_mono.jpg" 255,55,55,55
+  palette "gfx/misc/lightning3.tga" 255,8,20,21
+  palette "gfx/misc/lightning3.jpg" 255,8,20,21
+  palette "gfx/misc/flare.tga" 255,45,45,45
+  palette "gfx/misc/flare.jpg" 255,45,45,45
+  palette "gfx/misc/console02.tga" 255,3,1,1
+  palette "gfx/misc/console02.jpg" 255,3,1,1
+  palette "gfx/misc/console01.tga" 232,35,0,5
+  palette "gfx/colors/black.tga" 255,0,0,0
+  palette "gfx/colors/black.jpg" 255,0,0,0
+  palette "gfx/damage/shadow.tga" 109,175,175,175
+  palette "gfx/damage/plasma_mrk.tga" 44,61,59,97
+  palette "gfx/damage/hole_lg_mrk.tga" 255,86,86,86
+  palette "gfx/damage/hole_lg_mrk.jpg" 255,86,86,86
+  palette "gfx/damage/burn_med_mrk.tga" 255,69,69,69
+  palette "gfx/damage/burn_med_mrk.jpg" 255,69,69,69
+  palette "gfx/damage/bullet_mrk.tga" 255,79,78,78
+  palette "gfx/damage/bullet_mrk.jpg" 255,79,79,78
+  palette "gfx/damage/blood_stain.tga" 70,80,0,1
+  palette "gfx/damage/blood_spurt.tga" 77,65,0,0
+  palette "gfx/damage/blood_screen.tga" 22,100,6,6
+  palette "gfx/2d/select.tga" 60,245,222,94
+  palette "gfx/2d/net.tga" 255,116,125,151
+  palette "gfx/2d/net.jpg" 255,116,125,151
+  palette "gfx/2d/lag.tga" 255,110,3,3
+  palette "gfx/2d/lag.jpg" 255,110,3,3
+  palette "gfx/2d/defer.tga" 109,180,0,0
+  palette "gfx/2d/crosshairj.tga" 13,255,255,255
+  palette "gfx/2d/crosshairi.tga" 13,255,255,255
+  palette "gfx/2d/crosshairh.tga" 5,255,255,255
+  palette "gfx/2d/crosshairg.tga" 12,255,255,255
+  palette "gfx/2d/crosshairf.tga" 1,255,255,255
+  palette "gfx/2d/crosshaire.tga" 4,255,255,255
+  palette "gfx/2d/crosshaird.tga" 27,255,255,255
+  palette "gfx/2d/crosshairc.tga" 8,255,255,255
+  palette "gfx/2d/crosshairb.tga" 10,255,255,255
+  palette "gfx/2d/crosshaira.tga" 10,255,255,255
+  palette "gfx/2d/colorbar.tga" 255,75,75,75
+  palette "gfx/2d/colorbar.jpg" 255,75,75,75
+  palette "gfx/2d/bigchars.tga" 57,255,255,255
+  palette "gfx/2d/backtile.tga" 255,27,18,12
+  palette "gfx/2d/backtile.jpg" 255,27,18,12
+  palette "menu/art/unknownmap.tga" 255,73,24,15
   palette "menu/art/unknownmap.jpg" 255,72,24,14
   palette "menu/art/switch_on.tga" 108,180,146,42
   palette "menu/art/switch_off.tga" 73,99,53,23
@@ -474,1308 +2531,107 @@ palettes/default
   palette "menu/art/accept_1.tga" 141,122,75,2
   palette "menu/art/accept_0.tga" 141,90,16,12
   palette "menu/art/3_cursor2.tga" 49,255,0,0
-  palette "gfx/damage/shadow.tga" 109,175,175,175
-  palette "gfx/damage/plasma_mrk.tga" 44,61,59,97
-  palette "gfx/damage/hole_lg_mrk.jpg" 255,86,86,86
-  palette "gfx/damage/burn_med_mrk.jpg" 255,69,69,69
-  palette "gfx/damage/bullet_mrk.jpg" 255,79,79,78
-  palette "gfx/damage/blood_stain.tga" 70,80,0,1
-  palette "gfx/damage/blood_spurt.tga" 77,65,0,0
-  palette "gfx/damage/blood_screen.tga" 22,100,6,6
-  palette "gfx/misc/tracer2.jpg" 255,36,20,16
-  palette "gfx/misc/teleportEffect2.jpg" 255,59,39,35
-  palette "gfx/misc/sun.jpg" 255,78,78,78
-  palette "gfx/misc/smokepuffragepro.tga" 5,255,255,255
-  palette "gfx/misc/smokepuff3.tga" 83,168,134,119
-  palette "gfx/misc/smokepuff3.png" 83,168,134,119
-  palette "gfx/misc/smokepuff2b.tga" 50,167,133,117
-  palette "gfx/misc/raildisc_mono2.jpg" 255,71,71,71
-  palette "gfx/misc/railcorethin_mono.jpg" 255,55,55,55
-  palette "gfx/misc/lightning3.jpg" 255,8,20,21
-  palette "gfx/misc/flare.jpg" 255,45,45,45
-  palette "gfx/misc/console02.jpg" 255,3,1,1
-  palette "gfx/misc/console01.tga" 232,35,0,5
-  palette "gfx/colors/black.jpg" 255,0,0,0
-  palette "gfx/2d/select.tga" 60,245,222,94
-  palette "gfx/2d/net.jpg" 255,116,125,151
-  palette "gfx/2d/lag.jpg" 255,110,3,3
-  palette "gfx/2d/defer.tga" 109,180,0,0
-  palette "gfx/2d/crosshairj.tga" 13,255,255,255
-  palette "gfx/2d/crosshairi.tga" 13,255,255,255
-  palette "gfx/2d/crosshairh.tga" 5,255,255,255
-  palette "gfx/2d/crosshairg.tga" 12,255,255,255
-  palette "gfx/2d/crosshairf.tga" 1,255,255,255
-  palette "gfx/2d/crosshaire.tga" 4,255,255,255
-  palette "gfx/2d/crosshaird.tga" 27,255,255,255
-  palette "gfx/2d/crosshairc.tga" 8,255,255,255
-  palette "gfx/2d/crosshairb.tga" 10,255,255,255
-  palette "gfx/2d/crosshaira.tga" 10,255,255,255
-  palette "gfx/2d/colorbar.jpg" 255,75,75,75
-  palette "gfx/2d/bigchars.tga" 57,255,255,255
-  palette "gfx/2d/backtile.jpg" 255,27,18,12
+  palette "textures/skies2/env/nebulax_up.tga" 255,0,16,12
+  palette "textures/skies2/env/nebulax_rt.tga" 255,0,14,10
+  palette "textures/skies2/env/nebulax_lf.tga" 255,0,17,13
+  palette "textures/skies2/env/nebulax_ft.tga" 255,0,6,4
+  palette "textures/skies2/env/nebulax_dn.tga" 255,0,20,15
+  palette "textures/skies2/env/nebulax_bk.tga" 255,0,28,20
+  palette "textures/skies2/env/nebula_up.tga" 255,56,49,45
+  palette "textures/skies2/env/nebula_rt.tga" 255,26,25,23
+  palette "textures/skies2/env/nebula_lf.tga" 255,6,5,9
+  palette "textures/skies2/env/nebula_ft.tga" 255,7,5,8
+  palette "textures/skies2/env/nebula_dn.tga" 255,21,12,27
+  palette "textures/skies2/env/nebula_bk.tga" 255,19,14,27
+  palette "textures/skies2/env/nebula3_up.tga" 255,25,18,11
+  palette "textures/skies2/env/nebula3_rt.tga" 255,23,12,7
+  palette "textures/skies2/env/nebula3_lf.tga" 255,32,16,9
+  palette "textures/skies2/env/nebula3_ft.tga" 255,6,3,2
+  palette "textures/skies2/env/nebula3_dn.tga" 255,38,25,12
+  palette "textures/skies2/env/nebula3_bk.tga" 255,53,29,17
+  palette "textures/skies2/env/nebula2_up.tga" 255,55,45,39
+  palette "textures/skies2/env/nebula2_rt.tga" 255,26,25,23
+  palette "textures/skies2/env/nebula2_lf.tga" 255,6,5,9
+  palette "textures/skies2/env/nebula2_ft.tga" 255,7,5,8
+  palette "textures/skies2/env/nebula2_dn.tga" 255,21,12,27
+  palette "textures/skies2/env/nebula2_bk.tga" 255,20,15,25
+  palette "textures/sfx/compscreen/letters5.tga" 255,0,0,0
   palette "textures/sfx/compscreen/letters5.jpg" 255,0,0,0
   palette "textures/sfx/compscreen/letters4.tga" 6,199,42,40
   palette "textures/sfx/compscreen/letters3.tga" 4,164,30,29
   palette "textures/sfx/compscreen/letters2.tga" 6,74,14,13
   palette "textures/sfx/compscreen/letters1.tga" 4,179,33,32
-  palette "models/weapons2/shotgun/shotgun_laser.jpg" 255,61,1,2
-  palette "models/weapons2/shotgun/shotgun.jpg" 255,59,40,35
-  palette "models/weapons2/shotgun/f_shotgun.jpg" 255,49,29,4
-  palette "models/weapons2/shells/s_shell.jpg" 255,60,18,12
-  palette "models/weapons2/shells/M_shell.jpg" 255,78,50,17
-  palette "models/weapons2/rocketl/rocketl2.jpg" 255,28,26,25
-  palette "models/weapons2/rocketl/rocketl.jpg" 255,71,45,39
-  palette "models/weapons2/rocketl/f_rocketl.jpg" 255,71,31,19
-  palette "models/weapons2/railgun/railgun4.jpg" 255,145,145,145
-  palette "models/weapons2/railgun/railgun3.jpg" 255,40,36,33
-  palette "models/weapons2/railgun/railgun3.glow.jpg" 255,16,16,16
-  palette "models/weapons2/railgun/railgun2.glow.jpg" 255,41,41,41
-  palette "models/weapons2/railgun/railgun1.jpg" 255,61,47,39
-  palette "models/weapons2/railgun/f_railgun2.jpg" 255,29,29,29
-  palette "models/weapons2/plasma/plasma_glo.jpg" 255,16,86,107
-  palette "models/weapons2/plasma/plasma.jpg" 255,67,66,59
-  palette "models/weapons2/plasma/f_plasma.jpg" 255,20,48,51
-  palette "models/weapons2/machinegun/machinegun.jpg" 255,82,57,35
-  palette "models/weapons2/machinegun/f_machinegun.jpg" 255,26,17,5
-  palette "models/weapons2/gauntlet/gauntlet4.jpg" 255,51,42,40
-  palette "models/weapons2/gauntlet/gauntlet3.jpg" 255,33,27,26
-  palette "models/weapons2/gauntlet/gauntlet2.tga" 196,26,19,16
-  palette "models/weapons2/gauntlet/gauntlet1.jpg" 255,50,34,26
-  palette "models/weapons2/lightning/trail2.jpg" 255,46,59,58
-  palette "models/weapons2/lightning/lightning2.jpg" 255,45,53,49
-  palette "models/weapons2/lightning/glass.jpg" 255,108,28,28
-  palette "models/weapons2/lightning/f_lightning.jpg" 255,4,9,9
-  palette "models/weapons2/lightning/button.jpg" 255,243,50,53
-  palette "models/weaphits/glboom/glboom_3.jpg" 255,94,49,24
-  palette "models/weaphits/glboom/glboom_2.jpg" 255,101,67,61
-  palette "models/weaphits/glboom/glboom_1.jpg" 255,63,41,41
-  palette "models/weaphits/rlboom/rlboom_8.jpg" 255,24,4,2
-  palette "models/weaphits/rlboom/rlboom_7.jpg" 255,38,11,5
-  palette "models/weaphits/rlboom/rlboom_6.jpg" 255,48,18,7
-  palette "models/weaphits/rlboom/rlboom_5.jpg" 255,83,46,24
-  palette "models/weaphits/rlboom/rlboom_4.jpg" 255,104,60,45
-  palette "models/weaphits/rlboom/rlboom_3.jpg" 255,114,67,56
-  palette "models/weaphits/rlboom/rlboom_2.jpg" 255,116,82,76
-  palette "models/weaphits/rlboom/rlboom_1.jpg" 255,105,72,70
-  palette "models/powerups/holdable/teleport_fluid.jpg" 255,6,151,150
-  palette "models/powerups/holdable/medkit_fluid.jpg" 255,151,5,6
-  palette "models/powerups/armor/shard_sphere.jpg" 255,85,69,81
-  palette "models/powerups/armor/shard2.tga" 156,84,81,90
-  palette "models/powerups/armor/newyellow.tga" 227,117,66,4
-  palette "models/powerups/armor/newred.tga" 229,89,6,8
-  palette "models/powerups/armor/energy_yel3.jpg" 255,18,16,4
-  palette "models/powerups/armor/energy_red1.jpg" 255,18,3,3
-  palette "models/powerups/ammo/shotammo2.jpg" 255,73,37,10
-  palette "models/powerups/ammo/shotammo.tga" 166,87,51,13
-  palette "models/powerups/ammo/rockammo2.jpg" 255,64,2,3
-  palette "models/powerups/ammo/rockammo.tga" 166,87,14,13
-  palette "models/powerups/ammo/railammo2.jpg" 255,6,51,6
-  palette "models/powerups/ammo/railammo.tga" 196,12,62,28
-  palette "models/powerups/ammo/plasammo2.jpg" 255,50,3,64
-  palette "models/powerups/ammo/plasammo.tga" 196,91,12,56
-  palette "models/powerups/ammo/machammo2.tga" 93,236,236,0
-  palette "models/powerups/ammo/machammo.tga" 166,87,76,13
-  palette "models/powerups/ammo/lighammo2.jpg" 255,94,93,66
-  palette "models/powerups/ammo/lighammo.tga" 196,81,70,41
-  palette "models/powerups/ammo/grenammo2.jpg" 255,2,36,6
-  palette "models/powerups/ammo/grenammo.tga" 166,40,44,23
-  palette "models/powerups/ammo/bfgammo2.jpg" 255,3,34,81
-  palette "models/powerups/ammo/bfgammo.tga" 196,50,41,36
-  palette "models/players/visor/visor.jpg" 255,57,33,19
-  palette "models/players/visor/red.jpg" 255,87,28,23
-  palette "models/players/visor/icon_red.tga" 186,160,35,25
-  palette "models/players/visor/icon_default.tga" 175,82,60,45
-  palette "models/players/visor/icon_blue.tga" 175,58,70,97
-  palette "models/players/visor/blue.jpg" 255,38,45,62
-  palette "models/players/sarge/red.jpg" 255,77,24,19
-  palette "models/players/sarge/null.jpg" 255,0,0,0
-  palette "models/players/sarge/krusade.tga" 251,64,41,27
-  palette "models/players/sarge/icon_red.tga" 204,180,84,66
-  palette "models/players/sarge/icon_default.tga" 175,175,133,98
-  palette "models/players/sarge/icon_blue.tga" 200,117,103,109
-  palette "models/players/sarge/cigar.jpg" 255,62,36,18
-  palette "models/players/sarge/cigar.glow.jpg" 255,44,22,12
-  palette "models/players/sarge/blue.jpg" 255,38,41,58
-  palette "models/players/sarge/band.jpg" 255,76,51,38
-  palette "models/players/major/red_h.jpg" 255,66,47,33
-  palette "models/players/major/red.jpg" 255,70,24,16
-  palette "models/players/major/major_h.jpg" 255,68,44,33
-  palette "models/players/major/major.jpg" 255,58,35,20
-  palette "models/players/major/icon_red.tga" 180,143,81,55
-  palette "models/players/major/icon_default.tga" 186,146,89,65
-  palette "models/players/major/icon_daemia.tga" 191,129,79,50
-  palette "models/players/major/icon_blue.tga" 179,114,86,88
-  palette "models/players/major/daemia2_h.jpg" 255,73,35,20
-  palette "models/players/major/daemia.tga" 249,60,45,36
-  palette "models/players/major/blue_h.jpg" 255,76,43,34
-  palette "models/players/major/blue.jpg" 255,28,38,57
-  palette "models/players/grunt/stripe_h.tga" 254,95,56,45
-  palette "models/players/grunt/stripe.jpg" 255,66,37,23
-  palette "models/players/grunt/red_h.jpg" 255,109,65,54
-  palette "models/players/grunt/red.jpg" 255,82,30,21
-  palette "models/players/grunt/icon_stripe.tga" 181,156,103,88
-  palette "models/players/grunt/icon_red.tga" 205,172,101,84
-  palette "models/players/grunt/icon_default.tga" 179,180,127,108
-  palette "models/players/grunt/icon_blue.tga" 158,135,103,108
-  palette "models/players/grunt/grunt_h.jpg" 255,111,74,62
-  palette "models/players/grunt/grunt.jpg" 255,62,47,35
-  palette "models/players/grunt/blue_h.jpg" 255,96,67,67
-  palette "models/players/grunt/blue.jpg" 255,38,26,65
-  palette "models/mapobjects/wallhead/wallhead02.jpg" 255,56,38,29
-  palette "models/mapobjects/wallhead/lion_m.tga" 218,16,11,9
-  palette "models/mapobjects/wallhead/lion.jpg" 255,42,32,27
-  palette "models/mapobjects/storch/storch_tall.jpg" 255,68,43,32
-  palette "models/mapobjects/storch/storch.jpg" 255,62,40,31
-  palette "models/mapobjects/timlamp/timlamp.tga" 196,42,23,16
-  palette "models/mapobjects/spotlamp/spotlamp_l.jpg" 255,101,86,83
-  palette "models/mapobjects/spotlamp/spotlamp.tga" 183,47,44,43
-  palette "models/mapobjects/spotlamp/beam.jpg" 255,30,24,20
-  palette "models/mapobjects/skel/skel.tga" 159,107,81,61
-  palette "models/mapobjects/portal_2/portal_3_glo.jpg" 255,15,6,12
-  palette "models/mapobjects/portal_2/portal_3_edge_glo.jpg" 255,27,16,29
-  palette "models/mapobjects/portal_2/portal_3_edge.jpg" 255,57,54,52
-  palette "models/mapobjects/portal_2/portal_3.jpg" 255,73,66,59
-  palette "models/mapobjects/lamps/flare03.jpg" 255,36,31,21
-  palette "models/mapobjects/lamps/bot_wing.tga" 128,69,56,48
-  palette "models/mapobjects/lamps/bot_lamp2.jpg" 255,85,74,68
-  palette "models/mapobjects/lamps/bot_lamp.jpg" 255,45,38,34
-  palette "models/mapobjects/lamps/bot_flare2.jpg" 255,28,20,21
-  palette "models/mapobjects/lamps/bot_flare.jpg" 255,32,25,26
-  palette "models/mapobjects/gratelamp/gratetorch2b.tga" 189,54,44,36
-  palette "models/mapobjects/gratelamp/gratetorch2.jpg" 255,52,32,18
-  palette "models/mapobjects/podium/podskullfx.jpg" 255,0,3,2
-  palette "models/mapobjects/podium/podskull.tga" 225,18,13,10
-  palette "models/mapobjects/podium/podiumglo.tga" 50,0,1,0
-  palette "models/mapobjects/podium/podiumfx1b.jpg" 255,5,3,2
-  palette "models/mapobjects/podium/podiumfx1.jpg" 255,7,6,5
-  palette "models/mapobjects/podium/podium.tga" 206,31,22,18
-  palette "models/mapobjects/flag/banner_strgg.tga" 192,102,17,7
-  palette "models/mapobjects/corpse/corpse.jpg" 255,62,38,30
-  palette "models/mapobjects/chain/chain.tga" 180,93,76,64
-  palette "models/mapobjects/bitch/hologirl2.jpg" 255,14,17,16
-  palette "models/mapobjects/baph/baphomet_gold.tga" 251,68,46,28
-  palette "models/mapobjects/teleporter/widget.jpg" 255,5,5,5
-  palette "models/mapobjects/teleporter/transparency2.jpg" 255,155,70,8
-  palette "models/mapobjects/teleporter/transparency.jpg" 255,5,5,5
-  palette "models/mapobjects/teleporter/teleporter_edge2.jpg" 255,28,14,6
-  palette "models/mapobjects/teleporter/teleporter_edge.jpg" 255,72,67,62
-  palette "models/mapobjects/teleporter/teleporter.jpg" 255,84,70,62
-  palette "models/mapobjects/teleporter/pad.jpg" 255,50,44,39
-  palette "models/mapobjects/teleporter/energy3.jpg" 255,18,14,15
-  palette "models/mapobjects/teleporter/energy2.jpg" 255,15,11,10
-  palette "models/mapobjects/teleporter/energy.jpg" 255,34,25,24
-  palette "models/mapobjects/banner/q3banner02x.tga" 0,0,0,0
-  palette "models/mapobjects/banner/q3banner02.tga" 0,0,0,0
-  palette "models/mapobjects/Skull/skull.jpg" 255,94,66,49
-  palette "models/ammo/rocket/rockfls2.jpg" 255,94,41,25
-  palette "models/ammo/rocket/rockfls1.jpg" 255,94,41,25
-  palette "models/ammo/rocket/rockflar.jpg" 255,114,44,25
-  palette "models/ammo/rocket/rocketfn.jpg" 255,111,16,6
-  palette "models/ammo/rocket/rocket.jpg" 255,79,64,24
-  palette "gfx/2d/numbers/zero_32b.tga" 186,184,184,184
-  palette "gfx/2d/numbers/two_32b.tga" 143,183,182,183
-  palette "gfx/2d/numbers/three_32b.tga" 169,178,178,178
-  palette "gfx/2d/numbers/six_32b.tga" 182,180,180,180
-  palette "gfx/2d/numbers/seven_32b.tga" 126,185,185,184
-  palette "gfx/2d/numbers/one_32b.tga" 132,185,185,185
-  palette "gfx/2d/numbers/nine_32b.tga" 186,182,182,182
-  palette "gfx/2d/numbers/minus_32b.tga" 34,146,146,146
-  palette "gfx/2d/numbers/four_32b.tga" 150,185,185,185
-  palette "gfx/2d/numbers/five_32b.tga" 167,176,176,176
-  palette "gfx/2d/numbers/eight_32b.tga" 184,182,182,182
-  palette "sprites/foe2.png" 106,224,158,8
-  palette "sprites/bubble.png" 65,116,118,124
-  palette "sprites/balloon4.png" 184,69,69,188
-  palette "icons/teleporter.png" 50,0,236,255
-  palette "icons/regen.png" 76,209,10,0
-  palette "icons/quad.png" 69,0,227,241
-  palette "icons/noammo.png" 115,255,255,255
-  palette "icons/medkit.png" 35,255,0,0
-  palette "icons/invis.png" 22,0,0,255
-  palette "icons/iconw_shotgun.png" 117,255,125,0
-  palette "icons/iconw_rocket.png" 69,255,1,1
-  palette "icons/iconw_railgun.png" 40,0,255,0
-  palette "icons/iconw_plasma.png" 62,197,0,255
-  palette "icons/iconw_machinegun.png" 78,255,255,0
-  palette "icons/iconw_lightning.png" 73,255,255,186
-  palette "icons/iconw_grenade.png" 72,2,144,18
-  palette "icons/iconw_grapple.png" 29,0,201,149
-  palette "icons/iconw_gauntlet.png" 86,0,216,255
-  palette "icons/iconw_bfg.png" 102,1,90,255
-  palette "icons/iconr_yellow.png" 121,255,255,1
-  palette "icons/iconr_shard.png" 66,102,176,73
-  palette "icons/iconr_red.png" 124,255,1,1
-  palette "icons/iconh_yellow.png" 86,255,255,0
-  palette "icons/iconh_red.png" 104,255,115,1
-  palette "icons/iconh_mega.png" 81,0,63,249
-  palette "icons/iconh_green.png" 69,101,176,73
-  palette "icons/iconf_red.png" 237,161,0,0
-  palette "icons/iconf_blu.png" 236,0,22,161
-  palette "icons/icona_shotgun.png" 76,255,125,0
-  palette "icons/icona_rocket.png" 63,255,0,0
-  palette "icons/icona_railgun.png" 52,2,232,1
-  palette "icons/icona_plasma.png" 62,198,1,255
-  palette "icons/icona_machinegun.png" 100,255,255,0
-  palette "icons/icona_lightning.png" 92,255,255,176
-  palette "icons/icona_grenade.png" 63,2,145,18
-  palette "icons/icona_bfg.png" 76,1,106,255
-  palette "icons/haste.png" 42,183,229,0
-  palette "icons/flight.png" 72,192,23,160
-  palette "icons/envirosuit.png" 131,255,168,0
-  palette "textures/skin/chapthroatooz.png" 227,128,70,55
-  palette "textures/sfx/portal_sfx_ring_blue1.png" 149,235,229,251
-  palette "textures/sfx/portal_sfx3.png" 107,194,192,244
-  palette "textures/sfx/portal_sfx1.png" 109,244,241,242
-  palette "textures/sfx/launchpad_arrow.png" 3,216,88,8
-  palette "textures/sfx/firewalla.png" 47,132,61,0
-  palette "textures/sfx/firegorre.png" 47,171,66,0
-  palette "textures/gothic_wall/iron01_ndark.png" 10,70,59,50
-  palette "textures/gothic_wall/iron01_m.png" 12,79,67,56
-  palette "textures/gothic_floor/largerblock3b_ow.png" 251,83,56,38
-  palette "textures/gothic_floor/center2trn.png" 232,64,51,43
-  palette "textures/gothic_trim/xsupportborderside_shiney.png" 60,68,63,64
-  palette "textures/gothic_trim/x_noblight.png" 241,72,53,47
-  palette "textures/gothic_trim/km_arena1tower_short.png" 0,0,0,0
-  palette "textures/gothic_door/skullarch_c.png" 0,0,0,0
-  palette "textures/gothic_door/skullarch_b.png" 248,58,46,41
-  palette "textures/gothic_door/skullarch_a.png" 0,0,0,0
-  palette "textures/gothic_door/skull_door_f.png" 0,0,0,0
-  palette "textures/gothic_door/skull_door_e.png" 0,0,0,0
-  palette "textures/gothic_door/skull_door_d.png" 0,0,0,0
-  palette "textures/gothic_door/skull_door_c.png" 0,0,0,0
-  palette "textures/gothic_door/skull_door_b.png" 0,0,0,0
-  palette "textures/gothic_door/skull_door_a.png" 0,0,0,0
-  palette "textures/base_trim/pewter_shiney.png" 145,60,55,51
-  palette "textures/effects/blueflagmap.png" 0,0,0,0
-  palette "textures/base_support/cable_trans.png" 0,0,0,0
-  palette "textures/gothic_block/largerblock3blood.png" 146,82,52,34
-  palette "textures/gothic_block/killblockgeomtrn.png" 227,66,58,55
-  palette "textures/gothic_block/demon_block15fx.png" 252,84,65,58
-  palette "textures/gothic_block/blocks18cgeomtrn2.png" 65,60,51,46
-  palette "textures/gothic_block/blocks17_ow.png" 238,81,66,61
-  palette "textures/base_wall/steed1gf.png" 82,82,87,73
-  palette "textures/base_wall/protobanner.png" 232,69,53,39
-  palette "textures/base_wall/metalfloor_wall_15ow.png" 248,76,65,62
-  palette "textures/base_wall/main_q3abanner.png" 50,238,1,1
-  palette "textures/base_wall/atech1_alpha.png" 244,59,42,29
-  palette "textures/base_floor/pjgrate2.jpg" 255,25,15,11
-  palette "textures/base_floor/diamond2c_ow.png" 244,61,57,54
-  palette "models/weaphits/ring02_4.png" 9,160,125,108
-  palette "models/weaphits/ring02_3.png" 14,165,130,115
-  palette "models/weaphits/ring02_2.png" 20,172,137,122
-  palette "models/weaphits/ring02_1.png" 16,182,148,135
-  palette "models/weaphits/ring01_1.png" 44,77,87,156
-  palette "models/weaphits/blood205.png" 8,88,7,5
-  palette "models/weaphits/blood204.png" 25,85,7,4
-  palette "models/weaphits/blood203.png" 33,84,7,4
-  palette "models/weaphits/blood202.png" 47,82,6,4
-  palette "models/weaphits/blood201.png" 34,80,6,4
-  palette "menu/tab/time.png" 105,157,0,0
-  palette "menu/tab/score.png" 141,158,0,0
-  palette "menu/tab/ping.png" 110,160,0,0
-  palette "menu/tab/name.png" 126,164,0,0
-  palette "menu/medals/medal_victory.png" 93,21,229,88
-  palette "menu/medals/medal_impressive.png" 76,0,213,213
-  palette "menu/medals/medal_gauntlet.png" 128,232,97,0
-  palette "menu/medals/medal_frags.png" 101,219,0,0
-  palette "menu/medals/medal_excellent.png" 114,241,181,18
-  palette "menu/medals/medal_accuracy.png" 91,194,57,222
-  palette "gfx/damage/shadow.png" 109,175,175,175
-  palette "gfx/damage/plasma_mrk.png" 44,61,59,97
-  palette "gfx/damage/blood_stain.png" 70,80,0,1
-  palette "gfx/damage/blood_spurt.png" 77,65,0,0
-  palette "gfx/damage/blood_screen.png" 22,100,6,6
-  palette "gfx/misc/smokepuffragepro.png" 5,255,255,255
-  palette "gfx/misc/smokepuff2b.png" 50,167,133,117
-  palette "gfx/misc/console01.png" 232,35,0,5
-  palette "gfx/2d/select.png" 60,245,222,94
-  palette "gfx/2d/defer.png" 109,180,0,0
-  palette "gfx/2d/crosshairj.png" 13,255,255,255
-  palette "gfx/2d/crosshairi.png" 13,255,255,255
-  palette "gfx/2d/crosshairh.png" 5,255,255,255
-  palette "gfx/2d/crosshairg.png" 12,255,255,255
-  palette "gfx/2d/crosshairf.png" 1,255,255,255
-  palette "gfx/2d/crosshaire.png" 4,255,255,255
-  palette "gfx/2d/crosshaird.png" 27,255,255,255
-  palette "gfx/2d/crosshairc.png" 8,255,255,255
-  palette "gfx/2d/crosshairb.png" 10,255,255,255
-  palette "gfx/2d/crosshaira.png" 10,255,255,255
-  palette "gfx/2d/bigchars.png" 57,255,255,255
-  palette "menu/art/switch_on.png" 108,180,146,42
-  palette "menu/art/switch_off.png" 73,99,53,23
-  palette "menu/art/specify_1.png" 141,92,57,1
-  palette "menu/art/specify_0.png" 141,71,11,7
-  palette "menu/art/sliderbutt_1.png" 185,135,5,5
-  palette "menu/art/sliderbutt_0.png" 203,82,6,6
-  palette "menu/art/slider2.png" 103,208,208,208
-  palette "menu/art/skirmish_1.png" 141,95,59,1
-  palette "menu/art/skirmish_0.png" 141,75,11,7
-  palette "menu/art/skill5.png" 132,129,113,97
-  palette "menu/art/skill4.png" 72,204,0,0
-  palette "menu/art/skill3.png" 72,204,44,38
-  palette "menu/art/skill2.png" 72,204,94,82
-  palette "menu/art/skill1.png" 72,204,139,121
-  palette "menu/art/save_1.png" 141,114,71,1
-  palette "menu/art/save_0.png" 141,86,14,10
-  palette "menu/art/reset_1.png" 141,90,56,1
-  palette "menu/art/reset_0.png" 141,68,11,8
-  palette "menu/art/replay_1.png" 141,83,55,1
-  palette "menu/art/replay_0.png" 141,70,10,7
-  palette "menu/art/refresh_1.png" 141,93,58,1
-  palette "menu/art/refresh_0.png" 141,72,11,8
-  palette "menu/art/player_models_ports.png" 251,69,16,14
-  palette "menu/art/play_1.png" 141,86,53,1
-  palette "menu/art/play_0.png" 141,68,10,6
-  palette "menu/art/opponents_selected.png" 11,255,255,255
-  palette "menu/art/opponents_select.png" 9,255,255,255
-  palette "menu/art/next_1.png" 141,112,70,1
-  palette "menu/art/next_0.png" 141,86,14,10
-  palette "menu/art/narrow_1.png" 119,164,1,0
-  palette "menu/art/narrow_0.png" 130,82,0,0
-  palette "menu/art/model_1.png" 141,101,62,1
-  palette "menu/art/model_0.png" 141,78,12,8
-  palette "menu/art/menu_1.png" 141,83,56,1
-  palette "menu/art/menu_0.png" 141,69,11,8
-  palette "menu/art/maps_selected.png" 6,255,0,0
-  palette "menu/art/maps_select.png" 9,255,0,0
-  palette "menu/art/load_1.png" 141,114,70,1
-  palette "menu/art/load_0.png" 141,86,14,10
-  palette "menu/art/level_complete5.png" 87,101,69,48
-  palette "menu/art/level_complete4.png" 46,103,1,3
-  palette "menu/art/level_complete3.png" 46,107,20,18
-  palette "menu/art/level_complete2.png" 46,104,46,42
-  palette "menu/art/level_complete1.png" 46,106,66,58
-  palette "menu/art/gs_arrows_r.png" 159,122,1,1
-  palette "menu/art/gs_arrows_l.png" 158,126,2,2
-  palette "menu/art/gs_arrows_0.png" 161,79,3,3
-  palette "menu/art/fx_yel.png" 185,210,197,0
-  palette "menu/art/fx_white.png" 185,201,190,195
-  palette "menu/art/fx_teal.png" 185,24,201,198
-  palette "menu/art/fx_red.png" 185,208,21,0
-  palette "menu/art/fx_grn.png" 185,11,209,18
-  palette "menu/art/fx_cyan.png" 185,210,19,208
-  palette "menu/art/fx_blue.png" 185,41,11,209
-  palette "menu/art/fx_base.png" 202,54,61,62
-  palette "menu/art/frame2_l.png" 24,91,49,39
-  palette "menu/art/frame1_r.png" 25,104,60,45
-  palette "menu/art/frame1_l.png" 207,139,97,82
-  palette "menu/art/font2_prop.png" 69,191,0,0
-  palette "menu/art/font1_prop_glo.png" 81,209,209,209
-  palette "menu/art/font1_prop.png" 48,255,255,255
-  palette "menu/art/fight_1.png" 141,143,89,2
-  palette "menu/art/fight_0.png" 141,100,21,17
-  palette "menu/art/delete_1.png" 141,88,56,1
-  palette "menu/art/delete_0.png" 141,65,12,10
-  palette "menu/art/cut_frame.png" 86,28,21,17
-  palette "menu/art/create_1.png" 141,95,59,1
-  palette "menu/art/create_0.png" 141,71,12,9
-  palette "menu/art/back_1.png" 141,117,73,2
-  palette "menu/art/back_0.png" 141,88,15,11
-  palette "menu/art/arrows_vert_top.png" 131,99,1,1
-  palette "menu/art/arrows_vert_bot.png" 132,93,0,0
-  palette "menu/art/arrows_vert_0.png" 137,63,0,0
-  palette "menu/art/arrows_horz_right.png" 133,99,0,0
-  palette "menu/art/arrows_horz_left.png" 132,99,2,2
-  palette "menu/art/arrows_horz_0.png" 138,67,1,1
-  palette "menu/art/addbotframe.png" 99,29,21,17
-  palette "menu/art/accept_1.png" 141,122,75,2
-  palette "menu/art/accept_0.png" 141,90,16,12
-  palette "menu/art/3_cursor2.png" 49,255,0,0
-  palette "textures/sfx/compscreen/letters4.png" 6,199,42,40
-  palette "textures/sfx/compscreen/letters3.png" 4,164,30,29
-  palette "textures/sfx/compscreen/letters2.png" 6,74,14,13
-  palette "textures/sfx/compscreen/letters1.png" 4,179,33,32
-  palette "models/players/grunt/stripe_h.png" 254,95,56,45
-  palette "models/players/grunt/icon_stripe.png" 181,156,103,88
-  palette "models/players/grunt/icon_red.png" 205,172,101,84
-  palette "models/players/grunt/icon_default.png" 179,180,127,108
-  palette "models/players/grunt/icon_blue.png" 158,135,103,108
-  palette "models/players/visor/icon_red.png" 186,160,35,25
-  palette "models/players/visor/icon_default.png" 175,82,60,45
-  palette "models/players/visor/icon_blue.png" 175,58,70,97
-  palette "models/players/sarge/krusade.png" 251,64,41,27
-  palette "models/players/sarge/icon_red.png" 204,180,84,66
-  palette "models/players/sarge/icon_default.png" 175,175,133,98
-  palette "models/players/sarge/icon_blue.png" 200,117,103,109
-  palette "models/players/major/icon_red.png" 180,143,81,55
-  palette "models/players/major/icon_default.png" 186,146,89,65
-  palette "models/players/major/icon_daemia.png" 191,129,79,50
-  palette "models/players/major/icon_blue.png" 179,114,86,88
-  palette "models/players/major/daemia.png" 249,60,45,36
-  palette "models/mapobjects/timlamp/timlamp.png" 196,42,23,16
-  palette "models/mapobjects/wallhead/lion_m.png" 218,16,11,9
-  palette "models/mapobjects/lamps/bot_wing.png" 128,69,56,48
-  palette "models/mapobjects/gratelamp/gratetorch2b.png" 189,54,44,36
-  palette "models/mapobjects/spotlamp/spotlamp.png" 183,47,44,43
-  palette "models/mapobjects/skel/skel.png" 159,107,81,61
-  palette "models/mapobjects/podium/podskull.png" 225,18,13,10
-  palette "models/mapobjects/podium/podiumglo.png" 50,0,1,0
-  palette "models/mapobjects/podium/podium.png" 206,31,22,18
-  palette "models/mapobjects/flag/banner_strgg.png" 192,102,17,7
-  palette "models/mapobjects/chain/chain.png" 180,93,76,64
-  palette "models/mapobjects/baph/baphomet_gold.png" 251,68,46,28
-  palette "models/mapobjects/banner/q3banner02x.png" 0,0,0,0
-  palette "models/mapobjects/banner/q3banner02.png" 21,128,59,5
-  palette "models/mapobjects/banner/q3banner02.jpg" 255,44,16,1
-  palette "models/weapons2/gauntlet/gauntlet2.png" 196,26,19,16
-  palette "gfx/2d/numbers/zero_32b.png" 186,184,184,184
-  palette "gfx/2d/numbers/two_32b.png" 143,183,182,183
-  palette "gfx/2d/numbers/three_32b.png" 169,178,178,178
-  palette "gfx/2d/numbers/six_32b.png" 182,180,180,180
-  palette "gfx/2d/numbers/seven_32b.png" 126,185,185,184
-  palette "gfx/2d/numbers/one_32b.png" 132,185,185,185
-  palette "gfx/2d/numbers/nine_32b.png" 186,182,182,182
-  palette "gfx/2d/numbers/minus_32b.png" 34,146,146,146
-  palette "gfx/2d/numbers/four_32b.png" 150,185,185,185
-  palette "gfx/2d/numbers/five_32b.png" 167,176,176,176
-  palette "gfx/2d/numbers/eight_32b.png" 184,182,182,182
-  palette "models/powerups/armor/shard2.png" 156,84,81,90
-  palette "models/powerups/armor/newyellow.png" 227,117,66,4
-  palette "models/powerups/armor/newred.png" 229,89,6,8
-  palette "models/powerups/ammo/shotammo.png" 166,87,51,13
-  palette "models/powerups/ammo/rockammo.png" 166,87,14,13
-  palette "models/powerups/ammo/railammo.png" 196,12,62,28
-  palette "models/powerups/ammo/plasammo.png" 196,91,12,56
-  palette "models/powerups/ammo/machammo2.png" 93,236,236,0
-  palette "models/powerups/ammo/machammo.png" 166,87,76,13
-  palette "models/powerups/ammo/lighammo.png" 196,81,70,41
-  palette "models/powerups/ammo/grenammo.png" 166,40,44,23
-  palette "models/powerups/ammo/bfgammo.png" 196,50,41,36
-  palette "textures/sky1.tga" 255,249,207,96
-  palette "textures/sky1.jpg" 255,242,208,98
-  palette "textures/cube3.jpg" 255,255,186,10
-  palette "textures/cube2.jpg" 255,5,167,240
-  palette "textures/cube1.jpg" 255,130,190,7
-  palette "textures/cube0.jpg" 255,244,83,37
-  palette "sprites/laser.jpg" 255,177,1,1
-  palette "sprites/gravwell.jpg" 255,59,59,59
-  palette "sprites/forcefield.tga" 12,117,117,117
-  palette "sprites/forcefield.png" 12,117,117,117
-  palette "sprites/flameball.jpg" 255,116,82,76
-  palette "sprites/deathspotsprite.tga" 107,194,194,194
-  palette "sprites/deathspotsprite.png" 107,194,194,194
-  palette "sprites/balllightning.jpg" 255,21,37,63
-  palette "models/backpack.tga" 241,70,45,12
-  palette "models/backpack.png" 241,70,45,12
-  palette "maps/q3dm1_tracemap.tga" 255,24,35,53
-  palette "maps/q3dm1_tracemap.png" 255,24,35,53
-  palette "levelshots/winter.jpg" 255,8,18,34
-  palette "levelshots/summer.jpg" 255,36,39,34
-  palette "levelshots/q3tourney2.jpg" 255,49,18,13
-  palette "levelshots/q3dm7.jpg" 255,77,53,30
-  palette "levelshots/q3dm17.jpg" 255,45,40,36
-  palette "levelshots/q3dm1.jpg" 255,73,34,28
-  palette "levelshots/lsdm3_v1.jpg" 255,122,138,191
-  palette "levelshots/Q3TOURNEY1.jpg" 255,44,32,37
-  palette "env/xnight2_up.jpg" 255,13,13,13
-  palette "env/xnight2_rt.jpg" 255,2,2,2
-  palette "env/xnight2_lf.jpg" 255,2,2,2
-  palette "env/xnight2_ft.jpg" 255,2,2,2
-  palette "env/xnight2_dn.jpg" 255,2,2,2
-  palette "env/xnight2_bk.jpg" 255,2,2,2
-  palette "env/unit1_up.tga" 255,189,55,1
-  palette "env/unit1_up.pcx" 255,184,59,0
-  palette "env/unit1_up.jpg" 255,190,56,3
-  palette "env/unit1_rt.tga" 255,105,24,6
-  palette "env/unit1_rt.pcx" 255,95,32,7
-  palette "env/unit1_rt.jpg" 255,105,25,8
-  palette "env/unit1_lf.tga" 255,82,19,7
-  palette "env/unit1_lf.pcx" 255,76,26,8
-  palette "env/unit1_lf.jpg" 255,83,17,10
-  palette "env/unit1_ft.tga" 255,106,38,15
-  palette "env/unit1_ft.pcx" 255,99,45,15
-  palette "env/unit1_ft.jpg" 255,106,39,17
-  palette "env/unit1_dn.tga" 255,39,19,13
-  palette "env/unit1_dn.pcx" 255,38,21,16
-  palette "env/unit1_dn.jpg" 255,40,21,9
-  palette "env/unit1_bk.tga" 255,59,18,8
-  palette "env/unit1_bk.pcx" 255,57,21,9
-  palette "env/unit1_bk.jpg" 255,59,20,7
-  palette "env/thedeepblue_up.tga" 255,4,4,34
-  palette "env/thedeepblue_up.jpg" 255,8,5,35
-  palette "env/thedeepblue_rt.tga" 255,0,0,17
-  palette "env/thedeepblue_rt.jpg" 255,1,0,16
-  palette "env/thedeepblue_lf.tga" 255,0,0,18
-  palette "env/thedeepblue_lf.jpg" 255,2,1,17
-  palette "env/thedeepblue_ft.tga" 255,0,0,14
-  palette "env/thedeepblue_ft.jpg" 255,1,0,13
-  palette "env/thedeepblue_dn.tga" 255,0,0,12
-  palette "env/thedeepblue_dn.jpg" 255,0,0,10
-  palette "env/thedeepblue_bk.tga" 255,0,0,19
-  palette "env/thedeepblue_bk.jpg" 255,2,1,18
-  palette "icons/weirdness.tga" 100,246,7,244
-  palette "icons/weirdness.png" 100,246,7,244
-  palette "icons/vengeance.tga" 56,255,0,0
-  palette "icons/vengeance.png" 56,255,0,0
-  palette "icons/vamp.tga" 105,255,0,0
-  palette "icons/vamp.png" 105,255,0,0
-  palette "icons/transference.tga" 108,234,6,6
-  palette "icons/transference.png" 108,234,6,6
-  palette "icons/teleport.tga" 129,252,255,0
-  palette "icons/teleport.png" 129,252,255,0
-  palette "icons/switch.tga" 108,252,255,0
-  palette "icons/switch.png" 108,252,255,0
-  palette "icons/strength.tga" 28,254,2,2
-  palette "icons/strength.png" 28,254,2,2
-  palette "icons/sprint.tga" 87,255,0,0
-  palette "icons/sprint.png" 87,255,0,0
-  palette "icons/skull_red.tga" 255,115,0,3
-  palette "icons/skull_red.jpg" 255,114,5,8
-  palette "icons/skull_red.jpeg" 255,114,5,7
-  palette "icons/skull_blue.tga" 255,5,75,114
-  palette "icons/skull_blue.jpg" 255,11,76,115
-  palette "icons/sight.tga" 61,175,156,76
-  palette "icons/sight.png" 61,175,156,76
-  palette "icons/shield.tga" 113,255,168,0
-  palette "icons/shield.png" 113,255,168,0
-  palette "icons/selfpres.tga" 118,252,255,0
-  palette "icons/selfpres.png" 118,252,255,0
-  palette "icons/scout.png" 125,60,255,17
-  palette "icons/resistance.tga" 152,0,216,255
-  palette "icons/resistance.png" 152,0,216,255
-  palette "icons/repulsion.tga" 70,72,64,236
-  palette "icons/repulsion.png" 70,72,64,236
-  palette "icons/reflection.tga" 49,0,172,0
-  palette "icons/reflection.png" 49,0,172,0
-  palette "icons/recall.tga" 129,11,225,162
-  palette "icons/recall.png" 129,11,225,162
-  palette "icons/radioactivity.tga" 117,249,247,7
-  palette "icons/radioactivity.png" 117,249,247,7
-  palette "icons/proxmine.png" 58,255,0,124
-  palette "icons/portal.png" 124,237,0,250
-  palette "icons/plentifularmor.tga" 139,255,255,1
-  palette "icons/plentifularmor.png" 139,255,255,1
-  palette "icons/plague.tga" 92,255,1,1
-  palette "icons/plague.png" 92,255,1,1
-  palette "icons/piercing.tga" 106,255,1,1
-  palette "icons/piercing.png" 106,255,1,1
-  palette "icons/phoenix.tga" 80,0,216,255
-  palette "icons/phoenix.png" 80,0,216,255
-  palette "icons/phase.tga" 57,255,255,255
-  palette "icons/phase.png" 57,255,255,255
-  palette "icons/packrat.tga" 69,209,10,0
-  palette "icons/packrat.png" 69,209,10,0
-  palette "icons/overkill.tga" 68,255,1,1
-  palette "icons/overkill.png" 68,255,1,1
-  palette "icons/orb.tga" 98,255,102,0
-  palette "icons/orb.png" 98,255,102,0
-  palette "icons/norune.tga" 0,0,0,0
-  palette "icons/norune.png" 0,0,0,0
-  palette "icons/negation.tga" 81,0,0,0
-  palette "icons/negation.png" 81,0,0,0
-  palette "icons/necro.tga" 53,255,0,0
-  palette "icons/necro.png" 53,255,0,0
-  palette "icons/nailgun128.png" 39,0,255,179
-  palette "icons/medic.tga" 45,255,0,0
-  palette "icons/medic.png" 45,255,0,0
-  palette "icons/luck.tga" 37,21,199,41
-  palette "icons/luck.png" 37,21,199,41
-  palette "icons/lightning.tga" 42,255,255,255
-  palette "icons/lightning.png" 42,255,255,255
-  palette "icons/kamikaze.png" 109,250,201,0
-  palette "icons/jump.tga" 125,255,255,0
-  palette "icons/jump.png" 125,255,255,0
-  palette "icons/invulnerability.png" 198,255,119,197
-  palette "icons/impact.tga" 96,254,1,1
-  palette "icons/impact.png" 96,254,1,1
-  palette "icons/illusion.tga" 107,1,255,252
-  palette "icons/illusion.png" 107,1,255,252
-  palette "icons/iconw_triple_plasma.tga" 43,197,0,255
-  palette "icons/iconw_triple_plasma.png" 43,197,0,255
-  palette "icons/iconw_pipebomb.tga" 75,2,144,18
-  palette "icons/iconw_pipebomb.png" 75,2,144,18
-  palette "icons/iconw_mortar.tga" 43,255,1,1
-  palette "icons/iconw_mortar.png" 43,255,1,1
-  palette "icons/iconw_megarailgun.tga" 63,0,255,0
-  palette "icons/iconw_megarailgun.png" 63,0,255,0
-  palette "icons/iconw_homing_missile.tga" 47,255,1,1
-  palette "icons/iconw_homing_missile.png" 47,255,1,1
-  palette "icons/iconw_grapple_hr.tga" 33,0,201,149
-  palette "icons/iconw_grapple_hr.png" 33,0,201,149
-  palette "icons/iconw_flechette.tga" 44,255,125,0
-  palette "icons/iconw_flechette.png" 44,255,125,0
-  palette "icons/iconw_flamethrower.tga" 38,255,129,1
-  palette "icons/iconw_flamethrower.png" 38,255,129,1
-  palette "icons/iconw_deathblossom.tga" 80,0,255,0
-  palette "icons/iconw_deathblossom.png" 80,0,255,0
-  palette "icons/iconw_clustergrenade.tga" 72,2,144,18
-  palette "icons/iconw_clustergrenade.png" 72,2,144,18
-  palette "icons/iconw_chainlightning.tga" 52,255,255,186
-  palette "icons/iconw_chainlightning.png" 52,255,255,186
-  palette "icons/iconw_balllightning.tga" 102,255,255,186
-  palette "icons/iconw_balllightning.png" 102,255,255,186
-  palette "icons/iconw_auto_shotgun.tga" 112,255,125,0
-  palette "icons/iconw_auto_shotgun.png" 112,255,125,0
-  palette "icons/icont_shotgun.tga" 117,255,125,0
-  palette "icons/icont_shotgun.png" 117,255,125,0
-  palette "icons/icont_rocket.tga" 66,255,0,0
-  palette "icons/icont_rocket.png" 57,254,1,1
-  palette "icons/icont_railgun.tga" 35,2,232,1
-  palette "icons/icont_railgun.png" 35,2,232,1
-  palette "icons/icont_plasma.tga" 66,197,0,255
-  palette "icons/icont_plasma.png" 66,197,0,255
-  palette "icons/icont_machinegun.tga" 78,255,255,0
-  palette "icons/icont_machinegun.png" 78,255,255,0
-  palette "icons/icont_lightning.tga" 81,255,255,176
-  palette "icons/icont_lightning.png" 81,255,255,176
-  palette "icons/icont_grenade.tga" 74,2,144,18
-  palette "icons/icont_grenade.png" 74,2,144,18
-  palette "icons/icont_grapple.tga" 33,0,201,149
-  palette "icons/icont_grapple.png" 33,0,201,149
-  palette "icons/icont_gauntlet.tga" 110,0,216,255
-  palette "icons/icont_gauntlet.png" 110,0,216,255
-  palette "icons/icont_bfg.tga" 115,1,90,255
-  palette "icons/icont_bfg.png" 115,1,90,255
-  palette "icons/iconr_green.tga" 110,82,189,1
-  palette "icons/iconr_green.png" 110,82,189,1
-  palette "icons/iconh_rorb.tga" 120,250,1,11
-  palette "icons/iconh_rorb.png" 120,250,1,11
-  palette "icons/iconh_borb.tga" 120,5,174,250
-  palette "icons/iconh_borb.png" 120,5,174,250
-  palette "icons/iconf_red4.tga" 255,136,0,0
-  palette "icons/iconf_red4.jpg" 255,136,5,5
-  palette "icons/iconf_red3.tga" 255,128,0,0
-  palette "icons/iconf_red3.jpg" 255,129,5,6
-  palette "icons/iconf_red2.tga" 255,126,0,0
-  palette "icons/iconf_red2.jpg" 255,126,5,5
-  palette "icons/iconf_red1.tga" 255,151,0,0
-  palette "icons/iconf_red1.jpg" 255,151,4,5
-  palette "icons/iconf_red1.jpeg" 255,150,4,5
-  palette "icons/iconf_neutral3.tga" 255,132,132,132
-  palette "icons/iconf_neutral3.jpg" 255,131,131,131
-  palette "icons/iconf_neutral1.tga" 255,151,151,151
-  palette "icons/iconf_neutral1.jpg" 255,150,150,150
-  palette "icons/iconf_neutral1.jpeg" 255,150,150,150
-  palette "icons/iconf_blu4.tga" 255,0,13,136
-  palette "icons/iconf_blu4.jpg" 255,3,14,135
-  palette "icons/iconf_blu3.tga" 255,0,13,129
-  palette "icons/iconf_blu3.jpg" 255,3,13,128
-  palette "icons/iconf_blu2.tga" 255,0,12,127
-  palette "icons/iconf_blu2.jpg" 255,3,13,126
-  palette "icons/iconf_blu1.tga" 255,0,15,151
-  palette "icons/iconf_blu1.jpg" 255,2,15,150
-  palette "icons/iconf_blu1.jpeg" 255,2,15,151
-  palette "icons/icona_flamethrower.tga" 38,255,129,1
-  palette "icons/icona_flamethrower.png" 38,255,129,1
-  palette "icons/icon_backpack.tga" 134,155,87,7
-  palette "icons/icon_backpack.png" 134,155,87,7
-  palette "icons/ice_trap.tga" 104,1,90,255
-  palette "icons/ice_trap.png" 104,1,90,255
-  palette "icons/hologram.tga" 19,0,0,255
-  palette "icons/hologram.png" 19,0,0,255
-  palette "icons/guard.png" 132,56,11,255
-  palette "icons/gravity.tga" 60,255,114,0
-  palette "icons/gravity.png" 60,255,114,0
-  palette "icons/goodhealth.tga" 172,254,1,1
-  palette "icons/goodhealth.png" 172,254,1,1
-  palette "icons/forcefield.tga" 50,0,197,236
-  palette "icons/forcefield.png" 50,0,197,236
-  palette "icons/flash.tga" 127,255,255,255
-  palette "icons/flash.png" 127,255,255,255
-  palette "icons/fire.tga" 119,255,1,1
-  palette "icons/fire.png" 119,255,1,1
-  palette "icons/exclusion.tga" 67,0,246,255
-  palette "icons/exclusion.png" 67,0,246,255
-  palette "icons/enviro.tga" 107,2,144,18
-  palette "icons/enviro.png" 107,2,144,18
-  palette "icons/emp.tga" 67,0,216,255
-  palette "icons/emp.png" 67,0,216,255
-  palette "icons/dual.tga" 118,19,128,32
-  palette "icons/dual.png" 118,19,128,32
-  palette "icons/doubler.png" 140,255,31,11
-  palette "icons/divine.tga" 118,255,1,1
-  palette "icons/divine.png" 118,255,1,1
-  palette "icons/death_spots.tga" 126,0,0,0
-  palette "icons/death_spots.png" 126,0,0,0
-  palette "icons/cloak.tga" 22,197,197,197
-  palette "icons/cloak.png" 22,197,197,197
-  palette "icons/charm.tga" 31,255,1,1
-  palette "icons/charm.png" 31,255,1,1
-  palette "icons/chaingun128.png" 89,184,184,184
-  palette "icons/ceasefire.tga" 112,255,1,1
-  palette "icons/ceasefire.png" 112,255,1,1
-  palette "icons/boxer.tga" 94,1,13,255
-  palette "icons/boxer.png" 94,1,13,255
-  palette "icons/blink.png" 96,0,186,255
-  palette "icons/berserk.tga" 97,255,1,1
-  palette "icons/berserk.png" 97,255,1,1
-  palette "icons/athletics.tga" 30,1,255,252
-  palette "icons/athletics.png" 30,1,255,252
-  palette "icons/arsenal.tga" 84,255,0,0
-  palette "icons/arsenal.png" 84,255,0,0
-  palette "icons/antigrav.tga" 66,255,114,0
-  palette "icons/antigrav.png" 66,255,114,0
-  palette "icons/ammo_regen.png" 126,248,250,0
-  palette "icons/ammo_proxmine.png" 104,255,0,124
-  palette "icons/ammo_nailgun.png" 85,0,255,179
-  palette "icons/ammo_chaingun.png" 134,184,184,184
-  palette "textures/wood/wood037.jpg" 255,54,47,38
-  palette "textures/terrain_example/ter_rock3.tga" 255,66,64,61
-  palette "textures/terrain_example/ter_rock3.jpg" 255,65,64,64
-  palette "textures/terrain_example/ter_mud1.tga" 193,92,85,68
-  palette "textures/terrain_example/ter_mud1.png" 193,92,85,68
-  palette "textures/terrain_example/ter_moss1.tga" 233,63,73,48
-  palette "textures/terrain_example/ter_moss1.png" 233,63,73,48
-  palette "textures/stone/pjrock9b_2.tga" 255,72,71,69
-  palette "textures/stone/pjrock9b_2.jpg" 255,71,71,71
-  palette "textures/stone/pjrock12b_2.tga" 255,106,110,116
-  palette "textures/stone/pjrock12b_2.jpg" 255,109,109,112
-  palette "textures/stone/pjrock10b_2.tga" 255,186,190,196
-  palette "textures/stone/pjrock10b_2.jpg" 255,189,189,189
-  palette "textures/skies2/clouds.tga" 255,183,183,183
-  palette "textures/skies2/clouds.jpg" 255,181,181,181
-  palette "textures/proto2/pj_terralpha01.tga" 255,138,136,255
-  palette "textures/proto2/pj_terralpha01.pcx" 255,138,136,255
-  palette "textures/proto2/pj_terralpha01.jpg" 255,135,137,232
-  palette "textures/photorealistic_wood/wood099.jpg" 255,132,125,133
-  palette "textures/photorealistic_wood/wood077.jpg" 255,108,96,81
-  palette "textures/photorealistic_wood/wood053.jpg" 255,141,106,77
-  palette "textures/photorealistic_wood/wood052.jpg" 255,148,126,110
-  palette "textures/photorealistic_wood/wood020.jpg" 255,46,40,32
-  palette "textures/photorealistic_wood/wood013.jpg" 255,108,65,50
-  palette "textures/photorealistic_roof/roof05.jpg" 255,91,91,89
-  palette "textures/photorealistic_metal/metal075.jpg" 255,100,72,70
-  palette "textures/photorealistic_rock-stone/rock035.jpg" 255,115,115,110
-  palette "textures/photorealistic_rock-stone/rock011.jpg" 255,99,86,77
-  palette "textures/photorealistic_rock-stone/rock001.jpg" 255,153,153,153
-  palette "textures/photorealistic_ground/snow009.jpg" 255,86,88,89
-  palette "textures/photorealistic_ground/snow006.jpg" 255,148,151,158
-  palette "textures/sfx/zap_scroll2.jpg" 255,5,4,3
-  palette "textures/sfx/zap_scroll.jpg" 255,4,2,2
-  palette "textures/sfx/xian_dm3padwallglow.jpg" 255,4,3,5
-  palette "textures/sfx/xian_dm3padwall.jpg" 255,57,46,39
-  palette "textures/sfx/tesla1b.jpg" 255,16,9,7
-  palette "textures/sfx/tesla1.jpg" 255,32,25,50
-  palette "textures/sfx/surface6jumppad.blend.jpg" 255,60,28,6
-  palette "textures/sfx/specular5.jpg" 255,83,72,50
-  palette "textures/sfx/spawn_floord2c.png" 217,55,55,55
-  palette "textures/sfx/spawn_floor.png" 217,54,47,42
-  palette "textures/sfx/smallerblock3b3dim_pent.jpg" 255,88,64,54
-  palette "textures/sfx/r_flameball.jpg" 255,19,3,6
-  palette "textures/sfx/r_flame8.jpg" 255,31,6,4
-  palette "textures/sfx/r_flame7.jpg" 255,30,6,4
-  palette "textures/sfx/r_flame6.jpg" 255,28,5,4
-  palette "textures/sfx/r_flame5.jpg" 255,28,5,4
-  palette "textures/sfx/r_flame4.jpg" 255,25,5,3
-  palette "textures/sfx/r_flame3.jpg" 255,27,5,4
-  palette "textures/sfx/r_flame2.jpg" 255,31,6,4
-  palette "textures/sfx/r_flame1.jpg" 255,27,7,2
-  palette "textures/sfx/proto_zzztpink.jpg" 255,183,143,127
-  palette "textures/sfx/proto_zzztblu3.jpg" 255,23,43,74
-  palette "textures/sfx/proto_zzztblu.jpg" 255,102,113,138
-  palette "textures/sfx/pentagramfloor_blue3glowtest.jpg" 255,47,37,76
-  palette "textures/sfx/omm.png" 216,173,173,173
-  palette "textures/sfx/mirrorkc.png" 247,43,36,44
-  palette "textures/sfx/mirror.jpg" 255,59,47,29
-  palette "textures/sfx/metaltechfloor02final_pent2.jpg" 255,106,74,65
-  palette "textures/sfx/metaltech12final_bounce.jpg" 255,76,66,60
-  palette "textures/sfx/metalfloor_wall_9bglow.jpg" 255,46,17,17
-  palette "textures/sfx/metalfloor_wall_9b.jpg" 255,98,47,48
-  palette "textures/sfx/metalfloor_wall_7b.jpg" 255,47,56,62
-  palette "textures/sfx/metalfloor_wall_5bglowblu.jpg" 255,19,16,46
-  palette "textures/sfx/metalfloor_wall_14bglow2.jpg" 255,6,7,17
-  palette "textures/sfx/metalfloor_wall_14b.jpg" 255,74,83,91
-  palette "textures/sfx/lavabeam.jpg" 255,25,4,2
-  palette "textures/sfx/launchpad_metalbridge04d.jpg" 255,100,91,89
-  palette "textures/sfx/launchpad_blocks18d.jpg" 255,90,82,79
-  palette "textures/sfx/launchpad_blocks17.png" 0,0,0,0
-  palette "textures/sfx/largerblock3b3x128_pent.jpg" 255,93,66,55
-  palette "textures/sfx/largerblock3b3_pent.jpg" 255,95,60,48
-  palette "textures/sfx/jacobs_x.jpg" 255,27,24,21
-  palette "textures/sfx/hologirl2.png" 0,0,0,0
-  palette "textures/sfx/healthfloor.png" 214,55,49,44
-  palette "textures/sfx/g_flameball.jpg" 255,2,11,5
-  palette "textures/sfx/g_flame8.jpg" 255,3,27,7
-  palette "textures/sfx/g_flame7.jpg" 255,3,25,7
-  palette "textures/sfx/g_flame6.jpg" 255,2,23,6
-  palette "textures/sfx/g_flame5.jpg" 255,2,23,5
-  palette "textures/sfx/g_flame4.jpg" 255,3,21,5
-  palette "textures/sfx/g_flame3.jpg" 255,3,23,6
-  palette "textures/sfx/g_flame2.jpg" 255,3,27,7
-  palette "textures/sfx/g_flame1.jpg" 255,4,30,9
-  palette "textures/sfx/fishy.png" 162,51,41,28
-  palette "textures/sfx/fireswirl2blue.jpg" 255,47,110,116
-  palette "textures/sfx/fire_ctfred.jpg" 255,160,4,11
-  palette "textures/sfx/fire_ctfblue.jpg" 255,3,61,160
-  palette "textures/sfx/fanfx.jpg" 255,64,64,64
-  palette "textures/sfx/fan_grate.png" 153,52,40,30
-  palette "textures/sfx/fan3bladeb.png" 28,61,49,41
-  palette "textures/sfx/fan3.png" 153,65,48,38
-  palette "textures/sfx/fan.png" 111,82,59,43
-  palette "textures/sfx/electricslime_old.png" 0,0,0,0
-  palette "textures/sfx/electricslime2.jpg" 255,24,17,31
-  palette "textures/sfx/electric2.blend.jpg" 255,3,3,41
-  palette "textures/sfx/dust_puppy2.png" 109,96,91,85
-  palette "textures/sfx/demonltblackfinal_glow2.jpg" 255,21,18,16
-  palette "textures/sfx/demonltblackfinal.jpg" 255,65,57,55
-  palette "textures/sfx/console03.jpg" 255,48,3,5
-  palette "textures/sfx/console02.jpg" 255,20,16,17
-  palette "textures/sfx/console01.jpg" 255,8,70,48
-  palette "textures/sfx/computerblocks15.jpg" 255,78,61,52
-  palette "textures/sfx/clangdark_bounce.jpg" 255,72,61,53
-  palette "textures/sfx/cabletest2.png" 31,19,19,21
-  palette "textures/sfx/bullseye.jpg" 255,11,48,37
-  palette "textures/sfx/bouncepad01_xarch.jpg" 255,74,62,54
-  palette "textures/sfx/bouncepad01_diamond2ctga.jpg" 255,74,65,58
-  palette "textures/sfx/bouncepad01_block17.jpg" 255,79,67,59
-  palette "textures/sfx/bounce_xq1metalbig.jpg" 255,80,70,62
-  palette "textures/sfx/bounce_largeblock3b.jpg" 255,78,64,55
-  palette "textures/sfx/bounce_largeblock3.jpg" 255,74,62,54
-  palette "textures/sfx/bounce_dirt.png" 0,0,0,0
-  palette "textures/sfx/bounce_concrete.jpg" 255,83,72,64
-  palette "textures/sfx/blocks18ccomputer.jpg" 255,71,58,50
-  palette "textures/sfx/blocks17g_jumpad.png" 0,0,0,0
-  palette "textures/sfx/blocks17final_pent.jpg" 255,95,64,56
-  palette "textures/sfx/blackness.jpg" 255,0,0,0
-  palette "textures/sfx/beam_waterlight.jpg" 255,29,50,39
-  palette "textures/sfx/beam_red.jpg" 255,44,1,2
-  palette "textures/sfx/beam_blue4.jpg" 255,2,11,19
-  palette "textures/sfx/b_flameball.jpg" 255,4,3,13
-  palette "textures/sfx/b_flame8.jpg" 255,3,4,30
-  palette "textures/sfx/b_flame7.jpg" 255,3,4,28
-  palette "textures/sfx/b_flame6.jpg" 255,3,4,27
-  palette "textures/sfx/b_flame5.jpg" 255,3,4,26
-  palette "textures/sfx/b_flame4.jpg" 255,3,4,23
-  palette "textures/sfx/b_flame3.jpg" 255,3,4,26
-  palette "textures/sfx/b_flame2.jpg" 255,4,5,30
-  palette "textures/sfx/b_flame1.jpg" 255,4,5,33
-  palette "textures/sfx/RQ3logo512.jpg" 255,18,12,6
-  palette "textures/photorealistic_bricks/brick070.jpg" 255,145,113,108
-  palette "textures/lsdm3/xblueflare2.tga" 255,0,17,21
-  palette "textures/lsdm3/xblueflare2.png" 255,0,17,21
-  palette "textures/lsdm3/xblueflare2.jpg" 255,2,16,20
-  palette "textures/lsdm3/xblueflare2.jpeg" 255,1,17,21
-  palette "textures/lsdm3/wsupprt1_12_blue.jpg" 255,61,84,114
-  palette "textures/lsdm3/wsupprt1_12.blend.blue.jpg" 255,58,76,95
-  palette "textures/lsdm3/stratosphere_up.jpg" 255,37,45,68
-  palette "textures/lsdm3/stratosphere_rt.jpg" 255,12,20,52
-  palette "textures/lsdm3/stratosphere_lf.jpg" 255,12,23,51
-  palette "textures/lsdm3/stratosphere_ft.jpg" 255,32,48,91
-  palette "textures/lsdm3/stratosphere_dn.jpg" 255,39,48,62
-  palette "textures/lsdm3/stratosphere_bk.jpg" 255,8,16,39
-  palette "textures/lsdm3/nunukc.jpg" 255,131,131,131
-  palette "textures/lsdm3/nunuk-bluedark.jpg" 255,82,92,102
-  palette "textures/lsdm3/chrome_metal.jpg" 255,37,36,38
-  palette "textures/lsdm3/ceil1_30.jpg" 255,50,68,128
-  palette "textures/lsdm3/ceil1_30.blend.jpg" 255,25,47,113
-  palette "textures/lsdm3/bubbles.jpg" 255,4,4,4
-  palette "textures/lsdm3/blue_telep.jpg" 255,1,12,20
-  palette "textures/lsdm3/blue_fluid.tga" 103,130,103,229
-  palette "textures/lsdm3/blue_fluid.png" 103,130,103,229
-  palette "textures/lsdm3/blue_fluid.jpeg" 255,130,99,226
-  palette "textures/jungle/bark02.jpg" 255,70,63,60
-  palette "textures/lobby/template.jpg" 255,61,33,61
-  palette "textures/gothic_wall/xiantourneywall_r1.jpg" 255,73,60,55
-  palette "textures/gothic_wall/xiantourneywall_c1.jpg" 255,84,51,42
-  palette "textures/gothic_cath/smalldoor_xiandm9i.jpg" 255,69,60,57
-  palette "textures/gothic_cath/smalldoor_xiandm9a.jpg" 255,69,59,56
-  palette "textures/gothic_floor/pent_metalbridge06.jpg" 255,91,67,59
-  palette "textures/gothic_floor/pent_glow.jpg" 255,24,16,10
-  palette "textures/gothic_door/km_arena1columna2r.jpg" 255,90,72,65
-  palette "textures/gothic_door/archxiandm1dblack.jpg" 255,61,56,55
-  palette "textures/gothic_door/archxiandm1b.jpg" 255,77,65,63
-  palette "textures/gothic_trim/pitted_rustred.jpg" 255,69,7,5
-  palette "textures/gothic_trim/pitted_rustblack.jpg" 255,32,29,30
-  palette "textures/gothic_trim/pitted_rust_small.jpg" 255,63,48,39
-  palette "textures/gothic_trim/pitted_rust3_dkred.jpg" 255,44,9,8
-  palette "textures/gothic_trim/pitted_rust3_black.jpg" 255,32,28,27
-  palette "textures/gothic_trim/metalblackwave01.jpg" 255,32,31,35
-  palette "textures/g1zm0/J_int.jpg" 255,169,136,78
-  palette "textures/common/mirror1.tga" 0,0,0,0
-  palette "textures/common/mirror1.png" 0,0,0,0
-  palette "textures/common/invisible.tga" 0,0,0,0
-  palette "textures/common/invisible.png" 0,0,0,0
-  palette "textures/colors/black.jpg" 255,0,0,0
-  palette "textures/gothic_block/blocks18b_ow.png" 239,77,61,58
-  palette "textures/gothic_block/blocks11bbroke.jpg" 255,65,57,54
-  palette "textures/chili_vegetation/seerosenbluete.tga" 144,201,221,195
-  palette "textures/chili_vegetation/seerosenbluete.png" 144,201,221,195
-  palette "textures/chili_vegetation/seerose.tga" 199,79,135,75
-  palette "textures/chili_vegetation/seerose.png" 199,79,135,75
-  palette "textures/chili_vegetation/pilzstamm.jpg" 255,194,193,191
-  palette "textures/chili_vegetation/pilzlamellen.jpg" 255,72,51,34
-  palette "textures/chili_vegetation/gras.tga" 166,71,120,34
-  palette "textures/chili_vegetation/gras.png" 166,71,120,34
-  palette "textures/chili_vegetation/fliegenpilz.jpg" 255,201,92,87
-  palette "textures/chili_vegetation/efeu.tga" 109,36,76,23
-  palette "textures/chili_vegetation/efeu.png" 109,36,76,23
-  palette "textures/chili_vegetation/blaetter.tga" 170,9,40,2
-  palette "textures/chili_vegetation/blaetter.png" 170,9,40,2
-  palette "textures/chili_skies/thunderbolt_3.jpg" 255,208,132,249
-  palette "textures/chili_skies/thunderbolt_2.jpg" 255,126,111,162
-  palette "textures/chili_skies/thunderbolt_1.jpg" 255,163,107,193
-  palette "textures/chili_skies/sky_clouds.tga" 255,90,93,100
-  palette "textures/chili_skies/sky_clouds.jpg" 255,92,92,100
-  palette "textures/chili_sfx/wachs.jpg" 255,209,160,59
-  palette "textures/chili_sfx/starlet_green.jpg" 255,16,76,40
-  palette "textures/chili_sfx/starlet_blue.jpg" 255,21,77,90
-  palette "textures/chili_sfx/spinnennetz.jpg" 255,102,103,102
-  palette "textures/chili_sfx/rain.jpg" 255,0,0,0
-  palette "textures/chili_sfx/mirror.tga" 0,0,0,0
-  palette "textures/chili_sfx/mirror.png" 0,0,0,0
-  palette "textures/chili_sfx/chain.tga" 154,100,71,67
-  palette "textures/chili_sfx/chain.png" 154,100,71,67
-  palette "textures/effects/xenvmap-freeze.tga" 255,33,33,33
-  palette "textures/effects/xenvmap-freeze.jpg" 255,33,33,33
-  palette "textures/effects/weirdpuff.tga" 83,162,139,105
-  palette "textures/effects/weirdpuff.png" 83,162,139,105
-  palette "textures/effects/weirdmask.jpg" 255,7,51,21
-  palette "textures/effects/tinfxb.tga" 255,72,66,66
-  palette "textures/effects/tinfxb.jpeg" 255,71,66,66
-  palette "textures/effects/tinfx3.tga" 255,13,13,13
-  palette "textures/effects/tinfx2d.tga" 255,44,53,55
-  palette "textures/effects/tinfx2d.jpeg" 255,44,54,53
-  palette "textures/effects/tinfx2c.tga" 255,37,46,47
-  palette "textures/effects/tinfx2c.jpeg" 255,37,46,46
-  palette "textures/effects/tinfx2b.tga" 255,49,43,43
-  palette "textures/effects/tinfx2b.jpeg" 255,49,43,43
-  palette "textures/effects/tinfx2.tga" 255,20,20,20
-  palette "textures/effects/tinfx2.jpeg" 255,21,21,21
-  palette "textures/effects/tinfx.tga" 255,62,62,62
-  palette "textures/effects/tinfx.jpeg" 255,62,62,62
-  palette "textures/effects/regenmap2.tga" 255,83,3,2
-  palette "textures/effects/regenmap2.jpeg" 255,82,5,4
-  palette "textures/effects/reflectionmap.tga" 255,0,38,1
-  palette "textures/effects/reflectionmap.jpg" 255,8,39,9
-  palette "textures/effects/redflagmap.tga" 0,0,0,0
-  palette "textures/effects/redflagmap.png" 0,0,0,0
-  palette "textures/effects/quadmap2.tga" 255,6,21,53
-  palette "textures/effects/phasemap3.tga" 136,0,0,0
-  palette "textures/effects/phasemap3.png" 136,0,0,0
-  palette "textures/effects/phasemap2.jpg" 255,13,13,13
-  palette "textures/effects/phasemap.jpg" 255,30,30,30
-  palette "textures/effects/lightning3.jpg" 255,8,20,21
-  palette "textures/effects/invismap.tga" 255,5,5,5
-  palette "textures/effects/invisibility.jpg" 255,0,0,0
-  palette "textures/effects/greenmask.jpg" 255,9,84,30
-  palette "textures/effects/grapplingHook.jpg" 255,21,13,1
-  palette "textures/effects/frozenmap.jpg" 255,15,36,69
-  palette "textures/effects/freezemap2.jpg" 255,83,83,83
-  palette "textures/effects/envmapyel.tga" 255,143,108,34
-  palette "textures/effects/envmapyel.jpeg" 255,142,108,36
-  palette "textures/effects/envmaproc.tga" 255,65,19,14
-  palette "textures/effects/envmaproc.jpg" 255,65,19,14
-  palette "textures/effects/envmapred.tga" 255,87,12,11
-  palette "textures/effects/envmaprail.tga" 255,38,79,31
-  palette "textures/effects/envmaprail.jpeg" 255,38,80,32
-  palette "textures/effects/envmappurp.tga" 255,138,46,137
-  palette "textures/effects/envmapplas.tga" 255,84,36,86
-  palette "textures/effects/envmapplas.jpeg" 255,84,36,87
-  palette "textures/effects/envmapmach.tga" 255,63,53,12
-  palette "textures/effects/envmapligh.tga" 255,86,61,33
-  palette "textures/effects/envmapligh.jpeg" 255,86,62,33
-  palette "textures/effects/envmapgold2.tga" 255,102,57,18
-  palette "textures/effects/envmapgold2.jpeg" 255,99,57,20
-  palette "textures/effects/envmapgold.tga" 255,121,77,40
-  palette "textures/effects/envmapgold.jpeg" 255,121,77,41
-  palette "textures/effects/envmapdimb.tga" 255,17,17,17
-  palette "textures/effects/envmapdimb.jpg" 255,17,17,17
-  palette "textures/effects/envmapdim.tga" 255,51,51,51
-  palette "textures/effects/envmapdim.jpeg" 255,53,53,53
-  palette "textures/effects/envmapblue2.tga" 255,24,65,127
-  palette "textures/effects/envmapblue2.jpeg" 255,24,66,126
-  palette "textures/effects/envmapblue.tga" 255,33,90,138
-  palette "textures/effects/envmapblue.jpeg" 255,36,90,137
-  palette "textures/effects/envmapbfg.tga" 255,35,49,82
-  palette "textures/effects/envmapbfg.jpeg" 255,35,49,82
-  palette "textures/effects/envmap2.tga" 255,10,10,9
-  palette "textures/effects/envmap2.jpg" 255,10,10,9
-  palette "textures/effects/envmap.tga" 255,104,104,107
-  palette "textures/effects/envmap.jpeg" 255,103,103,105
-  palette "textures/effects/Copy of regenmap2.jpg" 255,83,3,2
-  palette "textures/effects/Copy (2) of regenmap2.jpg" 255,37,2,2
-  palette "textures/chili_liquids/reflection1.jpg" 255,25,33,27
-  palette "textures/chili_liquids/pool_green.jpg" 255,33,43,36
-  palette "textures/chili_light/stained_glass_red.jpg" 255,156,7,7
-  palette "textures/chili_light/stained_glass_blue.jpg" 255,9,102,112
-  palette "textures/chili_light/kerzenschein.jpg" 255,53,46,36
-  palette "textures/chili_light/kerze.jpg" 255,48,47,48
-  palette "textures/chili_animals/dragonfly.tga" 2,58,87,56
-  palette "textures/chili_animals/dragonfly.png" 2,58,87,56
-  palette "textures/chili_animals/butterfly.tga" 108,19,111,67
-  palette "textures/chili_animals/butterfly.png" 108,19,111,67
-  palette "textures/chili_decals/sky_shadows.jpg" 255,171,171,171
-  palette "textures/chili_decals/penta.jpg" 255,75,16,1
-  palette "textures/chili_decals/neon.jpg" 255,2,22,21
-  palette "textures/chili_decals/balustrade_decal_7.tga" 255,233,233,233
-  palette "textures/chili_decals/balustrade_decal_7.jpg" 255,232,232,232
-  palette "textures/chili_decals/balustrade_decal_6.tga" 255,231,231,231
-  palette "textures/chili_decals/balustrade_decal_6.jpg" 255,230,230,230
-  palette "textures/chili_decals/balustrade_decal_5.tga" 255,234,234,234
-  palette "textures/chili_decals/balustrade_decal_5.jpg" 255,234,234,234
-  palette "textures/chili_decals/balustrade_decal_4.tga" 255,233,233,233
-  palette "textures/chili_decals/balustrade_decal_4.jpg" 255,233,233,233
-  palette "textures/chili_decals/balustrade_decal_3.tga" 255,233,233,233
-  palette "textures/chili_decals/balustrade_decal_3.jpg" 255,233,233,233
-  palette "textures/chili_decals/balustrade_decal_2.tga" 255,233,233,233
-  palette "textures/chili_decals/balustrade_decal_2.jpg" 255,232,232,232
-  palette "textures/chili_decals/balustrade_decal_1.tga" 255,234,234,234
-  palette "textures/chili_decals/balustrade_decal_1.jpg" 255,233,233,233
-  palette "textures/base_trim/spiderbit3.jpg" 255,57,50,40
-  palette "textures/base_wall/greenmet2b.jpg" 255,57,50,46
-  palette "textures/base_wall/bluemetal2_shiny.png" 144,83,57,62
-  palette "textures/base_floor/proto_rustygrate2.png" 167,51,35,27
-  palette "textures/base_floor/proto_rustygrate.png" 208,52,35,27
-  palette "textures/base_floor/pjgrate2.png" 134,46,27,18
-  palette "textures/base_floor/metalbridge06.jpg" 255,67,61,59
-  palette "sprites/explode1/fs2-0022.jpg" 255,1,1,1
-  palette "sprites/explode1/fs2-0021.jpg" 255,2,1,1
-  palette "sprites/explode1/fs2-0020.jpg" 255,8,1,1
-  palette "sprites/explode1/fs2-0019.jpg" 255,12,1,1
-  palette "sprites/explode1/fs2-0018.jpg" 255,16,1,1
-  palette "sprites/explode1/fs2-0017.jpg" 255,21,1,1
-  palette "sprites/explode1/fs2-0016.jpg" 255,25,1,1
-  palette "sprites/explode1/fs2-0015.jpg" 255,26,2,2
-  palette "sprites/explode1/fs2-0014.jpg" 255,29,2,1
-  palette "sprites/explode1/fs2-0013.jpg" 255,35,2,2
-  palette "sprites/explode1/fs2-0012.jpg" 255,37,2,2
-  palette "sprites/explode1/fs2-0011.jpg" 255,35,2,2
-  palette "sprites/explode1/fs2-0010.jpg" 255,36,3,2
-  palette "sprites/explode1/fs2-0009.jpg" 255,39,5,2
-  palette "sprites/explode1/fs2-0008.jpg" 255,42,9,2
-  palette "sprites/explode1/fs2-0007.jpg" 255,45,12,2
-  palette "sprites/explode1/fs2-0006.jpg" 255,40,14,3
-  palette "sprites/explode1/fs2-0005.jpg" 255,39,17,3
-  palette "sprites/explode1/fs2-0004.jpg" 255,33,18,3
-  palette "sprites/explode1/fs2-0003.jpg" 255,34,21,3
-  palette "sprites/explode1/fs2-0002.jpg" 255,25,19,3
-  palette "sprites/explode1/fs2-0001.jpg" 255,24,21,3
-  palette "sprites/explode1/fs2-0000.jpg" 255,0,0,0
-  palette "models/runes/resist_fluid.jpg" 255,155,3,136
-  palette "models/weaphits/plasmaboom.tga" 255,11,49,56
-  palette "models/weaphits/newexplo1.tga" 255,48,21,18
-  palette "models/weaphits/newexplo1.jpeg" 255,48,22,20
-  palette "models/weaphits/flechettetrail.tga" 255,10,8,6
-  palette "models/weaphits/flechettetrail.jpg" 255,8,8,8
-  palette "models/weaphits/flamethrower.jpg" 255,38,17,6
-  palette "models/weaphits/electric.tga" 255,13,25,23
-  palette "models/weaphits/electric.jpeg" 255,14,25,23
-  palette "models/weaphits/bullet3.tga" 255,22,10,4
-  palette "models/weaphits/bullet3.jpeg" 255,24,13,9
-  palette "models/weaphits/bullet2.tga" 255,40,21,6
-  palette "models/weaphits/bullet2.jpeg" 255,42,23,13
-  palette "models/weaphits/bullet1.tga" 255,37,20,7
-  palette "models/weaphits/bullet1.jpeg" 255,38,22,12
-  palette "models/weaphits/bfg03.tga" 255,15,18,13
-  palette "models/weaphits/bfg03.jpeg" 255,15,18,13
-  palette "models/weaphits/bfg02.tga" 255,12,11,10
-  palette "models/weaphits/bfg02.jpeg" 255,13,11,10
-  palette "models/weaphits/bfg01.tga" 255,18,41,26
-  palette "models/weaphits/bfg01.jpeg" 255,18,41,27
-  palette "models/tanks/tanks_panzer_tracks.tga" 255,246,246,246
-  palette "models/tanks/tanks_panzer_tracks.jpg" 255,245,245,245
-  palette "models/tanks/tanks_panzer_body.tga" 255,235,234,234
-  palette "models/tanks/tanks_panzer_body.jpg" 255,232,232,232
-  palette "models/tanks/tanks_cromwell_tracks.tga" 255,246,246,246
-  palette "models/tanks/tanks_cromwell_tracks.jpg" 255,244,244,244
-  palette "models/tanks/tanks_cromwell_body.tga" 255,237,237,237
-  palette "models/tanks/tanks_cromwell_body.jpg" 255,234,234,234
-  palette "models/tanks/tanks_churchill_tracks.tga" 255,244,244,244
-  palette "models/tanks/tanks_churchill_tracks.jpg" 255,242,242,242
-  palette "models/tanks/tanks_churchill_body.tga" 255,236,236,236
-  palette "models/tanks/tanks_churchill_body.jpg" 255,233,233,233
-  palette "models/tanks/tanks_carrier_tracks.tga" 255,247,247,247
-  palette "models/tanks/tanks_carrier_tracks.jpg" 255,245,245,245
-  palette "models/tanks/tanks_carrier_body.tga" 255,240,239,239
-  palette "models/tanks/tanks_carrier_body.jpg" 255,237,237,237
-  palette "models/tanks/tanks_M5A1_tracks.tga" 255,247,247,247
-  palette "models/tanks/tanks_M5A1_tracks.jpg" 255,246,246,246
-  palette "models/tanks/tanks_M5A1_body.tga" 255,238,238,238
-  palette "models/tanks/tanks_M5A1_body.jpg" 255,235,235,235
-  palette "models/tanks/panzer_tracksAO.tga" 255,23,23,23
-  palette "models/tanks/panzer_tracksAO.jpg" 255,24,24,24
-  palette "models/tanks/panzer_tracks.tga" 255,184,184,184
-  palette "models/tanks/panzer_tracks.jpg" 255,183,183,183
-  palette "models/tanks/panzer_bodyAO.tga" 255,43,43,43
-  palette "models/tanks/panzer_bodyAO.jpg" 255,43,43,43
-  palette "models/tanks/panzer_body.tga" 255,186,186,186
-  palette "models/tanks/panzer_body.jpg" 255,186,186,186
-  palette "models/tanks/m5a1_tracksAO.tga" 255,18,18,18
-  palette "models/tanks/m5a1_tracksAO.jpg" 255,17,17,17
-  palette "models/tanks/m5a1_bodyAO.tga" 255,42,42,42
-  palette "models/tanks/m5a1_bodyAO.jpg" 255,42,42,42
-  palette "models/tanks/cromwell_tracksAO.tga" 255,19,19,19
-  palette "models/tanks/cromwell_tracksAO.jpg" 255,19,19,19
-  palette "models/tanks/cromwell_tracks.tga" 255,182,182,182
-  palette "models/tanks/cromwell_tracks.jpg" 255,181,181,181
-  palette "models/tanks/cromwell_bodyAO.tga" 255,42,42,42
-  palette "models/tanks/cromwell_bodyAO.jpg" 255,42,42,42
-  palette "models/tanks/cromwell_body.tga" 255,186,186,186
-  palette "models/tanks/cromwell_body.jpg" 255,186,186,186
-  palette "models/tanks/churchill_tracksAO.tga" 255,12,12,12
-  palette "models/tanks/churchill_tracksAO.jpg" 255,12,12,12
-  palette "models/tanks/churchill_tracks.tga" 255,179,179,179
-  palette "models/tanks/churchill_tracks.jpg" 255,178,178,178
-  palette "models/tanks/churchill_bodyAO.tga" 255,45,45,45
-  palette "models/tanks/churchill_bodyAO.jpg" 255,46,46,46
-  palette "models/tanks/churchill_body.tga" 255,187,187,187
-  palette "models/tanks/churchill_body.jpg" 255,187,187,187
-  palette "models/tanks/carrier_tracksAO.tga" 255,14,14,14
-  palette "models/tanks/carrier_tracksAO.jpg" 255,14,14,14
-  palette "models/tanks/carrier_tracks.tga" 255,181,181,181
-  palette "models/tanks/carrier_tracks.jpg" 255,180,180,180
-  palette "models/tanks/carrier_bodyAO.tga" 255,35,35,35
-  palette "models/tanks/carrier_bodyAO.jpg" 255,35,35,35
-  palette "models/tanks/carrier_body.tga" 255,185,185,185
-  palette "models/tanks/carrier_body.jpg" 255,184,184,184
-  palette "models/tanks/M5A1_tracks.tga" 255,182,182,182
-  palette "models/tanks/M5A1_tracks.jpg" 255,181,181,181
-  palette "models/tanks/M5A1_body.tga" 255,186,186,186
-  palette "models/tanks/M5A1_body.jpg" 255,186,186,186
-  palette "models/flags/w_flag2.tga" 167,222,222,222
-  palette "models/flags/w_flag2.png" 167,222,222,222
-  palette "models/breakables/glassfx.jpg" 255,13,13,13
-  palette "models/ammo/grenade_r.tga" 255,9,2,2
-  palette "models/ammo/grenade_r.jpeg" 255,8,3,4
-  palette "models/ammo/grenade_g.tga" 255,8,4,3
-  palette "models/ammo/grenade_g.jpeg" 255,10,5,6
-  palette "models/ammo/grenade.tga" 255,46,32,25
-  palette "models/ammo/grenade.jpeg" 255,46,32,27
-  palette "models/mapobjects/treebark.tga" 255,46,17,6
-  palette "models/mapobjects/treebark.jpg" 255,45,18,7
-  palette "models/mapobjects/pitted_rust_ps.jpg" 255,63,48,39
-  palette "models/mapobjects/new model list.jpg" 255,239,234,233
-  palette "models/mapobjects/naterock2.tga" 255,142,118,100
-  palette "models/mapobjects/naterock2.jpg" 255,138,119,104
-  palette "models/mapobjects/naterock1.tga" 255,124,124,124
-  palette "models/mapobjects/naterock1.jpg" 255,124,124,124
-  palette "models/mapobjects/Nateshroom1.tga" 255,214,145,135
-  palette "models/mapobjects/Nateshroom1.jpg" 255,212,144,136
-  palette "menu/medals/medal_defend.png" 81,0,77,229
-  palette "menu/medals/medal_capture.png" 94,160,73,93
-  palette "menu/medals/medal_assist.png" 113,185,124,54
-  palette "gfx/ice/icechunks.jpg" 255,32,75,122
-  palette "gfx/misc/tracer2.tga" 255,35,20,16
-  palette "gfx/misc/teleporteffect2.jpg" 255,59,39,35
-  palette "gfx/misc/teleportEffect2.tga" 255,59,39,35
-  palette "gfx/misc/sun.tga" 255,78,78,78
-  palette "gfx/misc/snowflake.tga" 45,249,255,255
-  palette "gfx/misc/snowflake.png" 45,249,255,255
-  palette "gfx/misc/raindrop.tga" 12,70,78,92
-  palette "gfx/misc/raindrop.png" 12,70,78,92
-  palette "gfx/misc/raindrop.jpg" 255,80,83,90
-  palette "gfx/misc/raildisc_mono2.tga" 255,71,71,71
-  palette "gfx/misc/railcorethin_mono.tga" 255,55,55,55
-  palette "gfx/misc/plaguepuff.tga" 83,0,134,63
-  palette "gfx/misc/plaguepuff.png" 83,0,134,63
-  palette "gfx/misc/lightning3newnpm.tga" 255,11,17,26
-  palette "gfx/misc/lightning3newnpm.jpg" 255,11,17,26
-  palette "gfx/misc/lightning3new.tga" 255,11,17,26
-  palette "gfx/misc/lightning3new.jpg" 255,11,17,26
-  palette "gfx/misc/lightning3.tga" 255,8,20,21
-  palette "gfx/misc/grappleflare.jpg" 255,32,24,32
-  palette "gfx/misc/flare.tga" 255,45,45,45
-  palette "gfx/misc/console02.tga" 255,3,1,1
-  palette "gfx/misc/chainlightningnew.jpg" 255,26,17,11
-  palette "gfx/misc/chainlightning.jpg" 255,29,8,14
-  palette "gfx/misc/bbox.jpg" 255,47,47,47
-  palette "gfx/effects/invismap3.tga" 255,35,35,35
-  palette "gfx/effects/invismap3.jpg" 255,35,35,35
-  palette "gfx/effects/invismap2.tga" 255,52,52,52
-  palette "gfx/effects/invismap2.jpg" 255,54,54,54
-  palette "gfx/damage/freeze_stain.tga" 70,209,209,217
-  palette "gfx/damage/freeze_stain.png" 70,209,209,217
-  palette "gfx/2d/speccrosshair.tga" 32,255,255,255
-  palette "gfx/2d/speccrosshair.png" 32,255,255,255
-  palette "gfx/2d/numbers_64.tga" 100,190,190,190
-  palette "gfx/2d/numbers_64.png" 177,186,186,186
-  palette "gfx/2d/numbers_32.tga" 100,191,191,191
-  palette "gfx/2d/numbers_32.png" 180,188,188,188
-  palette "gfx/2d/numbers_128.tga" 100,191,191,191
-  palette "gfx/2d/numbers_128.png" 191,199,199,199
-  palette "gfx/2d/bigchars_64.tga" 68,255,255,255
-  palette "gfx/2d/bigchars_64.png" 255,255,255,255
-  palette "gfx/2d/bigchars_32.tga" 68,255,255,255
-  palette "gfx/2d/bigchars_32.png" 254,255,255,255
-  palette "gfx/2d/bigchars_16.tga" 68,255,255,255
-  palette "gfx/2d/bigchars_16.png" 255,255,255,255
-  palette "menu/art/unknownmap.tga" 255,73,24,15
-  palette "menu/art/unknownmap.png" 255,73,24,15
-  palette "menu/art/unknownmap.jpeg" 255,73,25,16
-  palette "menu/art/pblogo.jpg" 255,49,35,70
-  palette "menu/art/fx_base.jpeg" 255,86,87,91
-  palette "textures/portal/blue/portalfog.jpg" 255,56,120,184
-  palette "textures/portal/blue/portal_sfx_ring_electric.jpg" 255,13,8,14
-  palette "textures/portal/blue/portal_sfx_ring_blue1.tga" 135,239,233,252
-  palette "textures/portal/blue/portal_sfx_ring_blue1.png" 135,239,233,252
-  palette "textures/portal/blue/portal_sfx_ring.jpg" 255,1,59,135
-  palette "textures/portal/blue/portal_sfx3.tga" 121,200,196,244
-  palette "textures/portal/blue/portal_sfx3.png" 121,200,196,244
-  palette "textures/portal/blue/portal_sfx1.tga" 109,235,228,255
-  palette "textures/portal/blue/portal_sfx1.png" 109,235,228,255
-  palette "textures/portal/blue/portal_sfx.jpg" 255,1,64,147
-  palette "textures/portal/red/portalfog.jpg" 255,184,118,57
-  palette "textures/portal/red/portal_sfx_ring_electric.jpg" 255,13,8,14
-  palette "textures/portal/red/portal_sfx_ring_blue1.tga" 135,255,233,124
-  palette "textures/portal/red/portal_sfx_ring_blue1.png" 135,255,233,124
-  palette "textures/portal/red/portal_sfx_ring.jpg" 255,135,60,1
-  palette "textures/portal/red/portal_sfx3.tga" 121,255,196,116
-  palette "textures/portal/red/portal_sfx3.png" 121,255,196,116
-  palette "textures/portal/red/portal_sfx1.tga" 109,255,228,231
-  palette "textures/portal/red/portal_sfx1.png" 109,255,228,231
-  palette "textures/portal/red/portal_sfx.jpg" 255,148,64,1
-  palette "textures/chili_skies/env/sky_up.tga" 255,131,148,172
-  palette "textures/chili_skies/env/sky_up.jpg" 255,133,152,167
-  palette "textures/chili_skies/env/sky_rt.tga" 255,131,148,172
-  palette "textures/chili_skies/env/sky_rt.jpg" 255,133,152,167
-  palette "textures/chili_skies/env/sky_lf.tga" 255,131,148,172
-  palette "textures/chili_skies/env/sky_lf.jpg" 255,133,152,167
-  palette "textures/chili_skies/env/sky_ft.tga" 255,131,148,172
-  palette "textures/chili_skies/env/sky_ft.jpg" 255,133,152,167
-  palette "textures/chili_skies/env/sky_dn.tga" 255,131,148,172
-  palette "textures/chili_skies/env/sky_dn.jpg" 255,133,152,167
-  palette "textures/chili_skies/env/sky_bk.tga" 255,131,148,172
-  palette "textures/chili_skies/env/sky_bk.jpg" 255,133,152,167
-  palette "models/weapons/nailgun/nail2.tga" 33,75,69,61
-  palette "models/weapons/nailgun/nail2.png" 33,75,69,61
-  palette "models/weapons/nailgun/nail.tga" 59,82,73,64
-  palette "models/weapons/nailgun/nail.png" 59,82,73,64
-  palette "models/weapons2/shotgun/shotgun_laser.tga" 255,61,1,2
-  palette "models/weapons2/shotgun/shotgun.tga" 255,59,40,35
-  palette "models/weapons2/shotgun/f_shotgun.tga" 255,49,29,4
+  palette "textures/14gate_xt/env/filter_up.tga" 255,255,255,255
+  palette "textures/14gate_xt/env/filter_rt.tga" 255,125,125,125
+  palette "textures/14gate_xt/env/filter_lf.tga" 255,125,125,125
+  palette "textures/14gate_xt/env/filter_ft.tga" 255,125,125,125
+  palette "textures/14gate_xt/env/filter_dn.tga" 255,0,0,0
+  palette "textures/14gate_xt/env/filter_bk.tga" 255,125,125,125
+  palette "textures/13gate_xt/env/filter_up.tga" 255,255,255,255
+  palette "textures/13gate_xt/env/filter_rt.tga" 255,125,125,125
+  palette "textures/13gate_xt/env/filter_lf.tga" 255,125,125,125
+  palette "textures/13gate_xt/env/filter_ft.tga" 255,125,125,125
+  palette "textures/13gate_xt/env/filter_dn.tga" 255,0,0,0
+  palette "textures/13gate_xt/env/filter_bk.tga" 255,125,125,125
   palette "models/weapons2/shells/s_shell.tga" 255,60,18,12
-  palette "models/weapons2/shells/m_shell.jpg" 255,78,51,19
+  palette "models/weapons2/shells/s_shell.jpg" 255,60,18,12
   palette "models/weapons2/shells/M_shell.tga" 255,78,50,16
+  palette "models/weapons2/shells/M_shell.jpg" 255,78,50,17
   palette "models/weapons2/rocketl/rocketl2.tga" 255,28,26,25
+  palette "models/weapons2/rocketl/rocketl2.jpg" 255,28,26,25
   palette "models/weapons2/rocketl/rocketl.tga" 255,71,45,39
+  palette "models/weapons2/rocketl/rocketl.jpg" 255,71,45,39
   palette "models/weapons2/rocketl/f_rocketl.tga" 255,71,31,19
-  palette "models/weapons2/plasma/plasma_glo.tga" 255,16,86,107
-  palette "models/weapons2/plasma/plasma_glo.jpeg" 255,20,86,108
-  palette "models/weapons2/plasma/plasma.tga" 255,67,66,59
-  palette "models/weapons2/plasma/plasma.jpeg" 255,67,66,59
-  palette "models/weapons2/plasma/f_plasma.tga" 255,20,48,51
+  palette "models/weapons2/rocketl/f_rocketl.jpg" 255,71,31,19
+  palette "models/weapons2/shotgun/shotgun_laser.tga" 255,61,1,2
+  palette "models/weapons2/shotgun/shotgun_laser.jpg" 255,61,1,2
+  palette "models/weapons2/shotgun/shotgun.tga" 255,59,40,35
+  palette "models/weapons2/shotgun/shotgun.jpg" 255,59,40,35
+  palette "models/weapons2/shotgun/f_shotgun.tga" 255,49,29,4
+  palette "models/weapons2/shotgun/f_shotgun.jpg" 255,49,29,4
   palette "models/weapons2/railgun/railgun4.tga" 255,145,145,145
-  palette "models/weapons2/railgun/railgun4.jpeg" 255,145,145,145
+  palette "models/weapons2/railgun/railgun4.jpg" 255,145,145,145
   palette "models/weapons2/railgun/railgun3.tga" 255,40,36,33
-  palette "models/weapons2/railgun/railgun3.jpeg" 255,41,36,33
+  palette "models/weapons2/railgun/railgun3.jpg" 255,40,36,33
   palette "models/weapons2/railgun/railgun3.glow.tga" 255,16,16,16
-  palette "models/weapons2/railgun/railgun3.glow.jpeg" 255,17,17,17
+  palette "models/weapons2/railgun/railgun3.glow.jpg" 255,16,16,16
   palette "models/weapons2/railgun/railgun2.glow.tga" 255,41,41,41
-  palette "models/weapons2/railgun/railgun2.glow.jpeg" 255,42,42,42
+  palette "models/weapons2/railgun/railgun2.glow.jpg" 255,41,41,41
   palette "models/weapons2/railgun/railgun1.tga" 255,61,47,39
-  palette "models/weapons2/railgun/railgun1.jpeg" 255,61,47,39
+  palette "models/weapons2/railgun/railgun1.jpg" 255,61,47,39
   palette "models/weapons2/railgun/f_railgun2.tga" 255,29,29,29
-  palette "models/weapons2/railgun/f_railgun2.jpeg" 255,29,29,29
-  palette "models/weapons2/machinegun2/machinegun.tga" 0,0,0,0
-  palette "models/weapons2/machinegun2/machinegun.png" 0,0,0,0
-  palette "models/weapons2/lightning2/f_lightning.jpg" 255,6,8,10
+  palette "models/weapons2/railgun/f_railgun2.jpg" 255,29,29,29
+  palette "models/weapons2/plasma/plasma_glo.tga" 255,16,86,107
+  palette "models/weapons2/plasma/plasma_glo.jpg" 255,16,86,107
+  palette "models/weapons2/plasma/plasma.tga" 255,67,66,59
+  palette "models/weapons2/plasma/plasma.jpg" 255,67,66,59
+  palette "models/weapons2/plasma/f_plasma.tga" 255,20,48,51
+  palette "models/weapons2/plasma/f_plasma.jpg" 255,20,48,51
   palette "models/weapons2/machinegun/machinegun.tga" 255,82,57,35
+  palette "models/weapons2/machinegun/machinegun.jpg" 255,82,57,35
   palette "models/weapons2/machinegun/f_machinegun.tga" 255,26,17,5
-  palette "models/weapons2/lightning/trail2.tga" 255,46,59,59
-  palette "models/weapons2/lightning/trail2.jpeg" 255,49,60,60
-  palette "models/weapons2/lightning/lightning2.tga" 255,45,53,49
-  palette "models/weapons2/lightning/lightning2.jpeg" 255,45,54,50
-  palette "models/weapons2/lightning/glass.tga" 255,108,28,28
-  palette "models/weapons2/lightning/glass.jpeg" 255,107,27,26
-  palette "models/weapons2/lightning/f_lightning.tga" 255,4,9,9
-  palette "models/weapons2/lightning/f_lightning.jpeg" 255,5,10,9
-  palette "models/weapons2/lightning/button.tga" 255,243,50,53
-  palette "models/weapons2/lightning/button.jpeg" 255,244,49,58
-  palette "models/weapons2/grenadel2/grenadel.jpg" 255,62,55,48
+  palette "models/weapons2/machinegun/f_machinegun.jpg" 255,26,17,5
   palette "models/weapons2/grenadel/grenadel.tga" 255,59,51,45
   palette "models/weapons2/grenadel/grenadel.jpg" 255,59,51,45
   palette "models/weapons2/grenadel/f_grenadel.tga" 255,26,4,7
   palette "models/weapons2/grenadel/f_grenadel.jpg" 255,26,4,7
+  palette "models/weapons2/lightning/trail2.tga" 255,46,59,59
+  palette "models/weapons2/lightning/trail2.jpg" 255,46,59,58
+  palette "models/weapons2/lightning/lightning2.tga" 255,45,53,49
+  palette "models/weapons2/lightning/lightning2.jpg" 255,45,53,49
+  palette "models/weapons2/lightning/glass.tga" 255,108,28,28
+  palette "models/weapons2/lightning/glass.jpg" 255,108,28,28
+  palette "models/weapons2/lightning/f_lightning.tga" 255,4,9,9
+  palette "models/weapons2/lightning/f_lightning.jpg" 255,4,9,9
+  palette "models/weapons2/lightning/button.tga" 255,243,50,53
+  palette "models/weapons2/lightning/button.jpg" 255,243,50,53
+  palette "models/weapons2/gauntlet/gauntlet4.tga" 255,51,42,40
+  palette "models/weapons2/gauntlet/gauntlet4.jpg" 255,51,42,40
+  palette "models/weapons2/gauntlet/gauntlet3.tga" 255,33,27,26
+  palette "models/weapons2/gauntlet/gauntlet3.jpg" 255,33,27,26
+  palette "models/weapons2/gauntlet/gauntlet2.tga" 196,26,19,16
+  palette "models/weapons2/gauntlet/gauntlet1.tga" 255,50,34,26
+  palette "models/weapons2/gauntlet/gauntlet1.jpg" 255,50,34,26
   palette "models/weapons2/grapple/grapple10.tga" 255,131,118,92
   palette "models/weapons2/grapple/grapple10.jpg" 255,131,118,92
   palette "models/weapons2/grapple/grapple09.tga" 255,128,116,95
@@ -1796,300 +2652,550 @@ palettes/default
   palette "models/weapons2/grapple/grapple01.jpg" 255,125,113,96
   palette "models/weapons2/grapple/f_grapple.tga" 255,8,7,5
   palette "models/weapons2/grapple/f_grapple.jpg" 255,8,7,5
-  palette "models/weapons2/flamethrower/flamethr.tga" 255,64,48,40
-  palette "models/weapons2/flamethrower/flamethr.jpg" 255,67,47,37
-  palette "models/weapons2/flamethrower/f_flamethrower.tga" 255,28,11,0
-  palette "models/weapons2/flamethrower/f_flamethrower.jpg" 255,75,12,9
-  palette "models/weapons2/gauntlet/gauntlet4.tga" 255,51,42,40
-  palette "models/weapons2/gauntlet/gauntlet3.tga" 255,33,27,26
-  palette "models/weapons2/gauntlet/gauntlet1.tga" 255,50,34,26
   palette "models/weapons2/bfg/f_bfg2.tga" 255,12,49,3
   palette "models/weapons2/bfg/f_bfg2.jpg" 255,12,49,3
-  palette "models/weapons2/bfg/f_bfg2.jpeg" 255,13,49,5
   palette "models/weapons2/bfg/f_bfg.tga" 255,11,60,19
   palette "models/weapons2/bfg/f_bfg.jpg" 255,11,60,19
-  palette "models/weapons2/bfg/f_bfg.jpeg" 255,13,60,20
   palette "models/weapons2/bfg/bfg_k.tga" 227,15,15,13
-  palette "models/weapons2/bfg/bfg_k.png" 227,15,15,13
   palette "models/weapons2/bfg/bfg.tga" 92,87,75,62
-  palette "models/weapons2/bfg/bfg.png" 92,87,75,62
   palette "models/powerups/holdable/teleport_fluid.tga" 255,6,151,150
-  palette "models/powerups/holdable/teleport_fluid.jpeg" 255,10,151,149
+  palette "models/powerups/holdable/teleport_fluid.jpg" 255,6,151,150
   palette "models/powerups/holdable/medkit_fluid.tga" 255,151,5,6
-  palette "models/powerups/holdable/medkit_fluid.jpeg" 255,151,7,9
+  palette "models/powerups/holdable/medkit_fluid.jpg" 255,151,5,6
   palette "models/powerups/armor/shard_sphere.tga" 255,85,69,81
-  palette "models/powerups/armor/shard_sphere.jpeg" 255,82,70,84
+  palette "models/powerups/armor/shard_sphere.jpg" 255,85,69,81
+  palette "models/powerups/armor/shard2.tga" 156,84,81,90
+  palette "models/powerups/armor/newyellow.tga" 227,117,66,4
+  palette "models/powerups/armor/newred.tga" 229,89,6,8
   palette "models/powerups/armor/energy_yel3.tga" 255,18,16,4
-  palette "models/powerups/armor/energy_yel3.jpeg" 255,19,17,9
+  palette "models/powerups/armor/energy_yel3.jpg" 255,18,16,4
   palette "models/powerups/armor/energy_red1.tga" 255,18,3,3
-  palette "models/powerups/armor/energy_red1.jpeg" 255,20,5,6
-  palette "models/players/xaero/icon_pm.tga" 162,189,147,104
-  palette "models/players/xaero/icon_pm.png" 162,189,147,104
-  palette "models/players/xaero/color_h.tga" 46,178,178,178
-  palette "models/players/xaero/color_h.png" 46,178,178,178
-  palette "models/players/xaero/color.tga" 114,122,122,122
-  palette "models/players/xaero/color.png" 114,122,122,122
-  palette "models/powerups/ammo/shotammo2.tga" 255,73,37,11
-  palette "models/powerups/ammo/shotammo2.jpeg" 255,76,41,23
-  palette "models/powerups/ammo/rockammo2.tga" 255,64,3,3
-  palette "models/powerups/ammo/rockammo2.jpeg" 255,67,8,9
-  palette "models/powerups/ammo/railammo2.tga" 255,6,52,6
-  palette "models/powerups/ammo/railammo2.jpeg" 255,17,55,18
-  palette "models/powerups/ammo/plasammo2.tga" 255,51,4,64
-  palette "models/powerups/ammo/plasammo2.jpeg" 255,55,10,67
-  palette "models/powerups/ammo/lighammo2.tga" 255,94,93,66
-  palette "models/powerups/ammo/lighammo2.jpeg" 255,94,95,71
-  palette "models/powerups/ammo/grenammo2.tga" 255,3,37,6
-  palette "models/powerups/ammo/grenammo2.jpeg" 255,11,40,12
-  palette "models/powerups/ammo/flamammo2.jpg" 255,85,45,7
-  palette "models/powerups/ammo/flamammo.tga" 255,151,67,20
-  palette "models/powerups/ammo/flamammo.jpg" 255,151,66,25
-  palette "models/powerups/ammo/bfgammo2.tga" 255,4,34,80
-  palette "models/powerups/ammo/bfgammo2.jpeg" 255,11,36,83
-  palette "models/players/tankjr/icon_pm.tga" 167,180,154,124
-  palette "models/players/tankjr/icon_pm.png" 167,180,154,124
-  palette "models/players/tankjr/color.tga" 103,121,121,121
-  palette "models/players/tankjr/color.png" 103,121,121,121
-  palette "models/players/uriel/icon_pm.tga" 187,180,178,163
-  palette "models/players/uriel/icon_pm.png" 187,180,178,163
-  palette "models/players/uriel/color_x.tga" 111,81,58,44
-  palette "models/players/uriel/color_x.png" 111,81,58,44
-  palette "models/players/uriel/color_h.tga" 0,0,0,0
-  palette "models/players/uriel/color_h.png" 0,0,0,0
-  palette "models/players/uriel/color.tga" 123,118,118,118
-  palette "models/players/uriel/color.png" 123,118,118,118
-  palette "models/players/sorlag/icon_pm.tga" 253,191,187,167
-  palette "models/players/sorlag/icon_pm.png" 253,191,187,167
-  palette "models/players/sorlag/color_t.tga" 216,132,132,132
-  palette "models/players/sorlag/color_t.png" 216,132,132,132
-  palette "models/players/sorlag/color.tga" 100,109,109,109
-  palette "models/players/sorlag/color.png" 100,109,109,109
-  palette "models/players/visor/icon_pm.tga" 175,122,109,91
-  palette "models/players/visor/icon_pm.png" 175,122,109,91
-  palette "models/players/visor/color.tga" 97,110,110,110
-  palette "models/players/visor/color.png" 97,110,110,110
-  palette "models/players/slash/icon_pm.tga" 177,170,151,119
-  palette "models/players/slash/icon_pm.png" 177,170,151,119
-  palette "models/players/slash/color_skates.tga" 255,44,44,44
-  palette "models/players/slash/color_skates.jpg" 255,44,44,44
-  palette "models/players/slash/color_h.tga" 81,79,79,79
-  palette "models/players/slash/color_h.png" 81,79,79,79
-  palette "models/players/slash/color.tga" 125,133,133,133
-  palette "models/players/slash/color.png" 125,133,133,133
-  palette "models/players/razor/icon_pm.tga" 169,137,122,105
-  palette "models/players/razor/icon_pm.png" 169,137,122,105
-  palette "models/players/razor/color_h.tga" 131,145,145,145
-  palette "models/players/razor/color_h.png" 131,145,145,145
-  palette "models/players/razor/color.tga" 143,117,117,117
-  palette "models/players/razor/color.png" 143,117,117,117
-  palette "models/players/sarge/roderic.png" 252,69,41,33
-  palette "models/players/sarge/icon_roderic.png" 178,120,68,53
-  palette "models/players/sarge/icon_pm.tga" 208,158,125,99
-  palette "models/players/sarge/icon_pm.png" 208,158,125,99
-  palette "models/players/sarge/icon_krusade.png" 193,126,87,61
-  palette "models/players/sarge/icon_default.jpeg" 255,119,92,69
-  palette "models/players/sarge/color.tga" 109,95,95,95
-  palette "models/players/sarge/color.png" 109,95,95,95
-  palette "models/players/ranger/icon_pm.tga" 201,113,100,81
-  palette "models/players/ranger/icon_pm.png" 201,113,100,81
-  palette "models/players/ranger/color_h.tga" 0,0,0,0
-  palette "models/players/ranger/color_h.png" 0,0,0,0
-  palette "models/players/ranger/color.tga" 96,77,77,77
-  palette "models/players/ranger/color.png" 96,77,77,77
-  palette "models/players/orbb/icon_pm.tga" 211,134,132,121
-  palette "models/players/orbb/icon_pm.png" 211,134,132,121
-  palette "models/players/orbb/color_h.tga" 197,182,182,182
-  palette "models/players/orbb/color_h.png" 197,182,182,182
-  palette "models/players/orbb/color.tga" 95,136,136,136
-  palette "models/players/orbb/color.png" 95,136,136,136
-  palette "models/players/mynx/icon_pm.tga" 194,122,90,60
-  palette "models/players/mynx/icon_pm.png" 194,122,90,60
-  palette "models/players/mynx/color_x.tga" 0,0,0,0
-  palette "models/players/mynx/color_x.png" 0,0,0,0
-  palette "models/players/mynx/color_h.tga" 0,0,0,0
-  palette "models/players/mynx/color_h.png" 0,0,0,0
-  palette "models/players/mynx/color.tga" 197,125,125,125
-  palette "models/players/mynx/color.png" 197,125,125,125
-  palette "models/players/major/icon_pm.tga" 179,146,104,77
-  palette "models/players/major/icon_pm.png" 179,146,104,77
-  palette "models/players/major/color_h.tga" 1,48,48,48
-  palette "models/players/major/color_h.png" 1,48,48,48
-  palette "models/players/major/color.tga" 121,92,92,92
-  palette "models/players/major/color.png" 121,92,92,92
-  palette "models/players/klesk/icon_pm.tga" 188,127,105,81
-  palette "models/players/klesk/icon_pm.png" 188,127,105,81
-  palette "models/players/klesk/color_h.tga" 41,111,111,111
-  palette "models/players/klesk/color_h.png" 41,111,111,111
-  palette "models/players/klesk/color.tga" 51,99,99,99
-  palette "models/players/klesk/color.png" 51,99,99,99
-  palette "models/players/lucy/icon_pm.tga" 184,110,99,74
-  palette "models/players/lucy/icon_pm.png" 184,110,99,74
-  palette "models/players/lucy/color_h.tga" 23,56,56,56
-  palette "models/players/lucy/color_h.png" 23,56,56,56
-  palette "models/players/lucy/color.tga" 117,91,91,91
-  palette "models/players/lucy/color.png" 117,91,91,91
-  palette "models/players/keel/icon_pm.tga" 204,115,108,94
-  palette "models/players/keel/icon_pm.png" 204,115,108,94
-  palette "models/players/keel/color_h.tga" 7,84,84,84
-  palette "models/players/keel/color_h.png" 7,84,84,84
-  palette "models/players/keel/color.tga" 152,103,103,103
-  palette "models/players/keel/color.png" 152,103,103,103
-  palette "models/players/hunter/icon_pm.tga" 196,109,81,58
-  palette "models/players/hunter/icon_pm.png" 196,109,81,58
-  palette "models/players/hunter/color_x.tga" 71,69,43,35
-  palette "models/players/hunter/color_x.png" 71,69,43,35
-  palette "models/players/hunter/color_h.tga" 121,76,76,76
-  palette "models/players/hunter/color_h.png" 121,76,76,76
-  palette "models/players/hunter/color.tga" 127,116,116,116
-  palette "models/players/hunter/color.png" 127,116,116,116
-  palette "models/players/grunt/icon_pm.tga" 158,155,123,98
-  palette "models/players/grunt/icon_pm.png" 158,155,123,98
-  palette "models/players/grunt/color_h.tga" 28,129,129,129
-  palette "models/players/grunt/color_h.png" 28,129,129,129
-  palette "models/players/grunt/color.tga" 98,119,119,119
-  palette "models/players/grunt/color.png" 98,119,119,119
-  palette "models/players/doom/icon_pm.tga" 190,145,144,131
-  palette "models/players/doom/icon_pm.png" 190,145,144,131
-  palette "models/players/doom/color.tga" 127,109,109,109
-  palette "models/players/doom/color.png" 127,109,109,109
-  palette "models/players/bones/icon_pm.tga" 170,153,147,130
-  palette "models/players/bones/icon_pm.png" 170,153,147,130
-  palette "models/players/bones/color.tga" 185,160,160,160
-  palette "models/players/bones/color.png" 185,160,160,160
-  palette "models/players/bitterman/icon_pm.tga" 181,116,101,81
-  palette "models/players/bitterman/icon_pm.png" 181,116,101,81
-  palette "models/players/bitterman/color_h.tga" 170,155,155,155
-  palette "models/players/bitterman/color_h.png" 170,155,155,155
-  palette "models/players/bitterman/color.tga" 102,112,112,112
-  palette "models/players/bitterman/color.png" 102,112,112,112
-  palette "models/players/crash/red_t.jpg" 255,88,22,17
-  palette "models/players/crash/red.jpg" 255,70,24,20
-  palette "models/players/crash/icon_red.png" 193,138,34,28
-  palette "models/players/crash/icon_pm.tga" 189,150,149,136
-  palette "models/players/crash/icon_pm.png" 189,150,149,136
-  palette "models/players/crash/icon_default.png" 190,101,95,81
-  palette "models/players/crash/icon_blue.png" 180,59,30,149
-  palette "models/players/crash/crash_t.png" 217,52,47,38
-  palette "models/players/crash/crash.png" 238,52,44,35
-  palette "models/players/crash/color_t.tga" 130,179,179,179
-  palette "models/players/crash/color_t.png" 130,179,179,179
-  palette "models/players/crash/color.tga" 117,146,146,146
-  palette "models/players/crash/color.png" 117,146,146,146
-  palette "models/players/crash/blue_t.jpg" 255,55,19,102
-  palette "models/players/crash/blue.jpg" 255,39,23,83
-  palette "models/players/biker/icon_pm.tga" 213,171,159,144
-  palette "models/players/biker/icon_pm.png" 213,171,159,144
-  palette "models/players/biker/color_h.tga" 142,118,118,118
-  palette "models/players/biker/color_h.png" 142,118,118,118
-  palette "models/players/biker/color.tga" 78,92,92,92
-  palette "models/players/biker/color.png" 78,92,92,92
-  palette "models/players/anarki/icon_pm.tga" 180,92,60,38
-  palette "models/players/anarki/icon_pm.png" 180,92,60,38
-  palette "models/players/anarki/color_x.tga" 208,102,102,102
-  palette "models/players/anarki/color_x.png" 208,102,102,102
-  palette "models/players/anarki/color_h.tga" 0,0,0,0
-  palette "models/players/anarki/color_h.png" 0,0,0,0
-  palette "models/players/anarki/color.tga" 134,86,86,86
-  palette "models/players/anarki/color.png" 134,86,86,86
-  palette "models/weaphits/rlboom/rlboom_8.tga" 255,24,4,2
+  palette "models/powerups/armor/energy_red1.jpg" 255,18,3,3
+  palette "models/weaphits/rlboom/rlboom_8.tga" 255,25,4,2
+  palette "models/weaphits/rlboom/rlboom_8.jpg" 255,24,4,2
   palette "models/weaphits/rlboom/rlboom_7.tga" 255,38,11,5
-  palette "models/weaphits/rlboom/rlboom_6.tga" 255,48,18,6
+  palette "models/weaphits/rlboom/rlboom_7.jpg" 255,38,11,5
+  palette "models/weaphits/rlboom/rlboom_6.tga" 255,49,18,7
+  palette "models/weaphits/rlboom/rlboom_6.jpg" 255,48,18,7
   palette "models/weaphits/rlboom/rlboom_5.tga" 255,83,46,24
+  palette "models/weaphits/rlboom/rlboom_5.jpg" 255,83,46,24
   palette "models/weaphits/rlboom/rlboom_4.tga" 255,104,60,45
+  palette "models/weaphits/rlboom/rlboom_4.jpg" 255,104,60,45
   palette "models/weaphits/rlboom/rlboom_3.tga" 255,114,67,56
+  palette "models/weaphits/rlboom/rlboom_3.jpg" 255,114,67,56
   palette "models/weaphits/rlboom/rlboom_2.tga" 255,116,82,76
-  palette "models/weaphits/rlboom/rlboom_1.tga" 255,105,72,70
+  palette "models/weaphits/rlboom/rlboom_2.jpg" 255,116,82,76
+  palette "models/weaphits/rlboom/rlboom_1.tga" 255,105,72,71
+  palette "models/weaphits/rlboom/rlboom_1.jpg" 255,105,72,70
   palette "models/weaphits/glboom/glboom_3.tga" 255,94,49,24
+  palette "models/weaphits/glboom/glboom_3.jpg" 255,94,49,24
   palette "models/weaphits/glboom/glboom_2.tga" 255,102,68,61
+  palette "models/weaphits/glboom/glboom_2.jpg" 255,101,67,61
   palette "models/weaphits/glboom/glboom_1.tga" 255,63,41,41
+  palette "models/weaphits/glboom/glboom_1.jpg" 255,63,41,41
+  palette "models/powerups/ammo/shotammo2.tga" 255,73,37,11
+  palette "models/powerups/ammo/shotammo2.jpg" 255,73,37,10
+  palette "models/powerups/ammo/shotammo.tga" 166,87,51,13
+  palette "models/powerups/ammo/rockammo2.tga" 255,64,3,3
+  palette "models/powerups/ammo/rockammo2.jpg" 255,64,2,3
+  palette "models/powerups/ammo/rockammo.tga" 166,87,14,13
+  palette "models/powerups/ammo/railammo2.tga" 255,6,52,6
+  palette "models/powerups/ammo/railammo2.jpg" 255,6,51,6
+  palette "models/powerups/ammo/railammo.tga" 196,12,62,28
+  palette "models/powerups/ammo/plasammo2.tga" 255,51,4,64
+  palette "models/powerups/ammo/plasammo2.jpg" 255,50,3,64
+  palette "models/powerups/ammo/plasammo.tga" 196,91,12,56
+  palette "models/powerups/ammo/machammo2.tga" 93,236,236,0
+  palette "models/powerups/ammo/machammo.tga" 166,87,76,13
+  palette "models/powerups/ammo/lighammo2.tga" 255,94,93,66
+  palette "models/powerups/ammo/lighammo2.jpg" 255,94,93,66
+  palette "models/powerups/ammo/lighammo.tga" 196,81,70,41
+  palette "models/powerups/ammo/grenammo2.tga" 255,3,37,6
+  palette "models/powerups/ammo/grenammo2.jpg" 255,2,36,6
+  palette "models/powerups/ammo/grenammo.tga" 166,40,44,23
+  palette "models/powerups/ammo/bfgammo2.tga" 255,4,34,80
+  palette "models/powerups/ammo/bfgammo2.jpg" 255,3,34,81
+  palette "models/powerups/ammo/bfgammo.tga" 196,50,41,36
   palette "models/weaphits/bfgboom/bfgboom_3.tga" 255,25,46,23
   palette "models/weaphits/bfgboom/bfgboom_3.jpg" 255,25,46,23
   palette "models/weaphits/bfgboom/bfgboom_2.tga" 255,25,83,43
   palette "models/weaphits/bfgboom/bfgboom_2.jpg" 255,24,83,43
   palette "models/weaphits/bfgboom/bfgboom_1.tga" 255,27,49,34
   palette "models/weaphits/bfgboom/bfgboom_1.jpg" 255,27,49,34
-  palette "models/ammo/rocket/rockfls2.tga" 255,94,40,25
-  palette "models/ammo/rocket/rockfls2.jpeg" 255,94,40,26
-  palette "models/ammo/rocket/rockfls1.tga" 255,94,40,25
-  palette "models/ammo/rocket/rockfls1.jpeg" 255,94,40,26
-  palette "models/ammo/rocket/rockflar.tga" 255,114,44,25
-  palette "models/ammo/rocket/rockflar.jpeg" 255,112,45,25
-  palette "models/ammo/rocket/rocketfn.tga" 255,111,16,6
-  palette "models/ammo/rocket/rocketfn.jpeg" 255,111,16,7
-  palette "models/ammo/rocket/rocket.tga" 255,79,64,22
-  palette "models/ammo/rocket/rocket.jpeg" 255,79,65,30
-  palette "models/mapobjects/tree2/trunk2.tga" 255,32,24,17
-  palette "models/mapobjects/tree2/trunk2.jpg" 255,29,25,16
-  palette "models/mapobjects/tree2/branch2.tga" 255,38,40,48
-  palette "models/mapobjects/tree2/branch2.jpg" 255,42,41,48
-  palette "models/mapobjects/skull/skull.jpg" 255,94,66,49
-  palette "models/mapobjects/palm3/palmtop.tga" 167,24,44,20
-  palette "models/mapobjects/palm3/palmtop.png" 167,24,44,20
-  palette "models/mapobjects/palm3/palmbark.tga" 255,61,56,59
-  palette "models/mapobjects/palm3/palmbark.jpg" 255,58,58,58
-  palette "models/mapobjects/palm1/palm1.tga" 87,30,38,18
-  palette "models/mapobjects/palm1/palm1.png" 87,30,38,18
-  palette "models/mapobjects/palm2/trunk.tga" 165,49,32,18
-  palette "models/mapobjects/palm2/trunk.png" 165,49,32,18
-  palette "models/mapobjects/nateleaf1/tree2.tga" 97,72,88,31
-  palette "models/mapobjects/nateleaf1/tree2.png" 97,72,88,31
-  palette "models/mapobjects/multiplant/pleaf3.tga" 128,51,52,28
-  palette "models/mapobjects/multiplant/pleaf3.png" 128,51,52,28
-  palette "models/mapobjects/multiplant/pleaf2.tga" 97,46,43,7
-  palette "models/mapobjects/multiplant/pleaf2.png" 97,46,43,7
-  palette "models/mapobjects/multiplant/pleaf1.tga" 96,48,43,6
-  palette "models/mapobjects/multiplant/pleaf1.png" 96,48,43,6
-  palette "models/mapobjects/multiplant/palmfrond.tga" 114,40,45,26
-  palette "models/mapobjects/multiplant/palmfrond.png" 114,40,45,26
-  palette "models/mapobjects/multiplant/leaf3.tga" 54,20,46,22
-  palette "models/mapobjects/multiplant/leaf3.png" 54,20,46,22
-  palette "models/mapobjects/multiplant/leaf2.tga" 85,23,47,16
-  palette "models/mapobjects/multiplant/leaf2.png" 85,23,47,16
-  palette "models/mapobjects/multiplant/leaf1.tga" 75,20,48,16
-  palette "models/mapobjects/multiplant/leaf1.png" 75,20,48,16
-  palette "models/mapobjects/multiplant/invisible.tga" 0,0,0,0
-  palette "models/mapobjects/multiplant/invisible.png" 0,0,0,0
-  palette "models/mapobjects/multiplant/fern.tga" 92,4,45,21
-  palette "models/mapobjects/multiplant/fern.png" 92,4,45,21
-  palette "models/mapobjects/multiplant/batleaf2veins.tga" 54,105,0,0
-  palette "models/mapobjects/multiplant/batleaf2veins.png" 54,105,0,0
-  palette "models/mapobjects/multiplant/batleaf2.tga" 171,22,31,21
-  palette "models/mapobjects/multiplant/batleaf2.png" 171,22,31,21
-  palette "models/mapobjects/multiplant/batleaf.tga" 168,22,31,20
-  palette "models/mapobjects/multiplant/batleaf.png" 168,22,31,20
-  palette "models/mapobjects/multiplant/bannanaleaf.tga" 199,20,33,19
-  palette "models/mapobjects/multiplant/bannanaleaf.png" 199,20,33,19
+  palette "models/players/xaero/xaero_q.tga" 20,90,64,50
+  palette "models/players/xaero/xaero_h.tga" 254,149,101,65
+  palette "models/players/xaero/xaero_a.tga" 248,40,27,19
+  palette "models/players/xaero/xaero.tga" 20,124,48,3
+  palette "models/players/xaero/red_h.tga" 254,142,75,47
+  palette "models/players/xaero/red.tga" 255,84,26,18
+  palette "models/players/xaero/icon_red.tga" 208,180,82,51
+  palette "models/players/xaero/icon_default.tga" 184,175,121,79
+  palette "models/players/xaero/icon_blue.tga" 162,147,88,110
+  palette "models/players/xaero/blue_h.tga" 255,119,73,79
+  palette "models/players/xaero/blue.tga" 255,53,25,72
+  palette "models/players/visor/visor.tga" 255,57,33,18
+  palette "models/players/visor/red.tga" 255,87,27,22
+  palette "models/players/visor/icon_red.tga" 186,160,35,25
+  palette "models/players/visor/icon_gorre.tga" 241,89,42,16
+  palette "models/players/visor/icon_default.tga" 175,82,60,45
+  palette "models/players/visor/icon_blue.tga" 175,58,70,97
+  palette "models/players/visor/gorre.tga" 243,68,39,25
+  palette "models/players/visor/blue.tga" 255,38,45,62
+  palette "models/players/uriel/zael_h.tga" 255,71,55,22
+  palette "models/players/uriel/zael.tga" 50,96,77,40
+  palette "models/players/uriel/uriel_w.tga" 132,77,43,22
+  palette "models/players/uriel/uriel_h.tga" 243,76,59,37
+  palette "models/players/uriel/uriel.tga" 255,78,54,28
+  palette "models/players/uriel/red_w.tga" 132,65,43,31
+  palette "models/players/uriel/red_h.tga" 255,102,82,60
+  palette "models/players/uriel/red.tga" 255,80,28,20
+  palette "models/players/uriel/null.tga" 255,0,0,0
+  palette "models/players/uriel/icon_zael.tga" 215,90,99,52
+  palette "models/players/uriel/icon_red.tga" 192,155,19,14
+  palette "models/players/uriel/icon_default.tga" 190,163,94,50
+  palette "models/players/uriel/icon_blue.tga" 187,88,20,181
+  palette "models/players/uriel/blue_w.tga" 132,60,44,36
+  palette "models/players/uriel/blue.tga" 255,54,27,76
+  palette "models/players/sorlag/sorlag_t.tga" 255,74,45,37
+  palette "models/players/sorlag/sorlag.tga" 255,67,43,35
+  palette "models/players/sorlag/red_t.tga" 255,96,6,2
+  palette "models/players/sorlag/red.tga" 255,73,29,20
+  palette "models/players/sorlag/icon_red.tga" 131,150,90,68
+  palette "models/players/sorlag/icon_default.tga" 129,142,120,106
+  palette "models/players/sorlag/icon_blue.tga" 253,108,64,179
+  palette "models/players/sorlag/blue_t.tga" 255,38,5,112
+  palette "models/players/sorlag/blue.tga" 255,47,28,62
+  palette "models/players/tankjr/tankjr.tga" 18,94,65,53
+  palette "models/players/tankjr/red.tga" 255,81,27,16
+  palette "models/players/tankjr/icon_red.tga" 177,190,80,46
+  palette "models/players/tankjr/icon_default.tga" 196,180,128,86
+  palette "models/players/tankjr/icon_blue.tga" 167,87,115,147
+  palette "models/players/tankjr/blue.tga" 255,31,42,64
+  palette "models/players/slash/yurikoskate.tga" 83,168,134,119
+  palette "models/players/slash/yuriko_h.tga" 212,35,33,28
+  palette "models/players/slash/yuriko.tga" 186,100,75,58
+  palette "models/players/slash/slashskate.tga" 255,43,63,89
+  palette "models/players/slash/slash_h.tga" 255,50,37,33
+  palette "models/players/slash/slash.tga" 255,76,49,37
+  palette "models/players/slash/red_h.tga" 255,66,32,18
+  palette "models/players/slash/red.tga" 255,83,15,11
+  palette "models/players/slash/icon_yuriko.tga" 215,96,66,52
+  palette "models/players/slash/icon_red.tga" 191,149,54,31
+  palette "models/players/slash/icon_grrl.tga" 199,122,71,52
+  palette "models/players/slash/icon_default.tga" 160,119,97,86
+  palette "models/players/slash/icon_blue.tga" 170,76,88,132
+  palette "models/players/slash/grrl_h.tga" 250,64,35,26
+  palette "models/players/slash/grrl.tga" 255,65,37,27
+  palette "models/players/slash/blue_h.tga" 255,42,37,41
+  palette "models/players/slash/blue.tga" 255,21,34,74
+  palette "models/players/sarge/roderic.tga" 252,69,41,33
+  palette "models/players/sarge/red.tga" 255,77,24,18
+  palette "models/players/sarge/null.tga" 255,0,0,0
+  palette "models/players/sarge/krusade.tga" 251,64,41,27
+  palette "models/players/sarge/icon_roderic.tga" 178,120,68,53
+  palette "models/players/sarge/icon_red.tga" 204,180,84,66
+  palette "models/players/sarge/icon_krusade.tga" 193,126,87,61
+  palette "models/players/sarge/icon_default.tga" 175,175,133,98
+  palette "models/players/sarge/icon_blue.tga" 200,117,103,109
+  palette "models/players/sarge/cigar.tga" 255,63,36,17
+  palette "models/players/sarge/cigar.glow.tga" 255,43,21,10
+  palette "models/players/sarge/blue.tga" 255,37,41,58
+  palette "models/players/sarge/band.tga" 255,76,51,38
+  palette "models/players/razor/red.tga" 255,82,21,17
+  palette "models/players/razor/razor_gogs_fx.tga" 255,43,44,43
+  palette "models/players/razor/razor_gogs.tga" 255,24,26,38
+  palette "models/players/razor/razor.tga" 255,65,49,43
+  palette "models/players/razor/patriot.tga" 22,96,73,61
+  palette "models/players/razor/id.tga" 163,64,32,25
+  palette "models/players/razor/icon_red.tga" 189,154,47,42
+  palette "models/players/razor/icon_patriot.tga" 191,144,124,125
+  palette "models/players/razor/icon_id.tga" 225,87,81,75
+  palette "models/players/razor/icon_default.tga" 199,159,120,110
+  palette "models/players/razor/icon_blue.tga" 169,84,73,121
+  palette "models/players/razor/h_red.tga" 255,95,13,11
+  palette "models/players/razor/h_razor.tga" 255,82,56,50
+  palette "models/players/razor/h_patriot.tga" 255,58,46,48
+  palette "models/players/razor/h_id.tga" 98,67,53,46
+  palette "models/players/razor/h_blue.tga" 255,17,15,85
+  palette "models/players/razor/blue.tga" 255,20,36,79
+  palette "models/players/mynx/red_s.tga" 255,84,3,3
+  palette "models/players/mynx/red_h.tga" 255,55,34,21
+  palette "models/players/mynx/mynx_shiny.tga" 211,45,35,13
+  palette "models/players/mynx/mynx_h.tga" 255,56,23,18
+  palette "models/players/mynx/mynx.tga" 255,72,52,44
+  palette "models/players/mynx/icon_red.tga" 209,132,56,34
+  palette "models/players/mynx/icon_default.tga" 226,97,50,37
+  palette "models/players/mynx/icon_blue.tga" 191,94,57,67
+  palette "models/players/mynx/blue_s.tga" 255,8,8,99
+  palette "models/players/ranger/wrack_h.tga" 255,44,30,23
+  palette "models/players/ranger/wrack.tga" 32,83,65,54
+  palette "models/players/ranger/red_h.tga" 255,78,58,40
+  palette "models/players/ranger/red.tga" 255,57,22,17
+  palette "models/players/ranger/ranger_statue.tga" 255,93,85,80
+  palette "models/players/ranger/ranger_h_statue.tga" 255,94,87,82
+  palette "models/players/ranger/ranger_h.tga" 255,85,57,43
+  palette "models/players/ranger/ranger.tga" 255,46,28,18
+  palette "models/players/ranger/icon_wrack.tga" 222,71,50,31
+  palette "models/players/ranger/icon_red.tga" 185,115,45,33
+  palette "models/players/ranger/icon_default.tga" 217,105,70,46
+  palette "models/players/ranger/icon_blue.tga" 201,63,73,93
+  palette "models/players/ranger/blue.tga" 255,32,34,45
+  palette "models/players/orbb/red_h.tga" 255,145,31,30
+  palette "models/players/orbb/red.tga" 255,88,35,32
+  palette "models/players/orbb/orbb_tail_blue.tga" 255,7,9,179
+  palette "models/players/orbb/orbb_tail.tga" 255,179,16,0
+  palette "models/players/orbb/orbb_light_blue.tga" 255,0,4,255
+  palette "models/players/orbb/orbb_light.tga" 255,255,0,0
+  palette "models/players/orbb/orbb_h2.tga" 120,107,73,52
+  palette "models/players/orbb/orbb.tga" 255,75,57,49
+  palette "models/players/orbb/icon_red.tga" 215,78,8,6
+  palette "models/players/orbb/icon_default.tga" 189,177,141,116
+  palette "models/players/orbb/icon_blue.tga" 208,65,62,130
+  palette "models/players/orbb/blue_h.tga" 255,30,75,154
+  palette "models/players/orbb/blue.tga" 255,41,48,78
+  palette "models/players/major/red_h.tga" 255,66,47,33
+  palette "models/players/major/red.tga" 255,70,24,15
+  palette "models/players/major/major_h.tga" 255,68,44,33
+  palette "models/players/major/major.tga" 255,58,35,20
+  palette "models/players/major/icon_red.tga" 180,143,81,55
+  palette "models/players/major/icon_default.tga" 186,146,89,65
+  palette "models/players/major/icon_daemia.tga" 191,129,79,50
+  palette "models/players/major/icon_blue.tga" 179,114,86,88
+  palette "models/players/major/daemia2_h.tga" 255,73,35,18
+  palette "models/players/major/daemia.tga" 249,60,45,36
+  palette "models/players/major/blue_h.tga" 255,76,43,34
+  palette "models/players/major/blue.tga" 255,27,38,57
+  palette "models/players/lucy/red_h.tga" 255,50,36,28
+  palette "models/players/lucy/red.tga" 255,62,17,13
+  palette "models/players/lucy/lucy_h.tga" 255,71,49,39
+  palette "models/players/lucy/lucy.tga" 255,43,28,22
+  palette "models/players/lucy/icon_red.tga" 179,145,75,58
+  palette "models/players/lucy/icon_default.tga" 160,147,107,88
+  palette "models/players/lucy/icon_blue.tga" 180,75,67,87
+  palette "models/players/lucy/icon_angel.tga" 172,87,71,64
+  palette "models/players/lucy/blue_h.tga" 255,45,38,33
+  palette "models/players/lucy/blue.tga" 255,22,20,53
+  palette "models/players/lucy/angel_h.tga" 255,46,37,32
+  palette "models/players/lucy/angel.tga" 127,56,41,33
+  palette "models/players/keel/red_h.tga" 255,36,28,24
+  palette "models/players/keel/red.tga" 255,73,15,10
+  palette "models/players/keel/keel_h.tga" 255,52,27,17
+  palette "models/players/keel/keel.tga" 255,68,46,31
+  palette "models/players/keel/icon_red.tga" 208,104,46,34
+  palette "models/players/keel/icon_default.tga" 203,135,91,59
+  palette "models/players/keel/icon_blue.tga" 204,43,57,107
+  palette "models/players/keel/blue_h.tga" 255,35,28,26
+  palette "models/players/keel/blue.tga" 255,19,29,69
+  palette "models/players/hunter/red_h.tga" 255,63,18,12
+  palette "models/players/hunter/red_f.tga" 72,68,42,34
+  palette "models/players/hunter/red.tga" 255,77,17,13
+  palette "models/players/hunter/icon_red.tga" 187,114,48,36
+  palette "models/players/hunter/icon_harpy.tga" 188,99,56,37
+  palette "models/players/hunter/icon_default.tga" 207,84,85,69
+  palette "models/players/hunter/icon_blue.tga" 195,88,47,75
+  palette "models/players/hunter/hunter_h.tga" 51,94,60,38
+  palette "models/players/hunter/hunter_f.tga" 125,54,46,41
+  palette "models/players/hunter/hunter2.tga" 109,59,39,27
+  palette "models/players/hunter/blue_h.tga" 255,39,18,48
+  palette "models/players/hunter/blue.tga" 255,37,15,70
+  palette "models/players/klesk/red_h.tga" 255,68,30,18
+  palette "models/players/klesk/red.tga" 255,57,23,15
+  palette "models/players/klesk/klesk_h.tga" 255,81,35,20
+  palette "models/players/klesk/klesk_g.tga" 255,1,2,2
+  palette "models/players/klesk/klesk.tga" 255,68,26,16
+  palette "models/players/klesk/icon_red.tga" 234,143,39,25
+  palette "models/players/klesk/icon_flisk.tga" 211,92,82,75
+  palette "models/players/klesk/icon_default.tga" 195,131,57,36
+  palette "models/players/klesk/icon_blue.tga" 188,67,58,87
+  palette "models/players/klesk/flisk_h.tga" 241,40,47,44
+  palette "models/players/klesk/flisk.tga" 15,89,71,60
+  palette "models/players/klesk/blue_h.tga" 255,51,34,35
+  palette "models/players/klesk/blue.tga" 255,37,30,34
+  palette "models/players/grunt/stripe_h.tga" 254,95,56,45
+  palette "models/players/grunt/stripe.tga" 255,66,37,23
+  palette "models/players/grunt/red_h.tga" 255,109,65,54
+  palette "models/players/grunt/red.tga" 255,82,29,20
+  palette "models/players/grunt/icon_stripe.tga" 181,156,103,88
+  palette "models/players/grunt/icon_red.tga" 205,172,101,84
+  palette "models/players/grunt/icon_default.tga" 179,180,127,108
+  palette "models/players/grunt/icon_blue.tga" 158,135,103,108
+  palette "models/players/grunt/grunt_h.tga" 255,111,74,61
+  palette "models/players/grunt/grunt.tga" 255,62,47,35
+  palette "models/players/grunt/blue_h.tga" 255,96,67,67
+  palette "models/players/grunt/blue.tga" 255,38,26,65
+  palette "models/players/doom/red.tga" 255,71,21,15
+  palette "models/players/doom/phobos_fx.tga" 255,40,27,21
+  palette "models/players/doom/phobos_f.tga" 76,76,52,10
+  palette "models/players/doom/phobos.tga" 243,62,36,14
+  palette "models/players/doom/icon_red.tga" 205,159,33,24
+  palette "models/players/doom/icon_phobos.tga" 188,156,87,37
+  palette "models/players/doom/icon_default.tga" 191,103,103,74
+  palette "models/players/doom/icon_blue.tga" 190,50,24,146
+  palette "models/players/doom/doom_statue.tga" 255,95,86,77
+  palette "models/players/doom/doom_fx.tga" 255,22,21,21
+  palette "models/players/doom/doom_f_statue.tga" 255,92,84,75
+  palette "models/players/doom/doom_f.tga" 255,38,39,40
+  palette "models/players/doom/doom.tga" 255,48,45,24
+  palette "models/players/doom/blue.tga" 255,33,19,68
+  palette "models/players/crash/red_t.tga" 255,88,21,14
+  palette "models/players/crash/red.tga" 255,70,22,18
+  palette "models/players/crash/icon_red.tga" 193,138,34,28
+  palette "models/players/crash/icon_default.tga" 190,101,95,81
+  palette "models/players/crash/icon_blue.tga" 180,59,30,149
+  palette "models/players/crash/crash_t.tga" 217,52,47,38
+  palette "models/players/crash/crash.tga" 238,52,44,35
+  palette "models/players/crash/blue_t.tga" 255,54,18,102
+  palette "models/players/crash/blue.tga" 255,38,22,83
+  palette "models/players/bitterman/red.tga" 255,62,14,11
+  palette "models/players/bitterman/icon_red.tga" 174,172,19,12
+  palette "models/players/bitterman/icon_default.tga" 167,195,182,114
+  palette "models/players/bitterman/icon_blue.tga" 181,60,49,96
+  palette "models/players/bitterman/h_red.tga" 255,119,15,10
+  palette "models/players/bitterman/h_blue.tga" 255,17,27,112
+  palette "models/players/bitterman/h_bitterman.tga" 255,92,81,45
+  palette "models/players/bitterman/blue.tga" 255,23,13,55
+  palette "models/players/bitterman/bitterman.tga" 255,67,57,35
+  palette "models/players/bones/xray.tga" 159,12,86,65
+  palette "models/players/bones/stiff.tga" 159,107,81,61
+  palette "models/players/bones/red.tga" 186,132,18,11
+  palette "models/players/bones/icon_red.tga" 168,163,30,19
+  palette "models/players/bones/icon_default.tga" 167,28,131,104
+  palette "models/players/bones/icon_bones.tga" 155,128,95,67
+  palette "models/players/bones/icon_blue.tga" 156,50,14,142
+  palette "models/players/bones/blue.tga" 186,43,12,160
+  palette "models/players/anarki/red_h.tga" 255,47,23,15
+  palette "models/players/anarki/red_g.tga" 255,89,7,5
+  palette "models/players/anarki/red.tga" 255,68,18,13
+  palette "models/players/anarki/icon_red.tga" 154,100,42,28
+  palette "models/players/anarki/icon_default.tga" 179,97,68,55
+  palette "models/players/anarki/icon_blue.tga" 180,64,44,49
+  palette "models/players/anarki/blue_g.tga" 255,8,44,87
+  palette "models/players/anarki/blue.tga" 255,26,38,58
+  palette "models/players/anarki/anarki_h.tga" 255,52,33,25
+  palette "models/players/anarki/anarki_g_fx.tga" 255,14,21,19
+  palette "models/players/anarki/anarki_g.tga" 255,48,37,32
+  palette "models/players/anarki/anarki_b.tga" 172,55,39,32
+  palette "models/players/anarki/anarki.tga" 255,64,50,36
+  palette "models/mapobjects/wallhead/wallhead02.tga" 255,56,38,29
+  palette "models/mapobjects/wallhead/wallhead02.jpg" 255,56,38,29
+  palette "models/mapobjects/wallhead/lion_m.tga" 218,16,11,9
+  palette "models/mapobjects/wallhead/lion.tga" 255,42,32,27
+  palette "models/mapobjects/wallhead/lion.jpg" 255,42,32,27
+  palette "models/players/biker/stroggo_h.tga" 255,101,73,59
+  palette "models/players/biker/stroggo.tga" 255,113,70,71
+  palette "models/players/biker/slammer_h.tga" 255,70,48,69
+  palette "models/players/biker/slammer.tga" 255,114,79,83
+  palette "models/players/biker/red_h.tga" 255,89,32,24
+  palette "models/players/biker/red.tga" 255,66,31,26
+  palette "models/players/biker/icon_stroggo.tga" 233,147,122,105
+  palette "models/players/biker/icon_slammer.tga" 183,185,135,141
+  palette "models/players/biker/icon_red.tga" 199,158,69,55
+  palette "models/players/biker/icon_hossman.tga" 221,129,106,93
+  palette "models/players/biker/icon_default.tga" 192,147,112,94
+  palette "models/players/biker/icon_cadavre.tga" 195,166,109,76
+  palette "models/players/biker/icon_blue.tga" 213,60,94,151
+  palette "models/players/biker/hossman_h.tga" 255,52,41,36
+  palette "models/players/biker/hossman.tga" 255,77,60,53
+  palette "models/players/biker/cadaver_h.tga" 255,79,56,43
+  palette "models/players/biker/cadaver.tga" 23,90,47,31
+  palette "models/players/biker/blue_h.tga" 255,29,49,84
+  palette "models/players/biker/blue.tga" 255,40,40,52
+  palette "models/players/biker/biker_h.tga" 255,86,66,56
+  palette "models/players/biker/biker.tga" 255,58,47,41
+  palette "models/mapobjects/timlamp/timlamp.tga" 196,42,23,16
+  palette "models/mapobjects/weeds/weed02.tga" 23,45,28,8
+  palette "models/mapobjects/teleporter/widget.tga" 255,5,5,5
+  palette "models/mapobjects/teleporter/widget.jpg" 255,5,5,5
+  palette "models/mapobjects/teleporter/transparency2.tga" 255,155,70,8
+  palette "models/mapobjects/teleporter/transparency2.jpg" 255,155,70,8
+  palette "models/mapobjects/teleporter/transparency.tga" 255,5,5,5
+  palette "models/mapobjects/teleporter/transparency.jpg" 255,5,5,5
+  palette "models/mapobjects/teleporter/teleporter_edge2.tga" 255,28,14,6
+  palette "models/mapobjects/teleporter/teleporter_edge2.jpg" 255,28,14,6
+  palette "models/mapobjects/teleporter/teleporter_edge.tga" 255,72,67,62
+  palette "models/mapobjects/teleporter/teleporter_edge.jpg" 255,72,67,62
+  palette "models/mapobjects/teleporter/teleporter.tga" 255,84,71,62
+  palette "models/mapobjects/teleporter/teleporter.jpg" 255,84,70,62
+  palette "models/mapobjects/teleporter/pad.tga" 255,50,44,39
+  palette "models/mapobjects/teleporter/pad.jpg" 255,50,44,39
+  palette "models/mapobjects/teleporter/energy3.tga" 255,18,14,15
+  palette "models/mapobjects/teleporter/energy3.jpg" 255,18,14,15
+  palette "models/mapobjects/teleporter/energy2.tga" 255,15,11,10
+  palette "models/mapobjects/teleporter/energy2.jpg" 255,15,11,10
+  palette "models/mapobjects/teleporter/energy.tga" 255,34,25,24
+  palette "models/mapobjects/teleporter/energy.jpg" 255,34,25,24
+  palette "models/mapobjects/storch/storch_tall.tga" 255,68,43,32
+  palette "models/mapobjects/storch/storch_tall.jpg" 255,68,43,32
+  palette "models/mapobjects/storch/storch.tga" 255,62,40,31
+  palette "models/mapobjects/storch/storch.jpg" 255,62,40,31
+  palette "models/mapobjects/spotlamp/spotlamp_l.tga" 255,101,86,83
+  palette "models/mapobjects/spotlamp/spotlamp_l.jpg" 255,101,86,83
+  palette "models/mapobjects/spotlamp/spotlamp.tga" 183,47,44,43
+  palette "models/mapobjects/spotlamp/beam.tga" 255,30,24,20
+  palette "models/mapobjects/spotlamp/beam.jpg" 255,30,24,20
+  palette "models/mapobjects/skel/xray.tga" 159,12,86,65
+  palette "models/mapobjects/skel/skel.tga" 159,107,81,61
+  palette "models/mapobjects/slamp/slamp3.tga" 255,33,29,30
+  palette "models/mapobjects/slamp/slamp3.jpg" 255,33,29,29
+  palette "models/mapobjects/slamp/slamp2.tga" 255,61,33,33
+  palette "models/mapobjects/slamp/slamp2.jpg" 255,61,33,33
+  palette "models/mapobjects/slamp/slamp.tga" 255,49,46,41
+  palette "models/mapobjects/slamp/slamp.jpg" 255,49,46,41
+  palette "models/mapobjects/signs/bioh.tga" 255,132,96,27
+  palette "models/mapobjects/signs/bioh.jpg" 255,132,96,28
+  palette "models/mapobjects/portal_2/portal_3_glo.tga" 255,15,6,12
+  palette "models/mapobjects/portal_2/portal_3_glo.jpg" 255,15,6,12
+  palette "models/mapobjects/portal_2/portal_3_edge_glo.tga" 255,27,16,29
+  palette "models/mapobjects/portal_2/portal_3_edge_glo.jpg" 255,27,16,29
+  palette "models/mapobjects/portal_2/portal_3_edge.tga" 255,57,54,52
+  palette "models/mapobjects/portal_2/portal_3_edge.jpg" 255,57,54,52
+  palette "models/mapobjects/portal_2/portal_3.tga" 255,73,66,59
+  palette "models/mapobjects/portal_2/portal_3.jpg" 255,73,66,59
+  palette "models/mapobjects/pipe/pipe02.tga" 192,48,44,34
+  palette "models/mapobjects/podium/podskullfx.tga" 255,0,3,2
+  palette "models/mapobjects/podium/podskullfx.jpg" 255,0,3,2
+  palette "models/mapobjects/podium/podskull.tga" 225,18,13,10
+  palette "models/mapobjects/podium/podiumglo.tga" 50,0,1,0
+  palette "models/mapobjects/podium/podiumfx1b.tga" 255,5,3,2
+  palette "models/mapobjects/podium/podiumfx1b.jpg" 255,5,3,2
+  palette "models/mapobjects/podium/podiumfx1.tga" 255,7,6,5
+  palette "models/mapobjects/podium/podiumfx1.jpg" 255,7,6,5
+  palette "models/mapobjects/podium/podium.tga" 206,31,22,18
+  palette "models/mapobjects/jets/jet_as.tga" 255,51,42,45
+  palette "models/mapobjects/jets/jet_as.jpg" 255,51,42,45
+  palette "models/mapobjects/jets/jet_2.tga" 255,10,9,8
+  palette "models/mapobjects/jets/jet_2.jpg" 255,10,9,8
+  palette "models/mapobjects/jets/jet_1.tga" 255,30,22,25
+  palette "models/mapobjects/jets/jet_1.jpg" 255,30,22,25
+  palette "models/mapobjects/horned/horned.tga" 251,71,50,40
+  palette "models/mapobjects/jesus/jesuswall.tga" 38,52,41,35
+  palette "models/mapobjects/lamps/spikylamp.tga" 255,20,19,17
+  palette "models/mapobjects/lamps/spikylamp.jpg" 255,20,19,17
+  palette "models/mapobjects/lamps/flare03.tga" 255,36,31,21
+  palette "models/mapobjects/lamps/flare03.jpg" 255,36,31,21
+  palette "models/mapobjects/lamps/bot_wing2.tga" 152,66,57,52
+  palette "models/mapobjects/lamps/bot_wing.tga" 128,69,56,48
+  palette "models/mapobjects/lamps/bot_light.tga" 255,141,106,76
+  palette "models/mapobjects/lamps/bot_light.jpg" 255,141,106,76
+  palette "models/mapobjects/lamps/bot_lamp2b.tga" 203,56,45,39
+  palette "models/mapobjects/lamps/bot_lamp2.tga" 255,85,74,68
+  palette "models/mapobjects/lamps/bot_lamp2.jpg" 255,85,74,68
+  palette "models/mapobjects/lamps/bot_lamp.tga" 255,45,38,34
+  palette "models/mapobjects/lamps/bot_lamp.jpg" 255,45,38,34
+  palette "models/mapobjects/lamps/bot_flare2.tga" 255,28,20,21
+  palette "models/mapobjects/lamps/bot_flare2.jpg" 255,28,20,21
+  palette "models/mapobjects/lamps/bot_flare.tga" 255,32,25,26
+  palette "models/mapobjects/lamps/bot_flare.jpg" 255,32,25,26
+  palette "models/mapobjects/lamps/beam.tga" 255,24,22,19
+  palette "models/mapobjects/lamps/beam.jpg" 255,24,22,19
+  palette "models/mapobjects/grenadel/grenadelx.tga" 131,43,40,37
+  palette "models/mapobjects/grenadel/grenadel.tga" 255,68,64,58
+  palette "models/mapobjects/grenadel/grenadel.jpg" 255,68,64,58
+  palette "models/mapobjects/flares/electric.tga" 255,13,25,23
   palette "models/mapobjects/flares/electric.jpg" 255,13,25,23
-  palette "models/mapobjects/elspawn/elspawn.tga" 255,35,35,33
-  palette "models/mapobjects/elspawn/elspawn.png" 255,35,35,33
-  palette "models/mapobjects/elspawn/elspawn.jpg" 255,36,36,36
-  palette "models/mapobjects/elspawn/elspawn.jpeg" 255,35,35,35
-  palette "models/mapobjects/el_tele/el_tele_blend.jpg" 255,4,6,6
-  palette "models/mapobjects/el_tele/el_tele.jpg" 255,59,55,49
-  palette "models/mapobjects/el_tele/beam_fx2.jpg" 255,16,30,30
-  palette "models/mapobjects/el_tele/beam_fx.jpg" 255,3,5,6
-  palette "models/mapobjects/el_tele/beam.jpg" 255,6,10,10
+  palette "models/mapobjects/flag/banner_strgg.tga" 192,102,17,7
+  palette "models/mapobjects/gratelamp/gratetorch2b.tga" 189,54,44,36
+  palette "models/mapobjects/gratelamp/gratetorch2.tga" 255,52,32,18
+  palette "models/mapobjects/gratelamp/gratetorch2.jpg" 255,52,32,18
+  palette "models/mapobjects/gratelamp/gratelamp_flare.tga" 255,30,29,29
+  palette "models/mapobjects/gratelamp/gratelamp_flare.jpg" 255,30,29,29
+  palette "models/mapobjects/gratelamp/gratelamp_b.tga" 255,50,43,39
+  palette "models/mapobjects/gratelamp/gratelamp_b.jpg" 255,50,43,39
+  palette "models/mapobjects/gratelamp/gratelamp.tga" 139,53,45,40
+  palette "models/mapobjects/cross/cross_skull.tga" 103,113,93,77
+  palette "models/mapobjects/cross/cross.tga" 216,59,41,27
+  palette "models/mapobjects/corpse/torso.tga" 134,73,44,34
+  palette "models/mapobjects/corpse/spine.tga" 130,59,28,11
+  palette "models/mapobjects/corpse/intestine2.tga" 149,58,36,26
+  palette "models/mapobjects/corpse/intestine.tga" 132,65,42,31
+  palette "models/mapobjects/corpse/corpse.tga" 255,62,38,30
+  palette "models/mapobjects/corpse/corpse.jpg" 255,62,38,30
+  palette "models/mapobjects/corpse/chain.tga" 102,76,51,43
+  palette "models/mapobjects/colua0/colua0_flare.tga" 255,23,13,13
+  palette "models/mapobjects/colua0/colua0_flare.jpg" 255,23,13,13
+  palette "models/mapobjects/colua0/colua0.tga" 255,45,39,27
+  palette "models/mapobjects/colua0/colua0.jpg" 255,45,39,27
+  palette "models/mapobjects/bitch/orb.tga" 255,32,26,27
   palette "models/mapobjects/bitch/orb.jpg" 255,32,26,27
-  palette "models/mapobjects/bitch/forearm02.jpg" 255,67,41,36
-  palette "models/mapobjects/bitch/forearm01.jpg" 255,93,58,46
+  palette "models/mapobjects/bitch/hologirl2.tga" 255,14,17,16
+  palette "models/mapobjects/bitch/hologirl2.jpg" 255,14,17,16
+  palette "models/mapobjects/bitch/hologirl.tga" 88,83,69,61
+  palette "models/mapobjects/bitch/forearm02.tga" 255,67,39,33
+  palette "models/mapobjects/bitch/forearm02.jpg" 255,66,39,33
+  palette "models/mapobjects/bitch/forearm01.tga" 255,92,58,45
+  palette "models/mapobjects/bitch/forearm01.jpg" 255,92,58,45
+  palette "models/mapobjects/bitch/forearm.tga" 255,91,81,75
   palette "models/mapobjects/bitch/forearm.jpg" 255,91,81,75
-  palette "models/mapobjects/bitch/bitch.jpg" 255,41,33,29
-  palette "models/mapobjects/atlantis/water04.tga" 122,121,142,146
-  palette "models/mapobjects/atlantis/water04.png" 122,121,142,146
-  palette "gfx/2d/timer/unknown.png" 6,106,106,106
-  palette "gfx/2d/timer/slice_7.png" 6,255,255,255
-  palette "gfx/2d/timer/slice_5.png" 9,255,255,255
-  palette "gfx/2d/timer/slice_24.png" 2,255,255,255
-  palette "gfx/2d/timer/slice_12.png" 4,255,255,255
-  palette "gfx/2d/timer/regen.png" 4,169,169,169
-  palette "gfx/2d/timer/quad.png" 3,168,168,168
-  palette "gfx/2d/timer/medkit.png" 3,175,175,175
-  palette "gfx/2d/timer/invis.png" 4,178,178,178
-  palette "gfx/2d/timer/health.png" 9,192,192,192
-  palette "gfx/2d/timer/haste.png" 2,165,165,165
-  palette "gfx/2d/timer/bs.png" 8,168,168,168
-  palette "gfx/2d/timer/armor.png" 6,174,174,174
-  palette "menu/art/gr/grlogo.png" 103,249,151,43
+  palette "models/mapobjects/bitch/bitch.tga" 255,41,33,28
+  palette "models/mapobjects/bitch/bitch.jpg" 255,41,33,28
+  palette "models/mapobjects/chain/chain.tga" 180,93,76,64
+  palette "models/mapobjects/barrel/barrelq32.tga" 255,75,59,48
+  palette "models/mapobjects/barrel/barrelq32.jpg" 255,75,59,48
+  palette "models/mapobjects/barrel/barrelq3.tga" 255,73,45,33
+  palette "models/mapobjects/barrel/barrelq3.jpg" 255,73,45,33
+  palette "models/mapobjects/barrel/barrel2fx.tga" 255,77,50,11
+  palette "models/mapobjects/barrel/barrel2fx.jpg" 255,77,50,11
+  palette "models/mapobjects/barrel/barrel2.tga" 255,57,33,23
+  palette "models/mapobjects/barrel/barrel2.jpg" 255,57,33,23
+  palette "models/mapobjects/barrel/barrel.tga" 255,66,51,40
+  palette "models/mapobjects/barrel/barrel.jpg" 255,66,51,40
+  palette "models/mapobjects/baph/wrist.tga" 255,47,35,23
+  palette "models/mapobjects/baph/wrist.jpg" 255,47,35,23
+  palette "models/mapobjects/baph/baphomet_gold.tga" 251,68,46,28
+  palette "models/mapobjects/baph/baphomet.tga" 251,50,39,31
+  palette "models/mapobjects/baph/bapholamp_fx2.tga" 255,51,33,15
+  palette "models/mapobjects/baph/bapholamp_fx2.jpg" 255,51,33,15
+  palette "models/mapobjects/baph/bapholamp_fx.tga" 255,49,34,16
+  palette "models/mapobjects/baph/bapholamp_fx.jpg" 255,49,34,16
+  palette "models/mapobjects/baph/bapho_lamp.tga" 234,56,38,26
+  palette "models/mapobjects/banner/q3banner02x.tga" 0,0,0,0
+  palette "models/mapobjects/banner/q3banner02.tga" 0,0,0,0
+  palette "models/mapobjects/console/under.tga" 0,0,0,0
+  palette "models/mapobjects/console/spherex2.tga" 255,6,53,34
+  palette "models/mapobjects/console/spherex2.jpg" 255,6,53,34
+  palette "models/mapobjects/console/spherex.tga" 255,53,8,5
+  palette "models/mapobjects/console/spherex.jpg" 255,53,8,6
+  palette "models/mapobjects/console/sphere4.tga" 0,0,0,0
+  palette "models/mapobjects/console/sphere3.tga" 38,1,0,0
+  palette "models/mapobjects/console/sphere2.tga" 38,55,46,40
+  palette "models/mapobjects/console/scrolltext.tga" 255,4,4,4
+  palette "models/mapobjects/console/scrolltext.jpg" 255,4,4,4
+  palette "models/mapobjects/console/rotate.tga" 255,32,2,1
+  palette "models/mapobjects/console/rotate.jpg" 255,32,3,1
+  palette "models/mapobjects/console/console2.tga" 255,2,1,0
+  palette "models/mapobjects/console/console2.jpg" 255,2,1,0
+  palette "models/mapobjects/console/console.tga" 100,41,39,38
+  palette "models/mapobjects/console/centercon.tga" 255,3,70,45
+  palette "models/mapobjects/console/centercon.jpg" 255,3,70,45
+  palette "models/mapobjects/Skull/skull.tga" 255,94,66,49
+  palette "models/mapobjects/Skull/skull.jpg" 255,94,66,49
+  palette "models/mapobjects/Skull/ribcage.tga" 95,115,87,67
+  palette "models/mapobjects/Skull/monkeyheadb.tga" 255,87,44,34
+  palette "models/mapobjects/Skull/monkeyheadb.jpg" 255,87,44,34
+  palette "models/mapobjects/Skull/monkeyhead2.tga" 34,105,96,93
+  palette "models/mapobjects/Skull/monkeyhead.tga" 255,90,46,36
+  palette "models/mapobjects/Skull/monkeyhead.jpg" 255,90,46,36
+  palette "models/ammo/rocket/rockfls2.tga" 255,94,40,25
+  palette "models/ammo/rocket/rockfls2.jpg" 255,94,41,25
+  palette "models/ammo/rocket/rockfls1.tga" 255,94,40,25
+  palette "models/ammo/rocket/rockfls1.jpg" 255,94,41,25
+  palette "models/ammo/rocket/rockflar.tga" 255,114,44,25
+  palette "models/ammo/rocket/rockflar.jpg" 255,114,44,25
+  palette "models/ammo/rocket/rocketfn.tga" 255,111,16,6
+  palette "models/ammo/rocket/rocketfn.jpg" 255,111,16,6
+  palette "models/ammo/rocket/rocket.tga" 255,79,64,22
+  palette "models/ammo/rocket/rocket.jpg" 255,79,64,24
+  palette "gfx/2d/numbers/zero_32b.tga" 186,184,184,184
+  palette "gfx/2d/numbers/two_32b.tga" 143,183,182,183
+  palette "gfx/2d/numbers/three_32b.tga" 169,178,178,178
+  palette "gfx/2d/numbers/six_32b.tga" 182,180,180,180
+  palette "gfx/2d/numbers/seven_32b.tga" 126,185,185,184
+  palette "gfx/2d/numbers/one_32b.tga" 132,185,185,185
+  palette "gfx/2d/numbers/nine_32b.tga" 186,182,182,182
+  palette "gfx/2d/numbers/minus_32b.tga" 34,146,146,146
+  palette "gfx/2d/numbers/four_32b.tga" 150,185,185,185
+  palette "gfx/2d/numbers/five_32b.tga" 167,176,176,176
+  palette "gfx/2d/numbers/eight_32b.tga" 184,182,182,182
   palette "team_icon/stroggs_red.tga" 83,239,0,0
   palette "team_icon/stroggs_red.png" 83,239,0,0
   palette "team_icon/stroggs_blue.tga" 83,0,139,239
@@ -2110,291 +3216,512 @@ palettes/default
   palette "team_icon/TheFallen_red.png" 37,213,0,0
   palette "team_icon/TheFallen_blue.tga" 37,0,124,213
   palette "team_icon/TheFallen_blue.png" 37,0,124,213
-  palette "textures/proto_sky.tga" 255,4,3,3
-  palette "textures/proto_sky.jpg" 255,5,5,5
-  palette "sprites/splash.tga" 255,4,5,7
-  palette "sprites/plasmaa.tga" 255,14,58,65
+  palette "textures/sky1.tga" 255,249,207,96
+  palette "textures/sky1.jpg" 255,244,207,96
+  palette "textures/proto_sky.jpg" 255,4,3,3
+  palette "textures/cube3.jpg" 255,255,186,10
+  palette "textures/cube2.jpg" 255,5,167,240
+  palette "textures/cube1.jpg" 255,130,190,7
+  palette "textures/cube0.jpg" 255,244,83,37
+  palette "sprites/laser.jpg" 255,177,1,1
+  palette "sprites/gravwell.jpg" 255,59,59,59
+  palette "sprites/forcefield.tga" 12,117,117,117
+  palette "sprites/forcefield.png" 12,117,117,117
+  palette "sprites/foe2.png" 106,224,158,8
+  palette "sprites/flameball.jpg" 255,116,82,76
+  palette "sprites/deathspotsprite.tga" 107,194,194,194
+  palette "sprites/deathspotsprite.png" 107,194,194,194
+  palette "sprites/bubble.png" 65,116,118,124
+  palette "sprites/balloon4.png" 184,69,69,188
+  palette "sprites/balllightning.jpg" 255,21,37,63
+  palette "models/backpack.tga" 241,70,45,12
+  palette "models/backpack.png" 241,70,45,12
   palette "icons3/iconw_shotgun.tga" 255,255,127,4
-  palette "icons3/iconw_shotgun.jpg" 255,252,124,0
+  palette "icons3/iconw_shotgun.jpg" 255,255,128,5
   palette "icons3/iconw_rocket.tga" 255,255,0,0
-  palette "icons3/iconw_rocket.jpg" 255,255,2,4
+  palette "icons3/iconw_rocket.jpg" 255,254,0,2
   palette "icons3/iconw_railgun.tga" 255,0,255,0
-  palette "icons3/iconw_railgun.jpg" 255,0,253,0
+  palette "icons3/iconw_railgun.jpg" 255,1,255,0
   palette "icons3/iconw_plasma.tga" 255,204,0,255
-  palette "icons3/iconw_plasma.jpg" 255,207,0,255
+  palette "icons3/iconw_plasma.jpg" 255,204,0,255
   palette "icons3/iconw_machinegun.tga" 255,255,255,0
-  palette "icons3/iconw_machinegun.jpg" 255,255,255,3
+  palette "icons3/iconw_machinegun.jpg" 255,255,255,1
   palette "icons3/iconw_lightning.tga" 255,255,255,175
-  palette "icons3/iconw_lightning.jpg" 255,255,255,174
+  palette "icons3/iconw_lightning.jpg" 255,254,255,175
   palette "icons3/iconw_grenade.tga" 255,0,153,0
-  palette "icons3/iconw_grenade.jpg" 255,0,152,0
+  palette "icons3/iconw_grenade.jpg" 255,0,153,0
   palette "icons3/iconw_grapple.tga" 255,0,41,10
-  palette "icons3/iconw_grapple.jpg" 255,20,47,22
+  palette "icons3/iconw_grapple.jpg" 255,16,46,22
   palette "icons3/iconw_gauntlet.tga" 255,34,184,246
-  palette "icons3/iconw_gauntlet.jpg" 255,29,190,242
+  palette "icons3/iconw_gauntlet.jpg" 255,32,185,243
   palette "icons3/iconw_bfg.tga" 255,0,104,255
-  palette "icons3/iconw_bfg.jpg" 255,0,101,255
+  palette "icons3/iconw_bfg.jpg" 255,0,103,255
   palette "icons3/icona_white.tga" 255,98,98,98
-  palette "icons3/icona_white.png" 79,255,255,255
   palette "icons3/icona_white.jpg" 255,99,99,99
   palette "icons3/icona_shotgun.tga" 255,255,127,4
-  palette "icons3/icona_shotgun.jpg" 255,252,124,0
+  palette "icons3/icona_shotgun.jpg" 255,255,128,5
   palette "icons3/icona_rocket.tga" 255,255,0,0
-  palette "icons3/icona_rocket.jpg" 255,255,2,4
+  palette "icons3/icona_rocket.jpg" 255,254,0,2
   palette "icons3/icona_red.tga" 255,94,7,7
-  palette "icons3/icona_red.png" 79,245,17,17
-  palette "icons3/icona_red.jpg" 255,99,13,17
+  palette "icons3/icona_red.jpg" 255,97,11,13
   palette "icons3/icona_railgun.tga" 255,0,255,0
-  palette "icons3/icona_railgun.jpg" 255,0,253,0
+  palette "icons3/icona_railgun.jpg" 255,1,255,0
   palette "icons3/icona_plasma.tga" 255,204,0,255
-  palette "icons3/icona_plasma.jpg" 255,207,0,255
+  palette "icons3/icona_plasma.jpg" 255,204,0,255
   palette "icons3/icona_machinegun.tga" 255,255,255,0
-  palette "icons3/icona_machinegun.jpg" 255,255,255,3
+  palette "icons3/icona_machinegun.jpg" 255,255,255,1
   palette "icons3/icona_lightning.tga" 255,255,255,175
-  palette "icons3/icona_lightning.jpg" 255,255,255,174
+  palette "icons3/icona_lightning.jpg" 255,254,255,175
   palette "icons3/icona_grenade.tga" 255,0,153,0
-  palette "icons3/icona_grenade.jpg" 255,0,152,0
+  palette "icons3/icona_grenade.jpg" 255,0,153,0
   palette "icons3/icona_blue.tga" 255,7,23,94
-  palette "icons3/icona_blue.png" 79,17,60,245
-  palette "icons3/icona_blue.jpg" 255,15,26,98
+  palette "icons3/icona_blue.jpg" 255,11,25,97
   palette "icons3/icona_bfg.tga" 255,0,104,255
-  palette "icons3/icona_bfg.jpg" 255,0,101,255
+  palette "icons3/icona_bfg.jpg" 255,0,103,255
+  palette "levelshots/wvwq3dm7.jpg" 255,30,53,46
+  palette "levelshots/winter.jpg" 255,8,18,34
+  palette "levelshots/summer.jpg" 255,36,39,34
+  palette "levelshots/q3tourney2.jpg" 255,48,18,13
+  palette "levelshots/q3dm7.jpg" 255,77,52,30
+  palette "levelshots/q3dm17.jpg" 255,45,39,36
+  palette "levelshots/q3dm1.jpg" 255,73,34,28
+  palette "levelshots/mptourney4_small.tga" 255,63,38,22
+  palette "levelshots/mptourney4_small.jpg" 255,63,38,23
+  palette "levelshots/mptourney4.tga" 255,63,38,22
+  palette "levelshots/mptourney4.jpg" 255,63,38,23
+  palette "levelshots/mptourney3_small.tga" 255,66,24,14
+  palette "levelshots/mptourney3_small.jpg" 255,66,24,15
+  palette "levelshots/mptourney3.tga" 255,66,24,14
+  palette "levelshots/mptourney3.jpg" 255,66,24,14
+  palette "levelshots/mptourney2_small.tga" 255,47,34,26
+  palette "levelshots/mptourney2_small.jpg" 255,47,34,26
+  palette "levelshots/mptourney2.tga" 255,55,40,31
+  palette "levelshots/mptourney2.jpg" 255,55,40,31
+  palette "levelshots/mptourney1_small.tga" 255,41,38,34
+  palette "levelshots/mptourney1_small.jpg" 255,41,38,34
+  palette "levelshots/mptourney1.tga" 255,41,38,34
+  palette "levelshots/mptourney1.jpg" 255,41,38,34
+  palette "levelshots/mpterra3.tga" 255,91,49,39
+  palette "levelshots/mpterra3.jpg" 255,91,49,40
+  palette "levelshots/mpterra2.tga" 255,63,75,74
+  palette "levelshots/mpterra2.jpg" 255,63,75,74
+  palette "levelshots/mpterra1_small.tga" 255,102,94,82
+  palette "levelshots/mpterra1_small.jpg" 255,102,94,83
+  palette "levelshots/mpterra1.tga" 255,102,94,82
+  palette "levelshots/mpterra1.jpg" 255,101,94,82
+  palette "levelshots/mpteam8_small.tga" 255,37,55,66
+  palette "levelshots/mpteam8_small.jpg" 255,37,55,66
+  palette "levelshots/mpteam8.tga" 255,37,55,66
+  palette "levelshots/mpteam8.jpg" 255,37,55,65
+  palette "levelshots/mpteam7_small.tga" 255,68,61,63
+  palette "levelshots/mpteam7_small.jpg" 255,68,61,63
+  palette "levelshots/mpteam7.tga" 255,67,61,63
+  palette "levelshots/mpteam7.jpg" 255,67,61,63
+  palette "levelshots/mpteam6_small.tga" 255,105,71,50
+  palette "levelshots/mpteam6_small.jpg" 255,105,72,51
+  palette "levelshots/mpteam6.tga" 255,106,71,50
+  palette "levelshots/mpteam6.jpg" 255,105,71,51
+  palette "levelshots/mpteam5_small.tga" 255,47,45,43
+  palette "levelshots/mpteam5_small.jpg" 255,47,45,43
+  palette "levelshots/mpteam5.tga" 255,47,45,43
+  palette "levelshots/mpteam5.jpg" 255,47,45,44
+  palette "levelshots/mpteam4_small.tga" 255,46,37,33
+  palette "levelshots/mpteam4_small.jpg" 255,46,37,33
+  palette "levelshots/mpteam4.tga" 255,46,37,33
+  palette "levelshots/mpteam4.jpg" 255,46,37,33
+  palette "levelshots/mpteam3_small.tga" 255,131,104,89
+  palette "levelshots/mpteam3_small.jpg" 255,130,104,89
+  palette "levelshots/mpteam3.tga" 255,131,104,89
+  palette "levelshots/mpteam3.jpg" 255,130,104,89
+  palette "levelshots/mpteam2_small.tga" 255,41,28,24
+  palette "levelshots/mpteam2_small.jpg" 255,41,28,24
+  palette "levelshots/mpteam2.tga" 255,41,27,24
+  palette "levelshots/mpteam2.jpg" 255,40,28,24
+  palette "levelshots/mpteam1_small.tga" 255,85,60,50
+  palette "levelshots/mpteam1_small.jpg" 255,85,60,50
+  palette "levelshots/mpteam1.tga" 255,85,60,49
+  palette "levelshots/mpteam1.jpg" 255,85,60,50
+  palette "levelshots/mpq3tourney6.tga" 255,22,19,18
+  palette "levelshots/mpq3tourney6.jpg" 255,22,19,18
+  palette "levelshots/mpq3ctf4_small.tga" 255,13,14,17
+  palette "levelshots/mpq3ctf4_small.jpg" 255,14,15,17
+  palette "levelshots/mpq3ctf4.tga" 255,13,14,17
+  palette "levelshots/mpq3ctf4.jpg" 255,14,14,17
+  palette "levelshots/mpq3ctf3_small.tga" 255,56,56,60
+  palette "levelshots/mpq3ctf3_small.jpg" 255,56,56,60
+  palette "levelshots/mpq3ctf3.tga" 255,56,56,60
+  palette "levelshots/mpq3ctf3.jpg" 255,56,56,60
+  palette "levelshots/mpq3ctf2_small.tga" 255,54,48,38
+  palette "levelshots/mpq3ctf2_small.jpg" 255,54,48,39
+  palette "levelshots/mpq3ctf2.tga" 255,54,48,38
+  palette "levelshots/mpq3ctf2.jpg" 255,54,48,38
+  palette "levelshots/mpq3ctf1_small.tga" 255,125,81,68
+  palette "levelshots/mpq3ctf1_small.jpg" 255,125,81,69
+  palette "levelshots/mpq3ctf1.tga" 255,126,81,68
+  palette "levelshots/mpq3ctf1.jpg" 255,125,81,69
+  palette "levelshots/lsdm3_v1.jpg" 255,122,138,191
   palette "fonts/fontImage_1_20.tga" 0,255,255,255
-  palette "fonts/fontImage_1_20.png" 0,255,255,255
+  palette "fonts/fontImage_1_20.jpg" 255,255,255,255
   palette "fonts/fontImage_0_20.tga" 55,255,255,255
   palette "fonts/fontImage_0_20.png" 55,255,255,255
   palette "fonts/fontImage_0_16.tga" 41,255,255,255
   palette "fonts/fontImage_0_16.png" 41,255,255,255
   palette "fonts/fontImage_0_12.tga" 20,255,255,255
   palette "fonts/fontImage_0_12.png" 20,255,255,255
-  palette "levelshots/wvwq3dm7.jpg" 255,30,53,46
-  palette "levelshots/mptourney4_small.tga" 255,63,38,22
-  palette "levelshots/mptourney4_small.jpg" 255,63,38,22
-  palette "levelshots/mptourney4.tga" 255,63,38,22
-  palette "levelshots/mptourney4.jpg" 255,63,38,22
-  palette "levelshots/mptourney3_small.tga" 255,66,24,14
-  palette "levelshots/mptourney3_small.jpg" 255,66,24,16
-  palette "levelshots/mptourney3.tga" 255,66,24,14
-  palette "levelshots/mptourney3.jpg" 255,66,24,15
-  palette "levelshots/mptourney2_small.tga" 255,47,34,26
-  palette "levelshots/mptourney2_small.jpg" 255,47,34,27
-  palette "levelshots/mptourney2.tga" 255,55,40,31
-  palette "levelshots/mptourney2.jpg" 255,55,40,32
-  palette "levelshots/mptourney1_small.tga" 255,41,38,34
-  palette "levelshots/mptourney1_small.jpg" 255,40,38,36
-  palette "levelshots/mptourney1.tga" 255,41,38,34
-  palette "levelshots/mptourney1.jpg" 255,40,38,35
-  palette "levelshots/mpterra3.tga" 255,91,49,39
-  palette "levelshots/mpterra3.jpg" 255,91,49,38
-  palette "levelshots/mpterra2.tga" 255,63,75,74
-  palette "levelshots/mpterra2.jpg" 255,64,75,74
-  palette "levelshots/mpterra1_small.tga" 255,102,94,82
-  palette "levelshots/mpterra1_small.jpg" 255,100,94,81
-  palette "levelshots/mpterra1.tga" 255,102,94,82
-  palette "levelshots/mpterra1.jpg" 255,100,94,81
-  palette "levelshots/mpteam8_small.tga" 255,37,55,66
-  palette "levelshots/mpteam8_small.jpg" 255,37,55,66
-  palette "levelshots/mpteam8.tga" 255,37,55,66
-  palette "levelshots/mpteam8.jpg" 255,37,55,65
-  palette "levelshots/mpteam7_small.tga" 255,68,61,63
-  palette "levelshots/mpteam7_small.jpg" 255,68,60,65
-  palette "levelshots/mpteam7.tga" 255,67,61,63
-  palette "levelshots/mpteam7.jpg" 255,68,60,65
-  palette "levelshots/mpteam6_small.tga" 255,105,71,50
-  palette "levelshots/mpteam6_small.jpg" 255,105,72,52
-  palette "levelshots/mpteam6.tga" 255,106,71,50
-  palette "levelshots/mpteam6.jpg" 255,105,71,51
-  palette "levelshots/mpteam5_small.tga" 255,47,45,43
-  palette "levelshots/mpteam5_small.jpg" 255,47,45,46
-  palette "levelshots/mpteam5.tga" 255,47,45,43
-  palette "levelshots/mpteam5.jpg" 255,47,45,46
-  palette "levelshots/mpteam4_small.tga" 255,46,37,33
-  palette "levelshots/mpteam4_small.jpg" 255,46,37,35
-  palette "levelshots/mpteam4.tga" 255,46,37,33
-  palette "levelshots/mpteam4.jpg" 255,46,37,35
-  palette "levelshots/mpteam3_small.tga" 255,131,104,89
-  palette "levelshots/mpteam3_small.jpg" 255,130,103,90
-  palette "levelshots/mpteam3.tga" 255,131,104,89
-  palette "levelshots/mpteam3.jpg" 255,130,103,90
-  palette "levelshots/mpteam2_small.tga" 255,41,28,24
-  palette "levelshots/mpteam2_small.jpg" 255,40,27,27
-  palette "levelshots/mpteam2.tga" 255,41,27,24
-  palette "levelshots/mpteam2.jpg" 255,40,27,27
-  palette "levelshots/mpteam1_small.tga" 255,85,60,50
-  palette "levelshots/mpteam1_small.jpg" 255,85,60,50
-  palette "levelshots/mpteam1.tga" 255,85,60,49
-  palette "levelshots/mpteam1.jpg" 255,85,60,50
-  palette "levelshots/mpq3tourney6.tga" 255,22,19,18
-  palette "levelshots/mpq3tourney6.jpg" 255,21,20,19
-  palette "levelshots/mpq3ctf4_small.tga" 255,13,14,17
-  palette "levelshots/mpq3ctf4_small.jpg" 255,14,15,17
-  palette "levelshots/mpq3ctf4.tga" 255,13,14,17
-  palette "levelshots/mpq3ctf4.jpg" 255,14,15,17
-  palette "levelshots/mpq3ctf3_small.tga" 255,56,56,60
-  palette "levelshots/mpq3ctf3_small.jpg" 255,56,57,59
-  palette "levelshots/mpq3ctf3.tga" 255,56,56,60
-  palette "levelshots/mpq3ctf3.jpg" 255,57,56,60
-  palette "levelshots/mpq3ctf2_small.tga" 255,54,48,38
-  palette "levelshots/mpq3ctf2_small.jpg" 255,55,48,39
-  palette "levelshots/mpq3ctf2.tga" 255,54,48,38
-  palette "levelshots/mpq3ctf2.jpg" 255,54,48,39
-  palette "levelshots/mpq3ctf1_small.tga" 255,125,81,68
-  palette "levelshots/mpq3ctf1_small.jpg" 255,125,81,70
-  palette "levelshots/mpq3ctf1.tga" 255,126,81,68
-  palette "levelshots/mpq3ctf1.jpg" 255,125,81,69
-  palette "levelshots/Q3TOURNEY6.tga" 255,24,19,18
-  palette "levelshots/Q3TOURNEY6.jpg" 255,24,19,18
-  palette "levelshots/Q3TOURNEY5.tga" 255,137,76,18
-  palette "levelshots/Q3TOURNEY5.jpg" 255,137,76,18
-  palette "levelshots/Q3TOURNEY4.tga" 255,60,47,42
-  palette "levelshots/Q3TOURNEY4.jpg" 255,60,47,42
-  palette "levelshots/Q3TOURNEY3.tga" 255,73,34,25
-  palette "levelshots/Q3TOURNEY3.jpg" 255,73,34,25
-  palette "levelshots/Q3TOURNEY2.tga" 255,48,18,13
-  palette "levelshots/Q3TOURNEY1.tga" 255,44,32,37
-  palette "levelshots/Q3DM9.tga" 255,74,34,18
-  palette "levelshots/Q3DM9.jpg" 255,74,34,18
-  palette "levelshots/Q3DM8.tga" 255,68,34,16
-  palette "levelshots/Q3DM8.jpg" 255,68,34,16
-  palette "levelshots/Q3DM7.tga" 255,77,53,29
-  palette "levelshots/Q3DM6.tga" 255,74,55,49
-  palette "levelshots/Q3DM6.jpg" 255,74,55,49
-  palette "levelshots/Q3DM5.tga" 255,62,45,34
-  palette "levelshots/Q3DM5.jpg" 255,62,45,34
-  palette "levelshots/Q3DM4.tga" 255,88,75,63
-  palette "levelshots/Q3DM4.jpg" 255,88,75,63
-  palette "levelshots/Q3DM3.tga" 255,68,42,31
-  palette "levelshots/Q3DM3.jpg" 255,68,42,31
-  palette "levelshots/Q3DM2.tga" 255,70,44,20
-  palette "levelshots/Q3DM2.jpg" 255,70,44,20
-  palette "levelshots/Q3DM19.tga" 255,28,25,25
-  palette "levelshots/Q3DM19.jpg" 255,28,25,25
-  palette "levelshots/Q3DM18.tga" 255,61,47,37
-  palette "levelshots/Q3DM18.jpg" 255,61,47,37
-  palette "levelshots/Q3DM17.tga" 255,45,39,35
-  palette "levelshots/Q3DM16.tga" 255,49,46,46
-  palette "levelshots/Q3DM16.jpg" 255,49,46,46
-  palette "levelshots/Q3DM15.tga" 255,64,26,16
-  palette "levelshots/Q3DM15.jpg" 255,64,26,16
-  palette "levelshots/Q3DM14.tga" 255,68,47,26
-  palette "levelshots/Q3DM14.jpg" 255,68,47,26
-  palette "levelshots/Q3DM13.tga" 255,84,39,25
-  palette "levelshots/Q3DM13.jpg" 255,84,39,25
-  palette "levelshots/Q3DM12.tga" 255,60,41,36
-  palette "levelshots/Q3DM12.jpg" 255,60,41,36
-  palette "levelshots/Q3DM11.tga" 255,58,55,35
-  palette "levelshots/Q3DM11.jpg" 255,58,55,35
-  palette "levelshots/Q3DM10.tga" 255,45,29,18
-  palette "levelshots/Q3DM10.jpg" 255,45,29,18
-  palette "levelshots/Q3DM1.tga" 255,73,34,27
-  palette "levelshots/Q3DM0.tga" 255,69,60,56
-  palette "levelshots/Q3DM0.jpg" 255,69,60,56
-  palette "levelshots/Q3CTF4.tga" 255,8,13,16
-  palette "levelshots/Q3CTF4.jpg" 255,8,13,16
-  palette "levelshots/Q3CTF3.tga" 255,94,76,72
-  palette "levelshots/Q3CTF3.jpg" 255,94,76,72
-  palette "levelshots/Q3CTF2.tga" 255,61,44,43
-  palette "levelshots/Q3CTF2.jpg" 255,61,44,43
-  palette "levelshots/Q3CTF1.tga" 255,85,56,50
-  palette "levelshots/Q3CTF1.jpg" 255,85,56,50
-  palette "env/xnight2_up.tga" 255,13,13,13
-  palette "env/xnight2_rt.tga" 255,1,1,1
-  palette "env/xnight2_lf.tga" 255,1,1,1
-  palette "env/xnight2_ft.tga" 255,1,1,1
-  palette "env/xnight2_dn.tga" 255,1,1,1
-  palette "env/xnight2_bk.tga" 255,1,1,1
   palette "env/ut_subway_up.tga" 255,135,150,175
-  palette "env/ut_subway_up.jpg" 255,138,149,175
+  palette "env/ut_subway_up.jpg" 255,135,150,175
   palette "env/ut_subway_rt.tga" 255,95,97,99
-  palette "env/ut_subway_rt.jpg" 255,94,97,100
+  palette "env/ut_subway_rt.jpg" 255,95,97,99
   palette "env/ut_subway_lf.tga" 255,93,98,101
-  palette "env/ut_subway_lf.jpg" 255,94,98,102
+  palette "env/ut_subway_lf.jpg" 255,94,98,101
   palette "env/ut_subway_ft.tga" 255,126,124,119
-  palette "env/ut_subway_ft.jpg" 255,125,124,120
+  palette "env/ut_subway_ft.jpg" 255,126,124,119
   palette "env/ut_subway_dn.tga" 255,69,61,51
-  palette "env/ut_subway_dn.jpg" 255,70,61,49
+  palette "env/ut_subway_dn.jpg" 255,69,61,52
   palette "env/ut_subway_bk.tga" 255,92,95,98
-  palette "env/ut_subway_bk.jpg" 255,91,96,99
-  palette "env/space1_up.tga" 255,4,3,5
-  palette "env/space1_up.jpg" 255,4,3,5
-  palette "env/space1_rt.tga" 255,7,2,4
-  palette "env/space1_rt.jpg" 255,7,2,4
-  palette "env/space1_lf.tga" 255,11,7,16
-  palette "env/space1_lf.jpg" 255,11,7,16
-  palette "env/space1_ft.tga" 255,7,3,18
-  palette "env/space1_ft.jpg" 255,7,3,18
-  palette "env/space1_dn.tga" 255,2,1,2
-  palette "env/space1_dn.jpg" 255,2,1,2
-  palette "env/space1_bk.tga" 255,33,15,13
-  palette "env/space1_bk.jpg" 255,33,15,13
+  palette "env/ut_subway_bk.jpg" 255,92,95,98
+  palette "env/unit1_up.tga" 255,189,55,1
+  palette "env/unit1_up.pcx" 255,184,59,0
+  palette "env/unit1_up.jpg" 255,189,55,2
+  palette "env/unit1_rt.tga" 255,105,24,6
+  palette "env/unit1_rt.pcx" 255,95,32,7
+  palette "env/unit1_rt.jpg" 255,105,24,8
+  palette "env/unit1_lf.tga" 255,82,19,7
+  palette "env/unit1_lf.pcx" 255,76,26,8
+  palette "env/unit1_lf.jpg" 255,82,19,8
+  palette "env/unit1_ft.tga" 255,106,38,15
+  palette "env/unit1_ft.pcx" 255,99,45,15
+  palette "env/unit1_ft.jpg" 255,105,38,16
+  palette "env/unit1_dn.tga" 255,39,19,13
+  palette "env/unit1_dn.pcx" 255,38,21,16
+  palette "env/unit1_dn.jpg" 255,39,19,13
+  palette "env/unit1_bk.tga" 255,59,18,8
+  palette "env/unit1_bk.pcx" 255,57,21,9
+  palette "env/unit1_bk.jpg" 255,59,18,8
+  palette "env/thedeepblue_up.tga" 255,4,4,34
+  palette "env/thedeepblue_up.jpg" 255,5,4,34
+  palette "env/thedeepblue_rt.tga" 255,0,0,17
+  palette "env/thedeepblue_rt.jpg" 255,1,0,17
+  palette "env/thedeepblue_lf.tga" 255,0,0,18
+  palette "env/thedeepblue_lf.jpg" 255,1,0,19
+  palette "env/thedeepblue_ft.tga" 255,0,0,14
+  palette "env/thedeepblue_ft.jpg" 255,0,0,14
+  palette "env/thedeepblue_dn.tga" 255,0,0,12
+  palette "env/thedeepblue_dn.jpg" 255,0,0,12
+  palette "env/thedeepblue_bk.tga" 255,0,0,19
+  palette "env/thedeepblue_bk.jpg" 255,1,0,19
   palette "env/portalfog_up.jpg" 255,184,184,184
   palette "env/portalfog_rt.jpg" 255,184,184,184
   palette "env/portalfog_lf.jpg" 255,184,184,184
   palette "env/portalfog_ft.jpg" 255,184,184,184
   palette "env/portalfog_dn.jpg" 255,184,184,184
   palette "env/portalfog_bk.jpg" 255,184,184,184
+  palette "icons/weirdness.tga" 100,246,7,244
+  palette "icons/weirdness.png" 100,246,7,244
+  palette "icons/vengeance.tga" 56,255,0,0
+  palette "icons/vengeance.png" 56,255,0,0
+  palette "icons/vamp.tga" 105,255,0,0
+  palette "icons/vamp.png" 105,255,0,0
+  palette "icons/transference.tga" 108,234,6,6
+  palette "icons/transference.png" 108,234,6,6
+  palette "icons/teleporter.png" 50,0,236,255
+  palette "icons/teleport.tga" 129,252,255,0
+  palette "icons/teleport.png" 129,252,255,0
+  palette "icons/switch.tga" 108,252,255,0
+  palette "icons/switch.png" 108,252,255,0
+  palette "icons/strength.tga" 28,254,2,2
+  palette "icons/strength.png" 28,254,2,2
+  palette "icons/sprint.tga" 87,255,0,0
+  palette "icons/sprint.png" 87,255,0,0
+  palette "icons/skull_red.tga" 255,115,0,3
+  palette "icons/skull_red.jpg" 255,123,8,10
+  palette "icons/skull_red.jpeg" 255,114,5,7
+  palette "icons/skull_blue.tga" 255,5,75,114
+  palette "icons/skull_blue.jpg" 255,16,81,123
+  palette "icons/sight.tga" 61,175,156,76
+  palette "icons/sight.png" 61,175,156,76
+  palette "icons/shield.tga" 113,255,168,0
+  palette "icons/shield.png" 113,255,168,0
+  palette "icons/selfpres.tga" 118,252,255,0
+  palette "icons/selfpres.png" 118,252,255,0
   palette "icons/scout.tga" 125,60,255,17
+  palette "icons/scout.png" 125,60,255,17
+  palette "icons/resistance.tga" 152,0,216,255
+  palette "icons/resistance.png" 152,0,216,255
+  palette "icons/repulsion.tga" 70,72,64,236
+  palette "icons/repulsion.png" 70,72,64,236
+  palette "icons/regen.png" 76,209,10,0
+  palette "icons/reflection.tga" 49,0,172,0
+  palette "icons/reflection.png" 49,0,172,0
+  palette "icons/recall.tga" 129,11,225,162
+  palette "icons/recall.png" 129,11,225,162
+  palette "icons/radioactivity.tga" 117,249,247,7
+  palette "icons/radioactivity.png" 117,249,247,7
+  palette "icons/quad.png" 69,0,227,241
   palette "icons/proxmine.tga" 58,255,0,124
+  palette "icons/proxmine.png" 58,255,0,124
   palette "icons/portal.tga" 124,237,0,250
+  palette "icons/portal.png" 124,237,0,250
+  palette "icons/plentifularmor.tga" 139,255,255,1
+  palette "icons/plentifularmor.png" 139,255,255,1
+  palette "icons/plague.tga" 92,255,1,1
+  palette "icons/plague.png" 92,255,1,1
+  palette "icons/piercing.tga" 106,255,1,1
+  palette "icons/piercing.png" 106,255,1,1
+  palette "icons/phoenix.tga" 80,0,216,255
+  palette "icons/phoenix.png" 80,0,216,255
+  palette "icons/phase.tga" 57,255,255,255
+  palette "icons/phase.png" 57,255,255,255
+  palette "icons/packrat.tga" 69,209,10,0
+  palette "icons/packrat.png" 69,209,10,0
+  palette "icons/overkill.tga" 68,255,1,1
+  palette "icons/overkill.png" 68,255,1,1
+  palette "icons/orb.tga" 98,255,102,0
+  palette "icons/orb.png" 98,255,102,0
+  palette "icons/norune.tga" 0,0,0,0
+  palette "icons/norune.jpg" 255,254,126,0
+  palette "icons/noammo.png" 115,255,255,255
+  palette "icons/negation.tga" 81,0,0,0
+  palette "icons/negation.png" 81,0,0,0
+  palette "icons/necro.tga" 53,255,0,0
+  palette "icons/necro.png" 53,255,0,0
   palette "icons/nailgun128.tga" 39,0,255,179
+  palette "icons/nailgun128.png" 39,0,255,179
+  palette "icons/medkit.png" 35,255,0,0
+  palette "icons/medic.tga" 45,255,0,0
+  palette "icons/medic.png" 45,255,0,0
+  palette "icons/luck.tga" 37,21,199,41
+  palette "icons/luck.png" 37,21,199,41
+  palette "icons/lightning.tga" 42,255,255,255
+  palette "icons/lightning.png" 42,255,255,255
   palette "icons/kamikaze.tga" 109,250,201,0
+  palette "icons/kamikaze.png" 109,250,201,0
+  palette "icons/jump.tga" 125,255,255,0
+  palette "icons/jump.png" 125,255,255,0
   palette "icons/invulnerability.tga" 198,255,119,197
+  palette "icons/invulnerability.png" 198,255,119,197
+  palette "icons/invis.png" 22,0,0,255
+  palette "icons/impact.tga" 96,254,1,1
+  palette "icons/impact.png" 96,254,1,1
+  palette "icons/illusion.tga" 107,1,255,252
+  palette "icons/illusion.png" 107,1,255,252
+  palette "icons/iconw_triple_plasma.tga" 43,197,0,255
+  palette "icons/iconw_triple_plasma.png" 43,197,0,255
+  palette "icons/iconw_shotgun.png" 117,255,125,0
+  palette "icons/iconw_rocket.png" 69,255,1,1
+  palette "icons/iconw_railgun.png" 40,0,255,0
+  palette "icons/iconw_plasma.png" 62,197,0,255
+  palette "icons/iconw_pipebomb.tga" 75,2,144,18
+  palette "icons/iconw_pipebomb.png" 75,2,144,18
+  palette "icons/iconw_mortar.tga" 43,255,1,1
+  palette "icons/iconw_mortar.png" 43,255,1,1
+  palette "icons/iconw_megarailgun.tga" 63,0,255,0
+  palette "icons/iconw_megarailgun.png" 63,0,255,0
+  palette "icons/iconw_machinegun.png" 78,255,255,0
+  palette "icons/iconw_lightning.png" 73,255,255,186
+  palette "icons/iconw_homing_missile.tga" 47,255,1,1
+  palette "icons/iconw_homing_missile.png" 47,255,1,1
+  palette "icons/iconw_grenade.png" 72,2,144,18
+  palette "icons/iconw_grapple_hr.tga" 33,0,201,149
+  palette "icons/iconw_grapple_hr.png" 33,0,201,149
+  palette "icons/iconw_grapple.png" 29,0,201,149
+  palette "icons/iconw_gauntlet.png" 86,0,216,255
+  palette "icons/iconw_flechette.tga" 44,255,125,0
+  palette "icons/iconw_flechette.png" 44,255,125,0
+  palette "icons/iconw_flamethrower.tga" 38,255,129,1
+  palette "icons/iconw_flamethrower.png" 38,255,129,1
+  palette "icons/iconw_deathblossom.tga" 80,0,255,0
+  palette "icons/iconw_deathblossom.png" 80,0,255,0
+  palette "icons/iconw_clustergrenade.tga" 72,2,144,18
+  palette "icons/iconw_clustergrenade.png" 72,2,144,18
+  palette "icons/iconw_chainlightning.tga" 52,255,255,186
+  palette "icons/iconw_chainlightning.png" 52,255,255,186
+  palette "icons/iconw_bfg.png" 102,1,90,255
+  palette "icons/iconw_balllightning.tga" 102,255,255,186
+  palette "icons/iconw_balllightning.png" 102,255,255,186
+  palette "icons/iconw_auto_shotgun.tga" 112,255,125,0
+  palette "icons/iconw_auto_shotgun.png" 112,255,125,0
+  palette "icons/icont_shotgun.tga" 117,255,125,0
+  palette "icons/icont_shotgun.png" 117,255,125,0
+  palette "icons/icont_rocket.tga" 66,255,0,0
+  palette "icons/icont_rocket.png" 66,255,0,0
+  palette "icons/icont_railgun.tga" 35,2,232,1
+  palette "icons/icont_railgun.png" 35,2,232,1
+  palette "icons/icont_plasma.tga" 66,197,0,255
+  palette "icons/icont_plasma.png" 66,197,0,255
+  palette "icons/icont_machinegun.tga" 78,255,255,0
+  palette "icons/icont_machinegun.png" 78,255,255,0
+  palette "icons/icont_lightning.tga" 81,255,255,176
+  palette "icons/icont_lightning.png" 81,255,255,176
+  palette "icons/icont_grenade.tga" 74,2,144,18
+  palette "icons/icont_grenade.png" 74,2,144,18
+  palette "icons/icont_grapple.tga" 33,0,201,149
+  palette "icons/icont_grapple.png" 33,0,201,149
+  palette "icons/icont_gauntlet.tga" 110,0,216,255
+  palette "icons/icont_gauntlet.png" 110,0,216,255
+  palette "icons/icont_bfg.tga" 115,1,90,255
+  palette "icons/icont_bfg.png" 115,1,90,255
+  palette "icons/iconr_yellow.png" 121,255,255,1
+  palette "icons/iconr_shard.png" 66,102,176,73
+  palette "icons/iconr_red.png" 124,255,1,1
+  palette "icons/iconr_green.tga" 110,82,189,1
+  palette "icons/iconr_green.png" 110,82,189,1
+  palette "icons/iconh_yellow.png" 86,255,255,0
+  palette "icons/iconh_rorb.tga" 120,250,1,11
+  palette "icons/iconh_rorb.png" 133,224,4,23
+  palette "icons/iconh_red.png" 104,255,115,1
+  palette "icons/iconh_mega.png" 81,0,63,249
+  palette "icons/iconh_green.png" 69,101,176,73
+  palette "icons/iconh_borb.tga" 120,5,174,250
+  palette "icons/iconh_borb.png" 133,4,163,224
+  palette "icons/iconf_red4.tga" 255,136,0,0
+  palette "icons/iconf_red4.jpg" 255,135,3,4
+  palette "icons/iconf_red3.tga" 255,128,0,0
+  palette "icons/iconf_red3.jpg" 255,125,10,11
+  palette "icons/iconf_red2.tga" 255,126,0,0
+  palette "icons/iconf_red2.jpg" 255,121,9,10
+  palette "icons/iconf_red1.tga" 255,151,0,0
+  palette "icons/iconf_red1.jpg" 255,147,9,10
+  palette "icons/iconf_red1.jpeg" 255,150,4,5
+  palette "icons/iconf_red.png" 237,161,0,0
+  palette "icons/iconf_neutral3.tga" 255,132,132,132
+  palette "icons/iconf_neutral3.jpg" 255,127,127,127
+  palette "icons/iconf_neutral1.tga" 255,151,151,151
+  palette "icons/iconf_neutral1.jpg" 255,151,151,151
+  palette "icons/iconf_neutral1.jpeg" 255,150,150,150
   palette "icons/iconf_green4.tga" 255,0,136,30
-  palette "icons/iconf_green4.jpg" 255,11,136,34
+  palette "icons/iconf_green4.jpg" 255,5,136,34
   palette "icons/iconf_green3.tga" 255,0,129,28
-  palette "icons/iconf_green3.jpg" 255,11,129,33
+  palette "icons/iconf_green3.jpg" 255,5,128,32
   palette "icons/iconf_green2.tga" 255,0,127,28
-  palette "icons/iconf_green2.jpg" 255,11,127,33
+  palette "icons/iconf_green2.jpg" 255,5,126,32
   palette "icons/iconf_green1.tga" 255,0,151,33
-  palette "icons/iconf_green1.jpg" 255,10,150,38
+  palette "icons/iconf_green1.jpg" 255,4,150,37
   palette "icons/iconf_green.tga" 236,0,161,30
   palette "icons/iconf_green.png" 236,0,161,30
   palette "icons/iconf_gold4.tga" 255,136,121,0
-  palette "icons/iconf_gold4.jpg" 255,137,122,12
+  palette "icons/iconf_gold4.jpg" 255,137,121,5
   palette "icons/iconf_gold3.tga" 255,129,114,0
-  palette "icons/iconf_gold3.jpg" 255,131,115,12
+  palette "icons/iconf_gold3.jpg" 255,129,115,6
   palette "icons/iconf_gold2.tga" 255,127,112,0
-  palette "icons/iconf_gold2.jpg" 255,128,113,12
+  palette "icons/iconf_gold2.jpg" 255,127,113,6
   palette "icons/iconf_gold1.tga" 255,151,134,0
-  palette "icons/iconf_gold1.jpg" 255,152,134,10
+  palette "icons/iconf_gold1.jpg" 255,151,135,4
   palette "icons/iconf_gold.tga" 236,161,137,0
   palette "icons/iconf_gold.png" 236,161,137,0
+  palette "icons/iconf_blu4.tga" 255,0,13,136
+  palette "icons/iconf_blu4.jpg" 255,3,14,136
+  palette "icons/iconf_blu3.tga" 255,0,13,129
+  palette "icons/iconf_blu3.jpg" 255,8,15,127
+  palette "icons/iconf_blu2.tga" 255,0,12,127
+  palette "icons/iconf_blu2.jpg" 255,8,15,122
+  palette "icons/iconf_blu1.tga" 255,0,15,151
+  palette "icons/iconf_blu1.jpg" 255,7,16,149
+  palette "icons/iconf_blu1.jpeg" 255,2,15,151
+  palette "icons/iconf_blu.png" 236,0,22,161
+  palette "icons/icona_shotgun.png" 76,255,125,0
+  palette "icons/icona_rocket.png" 63,255,0,0
+  palette "icons/icona_railgun.png" 52,2,232,1
+  palette "icons/icona_plasma.png" 62,198,1,255
+  palette "icons/icona_machinegun.png" 100,255,255,0
+  palette "icons/icona_lightning.png" 92,255,255,176
+  palette "icons/icona_grenade.png" 63,2,145,18
+  palette "icons/icona_flamethrower.tga" 38,255,129,1
+  palette "icons/icona_flamethrower.png" 38,255,129,1
+  palette "icons/icona_bfg.png" 76,1,106,255
+  palette "icons/icon_backpack.tga" 134,155,87,7
+  palette "icons/icon_backpack.png" 134,155,87,7
+  palette "icons/ice_trap.tga" 104,1,90,255
+  palette "icons/ice_trap.png" 104,1,90,255
+  palette "icons/hologram.tga" 19,0,0,255
+  palette "icons/hologram.png" 19,0,0,255
+  palette "icons/haste.png" 42,183,229,0
   palette "icons/guard.tga" 132,56,11,255
+  palette "icons/guard.png" 132,56,11,255
+  palette "icons/gravity.tga" 60,255,114,0
+  palette "icons/gravity.png" 60,255,114,0
+  palette "icons/goodhealth.tga" 172,254,1,1
+  palette "icons/goodhealth.png" 172,254,1,1
+  palette "icons/forcefield.tga" 50,0,197,236
+  palette "icons/forcefield.png" 50,0,197,236
+  palette "icons/flight.png" 72,192,23,160
+  palette "icons/flash.tga" 127,255,255,255
+  palette "icons/flash.png" 127,255,255,255
+  palette "icons/fire.tga" 119,255,1,1
+  palette "icons/fire.png" 119,255,1,1
+  palette "icons/exclusion.tga" 67,0,246,255
+  palette "icons/exclusion.png" 67,0,246,255
+  palette "icons/envirosuit.png" 131,255,168,0
+  palette "icons/enviro.tga" 107,2,144,18
+  palette "icons/enviro.png" 107,2,144,18
+  palette "icons/emp.tga" 67,0,216,255
+  palette "icons/emp.png" 67,0,216,255
+  palette "icons/dual.tga" 118,19,128,32
+  palette "icons/dual.png" 118,19,128,32
   palette "icons/doubler.tga" 140,255,31,11
+  palette "icons/doubler.png" 140,255,31,11
+  palette "icons/divine.tga" 118,255,1,1
+  palette "icons/divine.png" 118,255,1,1
+  palette "icons/death_spots.tga" 126,0,0,0
+  palette "icons/death_spots.png" 126,0,0,0
+  palette "icons/cloak.tga" 22,197,197,197
+  palette "icons/cloak.png" 22,197,197,197
+  palette "icons/charm.tga" 31,255,1,1
+  palette "icons/charm.png" 31,255,1,1
   palette "icons/chaingun128.tga" 89,184,184,184
+  palette "icons/chaingun128.png" 89,184,184,184
+  palette "icons/ceasefire.tga" 112,255,1,1
+  palette "icons/ceasefire.png" 112,255,1,1
+  palette "icons/boxer.tga" 94,1,13,255
+  palette "icons/boxer.png" 94,1,13,255
+  palette "icons/blink.png" 96,0,186,255
+  palette "icons/berserk.tga" 97,255,1,1
+  palette "icons/berserk.png" 97,255,1,1
+  palette "icons/athletics.tga" 30,1,255,252
+  palette "icons/athletics.png" 30,1,255,252
+  palette "icons/arsenal.tga" 84,255,0,0
+  palette "icons/arsenal.png" 84,255,0,0
+  palette "icons/antigrav.tga" 66,255,114,0
+  palette "icons/antigrav.png" 66,255,114,0
   palette "icons/ammo_regen.tga" 126,248,250,0
+  palette "icons/ammo_regen.png" 126,248,250,0
   palette "icons/ammo_proxmine.tga" 104,255,0,124
+  palette "icons/ammo_proxmine.png" 104,255,0,124
   palette "icons/ammo_nailgun.tga" 85,0,255,179
+  palette "icons/ammo_nailgun.png" 85,0,255,179
   palette "icons/ammo_chaingun.tga" 134,184,184,184
+  palette "icons/ammo_chaingun.png" 134,184,184,184
   palette "maps/terrain_45x512_end_tracemap.tga" 255,93,245,0
-  palette "maps/terrain_45x512_end_tracemap.png" 255,93,245,0
+  palette "maps/terrain_45x512_end_tracemap.jpg" 255,94,244,3
   palette "maps/terrain_45x512_end_alphamap.tga" 255,98,254,0
-  palette "maps/terrain_45x512_end_alphamap.jpg" 255,98,252,4
+  palette "maps/terrain_45x512_end_alphamap.jpg" 255,98,253,1
   palette "maps/terrain-test_tracemap.tga" 255,71,182,0
-  palette "maps/terrain-test_tracemap.png" 255,71,182,0
+  palette "maps/terrain-test_tracemap.jpg" 255,70,181,2
   palette "maps/terrain-test_alphamap.tga" 255,96,0,0
-  palette "maps/terrain-test_alphamap.jpg" 255,96,2,4
+  palette "maps/terrain-test_alphamap.jpg" 255,96,1,1
+  palette "maps/q3dm1_tracemap.tga" 255,24,35,53
+  palette "maps/q3dm1_tracemap.jpg" 255,24,34,53
   palette "maps/pirate.png" 255,0,11,0
   palette "maps/mpterrax_tracemap.tga" 255,44,44,0
-  palette "maps/mpterrax_tracemap.png" 255,44,44,0
+  palette "maps/mpterrax_tracemap.jpg" 255,43,43,3
   palette "maps/mpterrax_alphamap.tga" 255,98,98,1
-  palette "maps/mpterrax_alphamap.jpg" 255,99,98,9
+  palette "maps/mpterrax_alphamap.jpg" 255,98,98,5
   palette "ui2/assets/white_m_3.tga" 255,157,153,151
-  palette "ui2/assets/white_m_3.jpg" 255,156,153,151
+  palette "ui2/assets/white_m_3.jpg" 255,157,153,150
   palette "ui2/assets/white_m_2.tga" 255,158,154,153
-  palette "ui2/assets/white_m_2.jpg" 255,157,153,153
+  palette "ui2/assets/white_m_2.jpg" 255,157,154,153
   palette "ui2/assets/white_f_1.tga" 255,163,159,157
   palette "ui2/assets/white_f_1.jpg" 255,162,158,157
   palette "ui2/assets/white_f_0.tga" 255,157,154,148
-  palette "ui2/assets/white_f_0.jpg" 255,156,154,148
+  palette "ui2/assets/white_f_0.jpg" 255,157,153,148
   palette "ui2/assets/utlogo.tga" 74,99,123,168
   palette "ui2/assets/utlogo.png" 74,99,123,168
   palette "ui2/assets/ut_menuback.jpg" 255,9,24,35
   palette "ui2/assets/unknownmap.jpg" 255,0,0,0
   palette "ui2/assets/ui_lines2.tga" 255,0,0,3
-  palette "ui2/assets/ui_lines2.jpg" 255,0,0,2
+  palette "ui2/assets/ui_lines2.jpg" 255,0,0,3
   palette "ui2/assets/ui_lines1.tga" 255,0,0,3
-  palette "ui2/assets/ui_lines1.jpg" 255,0,0,0
+  palette "ui2/assets/ui_lines1.jpg" 255,0,0,3
   palette "ui2/assets/tab_tr.tga" 151,31,31,31
   palette "ui2/assets/tab_tr.png" 151,31,31,31
   palette "ui2/assets/tab_on_tr.tga" 151,16,39,67
@@ -2415,43 +3742,43 @@ palettes/default
   palette "ui2/assets/scrollbar_arrow_dwn_a.tga" 72,230,230,230
   palette "ui2/assets/scrollbar_arrow_dwn_a.png" 72,230,230,230
   palette "ui2/assets/scrollbar.tga" 0,0,0,0
-  palette "ui2/assets/scrollbar.png" 0,0,0,0
+  palette "ui2/assets/scrollbar.jpg" 255,0,0,0
   palette "ui2/assets/red_m_3.tga" 255,135,110,108
-  palette "ui2/assets/red_m_3.jpg" 255,132,109,107
+  palette "ui2/assets/red_m_3.jpg" 255,133,110,107
   palette "ui2/assets/red_m_2.tga" 255,150,126,123
-  palette "ui2/assets/red_m_2.jpg" 255,147,124,124
+  palette "ui2/assets/red_m_2.jpg" 255,148,125,123
   palette "ui2/assets/red_f_1.tga" 255,147,104,105
-  palette "ui2/assets/red_f_1.jpg" 255,145,103,105
+  palette "ui2/assets/red_f_1.jpg" 255,146,103,105
   palette "ui2/assets/red_f_0.tga" 255,148,115,115
-  palette "ui2/assets/red_f_0.jpg" 255,144,114,115
+  palette "ui2/assets/red_f_0.jpg" 255,146,114,115
   palette "ui2/assets/quit_popup.jpg" 255,6,41,92
   palette "ui2/assets/password_bg.jpg" 255,13,44,87
   palette "ui2/assets/orange_m_3.tga" 255,166,127,115
-  palette "ui2/assets/orange_m_3.jpg" 255,163,126,114
+  palette "ui2/assets/orange_m_3.jpg" 255,164,126,114
   palette "ui2/assets/orange_m_2.tga" 255,164,126,114
-  palette "ui2/assets/orange_m_2.jpg" 255,162,124,113
+  palette "ui2/assets/orange_m_2.jpg" 255,162,125,114
   palette "ui2/assets/orange_f_1.tga" 255,159,124,116
-  palette "ui2/assets/orange_f_1.jpg" 255,157,122,116
+  palette "ui2/assets/orange_f_1.jpg" 255,158,123,115
   palette "ui2/assets/orange_f_0.tga" 255,162,128,119
-  palette "ui2/assets/orange_f_0.jpg" 255,160,127,117
+  palette "ui2/assets/orange_f_0.jpg" 255,161,127,118
   palette "ui2/assets/olive_m_3.tga" 255,130,127,121
-  palette "ui2/assets/olive_m_3.jpg" 255,128,127,119
+  palette "ui2/assets/olive_m_3.jpg" 255,130,127,120
   palette "ui2/assets/olive_m_2.tga" 255,134,130,122
-  palette "ui2/assets/olive_m_2.jpg" 255,132,129,121
+  palette "ui2/assets/olive_m_2.jpg" 255,133,129,122
   palette "ui2/assets/olive_f_1.tga" 255,127,123,114
-  palette "ui2/assets/olive_f_1.jpg" 255,125,123,112
+  palette "ui2/assets/olive_f_1.jpg" 255,126,122,114
   palette "ui2/assets/olive_f_0.tga" 255,129,126,120
-  palette "ui2/assets/olive_f_0.jpg" 255,128,125,120
+  palette "ui2/assets/olive_f_0.jpg" 255,128,126,120
   palette "ui2/assets/na.tga" 79,255,255,255
   palette "ui2/assets/na.png" 79,255,255,255
   palette "ui2/assets/jump_m_3.tga" 255,128,113,124
-  palette "ui2/assets/jump_m_3.jpg" 255,126,113,121
+  palette "ui2/assets/jump_m_3.jpg" 255,127,113,122
   palette "ui2/assets/jump_m_2.tga" 255,142,129,139
-  palette "ui2/assets/jump_m_2.jpg" 255,141,128,137
+  palette "ui2/assets/jump_m_2.jpg" 255,141,128,138
   palette "ui2/assets/jump_f_1.tga" 255,133,118,134
-  palette "ui2/assets/jump_f_1.jpg" 255,131,118,132
+  palette "ui2/assets/jump_f_1.jpg" 255,132,118,133
   palette "ui2/assets/jump_f_0.tga" 255,127,115,127
-  palette "ui2/assets/jump_f_0.jpg" 255,126,115,125
+  palette "ui2/assets/jump_f_0.jpg" 255,127,115,126
   palette "ui2/assets/ingame_bg_tr.tga" 160,4,25,73
   palette "ui2/assets/ingame_bg_tr.png" 160,4,25,73
   palette "ui2/assets/ingame_bg_options_tr.tga" 160,7,39,83
@@ -2461,45 +3788,45 @@ palettes/default
   palette "ui2/assets/ingame_bg2_tr.png" 160,8,43,94
   palette "ui2/assets/fs_sid_logo.jpg" 255,56,56,56
   palette "ui2/assets/free_m_3.tga" 255,116,134,117
-  palette "ui2/assets/free_m_3.jpg" 255,116,132,118
+  palette "ui2/assets/free_m_3.jpg" 255,116,133,116
   palette "ui2/assets/free_m_2.tga" 255,141,155,137
-  palette "ui2/assets/free_m_2.jpg" 255,141,153,136
+  palette "ui2/assets/free_m_2.jpg" 255,141,154,136
   palette "ui2/assets/free_f_1.tga" 255,104,132,112
-  palette "ui2/assets/free_f_1.jpg" 255,104,130,111
+  palette "ui2/assets/free_f_1.jpg" 255,104,131,111
   palette "ui2/assets/free_f_0.tga" 255,113,132,116
-  palette "ui2/assets/free_f_0.jpg" 255,113,131,116
+  palette "ui2/assets/free_f_0.jpg" 255,113,131,115
   palette "ui2/assets/desert_m_3.tga" 255,160,146,138
-  palette "ui2/assets/desert_m_3.jpg" 255,159,145,137
+  palette "ui2/assets/desert_m_3.jpg" 255,159,145,138
   palette "ui2/assets/desert_m_2.tga" 255,151,140,133
-  palette "ui2/assets/desert_m_2.jpg" 255,150,139,131
+  palette "ui2/assets/desert_m_2.jpg" 255,150,139,133
   palette "ui2/assets/desert_f_1.tga" 255,143,133,126
   palette "ui2/assets/desert_f_1.jpg" 255,142,132,125
   palette "ui2/assets/desert_f_0.tga" 255,144,133,126
-  palette "ui2/assets/desert_f_0.jpg" 255,143,132,124
+  palette "ui2/assets/desert_f_0.jpg" 255,144,133,125
   palette "ui2/assets/cowboy_m_3.tga" 255,151,147,145
   palette "ui2/assets/cowboy_m_3.jpg" 255,150,147,145
   palette "ui2/assets/cowboy_m_2.tga" 255,158,154,152
   palette "ui2/assets/cowboy_m_2.jpg" 255,157,154,151
   palette "ui2/assets/cowboy_f_1.tga" 255,153,150,148
-  palette "ui2/assets/cowboy_f_1.jpg" 255,153,150,148
+  palette "ui2/assets/cowboy_f_1.jpg" 255,153,149,148
   palette "ui2/assets/cowboy_f_0.tga" 255,145,142,140
-  palette "ui2/assets/cowboy_f_0.jpg" 255,144,141,140
+  palette "ui2/assets/cowboy_f_0.jpg" 255,145,141,140
   palette "ui2/assets/blu_m_3.tga" 255,115,114,129
-  palette "ui2/assets/blu_m_3.jpg" 255,115,113,127
+  palette "ui2/assets/blu_m_3.jpg" 255,115,114,128
   palette "ui2/assets/blu_m_2.tga" 255,125,126,146
-  palette "ui2/assets/blu_m_2.jpg" 255,125,125,142
+  palette "ui2/assets/blu_m_2.jpg" 255,125,126,144
   palette "ui2/assets/blu_f_1.tga" 255,115,119,142
-  palette "ui2/assets/blu_f_1.jpg" 255,115,118,139
+  palette "ui2/assets/blu_f_1.jpg" 255,115,118,140
   palette "ui2/assets/blu_f_0.tga" 255,114,119,143
-  palette "ui2/assets/blu_f_0.jpg" 255,115,119,141
+  palette "ui2/assets/blu_f_0.jpg" 255,114,119,141
   palette "ui2/assets/black_m_3.tga" 255,125,121,119
-  palette "ui2/assets/black_m_3.jpg" 255,123,119,118
+  palette "ui2/assets/black_m_3.jpg" 255,124,120,118
   palette "ui2/assets/black_m_2.tga" 255,130,127,126
-  palette "ui2/assets/black_m_2.jpg" 255,128,126,124
+  palette "ui2/assets/black_m_2.jpg" 255,129,127,125
   palette "ui2/assets/black_f_1.tga" 255,120,115,114
-  palette "ui2/assets/black_f_1.jpg" 255,119,115,113
+  palette "ui2/assets/black_f_1.jpg" 255,120,115,113
   palette "ui2/assets/black_f_0.tga" 255,114,112,111
-  palette "ui2/assets/black_f_0.jpg" 255,114,111,110
+  palette "ui2/assets/black_f_0.jpg" 255,114,111,111
   palette "ui2/assets/backscreen.jpg" 255,16,28,46
   palette "ui2/assets/backarrow_on.tga" 197,76,102,166
   palette "ui2/assets/backarrow_on.png" 197,76,102,166
@@ -2528,11 +3855,11 @@ palettes/default
   palette "ui/assets/thefallen.tga" 37,213,213,212
   palette "ui/assets/thefallen.png" 37,213,213,212
   palette "ui/assets/teamarenaimage2.tga" 255,61,52,55
-  palette "ui/assets/teamarenaimage2.jpg" 255,62,52,55
+  palette "ui/assets/teamarenaimage2.jpg" 255,61,52,55
   palette "ui/assets/teamarenaimage.tga" 158,129,120,118
   palette "ui/assets/teamarenaimage.png" 158,129,120,118
   palette "ui/assets/teamarena.tga" 255,192,192,192
-  palette "ui/assets/teamarena.jpg" 255,191,191,191
+  palette "ui/assets/teamarena.jpg" 255,192,192,192
   palette "ui/assets/stroggs_name_alt.tga" 24,246,246,246
   palette "ui/assets/stroggs_name_alt.png" 24,246,246,246
   palette "ui/assets/stroggs_name.tga" 54,166,166,166
@@ -2570,7 +3897,7 @@ palettes/default
   palette "ui/assets/scrollbar.tga" 84,19,72,105
   palette "ui/assets/scrollbar.png" 84,19,72,105
   palette "ui/assets/screen02.tga" 255,27,27,27
-  palette "ui/assets/screen02.jpg" 255,28,28,28
+  palette "ui/assets/screen02.jpg" 255,27,27,27
   palette "ui/assets/score.tga" 255,88,88,88
   palette "ui/assets/score.jpg" 255,88,88,88
   palette "ui/assets/rightbutton.tga" 195,87,81,77
@@ -2578,13 +3905,13 @@ palettes/default
   palette "ui/assets/retrieve.tga" 133,158,0,249
   palette "ui/assets/retrieve.png" 133,158,0,249
   palette "ui/assets/redchip.tga" 255,187,0,0
-  palette "ui/assets/redchip.jpg" 255,168,16,14
+  palette "ui/assets/redchip.jpg" 255,181,9,10
   palette "ui/assets/red_box.tga" 255,255,0,0
-  palette "ui/assets/red_box.jpg" 255,255,2,4
+  palette "ui/assets/red_box.jpg" 255,254,0,2
   palette "ui/assets/radial.tga" 255,14,38,58
-  palette "ui/assets/radial.jpg" 255,17,39,58
+  palette "ui/assets/radial.jpg" 255,15,38,58
   palette "ui/assets/q3imagepage.tga" 255,26,4,4
-  palette "ui/assets/q3imagepage.jpg" 255,26,6,6
+  palette "ui/assets/q3imagepage.jpg" 255,26,5,5
   palette "ui/assets/playerpi.tga" 56,110,94,83
   palette "ui/assets/playerpi.png" 56,110,94,83
   palette "ui/assets/playerpatriot.tga" 64,126,105,97
@@ -2608,7 +3935,7 @@ palettes/default
   palette "ui/assets/menuback_c.tga" 174,51,53,62
   palette "ui/assets/menuback_c.png" 174,51,53,62
   palette "ui/assets/menuback_b.tga" 255,41,112,155
-  palette "ui/assets/menuback_b.jpg" 255,43,112,152
+  palette "ui/assets/menuback_b.jpg" 255,41,112,154
   palette "ui/assets/menuback_a.tga" 255,5,10,12
   palette "ui/assets/menuback_a.jpg" 255,6,10,12
   palette "ui/assets/medal_victory.tga" 93,21,229,88
@@ -2678,7 +4005,7 @@ palettes/default
   palette "ui/assets/halfgradleft.tga" 121,255,255,255
   palette "ui/assets/halfgradleft.png" 121,255,255,255
   palette "ui/assets/green_box.tga" 255,42,255,0
-  palette "ui/assets/green_box.jpg" 255,39,252,0
+  palette "ui/assets/green_box.jpg" 255,43,254,1
   palette "ui/assets/gradientbar2.tga" 133,255,255,255
   palette "ui/assets/gradientbar2.png" 133,255,255,255
   palette "ui/assets/framebutton.tga" 65,49,46,46
@@ -2708,7 +4035,7 @@ palettes/default
   palette "ui/assets/controls.tga" 255,61,61,61
   palette "ui/assets/controls.jpg" 255,62,62,62
   palette "ui/assets/console02.tga" 255,17,14,15
-  palette "ui/assets/console02.jpg" 255,16,14,15
+  palette "ui/assets/console02.jpg" 255,17,14,15
   palette "ui/assets/camp.tga" 104,212,214,0
   palette "ui/assets/camp.png" 104,212,214,0
   palette "ui/assets/button_red.tga" 249,95,22,29
@@ -2716,9 +4043,9 @@ palettes/default
   palette "ui/assets/button_back.tga" 249,255,255,255
   palette "ui/assets/button_back.png" 249,255,255,255
   palette "ui/assets/bluechip.tga" 255,0,21,183
-  palette "ui/assets/bluechip.jpg" 255,13,23,177
+  palette "ui/assets/bluechip.jpg" 255,7,22,182
   palette "ui/assets/blue_box.tga" 255,6,0,255
-  palette "ui/assets/blue_box.jpg" 255,0,0,253
+  palette "ui/assets/blue_box.jpg" 255,6,0,252
   palette "ui/assets/blu08.tga" 10,128,121,165
   palette "ui/assets/blu08.png" 10,128,121,165
   palette "ui/assets/blu07.tga" 9,136,128,173
@@ -2738,7 +4065,7 @@ palettes/default
   palette "ui/assets/backscreen.tga" 255,44,31,30
   palette "ui/assets/backscreen.jpg" 255,44,31,31
   palette "ui/assets/background3.tga" 255,18,12,18
-  palette "ui/assets/background3.jpg" 255,19,12,19
+  palette "ui/assets/background3.jpg" 255,18,12,18
   palette "ui/assets/backarrow_alt.tga" 204,142,81,79
   palette "ui/assets/backarrow_alt.png" 204,142,81,79
   palette "ui/assets/backarrow.tga" 204,74,66,63
@@ -2747,16 +4074,18 @@ palettes/default
   palette "ui/assets/assault.png" 65,4,226,0
   palette "ui/assets/3_cursor3.tga" 37,91,86,85
   palette "ui/assets/3_cursor3.png" 37,91,86,85
+  palette "textures/wood/wood037.jpg" 255,54,47,38
+  palette "textures/words/pwnt.jpg" 255,144,144,113
   palette "textures/wvwq3dm7/wvw_tree.tga" 255,109,115,88
-  palette "textures/wvwq3dm7/wvw_tree.jpg" 255,110,114,91
+  palette "textures/wvwq3dm7/wvw_tree.jpg" 255,109,115,88
   palette "textures/wvwq3dm7/wvw_splash.tga" 0,0,0,0
-  palette "textures/wvwq3dm7/wvw_splash.png" 0,0,0,0
+  palette "textures/wvwq3dm7/wvw_splash.jpg" 255,22,36,41
   palette "textures/wvwq3dm7/wvw7_weapflare.tga" 0,0,0,0
-  palette "textures/wvwq3dm7/wvw7_weapflare.png" 0,0,0,0
+  palette "textures/wvwq3dm7/wvw7_weapflare.jpg" 255,20,20,19
   palette "textures/wvwq3dm7/water04.tga" 122,121,142,146
   palette "textures/wvwq3dm7/water04.png" 122,121,142,146
   palette "textures/wvwq3dm7/trunk_id.tga" 255,32,24,17
-  palette "textures/wvwq3dm7/trunk_id.jpg" 255,29,25,16
+  palette "textures/wvwq3dm7/trunk_id.jpg" 255,31,24,17
   palette "textures/wvwq3dm7/rock2dirt.jpg" 255,87,80,72
   palette "textures/wvwq3dm7/rock04.jpg" 255,57,56,50
   palette "textures/wvwq3dm7/grass1.jpg" 255,74,64,33
@@ -2767,25 +4096,23 @@ palettes/default
   palette "textures/wvwq3dm7/crow1.tga" 76,43,63,64
   palette "textures/wvwq3dm7/crow1.png" 76,43,63,64
   palette "textures/wvwq3dm7/branch2.tga" 255,38,40,48
-  palette "textures/wvwq3dm7/branch2.jpg" 255,42,41,49
+  palette "textures/wvwq3dm7/branch2.jpg" 255,39,41,49
   palette "textures/wvwq3dm7/bark8.jpg" 255,137,131,111
   palette "textures/wvwq3dm7/bark22.jpg" 255,83,74,73
   palette "textures/wvwq3dm7/bark15.jpg" 255,125,127,125
   palette "textures/wvwq3dm7/bark1.jpg" 255,154,154,154
-  palette "textures/words/pwnt.jpg" 255,144,144,113
   palette "textures/urban_terror8/carpet1.jpg" 255,53,24,20
+  palette "textures/urban_terror6/floor02.jpg" 255,103,70,31
   palette "textures/ut_subway/subway_sky_blend.tga" 255,133,144,146
-  palette "textures/ut_subway/subway_sky_blend.jpg" 255,130,142,138
+  palette "textures/ut_subway/subway_sky_blend.jpg" 255,135,145,146
   palette "textures/urban_terror2/wood4a.jpg" 255,58,42,29
   palette "textures/urban_terror2/wood3.tga" 255,115,57,28
   palette "textures/urban_terror2/wood3.jpg" 255,115,57,28
   palette "textures/urban_terror2/wood1.jpg" 255,186,120,67
   palette "textures/urban_terror2/metal.tga" 145,60,55,51
   palette "textures/urban_terror2/metal.png" 145,60,55,51
-  palette "textures/urban_terror2/metal.jpg" 255,59,55,51
-  palette "textures/urban_terror6/floor02.jpg" 255,103,70,31
   palette "textures/urban_terror/wood4a.tga" 255,58,42,29
-  palette "textures/urban_terror/wood4a.jpg" 255,60,41,27
+  palette "textures/urban_terror/wood4a.jpg" 255,59,41,29
   palette "textures/urban_objects/bk_fridge_side.jpg" 255,110,109,110
   palette "textures/urban_objects/bk_fridge_front.jpg" 255,100,101,102
   palette "textures/urban_objects/bk_cupboards2.jpg" 255,202,189,173
@@ -2796,6 +4123,12 @@ palettes/default
   palette "textures/urban_ground/carpet12.jpg" 255,107,96,90
   palette "textures/urban_floors/ww-marble01.jpg" 255,91,100,95
   palette "textures/urban_floors/ww-carpet02.jpg" 255,70,73,62
+  palette "textures/terrain_example/ter_rock3.tga" 255,66,64,61
+  palette "textures/terrain_example/ter_rock3.jpg" 255,66,64,61
+  palette "textures/terrain_example/ter_mud1.tga" 193,92,85,68
+  palette "textures/terrain_example/ter_mud1.png" 193,92,85,68
+  palette "textures/terrain_example/ter_moss1.tga" 233,63,73,48
+  palette "textures/terrain_example/ter_moss1.png" 233,63,73,48
   palette "textures/trees/wood_0027_roughness_2k.jpg" 255,135,135,135
   palette "textures/trees/wood_0027_color_2k.jpg" 255,148,147,147
   palette "textures/trees/pine_foliage_plane.png" 53,97,98,68
@@ -2824,77 +4157,53 @@ palettes/default
   palette "textures/trees/Bark004_2K_NormalGL.png" 255,128,129,228
   palette "textures/trees/Bark004_2K_Color.png" 255,152,141,132
   palette "textures/tim/tim11c_pulse1.tga" 255,21,20,7
-  palette "textures/tim/tim11c_pulse1.jpg" 255,20,21,8
+  palette "textures/tim/tim11c_pulse1.jpg" 255,21,20,7
   palette "textures/tim/symbol_redlt1_mask.tga" 255,15,14,14
-  palette "textures/tim/symbol_redlt1_mask.jpg" 255,15,14,15
+  palette "textures/tim/symbol_redlt1_mask.jpg" 255,15,14,14
   palette "textures/tim/symbol_redlt1.tga" 255,58,47,43
-  palette "textures/tim/symbol_redlt1.jpg" 255,58,48,44
+  palette "textures/tim/symbol_redlt1.jpg" 255,58,47,43
   palette "textures/tim/swirl_red.tga" 255,78,11,11
-  palette "textures/tim/swirl_red.jpg" 255,77,12,12
+  palette "textures/tim/swirl_red.jpg" 255,78,11,11
   palette "textures/tim/swirl_blue.tga" 255,0,68,125
-  palette "textures/tim/swirl_blue.jpg" 255,4,68,125
+  palette "textures/tim/swirl_blue.jpg" 255,2,68,125
   palette "textures/tim/rmetaltechgeomtrn.tga" 227,52,47,46
   palette "textures/tim/rmetaltechgeomtrn.png" 227,52,47,46
   palette "textures/tim/redmetalsupport2fline_glow.tga" 255,73,3,0
-  palette "textures/tim/redmetalsupport2fline_glow.jpg" 255,72,4,1
+  palette "textures/tim/redmetalsupport2fline_glow.jpg" 255,73,3,0
   palette "textures/tim/redmetalsupport2fline.tga" 115,103,97,86
   palette "textures/tim/redmetalsupport2fline.png" 115,103,97,86
   palette "textures/tim/rconcrete_ow.tga" 243,90,80,71
   palette "textures/tim/rconcrete_ow.png" 243,90,80,71
   palette "textures/tim/proto_zzztred.tga" 255,176,47,21
-  palette "textures/tim/proto_zzztred.jpg" 255,173,47,25
+  palette "textures/tim/proto_zzztred.jpg" 255,174,47,24
   palette "textures/tim/jumptower_top.tga" 255,69,53,46
-  palette "textures/tim/jumptower_top.jpg" 255,70,53,46
+  palette "textures/tim/jumptower_top.jpg" 255,69,53,46
   palette "textures/tim/jumptower_bottom.tga" 255,49,38,34
-  palette "textures/tim/jumptower_bottom.jpg" 255,48,38,35
+  palette "textures/tim/jumptower_bottom.jpg" 255,49,38,34
   palette "textures/tim/flagbase.tga" 243,85,78,71
   palette "textures/tim/flagbase.png" 243,85,78,71
-  palette "textures/terrain/pjrock9c.tga" 148,43,53,21
   palette "textures/terrain/pjrock9c.png" 148,43,53,21
-  palette "textures/terrain/pjrock12c.tga" 255,84,77,52
-  palette "textures/terrain/pjrock12c.jpg" 255,84,77,56
-  palette "textures/terrain/pjrock10c.tga" 255,193,165,140
-  palette "textures/terrain/pjrock10c.jpg" 255,193,164,141
+  palette "textures/terrain/pjrock12c.jpg" 255,84,77,52
+  palette "textures/terrain/pjrock10c.jpg" 255,193,165,140
   palette "textures/terrain/mpterrax_2.tga" 255,193,165,140
-  palette "textures/terrain/mpterrax_2.jpg" 255,193,164,141
+  palette "textures/terrain/mpterrax_2.jpg" 255,193,165,140
   palette "textures/terrain/mpterrax_1.tga" 255,84,77,52
-  palette "textures/terrain/mpterrax_1.jpg" 255,84,77,56
+  palette "textures/terrain/mpterrax_1.jpg" 255,84,77,52
   palette "textures/terrain/mpterrax_0.tga" 148,43,53,21
   palette "textures/terrain/mpterrax_0.png" 148,43,53,21
-  palette "textures/skin/tongue.tga" 255,130,74,64
-  palette "textures/skin/surface8.tga" 255,133,88,82
-  palette "textures/skin/skin7_teeth.tga" 255,98,71,68
-  palette "textures/skin/skin6thrust.tga" 255,104,47,39
-  palette "textures/skin/skin6thrust.jpg" 255,104,47,39
-  palette "textures/skin/skin6move.tga" 255,104,47,39
-  palette "textures/skin/skin6move.jpg" 255,104,47,39
-  palette "textures/skin/skin6.tga" 255,104,47,39
-  palette "textures/skin/skin5.tga" 255,141,64,45
-  palette "textures/skin/skin5.jpg" 255,141,64,45
-  palette "textures/skin/skin1.tga" 255,147,80,63
-  palette "textures/skin/skin1.jpg" 255,147,80,63
-  palette "textures/skin/pjwal2k.tga" 255,92,82,74
-  palette "textures/skin/pjwal2k.jpg" 255,92,82,74
-  palette "textures/skin/nibbles.tga" 23,165,98,82
+  palette "textures/terrain/mpterrax_0.jpg" 255,43,53,21
   palette "textures/skin/nibbles.png" 23,165,98,82
-  palette "textures/skin/chapthroat2.tga" 255,118,65,53
-  palette "textures/skin/chapthroat.tga" 255,125,68,54
-  palette "textures/skies2/nebula3.tga" 255,53,30,17
-  palette "textures/skies2/nebula3.jpg" 255,54,30,17
+  palette "textures/skin/chapthroatooz.png" 227,128,70,55
+  palette "textures/skies2/nebula3.jpg" 255,53,30,17
   palette "textures/skies2/nebula2.tga" 255,183,183,183
-  palette "textures/skies2/nebula2.jpg" 255,181,181,181
-  palette "textures/skies2/hell1.tga" 255,185,0,3
-  palette "textures/skies2/hell1.jpg" 255,185,2,5
-  palette "textures/skies2/ctf6skyb.tga" 255,16,22,23
-  palette "textures/skies2/ctf6skyb.jpg" 255,20,20,20
-  palette "textures/skies2/ctf6sky2b.tga" 255,19,19,19
+  palette "textures/skies2/nebula2.jpg" 255,182,182,182
+  palette "textures/skies2/hell1.jpg" 255,185,1,3
+  palette "textures/skies2/ctf6skyb.jpg" 255,16,22,24
   palette "textures/skies2/ctf6sky2b.jpg" 255,19,19,19
-  palette "textures/skies2/ctf6sky2.tga" 255,19,19,19
   palette "textures/skies2/ctf6sky2.jpg" 255,19,19,19
-  palette "textures/skies2/ctf6sky.tga" 255,25,18,14
-  palette "textures/skies2/ctf6sky.jpg" 255,21,19,19
-  palette "textures/skies2/clouds2.tga" 255,205,205,205
-  palette "textures/skies2/clouds2.jpg" 255,207,207,207
+  palette "textures/skies2/ctf6sky.jpg" 255,26,18,15
+  palette "textures/skies2/clouds2.jpg" 255,206,206,206
+  palette "textures/skies2/clouds.jpg" 255,182,182,182
   palette "textures/tig_ra3/wood_pnl.jpg" 255,50,42,26
   palette "textures/tig_ra3/trim_wlpr_drtyckred.jpg" 255,53,39,23
   palette "textures/tig_ra3/trim_wallpaper_drty.jpg" 255,55,40,24
@@ -2974,145 +4283,81 @@ palettes/default
   palette "textures/tig_ra3/bdirt.jpg" 255,78,61,52
   palette "textures/tig_ra3/ancient3b.jpg" 255,63,53,38
   palette "textures/tig_ra3/Tatami.jpg" 255,229,226,198
-  palette "textures/stone/rockwall.tga" 255,67,50,51
-  palette "textures/stone/rockwall.jpg" 255,67,50,51
-  palette "textures/stone/pjrock9c.tga" 255,43,53,21
-  palette "textures/stone/pjrock9c.jpg" 255,46,51,27
+  palette "textures/stone/pjrock9c.jpg" 255,43,53,21
   palette "textures/stone/pjrock9c copy.tga" 255,43,53,21
-  palette "textures/stone/pjrock9c copy.jpg" 255,46,51,27
+  palette "textures/stone/pjrock9c copy.jpg" 255,43,53,21
+  palette "textures/stone/pjrock9b_2.jpg" 255,71,72,67
   palette "textures/stone/pjrock9b_2 copy.tga" 255,72,71,69
-  palette "textures/stone/pjrock9b_2 copy.jpg" 255,71,71,71
-  palette "textures/stone/pjrock912c.tga" 255,56,60,31
-  palette "textures/stone/pjrock912c.jpg" 255,56,59,36
-  palette "textures/stone/pjrock7.tga" 255,64,48,46
-  palette "textures/stone/pjrock7.jpg" 255,67,46,51
+  palette "textures/stone/pjrock9b_2 copy.jpg" 255,71,72,67
+  palette "textures/stone/pjrock912c.jpg" 255,56,60,30
+  palette "textures/stone/pjrock7.jpg" 255,64,48,46
   palette "textures/stone/pjrock7 copy.tga" 255,64,48,46
-  palette "textures/stone/pjrock7 copy.jpg" 255,67,46,51
-  palette "textures/stone/pjrock6.tga" 255,72,68,33
-  palette "textures/stone/pjrock6.jpg" 255,72,68,33
-  palette "textures/stone/pjrock5.tga" 255,68,51,49
-  palette "textures/stone/pjrock5.jpg" 255,70,50,54
+  palette "textures/stone/pjrock7 copy.jpg" 255,64,48,46
+  palette "textures/stone/pjrock5.jpg" 255,68,51,50
   palette "textures/stone/pjrock5 copy.tga" 255,68,51,49
-  palette "textures/stone/pjrock5 copy.jpg" 255,70,50,54
-  palette "textures/stone/pjrock21.tga" 255,87,61,41
-  palette "textures/stone/pjrock21.jpg" 255,87,61,41
-  palette "textures/stone/pjrock17.tga" 255,54,52,31
-  palette "textures/stone/pjrock17.jpg" 255,54,52,31
-  palette "textures/stone/pjrock16.tga" 255,56,40,21
-  palette "textures/stone/pjrock16.jpg" 255,56,40,21
-  palette "textures/stone/pjrock15.tga" 255,63,49,37
-  palette "textures/stone/pjrock15.jpg" 255,62,49,38
+  palette "textures/stone/pjrock5 copy.jpg" 255,68,51,50
+  palette "textures/stone/pjrock15.jpg" 255,63,49,37
   palette "textures/stone/pjrock15 copy.tga" 255,63,49,37
-  palette "textures/stone/pjrock15 copy.jpg" 255,62,49,38
-  palette "textures/stone/pjrock12c.tga" 255,124,118,101
-  palette "textures/stone/pjrock12c.jpg" 255,125,117,100
+  palette "textures/stone/pjrock15 copy.jpg" 255,63,49,37
+  palette "textures/stone/pjrock12c.jpg" 255,84,77,52
   palette "textures/stone/pjrock12c copy.tga" 255,84,77,52
   palette "textures/stone/pjrock12c copy.jpg" 255,84,77,52
+  palette "textures/stone/pjrock12b_2.jpg" 255,106,110,115
   palette "textures/stone/pjrock12b_2 copy.tga" 255,106,110,116
-  palette "textures/stone/pjrock12b_2 copy.jpg" 255,109,109,112
-  palette "textures/stone/pjrock1210c.tga" 255,105,90,66
-  palette "textures/stone/pjrock1210c.jpg" 255,105,89,67
-  palette "textures/stone/pjrock10c.tga" 255,193,165,140
-  palette "textures/stone/pjrock10c.jpg" 255,193,164,141
+  palette "textures/stone/pjrock12b_2 copy.jpg" 255,106,110,115
+  palette "textures/stone/pjrock1210c.jpg" 255,105,90,65
+  palette "textures/stone/pjrock10c.jpg" 255,112,95,71
   palette "textures/stone/pjrock10c copy.tga" 255,112,95,71
-  palette "textures/stone/pjrock10c copy.jpg" 255,112,95,72
+  palette "textures/stone/pjrock10c copy.jpg" 255,112,95,71
   palette "textures/stone/pjrock10c copy 3.tga" 255,112,95,71
-  palette "textures/stone/pjrock10c copy 3.jpg" 255,112,95,72
+  palette "textures/stone/pjrock10c copy 3.jpg" 255,112,95,71
   palette "textures/stone/pjrock10c copy 2.tga" 255,112,95,71
-  palette "textures/stone/pjrock10c copy 2.jpg" 255,112,95,72
+  palette "textures/stone/pjrock10c copy 2.jpg" 255,112,95,71
+  palette "textures/stone/pjrock10b_2.jpg" 255,186,189,195
   palette "textures/stone/pjrock10b_2 copy.tga" 255,186,190,196
-  palette "textures/stone/pjrock10b_2 copy.jpg" 255,189,189,189
-  palette "textures/stone/pjrock1.tga" 255,66,47,44
-  palette "textures/stone/pjrock1.jpg" 255,66,47,44
-  palette "textures/rota3dm2_trims/grate_grey2.jpg" 255,19,19,19
-  palette "textures/skies/toxicbluesky.tga" 255,1,1,1
+  palette "textures/stone/pjrock10b_2 copy.jpg" 255,186,189,195
   palette "textures/skies/toxicbluesky.jpg" 255,1,1,1
-  palette "textures/skies/topclouds.tga" 255,12,24,26
-  palette "textures/skies/topclouds.jpg" 255,12,24,26
-  palette "textures/skies/proto_sky2.tga" 255,17,17,17
-  palette "textures/skies/proto_sky2.jpg" 255,18,18,18
-  palette "textures/skies/proto_sky.tga" 255,4,3,3
-  palette "textures/skies/proto_sky.jpg" 255,5,5,5
+  palette "textures/skies/proto_sky2.jpg" 255,17,17,17
+  palette "textures/skies/proto_sky.jpg" 255,4,3,3
   palette "textures/skies/portalfog.tga" 255,184,184,184
   palette "textures/skies/portalfog.jpg" 255,184,184,184
-  palette "textures/skies/pjbasesky.tga" 255,61,70,97
-  palette "textures/skies/pjbasesky.jpg" 255,61,70,97
-  palette "textures/skies/nightsky_nocloud.tga" 0,0,0,0
-  palette "textures/skies/nightsky_nocloud.png" 0,0,0,0
-  palette "textures/skies/nightsky.tga" 255,133,133,133
+  palette "textures/skies/nightsky_nocloud.jpg" 255,19,19,24
   palette "textures/skies/nightsky.jpg" 255,133,133,133
-  palette "textures/skies/killsky_2.tga" 255,20,7,1
-  palette "textures/skies/killsky_1.tga" 255,54,0,0
-  palette "textures/skies/intelredclouds.tga" 255,97,83,55
-  palette "textures/skies/inteldimclouds.tga" 255,75,38,5
-  palette "textures/skies/dimclouds.tga" 255,43,43,43
-  palette "textures/skies/dimclouds.jpg" 255,43,43,43
-  palette "textures/skies/bluedimclouds.tga" 255,56,31,15
-  palette "textures/skies/bluedimclouds.jpg" 255,56,31,15
-  palette "textures/skies/blacksky.tga" 255,0,0,0
   palette "textures/skies/blacksky.jpg" 255,0,0,0
-  palette "textures/rota3dm2_trim/u_trm16_1.jpg" 255,64,63,62
-  palette "textures/rota3dm2_bmtls/e6dmetal_darker.jpg" 255,35,35,35
-  palette "textures/rota3ctf1_walls/wall_12or_plain.jpg" 255,116,54,31
-  palette "textures/rota3ctf1_walls/wall_12e.jpg" 255,59,60,60
-  palette "textures/rota3ctf1_walls/wall_12d.jpg" 255,59,61,61
-  palette "textures/rota3ctf1_walls/wall_12_plain.jpg" 255,59,61,61
-  palette "textures/rota3ctf1_walls/ubase_pan_trix.jpg" 255,61,63,63
-  palette "textures/rota3ctf1_walls/ubase_pan4.jpg" 255,55,54,54
-  palette "textures/rota3ctf1_walls/ubase_holes.jpg" 255,49,51,52
-  palette "textures/rota3ctf1_walls/u_base_orange1.jpg" 255,123,53,28
-  palette "textures/rota3ctf1_walls/u_45deg.jpg" 255,61,63,63
-  palette "textures/rota3ctf1_trim/ubase_trim7.jpg" 255,62,61,61
-  palette "textures/rota3ctf1_trim/ubase_trim45.jpg" 255,52,53,53
-  palette "textures/rota3ctf1_trim/ubase_trim4.jpg" 255,48,48,47
-  palette "textures/rota3ctf1_trim/ubase_trim.jpg" 255,52,53,53
-  palette "textures/rota3ctf1_trim/u_trm8_6.jpg" 255,93,48,31
-  palette "textures/rota3ctf1_trim/u_trm8_5.jpg" 255,58,57,56
-  palette "textures/rota3ctf1_trim/u_trm8_3.jpg" 255,52,54,55
-  palette "textures/rota3ctf1_trim/u_trm8_2.jpg" 255,56,59,60
-  palette "textures/rota3ctf1_trim/u_trm64_1.jpg" 255,51,52,53
-  palette "textures/rota3ctf1_trim/u_trm16_2.jpg" 255,64,63,62
-  palette "textures/rota3ctf1_trim/u_trm16_1.jpg" 255,64,63,62
-  palette "textures/rota3ctf1_trim/r_trim_22l.jpg" 255,40,45,45
-  palette "textures/rota3ctf1_trim/r_trim_22j.jpg" 255,43,48,49
-  palette "textures/rota3ctf1_trim/r_trim_22i.jpg" 255,51,53,53
-  palette "textures/rota3ctf1_trim/r_trim_22h.jpg" 255,50,53,54
-  palette "textures/rota3ctf1_trim/r_trim_17b.jpg" 255,83,58,50
-  palette "textures/rota3ctf1_trim/r_trim_16.jpg" 255,60,63,64
   palette "textures/sfx2/ven_beam.tga" 10,18,30,28
   palette "textures/sfx2/ven_beam.png" 10,18,30,28
   palette "textures/sfx2/tread2.tga" 255,64,54,45
-  palette "textures/sfx2/tread2.jpg" 255,63,55,49
+  palette "textures/sfx2/tread2.jpg" 255,64,55,46
   palette "textures/sfx2/tread.tga" 255,46,39,33
-  palette "textures/sfx2/tread.jpg" 255,45,40,36
+  palette "textures/sfx2/tread.jpg" 255,46,40,33
   palette "textures/sfx2/swirl_r2.tga" 255,14,0,0
-  palette "textures/sfx2/swirl_r2.jpg" 255,14,1,3
+  palette "textures/sfx2/swirl_r2.jpg" 255,14,1,1
   palette "textures/sfx2/swirl_r1.tga" 255,14,0,2
-  palette "textures/sfx2/swirl_r1.jpg" 255,14,1,3
+  palette "textures/sfx2/swirl_r1.jpg" 255,14,1,2
   palette "textures/sfx2/swirl_b2.tga" 255,0,12,14
-  palette "textures/sfx2/swirl_b2.jpg" 255,2,13,12
+  palette "textures/sfx2/swirl_b2.jpg" 255,1,12,14
   palette "textures/sfx2/swirl_b1.tga" 255,0,10,14
-  palette "textures/sfx2/swirl_b1.jpg" 255,2,10,13
+  palette "textures/sfx2/swirl_b1.jpg" 255,1,10,14
   palette "textures/sfx2/screen01.tga" 255,28,28,28
   palette "textures/sfx2/screen01.jpg" 255,28,28,28
   palette "textures/sfx2/rlaunch2.tga" 255,12,2,0
-  palette "textures/sfx2/rlaunch2.jpg" 255,11,2,2
+  palette "textures/sfx2/rlaunch2.jpg" 255,11,2,1
   palette "textures/sfx2/rlaunch.tga" 255,26,0,0
-  palette "textures/sfx2/rlaunch.jpg" 255,27,2,3
+  palette "textures/sfx2/rlaunch.jpg" 255,26,2,2
   palette "textures/sfx2/redgoal2.tga" 255,54,9,3
-  palette "textures/sfx2/redgoal2.jpg" 255,54,12,9
+  palette "textures/sfx2/redgoal2.jpg" 255,54,11,7
   palette "textures/sfx2/r_fight03.tga" 255,66,9,9
-  palette "textures/sfx2/r_fight03.jpg" 255,69,12,13
+  palette "textures/sfx2/r_fight03.jpg" 255,67,11,11
   palette "textures/sfx2/r_fight02.tga" 255,37,1,1
-  palette "textures/sfx2/r_fight02.jpg" 255,35,4,6
+  palette "textures/sfx2/r_fight02.jpg" 255,37,4,4
   palette "textures/sfx2/r_fight01.tga" 255,71,15,0
-  palette "textures/sfx2/r_fight01.jpg" 255,73,19,11
+  palette "textures/sfx2/r_fight01.jpg" 255,73,18,7
   palette "textures/sfx2/ouchfog.tga" 255,247,231,184
-  palette "textures/sfx2/ouchfog.jpg" 255,245,231,184
+  palette "textures/sfx2/ouchfog.jpg" 255,247,231,184
   palette "textures/sfx2/nlaunch2.tga" 255,12,9,0
-  palette "textures/sfx2/nlaunch2.jpg" 255,10,9,2
+  palette "textures/sfx2/nlaunch2.jpg" 255,11,8,1
   palette "textures/sfx2/nlaunch.tga" 255,31,10,0
-  palette "textures/sfx2/nlaunch.jpg" 255,32,11,6
+  palette "textures/sfx2/nlaunch.jpg" 255,32,11,4
   palette "textures/sfx2/launchpad03.tga" 132,55,51,48
   palette "textures/sfx2/launchpad03.png" 132,55,51,48
   palette "textures/sfx2/jumportal02.tga" 107,66,64,63
@@ -3122,19 +4367,19 @@ palettes/default
   palette "textures/sfx2/jumpadx.tga" 200,96,94,88
   palette "textures/sfx2/jumpadx.png" 200,96,94,88
   palette "textures/sfx2/jumpadtrim.tga" 255,79,85,85
-  palette "textures/sfx2/jumpadtrim.jpg" 255,83,83,83
+  palette "textures/sfx2/jumpadtrim.jpg" 255,79,85,86
   palette "textures/sfx2/jumpadr2.tga" 255,12,0,0
-  palette "textures/sfx2/jumpadr2.jpg" 255,12,1,1
+  palette "textures/sfx2/jumpadr2.jpg" 255,12,0,1
   palette "textures/sfx2/jumpadr.tga" 255,101,6,0
-  palette "textures/sfx2/jumpadr.jpg" 255,100,8,6
+  palette "textures/sfx2/jumpadr.jpg" 255,101,7,3
   palette "textures/sfx2/jumpadn2.tga" 255,12,8,0
   palette "textures/sfx2/jumpadn2.jpg" 255,12,8,1
   palette "textures/sfx2/jumpadn.tga" 255,101,36,0
-  palette "textures/sfx2/jumpadn.jpg" 255,99,37,6
+  palette "textures/sfx2/jumpadn.jpg" 255,101,36,4
   palette "textures/sfx2/jumpadb2.tga" 255,0,8,13
-  palette "textures/sfx2/jumpadb2.jpg" 255,1,8,13
+  palette "textures/sfx2/jumpadb2.jpg" 255,0,8,13
   palette "textures/sfx2/jumpadb.tga" 255,0,85,124
-  palette "textures/sfx2/jumpadb.jpg" 255,7,86,124
+  palette "textures/sfx2/jumpadb.jpg" 255,4,85,124
   palette "textures/sfx2/jumpad05.tga" 200,112,108,101
   palette "textures/sfx2/jumpad05.png" 200,112,108,101
   palette "textures/sfx2/jumpad03.tga" 200,64,55,45
@@ -3146,161 +4391,143 @@ palettes/default
   palette "textures/sfx2/fan01.tga" 68,48,45,38
   palette "textures/sfx2/fan01.png" 68,48,45,38
   palette "textures/sfx2/dm3padwallglow_red.tga" 255,7,2,3
-  palette "textures/sfx2/dm3padwallglow_red.jpg" 255,6,2,4
+  palette "textures/sfx2/dm3padwallglow_red.jpg" 255,7,2,3
   palette "textures/sfx2/dm3padwallglow_ntl.tga" 255,7,6,2
-  palette "textures/sfx2/dm3padwallglow_ntl.jpg" 255,6,6,3
+  palette "textures/sfx2/dm3padwallglow_ntl.jpg" 255,7,6,2
   palette "textures/sfx2/dm3padwall_red.tga" 255,57,46,40
-  palette "textures/sfx2/dm3padwall_red.jpg" 255,55,45,44
+  palette "textures/sfx2/dm3padwall_red.jpg" 255,57,46,40
   palette "textures/sfx2/detail2.tga" 255,105,105,105
-  palette "textures/sfx2/detail2.jpg" 255,108,108,108
+  palette "textures/sfx2/detail2.jpg" 255,104,104,104
   palette "textures/sfx2/bluegoal2.tga" 255,3,37,53
-  palette "textures/sfx2/bluegoal2.jpg" 255,12,37,51
+  palette "textures/sfx2/bluegoal2.jpg" 255,9,37,53
   palette "textures/sfx2/blue_edge.tga" 255,0,26,102
-  palette "textures/sfx2/blue_edge.jpg" 255,4,25,103
+  palette "textures/sfx2/blue_edge.jpg" 255,1,25,101
   palette "textures/sfx2/blaunch2.tga" 255,0,10,12
-  palette "textures/sfx2/blaunch2.jpg" 255,2,10,10
+  palette "textures/sfx2/blaunch2.jpg" 255,1,10,11
   palette "textures/sfx2/blaunch.tga" 255,0,15,26
-  palette "textures/sfx2/blaunch.jpg" 255,4,16,26
+  palette "textures/sfx2/blaunch.jpg" 255,3,15,26
   palette "textures/sfx2/beam01.tga" 255,46,38,35
-  palette "textures/sfx2/beam01.jpg" 255,46,38,36
+  palette "textures/sfx2/beam01.jpg" 255,46,38,35
   palette "textures/sfx2/b_smack03.tga" 255,0,0,44
-  palette "textures/sfx2/b_smack03.jpg" 255,4,1,45
+  palette "textures/sfx2/b_smack03.jpg" 255,2,1,45
   palette "textures/sfx2/b_smack02.tga" 255,0,12,62
-  palette "textures/sfx2/b_smack02.jpg" 255,5,13,67
+  palette "textures/sfx2/b_smack02.jpg" 255,3,13,63
   palette "textures/sfx2/b_smack01.tga" 255,0,22,87
-  palette "textures/sfx2/b_smack01.jpg" 255,9,26,90
+  palette "textures/sfx2/b_smack01.jpg" 255,6,24,88
   palette "textures/sfx2/autorain.tga" 255,0,0,0
   palette "textures/sfx2/autorain.jpg" 255,0,0,0
-  palette "textures/rota3ctf1_terrain/tr.jpg" 255,37,72,92
-  palette "textures/rota3ctf1_terrain/ter_rock3b.tga" 255,42,43,41
-  palette "textures/rota3ctf1_terrain/ter_rock3b.jpg" 255,42,42,42
-  palette "textures/rota3ctf1_terrain/ter_rock2.tga" 255,61,62,60
-  palette "textures/rota3ctf1_terrain/ter_rock2.jpg" 255,61,61,61
-  palette "textures/rota3ctf1_terrain/ter_moss1.tga" 233,63,73,48
-  palette "textures/rota3ctf1_terrain/ter_moss1.png" 233,63,73,48
-  palette "textures/rota3ctf1_terrain/sklo2_efekt.jpg" 255,27,27,27
-  palette "textures/rota3ctf1_terrain/sklo2.jpg" 255,150,149,148
-  palette "textures/rota3ctf1_terrain/rrrtt.jpg" 255,18,72,108
-  palette "textures/rota3ctf1_terrain/rrota.jpg" 255,0,95,148
-  palette "textures/rota3ctf1_terrain/rota.jpg" 255,7,88,137
-  palette "textures/rota3ctf1_terrain/nebe.jpg" 255,93,56,163
-  palette "textures/rota3ctf1_terrain/list.tga" 82,75,110,40
-  palette "textures/rota3ctf1_terrain/list.png" 82,75,110,40
-  palette "textures/rota3ctf1_terrain/iris.jpg" 255,10,10,10
-  palette "textures/rota3ctf1_terrain/grate_grey2.jpg" 255,19,19,19
-  palette "textures/rota3ctf1_terrain/e6strimlightb.jpg" 255,88,52,32
-  palette "textures/rota3ctf1_terrain/e6strimlight_blendb.jpg" 255,71,32,7
-  palette "textures/rota3ctf1_terrain/e6strimlight_blend.jpg" 255,26,43,81
-  palette "textures/rota3ctf1_terrain/e6strimlight.jpg" 255,53,64,82
-  palette "textures/rota3ctf1_terrain/e6boltstrip.jpg" 255,68,68,70
-  palette "textures/rota3ctf1_terrain/diry.tga" 167,57,59,60
-  palette "textures/rota3ctf1_terrain/diry.png" 167,57,59,60
-  palette "textures/rota3ctf1_terrain/d.jpg" 255,32,59,77
-  palette "textures/rota3ctf1_terrain/bld_rock2rock3.jpg" 255,65,69,101
-  palette "textures/rota3ctf1_terrain/bld_rock2moss1.jpg" 255,64,71,101
-  palette "textures/rota3ctf1_terrain/alpha_100.tga" 255,112,41,112
-  palette "textures/rota3ctf1_terrain/alpha_100.jpg" 255,110,43,109
-  palette "textures/rota3ctf1_terrain/alpha_085.tga" 255,134,134,67
-  palette "textures/rota3ctf1_terrain/alpha_085.jpg" 255,133,133,67
-  palette "textures/rota3ctf1_terrain/alpha_075.tga" 255,85,131,85
-  palette "textures/rota3ctf1_terrain/alpha_075.jpg" 255,86,130,86
-  palette "textures/rota3ctf1_terrain/alpha_050.tga" 255,133,87,87
-  palette "textures/rota3ctf1_terrain/alpha_050.jpg" 255,133,87,88
-  palette "textures/rota3ctf1_terrain/alpha_025.tga" 255,87,87,133
-  palette "textures/rota3ctf1_terrain/alpha_025.jpg" 255,84,87,131
-  palette "textures/rota3ctf1_terrain/alpha_000.tga" 255,111,111,111
-  palette "textures/rota3ctf1_terrain/alpha_000.jpg" 255,110,110,110
-  palette "textures/rota3ctf1_grates/u_gr8_5b.tga" 198,56,59,60
   palette "textures/rota3ctf1_grates/u_gr8_5b.png" 198,56,59,60
-  palette "textures/rota3ctf1_grates/u_gr8_5.tga" 198,56,59,60
   palette "textures/rota3ctf1_grates/u_gr8_5.png" 198,56,59,60
-  palette "textures/rota3ctf1_grates/u_gr8_4.tga" 199,52,56,57
   palette "textures/rota3ctf1_grates/u_gr8_4.png" 199,52,56,57
-  palette "textures/rota3ctf1_grates/u_gr8_2b.tga" 135,53,55,56
   palette "textures/rota3ctf1_grates/u_gr8_2b.png" 135,53,55,56
-  palette "textures/rota3ctf1_grates/u_gr8_10.tga" 197,49,54,55
   palette "textures/rota3ctf1_grates/u_gr8_10.png" 197,49,54,55
-  palette "textures/rota3ctf1_floors/u_floor_pan5.jpg" 255,50,50,49
-  palette "textures/rota3ctf1_floors/u_floor_pan4_l_blend.jpg" 255,3,4,5
-  palette "textures/rota3ctf1_floors/u_floor_gr8.jpg" 255,37,38,39
-  palette "textures/rota3ctf1_floors/u_floor3_pad_8.jpg" 255,57,60,62
-  palette "textures/rota3ctf1_floors/u_floor.jpg" 255,48,52,54
-  palette "textures/rota3ctf1_floors/e6bmetal_darker2.jpg" 255,18,18,20
-  palette "textures/rota3ctf1_floors/e6bmetal_darker.jpg" 255,36,36,38
-  palette "textures/rota3ctf1_floors/e6bmetal.jpg" 255,50,50,52
-  palette "textures/rota3ctf1_lights/u_trlight3_or.jpg" 255,78,59,47
-  palette "textures/rota3ctf1_lights/u_trlight3_blue_blend.jpg" 255,11,29,49
-  palette "textures/rota3ctf1_lights/u_trlight3_blue.jpg" 255,54,64,86
-  palette "textures/rota3ctf1_lights/u_trlight2_or_blend.jpg" 255,49,30,16
-  palette "textures/rota3ctf1_lights/u_thinline1_or_blend.jpg" 255,66,58,25
-  palette "textures/rota3ctf1_lights/u_thinline1_or.jpg" 255,114,100,81
-  palette "textures/rota3ctf1_lights/u_thinline1_blue_blend.jpg" 255,15,22,64
-  palette "textures/rota3ctf1_lights/u_thinline1_blue.jpg" 255,84,86,110
-  palette "textures/rota3ctf1_lights/u_py1_or_glow.jpg" 255,91,44,11
-  palette "textures/rota3ctf1_lights/u_py1_or_2.jpg" 255,97,57,34
-  palette "textures/rota3ctf1_lights/u_py1_or128.jpg" 255,55,52,50
-  palette "textures/rota3ctf1_lights/u_py1_or.jpg" 255,94,55,34
-  palette "textures/rota3ctf1_lights/u_py1_blue_glow.jpg" 255,11,71,90
-  palette "textures/rota3ctf1_lights/u_py1_blue.jpg" 255,38,99,119
-  palette "textures/rota3ctf1_lights/u_lamplong1_or_blend.jpg" 255,61,40,18
-  palette "textures/rota3ctf1_lights/u_lamplong1_or.jpg" 255,75,52,36
-  palette "textures/rota3ctf1_lights/u_lamplong1_blue_blend.jpg" 255,33,46,63
-  palette "textures/rota3ctf1_lights/u_lamplong1_blue.jpg" 255,41,60,85
-  palette "textures/rota3ctf1_lights/u_lamplong1_blend.jpg" 255,42,45,46
-  palette "textures/rota3ctf1_lights/u_lamplong1.jpg" 255,55,58,59
-  palette "textures/rota3ctf1_lights/u_lamp_blend.jpg" 255,11,14,18
-  palette "textures/rota3ctf1_lights/u_lamp7_blue_blend.jpg" 255,28,50,65
-  palette "textures/rota3ctf1_lights/u_lamp7_blue.jpg" 255,48,59,67
-  palette "textures/rota3ctf1_lights/u_lamp7_blend.jpg" 255,43,46,47
-  palette "textures/rota3ctf1_lights/u_lamp7.jpg" 255,55,57,58
-  palette "textures/rota3ctf1_lights/u_lamp5_or_blend.jpg" 255,101,66,28
-  palette "textures/rota3ctf1_lights/u_lamp5_or.jpg" 255,95,56,33
-  palette "textures/rota3ctf1_lights/u_lamp5_blue_blend.jpg" 255,42,82,103
-  palette "textures/rota3ctf1_lights/u_lamp5_blue.jpg" 255,48,68,93
-  palette "textures/rota3ctf1_lights/u_lamp4_or_blend_puvodni.jpg" 255,140,78,45
-  palette "textures/rota3ctf1_lights/u_lamp4_or_blend.jpg" 255,151,106,78
-  palette "textures/rota3ctf1_lights/u_lamp4_or.jpg" 255,97,61,28
-  palette "textures/rota3ctf1_lights/u_lamp4_blue_blend.jpg" 255,43,99,148
-  palette "textures/rota3ctf1_lights/u_lamp4_blue.jpg" 255,40,75,106
-  palette "textures/rota3ctf1_lights/u_lamp3_or_blend.jpg" 255,159,87,65
-  palette "textures/rota3ctf1_lights/u_lamp3_or.jpg" 255,105,69,42
-  palette "textures/rota3ctf1_lights/u_lamp3_blue_blend.jpg" 255,82,123,161
-  palette "textures/rota3ctf1_lights/u_lamp3_blue.jpg" 255,52,83,119
-  palette "textures/rota3ctf1_lights/u_lamp3_blend.jpg" 255,121,126,127
-  palette "textures/rota3ctf1_lights/u_lamp3.jpg" 255,75,78,79
+  palette "textures/rota3ctf1_terrain/ter_rock3b.jpg" 255,42,43,41
+  palette "textures/rota3ctf1_terrain/ter_rock2.jpg" 255,61,62,60
+  palette "textures/rota3ctf1_terrain/ter_moss1.png" 233,63,73,48
+  palette "textures/rota3ctf1_terrain/list.png" 82,75,110,40
+  palette "textures/rota3ctf1_terrain/diry.png" 167,57,59,60
+  palette "textures/rota3ctf1_terrain/alpha_100.jpg" 255,111,42,112
+  palette "textures/rota3ctf1_terrain/alpha_085.jpg" 255,134,134,68
+  palette "textures/rota3ctf1_terrain/alpha_075.jpg" 255,86,131,85
+  palette "textures/rota3ctf1_terrain/alpha_050.jpg" 255,132,87,87
+  palette "textures/rota3ctf1_terrain/alpha_025.jpg" 255,87,88,131
+  palette "textures/rota3ctf1_terrain/alpha_000.jpg" 255,111,111,111
   palette "textures/reflect/reflect.jpg" 255,83,77,88
   palette "textures/reflect/q3rcountry.jpg" 255,67,80,68
   palette "textures/reflect/oilreflect.tga" 255,59,42,48
-  palette "textures/reflect/oilreflect.jpg" 255,59,43,49
+  palette "textures/reflect/oilreflect.jpg" 255,59,42,48
   palette "textures/reflect/downtown_reflect.jpg" 255,116,125,141
   palette "textures/reflect/demobowl_01.jpg" 255,43,33,22
   palette "textures/reflect/chrometest2.jpg" 255,83,77,88
-  palette "textures/proto/rustytotum.tga" 255,75,48,38
-  palette "textures/proto/rustytotum.jpg" 255,75,48,38
-  palette "textures/proto/rottblock.tga" 255,69,56,49
-  palette "textures/proto/rottblock.jpg" 255,69,56,49
-  palette "textures/proto/meaty_skull.tga" 255,45,28,23
-  palette "textures/proto/meaty_skull.jpg" 255,45,28,23
-  palette "textures/proto/dirty.tga" 255,76,58,44
-  palette "textures/proto/dirty.jpg" 255,76,58,44
-  palette "textures/organics/wire02a_f.tga" 255,77,55,40
-  palette "textures/organics/wire02a_f.jpg" 255,77,55,40
-  palette "textures/organics/trainpart12C.tga" 255,70,50,40
-  palette "textures/organics/trainpart12C.jpg" 255,70,50,40
-  palette "textures/organics/pjrock7d.tga" 255,66,58,43
-  palette "textures/organics/pjrock7d.jpg" 255,66,58,43
-  palette "textures/organics/grass3.tga" 255,71,55,50
-  palette "textures/organics/grass3.jpg" 255,71,55,50
-  palette "textures/organics/dirt2.tga" 255,51,32,24
-  palette "textures/organics/dirt.tga" 255,76,59,51
-  palette "textures/organics/awall4j.tga" 255,92,80,62
-  palette "textures/organics/awall4j.jpg" 255,92,80,62
+  palette "textures/photorealistic_roof/roof05.jpg" 255,91,91,89
+  palette "textures/photorealistic_wood/wood099.jpg" 255,132,125,133
+  palette "textures/photorealistic_wood/wood077.jpg" 255,108,96,81
+  palette "textures/photorealistic_wood/wood053.jpg" 255,141,106,77
+  palette "textures/photorealistic_wood/wood052.jpg" 255,148,126,110
+  palette "textures/photorealistic_wood/wood020.jpg" 255,46,40,32
+  palette "textures/photorealistic_wood/wood013.jpg" 255,108,65,50
+  palette "textures/photorealistic_metal/metal075.jpg" 255,100,72,70
+  palette "textures/photorealistic_rock-stone/rock035.jpg" 255,115,115,110
+  palette "textures/photorealistic_rock-stone/rock011.jpg" 255,99,86,77
+  palette "textures/photorealistic_rock-stone/rock001.jpg" 255,153,153,153
+  palette "textures/photorealistic_ground/snow009.jpg" 255,86,88,89
+  palette "textures/photorealistic_ground/snow006.jpg" 255,148,151,158
+  palette "textures/photorealistic_bricks/brick070.jpg" 255,145,113,108
+  palette "textures/oa/water.jpg" 255,2,28,39
+  palette "textures/oa/oldfiar2.jpg" 255,85,54,14
+  palette "textures/oa/grenfiar.jpg" 255,89,43,23
+  palette "textures/oa/flamelet.jpg" 255,83,15,15
+  palette "textures/oa/fiar2.jpg" 255,61,30,2
+  palette "textures/oa/fiar.jpg" 255,48,11,3
+  palette "textures/oa/bloodbg.jpg" 255,74,21,20
+  palette "textures/oa/bfgfiar.jpg" 255,28,60,9
+  palette "textures/sfx/tesla1blue.tga" 255,7,7,15
+  palette "textures/sfx/tesla1blue.jpg" 255,7,7,15
+  palette "textures/sfx/swirl_r2.tga" 255,14,0,0
+  palette "textures/sfx/swirl_r2.jpg" 255,14,1,1
+  palette "textures/sfx/swirl_r1.tga" 255,13,0,2
+  palette "textures/sfx/swirl_r1.jpg" 255,13,1,2
+  palette "textures/sfx/swirl_b2.tga" 255,0,12,14
+  palette "textures/sfx/swirl_b2.jpg" 255,1,12,14
+  palette "textures/sfx/swirl_b1.tga" 255,0,10,14
+  palette "textures/sfx/swirl_b1.jpg" 255,1,10,14
+  palette "textures/sfx/spawn_floord2c.png" 217,55,55,55
+  palette "textures/sfx/spawn_floor.png" 217,54,47,42
+  palette "textures/sfx/portal_sfx_ring_blue1.png" 149,235,229,251
+  palette "textures/sfx/portal_sfx3.png" 107,194,192,244
+  palette "textures/sfx/portal_sfx1.png" 109,244,241,242
+  palette "textures/sfx/omm.png" 216,173,173,173
+  palette "textures/sfx/mirrorkc.png" 247,43,36,44
+  palette "textures/sfx/launchpad_blocks17.jpg" 255,95,85,82
+  palette "textures/sfx/launchpad_arrow.png" 3,216,88,8
+  palette "textures/sfx/hologirl2.jpg" 255,27,33,31
+  palette "textures/sfx/healthfloor.png" 214,55,49,44
+  palette "textures/sfx/fog3.tga" 255,184,184,184
+  palette "textures/sfx/fog3.jpg" 255,184,184,184
+  palette "textures/sfx/fishy.png" 162,51,41,28
+  palette "textures/sfx/firewalla.png" 47,132,61,0
+  palette "textures/sfx/firegorre.png" 47,171,66,0
+  palette "textures/sfx/fan_grate.png" 153,52,40,30
+  palette "textures/sfx/fan3bladeb.png" 28,61,49,41
+  palette "textures/sfx/fan3.png" 153,65,48,38
+  palette "textures/sfx/fan.png" 111,82,59,43
+  palette "textures/sfx/electricslimeblue.tga" 255,18,18,51
+  palette "textures/sfx/electricslimeblue.jpg" 255,18,17,50
+  palette "textures/sfx/electricslime_old.jpg" 255,116,34,38
+  palette "textures/sfx/dust_puppy2.png" 109,96,91,85
+  palette "textures/sfx/cabletest2.png" 31,19,19,21
+  palette "textures/sfx/bounce_dirt.jpg" 255,71,59,50
+  palette "textures/sfx/blocks17g_jumpad.jpg" 255,79,69,59
+  palette "textures/sfx/RQ3logo512.jpg" 255,18,12,6
+  palette "textures/lobby/template.jpg" 255,61,33,61
   palette "textures/liquids2/pjslime2.tga" 255,0,3,38
-  palette "textures/liquids2/pjslime2.jpg" 255,4,4,39
+  palette "textures/liquids2/pjslime2.jpg" 255,2,4,38
   palette "textures/liquids2/pjslime.tga" 59,15,86,30
   palette "textures/liquids2/pjslime.png" 59,15,86,30
+  palette "textures/lsdm3/xblueflare2.tga" 255,0,17,21
+  palette "textures/lsdm3/xblueflare2.jpg" 255,1,17,21
+  palette "textures/lsdm3/xblueflare2.jpeg" 255,1,17,21
+  palette "textures/lsdm3/wsupprt1_12_blue.jpg" 255,61,84,114
+  palette "textures/lsdm3/wsupprt1_12.blend.blue.jpg" 255,58,76,95
+  palette "textures/lsdm3/stratosphere_up.jpg" 255,37,45,68
+  palette "textures/lsdm3/stratosphere_rt.jpg" 255,12,20,52
+  palette "textures/lsdm3/stratosphere_lf.jpg" 255,12,23,51
+  palette "textures/lsdm3/stratosphere_ft.jpg" 255,32,48,91
+  palette "textures/lsdm3/stratosphere_dn.jpg" 255,39,48,62
+  palette "textures/lsdm3/stratosphere_bk.jpg" 255,8,16,39
+  palette "textures/lsdm3/nunukc.jpg" 255,131,131,131
+  palette "textures/lsdm3/nunuk-bluedark.jpg" 255,82,92,102
+  palette "textures/lsdm3/chrome_metal.jpg" 255,37,36,38
+  palette "textures/lsdm3/ceil1_30.jpg" 255,50,68,128
+  palette "textures/lsdm3/ceil1_30.blend.jpg" 255,25,47,113
+  palette "textures/lsdm3/bubbles.jpg" 255,4,4,4
+  palette "textures/lsdm3/blue_telep.jpg" 255,1,12,20
+  palette "textures/lsdm3/blue_fluid.tga" 103,130,103,229
+  palette "textures/lsdm3/blue_fluid.png" 103,130,103,229
+  palette "textures/lsdm3/blue_fluid.jpeg" 255,130,99,226
+  palette "textures/jungle/bark02.jpg" 255,70,63,60
   palette "textures/house6/quad.tga" 255,38,79,31
-  palette "textures/house6/quad.jpg" 255,38,80,32
+  palette "textures/house6/quad.jpg" 255,38,79,32
   palette "textures/house6/Wood_Veneer_02.jpg" 255,191,129,92
   palette "textures/house6/Wood_Plywood_Knots.jpg" 255,137,123,41
   palette "textures/house6/Wood_OSB.jpg" 255,241,196,122
@@ -3310,494 +4537,48 @@ palettes/default
   palette "textures/house6/Polished_Concrete_New.jpg" 255,201,201,204
   palette "textures/house6/Metal_Rough.jpg" 255,154,158,161
   palette "textures/house6/Granite_Dark_Gray.jpg" 255,70,69,69
-  palette "textures/liquids/slime7c.tga" 255,10,86,22
-  palette "textures/liquids/slime7c.jpg" 255,10,86,22
-  palette "textures/liquids/slime7.tga" 255,11,88,23
-  palette "textures/liquids/slime7.jpg" 255,11,88,23
-  palette "textures/liquids/protolava2.tga" 255,171,53,3
-  palette "textures/liquids/protolava2.jpg" 255,171,53,3
-  palette "textures/liquids/protolava.tga" 186,120,31,10
   palette "textures/liquids/protolava.png" 186,120,31,10
-  palette "textures/liquids/proto_poolpass.tga" 255,22,15,9
-  palette "textures/liquids/proto_poolpass.jpg" 255,22,15,9
-  palette "textures/liquids/proto_grueldark2.tga" 255,64,11,9
-  palette "textures/liquids/proto_grueldark.tga" 255,33,2,1
-  palette "textures/liquids/proto_grueldark.jpg" 255,33,2,1
-  palette "textures/liquids/proto_gruel3.tga" 255,80,43,28
-  palette "textures/liquids/proto_gruel2.tga" 0,0,0,0
-  palette "textures/liquids/proto_gruel2.png" 0,0,0,0
-  palette "textures/liquids/pool3d_6c2.tga" 255,145,156,148
-  palette "textures/liquids/pool3d_6c2.jpg" 255,145,156,148
-  palette "textures/liquids/pool3d_6.tga" 255,33,33,33
-  palette "textures/liquids/pool3d_6.jpg" 255,33,33,33
-  palette "textures/liquids/pool3d_5e.tga" 255,58,53,52
-  palette "textures/liquids/pool3d_5e.jpg" 255,58,53,52
-  palette "textures/liquids/pool3d_5c2.tga" 255,167,166,178
-  palette "textures/liquids/pool3d_5c2.jpg" 255,167,166,178
-  palette "textures/liquids/pool3d_5.tga" 255,30,30,30
-  palette "textures/liquids/pool3d_5.jpg" 255,30,30,30
-  palette "textures/liquids/pool3d_4b2.tga" 255,4,10,7
-  palette "textures/liquids/pool3d_4b2.jpg" 255,4,10,7
-  palette "textures/liquids/pool3d_3e.tga" 255,51,46,59
-  palette "textures/liquids/pool3d_3e.jpg" 255,51,46,59
-  palette "textures/liquids/pool3d_3c2.tga" 255,198,190,196
-  palette "textures/liquids/pool3d_3c2.jpg" 255,198,190,196
-  palette "textures/liquids/pool3d_3.tga" 255,69,61,66
-  palette "textures/liquids/pool3d_3.jpg" 255,69,61,66
-  palette "textures/liquids/pool2.tga" 255,2,28,27
-  palette "textures/liquids/pool2.jpg" 255,2,28,27
-  palette "textures/liquids/lavahell.tga" 255,126,35,13
-  palette "textures/liquids/lavafloor.tga" 255,171,120,94
-  palette "textures/liquids/lavafloor.jpg" 255,172,120,94
-  palette "textures/liquids/kc_fogcloud3.tga" 255,243,243,243
-  palette "textures/liquids/bubbles.tga" 255,101,101,100
-  palette "textures/liquids/bubbles.jpg" 255,101,101,100
-  palette "textures/sfx/zap_scroll2.tga" 255,5,4,3
-  palette "textures/sfx/zap_scroll.tga" 255,4,2,2
-  palette "textures/sfx/xian_dm3padwallglow.tga" 255,4,3,5
-  palette "textures/sfx/xian_dm3padwall.tga" 255,57,46,40
-  palette "textures/sfx/x_conduit3.tga" 255,14,10,10
-  palette "textures/sfx/x_conduit2.tga" 255,22,15,14
-  palette "textures/sfx/x_conduit.tga" 255,48,43,39
-  palette "textures/sfx/tesla1blue.tga" 255,7,7,15
-  palette "textures/sfx/tesla1blue.jpg" 255,7,7,15
-  palette "textures/sfx/tesla1b.tga" 255,16,9,6
-  palette "textures/sfx/tesla1.tga" 255,32,25,50
-  palette "textures/sfx/swirl_r2.tga" 255,14,0,0
-  palette "textures/sfx/swirl_r2.jpg" 255,14,1,3
-  palette "textures/sfx/swirl_r1.tga" 255,13,0,2
-  palette "textures/sfx/swirl_r1.jpg" 255,13,1,4
-  palette "textures/sfx/swirl_b2.tga" 255,0,12,14
-  palette "textures/sfx/swirl_b2.jpg" 255,2,13,12
-  palette "textures/sfx/swirl_b1.tga" 255,0,10,14
-  palette "textures/sfx/swirl_b1.jpg" 255,2,10,13
-  palette "textures/sfx/surface6jumppad.blend.tga" 255,60,27,2
-  palette "textures/sfx/specular5.tga" 255,84,71,52
-  palette "textures/sfx/specular.tga" 255,82,64,68
-  palette "textures/sfx/spawn_floord2c.tga" 217,55,55,55
-  palette "textures/sfx/spawn_floor.tga" 217,54,47,42
-  palette "textures/sfx/snow.tga" 255,41,41,41
-  palette "textures/sfx/smallerblock3b3dim_pent.tga" 255,89,64,54
-  palette "textures/sfx/shadow.tga" 255,147,147,147
-  palette "textures/sfx/r_flameball.tga" 255,19,2,7
-  palette "textures/sfx/r_flame8.tga" 255,31,5,3
-  palette "textures/sfx/r_flame7.tga" 255,29,5,3
-  palette "textures/sfx/r_flame6.tga" 255,28,4,3
-  palette "textures/sfx/r_flame5.tga" 255,28,4,3
-  palette "textures/sfx/r_flame4.tga" 255,24,4,2
-  palette "textures/sfx/r_flame3.tga" 255,27,5,3
-  palette "textures/sfx/r_flame2.tga" 255,31,5,3
-  palette "textures/sfx/r_flame1.tga" 255,27,7,1
-  palette "textures/sfx/proto_zzztpink.tga" 255,183,143,126
-  palette "textures/sfx/proto_zzztblu3.tga" 255,20,43,74
-  palette "textures/sfx/proto_zzztblu2.tga" 255,85,116,154
-  palette "textures/sfx/proto_zzztblu.tga" 255,102,113,139
-  palette "textures/sfx/proto_zzzt.tga" 255,175,47,22
-  palette "textures/sfx/portalfog.tga" 255,184,184,184
-  palette "textures/sfx/portal_sfx_ring_electric.tga" 255,13,8,14
-  palette "textures/sfx/portal_sfx_ring.tga" 255,148,148,148
-  palette "textures/sfx/portal_sfx.tga" 255,131,131,131
-  palette "textures/sfx/pentfloorq1metal7_99.tga" 255,99,75,60
-  palette "textures/sfx/pentfloor_diamond2c.tga" 255,89,67,58
-  palette "textures/sfx/pentdirt2_@256.tga" 255,88,61,52
-  palette "textures/sfx/pentagramfloor_red_glow.tga" 255,41,23,11
-  palette "textures/sfx/pentagramfloor_blue3glowtest.tga" 255,46,36,77
-  palette "textures/sfx/omm.tga" 216,173,173,173
-  palette "textures/sfx/mirrorkc.tga" 247,43,36,44
-  palette "textures/sfx/mirror.tga" 255,59,47,28
-  palette "textures/sfx/metaltechfloor02final_pent2.tga" 255,105,73,64
-  palette "textures/sfx/metaltech12final_bounce.tga" 255,76,67,59
-  palette "textures/sfx/metalfloor_wall_9bglow.tga" 255,44,13,13
-  palette "textures/sfx/metalfloor_wall_9b.tga" 255,98,47,48
-  palette "textures/sfx/metalfloor_wall_7b.tga" 255,47,56,60
-  palette "textures/sfx/metalfloor_wall_5bglowblu.tga" 255,20,13,44
-  palette "textures/sfx/metalfloor_wall_14bglow2.tga" 255,3,5,15
-  palette "textures/sfx/metalfloor_wall_14b.tga" 255,74,83,92
-  palette "textures/sfx/metalbridge06_bounce.tga" 255,76,66,58
-  palette "textures/sfx/logo512.tga" 255,5,1,1
-  palette "textures/sfx/lavabeam.tga" 255,25,3,0
-  palette "textures/sfx/launchpad_metalbridge04d.tga" 255,101,91,88
-  palette "textures/sfx/launchpad_dot.tga" 255,45,27,18
-  palette "textures/sfx/launchpad_diamond.tga" 255,92,85,82
-  palette "textures/sfx/launchpad_blocks18d.tga" 255,90,82,78
-  palette "textures/sfx/launchpad_blocks17.tga" 0,0,0,0
-  palette "textures/sfx/launchpad_arrow2.tga" 255,0,0,0
-  palette "textures/sfx/largerblock3b3x128_pent.tga" 255,93,66,54
-  palette "textures/sfx/largerblock3b3_pent.tga" 255,95,60,47
-  palette "textures/sfx/kenelectric.tga" 255,30,16,8
-  palette "textures/sfx/jumppadsmall.tga" 255,14,7,0
-  palette "textures/sfx/jacobs_x.tga" 255,27,24,20
-  palette "textures/sfx/hologirl2.tga" 0,0,0,0
-  palette "textures/sfx/hologirl.tga" 255,14,17,16
-  palette "textures/sfx/healthfloor.tga" 214,55,49,44
-  palette "textures/sfx/g_flameball.tga" 255,2,13,7
-  palette "textures/sfx/g_flame8.tga" 255,2,30,10
-  palette "textures/sfx/g_flame7.tga" 255,2,29,9
-  palette "textures/sfx/g_flame6.tga" 255,2,27,8
-  palette "textures/sfx/g_flame5.tga" 255,2,27,8
-  palette "textures/sfx/g_flame4.tga" 255,2,23,8
-  palette "textures/sfx/g_flame3.tga" 255,2,26,9
-  palette "textures/sfx/g_flame2.tga" 255,3,30,10
-  palette "textures/sfx/g_flame1.tga" 255,4,33,12
-  palette "textures/sfx/fog3.tga" 255,184,184,184
-  palette "textures/sfx/fog3.jpg" 255,184,184,184
-  palette "textures/sfx/flameball.tga" 255,18,5,4
-  palette "textures/sfx/flame8.tga" 255,28,17,4
-  palette "textures/sfx/flame7.tga" 255,26,16,4
-  palette "textures/sfx/flame6.tga" 255,24,15,4
-  palette "textures/sfx/flame5.tga" 255,24,16,4
-  palette "textures/sfx/flame4.tga" 255,21,13,3
-  palette "textures/sfx/flame3.tga" 255,24,14,4
-  palette "textures/sfx/flame2.tga" 255,27,17,4
-  palette "textures/sfx/flame1.tga" 255,31,19,5
-  palette "textures/sfx/fishy.tga" 162,51,41,28
-  palette "textures/sfx/fireswirl2blue.tga" 255,46,110,117
-  palette "textures/sfx/fireswirl2.tga" 255,183,116,37
-  palette "textures/sfx/firegorre2.tga" 255,111,55,6
-  palette "textures/sfx/fire_ctfred.tga" 255,160,2,10
-  palette "textures/sfx/fire_ctfgreen.tga" 255,12,159,2
-  palette "textures/sfx/fire_ctfgreen.jpg" 255,11,159,2
-  palette "textures/sfx/fire_ctfgold.tga" 255,159,149,1
-  palette "textures/sfx/fire_ctfgold.jpg" 255,159,149,1
-  palette "textures/sfx/fire_ctfblue.tga" 255,1,61,159
-  palette "textures/sfx/fanfx.tga" 255,63,63,63
-  palette "textures/sfx/fan_grate.tga" 153,52,40,30
-  palette "textures/sfx/fan3bladeb.tga" 28,61,49,41
-  palette "textures/sfx/fan3.tga" 153,65,48,38
-  palette "textures/sfx/fan.tga" 111,82,59,43
-  palette "textures/sfx/electricslimeblue.tga" 255,18,18,51
-  palette "textures/sfx/electricslimeblue.jpg" 255,21,18,58
-  palette "textures/sfx/electricslime_old.tga" 0,0,0,0
-  palette "textures/sfx/electricslime2.tga" 255,24,17,31
-  palette "textures/sfx/electricslime.tga" 255,116,76,32
-  palette "textures/sfx/electricgrade3.tga" 255,5,30,49
-  palette "textures/sfx/electric2.blend.tga" 255,1,2,39
-  palette "textures/sfx/dust_puppy2.tga" 109,96,91,85
-  palette "textures/sfx/detail.tga" 255,101,100,98
-  palette "textures/sfx/demonltblackfinal_glow2.tga" 255,21,18,16
-  palette "textures/sfx/demonltblackfinal.tga" 255,65,57,54
-  palette "textures/sfx/console03.tga" 255,47,1,2
-  palette "textures/sfx/console02.tga" 255,20,16,17
-  palette "textures/sfx/console01.tga" 255,3,70,45
-  palette "textures/sfx/computerpurptileb.tga" 255,80,62,55
-  palette "textures/sfx/computerblocks15.tga" 255,78,61,52
-  palette "textures/sfx/computer_blocks17.tga" 255,77,62,54
-  palette "textures/sfx/clangdark_bounce.tga" 255,72,62,53
-  palette "textures/sfx/cabletest2.tga" 31,19,19,21
-  palette "textures/sfx/bullseye.tga" 255,7,47,37
-  palette "textures/sfx/bouncepad1q1metal7_99.tga" 255,83,73,61
-  palette "textures/sfx/bouncepad01block18b.tga" 255,77,66,58
-  palette "textures/sfx/bouncepad01b_layer1.tga" 255,10,5,2
-  palette "textures/sfx/bouncepad01_xarch.tga" 255,73,62,53
-  palette "textures/sfx/bouncepad01_diamond2cTGA.tga" 255,74,65,58
-  palette "textures/sfx/bouncepad01_block17.tga" 255,79,67,59
-  palette "textures/sfx/bounce_xq1metalbig.tga" 255,80,71,62
-  palette "textures/sfx/bounce_largeblock3b.tga" 255,77,64,54
-  palette "textures/sfx/bounce_largeblock3.tga" 255,74,63,53
-  palette "textures/sfx/bounce_dirt.tga" 0,0,0,0
-  palette "textures/sfx/bounce_concrete.tga" 255,82,72,63
-  palette "textures/sfx/bolts.tga" 255,17,8,3
-  palette "textures/sfx/blocks18ccomputer.tga" 255,71,58,50
-  palette "textures/sfx/blocks17g_jumpad.tga" 0,0,0,0
-  palette "textures/sfx/blocks17final_pent.tga" 255,95,64,54
-  palette "textures/sfx/blackness.tga" 255,0,0,0
-  palette "textures/sfx/beam_waterlight.tga" 255,27,50,39
-  palette "textures/sfx/beam_red.tga" 255,44,0,0
-  palette "textures/sfx/beam_blue4.tga" 255,1,12,19
-  palette "textures/sfx/beam_1.tga" 255,11,9,9
-  palette "textures/sfx/beam.tga" 255,24,21,19
-  palette "textures/sfx/b_flameball.tga" 255,3,3,13
-  palette "textures/sfx/b_flame8.tga" 255,3,4,30
-  palette "textures/sfx/b_flame7.tga" 255,2,4,29
-  palette "textures/sfx/b_flame6.tga" 255,2,4,27
-  palette "textures/sfx/b_flame5.tga" 255,2,4,27
-  palette "textures/sfx/b_flame4.tga" 255,2,3,23
-  palette "textures/sfx/b_flame3.tga" 255,2,4,26
-  palette "textures/sfx/b_flame2.tga" 255,3,4,30
-  palette "textures/sfx/b_flame1.tga" 255,4,5,33
+  palette "textures/liquids/proto_gruel2.jpg" 255,14,25,26
+  palette "textures/liquids/lavahelldark.tga" 255,126,35,13
+  palette "textures/liquids/lavahelldark.jpg" 255,126,35,16
   palette "textures/gothic_trim2/tower_top2.tga" 255,63,54,46
-  palette "textures/gothic_trim2/tower_top2.jpg" 255,57,59,41
+  palette "textures/gothic_trim2/tower_top2.jpg" 255,62,55,45
   palette "textures/gothic_trim2/pittedrust2sm.tga" 255,64,42,31
-  palette "textures/gothic_trim2/pittedrust2sm.jpg" 255,63,44,29
+  palette "textures/gothic_trim2/pittedrust2sm.jpg" 255,64,42,32
   palette "textures/gothic_trim2/pitted_rust3_bl_sm.tga" 255,36,30,28
-  palette "textures/gothic_trim2/pitted_rust3_bl_sm.jpg" 255,32,32,32
+  palette "textures/gothic_trim2/pitted_rust3_bl_sm.jpg" 255,36,30,27
   palette "textures/gothic_trim2/metalsupport_grey.tga" 255,62,54,46
-  palette "textures/gothic_trim2/metalsupport_grey.jpg" 255,57,58,42
-  palette "textures/gothic_light/skulllight01.tga" 255,65,56,51
-  palette "textures/gothic_light/skulllight01.jpg" 255,65,56,51
-  palette "textures/gothic_light/pentagram_light1_blend.tga" 255,105,86,13
-  palette "textures/gothic_light/pentagram_light1.tga" 255,140,121,72
-  palette "textures/gothic_light/ironcrossltbkgrd.tga" 255,25,24,25
-  palette "textures/gothic_light/ironcrossltbkgrd.jpg" 255,25,24,25
-  palette "textures/gothic_light/ironcrosslt2.tga" 255,76,60,43
-  palette "textures/gothic_light/ironcrosslt2.blend.tga" 255,46,34,21
-  palette "textures/gothic_light/gothic_light3.tga" 255,114,100,95
-  palette "textures/gothic_light/gothic_light2_lrg.tga" 255,118,105,101
-  palette "textures/gothic_light/gothic_light2_lrg.jpg" 255,118,105,101
-  palette "textures/gothic_light/gothic_light2_blend.tga" 255,116,107,110
-  palette "textures/gothic_light/gothic_light2.tga" 255,118,106,101
-  palette "textures/gothic_light/gothic_light2.jpg" 255,118,106,101
-  palette "textures/gothic_light/border_ceil39.blend.tga" 255,7,6,4
-  palette "textures/gothic_light/border_ceil39.blend.jpg" 255,7,6,4
+  palette "textures/gothic_trim2/metalsupport_grey.jpg" 255,62,54,46
   palette "textures/gothic_light/border_ceil30.blend.tga" 255,2,4,10
-  palette "textures/gothic_light/border_ceil30.blend.jpg" 255,2,5,11
+  palette "textures/gothic_light/border_ceil30.blend.jpg" 255,2,4,10
   palette "textures/gothic_light/border_ceil22a.blend.tga" 255,10,4,2
   palette "textures/gothic_light/border_ceil22a.blend.jpg" 255,11,4,3
-  palette "textures/gothic_light/border7_ceil39b.tga" 255,61,60,54
-  palette "textures/gothic_light/border7_ceil39b.jpg" 255,61,60,54
-  palette "textures/gothic_light/border7_ceil39b.blend.tga" 255,5,4,3
-  palette "textures/gothic_light/border7_ceil39b.blend.jpg" 255,5,4,3
-  palette "textures/gothic_light/border7_ceil39.tga" 255,59,58,51
-  palette "textures/gothic_light/border7_ceil39.jpg" 255,59,58,51
   palette "textures/gothic_light/border7_ceil30.tga" 255,55,56,58
-  palette "textures/gothic_light/border7_ceil30.jpg" 255,54,55,61
+  palette "textures/gothic_light/border7_ceil30.jpg" 255,55,56,57
   palette "textures/gothic_light/border7_ceil22a.tga" 255,63,56,49
-  palette "textures/gothic_light/border7_ceil22a.jpg" 255,61,55,53
-  palette "textures/gothic_wall/xpipethin_gray256.tga" 255,36,32,31
-  palette "textures/gothic_wall/xpipethin_gray256.jpg" 255,33,33,33
-  palette "textures/gothic_wall/xpipestrips_gray256b.tga" 255,30,26,24
-  palette "textures/gothic_wall/xpipestrips_gray256b.jpg" 255,28,27,27
-  palette "textures/gothic_wall/xpipecolumn_gray_shiny.tga" 226,30,28,26
-  palette "textures/gothic_wall/xpipecolumn_gray_shiny.png" 226,30,28,26
-  palette "textures/gothic_wall/xpipecolumn_gray128.tga" 255,36,32,30
-  palette "textures/gothic_wall/xpipecolumn_gray128.jpg" 255,36,32,30
-  palette "textures/gothic_wall/xoct20c_shiney.tga" 63,85,75,64
-  palette "textures/gothic_wall/xoct20c_shiney.png" 63,85,75,64
-  palette "textures/gothic_wall/xiantourneywall_R1.tga" 255,73,60,55
-  palette "textures/gothic_wall/xiantourneywall_C1.tga" 255,84,50,41
-  palette "textures/gothic_wall/xiantourneycolumn_b8_128.tga" 255,47,35,29
-  palette "textures/gothic_wall/xiantourneycolumn_b8_128.jpg" 255,47,35,29
-  palette "textures/gothic_wall/xiantourneycolumn_b7_128.tga" 255,49,39,34
-  palette "textures/gothic_wall/xiantourneycolumn_b7_128.jpg" 255,50,38,39
-  palette "textures/gothic_wall/xiantourneycolumn_b6.tga" 255,59,48,41
-  palette "textures/gothic_wall/xiantourneycolumn_b6.jpg" 255,59,48,41
-  palette "textures/gothic_wall/xiantourneycolumn_b4.tga" 255,54,42,35
-  palette "textures/gothic_wall/window_evil6a_glow.tga" 255,13,1,1
-  palette "textures/gothic_wall/window_evil6a.tga" 255,84,59,60
-  palette "textures/gothic_wall/supportborder_blue_c.tga" 255,72,61,59
-  palette "textures/gothic_wall/supportborder_blue_b.tga" 255,73,62,57
-  palette "textures/gothic_wall/support2b.tga" 255,173,142,114
-  palette "textures/gothic_wall/support2b.jpg" 255,173,142,114
-  palette "textures/gothic_wall/streetbricks14.tga" 255,48,38,32
-  palette "textures/gothic_wall/streetbricks14.jpg" 255,48,38,32
-  palette "textures/gothic_wall/streetbricks13.tga" 255,55,40,33
-  palette "textures/gothic_wall/streetbricks13.jpg" 255,59,39,29
-  palette "textures/gothic_wall/streetbricks11large.tga" 255,68,54,55
-  palette "textures/gothic_wall/streetbricks11large.jpg" 255,70,52,58
-  palette "textures/gothic_wall/streetbricks11.tga" 255,71,68,72
-  palette "textures/gothic_wall/streetbricks10.tga" 255,69,55,55
-  palette "textures/gothic_wall/streetbricks.tga" 255,116,80,80
-  palette "textures/gothic_wall/streetbricks.jpg" 255,116,80,80
-  palette "textures/gothic_wall/slateroofc.tga" 255,51,54,54
-  palette "textures/gothic_wall/skull4.tga" 255,73,60,56
-  palette "textures/gothic_wall/skull2.tga" 255,103,93,89
-  palette "textures/gothic_wall/skull2.jpg" 255,103,93,89
-  palette "textures/gothic_wall/sidetower3d_front.tga" 255,47,36,34
-  palette "textures/gothic_wall/sidetower3d_front.jpg" 255,47,36,34
-  palette "textures/gothic_wall/sidetower3a_dm15fin.tga" 255,38,32,31
-  palette "textures/gothic_wall/sidetower3a_dm15fin.jpg" 255,38,32,31
-  palette "textures/gothic_wall/purptileb.tga" 255,94,67,62
-  palette "textures/gothic_wall/proto_brik.tga" 255,53,27,17
-  palette "textures/gothic_wall/proto_brik.jpg" 255,53,27,17
-  palette "textures/gothic_wall/pitted_rust3blood2.tga" 255,70,12,14
-  palette "textures/gothic_wall/pitted_rust3blood2.jpg" 255,70,12,14
-  palette "textures/gothic_wall/oct20clava.tga" 255,62,52,44
-  palette "textures/gothic_wall/oct20clava.jpg" 255,62,52,44
-  palette "textures/gothic_wall/oct20c.tga" 255,67,58,49
-  palette "textures/gothic_wall/oct20c.jpg" 255,67,58,49
-  palette "textures/gothic_wall/metaltech16gold.tga" 255,97,46,15
-  palette "textures/gothic_wall/metaltech16gold.jpg" 255,96,46,16
-  palette "textures/gothic_wall/metalciclesrust_pipe.tga" 255,68,42,41
-  palette "textures/gothic_wall/metalciclesrust_pipe.jpg" 255,68,42,41
-  palette "textures/gothic_wall/metalciclesrust.tga" 255,72,42,40
-  palette "textures/gothic_wall/metalciclesrust.jpg" 255,72,42,40
-  palette "textures/gothic_wall/metalciclesdark_supportb.tga" 255,40,34,32
-  palette "textures/gothic_wall/metalciclesdark_supportb.jpg" 255,40,34,32
-  palette "textures/gothic_wall/metalciclesdark_support.tga" 255,41,34,32
-  palette "textures/gothic_wall/metalciclesdark_support.jpg" 255,41,34,32
-  palette "textures/gothic_wall/metalciclesdark_pipe.tga" 255,34,32,32
-  palette "textures/gothic_wall/metalciclesdark_pipe.jpg" 255,34,32,32
-  palette "textures/gothic_wall/metalciclesdark.tga" 255,32,31,31
-  palette "textures/gothic_wall/metalciclesdark.jpg" 255,32,31,31
-  palette "textures/gothic_wall/jumptowerwork3g.tga" 255,54,40,37
-  palette "textures/gothic_wall/jumptowerwork3g.jpg" 255,54,40,37
-  palette "textures/gothic_wall/jumptower_top.tga" 0,0,0,0
-  palette "textures/gothic_wall/jumptower_top.png" 0,0,0,0
-  palette "textures/gothic_wall/jumptower_bottom.tga" 0,0,0,0
-  palette "textures/gothic_wall/jumptower_bottom.png" 0,0,0,0
-  palette "textures/gothic_wall/iron1_brickrust.tga" 255,78,57,54
-  palette "textures/gothic_wall/iron1_brickrust.jpg" 255,78,57,54
-  palette "textures/gothic_wall/iron1_bluebrick.tga" 255,65,51,50
-  palette "textures/gothic_wall/iron1_bluebrick.jpg" 255,67,49,54
-  palette "textures/gothic_wall/iron01_p5.tga" 255,49,36,32
-  palette "textures/gothic_wall/iron01_p5.jpg" 255,49,36,32
-  palette "textures/gothic_wall/iron01_p2.tga" 255,51,38,34
-  palette "textures/gothic_wall/iron01_p.tga" 255,60,46,42
-  palette "textures/gothic_wall/iron01_p.jpg" 255,60,46,42
-  palette "textures/gothic_wall/iron01_ntech4.tga" 255,55,43,34
-  palette "textures/gothic_wall/iron01_ntech4.jpg" 255,55,43,34
-  palette "textures/gothic_wall/iron01_ntech3.tga" 255,56,44,37
-  palette "textures/gothic_wall/iron01_g.tga" 255,64,46,42
-  palette "textures/gothic_wall/iron01_g.jpg" 255,64,46,42
-  palette "textures/gothic_wall/iron01_f2.tga" 0,0,0,0
-  palette "textures/gothic_wall/iron01_f2.png" 0,0,0,0
-  palette "textures/gothic_wall/iron01_e_solid.tga" 255,49,37,34
-  palette "textures/gothic_wall/iron01_e_solid.jpg" 255,49,37,36
-  palette "textures/gothic_wall/iron01_e.tga" 255,70,50,47
-  palette "textures/gothic_wall/iron01_c5.tga" 255,65,46,45
-  palette "textures/gothic_wall/iron01_c5.jpg" 255,65,46,45
-  palette "textures/gothic_wall/iron01_c3_rust.tga" 255,66,49,46
-  palette "textures/gothic_wall/iron01_c3_rust.jpg" 255,66,49,46
-  palette "textures/gothic_wall/iron01_c3.tga" 255,59,42,43
-  palette "textures/gothic_wall/iron01_c3.jpg" 255,59,42,43
-  palette "textures/gothic_wall/iron01_c2.tga" 255,69,54,51
-  palette "textures/gothic_wall/iron01_c2.jpg" 255,69,54,51
-  palette "textures/gothic_wall/iron01_c.tga" 255,71,55,52
-  palette "textures/gothic_wall/iron01_c.jpg" 255,71,55,52
-  palette "textures/gothic_wall/iron01_b.tga" 255,72,54,50
-  palette "textures/gothic_wall/goldbrick.tga" 255,110,56,12
-  palette "textures/gothic_wall/goldbrick.jpg" 255,110,56,12
-  palette "textures/gothic_wall/dm5_archkfin.tga" 255,87,65,64
-  palette "textures/gothic_wall/dm5_archkfin.jpg" 255,87,65,64
-  palette "textures/gothic_wall/dm5_archifin.tga" 255,62,40,39
-  palette "textures/gothic_wall/dm5_archifin.jpg" 255,62,40,39
-  palette "textures/gothic_wall/crack5c.tga" 255,90,73,84
-  palette "textures/gothic_wall/church_brick3b.tga" 255,66,48,44
-  palette "textures/gothic_wall/church_brick3b.jpg" 255,66,48,44
-  palette "textures/gothic_wall/church_brick3.tga" 255,63,42,36
-  palette "textures/gothic_wall/church_brick3.jpg" 255,63,42,36
-  palette "textures/gothic_wall/brickwindow_top.tga" 255,69,48,44
-  palette "textures/gothic_wall/brickwindow_top.jpg" 255,69,48,44
-  palette "textures/gothic_wall/brickwindow_mid.tga" 255,71,50,45
-  palette "textures/gothic_wall/brickwindow_mid.jpg" 255,71,50,45
-  palette "textures/gothic_wall/brickwindow_bot.tga" 255,67,50,46
-  palette "textures/gothic_wall/brickwindow_bot.jpg" 255,67,50,46
-  palette "textures/gothic_wall/backtower4b.tga" 255,41,36,35
-  palette "textures/gothic_wall/backtower4b.jpg" 255,41,36,35
-  palette "textures/gothic_wall/backtower4.tga" 255,42,38,37
-  palette "textures/gothic_wall/backtower4.jpg" 255,42,38,37
-  palette "textures/gothic_wall/backtower3b.tga" 255,53,44,42
-  palette "textures/gothic_wall/backtower3b.jpg" 255,53,44,42
-  palette "textures/gothic_wall/backtower3.tga" 255,56,47,45
-  palette "textures/gothic_wall/backtower3.jpg" 255,56,47,45
-  palette "textures/gothic_wall/backtower2b.tga" 255,51,43,41
-  palette "textures/gothic_wall/backtower2b.jpg" 255,51,43,41
-  palette "textures/gothic_wall/backtower2.tga" 255,54,46,43
-  palette "textures/gothic_wall/backtower2.jpg" 255,54,46,43
-  palette "textures/gothic_wall/backtower1b.tga" 255,38,35,34
-  palette "textures/gothic_wall/backtower1b.jpg" 255,38,35,34
-  palette "textures/gothic_wall/backtower1.tga" 255,39,36,35
-  palette "textures/gothic_wall/backtower1.jpg" 255,39,36,35
-  palette "textures/gothic_floor/xsteptop2.tga" 255,63,50,41
-  palette "textures/gothic_floor/xsteptop2.jpg" 255,60,50,43
-  palette "textures/gothic_floor/xsteptop1.tga" 255,66,51,41
-  palette "textures/gothic_floor/xsteptop1.jpg" 255,64,51,44
-  palette "textures/gothic_floor/xstepborder9.tga" 255,57,57,51
-  palette "textures/gothic_floor/xstepborder8.tga" 255,57,56,51
-  palette "textures/gothic_floor/xstepborder7.tga" 255,58,57,51
-  palette "textures/gothic_floor/xstepborder5.tga" 255,57,64,62
-  palette "textures/gothic_floor/xstepborder5.jpg" 255,57,64,62
-  palette "textures/gothic_floor/xstepborder3brn.tga" 255,80,53,34
-  palette "textures/gothic_floor/xstepborder3_alpha.tga" 50,80,78,70
-  palette "textures/gothic_floor/xstepborder3_alpha.png" 50,80,78,70
-  palette "textures/gothic_floor/xstepborder3.tga" 255,58,57,52
-  palette "textures/gothic_floor/xstepborder13.tga" 255,57,60,56
-  palette "textures/gothic_floor/xstepborder12.tga" 255,57,60,57
-  palette "textures/gothic_floor/xstepborder10.tga" 255,58,57,52
-  palette "textures/gothic_floor/xstairtop8.tga" 255,57,59,56
-  palette "textures/gothic_floor/xstairtop7.tga" 255,57,59,56
-  palette "textures/gothic_floor/xstairtop6.tga" 255,73,70,70
-  palette "textures/gothic_floor/xstairtop6.jpg" 255,73,70,70
-  palette "textures/gothic_floor/xstairtop5.tga" 255,90,88,78
-  palette "textures/gothic_floor/xstairtop5.jpg" 255,90,88,78
-  palette "textures/gothic_floor/xstairtop4bbrn.tga" 255,82,53,39
-  palette "textures/gothic_floor/xstairtop4.tga" 255,88,85,76
-  palette "textures/gothic_floor/xq1metalbig_ow.tga" 246,77,63,54
-  palette "textures/gothic_floor/xq1metalbig_ow.png" 246,77,63,54
-  palette "textures/gothic_floor/xq1metalbig.tga" 255,85,84,76
-  palette "textures/gothic_floor/xq1metalbig.jpg" 255,85,84,76
-  palette "textures/gothic_floor/q1metal7_99stair3.tga" 255,99,86,66
-  palette "textures/gothic_floor/q1metal7_99stair2.tga" 255,103,93,78
-  palette "textures/gothic_floor/q1metal7_99stair.tga" 255,105,91,77
-  palette "textures/gothic_floor/q1metal7_99spot.tga" 146,99,86,59
-  palette "textures/gothic_floor/q1metal7_99spot.png" 146,99,86,59
-  palette "textures/gothic_floor/q1metal7_99_broke.tga" 255,102,94,64
-  palette "textures/gothic_floor/q1metal7_99.tga" 255,106,101,69
-  palette "textures/gothic_floor/q1metal7_98d_256x256.tga" 255,85,84,76
-  palette "textures/gothic_floor/q1metal7_98d_256x256.jpg" 255,85,84,76
-  palette "textures/gothic_floor/q1metal7_98.jpg" 255,108,106,93
-  palette "textures/gothic_floor/q1metal7_97.tga" 255,102,88,88
-  palette "textures/gothic_floor/q1metal7_97.jpg" 255,102,88,88
-  palette "textures/gothic_floor/pj_e3_center2_r.tga" 255,61,49,41
-  palette "textures/gothic_floor/pj_e3_center2_r.jpg" 255,61,49,41
-  palette "textures/gothic_floor/pj_e3_center2_b.tga" 255,59,57,44
-  palette "textures/gothic_floor/pj_e3_center2_b.jpg" 255,59,57,44
-  palette "textures/gothic_floor/pj_e3_center2.tga" 255,68,57,37
-  palette "textures/gothic_floor/pj_e3_center2.jpg" 255,68,57,38
-  palette "textures/gothic_floor/pent_metalbridge06.tga" 255,91,67,58
-  palette "textures/gothic_floor/pent_metalbridge02.tga" 255,98,72,62
-  palette "textures/gothic_floor/pent_metalbridge02.jpg" 255,98,72,62
-  palette "textures/gothic_floor/pent_glow.tga" 255,24,16,8
-  palette "textures/gothic_floor/metalbridge06brokeb.tga" 247,68,63,62
-  palette "textures/gothic_floor/metalbridge06brokeb.png" 247,68,63,62
-  palette "textures/gothic_floor/metalbridge06broke.tga" 255,67,63,61
-  palette "textures/gothic_floor/metalbridge06bbroke.tga" 255,85,80,83
-  palette "textures/gothic_floor/metalbridge06bbroke.jpg" 255,85,80,83
-  palette "textures/gothic_floor/metalbridge06b_blood.tga" 255,98,39,40
-  palette "textures/gothic_floor/metalbridge06b_blood.jpg" 255,98,39,40
-  palette "textures/gothic_floor/metalbridge06b.tga" 255,87,80,84
-  palette "textures/gothic_floor/metalbridge06_pent.tga" 255,90,62,53
-  palette "textures/gothic_floor/metalbridge06_pent.jpg" 255,90,62,53
-  palette "textures/gothic_floor/metalbridge06.tga" 255,66,61,59
-  palette "textures/gothic_floor/metalbridge04d.tga" 255,99,85,87
-  palette "textures/gothic_floor/metalbridge04d.jpg" 255,104,81,89
-  palette "textures/gothic_floor/metalbridge02b.tga" 255,88,85,91
-  palette "textures/gothic_floor/metalbridge02b.jpg" 255,88,85,91
-  palette "textures/gothic_floor/metalbridge02.tga" 255,100,83,76
-  palette "textures/gothic_floor/metalbridge02.jpg" 255,100,84,76
-  palette "textures/gothic_floor/largerblock3b4.tga" 255,74,47,32
-  palette "textures/gothic_floor/largerblock3b3x128.tga" 255,78,56,43
-  palette "textures/gothic_floor/largerblock3b3x128.jpg" 255,78,56,43
-  palette "textures/gothic_floor/largerblock3b3dim.tga" 255,54,44,39
-  palette "textures/gothic_floor/largerblock3b3dim.jpg" 255,54,44,39
-  palette "textures/gothic_floor/largerblock3b3.tga" 255,76,52,37
-  palette "textures/gothic_floor/largerblock3b2.tga" 255,89,59,42
-  palette "textures/gothic_floor/largerblock3b2.jpg" 255,89,59,42
-  palette "textures/gothic_floor/largerblock3b.tga" 255,89,59,40
-  palette "textures/gothic_floor/largeblockfloor4broke.tga" 255,55,62,61
-  palette "textures/gothic_floor/largeblockfloor4.tga" 255,57,65,64
-  palette "textures/gothic_floor/largeblockfloor3.tga" 255,57,44,34
-  palette "textures/gothic_floor/largeblock3b3broke.tga" 255,71,49,38
-  palette "textures/gothic_floor/largeblock3b3broke.jpg" 255,71,49,38
-  palette "textures/gothic_floor/goopq1metal7_98e.tga" 255,101,93,78
-  palette "textures/gothic_floor/goopq1metal7_98d.tga" 255,96,92,82
-  palette "textures/gothic_floor/goopq1metal7_98d.jpg" 255,96,92,82
-  palette "textures/gothic_floor/blocks17floor3.tga" 255,104,55,44
-  palette "textures/gothic_floor/blocks17floor2.tga" 255,92,57,49
-  palette "textures/gothic_floor/blocks17floor.tga" 255,90,74,71
-  palette "textures/gothic_floor/blocks17floor.jpg" 255,90,74,71
+  palette "textures/gothic_light/border7_ceil22a.jpg" 255,63,56,49
   palette "textures/proto2/xtrim01.tga" 255,51,60,61
-  palette "textures/proto2/xtrim01.jpg" 255,54,60,58
+  palette "textures/proto2/xtrim01.jpg" 255,52,59,62
   palette "textures/proto2/xredflare2.tga" 255,21,0,0
-  palette "textures/proto2/xredflare2.jpg" 255,20,1,1
+  palette "textures/proto2/xredflare2.jpg" 255,21,0,1
   palette "textures/proto2/xmarblestair_02.tga" 255,126,104,87
-  palette "textures/proto2/xmarblestair_02.jpg" 255,124,104,89
+  palette "textures/proto2/xmarblestair_02.jpg" 255,126,105,87
   palette "textures/proto2/xmarblestair_01.tga" 255,114,94,78
-  palette "textures/proto2/xmarblestair_01.jpg" 255,113,94,79
+  palette "textures/proto2/xmarblestair_01.jpg" 255,114,94,78
   palette "textures/proto2/xiandm3talldoorright.tga" 255,49,39,40
-  palette "textures/proto2/xiandm3talldoorright.jpg" 255,51,39,43
+  palette "textures/proto2/xiandm3talldoorright.jpg" 255,50,39,41
   palette "textures/proto2/xiandm3talldoorleft.tga" 255,50,41,45
-  palette "textures/proto2/xiandm3talldoorleft.jpg" 255,49,42,44
+  palette "textures/proto2/xiandm3talldoorleft.jpg" 255,50,41,46
   palette "textures/proto2/xian_rocky01.tga" 255,129,102,70
-  palette "textures/proto2/xian_rocky01.jpg" 255,128,102,70
+  palette "textures/proto2/xian_rocky01.jpg" 255,129,102,70
   palette "textures/proto2/xglass01.tga" 255,120,67,52
-  palette "textures/proto2/xglass01.jpg" 255,121,69,56
+  palette "textures/proto2/xglass01.jpg" 255,120,68,55
   palette "textures/proto2/xfloor03.tga" 255,89,98,99
-  palette "textures/proto2/xfloor03.jpg" 255,92,97,96
+  palette "textures/proto2/xfloor03.jpg" 255,90,98,99
   palette "textures/proto2/xfloor02.tga" 255,116,124,125
-  palette "textures/proto2/xfloor02.jpg" 255,117,124,124
+  palette "textures/proto2/xfloor02.jpg" 255,115,124,126
   palette "textures/proto2/xfloor01.tga" 255,70,64,59
-  palette "textures/proto2/xfloor01.jpg" 255,66,65,64
+  palette "textures/proto2/xfloor01.jpg" 255,70,65,60
   palette "textures/proto2/xflag01.tga" 214,80,50,44
   palette "textures/proto2/xflag01.png" 214,80,50,44
   palette "textures/proto2/x_smallpipe.tga" 211,83,72,70
@@ -3809,11 +4590,11 @@ palettes/default
   palette "textures/proto2/wheel01.tga" 130,73,46,36
   palette "textures/proto2/wheel01.png" 130,73,46,36
   palette "textures/proto2/walltrim_red.tga" 255,84,32,23
-  palette "textures/proto2/walltrim_red.jpg" 255,84,31,27
+  palette "textures/proto2/walltrim_red.jpg" 255,84,32,22
   palette "textures/proto2/walltrim_blue.tga" 255,33,35,99
-  palette "textures/proto2/walltrim_blue.jpg" 255,30,38,98
+  palette "textures/proto2/walltrim_blue.jpg" 255,34,35,99
   palette "textures/proto2/wall.tga" 255,84,68,58
-  palette "textures/proto2/wall.jpg" 255,84,68,57
+  palette "textures/proto2/wall.jpg" 255,84,68,59
   palette "textures/proto2/vent01.tga" 201,65,67,66
   palette "textures/proto2/vent01.png" 201,65,67,66
   palette "textures/proto2/v_support02.tga" 108,56,48,42
@@ -3823,47 +4604,47 @@ palettes/default
   palette "textures/proto2/tin_panel.tga" 137,96,100,100
   palette "textures/proto2/tin_panel.png" 137,96,100,100
   palette "textures/proto2/tin_floor06.tga" 255,69,74,73
-  palette "textures/proto2/tin_floor06.jpg" 255,72,72,72
+  palette "textures/proto2/tin_floor06.jpg" 255,69,73,72
   palette "textures/proto2/tin_floor05reda.tga" 255,102,70,64
-  palette "textures/proto2/tin_floor05reda.jpg" 255,101,71,66
+  palette "textures/proto2/tin_floor05reda.jpg" 255,102,71,64
   palette "textures/proto2/tin_floor05n5.tga" 255,103,75,63
-  palette "textures/proto2/tin_floor05n5.jpg" 255,102,76,64
+  palette "textures/proto2/tin_floor05n5.jpg" 255,103,75,63
   palette "textures/proto2/tin_floor05bluea.tga" 255,74,76,90
-  palette "textures/proto2/tin_floor05bluea.jpg" 255,72,77,92
+  palette "textures/proto2/tin_floor05bluea.jpg" 255,74,77,90
   palette "textures/proto2/tin_floor05.tga" 255,77,71,65
-  palette "textures/proto2/tin_floor05.jpg" 255,72,72,72
+  palette "textures/proto2/tin_floor05.jpg" 255,76,72,65
   palette "textures/proto2/tin_floor04ach.tga" 255,66,41,24
-  palette "textures/proto2/tin_floor04ach.jpg" 255,68,41,24
+  palette "textures/proto2/tin_floor04ach.jpg" 255,66,41,25
   palette "textures/proto2/tin_floor04.tga" 255,58,54,48
-  palette "textures/proto2/tin_floor04.jpg" 255,54,54,54
+  palette "textures/proto2/tin_floor04.jpg" 255,58,54,47
   palette "textures/proto2/tin_floor03step.tga" 255,72,57,46
-  palette "textures/proto2/tin_floor03step.jpg" 255,75,56,41
+  palette "textures/proto2/tin_floor03step.jpg" 255,72,57,47
   palette "textures/proto2/tin_floor03.tga" 255,71,59,49
-  palette "textures/proto2/tin_floor03.jpg" 255,74,58,43
+  palette "textures/proto2/tin_floor03.jpg" 255,71,59,49
   palette "textures/proto2/tin_floor02.tga" 255,65,65,59
-  palette "textures/proto2/tin_floor02.jpg" 255,64,64,64
+  palette "textures/proto2/tin_floor02.jpg" 255,64,65,59
   palette "textures/proto2/tin_floor01.tga" 255,128,128,120
-  palette "textures/proto2/tin_floor01.jpg" 255,127,127,123
+  palette "textures/proto2/tin_floor01.jpg" 255,128,128,120
   palette "textures/proto2/terramap02.tga" 255,4,2,2
-  palette "textures/proto2/terramap02.jpg" 255,3,3,3
+  palette "textures/proto2/terramap02.jpg" 255,4,2,3
   palette "textures/proto2/terramap01.tga" 255,51,56,49
-  palette "textures/proto2/terramap01.jpg" 255,54,57,55
+  palette "textures/proto2/terramap01.jpg" 255,53,58,51
   palette "textures/proto2/techtrim02_nospecular.tga" 235,45,39,31
   palette "textures/proto2/techtrim02_nospecular.png" 235,45,39,31
   palette "textures/proto2/techtrim02.tga" 235,45,39,31
   palette "textures/proto2/techtrim02.png" 235,45,39,31
   palette "textures/proto2/techtrim01.tga" 255,75,54,39
-  palette "textures/proto2/techtrim01.jpg" 255,73,54,39
+  palette "textures/proto2/techtrim01.jpg" 255,75,54,39
   palette "textures/proto2/teamwerkz_red2.tga" 255,50,8,0
-  palette "textures/proto2/teamwerkz_red2.jpg" 255,50,16,11
+  palette "textures/proto2/teamwerkz_red2.jpg" 255,51,14,11
   palette "textures/proto2/teamwerkz_red1.tga" 255,77,8,0
-  palette "textures/proto2/teamwerkz_red1.jpg" 255,77,10,4
+  palette "textures/proto2/teamwerkz_red1.jpg" 255,78,10,3
   palette "textures/proto2/teamwerkz_blue2.tga" 255,0,15,18
-  palette "textures/proto2/teamwerkz_blue2.jpg" 255,8,16,24
+  palette "textures/proto2/teamwerkz_blue2.jpg" 255,6,16,19
   palette "textures/proto2/teamwerkz_blue1.tga" 255,0,77,64
-  palette "textures/proto2/teamwerkz_blue1.jpg" 255,7,78,63
+  palette "textures/proto2/teamwerkz_blue1.jpg" 255,6,78,64
   palette "textures/proto2/supportrim.tga" 255,63,53,44
-  palette "textures/proto2/supportrim.jpg" 255,65,53,39
+  palette "textures/proto2/supportrim.jpg" 255,62,53,45
   palette "textures/proto2/supportctfred_noshader.tga" 151,55,40,34
   palette "textures/proto2/supportctfred_noshader.png" 151,55,40,34
   palette "textures/proto2/supportctfred.tga" 151,55,40,34
@@ -3875,55 +4656,58 @@ palettes/default
   palette "textures/proto2/supportctfblu.tga" 151,49,46,38
   palette "textures/proto2/supportctfblu.png" 151,49,46,38
   palette "textures/proto2/steelsupport.tga" 255,58,61,62
-  palette "textures/proto2/steelsupport.jpg" 255,60,60,60
+  palette "textures/proto2/steelsupport.jpg" 255,57,61,61
   palette "textures/proto2/steam01.tga" 8,255,255,255
   palette "textures/proto2/steam01.png" 8,255,255,255
   palette "textures/proto2/stadlight01fx.tga" 255,28,24,23
-  palette "textures/proto2/stadlight01fx.jpg" 255,28,25,24
+  palette "textures/proto2/stadlight01fx.jpg" 255,29,24,24
   palette "textures/proto2/stadlight01.tga" 155,82,71,66
   palette "textures/proto2/stadlight01.png" 155,82,71,66
   palette "textures/proto2/spawn01.tga" 175,61,59,52
   palette "textures/proto2/spawn01.png" 175,61,59,52
   palette "textures/proto2/shiny_black.tga" 255,13,13,13
-  palette "textures/proto2/shiny_black.jpg" 255,13,13,13
+  palette "textures/proto2/shiny_black.jpg" 255,14,14,14
   palette "textures/proto2/redtrim02b.tga" 255,75,44,43
-  palette "textures/proto2/redtrim02b.jpg" 255,77,44,44
+  palette "textures/proto2/redtrim02b.jpg" 255,75,45,44
   palette "textures/proto2/redtrim02.tga" 139,91,76,64
   palette "textures/proto2/redtrim02.png" 139,91,76,64
   palette "textures/proto2/redob.tga" 88,255,11,31
   palette "textures/proto2/redob.png" 88,255,11,31
   palette "textures/proto2/redmidtrim.tga" 255,108,5,1
-  palette "textures/proto2/redmidtrim.jpg" 255,108,6,2
+  palette "textures/proto2/redmidtrim.jpg" 255,107,6,4
   palette "textures/proto2/redlight_on.tga" 255,147,32,25
-  palette "textures/proto2/redlight_on.jpg" 255,147,35,31
+  palette "textures/proto2/redlight_on.jpg" 255,147,33,28
   palette "textures/proto2/redlight_off.tga" 255,62,7,6
-  palette "textures/proto2/redlight_off.jpg" 255,64,11,9
+  palette "textures/proto2/redlight_off.jpg" 255,62,9,9
   palette "textures/proto2/redflare2.tga" 255,21,0,0
-  palette "textures/proto2/redflare2.jpg" 255,20,1,1
+  palette "textures/proto2/redflare2.jpg" 255,21,0,1
   palette "textures/proto2/redflare.tga" 255,24,0,0
-  palette "textures/proto2/redflare.jpg" 255,23,1,2
+  palette "textures/proto2/redflare.jpg" 255,24,1,1
   palette "textures/proto2/redflag.tga" 92,255,0,0
   palette "textures/proto2/redflag.png" 92,255,0,0
   palette "textures/proto2/reda_dcl.tga" 255,56,27,27
-  palette "textures/proto2/reda_dcl.jpg" 255,61,31,31
+  palette "textures/proto2/reda_dcl.jpg" 255,58,29,28
   palette "textures/proto2/red_zot2.tga" 255,28,1,6
-  palette "textures/proto2/red_zot2.jpg" 255,27,2,7
+  palette "textures/proto2/red_zot2.jpg" 255,28,1,6
   palette "textures/proto2/red_zot.tga" 255,23,5,0
-  palette "textures/proto2/red_zot.jpg" 255,23,5,2
+  palette "textures/proto2/red_zot.jpg" 255,23,5,1
   palette "textures/proto2/rail01.tga" 48,41,31,26
   palette "textures/proto2/rail01.png" 48,41,31,26
   palette "textures/proto2/px03.tga" 255,70,53,40
-  palette "textures/proto2/px03.jpg" 255,71,52,38
+  palette "textures/proto2/px03.jpg" 255,70,52,41
   palette "textures/proto2/px02.tga" 255,81,57,41
-  palette "textures/proto2/px02.jpg" 255,78,58,44
+  palette "textures/proto2/px02.jpg" 255,81,57,41
   palette "textures/proto2/px01.tga" 255,76,52,38
-  palette "textures/proto2/px01.jpg" 255,72,53,38
+  palette "textures/proto2/px01.jpg" 255,76,52,38
   palette "textures/proto2/pulsebeam2.tga" 255,13,26,23
-  palette "textures/proto2/pulsebeam2.jpg" 255,12,29,21
+  palette "textures/proto2/pulsebeam2.jpg" 255,15,28,23
   palette "textures/proto2/pulsebeam.tga" 255,27,27,23
-  palette "textures/proto2/pulsebeam.jpg" 255,28,28,28
+  palette "textures/proto2/pulsebeam.jpg" 255,26,27,23
   palette "textures/proto2/pjrock5_mru.tga" 255,71,56,52
-  palette "textures/proto2/pjrock5_mru.jpg" 255,74,55,55
+  palette "textures/proto2/pjrock5_mru.jpg" 255,71,57,53
+  palette "textures/proto2/pj_terralpha01.tga" 255,138,136,255
+  palette "textures/proto2/pj_terralpha01.pcx" 255,138,136,255
+  palette "textures/proto2/pj_terralpha01.jpg" 255,137,135,236
   palette "textures/proto2/pipewall03.tga" 203,55,45,40
   palette "textures/proto2/pipewall03.png" 203,55,45,40
   palette "textures/proto2/pipewall02.tga" 203,32,23,18
@@ -3933,107 +4717,107 @@ palettes/default
   palette "textures/proto2/pipes01.tga" 141,87,73,63
   palette "textures/proto2/pipes01.png" 141,87,73,63
   palette "textures/proto2/panel04trim2b.tga" 255,51,54,54
-  palette "textures/proto2/panel04trim2b.jpg" 255,54,54,54
+  palette "textures/proto2/panel04trim2b.jpg" 255,50,54,53
   palette "textures/proto2/panel04trim1b.tga" 255,62,65,65
-  palette "textures/proto2/panel04trim1b.jpg" 255,63,63,63
+  palette "textures/proto2/panel04trim1b.jpg" 255,61,65,64
   palette "textures/proto2/panel04red4.tga" 255,71,48,37
-  palette "textures/proto2/panel04red4.jpg" 255,71,48,37
+  palette "textures/proto2/panel04red4.jpg" 255,71,48,38
   palette "textures/proto2/panel04red2.tga" 255,73,36,31
-  palette "textures/proto2/panel04red2.jpg" 255,74,36,32
+  palette "textures/proto2/panel04red2.jpg" 255,73,36,32
   palette "textures/proto2/panel04red.tga" 255,81,35,25
-  palette "textures/proto2/panel04red.jpg" 255,81,36,26
+  palette "textures/proto2/panel04red.jpg" 255,81,36,27
   palette "textures/proto2/panel04ntrl3.tga" 255,75,65,55
-  palette "textures/proto2/panel04ntrl3.jpg" 255,75,67,52
+  palette "textures/proto2/panel04ntrl3.jpg" 255,75,65,56
   palette "textures/proto2/panel04ntrl2.tga" 255,65,54,44
-  palette "textures/proto2/panel04ntrl2.jpg" 255,68,53,41
+  palette "textures/proto2/panel04ntrl2.jpg" 255,65,54,44
   palette "textures/proto2/panel04ntrl.tga" 255,80,64,52
-  palette "textures/proto2/panel04ntrl.jpg" 255,80,64,52
+  palette "textures/proto2/panel04ntrl.jpg" 255,81,64,52
   palette "textures/proto2/panel04grate.tga" 255,61,50,43
-  palette "textures/proto2/panel04grate.jpg" 255,61,51,45
+  palette "textures/proto2/panel04grate.jpg" 255,61,51,43
   palette "textures/proto2/panel04blue4.tga" 255,54,57,51
-  palette "textures/proto2/panel04blue4.jpg" 255,55,56,52
+  palette "textures/proto2/panel04blue4.jpg" 255,55,57,51
   palette "textures/proto2/panel04blue2.tga" 255,35,72,74
   palette "textures/proto2/panel04blue2.jpg" 255,36,72,74
   palette "textures/proto2/panel04blue.tga" 255,43,72,68
-  palette "textures/proto2/panel04blue.jpg" 255,44,72,69
+  palette "textures/proto2/panel04blue.jpg" 255,43,72,69
   palette "textures/proto2/panel03.tga" 255,102,100,97
-  palette "textures/proto2/panel03.jpg" 255,100,100,100
+  palette "textures/proto2/panel03.jpg" 255,101,101,96
   palette "textures/proto2/panel02.tga" 255,102,100,97
-  palette "textures/proto2/panel02.jpg" 255,100,100,100
+  palette "textures/proto2/panel02.jpg" 255,101,101,96
   palette "textures/proto2/panel01.tga" 255,70,55,48
-  palette "textures/proto2/panel01.jpg" 255,70,56,49
+  palette "textures/proto2/panel01.jpg" 255,70,55,48
   palette "textures/proto2/pad_ntrl4.tga" 255,59,53,42
-  palette "textures/proto2/pad_ntrl4.jpg" 255,58,54,42
+  palette "textures/proto2/pad_ntrl4.jpg" 255,59,53,43
   palette "textures/proto2/pad_ntrl3.tga" 255,55,53,43
-  palette "textures/proto2/pad_ntrl3.jpg" 255,53,55,43
+  palette "textures/proto2/pad_ntrl3.jpg" 255,56,53,43
   palette "textures/proto2/pad_ntrl2.tga" 255,58,41,35
-  palette "textures/proto2/pad_ntrl2.jpg" 255,58,41,34
+  palette "textures/proto2/pad_ntrl2.jpg" 255,58,41,35
   palette "textures/proto2/pad_ntrl.tga" 255,56,51,47
-  palette "textures/proto2/pad_ntrl.jpg" 255,53,52,51
+  palette "textures/proto2/pad_ntrl.jpg" 255,56,52,47
   palette "textures/proto2/ooze.tga" 255,65,40,17
-  palette "textures/proto2/ooze.jpg" 255,60,42,20
+  palette "textures/proto2/ooze.jpg" 255,65,40,17
   palette "textures/proto2/oneflag.tga" 92,255,255,255
   palette "textures/proto2/oneflag.png" 92,255,255,255
   palette "textures/proto2/nubtrim.tga" 255,67,57,48
-  palette "textures/proto2/nubtrim.jpg" 255,69,56,45
+  palette "textures/proto2/nubtrim.jpg" 255,66,57,48
   palette "textures/proto2/metwallnubbed.tga" 255,76,73,69
-  palette "textures/proto2/metwallnubbed.jpg" 255,74,74,74
+  palette "textures/proto2/metwallnubbed.jpg" 255,76,73,69
   palette "textures/proto2/metwall02.tga" 255,74,68,63
-  palette "textures/proto2/metwall02.jpg" 255,71,69,68
+  palette "textures/proto2/metwall02.jpg" 255,74,68,63
   palette "textures/proto2/metwall.tga" 255,74,71,66
-  palette "textures/proto2/metwall.jpg" 255,71,71,71
+  palette "textures/proto2/metwall.jpg" 255,74,71,67
   palette "textures/proto2/metsmall.tga" 255,78,74,71
-  palette "textures/proto2/metsmall.jpg" 255,76,76,76
+  palette "textures/proto2/metsmall.jpg" 255,78,74,71
   palette "textures/proto2/marbledoor_red.tga" 215,102,74,61
   palette "textures/proto2/marbledoor_red.png" 215,102,74,61
   palette "textures/proto2/marbledoor_blue.tga" 215,83,86,78
   palette "textures/proto2/marbledoor_blue.png" 215,83,86,78
   palette "textures/proto2/marbledge01.tga" 255,73,65,56
-  palette "textures/proto2/marbledge01.jpg" 255,69,67,52
+  palette "textures/proto2/marbledge01.jpg" 255,73,65,56
   palette "textures/proto2/marble_relief.tga" 255,99,88,78
-  palette "textures/proto2/marble_relief.jpg" 255,101,88,74
+  palette "textures/proto2/marble_relief.jpg" 255,98,88,78
   palette "textures/proto2/marble02rtrim04.tga" 255,81,54,43
-  palette "textures/proto2/marble02rtrim04.jpg" 255,83,54,41
+  palette "textures/proto2/marble02rtrim04.jpg" 255,81,54,43
   palette "textures/proto2/marble02rtrim03_lt.tga" 255,0,0,0
   palette "textures/proto2/marble02rtrim03_lt.jpg" 255,0,0,0
   palette "textures/proto2/marble02rtrim03.tga" 255,85,54,44
-  palette "textures/proto2/marble02rtrim03.jpg" 255,88,54,41
+  palette "textures/proto2/marble02rtrim03.jpg" 255,84,55,45
   palette "textures/proto2/marble02rtrim02.tga" 255,88,52,42
-  palette "textures/proto2/marble02rtrim02.jpg" 255,91,52,39
+  palette "textures/proto2/marble02rtrim02.jpg" 255,88,52,43
   palette "textures/proto2/marble02pillar.tga" 255,89,77,65
-  palette "textures/proto2/marble02pillar.jpg" 255,94,75,60
+  palette "textures/proto2/marble02pillar.jpg" 255,88,77,65
   palette "textures/proto2/marble02btrim04.tga" 255,60,67,58
-  palette "textures/proto2/marble02btrim04.jpg" 255,61,67,56
+  palette "textures/proto2/marble02btrim04.jpg" 255,60,67,58
   palette "textures/proto2/marble02btrim03_lt.tga" 255,1,1,1
   palette "textures/proto2/marble02btrim03_lt.jpg" 255,1,1,1
   palette "textures/proto2/marble02btrim03.tga" 255,70,66,61
-  palette "textures/proto2/marble02btrim03.jpg" 255,71,66,59
+  palette "textures/proto2/marble02btrim03.jpg" 255,70,66,61
   palette "textures/proto2/marble02btrim02.tga" 255,68,65,62
-  palette "textures/proto2/marble02btrim02.jpg" 255,70,65,60
+  palette "textures/proto2/marble02btrim02.jpg" 255,68,65,62
   palette "textures/proto2/marble02brikb.tga" 255,137,116,97
-  palette "textures/proto2/marble02brikb.jpg" 255,136,115,99
+  palette "textures/proto2/marble02brikb.jpg" 255,137,116,97
   palette "textures/proto2/marble02b_s.tga" 135,154,139,123
   palette "textures/proto2/marble02b_s.png" 135,154,139,123
   palette "textures/proto2/marble02b_floor.tga" 117,114,100,86
   palette "textures/proto2/marble02b_floor.png" 117,114,100,86
   palette "textures/proto2/marble02b.tga" 255,89,77,65
-  palette "textures/proto2/marble02b.jpg" 255,94,75,60
+  palette "textures/proto2/marble02b.jpg" 255,88,77,65
   palette "textures/proto2/marble02.tga" 255,140,126,113
-  palette "textures/proto2/marble02.jpg" 255,144,125,110
+  palette "textures/proto2/marble02.jpg" 255,140,126,113
   palette "textures/proto2/lightbulb2.tga" 0,0,0,0
-  palette "textures/proto2/lightbulb2.png" 0,0,0,0
+  palette "textures/proto2/lightbulb2.jpg" 255,28,26,26
   palette "textures/proto2/lightbulb.tga" 61,125,113,105
   palette "textures/proto2/lightbulb.png" 61,125,113,105
   palette "textures/proto2/light_nv.tga" 255,47,59,57
-  palette "textures/proto2/light_nv.jpg" 255,48,61,56
+  palette "textures/proto2/light_nv.jpg" 255,49,59,55
   palette "textures/proto2/heat_tile02.tga" 255,103,92,81
-  palette "textures/proto2/heat_tile02.jpg" 255,104,92,77
+  palette "textures/proto2/heat_tile02.jpg" 255,103,92,81
   palette "textures/proto2/heat_tile01.tga" 255,140,132,124
-  palette "textures/proto2/heat_tile01.jpg" 255,133,135,124
+  palette "textures/proto2/heat_tile01.jpg" 255,139,132,124
   palette "textures/proto2/harvest.tga" 82,255,255,255
   palette "textures/proto2/harvest.png" 82,255,255,255
   palette "textures/proto2/grit01.tga" 255,53,41,36
-  palette "textures/proto2/grit01.jpg" 255,58,37,43
+  palette "textures/proto2/grit01.jpg" 255,52,41,37
   palette "textures/proto2/grill03b.tga" 143,58,42,34
   palette "textures/proto2/grill03b.png" 143,58,42,34
   palette "textures/proto2/grill02.tga" 127,67,62,55
@@ -4043,7 +4827,7 @@ palettes/default
   palette "textures/proto2/grate_trim.tga" 217,36,28,22
   palette "textures/proto2/grate_trim.png" 217,36,28,22
   palette "textures/proto2/gothic_lightfx.tga" 255,85,79,81
-  palette "textures/proto2/gothic_lightfx.jpg" 255,82,81,81
+  palette "textures/proto2/gothic_lightfx.jpg" 255,85,80,81
   palette "textures/proto2/gothic_light.tga" 192,84,79,81
   palette "textures/proto2/gothic_light.png" 192,84,79,81
   palette "textures/proto2/girder05.tga" 178,50,41,34
@@ -4053,87 +4837,87 @@ palettes/default
   palette "textures/proto2/girder03.tga" 112,44,40,39
   palette "textures/proto2/girder03.png" 112,44,40,39
   palette "textures/proto2/gear02b.tga" 255,5,4,4
-  palette "textures/proto2/gear02b.jpg" 255,5,5,5
+  palette "textures/proto2/gear02b.jpg" 255,5,5,4
   palette "textures/proto2/gear02.tga" 171,57,50,44
   palette "textures/proto2/gear02.png" 171,57,50,44
   palette "textures/proto2/floorvent01.tga" 228,55,44,37
   palette "textures/proto2/floorvent01.png" 228,55,44,37
   palette "textures/proto2/flare2.tga" 255,10,10,11
-  palette "textures/proto2/flare2.jpg" 255,11,11,11
+  palette "textures/proto2/flare2.jpg" 255,10,10,11
   palette "textures/proto2/flare.tga" 255,12,12,12
   palette "textures/proto2/flare.jpg" 255,12,12,12
   palette "textures/proto2/eggfloor2.tga" 255,40,42,45
-  palette "textures/proto2/eggfloor2.jpg" 255,42,42,42
+  palette "textures/proto2/eggfloor2.jpg" 255,39,43,46
   palette "textures/proto2/edge_trim.tga" 255,74,66,55
-  palette "textures/proto2/edge_trim.jpg" 255,69,73,50
+  palette "textures/proto2/edge_trim.jpg" 255,73,66,57
   palette "textures/proto2/edge01.tga" 255,34,26,20
-  palette "textures/proto2/edge01.jpg" 255,34,27,21
+  palette "textures/proto2/edge01.jpg" 255,34,26,20
   palette "textures/proto2/duct01.tga" 188,55,59,59
   palette "textures/proto2/duct01.png" 188,55,59,59
   palette "textures/proto2/door_right.tga" 190,74,71,66
   palette "textures/proto2/door_right.png" 190,74,71,66
   palette "textures/proto2/darktrim.tga" 255,18,13,7
-  palette "textures/proto2/darktrim.jpg" 255,14,14,14
+  palette "textures/proto2/darktrim.jpg" 255,18,13,7
   palette "textures/proto2/dangertrim.tga" 255,77,51,35
-  palette "textures/proto2/dangertrim.jpg" 255,76,51,38
+  palette "textures/proto2/dangertrim.jpg" 255,77,51,35
   palette "textures/proto2/crackcrete.tga" 255,68,61,54
-  palette "textures/proto2/crackcrete.jpg" 255,62,63,60
+  palette "textures/proto2/crackcrete.jpg" 255,68,61,54
   palette "textures/proto2/concrete_red.tga" 183,84,3,0
   palette "textures/proto2/concrete_red.png" 183,84,3,0
   palette "textures/proto2/concrete_blue.tga" 183,0,46,84
   palette "textures/proto2/concrete_blue.png" 183,0,46,84
   palette "textures/proto2/concrete07pillar.tga" 255,100,103,103
-  palette "textures/proto2/concrete07pillar.jpg" 255,102,102,102
+  palette "textures/proto2/concrete07pillar.jpg" 255,99,103,102
   palette "textures/proto2/concrete07_smth.tga" 255,101,104,104
-  palette "textures/proto2/concrete07_smth.jpg" 255,104,104,104
+  palette "textures/proto2/concrete07_smth.jpg" 255,100,104,103
   palette "textures/proto2/concrete07_min.tga" 255,107,109,109
-  palette "textures/proto2/concrete07_min.jpg" 255,108,108,108
+  palette "textures/proto2/concrete07_min.jpg" 255,105,109,108
   palette "textures/proto2/concrete04stair2.tga" 255,84,89,88
-  palette "textures/proto2/concrete04stair2.jpg" 255,87,87,87
+  palette "textures/proto2/concrete04stair2.jpg" 255,84,88,87
   palette "textures/proto2/concrete04stair.tga" 255,96,85,75
-  palette "textures/proto2/concrete04stair.jpg" 255,95,86,74
+  palette "textures/proto2/concrete04stair.jpg" 255,96,85,75
   palette "textures/proto2/concrete04rfhp.tga" 255,134,124,104
-  palette "textures/proto2/concrete04rfhp.jpg" 255,140,121,106
+  palette "textures/proto2/concrete04rfhp.jpg" 255,133,125,103
   palette "textures/proto2/concrete04edged.tga" 255,98,82,67
-  palette "textures/proto2/concrete04edged.jpg" 255,101,81,67
+  palette "textures/proto2/concrete04edged.jpg" 255,98,83,66
   palette "textures/proto2/concrete04dvt.tga" 255,130,120,100
-  palette "textures/proto2/concrete04dvt.jpg" 255,135,117,102
+  palette "textures/proto2/concrete04dvt.jpg" 255,129,120,99
   palette "textures/proto2/concrete04.tga" 255,134,124,104
-  palette "textures/proto2/concrete04.jpg" 255,140,121,106
+  palette "textures/proto2/concrete04.jpg" 255,133,125,103
   palette "textures/proto2/concrete03dirty.tga" 255,60,44,33
-  palette "textures/proto2/concrete03dirty.jpg" 255,62,43,28
+  palette "textures/proto2/concrete03dirty.jpg" 255,60,43,34
   palette "textures/proto2/concrete03cdirty.tga" 255,62,46,35
-  palette "textures/proto2/concrete03cdirty.jpg" 255,64,45,30
+  palette "textures/proto2/concrete03cdirty.jpg" 255,62,45,36
   palette "textures/proto2/concrete03c_smth.tga" 255,117,98,85
   palette "textures/proto2/concrete03c_smth.jpg" 255,117,98,83
   palette "textures/proto2/concrete03c_sku.tga" 255,118,102,90
-  palette "textures/proto2/concrete03c_sku.jpg" 255,120,101,86
+  palette "textures/proto2/concrete03c_sku.jpg" 255,119,101,90
   palette "textures/proto2/concrete03c_rot3.tga" 255,79,80,77
-  palette "textures/proto2/concrete03c_rot3.jpg" 255,79,78,77
+  palette "textures/proto2/concrete03c_rot3.jpg" 255,79,79,76
   palette "textures/proto2/concrete03c_rot2.tga" 255,93,82,68
-  palette "textures/proto2/concrete03c_rot2.jpg" 255,98,81,65
+  palette "textures/proto2/concrete03c_rot2.jpg" 255,93,82,69
   palette "textures/proto2/concrete03c_rot.tga" 255,90,78,63
-  palette "textures/proto2/concrete03c_rot.jpg" 255,94,76,61
+  palette "textures/proto2/concrete03c_rot.jpg" 255,90,77,64
   palette "textures/proto2/concrete03c_min.tga" 255,124,106,94
-  palette "textures/proto2/concrete03c_min.jpg" 255,125,106,91
+  palette "textures/proto2/concrete03c_min.jpg" 255,124,106,94
   palette "textures/proto2/concrete03c_aqua.tga" 255,101,120,110
-  palette "textures/proto2/concrete03c_aqua.jpg" 255,98,121,113
+  palette "textures/proto2/concrete03c_aqua.jpg" 255,102,119,109
   palette "textures/proto2/concrete03c.tga" 255,120,102,90
-  palette "textures/proto2/concrete03c.jpg" 255,121,102,87
+  palette "textures/proto2/concrete03c.jpg" 255,121,102,90
   palette "textures/proto2/concrete03b.tga" 255,121,103,90
-  palette "textures/proto2/concrete03b.jpg" 255,122,103,88
+  palette "textures/proto2/concrete03b.jpg" 255,121,103,90
   palette "textures/proto2/concrete03.tga" 255,118,100,88
-  palette "textures/proto2/concrete03.jpg" 255,119,100,85
+  palette "textures/proto2/concrete03.jpg" 255,119,100,88
   palette "textures/proto2/concrete02h.tga" 255,89,82,75
-  palette "textures/proto2/concrete02h.jpg" 255,83,83,82
+  palette "textures/proto2/concrete02h.jpg" 255,89,82,76
   palette "textures/proto2/concrete02dvt.tga" 255,90,82,75
-  palette "textures/proto2/concrete02dvt.jpg" 255,87,84,76
+  palette "textures/proto2/concrete02dvt.jpg" 255,90,83,76
   palette "textures/proto2/concrete02.tga" 255,97,89,81
-  palette "textures/proto2/concrete02.jpg" 255,92,91,81
+  palette "textures/proto2/concrete02.jpg" 255,97,89,81
   palette "textures/proto2/concrete01wetwall.tga" 230,85,78,63
   palette "textures/proto2/concrete01wetwall.png" 230,85,78,63
   palette "textures/proto2/concrete01dark.tga" 255,95,92,80
-  palette "textures/proto2/concrete01dark.jpg" 255,92,96,73
+  palette "textures/proto2/concrete01dark.jpg" 255,95,92,80
   palette "textures/proto2/con1wetwallplain.tga" 230,85,78,63
   palette "textures/proto2/con1wetwallplain.png" 230,85,78,63
   palette "textures/proto2/chain.tga" 177,35,24,20
@@ -4141,534 +4925,227 @@ palettes/default
   palette "textures/proto2/ceiling_pipe01.tga" 93,39,30,23
   palette "textures/proto2/ceiling_pipe01.png" 93,39,30,23
   palette "textures/proto2/brick04.tga" 255,74,73,69
-  palette "textures/proto2/brick04.jpg" 255,74,73,70
+  palette "textures/proto2/brick04.jpg" 255,74,73,69
   palette "textures/proto2/brick03.tga" 255,116,104,92
-  palette "textures/proto2/brick03.jpg" 255,121,103,88
+  palette "textures/proto2/brick03.jpg" 255,116,104,93
   palette "textures/proto2/brick02.tga" 255,85,88,81
-  palette "textures/proto2/brick02.jpg" 255,86,87,84
+  palette "textures/proto2/brick02.jpg" 255,85,88,81
   palette "textures/proto2/brick01.tga" 255,128,100,85
-  palette "textures/proto2/brick01.jpg" 255,127,100,87
+  palette "textures/proto2/brick01.jpg" 255,128,100,85
   palette "textures/proto2/bluetrim02b.tga" 255,41,62,77
-  palette "textures/proto2/bluetrim02b.jpg" 255,44,62,79
+  palette "textures/proto2/bluetrim02b.jpg" 255,42,62,77
   palette "textures/proto2/bluetrim02.tga" 139,87,78,68
   palette "textures/proto2/bluetrim02.png" 139,87,78,68
   palette "textures/proto2/bluetrim01.tga" 139,87,76,65
   palette "textures/proto2/bluetrim01.png" 139,87,76,65
   palette "textures/proto2/bluetin01.tga" 255,28,86,120
-  palette "textures/proto2/bluetin01.jpg" 255,29,86,121
+  palette "textures/proto2/bluetin01.jpg" 255,29,86,119
   palette "textures/proto2/blueob.tga" 88,11,225,255
   palette "textures/proto2/blueob.png" 88,11,225,255
   palette "textures/proto2/bluemidtrim.tga" 255,15,99,106
-  palette "textures/proto2/bluemidtrim.jpg" 255,16,98,109
+  palette "textures/proto2/bluemidtrim.jpg" 255,15,99,106
   palette "textures/proto2/bluelight_on.tga" 255,28,105,144
-  palette "textures/proto2/bluelight_on.jpg" 255,33,105,146
+  palette "textures/proto2/bluelight_on.jpg" 255,31,105,144
   palette "textures/proto2/bluelight_off.tga" 255,8,28,39
-  palette "textures/proto2/bluelight_off.jpg" 255,11,30,38
+  palette "textures/proto2/bluelight_off.jpg" 255,11,28,39
   palette "textures/proto2/blueflare2.tga" 255,0,17,21
-  palette "textures/proto2/blueflare2.jpg" 255,2,16,20
+  palette "textures/proto2/blueflare2.jpg" 255,1,17,21
   palette "textures/proto2/blueflare.tga" 255,0,18,24
-  palette "textures/proto2/blueflare.jpg" 255,2,18,22
+  palette "textures/proto2/blueflare.jpg" 255,1,18,23
   palette "textures/proto2/blueflag.tga" 92,0,211,255
   palette "textures/proto2/blueflag.png" 92,0,211,255
   palette "textures/proto2/blueat_dcl.tga" 255,29,40,44
-  palette "textures/proto2/blueat_dcl.jpg" 255,31,43,42
+  palette "textures/proto2/blueat_dcl.jpg" 255,30,41,45
   palette "textures/proto2/bluea_dcl.tga" 255,24,25,50
-  palette "textures/proto2/bluea_dcl.jpg" 255,30,27,56
+  palette "textures/proto2/bluea_dcl.jpg" 255,25,26,52
   palette "textures/proto2/blue_zot.tga" 255,0,9,23
-  palette "textures/proto2/blue_zot.jpg" 255,2,9,23
+  palette "textures/proto2/blue_zot.jpg" 255,1,9,23
   palette "textures/proto2/bigchain.tga" 255,110,101,93
-  palette "textures/proto2/bigchain.jpg" 255,112,101,93
+  palette "textures/proto2/bigchain.jpg" 255,110,101,93
   palette "textures/proto2/barbedwire.tga" 39,36,28,20
   palette "textures/proto2/barbedwire.png" 39,36,28,20
   palette "textures/proto2/5_dcl.tga" 137,70,43,33
   palette "textures/proto2/5_dcl.png" 137,70,43,33
-  palette "textures/gothic_ceiling/xstucco7top.tga" 255,63,52,40
-  palette "textures/gothic_ceiling/xstucco7top.jpg" 255,63,52,40
-  palette "textures/gothic_ceiling/woodceiling1b_dark.tga" 255,76,56,47
+  palette "textures/gothic_wall/xpipethin_gray256.tga" 255,36,32,31
+  palette "textures/gothic_wall/xpipethin_gray256.jpg" 255,36,33,31
+  palette "textures/gothic_wall/xpipestrips_gray256b.tga" 255,30,26,24
+  palette "textures/gothic_wall/xpipestrips_gray256b.jpg" 255,30,26,24
+  palette "textures/gothic_wall/xpipecolumn_gray_shiny.png" 226,30,28,26
+  palette "textures/gothic_wall/xoct20c_shiney.png" 63,85,75,64
+  palette "textures/gothic_wall/xiantourneywall_r1.jpg" 255,73,60,55
+  palette "textures/gothic_wall/xiantourneycolumn_b7_128.tga" 255,49,39,34
+  palette "textures/gothic_wall/xiantourneycolumn_b7_128.jpg" 255,49,40,34
+  palette "textures/gothic_wall/streetbricks13.tga" 255,55,40,33
+  palette "textures/gothic_wall/streetbricks13.jpg" 255,55,40,33
+  palette "textures/gothic_wall/streetbricks11large.tga" 255,68,54,55
+  palette "textures/gothic_wall/streetbricks11large.jpg" 255,68,54,54
+  palette "textures/gothic_wall/jumptower_top.jpg" 255,68,53,46
+  palette "textures/gothic_wall/jumptower_bottom.jpg" 255,54,37,32
+  palette "textures/gothic_wall/iron1_bluebrick.tga" 255,65,51,50
+  palette "textures/gothic_wall/iron1_bluebrick.jpg" 255,65,51,50
+  palette "textures/gothic_wall/iron01_ndark.png" 10,70,59,50
+  palette "textures/gothic_wall/iron01_m.png" 12,79,67,56
+  palette "textures/gothic_wall/iron01_f2.tga" 0,0,0,0
+  palette "textures/gothic_wall/iron01_f2.jpg" 255,60,45,40
+  palette "textures/gothic_wall/iron01_e_solid.tga" 255,49,37,34
+  palette "textures/gothic_wall/iron01_e_solid.jpg" 255,50,37,34
   palette "textures/gothic_ceiling/woodceiling1b.tga" 255,81,60,52
-  palette "textures/gothic_ceiling/woodceiling1b.jpg" 255,80,61,49
-  palette "textures/gothic_ceiling/woodceiling1a.tga" 255,79,57,47
-  palette "textures/gothic_ceiling/stucco7top.tga" 255,124,112,98
-  palette "textures/gothic_ceiling/ceilingtechplain.tga" 255,74,56,48
-  palette "textures/gothic_ceiling/ceilingtech_big.tga" 255,83,64,52
-  palette "textures/gothic_ceiling/ceilingtech_big.jpg" 255,83,64,52
-  palette "textures/gothic_ceiling/ceilingtech03_afinal.tga" 255,89,70,62
-  palette "textures/gothic_ceiling/ceilingtech02_d.tga" 255,87,68,54
-  palette "textures/gothic_ceiling/ceilingtech02_c2.tga" 255,84,64,52
-  palette "textures/gothic_ceiling/ceilingtech02_b.tga" 255,53,42,34
-  palette "textures/gothic_ceiling/ceilingtech02_a.tga" 255,50,40,32
-  palette "textures/gothic_ceiling/ceilingtech01_f.tga" 255,123,80,54
-  palette "textures/gothic_button/timbuttonside.tga" 255,147,132,133
-  palette "textures/gothic_button/timbutton2.tga" 255,24,37,4
-  palette "textures/gothic_button/timbutton.tga" 255,124,112,108
-  palette "textures/gothic_cath/xiandm9doore2_invert.tga" 255,81,65,62
-  palette "textures/gothic_cath/xiandm9doore2_invert.jpg" 255,81,65,62
-  palette "textures/gothic_cath/xiandm9doore2.tga" 255,81,73,70
-  palette "textures/gothic_cath/xiandm9doore2.jpg" 255,81,73,70
-  palette "textures/gothic_cath/xiandm9doorc.tga" 255,142,137,135
-  palette "textures/gothic_cath/xiandm9doorc.jpg" 255,142,137,135
-  palette "textures/gothic_cath/smalldoor_xiandm9i.tga" 255,70,60,56
-  palette "textures/gothic_cath/smalldoor_xiandm9f.tga" 255,46,41,39
-  palette "textures/gothic_cath/smalldoor_xiandm9f.jpg" 255,46,41,39
-  palette "textures/gothic_cath/smalldoor_xiandm9a.tga" 255,70,59,55
-  palette "textures/gothic_cath/graycathflesh5R.tga" 255,86,73,72
-  palette "textures/gothic_cath/graycathflesh5R.jpg" 255,86,73,72
-  palette "textures/gothic_cath/graycathflesh5L.tga" 255,85,74,75
-  palette "textures/gothic_cath/graycathflesh5L.jpg" 255,85,74,75
-  palette "textures/gothic_cath/graycathflesh4R.tga" 255,89,75,75
-  palette "textures/gothic_cath/graycathflesh4R.jpg" 255,89,75,75
-  palette "textures/gothic_cath/graycathflesh4L.tga" 255,89,78,79
-  palette "textures/gothic_cath/graycathflesh4L.jpg" 255,89,78,79
-  palette "textures/gothic_cath/graycathflesh3R.tga" 255,107,92,97
-  palette "textures/gothic_cath/graycathflesh3R.jpg" 255,107,92,97
-  palette "textures/gothic_cath/graycathflesh3L.tga" 255,104,88,94
-  palette "textures/gothic_cath/graycathflesh3L.jpg" 255,104,88,94
-  palette "textures/gothic_cath/graycathflesh2R.tga" 255,111,89,91
-  palette "textures/gothic_cath/graycathflesh2R.jpg" 255,111,89,91
-  palette "textures/gothic_cath/graycathflesh2L.tga" 255,103,84,87
-  palette "textures/gothic_cath/graycathflesh2L.jpg" 255,103,84,87
-  palette "textures/gothic_cath/graycathflesh1R.tga" 255,118,84,86
-  palette "textures/gothic_cath/graycathflesh1R.jpg" 255,118,84,86
-  palette "textures/gothic_cath/graycathflesh1L.tga" 255,109,79,81
-  palette "textures/gothic_cath/graycathflesh1L.jpg" 255,109,79,81
-  palette "textures/gothic_door/xiandm3talldoorright.tga" 255,51,41,42
-  palette "textures/gothic_door/xiandm3talldoorright.jpg" 255,51,41,42
-  palette "textures/gothic_door/xiandm3talldoorleft.tga" 255,49,41,46
-  palette "textures/gothic_door/xiandm3talldoorleft.jpg" 255,49,41,46
-  palette "textures/gothic_door/xiandm3talldoorinside.tga" 255,115,95,108
-  palette "textures/gothic_door/xiandm3talldoorinside.jpg" 255,115,95,108
-  palette "textures/gothic_door/xiandm3talldoor.tga" 255,26,22,22
-  palette "textures/gothic_door/xiandm3talldoor.jpg" 255,26,22,22
-  palette "textures/gothic_door/xian_tourneyarch_tall2b.tga" 255,40,32,30
+  palette "textures/gothic_ceiling/woodceiling1b.jpg" 255,82,60,52
+  palette "textures/gothic_floor/xsteptop2.tga" 255,63,50,41
+  palette "textures/gothic_floor/xsteptop2.jpg" 255,63,50,41
+  palette "textures/gothic_floor/xsteptop1.tga" 255,66,51,41
+  palette "textures/gothic_floor/xsteptop1.jpg" 255,65,51,41
+  palette "textures/gothic_floor/xstepborder3_alpha.png" 50,80,78,70
+  palette "textures/gothic_floor/xq1metalbig_ow.png" 246,77,63,54
+  palette "textures/gothic_floor/q1metal7_99spot.png" 146,99,86,59
+  palette "textures/gothic_floor/metalbridge06brokeb.png" 247,68,63,62
+  palette "textures/gothic_floor/metalbridge04d.tga" 255,99,85,87
+  palette "textures/gothic_floor/metalbridge04d.jpg" 255,98,85,87
+  palette "textures/gothic_floor/largerblock3b_ow.png" 251,83,56,38
+  palette "textures/gothic_floor/center2trn.png" 232,64,51,43
   palette "textures/gothic_door/xian_tourneyarch_tall1d.tga" 255,67,55,50
-  palette "textures/gothic_door/xian_tourneyarch_tall1d.jpg" 255,66,53,51
-  palette "textures/gothic_door/xian_tourneyarch_tall1c.tga" 255,81,56,46
-  palette "textures/gothic_door/xian_tourneyarch_med1b.tga" 255,38,29,27
-  palette "textures/gothic_door/xian_tourneyarch_inside2.tga" 255,83,51,37
-  palette "textures/gothic_door/xian_tourneyarch_bottom2.tga" 255,55,30,24
-  palette "textures/gothic_door/xian_dm3arch.tga" 255,21,18,17
-  palette "textures/gothic_door/xian_dm3arch.jpg" 255,21,18,17
-  palette "textures/gothic_door/tim_dmarch03.tga" 0,0,0,0
-  palette "textures/gothic_door/tim_dmarch03.png" 0,0,0,0
-  palette "textures/gothic_door/tim_dmarch02.tga" 255,20,17,16
-  palette "textures/gothic_door/tim_dmarch02.jpg" 255,20,17,16
-  palette "textures/gothic_door/tim_dmarch01.tga" 255,20,16,15
-  palette "textures/gothic_door/tim_dmarch01.jpg" 255,20,16,15
-  palette "textures/gothic_door/smalldoor_xiandm3a.tga" 255,63,52,47
-  palette "textures/gothic_door/smalldoor_xiandm3a.jpg" 255,63,52,47
-  palette "textures/gothic_door/metal_door_d.tga" 0,0,0,0
-  palette "textures/gothic_door/metal_door_d.png" 0,0,0,0
-  palette "textures/gothic_door/metal_door_c.tga" 0,0,0,0
-  palette "textures/gothic_door/metal_door_c.png" 0,0,0,0
-  palette "textures/gothic_door/metal_door_b.tga" 0,0,0,0
-  palette "textures/gothic_door/metal_door_b.png" 0,0,0,0
-  palette "textures/gothic_door/metal_door_a.tga" 0,0,0,0
-  palette "textures/gothic_door/metal_door_a.png" 0,0,0,0
+  palette "textures/gothic_door/xian_tourneyarch_tall1d.jpg" 255,66,55,50
+  palette "textures/gothic_door/tim_dmarch03.jpg" 255,22,18,16
+  palette "textures/gothic_door/skullarch_c.jpg" 255,20,10,6
+  palette "textures/gothic_door/skullarch_b.png" 248,58,46,41
+  palette "textures/gothic_door/skullarch_a.jpg" 255,61,49,44
+  palette "textures/gothic_door/skull_door_f.jpg" 255,70,65,65
+  palette "textures/gothic_door/skull_door_e.jpg" 255,77,69,66
+  palette "textures/gothic_door/skull_door_d.jpg" 255,78,72,71
+  palette "textures/gothic_door/skull_door_c.jpg" 255,71,63,60
+  palette "textures/gothic_door/skull_door_b.jpg" 255,66,55,50
+  palette "textures/gothic_door/skull_door_a.jpg" 255,78,69,66
+  palette "textures/gothic_door/metal_door_d.jpg" 255,75,66,64
+  palette "textures/gothic_door/metal_door_c.jpg" 255,63,52,48
+  palette "textures/gothic_door/metal_door_b.jpg" 255,70,62,59
+  palette "textures/gothic_door/metal_door_a.jpg" 255,74,66,64
   palette "textures/gothic_door/metal_door2_d.tga" 255,60,51,48
-  palette "textures/gothic_door/metal_door2_d.jpg" 255,58,51,53
+  palette "textures/gothic_door/metal_door2_d.jpg" 255,60,52,48
   palette "textures/gothic_door/metal_door2_c.tga" 255,62,52,48
-  palette "textures/gothic_door/metal_door2_c.jpg" 255,62,52,53
+  palette "textures/gothic_door/metal_door2_c.jpg" 255,62,53,48
   palette "textures/gothic_door/metal_door2_b.tga" 255,65,52,47
-  palette "textures/gothic_door/metal_door2_b.jpg" 255,73,50,58
+  palette "textures/gothic_door/metal_door2_b.jpg" 255,63,52,48
   palette "textures/gothic_door/metal_door2_a.tga" 255,60,51,47
-  palette "textures/gothic_door/metal_door2_a.jpg" 255,58,51,53
+  palette "textures/gothic_door/metal_door2_a.jpg" 255,59,51,47
   palette "textures/gothic_door/little_door3.tga" 255,72,56,51
-  palette "textures/gothic_door/little_door3.jpg" 255,77,54,56
+  palette "textures/gothic_door/little_door3.jpg" 255,71,56,51
   palette "textures/gothic_door/little_door2.tga" 255,65,53,49
-  palette "textures/gothic_door/little_door2.jpg" 255,70,51,57
+  palette "textures/gothic_door/little_door2.jpg" 255,64,53,49
   palette "textures/gothic_door/little_door.tga" 255,69,57,53
-  palette "textures/gothic_door/little_door.jpg" 255,73,55,61
-  palette "textures/gothic_door/km_arena1columna2R.tga" 255,90,72,65
-  palette "textures/gothic_door/km_arena1columna2L.tga" 255,73,54,46
-  palette "textures/gothic_door/km_arena1columna2L.jpg" 255,73,54,45
-  palette "textures/gothic_door/km_arena1archsmallfinala.tga" 255,41,29,25
-  palette "textures/gothic_door/km_arena1archsmallfinala.jpg" 255,41,29,25
-  palette "textures/gothic_door/km_arena1archfinald_top.tga" 255,53,42,38
-  palette "textures/gothic_door/km_arena1archfinald_top.jpg" 255,53,42,38
-  palette "textures/gothic_door/km_arena1archfinald_mid.tga" 255,60,47,42
-  palette "textures/gothic_door/km_arena1archfinald_bot.tga" 255,58,43,36
-  palette "textures/gothic_door/km_arena1archfinalc_top.tga" 255,53,43,39
-  palette "textures/gothic_door/km_arena1archfinalc_mid.tga" 255,58,46,42
-  palette "textures/gothic_door/km_arena1archfinalc_mid.jpg" 255,58,46,42
-  palette "textures/gothic_door/km_arena1archfinalc_bot.tga" 255,28,14,6
-  palette "textures/gothic_door/km_arena1archfinalc_bot.jpg" 255,28,14,6
-  palette "textures/gothic_door/km_arena1archfinalc.tga" 255,89,67,64
-  palette "textures/gothic_door/km_arena1archfinalc.jpg" 255,89,67,64
-  palette "textures/gothic_door/door02_k2b.tga" 255,84,64,54
-  palette "textures/gothic_door/door02_k2b.jpg" 255,84,64,54
-  palette "textures/gothic_door/door02_j4.tga" 255,105,65,46
-  palette "textures/gothic_door/door02_j4.jpg" 255,105,65,46
-  palette "textures/gothic_door/door02_j.tga" 255,105,64,43
-  palette "textures/gothic_door/door02_j.jpg" 255,105,64,43
-  palette "textures/gothic_door/door02_i_ornate5_fin.tga" 54,101,85,78
+  palette "textures/gothic_door/little_door.jpg" 255,67,57,53
   palette "textures/gothic_door/door02_i_ornate5_fin.png" 54,101,85,78
-  palette "textures/gothic_door/door02_eblue2.tga" 58,105,98,101
   palette "textures/gothic_door/door02_eblue2.png" 58,105,98,101
-  palette "textures/gothic_door/door02_bred2.tga" 39,139,99,93
   palette "textures/gothic_door/door02_bred2.png" 39,139,99,93
   palette "textures/gothic_door/brick_door_c.tga" 255,66,53,48
-  palette "textures/gothic_door/brick_door_c.jpg" 255,74,51,58
+  palette "textures/gothic_door/brick_door_c.jpg" 255,63,52,48
   palette "textures/gothic_door/big_skull_red.tga" 255,67,53,48
-  palette "textures/gothic_door/big_skull_red.jpg" 255,66,52,49
-  palette "textures/gothic_door/archxiandm1dblack.tga" 255,61,56,54
-  palette "textures/gothic_door/archxiandm1b.tga" 255,77,65,62
-  palette "textures/gothic_door/archpart9.tga" 255,80,58,41
-  palette "textures/gothic_door/archpart8.tga" 255,66,52,45
-  palette "textures/gothic_door/archpart8.jpg" 255,66,52,45
-  palette "textures/gothic_door/archpart7.tga" 255,77,65,60
-  palette "textures/gothic_door/archpart6.tga" 255,87,60,52
-  palette "textures/gothic_door/archpart2.tga" 255,75,56,46
-  palette "textures/gothic_door/archpart10.tga" 255,92,71,60
-  palette "textures/gothic_door/archpart1.tga" 255,81,62,51
-  palette "textures/gothic_door/arch_tall2b.tga" 255,73,56,52
-  palette "textures/gothic_door/arch_tall2b.jpg" 255,73,56,52
-  palette "textures/gothic_door/arch_tall2a.tga" 255,73,57,53
-  palette "textures/gothic_door/arch_tall2a.jpg" 255,73,57,53
+  palette "textures/gothic_door/big_skull_red.jpg" 255,66,53,49
   palette "textures/glass/plainglass.tga" 255,2,28,27
-  palette "textures/glass/plainglass.jpg" 255,4,27,24
+  palette "textures/glass/plainglass.jpg" 255,2,28,27
   palette "textures/glass/darkglass.tga" 255,2,28,27
-  palette "textures/glass/darkglass.jpg" 255,4,27,24
+  palette "textures/glass/darkglass.jpg" 255,2,28,27
   palette "textures/glass/blueglass.tga" 255,76,105,147
-  palette "textures/glass/blueglass.jpg" 255,73,107,146
-  palette "textures/egyptsoc_trimd/v128-03cr.jpg" 255,81,66,56
-  palette "textures/egyptsoc_trimd/v064-03cr.jpg" 255,82,57,48
-  palette "textures/egyptsoc_trimd/s128-01cr.jpg" 255,87,72,62
-  palette "textures/gothic_trim/zinc_shiny.tga" 154,73,63,54
+  palette "textures/glass/blueglass.jpg" 255,76,105,147
+  palette "textures/g1zm0/J_int.jpg" 255,169,136,78
   palette "textures/gothic_trim/zinc_shiny.png" 154,73,63,54
-  palette "textures/gothic_trim/zinc.tga" 255,71,61,52
-  palette "textures/gothic_trim/zinc.jpg" 255,71,61,52
-  palette "textures/gothic_trim/xmetalsupport4i_alpha.tga" 62,70,61,52
+  palette "textures/gothic_trim/xsupportborderside_shiney.png" 60,68,63,64
   palette "textures/gothic_trim/xmetalsupport4i_alpha.png" 62,70,61,52
-  palette "textures/gothic_trim/xian_tourney_trim.tga" 255,71,56,46
-  palette "textures/gothic_trim/x_noblightfx.tga" 255,7,6,5
+  palette "textures/gothic_trim/x_noblight.png" 241,72,53,47
   palette "textures/gothic_trim/wood2b.tga" 255,65,46,35
-  palette "textures/gothic_trim/wood2b.jpg" 255,65,46,32
-  palette "textures/gothic_trim/wood2.tga" 255,66,46,33
-  palette "textures/gothic_trim/wood2.jpg" 255,66,46,33
-  palette "textures/gothic_trim/window_pitted_rust.tga" 255,71,31,24
-  palette "textures/gothic_trim/window_pitted_rust.jpg" 255,71,31,24
-  palette "textures/gothic_trim/window_a_bottom2.tga" 255,93,81,65
-  palette "textures/gothic_trim/window_a_bottom1.tga" 255,99,85,67
-  palette "textures/gothic_trim/window_a_base.tga" 255,115,101,82
-  palette "textures/gothic_trim/window_a2.tga" 255,109,94,72
-  palette "textures/gothic_trim/window_a1.tga" 255,93,76,52
-  palette "textures/gothic_trim/tower_top.tga" 255,136,70,6
+  palette "textures/gothic_trim/wood2b.jpg" 255,65,46,35
   palette "textures/gothic_trim/tower_side2n.tga" 255,124,100,74
-  palette "textures/gothic_trim/tower_side2n.jpg" 255,124,100,76
+  palette "textures/gothic_trim/tower_side2n.jpg" 255,124,100,74
   palette "textures/gothic_trim/tower_side2blu.tga" 255,117,93,95
-  palette "textures/gothic_trim/tower_side2blu.jpg" 255,119,92,96
-  palette "textures/gothic_trim/tower_side2b.tga" 255,110,90,67
-  palette "textures/gothic_trim/tower_side2.tga" 255,138,89,60
-  palette "textures/gothic_trim/tower_front.tga" 255,158,89,9
-  palette "textures/gothic_trim/supportborderside_rot.tga" 255,61,57,58
-  palette "textures/gothic_trim/supportborderside_rot.jpg" 255,61,57,58
-  palette "textures/gothic_trim/supportborderside.tga" 255,61,57,58
-  palette "textures/gothic_trim/supportborder.tga" 255,89,57,50
-  palette "textures/gothic_trim/stucco7trim.tga" 255,121,108,94
-  palette "textures/gothic_trim/stucco7trim.jpg" 255,121,108,94
-  palette "textures/gothic_trim/stucco7top.tga" 255,124,112,98
-  palette "textures/gothic_trim/stucco7top.jpg" 255,124,112,98
-  palette "textures/gothic_trim/stucco7bord1.tga" 255,89,78,68
-  palette "textures/gothic_trim/stucco7bord1.jpg" 255,89,78,68
+  palette "textures/gothic_trim/tower_side2blu.jpg" 255,117,93,95
   palette "textures/gothic_trim/skullsvertslotdark04a.tga" 255,75,64,58
-  palette "textures/gothic_trim/skullsvertslotdark04a.jpg" 255,75,64,57
+  palette "textures/gothic_trim/skullsvertslotdark04a.jpg" 255,75,64,58
   palette "textures/gothic_trim/skullsvertslot03a.tga" 255,99,85,77
-  palette "textures/gothic_trim/skullsvertslot03a.jpg" 255,102,84,75
-  palette "textures/gothic_trim/skullsvertgrayslot02a.tga" 255,78,67,61
-  palette "textures/gothic_trim/skullsvertgrayslot02a.jpg" 255,78,67,61
-  palette "textures/gothic_trim/skullsvertgray02b.tga" 255,66,63,62
-  palette "textures/gothic_trim/skullsvertgray02a.tga" 255,77,66,61
-  palette "textures/gothic_trim/skullsvertgray02a.jpg" 255,77,66,61
+  palette "textures/gothic_trim/skullsvertslot03a.jpg" 255,99,85,77
   palette "textures/gothic_trim/skullsvertdark04b.tga" 255,124,113,106
-  palette "textures/gothic_trim/skullsvertdark04b.jpg" 255,127,112,107
-  palette "textures/gothic_trim/q_waste1.tga" 255,77,61,46
-  palette "textures/gothic_trim/q_waste1.jpg" 255,77,61,46
-  palette "textures/gothic_trim/q1metal7_12.tga" 255,73,51,52
-  palette "textures/gothic_trim/q1metal7_12.jpg" 255,73,51,52
-  palette "textures/gothic_trim/q1metal7.tga" 255,60,47,45
-  palette "textures/gothic_trim/pjwal5q.tga" 255,101,99,88
-  palette "textures/gothic_trim/pjwal5q.jpg" 255,101,99,88
-  palette "textures/gothic_trim/pitted_rustred.tga" 255,69,7,4
-  palette "textures/gothic_trim/pitted_rustblack.tga" 255,32,28,30
-  palette "textures/gothic_trim/pitted_rust_small.tga" 255,63,48,39
+  palette "textures/gothic_trim/skullsvertdark04b.jpg" 255,123,113,106
   palette "textures/gothic_trim/pitted_rust3_small.tga" 255,68,51,47
-  palette "textures/gothic_trim/pitted_rust3_small.jpg" 255,72,51,50
-  palette "textures/gothic_trim/pitted_rust3_dkred.tga" 255,44,9,7
-  palette "textures/gothic_trim/pitted_rust3_black.tga" 255,32,28,27
-  palette "textures/gothic_trim/pitted_rust3.tga" 255,67,50,46
-  palette "textures/gothic_trim/pitted_rust2.tga" 255,61,39,29
-  palette "textures/gothic_trim/pitted_rust.tga" 255,62,47,38
-  palette "textures/gothic_trim/pitted_roof.tga" 255,88,54,39
-  palette "textures/gothic_trim/pitted_roof.jpg" 255,88,54,39
-  palette "textures/gothic_trim/newskull.tga" 255,105,95,97
-  palette "textures/gothic_trim/newskull.jpg" 255,105,95,97
-  palette "textures/gothic_trim/metalsupsolid.tga" 255,85,59,62
-  palette "textures/gothic_trim/metalsupport4small.tga" 0,0,0,0
-  palette "textures/gothic_trim/metalsupport4small.png" 0,0,0,0
-  palette "textures/gothic_trim/metalsupport4j.tga" 255,65,54,45
-  palette "textures/gothic_trim/metalsupport4j.jpg" 255,65,54,45
-  palette "textures/gothic_trim/metalsupport4i_bit.tga" 255,69,60,51
-  palette "textures/gothic_trim/metalsupport4i_bit.jpg" 255,69,60,51
-  palette "textures/gothic_trim/metalsupport4i.tga" 255,64,55,46
-  palette "textures/gothic_trim/metalsupport4i.jpg" 255,64,55,46
-  palette "textures/gothic_trim/metalsupport4h_shiny.tga" 134,80,68,77
+  palette "textures/gothic_trim/pitted_rust3_small.jpg" 255,68,51,47
+  palette "textures/gothic_trim/metalsupport4small.jpg" 255,60,53,44
   palette "textures/gothic_trim/metalsupport4h_shiny.png" 134,80,68,77
-  palette "textures/gothic_trim/metalsupport4h.tga" 255,75,62,71
-  palette "textures/gothic_trim/metalsupport4h.jpg" 255,75,62,71
-  palette "textures/gothic_trim/metalsupport4g_2.tga" 255,78,54,59
-  palette "textures/gothic_trim/metalsupport4g_2.jpg" 255,78,54,59
-  palette "textures/gothic_trim/metalsupport4g_1.tga" 255,78,54,59
-  palette "textures/gothic_trim/metalsupport4g_1.jpg" 255,78,54,59
-  palette "textures/gothic_trim/metalsupport4g.tga" 255,81,55,60
-  palette "textures/gothic_trim/metalsupport4g.jpg" 255,81,55,60
-  palette "textures/gothic_trim/metalsupport4d.tga" 255,83,67,76
-  palette "textures/gothic_trim/metalsupport4d.jpg" 255,83,67,76
-  palette "textures/gothic_trim/metalsupport4c.tga" 255,55,46,52
-  palette "textures/gothic_trim/metalsupport4c.jpg" 255,55,46,52
-  palette "textures/gothic_trim/metalsupport4b.tga" 255,64,50,50
-  palette "textures/gothic_trim/metalsupport4.tga" 255,54,45,51
-  palette "textures/gothic_trim/metalsupport4.jpg" 255,54,45,51
-  palette "textures/gothic_trim/metaldemonkillblock.tga" 255,75,66,62
+  palette "textures/gothic_trim/metalblackwave01.jpg" 255,32,31,35
   palette "textures/gothic_trim/metalbase8a_brick2.tga" 255,51,36,30
-  palette "textures/gothic_trim/metalbase8a_brick2.jpg" 255,52,35,33
-  palette "textures/gothic_trim/metalbase8a_brick.tga" 255,48,34,30
-  palette "textures/gothic_trim/metalbase09b_brick.tga" 255,67,42,35
-  palette "textures/gothic_trim/metalbase09b_brick.jpg" 255,67,42,35
-  palette "textures/gothic_trim/metalbase09_killblock.tga" 255,56,49,49
-  palette "textures/gothic_trim/metalbase09_killblock.jpg" 255,56,49,49
-  palette "textures/gothic_trim/metalbase09_green.tga" 255,51,49,56
-  palette "textures/gothic_trim/metalbase09_green.jpg" 255,51,49,56
-  palette "textures/gothic_trim/metalbase09_gold.tga" 255,49,53,55
-  palette "textures/gothic_trim/metalbase09_gold.jpg" 255,49,53,55
-  palette "textures/gothic_trim/metalbase09_b_blocks15.tga" 28,116,100,85
+  palette "textures/gothic_trim/metalbase8a_brick2.jpg" 255,51,36,31
   palette "textures/gothic_trim/metalbase09_b_blocks15.png" 28,116,100,85
-  palette "textures/gothic_trim/metalbase03a_blocks18c2.tga" 255,61,54,50
-  palette "textures/gothic_trim/metalbase03a_blocks18c2.jpg" 255,61,54,50
-  palette "textures/gothic_trim/metalbase03a_blocks11b4.tga" 255,65,53,51
-  palette "textures/gothic_trim/metalbase03a_blocks11b4.jpg" 255,65,53,51
   palette "textures/gothic_trim/km_arena1towerblue.tga" 208,51,58,55
   palette "textures/gothic_trim/km_arena1towerblue.png" 208,51,58,55
-  palette "textures/gothic_trim/km_arena1tower8.tga" 255,114,95,96
-  palette "textures/gothic_trim/km_arena1tower8.jpg" 255,114,95,96
-  palette "textures/gothic_trim/km_arena1tower7.tga" 255,55,38,39
-  palette "textures/gothic_trim/km_arena1tower7.jpg" 255,55,38,39
-  palette "textures/gothic_trim/km_arena1tower6.tga" 255,93,76,77
-  palette "textures/gothic_trim/km_arena1tower6.jpg" 255,93,76,77
-  palette "textures/gothic_trim/km_arena1tower4_shiny.tga" 132,97,67,70
+  palette "textures/gothic_trim/km_arena1tower_short.jpg" 255,92,63,67
   palette "textures/gothic_trim/km_arena1tower4_shiny.png" 132,97,67,70
-  palette "textures/gothic_trim/km_arena1tower4_a.tga" 255,91,62,65
-  palette "textures/gothic_trim/km_arena1tower4.tga" 255,91,62,65
-  palette "textures/gothic_trim/km_arena1tower2.tga" 255,104,86,87
-  palette "textures/gothic_trim/km_arena1tower2.jpg" 255,104,86,87
-  palette "textures/gothic_trim/km_arena1tower1.tga" 255,51,51,59
-  palette "textures/gothic_trim/km_arena1tower1.jpg" 255,51,51,59
-  palette "textures/gothic_trim/iron01_e_mbase14_r.tga" 255,70,37,35
-  palette "textures/gothic_trim/iron01_e_mbase14_r.jpg" 255,70,37,35
-  palette "textures/gothic_trim/iron01_e_mbase14_b.tga" 255,48,37,58
-  palette "textures/gothic_trim/iron01_e_mbase14_b.jpg" 255,48,37,58
-  palette "textures/gothic_trim/gothgrate2.tga" 116,194,132,83
   palette "textures/gothic_trim/gothgrate2.png" 116,194,132,83
-  palette "textures/gothic_trim/goldsupport_a.tga" 255,140,78,11
-  palette "textures/gothic_trim/goldsupport_a.jpg" 255,140,78,11
-  palette "textures/gothic_trim/columnsupportops.tga" 255,119,87,70
-  palette "textures/gothic_trim/columnsupportbottoms.tga" 255,93,73,62
-  palette "textures/gothic_trim/column2c_test.tga" 255,58,60,72
-  palette "textures/gothic_trim/column2c_notrans.jpg" 255,58,60,72
   palette "textures/gothic_trim/borderconcrt.tga" 255,108,100,104
-  palette "textures/gothic_trim/borderconcrt.jpg" 255,104,102,103
-  palette "textures/gothic_trim/border7.tga" 255,55,55,50
-  palette "textures/gothic_trim/border7.jpg" 255,55,55,50
-  palette "textures/gothic_trim/border6.tga" 255,65,64,60
-  palette "textures/gothic_trim/border6.jpg" 255,65,64,60
-  palette "textures/gothic_trim/border2.tga" 255,95,75,68
-  palette "textures/gothic_trim/border2.jpg" 255,95,75,68
-  palette "textures/gothic_trim/border12.tga" 255,102,75,61
-  palette "textures/gothic_trim/border11.tga" 255,85,76,67
-  palette "textures/gothic_trim/border11.jpg" 255,85,76,67
-  palette "textures/gothic_trim/border10.tga" 255,91,79,68
-  palette "textures/gothic_trim/border10.jpg" 255,91,79,68
-  palette "textures/gothic_trim/blocks17g_stairtread.tga" 255,80,72,61
-  palette "textures/gothic_trim/blocks17g_stairtread.jpg" 255,80,72,61
-  palette "textures/gothic_trim/blocks15_bb09e.tga" 255,71,52,32
-  palette "textures/gothic_trim/blocks15_bb09e.jpg" 255,71,52,32
-  palette "textures/gothic_trim/baseboard9c_com_r.tga" 255,78,38,32
-  palette "textures/gothic_trim/baseboard9c_com_r.jpg" 255,78,38,32
-  palette "textures/gothic_trim/baseboard9c_com_b.tga" 255,50,47,62
-  palette "textures/gothic_trim/baseboard9c_com_b.jpg" 255,50,46,62
-  palette "textures/gothic_trim/baseboard10_h.tga" 255,53,36,31
-  palette "textures/gothic_trim/baseboard10_h.jpg" 255,53,36,31
-  palette "textures/gothic_trim/baseboard10_f.tga" 255,78,48,37
-  palette "textures/gothic_trim/baseboard10_f.jpg" 255,78,49,37
+  palette "textures/gothic_trim/borderconcrt.jpg" 255,108,100,104
   palette "textures/gothic_trim/baseboard10_eblue.tga" 255,55,54,62
-  palette "textures/gothic_trim/baseboard10_eblue.jpg" 255,55,54,61
-  palette "textures/gothic_trim/baseboard10_e.tga" 255,62,50,47
-  palette "textures/gothic_trim/baseboard10_e.jpg" 255,62,50,47
-  palette "textures/gothic_trim/baseboard10_d.tga" 255,69,46,39
-  palette "textures/gothic_trim/baseboard10.tga" 255,69,59,57
-  palette "textures/gothic_trim/baseboard10.jpg" 255,69,59,57
-  palette "textures/gothic_trim/baseboard09_red.tga" 255,68,31,25
-  palette "textures/gothic_trim/baseboard09_red.jpg" 255,68,31,25
-  palette "textures/gothic_trim/baseboard09_p_shiny.tga" 62,78,58,51
+  palette "textures/gothic_trim/baseboard10_eblue.jpg" 255,56,54,63
   palette "textures/gothic_trim/baseboard09_p_shiny.png" 62,78,58,51
-  palette "textures/gothic_trim/baseboard09_p.tga" 255,59,43,38
-  palette "textures/gothic_trim/baseboard09_p.jpg" 255,59,43,38
-  palette "textures/gothic_trim/baseboard09_o3.tga" 255,81,66,58
-  palette "textures/gothic_trim/baseboard09_l2.tga" 255,40,30,24
-  palette "textures/gothic_trim/baseboard09_l.tga" 255,52,39,33
-  palette "textures/gothic_trim/baseboard09_kgreen.tga" 255,39,51,41
-  palette "textures/gothic_trim/baseboard09_kgreen.jpg" 255,39,51,41
-  palette "textures/gothic_trim/baseboard09_kgold.tga" 255,50,52,40
-  palette "textures/gothic_trim/baseboard09_kgold.jpg" 255,50,52,40
-  palette "textures/gothic_trim/baseboard09_kblue.tga" 255,40,42,51
-  palette "textures/gothic_trim/baseboard09_kblue.jpg" 255,40,42,51
   palette "textures/gothic_trim/baseboard09_j.tga" 255,81,66,61
-  palette "textures/gothic_trim/baseboard09_j.jpg" 255,84,65,62
-  palette "textures/gothic_trim/baseboard09_ired.tga" 255,62,32,27
-  palette "textures/gothic_trim/baseboard09_ired.jpg" 255,62,32,27
-  palette "textures/gothic_trim/baseboard09_i.tga" 255,81,66,61
-  palette "textures/gothic_trim/baseboard09_i.jpg" 255,81,66,61
-  palette "textures/gothic_trim/baseboard09_h.tga" 255,60,49,45
-  palette "textures/gothic_trim/baseboard09_h.jpg" 255,60,49,45
-  palette "textures/gothic_trim/baseboard09_green.tga" 255,41,39,45
-  palette "textures/gothic_trim/baseboard09_green.jpg" 255,41,39,45
-  palette "textures/gothic_trim/baseboard09_gold.tga" 255,39,43,45
-  palette "textures/gothic_trim/baseboard09_gold.jpg" 255,39,43,45
-  palette "textures/gothic_trim/baseboard09_g3.tga" 255,52,39,33
-  palette "textures/gothic_trim/baseboard09_g.tga" 255,62,47,40
-  palette "textures/gothic_trim/baseboard09_f2.tga" 255,65,47,40
-  palette "textures/gothic_trim/baseboard09_f2.jpg" 255,65,47,40
-  palette "textures/gothic_trim/baseboard09_f.tga" 255,63,46,40
-  palette "textures/gothic_trim/baseboard09_f.jpg" 255,63,46,40
-  palette "textures/gothic_trim/baseboard09_e2.tga" 255,61,45,36
-  palette "textures/gothic_trim/baseboard09_e.tga" 255,61,45,36
-  palette "textures/gothic_trim/baseboard09_c3.tga" 255,61,49,40
-  palette "textures/gothic_trim/baseboard09_c2b.tga" 255,48,34,27
-  palette "textures/gothic_trim/baseboard09_c2b.jpg" 255,48,34,27
-  palette "textures/gothic_trim/baseboard09_c2.tga" 255,53,39,33
-  palette "textures/gothic_trim/baseboard09_c2.jpg" 255,53,39,33
-  palette "textures/gothic_trim/baseboard09_c.tga" 255,52,39,32
-  palette "textures/gothic_trim/baseboard09_c.jpg" 255,52,39,32
-  palette "textures/gothic_trim/baseboard09_blue.tga" 255,45,39,39
-  palette "textures/gothic_trim/baseboard09_blue.jpg" 255,45,39,39
-  palette "textures/gothic_trim/baseboard09_2.tga" 255,55,41,33
-  palette "textures/gothic_trim/baseboard09_2.jpg" 255,55,41,33
-  palette "textures/gothic_trim/baseboard09.tga" 255,54,40,31
-  palette "textures/gothic_trim/baseboard08_ered.tga" 255,87,37,31
-  palette "textures/gothic_trim/baseboard08_ered.jpg" 255,87,37,31
-  palette "textures/gothic_trim/baseboard08_e.tga" 255,56,36,30
-  palette "textures/gothic_trim/baseboard08_e.jpg" 255,56,36,30
-  palette "textures/gothic_trim/baseboard08_dblue.tga" 255,48,51,63
-  palette "textures/gothic_trim/baseboard08_dblue.jpg" 255,48,51,63
-  palette "textures/gothic_trim/baseboard08_d.tga" 255,54,39,32
-  palette "textures/gothic_trim/baseboard08_b.tga" 255,58,48,36
-  palette "textures/gothic_trim/baseboard08_b.jpg" 255,58,48,36
-  palette "textures/gothic_trim/baseboard08.tga" 255,58,43,35
-  palette "textures/gothic_trim/baseboard08.jpg" 255,58,43,35
-  palette "textures/gothic_trim/baseboard07.tga" 255,74,59,50
-  palette "textures/gothic_trim/baseboard04.tga" 255,68,55,47
-  palette "textures/gothic_trim/baseboard03_a.tga" 255,41,65,46
-  palette "textures/gothic_trim/baseboard03_a.jpg" 255,41,65,46
-  palette "textures/gothic_trim/baseboard03.tga" 255,81,52,39
-  palette "textures/gothic_trim/baseboard03.jpg" 255,81,52,39
-  palette "textures/gothic_trim/baseboard01.tga" 255,43,36,32
-  palette "textures/gothic_trim/baseboard01.jpg" 255,43,36,32
-  palette "textures/egyptsoc_wall/stone10d.jpg" 255,97,71,42
-  palette "textures/egyptsoc_wall/stone09c.jpg" 255,90,80,70
-  palette "textures/egyptsoc_wall/stone09a.jpg" 255,98,88,77
-  palette "textures/egyptsoc_wall/stone08c.jpg" 255,90,81,70
-  palette "textures/egyptsoc_wall/stone08a.jpg" 255,99,89,78
-  palette "textures/egyptsoc_wall/stone07d.jpg" 255,51,61,67
-  palette "textures/egyptsoc_wall/stone04d.jpg" 255,95,72,45
-  palette "textures/egyptsoc_wall/stone04a.jpg" 255,100,90,78
-  palette "textures/egyptsoc_wall/stone03d.jpg" 255,94,71,44
-  palette "textures/egyptsoc_wall/stone03a.jpg" 255,98,88,77
-  palette "textures/egyptsoc_wall/stone01a.jpg" 255,94,84,73
-  palette "textures/egyptsoc_trim/v128-03g.jpg" 255,81,74,66
-  palette "textures/egyptsoc_trim/v128-03a.jpg" 255,80,71,60
-  palette "textures/egyptsoc_trim/v064-03a.jpg" 255,78,68,57
-  palette "textures/egyptsoc_trim/step01a.jpg" 255,68,61,53
-  palette "textures/egyptsoc_trim/s128-01e.jpg" 255,89,77,64
-  palette "textures/egyptsoc_trim/256-04b.jpg" 255,90,67,40
-  palette "textures/egyptsoc_trim/256-03d.jpg" 255,73,54,32
-  palette "textures/egyptsoc_trim/128-03a.jpg" 255,90,84,78
-  palette "textures/egyptsoc_trim/128-02pa.jpg" 255,80,71,61
-  palette "textures/egyptsoc_trim/064-08a.jpg" 255,60,50,40
-  palette "textures/egyptsoc_trim/064-04b.jpg" 255,89,73,51
-  palette "textures/egyptsoc_trim/064-02c.jpg" 255,71,66,58
-  palette "textures/egyptsoc_trim/064-02b.jpg" 255,83,67,46
-  palette "textures/egyptsoc_trim/032-05c.jpg" 255,64,60,54
-  palette "textures/egyptsoc_trim/032-04d.jpg" 255,90,63,36
-  palette "textures/egyptsoc_trim/032-04c.jpg" 255,68,62,54
-  palette "textures/egyptsoc_sfx/s128-01r.blend.jpg" 255,11,4,3
-  palette "textures/egyptsoc_sfx/lig_v192-01ba.jpg" 255,123,123,135
-  palette "textures/egyptsoc_sfx/lig_v192-01b.blend.jpg" 255,98,103,121
-  palette "textures/egyptsoc_sfx/lig_b064-02b.blend.jpg" 255,25,36,52
-  palette "textures/egyptsoc_sfx/lig_b064-02a.jpg" 255,84,89,99
-  palette "textures/egyptsoc_sfx/lig_064-04w2.jpg" 255,88,74,56
-  palette "textures/egyptsoc_sfx/lig_064-04w.blend.jpg" 255,20,18,15
-  palette "textures/egyptsoc_sfx/lig_064-02b2.jpg" 255,80,82,86
-  palette "textures/egyptsoc_sfx/lig_064-02b1.jpg" 255,74,82,94
-  palette "textures/egyptsoc_sfx/lig_064-02b.blend.jpg" 255,31,43,57
-  palette "textures/egyptsoc_sfx/lig_064-01b1.jpg" 255,88,87,87
-  palette "textures/egyptsoc_sfx/lig_064-01b.blend.jpg" 255,30,35,42
-  palette "textures/egyptsoc_mat/wood18.jpg" 255,55,44,36
-  palette "textures/egyptsoc_mat/wood09.jpg" 255,62,43,31
-  palette "textures/egyptsoc_mat/wood07.jpg" 255,98,82,65
-  palette "textures/egyptsoc_mat/wood05a.jpg" 255,77,59,46
-  palette "textures/egyptsoc_mat/sand1b.jpg" 255,105,82,56
-  palette "textures/egyptsoc_mat/block02c.jpg" 255,55,45,34
-  palette "textures/egyptsoc_mat/block02a.jpg" 255,67,54,41
-  palette "textures/egyptsoc_mat/block01d.jpg" 255,101,77,48
-  palette "textures/egyptsoc_mat/block01c.jpg" 255,87,78,69
-  palette "textures/egyptsoc_mat/block01a.jpg" 255,106,96,84
-  palette "textures/egyptsoc_floor/solidgrate1a.jpg" 255,49,43,34
-  palette "textures/egyptsoc_floor/grate4a.tga" 97,63,57,50
+  palette "textures/gothic_trim/baseboard09_j.jpg" 255,81,66,61
   palette "textures/egyptsoc_floor/grate4a.png" 97,63,57,50
-  palette "textures/egyptsoc_floor/block10c.jpg" 255,59,60,59
-  palette "textures/egyptsoc_floor/block09a.jpg" 255,87,78,68
-  palette "textures/egyptsoc_floor/block08c.jpg" 255,81,73,63
-  palette "textures/egyptsoc_floor/block07b.jpg" 255,103,77,46
-  palette "textures/egyptsoc_floor/block01a.jpg" 255,86,77,67
   palette "textures/effects2/xtourney_fx3.tga" 255,14,3,0
-  palette "textures/effects2/xtourney_fx3.jpg" 255,14,4,4
+  palette "textures/effects2/xtourney_fx3.jpg" 255,13,4,2
   palette "textures/effects2/tinfx_scr.tga" 255,13,13,13
-  palette "textures/effects2/tinfx_scr.jpg" 255,13,13,13
+  palette "textures/effects2/tinfx_scr.jpg" 255,14,14,14
   palette "textures/effects2/redfx.tga" 255,157,14,7
-  palette "textures/effects2/redfx.jpg" 255,156,18,12
+  palette "textures/effects2/redfx.jpg" 255,157,16,10
   palette "textures/effects2/envmap_sky.tga" 255,126,118,118
-  palette "textures/effects2/envmap_sky.jpg" 255,125,117,119
+  palette "textures/effects2/envmap_sky.jpg" 255,125,117,118
   palette "textures/effects2/envmap_red.tga" 255,92,16,11
-  palette "textures/effects2/envmap_red.jpg" 255,92,18,13
+  palette "textures/effects2/envmap_red.jpg" 255,92,17,13
   palette "textures/effects2/envmap_blu.tga" 255,7,82,88
-  palette "textures/effects2/envmap_blu.jpg" 255,13,83,90
+  palette "textures/effects2/envmap_blu.jpg" 255,11,82,88
   palette "textures/effects2/console01.tga" 232,0,13,14
   palette "textures/effects2/console01.png" 232,0,13,14
   palette "textures/effects2/bluefx.tga" 255,31,90,139
-  palette "textures/effects2/bluefx.jpg" 255,36,88,140
+  palette "textures/effects2/bluefx.jpg" 255,34,90,138
+  palette "textures/gothic_block/wetwall.png" 247,52,41,36
+  palette "textures/gothic_block/largerblock3blood.png" 146,82,52,34
+  palette "textures/gothic_block/largerblock3b.tga" 0,0,0,0
+  palette "textures/gothic_block/largerblock3b.jpg" 255,88,59,40
+  palette "textures/gothic_block/killblockgeomtrn.png" 227,66,58,55
+  palette "textures/gothic_block/gkc18a.tga" 255,73,61,54
+  palette "textures/gothic_block/gkc18a.jpg" 255,73,61,55
+  palette "textures/gothic_block/gkc17d.png" 117,110,97,89
+  palette "textures/gothic_block/gkc14e.jpg" 255,70,55,46
+  palette "textures/gothic_block/demon_block15fx.png" 252,84,65,58
+  palette "textures/gothic_block/blocks18cgeomtrnx.png" 227,58,50,46
+  palette "textures/gothic_block/blocks18cgeomtrn2.png" 65,60,51,46
+  palette "textures/gothic_block/blocks18c_2.tga" 255,61,51,47
+  palette "textures/gothic_block/blocks18c_2.jpg" 255,61,51,47
+  palette "textures/gothic_block/blocks18b_ow.png" 239,77,61,58
+  palette "textures/gothic_block/blocks17g_owx.png" 238,79,69,60
+  palette "textures/gothic_block/blocks17g_ow.png" 238,79,69,60
+  palette "textures/gothic_block/blocks17bloody.png" 146,79,55,50
+  palette "textures/gothic_block/blocks17_ow.png" 238,81,66,61
+  palette "textures/gothic_block/blocks15cgeomtrn.png" 227,73,56,51
+  palette "textures/gothic_block/blocks15_red.tga" 255,75,33,27
+  palette "textures/gothic_block/blocks15_red.jpg" 255,74,34,28
   palette "textures/ctf2/redteam01.tga" 92,243,15,15
   palette "textures/ctf2/redteam01.png" 92,243,15,15
   palette "textures/ctf2/red_banner02.tga" 215,104,12,12
   palette "textures/ctf2/red_banner02.png" 215,104,12,12
   palette "textures/ctf2/pj_baseboardr_l.tga" 255,5,2,0
-  palette "textures/ctf2/pj_baseboardr_l.jpg" 255,5,2,1
+  palette "textures/ctf2/pj_baseboardr_l.jpg" 255,6,2,1
   palette "textures/ctf2/pj_baseboardr.tga" 255,73,44,35
-  palette "textures/ctf2/pj_baseboardr.jpg" 255,71,45,35
+  palette "textures/ctf2/pj_baseboardr.jpg" 255,73,44,36
   palette "textures/ctf2/pj_baseboardb_l.tga" 255,4,3,0
-  palette "textures/ctf2/pj_baseboardb_l.jpg" 255,3,3,1
+  palette "textures/ctf2/pj_baseboardb_l.jpg" 255,4,3,1
   palette "textures/ctf2/pj_baseboardb.tga" 255,48,49,58
-  palette "textures/ctf2/pj_baseboardb.jpg" 255,47,50,60
+  palette "textures/ctf2/pj_baseboardb.jpg" 255,49,49,58
   palette "textures/ctf2/jaildr_blue.tga" 255,12,12,80
-  palette "textures/ctf2/jaildr_blue.jpg" 255,14,13,82
+  palette "textures/ctf2/jaildr_blue.jpg" 255,12,12,80
   palette "textures/ctf2/jaildr_blue.blend.tga" 255,8,5,78
-  palette "textures/ctf2/jaildr_blue.blend.jpg" 255,13,6,81
+  palette "textures/ctf2/jaildr_blue.blend.jpg" 255,8,6,80
   palette "textures/ctf2/grenammobutton.tga" 255,0,36,4
-  palette "textures/ctf2/grenammobutton.jpg" 255,9,39,14
+  palette "textures/ctf2/grenammobutton.jpg" 255,6,38,10
   palette "textures/ctf2/ctf_redpad.tga" 255,72,34,31
-  palette "textures/ctf2/ctf_redpad.jpg" 255,72,35,30
+  palette "textures/ctf2/ctf_redpad.jpg" 255,72,35,31
   palette "textures/ctf2/ctf_blupad.tga" 255,38,49,63
-  palette "textures/ctf2/ctf_blupad.jpg" 255,38,49,62
+  palette "textures/ctf2/ctf_blupad.jpg" 255,38,49,63
   palette "textures/ctf2/bridgelogo.tga" 255,4,76,77
-  palette "textures/ctf2/bridgelogo.jpg" 255,20,80,82
+  palette "textures/ctf2/bridgelogo.jpg" 255,15,78,79
   palette "textures/ctf2/blueteam01.tga" 94,15,178,243
   palette "textures/ctf2/blueteam01.png" 94,15,178,243
   palette "textures/ctf2/blue_techsign01.tga" 147,67,56,50
@@ -4679,310 +5156,140 @@ palettes/default
   palette "textures/ctf2/blue_banner01.png" 215,149,135,122
   palette "textures/ctf2/b_dummy.tga" 37,4,156,218
   palette "textures/ctf2/b_dummy.png" 37,4,156,218
-  palette "textures/gothic_block/xgkc_lower.tga" 255,71,59,52
-  palette "textures/gothic_block/xgkc_lower.jpg" 255,71,59,52
-  palette "textures/gothic_block/xcurve_q3dm6.tga" 255,69,61,58
-  palette "textures/gothic_block/xcurve_q3dm6.jpg" 255,69,61,58
-  palette "textures/gothic_block/xblocks10.tga" 255,76,36,28
-  palette "textures/gothic_block/xblocks10.jpg" 255,76,36,28
-  palette "textures/gothic_block/xGkc15ba.tga" 255,82,65,54
-  palette "textures/gothic_block/xGkc15ba.jpg" 255,82,65,54
-  palette "textures/gothic_block/x1blocks.tga" 255,71,59,53
-  palette "textures/gothic_block/x1blocks.jpg" 255,71,59,53
-  palette "textures/gothic_block/windowevil2c_killblock.tga" 255,72,62,59
-  palette "textures/gothic_block/windowevil2c_block18c.tga" 255,82,57,55
-  palette "textures/gothic_block/windowevil2c_block18c.jpg" 255,82,57,55
-  palette "textures/gothic_block/wetwallfx.tga" 255,24,21,13
-  palette "textures/gothic_block/wetwallfx.jpg" 255,24,21,13
-  palette "textures/gothic_block/wetwall.tga" 247,52,41,36
-  palette "textures/gothic_block/wetwall.png" 247,52,41,36
-  palette "textures/gothic_block/smblk3b3dim_wall.tga" 255,50,41,35
-  palette "textures/gothic_block/smblk3b3dim_wall.jpg" 255,50,41,35
-  palette "textures/gothic_block/pulpywalla.tga" 255,53,44,39
-  palette "textures/gothic_block/pulpywalla.jpg" 255,53,44,39
-  palette "textures/gothic_block/largerblock3b.tga" 0,0,0,0
-  palette "textures/gothic_block/largerblock3b.png" 0,0,0,0
-  palette "textures/gothic_block/killtrim.tga" 255,49,43,41
-  palette "textures/gothic_block/killtrim.jpg" 255,49,43,41
-  palette "textures/gothic_block/killblock_relief1.tga" 255,82,67,70
-  palette "textures/gothic_block/killblock_relief1.jpg" 255,82,67,70
-  palette "textures/gothic_block/killblock_k.tga" 255,75,65,62
-  palette "textures/gothic_block/killblock_k.jpg" 255,75,65,62
-  palette "textures/gothic_block/killblock_j2.tga" 255,72,62,59
-  palette "textures/gothic_block/killblock_j2.jpg" 255,72,62,59
-  palette "textures/gothic_block/killblock_j.tga" 255,74,63,58
-  palette "textures/gothic_block/killblock_j.jpg" 255,74,63,58
-  palette "textures/gothic_block/killblock_iron_b.tga" 255,56,59,72
-  palette "textures/gothic_block/killblock_iron_b.jpg" 255,56,59,72
-  palette "textures/gothic_block/killblock_i4glow.tga" 255,1,0,0
-  palette "textures/gothic_block/killblock_i4glow.jpg" 255,1,0,0
-  palette "textures/gothic_block/killblock_i4.tga" 255,79,62,53
-  palette "textures/gothic_block/killblock_i3.tga" 255,82,66,58
-  palette "textures/gothic_block/killblock_i3.jpg" 255,82,66,58
-  palette "textures/gothic_block/killblock_i2.tga" 255,77,61,53
-  palette "textures/gothic_block/killblock_i2.jpg" 255,77,61,53
-  palette "textures/gothic_block/killblock_i.tga" 255,76,62,55
-  palette "textures/gothic_block/killblock.tga" 255,75,67,65
-  palette "textures/gothic_block/gkc_large_right.tga" 255,74,64,60
-  palette "textures/gothic_block/gkc_large_right.jpg" 255,74,64,60
-  palette "textures/gothic_block/gkc_larg_left.tga" 255,74,64,60
-  palette "textures/gothic_block/gkc_larg_left.jpg" 255,74,64,60
-  palette "textures/gothic_block/gkc20b.tga" 255,75,65,60
-  palette "textures/gothic_block/gkc20a.tga" 255,75,65,60
-  palette "textures/gothic_block/gkc20_wide_right.tga" 255,75,66,62
-  palette "textures/gothic_block/gkc20_wide_right.jpg" 255,75,66,62
-  palette "textures/gothic_block/gkc19b.tga" 255,74,65,62
-  palette "textures/gothic_block/gkc19a.tga" 255,74,65,61
-  palette "textures/gothic_block/gkc19_wide_right.tga" 255,74,65,63
-  palette "textures/gothic_block/gkc19_wide_right.jpg" 255,74,65,63
-  palette "textures/gothic_block/gkc18b.tga" 255,72,60,53
-  palette "textures/gothic_block/gkc18b.jpg" 255,72,60,53
-  palette "textures/gothic_block/gkc18a.tga" 255,73,61,54
-  palette "textures/gothic_block/gkc18a.jpg" 255,74,61,53
-  palette "textures/gothic_block/gkc17d.tga" 117,110,97,89
-  palette "textures/gothic_block/gkc17d.png" 117,110,97,89
-  palette "textures/gothic_block/gkc16b.tga" 255,74,63,58
-  palette "textures/gothic_block/gkc16b.jpg" 255,74,63,58
-  palette "textures/gothic_block/gkc15c.tga" 255,75,64,58
-  palette "textures/gothic_block/gkc15b.tga" 255,73,64,59
-  palette "textures/gothic_block/gkc15_big.tga" 255,74,63,58
-  palette "textures/gothic_block/gkc15_big.jpg" 255,74,63,58
-  palette "textures/gothic_block/gkc14e.tga" 0,0,0,0
-  palette "textures/gothic_block/gkc14e.png" 0,0,0,0
-  palette "textures/gothic_block/gkc14b.tga" 255,71,57,48
-  palette "textures/gothic_block/gkc14b.jpg" 255,71,57,48
-  palette "textures/gothic_block/gkc14.tga" 255,68,54,45
-  palette "textures/gothic_block/gkc14.jpg" 255,68,54,45
-  palette "textures/gothic_block/gkc10.tga" 255,58,47,41
-  palette "textures/gothic_block/gkc10.jpg" 255,58,47,41
-  palette "textures/gothic_block/evil2ckillblockglow.tga" 255,15,5,2
-  palette "textures/gothic_block/evil2cglow.tga" 255,18,2,2
-  palette "textures/gothic_block/evil2cglow.jpg" 255,18,2,2
-  palette "textures/gothic_block/dark_block.tga" 255,52,37,28
-  palette "textures/gothic_block/dark_block.jpg" 255,52,37,28
-  palette "textures/gothic_block/blocks9.tga" 255,79,71,71
-  palette "textures/gothic_block/blocks9.jpg" 255,79,71,71
-  palette "textures/gothic_block/blocks20b.tga" 255,105,72,55
-  palette "textures/gothic_block/blocks19.tga" 255,91,75,71
-  palette "textures/gothic_block/blocks19.jpg" 255,91,75,71
-  palette "textures/gothic_block/blocks18d.tga" 255,54,46,42
-  palette "textures/gothic_block/blocks18d.jpg" 255,54,46,42
-  palette "textures/gothic_block/blocks18cgeomtrnx.tga" 227,58,50,46
-  palette "textures/gothic_block/blocks18cgeomtrnx.png" 227,58,50,46
-  palette "textures/gothic_block/blocks18cgeom.tga" 255,60,50,46
-  palette "textures/gothic_block/blocks18cgeom.jpg" 255,60,50,46
-  palette "textures/gothic_block/blocks18cbloodhead.tga" 255,60,50,47
-  palette "textures/gothic_block/blocks18cbloodhead.jpg" 255,60,50,47
-  palette "textures/gothic_block/blocks18cblood.tga" 255,60,49,45
-  palette "textures/gothic_block/blocks18c_3.tga" 255,58,50,46
-  palette "textures/gothic_block/blocks18c_2.tga" 255,61,51,47
-  palette "textures/gothic_block/blocks18c_2.jpg" 255,60,50,50
-  palette "textures/gothic_block/blocks18c_1a.tga" 255,60,50,47
-  palette "textures/gothic_block/blocks18c_1a.jpg" 255,60,50,47
-  palette "textures/gothic_block/blocks18c_1.tga" 255,60,50,46
-  palette "textures/gothic_block/blocks18c_1.jpg" 255,60,50,46
-  palette "textures/gothic_block/blocks18c.tga" 255,58,50,46
-  palette "textures/gothic_block/blocks18b_ow.tga" 239,77,61,58
-  palette "textures/gothic_block/blocks18b.tga" 255,75,63,61
-  palette "textures/gothic_block/blocks17slime.tga" 255,63,68,50
-  palette "textures/gothic_block/blocks17slime.jpg" 255,63,68,50
-  palette "textures/gothic_block/blocks17k.tga" 255,72,59,56
-  palette "textures/gothic_block/blocks17k.jpg" 255,72,59,56
-  palette "textures/gothic_block/blocks17j.tga" 255,79,65,63
-  palette "textures/gothic_block/blocks17j.jpg" 255,79,65,63
-  palette "textures/gothic_block/blocks17i.tga" 255,36,46,28
-  palette "textures/gothic_block/blocks17i.jpg" 255,36,46,28
-  palette "textures/gothic_block/blocks17g_owx.tga" 238,79,69,60
-  palette "textures/gothic_block/blocks17g_owx.png" 238,79,69,60
-  palette "textures/gothic_block/blocks17g_ow.tga" 238,79,69,60
-  palette "textures/gothic_block/blocks17g_ow.png" 238,79,69,60
-  palette "textures/gothic_block/blocks17g.tga" 255,79,71,61
-  palette "textures/gothic_block/blocks17e.tga" 255,71,55,42
-  palette "textures/gothic_block/blocks17bloody.tga" 146,79,55,50
-  palette "textures/gothic_block/blocks17bloody.png" 146,79,55,50
-  palette "textures/gothic_block/blocks17.tga" 255,82,68,65
-  palette "textures/gothic_block/blocks15cgeomtrn.tga" 227,73,56,51
-  palette "textures/gothic_block/blocks15cgeomtrn.png" 227,73,56,51
-  palette "textures/gothic_block/blocks15_relief2.tga" 255,92,76,70
-  palette "textures/gothic_block/blocks15_relief2.jpg" 255,92,76,70
-  palette "textures/gothic_block/blocks15_relief1.tga" 255,86,65,67
-  palette "textures/gothic_block/blocks15_relief1.jpg" 255,86,65,67
-  palette "textures/gothic_block/blocks15_red.tga" 255,75,33,27
-  palette "textures/gothic_block/blocks15_red.jpg" 255,75,35,28
-  palette "textures/gothic_block/blocks15_iron_r.tga" 255,85,45,42
-  palette "textures/gothic_block/blocks15_iron_r.jpg" 255,85,45,42
-  palette "textures/gothic_block/blocks15_c.tga" 255,81,60,51
-  palette "textures/gothic_block/blocks15_c.jpg" 255,81,60,51
-  palette "textures/gothic_block/blocks15_blue.tga" 255,49,44,57
-  palette "textures/gothic_block/blocks15_blue.jpg" 255,49,44,57
-  palette "textures/gothic_block/blocks15.tga" 255,87,64,57
-  palette "textures/gothic_block/blocks11d.tga" 255,57,49,47
-  palette "textures/gothic_block/blocks11d.jpg" 255,57,49,47
-  palette "textures/gothic_block/blocks11bbroke3.tga" 255,70,63,61
-  palette "textures/gothic_block/blocks11bbroke.tga" 255,65,57,54
-  palette "textures/gothic_block/blocks11b.tga" 255,75,67,65
-  palette "textures/gothic_block/blocks10.tga" 255,91,72,59
-  palette "textures/gothic_block/block10d.tga" 255,92,75,64
-  palette "textures/gothic_block/block10d.jpg" 255,92,75,64
-  palette "textures/common/watercaulk.tga" 255,64,106,132
-  palette "textures/common/watercaulk.jpg" 255,66,103,130
-  palette "textures/common/transwater.tga" 255,64,106,132
-  palette "textures/common/transwater.jpg" 255,66,103,130
-  palette "textures/common/slimecaulk.tga" 255,44,219,77
-  palette "textures/common/slimecaulk.jpg" 255,46,213,76
-  palette "textures/common/skip.tga" 255,35,51,146
-  palette "textures/common/skip.jpg" 255,33,50,140
-  palette "textures/common/lavacaulk.tga" 255,255,92,38
-  palette "textures/common/lavacaulk.jpg" 255,243,92,39
-  palette "textures/common/hintlocal.tga" 255,57,229,57
-  palette "textures/common/hintlocal.jpg" 255,65,227,63
-  palette "textures/common/antiportal.tga" 255,24,105,115
-  palette "textures/common/antiportal.jpg" 255,26,101,113
-  palette "textures/common/alpha_75.tga" 255,128,128,128
+  palette "textures/colors/black.jpg" 255,0,0,0
+  palette "textures/common/watercaulk.jpg" 255,64,105,131
+  palette "textures/common/transwater.jpg" 255,64,105,131
+  palette "textures/common/slimecaulk.jpg" 255,46,214,78
+  palette "textures/common/skip.jpg" 255,34,51,143
+  palette "textures/common/mirror1.jpg" 255,0,0,0
+  palette "textures/common/lavacaulk.jpg" 255,245,93,40
+  palette "textures/common/invisible.jpg" 255,0,0,0
+  palette "textures/common/hintlocal.jpg" 255,63,228,62
+  palette "textures/common/antiportal.jpg" 255,25,104,115
   palette "textures/common/alpha_75.jpg" 255,128,128,128
-  palette "textures/common/alpha_50.tga" 255,129,129,129
   palette "textures/common/alpha_50.jpg" 255,129,129,129
-  palette "textures/common/alpha_25.tga" 255,128,128,128
-  palette "textures/common/alpha_25.jpg" 255,128,128,128
-  palette "textures/common/alpha_100.tga" 255,126,126,126
-  palette "textures/common/alpha_100.jpg" 255,126,126,126
-  palette "textures/common/alpha_0.tga" 255,126,126,126
-  palette "textures/common/alpha_0.jpg" 255,125,125,125
+  palette "textures/common/alpha_25.jpg" 255,129,129,129
+  palette "textures/common/alpha_100.jpg" 255,127,127,127
+  palette "textures/common/alpha_0.jpg" 255,126,126,126
+  palette "textures/effects/xenvmap-freeze.tga" 255,33,33,33
+  palette "textures/effects/xenvmap-freeze.jpg" 255,33,33,33
+  palette "textures/effects/weirdpuff.tga" 83,162,139,105
+  palette "textures/effects/weirdpuff.png" 83,162,139,105
+  palette "textures/effects/weirdmask.jpg" 255,7,51,21
+  palette "textures/effects/tinfxb.jpeg" 255,71,66,66
+  palette "textures/effects/tinfx2d.jpeg" 255,44,54,53
+  palette "textures/effects/tinfx2c.jpeg" 255,37,46,46
+  palette "textures/effects/tinfx2b.jpeg" 255,49,43,43
+  palette "textures/effects/tinfx2.jpeg" 255,21,21,21
+  palette "textures/effects/tinfx.jpeg" 255,62,62,62
+  palette "textures/effects/regenmap2.jpeg" 255,82,5,4
+  palette "textures/effects/reflectionmap.tga" 255,0,38,1
+  palette "textures/effects/reflectionmap.jpg" 255,6,39,7
+  palette "textures/effects/redflagmap.jpg" 255,15,16,48
+  palette "textures/effects/phasemap3.tga" 136,0,0,0
+  palette "textures/effects/phasemap3.png" 136,0,0,0
+  palette "textures/effects/phasemap2.jpg" 255,13,13,13
+  palette "textures/effects/phasemap.jpg" 255,30,30,30
+  palette "textures/effects/lightning3.jpg" 255,8,20,21
+  palette "textures/effects/invisibility.jpg" 255,0,0,0
+  palette "textures/effects/greenmask.jpg" 255,9,84,30
+  palette "textures/effects/grapplingHook.jpg" 255,21,13,1
+  palette "textures/effects/frozenmap.jpg" 255,15,36,69
+  palette "textures/effects/freezemap2.jpg" 255,83,83,83
+  palette "textures/effects/envmapyel.jpeg" 255,142,108,36
+  palette "textures/effects/envmaprail.jpeg" 255,38,80,32
+  palette "textures/effects/envmapplas.jpeg" 255,84,36,87
+  palette "textures/effects/envmapligh.jpeg" 255,86,62,33
   palette "textures/effects/envmapgreen.tga" 255,30,115,44
-  palette "textures/effects/envmapgreen.jpg" 255,34,116,45
-  palette "textures/ctf/towerback.tga" 0,0,0,0
-  palette "textures/ctf/towerback.png" 0,0,0,0
-  palette "textures/ctf/test2_r.tga" 255,101,12,12
-  palette "textures/ctf/test2_r.jpg" 255,100,11,15
-  palette "textures/ctf/test2.tga" 0,0,0,0
-  palette "textures/ctf/test2.png" 0,0,0,0
-  palette "textures/ctf/telep.tga" 23,55,45,39
+  palette "textures/effects/envmapgreen.jpg" 255,32,115,45
+  palette "textures/effects/envmapgold2.jpeg" 255,99,57,20
+  palette "textures/effects/envmapgold.jpeg" 255,121,77,41
+  palette "textures/effects/envmapdim.jpeg" 255,53,53,53
+  palette "textures/effects/envmapblue2.jpeg" 255,24,66,126
+  palette "textures/effects/envmapblue.jpeg" 255,36,90,137
+  palette "textures/effects/envmapbfg.jpeg" 255,35,49,82
+  palette "textures/effects/envmap.jpeg" 255,103,103,105
+  palette "textures/effects/blueflagmap.jpg" 255,59,8,7
+  palette "textures/effects/Copy of regenmap2.jpg" 255,83,3,2
+  palette "textures/effects/Copy (2) of regenmap2.jpg" 255,37,2,2
+  palette "textures/chili_skies/thunderbolt_3.jpg" 255,208,132,249
+  palette "textures/chili_skies/thunderbolt_2.jpg" 255,126,111,162
+  palette "textures/chili_skies/thunderbolt_1.jpg" 255,163,107,193
+  palette "textures/chili_skies/sky_clouds.tga" 255,90,93,100
+  palette "textures/chili_skies/sky_clouds.jpg" 255,90,93,100
+  palette "textures/chili_vegetation/seerosenbluete.tga" 144,201,221,195
+  palette "textures/chili_vegetation/seerosenbluete.png" 144,201,221,195
+  palette "textures/chili_vegetation/seerose.tga" 199,79,135,75
+  palette "textures/chili_vegetation/seerose.png" 199,79,135,75
+  palette "textures/chili_vegetation/pilzstamm.jpg" 255,194,193,191
+  palette "textures/chili_vegetation/pilzlamellen.jpg" 255,72,51,34
+  palette "textures/chili_vegetation/gras.tga" 166,71,120,34
+  palette "textures/chili_vegetation/gras.png" 166,71,120,34
+  palette "textures/chili_vegetation/fliegenpilz.jpg" 255,201,92,87
+  palette "textures/chili_vegetation/efeu.tga" 109,36,76,23
+  palette "textures/chili_vegetation/efeu.png" 109,36,76,23
+  palette "textures/chili_vegetation/blaetter.tga" 170,9,40,2
+  palette "textures/chili_vegetation/blaetter.png" 170,9,40,2
+  palette "textures/ctf/towerback.jpg" 255,48,43,44
+  palette "textures/ctf/test2_r.jpg" 255,102,12,11
+  palette "textures/ctf/test2.jpg" 255,31,30,82
   palette "textures/ctf/telep.png" 23,55,45,39
-  palette "textures/ctf/tallblue_5esmallb_fin.tga" 16,92,85,89
   palette "textures/ctf/tallblue_5esmallb_fin.png" 16,92,85,89
-  palette "textures/ctf/tallblue_5_bfin.tga" 255,47,42,62
-  palette "textures/ctf/tallblue_5_bfin.jpg" 255,47,42,62
-  palette "textures/ctf/tallblue_4c_fin.tga" 39,75,66,88
   palette "textures/ctf/tallblue_4c_fin.png" 39,75,66,88
-  palette "textures/ctf/tallblue_4bsmall_fin.tga" 31,79,67,84
   palette "textures/ctf/tallblue_4bsmall_fin.png" 31,79,67,84
-  palette "textures/ctf/tallblue_2bshort_fin.tga" 255,52,45,59
-  palette "textures/ctf/tallblue_2bshort_fin.jpg" 255,52,45,59
-  palette "textures/ctf/tallblue_2bshort2_fin.tga" 255,58,50,55
-  palette "textures/ctf/tallblue_2bshort2_fin.jpg" 255,58,50,55
-  palette "textures/ctf/tallblue_2b_fin.tga" 6,73,55,48
   palette "textures/ctf/tallblue_2b_fin.png" 6,73,55,48
-  palette "textures/ctf/tallblue_2_fin.tga" 10,72,59,58
   palette "textures/ctf/tallblue_2_fin.png" 10,72,59,58
-  palette "textures/ctf/tallblue_1_fin.tga" 255,43,40,77
-  palette "textures/ctf/tallblue_1_fin.jpg" 255,43,40,77
-  palette "textures/ctf/tallblue_1R_fin.tga" 7,48,41,65
   palette "textures/ctf/tallblue_1R_fin.png" 7,48,41,65
-  palette "textures/ctf/tallblue_1L_fin.tga" 5,51,43,60
   palette "textures/ctf/tallblue_1L_fin.png" 5,51,43,60
-  palette "textures/ctf/supportborder_blueskull.tga" 255,70,60,71
-  palette "textures/ctf/supportborder_blueskull.jpg" 255,70,60,71
-  palette "textures/ctf/supportborder_blue_c.tga" 255,72,61,59
-  palette "textures/ctf/supportborder_blue_c.jpg" 255,72,61,59
-  palette "textures/ctf/supportborder_blue_b.tga" 255,73,62,57
-  palette "textures/ctf/supportborder_blue_b.jpg" 255,73,62,57
-  palette "textures/ctf/supportborder_blue.tga" 255,69,59,72
-  palette "textures/ctf/supportborder_blue.jpg" 255,69,59,72
-  palette "textures/ctf/red_telep2.tga" 255,20,1,1
-  palette "textures/ctf/red_telep2.jpg" 255,20,1,1
-  palette "textures/ctf/red_telep.tga" 255,20,1,1
-  palette "textures/ctf/red_telep.jpg" 255,20,1,1
-  palette "textures/ctf/red_scary4_dfin.tga" 255,67,29,28
-  palette "textures/ctf/red_scary4_dfin.jpg" 255,67,29,28
-  palette "textures/ctf/red_scary4_d3fin.tga" 27,90,52,51
   palette "textures/ctf/red_scary4_d3fin.png" 27,90,52,51
-  palette "textures/ctf/red_scary4_cshortfin.tga" 255,76,47,43
-  palette "textures/ctf/red_scary4_cshortfin.jpg" 255,76,47,43
-  palette "textures/ctf/red_scary4_csansfacefin.tga" 9,87,60,56
   palette "textures/ctf/red_scary4_csansfacefin.png" 9,87,60,56
-  palette "textures/ctf/red_scary4_cfin.tga" 6,89,62,62
   palette "textures/ctf/red_scary4_cfin.png" 6,89,62,62
-  palette "textures/ctf/red_scary4_bfin.tga" 255,68,30,29
-  palette "textures/ctf/red_scary4_bfin.jpg" 255,68,30,29
-  palette "textures/ctf/metalbase09_bluekillblock.tga" 29,94,79,69
   palette "textures/ctf/metalbase09_bluekillblock.png" 29,94,79,69
-  palette "textures/ctf/killblock_i2_r.jpg" 255,77,56,53
-  palette "textures/ctf/killblock_i2_gold.tga" 255,64,69,64
-  palette "textures/ctf/killblock_i2_gold.jpg" 255,64,69,64
-  palette "textures/ctf/killblock_i2_g.jpg" 255,61,66,66
-  palette "textures/ctf/killblock_i2_b.jpg" 255,64,59,66
-  palette "textures/ctf/ctf_tower_redfin_bottom.tga" 255,65,53,49
-  palette "textures/ctf/ctf_tower_redfin_bottom.jpg" 255,65,53,49
-  palette "textures/ctf/ctf_tower_redfin.tga" 38,117,78,73
   palette "textures/ctf/ctf_tower_redfin.png" 38,117,78,73
-  palette "textures/ctf/ctf_tower_bluefin_bottom.tga" 255,60,48,43
-  palette "textures/ctf/ctf_tower_bluefin_bottom.jpg" 255,60,48,43
-  palette "textures/ctf/ctf_tower_bluefin.tga" 38,107,94,98
   palette "textures/ctf/ctf_tower_bluefin.png" 38,107,94,98
-  palette "textures/ctf/ctf_redflag.tga" 241,175,13,6
   palette "textures/ctf/ctf_redflag.png" 241,175,13,6
-  palette "textures/ctf/ctf_greenflag.tga" 224,61,168,9
   palette "textures/ctf/ctf_greenflag.png" 224,61,168,9
-  palette "textures/ctf/ctf_goldflag.tga" 224,168,119,9
   palette "textures/ctf/ctf_goldflag.png" 224,168,119,9
-  palette "textures/ctf/ctf_goldflag.jpg" 255,179,136,44
-  palette "textures/ctf/ctf_blueflag.tga" 224,9,110,168
   palette "textures/ctf/ctf_blueflag.png" 224,9,110,168
-  palette "textures/ctf/ctf_arch_r.tga" 209,44,29,26
   palette "textures/ctf/ctf_arch_r.png" 209,44,29,26
-  palette "textures/ctf/ctf_arch_b.tga" 207,33,35,33
   palette "textures/ctf/ctf_arch_b.png" 207,33,35,33
-  palette "textures/ctf/blue_telep2.tga" 255,1,13,20
-  palette "textures/ctf/blue_telep2.jpg" 255,1,12,20
-  palette "textures/ctf/blue_telep.tga" 255,1,13,20
-  palette "textures/ctf/blue_telep.jpg" 255,1,12,20
+  palette "textures/chili_sfx/wachs.jpg" 255,209,160,59
+  palette "textures/chili_sfx/starlet_green.jpg" 255,16,76,40
+  palette "textures/chili_sfx/starlet_blue.jpg" 255,21,77,90
+  palette "textures/chili_sfx/spinnennetz.jpg" 255,102,103,102
+  palette "textures/chili_sfx/rain.jpg" 255,0,0,0
+  palette "textures/chili_sfx/mirror.tga" 0,0,0,0
+  palette "textures/chili_sfx/mirror.jpg" 255,0,0,0
+  palette "textures/chili_sfx/chain.tga" 154,100,71,67
+  palette "textures/chili_sfx/chain.png" 154,100,71,67
+  palette "textures/chili_liquids/reflection1.jpg" 255,25,33,27
+  palette "textures/chili_liquids/pool_green.jpg" 255,33,43,36
+  palette "textures/chili_light/stained_glass_red.jpg" 255,156,7,7
+  palette "textures/chili_light/stained_glass_blue.jpg" 255,9,102,112
+  palette "textures/chili_light/kerzenschein.jpg" 255,53,46,36
+  palette "textures/chili_light/kerze.jpg" 255,48,47,48
+  palette "textures/chili_animals/dragonfly.tga" 2,58,87,56
+  palette "textures/chili_animals/dragonfly.png" 2,58,87,56
+  palette "textures/chili_animals/butterfly.tga" 108,19,111,67
+  palette "textures/chili_animals/butterfly.png" 108,19,111,67
+  palette "textures/chili_decals/sky_shadows.jpg" 255,171,171,171
+  palette "textures/chili_decals/penta.jpg" 255,75,16,1
+  palette "textures/chili_decals/neon.jpg" 255,2,22,21
+  palette "textures/chili_decals/balustrade_decal_7.tga" 255,233,233,233
+  palette "textures/chili_decals/balustrade_decal_7.jpg" 255,232,232,232
+  palette "textures/chili_decals/balustrade_decal_6.tga" 255,231,231,231
+  palette "textures/chili_decals/balustrade_decal_6.jpg" 255,231,231,231
+  palette "textures/chili_decals/balustrade_decal_5.tga" 255,234,234,234
+  palette "textures/chili_decals/balustrade_decal_5.jpg" 255,234,234,234
+  palette "textures/chili_decals/balustrade_decal_4.tga" 255,233,233,233
+  palette "textures/chili_decals/balustrade_decal_4.jpg" 255,233,233,233
+  palette "textures/chili_decals/balustrade_decal_3.tga" 255,233,233,233
+  palette "textures/chili_decals/balustrade_decal_3.jpg" 255,233,233,233
+  palette "textures/chili_decals/balustrade_decal_2.tga" 255,233,233,233
+  palette "textures/chili_decals/balustrade_decal_2.jpg" 255,233,233,233
+  palette "textures/chili_decals/balustrade_decal_1.tga" 255,234,234,234
+  palette "textures/chili_decals/balustrade_decal_1.jpg" 255,233,233,233
   palette "textures/bbqmines/stone57.jpg" 255,94,81,63
-  palette "textures/base_support/z_support.tga" 173,77,66,54
-  palette "textures/base_support/z_support.png" 173,77,66,54
-  palette "textures/base_support/x_support3.tga" 143,71,53,41
-  palette "textures/base_support/x_support3.png" 143,71,53,41
-  palette "textures/base_support/x_support2.tga" 106,63,62,56
-  palette "textures/base_support/x_support2.png" 106,63,62,56
-  palette "textures/base_support/x_support.tga" 106,73,53,38
-  palette "textures/base_support/x_support.png" 106,73,53,38
-  palette "textures/base_support/wplat1_1.tga" 255,67,51,39
-  palette "textures/base_support/wplat1_1.jpg" 255,67,51,39
-  palette "textures/base_support/vert_pipe1.tga" 255,86,69,52
-  palette "textures/base_support/vert_pipe1.jpg" 255,86,69,52
-  palette "textures/base_support/surface2.tga" 255,163,113,89
-  palette "textures/base_support/surface2.jpg" 255,163,113,89
-  palette "textures/base_support/support1shiny.tga" 206,68,57,51
-  palette "textures/base_support/support1shiny.png" 206,68,57,51
-  palette "textures/base_support/support1rust.tga" 255,49,31,21
-  palette "textures/base_support/support1rust.jpg" 255,49,31,21
-  palette "textures/base_support/support1_1.tga" 255,68,55,44
-  palette "textures/base_support/support1_1.jpg" 255,68,55,44
-  palette "textures/base_support/plate2_5.tga" 255,55,44,37
-  palette "textures/base_support/plate2_5.jpg" 255,55,44,37
-  palette "textures/base_support/pipecolumn4.tga" 93,154,38,40
-  palette "textures/base_support/pipecolumn4.png" 93,154,38,40
-  palette "textures/base_support/pip03_3.tga" 255,73,54,33
-  palette "textures/base_support/pip03_3.jpg" 255,73,54,33
-  palette "textures/base_support/pip03_2.tga" 255,49,44,34
-  palette "textures/base_support/pip03_2.jpg" 255,49,44,34
-  palette "textures/base_support/metal3_3.tga" 255,87,77,69
-  palette "textures/base_support/metal3_3.jpg" 255,87,77,69
-  palette "textures/base_support/metal1_1.tga" 255,78,70,67
-  palette "textures/base_support/metal1_1.jpg" 255,78,70,67
-  palette "textures/base_support/metal14_1.tga" 255,63,57,52
-  palette "textures/base_support/grate2_7_small.tga" 255,64,59,55
-  palette "textures/base_support/grate2_7_small.jpg" 255,64,59,55
-  palette "textures/base_support/grate1_4_small.tga" 255,62,54,47
-  palette "textures/base_support/grate1_4_small.jpg" 255,62,54,47
-  palette "textures/base_support/grate1_4.tga" 255,61,53,46
-  palette "textures/base_support/grate1_4.jpg" 255,61,53,46
-  palette "textures/base_support/grate1_3.tga" 86,129,119,100
-  palette "textures/base_support/grate1_3.png" 86,129,119,100
-  palette "textures/base_support/flat1_1.tga" 255,29,26,21
-  palette "textures/base_support/flat1_1.jpg" 255,29,26,21
-  palette "textures/base_support/cable.tga" 255,41,36,29
-  palette "textures/base_support/basic1_1.tga" 255,60,49,38
-  palette "textures/base_support/basic1_1.jpg" 255,60,49,38
   palette "textures/base_wall2/zzztred_kc.tga" 149,83,5,0
   palette "textures/base_wall2/zzztred_kc.png" 149,83,5,0
   palette "textures/base_wall2/zzztntrl_kc.tga" 149,83,59,0
@@ -4992,33 +5299,33 @@ palettes/default
   palette "textures/base_wall2/yellow_circle.tga" 20,153,97,0
   palette "textures/base_wall2/yellow_circle.png" 20,153,97,0
   palette "textures/base_wall2/xbasewall03.tga" 255,65,53,37
-  palette "textures/base_wall2/xbasewall03.jpg" 255,67,52,37
+  palette "textures/base_wall2/xbasewall03.jpg" 255,65,53,38
   palette "textures/base_wall2/techfloor_kc_shadow.tga" 255,247,247,247
-  palette "textures/base_wall2/techfloor_kc_shadow.jpg" 255,246,246,246
+  palette "textures/base_wall2/techfloor_kc_shadow.jpg" 255,247,247,247
   palette "textures/base_wall2/techfloor_kc.tga" 111,78,79,79
   palette "textures/base_wall2/techfloor_kc.png" 111,78,79,79
   palette "textures/base_wall2/techfloor2_kc.tga" 65,98,84,75
   palette "textures/base_wall2/techfloor2_kc.png" 65,98,84,75
   palette "textures/base_wall2/space_panel_alt2.tga" 255,163,148,148
-  palette "textures/base_wall2/space_panel_alt2.jpg" 255,167,145,153
+  palette "textures/base_wall2/space_panel_alt2.jpg" 255,163,148,148
   palette "textures/base_wall2/space_panel_alt.tga" 255,205,205,205
-  palette "textures/base_wall2/space_panel_alt.jpg" 255,204,204,204
+  palette "textures/base_wall2/space_panel_alt.jpg" 255,205,205,205
   palette "textures/base_wall2/scuffs1.tga" 255,216,204,201
-  palette "textures/base_wall2/scuffs1.jpg" 255,215,204,202
+  palette "textures/base_wall2/scuffs1.jpg" 255,216,204,201
   palette "textures/base_wall2/redjet_3_kc.tga" 255,3,1,0
   palette "textures/base_wall2/redjet_3_kc.jpg" 255,3,1,0
   palette "textures/base_wall2/redjet_2_kc.tga" 255,7,2,3
-  palette "textures/base_wall2/redjet_2_kc.jpg" 255,6,2,2
+  palette "textures/base_wall2/redjet_2_kc.jpg" 255,7,2,3
   palette "textures/base_wall2/redjet_1_kc.tga" 255,9,0,0
-  palette "textures/base_wall2/redjet_1_kc.jpg" 255,9,1,1
+  palette "textures/base_wall2/redjet_1_kc.jpg" 255,9,0,0
   palette "textures/base_wall2/redarrows.tga" 18,80,0,0
   palette "textures/base_wall2/redarrows.png" 18,80,0,0
   palette "textures/base_wall2/red_solid.tga" 255,222,27,0
-  palette "textures/base_wall2/red_solid.jpg" 255,213,24,4
+  palette "textures/base_wall2/red_solid.jpg" 255,222,27,0
   palette "textures/base_wall2/red_metal.tga" 91,133,52,33
   palette "textures/base_wall2/red_metal.png" 91,133,52,33
   palette "textures/base_wall2/red_line_glow.tga" 255,73,8,0
-  palette "textures/base_wall2/red_line_glow.jpg" 255,73,8,3
+  palette "textures/base_wall2/red_line_glow.jpg" 255,73,8,0
   palette "textures/base_wall2/red_line.tga" 115,103,97,86
   palette "textures/base_wall2/red_line.png" 115,103,97,86
   palette "textures/base_wall2/red_circle.tga" 20,153,0,0
@@ -5026,11 +5333,11 @@ palettes/default
   palette "textures/base_wall2/red_arrow_small.tga" 24,165,5,1
   palette "textures/base_wall2/red_arrow_small.png" 24,165,5,1
   palette "textures/base_wall2/ntrl_3_kc.tga" 255,3,2,0
-  palette "textures/base_wall2/ntrl_3_kc.jpg" 255,3,2,1
+  palette "textures/base_wall2/ntrl_3_kc.jpg" 255,3,2,0
   palette "textures/base_wall2/ntrl_2_kc.tga" 255,7,4,2
-  palette "textures/base_wall2/ntrl_2_kc.jpg" 255,6,4,2
+  palette "textures/base_wall2/ntrl_2_kc.jpg" 255,7,4,2
   palette "textures/base_wall2/ntrl_1_kc.tga" 255,9,7,0
-  palette "textures/base_wall2/ntrl_1_kc.jpg" 255,8,7,1
+  palette "textures/base_wall2/ntrl_1_kc.jpg" 255,9,7,1
   palette "textures/base_wall2/name_vortex.tga" 55,173,109,0
   palette "textures/base_wall2/name_vortex.png" 55,173,109,0
   palette "textures/base_wall2/lensflare.tga" 255,49,49,49
@@ -5046,9 +5353,9 @@ palettes/default
   palette "textures/base_wall2/double_line_blue.tga" 49,0,0,151
   palette "textures/base_wall2/double_line_blue.png" 49,0,0,151
   palette "textures/base_wall2/diamond_ctf_red.tga" 255,85,73,74
-  palette "textures/base_wall2/diamond_ctf_red.jpg" 255,89,70,77
+  palette "textures/base_wall2/diamond_ctf_red.jpg" 255,84,73,72
   palette "textures/base_wall2/bluejet_3_kc.tga" 255,0,0,3
-  palette "textures/base_wall2/bluejet_3_kc.jpg" 255,0,0,2
+  palette "textures/base_wall2/bluejet_3_kc.jpg" 255,0,0,3
   palette "textures/base_wall2/bluejet_2_kc.tga" 255,1,3,6
   palette "textures/base_wall2/bluejet_2_kc.jpg" 255,2,3,6
   palette "textures/base_wall2/bluejet_1_kc.tga" 255,0,1,9
@@ -5056,732 +5363,251 @@ palettes/default
   palette "textures/base_wall2/bluearrows.tga" 18,0,0,80
   palette "textures/base_wall2/bluearrows.png" 18,0,0,80
   palette "textures/base_wall2/blue_solid.tga" 255,0,0,155
-  palette "textures/base_wall2/blue_solid.jpg" 255,3,0,149
+  palette "textures/base_wall2/blue_solid.jpg" 255,0,1,154
   palette "textures/base_wall2/blue_metal.tga" 91,25,92,130
   palette "textures/base_wall2/blue_metal.png" 91,25,92,130
   palette "textures/base_wall2/blue_line_glow.tga" 255,2,0,73
-  palette "textures/base_wall2/blue_line_glow.jpg" 255,2,1,72
+  palette "textures/base_wall2/blue_line_glow.jpg" 255,2,0,72
   palette "textures/base_wall2/blue_line.tga" 115,103,97,86
   palette "textures/base_wall2/blue_line.png" 115,103,97,86
   palette "textures/base_wall2/blue_circle.tga" 20,33,33,120
   palette "textures/base_wall2/blue_circle.png" 20,33,33,120
   palette "textures/base_wall2/blue_arrow_small.tga" 24,0,53,165
   palette "textures/base_wall2/blue_arrow_small.png" 24,0,53,165
+  palette "textures/base_support/z_support.png" 173,77,66,54
+  palette "textures/base_support/x_support3.png" 143,71,53,41
+  palette "textures/base_support/x_support2.png" 106,63,62,56
+  palette "textures/base_support/x_support.png" 106,73,53,38
+  palette "textures/base_support/support1shiny.png" 206,68,57,51
+  palette "textures/base_support/pipecolumn4.png" 93,154,38,40
+  palette "textures/base_support/grate1_3.png" 86,129,119,100
+  palette "textures/base_support/cable_trans.jpg" 255,41,36,29
   palette "textures/base_object/rocketlogo.tga" 255,66,0,0
-  palette "textures/base_object/rocketlogo.jpg" 255,72,7,8
-  palette "textures/base_object/boxq3_4.tga" 69,172,118,82
+  palette "textures/base_object/rocketlogo.jpg" 255,68,5,6
   palette "textures/base_object/boxq3_4.png" 69,172,118,82
-  palette "textures/base_object/boxQ3_4b.tga" 255,110,82,69
-  palette "textures/base_object/boxQ3_4b.jpg" 255,110,82,69
-  palette "textures/base_object/boxQ3_3b.tga" 255,113,76,67
-  palette "textures/base_object/boxQ3_3b.jpg" 255,112,76,67
-  palette "textures/base_object/boxQ3_3.tga" 86,120,63,49
   palette "textures/base_object/boxQ3_3.png" 86,120,63,49
   palette "textures/base_object/boxQ3_2b.tga" 255,122,112,96
-  palette "textures/base_object/boxQ3_2b.jpg" 255,126,110,94
+  palette "textures/base_object/boxQ3_2b.jpg" 255,122,112,96
   palette "textures/base_object/boxQ3_2.tga" 98,112,99,96
   palette "textures/base_object/boxQ3_2.png" 98,112,99,96
   palette "textures/base_object/boxQ3_2.blend.tga" 255,3,1,5
-  palette "textures/base_object/boxQ3_2.blend.jpg" 255,2,2,5
+  palette "textures/base_object/boxQ3_2.blend.jpg" 255,3,2,6
   palette "textures/base_object/boxQ3_1b.tga" 255,99,87,75
-  palette "textures/base_object/boxQ3_1b.jpg" 255,101,86,76
+  palette "textures/base_object/boxQ3_1b.jpg" 255,99,87,76
   palette "textures/base_object/boxQ3_1.tga" 96,110,112,83
   palette "textures/base_object/boxQ3_1.png" 96,110,112,83
   palette "textures/base_floor2/tin_floor03stepx.tga" 255,59,53,47
-  palette "textures/base_floor2/tin_floor03stepx.jpg" 255,54,54,54
+  palette "textures/base_floor2/tin_floor03stepx.jpg" 255,59,53,47
   palette "textures/base_floor2/tin_floor03step.tga" 255,72,58,47
-  palette "textures/base_floor2/tin_floor03step.jpg" 255,75,57,42
-  palette "textures/base_trim/yellow_rustbx128.tga" 255,66,31,10
-  palette "textures/base_trim/yellow_rustbx128.jpg" 255,66,31,10
-  palette "textures/base_trim/yellow_rustb_v1.tga" 255,71,34,10
-  palette "textures/base_trim/yellow_rustb_v1.jpg" 255,71,34,10
-  palette "textures/base_trim/yellow_rustb.tga" 255,71,34,10
-  palette "textures/base_trim/yellow_rustb.jpg" 255,71,34,10
-  palette "textures/base_trim/xspiderbit4.tga" 255,53,46,37
-  palette "textures/base_trim/xspiderbit4.jpg" 255,53,46,37
-  palette "textures/base_trim/xred1_2.tga" 255,134,56,5
-  palette "textures/base_trim/xred1_2.jpg" 255,133,56,5
-  palette "textures/base_trim/xian_dm3padwall_y.tga" 255,73,72,71
-  palette "textures/base_trim/xian_dm3padwall_y.jpg" 255,73,72,71
-  palette "textures/base_trim/xian_dm3padwall_x2.tga" 255,75,68,63
-  palette "textures/base_trim/xian_dm3padwall_x2.jpg" 255,75,68,63
-  palette "textures/base_trim/xian_dm3padwall_x.tga" 255,81,74,67
-  palette "textures/base_trim/xian_dm3padwall_x.jpg" 255,81,74,67
-  palette "textures/base_trim/xborder11b.tga" 255,93,84,74
-  palette "textures/base_trim/xborder11b.jpg" 255,93,84,74
-  palette "textures/base_trim/wires02.tga" 44,54,43,36
+  palette "textures/base_floor2/tin_floor03step.jpg" 255,72,58,47
   palette "textures/base_trim/wires02.png" 44,54,43,36
-  palette "textures/base_trim/wires01_ass.tga" 77,59,49,42
   palette "textures/base_trim/wires01_ass.png" 77,59,49,42
-  palette "textures/base_trim/wires01.tga" 86,67,55,47
   palette "textures/base_trim/wires01.png" 86,67,55,47
-  palette "textures/base_trim/wire02a_f.tga" 255,77,55,40
-  palette "textures/base_trim/wire02a_f.jpg" 255,77,55,40
-  palette "textures/base_trim/wire02_f1.tga" 255,94,72,53
-  palette "textures/base_trim/wire02_f1.jpg" 255,94,72,53
-  palette "textures/base_trim/tinfx.tga" 255,62,62,62
-  palette "textures/base_trim/tinfx.jpg" 255,62,62,62
-  palette "textures/base_trim/tin.tga" 255,100,99,97
-  palette "textures/base_trim/tin.jpg" 255,100,99,97
-  palette "textures/base_trim/techborder_fx.tga" 255,4,2,2
-  palette "textures/base_trim/techborder_fx.jpg" 255,4,2,2
-  palette "textures/base_trim/techborder.tga" 255,46,40,31
-  palette "textures/base_trim/techborder.jpg" 255,46,40,31
-  palette "textures/base_trim/spidertrim4.tga" 204,57,49,43
   palette "textures/base_trim/spidertrim4.png" 204,57,49,43
-  palette "textures/base_trim/spidertrim3.tga" 148,68,60,51
   palette "textures/base_trim/spidertrim3.png" 148,68,60,51
-  palette "textures/base_trim/spidertrim.tga" 255,48,38,31
-  palette "textures/base_trim/spidertrim.jpg" 255,48,38,31
-  palette "textures/base_trim/spiderbite.tga" 173,63,57,50
   palette "textures/base_trim/spiderbite.png" 173,63,57,50
-  palette "textures/base_trim/spiderbit_ow.tga" 255,57,45,36
-  palette "textures/base_trim/spiderbit_ow.jpg" 255,57,45,36
-  palette "textures/base_trim/spiderbit_fx.tga" 255,4,3,3
-  palette "textures/base_trim/spiderbit_fx.jpg" 255,4,3,3
-  palette "textures/base_trim/spiderbit6.tga" 255,49,37,30
-  palette "textures/base_trim/spiderbit6.jpg" 255,49,37,30
-  palette "textures/base_trim/spiderbit4.tga" 255,56,49,39
-  palette "textures/base_trim/spiderbit3.tga" 255,58,50,40
-  palette "textures/base_trim/spiderbit2.tga" 255,52,40,29
-  palette "textures/base_trim/spiderbit2.jpg" 255,52,40,29
-  palette "textures/base_trim/spiderbit.tga" 255,58,46,36
-  palette "textures/base_trim/spiderbit.jpg" 255,58,46,36
-  palette "textures/base_trim/slots1_1.tga" 255,58,53,49
-  palette "textures/base_trim/slots1_1.jpg" 255,58,53,49
-  palette "textures/base_trim/rusty_pewter_big.tga" 255,50,44,36
-  palette "textures/base_trim/rusty_pewter_big.jpg" 255,50,44,36
   palette "textures/base_trim/red1_1.tga" 255,68,19,16
-  palette "textures/base_trim/red1_1.jpg" 255,70,19,15
-  palette "textures/base_trim/proto_fence.tga" 67,65,51,41
+  palette "textures/base_trim/red1_1.jpg" 255,67,19,15
   palette "textures/base_trim/proto_fence.png" 67,65,51,41
-  palette "textures/base_trim/proto_comp2.tga" 255,8,1,1
-  palette "textures/base_trim/proto_comp2.jpg" 255,7,1,1
-  palette "textures/base_trim/proto_comp.tga" 74,52,49,46
   palette "textures/base_trim/proto_comp.png" 74,52,49,46
   palette "textures/base_trim/pj_launcher2.tga" 247,95,0,0
   palette "textures/base_trim/pj_launcher2.png" 247,95,0,0
   palette "textures/base_trim/pj_launcher.tga" 247,56,47,42
   palette "textures/base_trim/pj_launcher.png" 247,56,47,42
   palette "textures/base_trim/pipe.tga" 255,109,65,23
-  palette "textures/base_trim/pipe.jpg" 255,110,65,26
-  palette "textures/base_trim/pewterstep.tga" 255,56,52,49
-  palette "textures/base_trim/pewterstep.jpg" 255,56,52,49
-  palette "textures/base_trim/pewter_spec.tga" 255,59,55,51
-  palette "textures/base_trim/pewter_spec.jpg" 255,59,55,51
+  palette "textures/base_trim/pipe.jpg" 255,109,65,24
+  palette "textures/base_trim/pewter_shiney.png" 145,60,55,51
   palette "textures/base_trim/pewter_gold.tga" 255,92,65,47
-  palette "textures/base_trim/pewter_gold.jpg" 255,89,65,52
-  palette "textures/base_trim/pewter.tga" 255,59,55,51
-  palette "textures/base_trim/pewter.jpg" 255,59,55,51
-  palette "textures/base_trim/panelbrn01scr.tga" 255,79,56,37
-  palette "textures/base_trim/panelbrn01scr.jpg" 255,79,56,37
-  palette "textures/base_trim/panelbrn010w.tga" 248,76,54,36
+  palette "textures/base_trim/pewter_gold.jpg" 255,92,65,47
   palette "textures/base_trim/panelbrn010w.png" 248,76,54,36
   palette "textures/base_trim/panel_xpass.tga" 255,69,57,46
-  palette "textures/base_trim/panel_xpass.jpg" 255,74,56,42
-  palette "textures/base_trim/panel_shiny.tga" 225,71,58,47
+  palette "textures/base_trim/panel_xpass.jpg" 255,69,57,46
   palette "textures/base_trim/panel_shiny.png" 225,71,58,47
-  palette "textures/base_trim/panel_glo.tga" 225,71,57,47
   palette "textures/base_trim/panel_glo.png" 225,71,57,47
-  palette "textures/base_trim/panel_edged.tga" 255,67,53,43
-  palette "textures/base_trim/panel_edged.jpg" 255,66,53,43
-  palette "textures/base_trim/panel03.tga" 255,49,44,34
-  palette "textures/base_trim/panel03.jpg" 255,49,44,34
-  palette "textures/base_trim/panel02.tga" 255,49,42,29
-  palette "textures/base_trim/panel02.jpg" 255,49,42,29
-  palette "textures/base_trim/panel01.tga" 255,49,42,28
-  palette "textures/base_trim/panel01.jpg" 255,49,42,28
   palette "textures/base_trim/palmet12_3.tga" 255,59,45,25
-  palette "textures/base_trim/palmet12_3.jpg" 255,62,44,24
-  palette "textures/base_trim/metal2_2.tga" 181,64,63,59
+  palette "textures/base_trim/palmet12_3.jpg" 255,59,44,25
   palette "textures/base_trim/metal2_2.png" 181,64,63,59
-  palette "textures/base_trim/melty_pewter.tga" 255,79,52,32
-  palette "textures/base_trim/melty_pewter.jpg" 255,79,52,32
-  palette "textures/base_trim/holemech01_h.tga" 255,63,53,39
-  palette "textures/base_trim/holemech01_h.jpg" 255,63,53,39
-  palette "textures/base_trim/greenoct28.tga" 255,65,55,43
-  palette "textures/base_trim/greenoct28.jpg" 255,65,55,43
-  palette "textures/base_trim/dirty_pewter_big.tga" 255,49,44,37
-  palette "textures/base_trim/dirty_pewter_big.jpg" 255,49,44,37
-  palette "textures/base_trim/dirty_pewter.tga" 255,51,45,39
-  palette "textures/base_trim/dirty_pewter.jpg" 255,51,45,39
-  palette "textures/base_trim/deeprust.tga" 255,46,28,17
-  palette "textures/base_trim/deeprust.jpg" 255,46,28,17
-  palette "textures/base_trim/dark_tin2.tga" 172,63,43,23
   palette "textures/base_trim/dark_tin2.png" 172,63,43,23
-  palette "textures/base_trim/chrome_border.tga" 255,62,45,36
-  palette "textures/base_trim/chrome_border.jpg" 255,62,45,36
-  palette "textures/base_trim/bridgesupport1j_fin.tga" 255,60,38,32
-  palette "textures/base_trim/bridgesupport1j_fin.jpg" 255,60,38,32
-  palette "textures/base_trim/bridgesupport1e_fin.tga" 255,59,40,33
-  palette "textures/base_trim/bridgesupport1e_fin.jpg" 255,59,40,33
-  palette "textures/base_trim/border12bfx.tga" 255,50,32,25
-  palette "textures/base_trim/border12bfx.jpg" 255,50,32,25
-  palette "textures/base_trim/border12b.tga" 255,59,40,28
-  palette "textures/base_trim/border12b.jpg" 255,59,40,28
-  palette "textures/base_trim/border12.tga" 255,59,39,26
-  palette "textures/base_trim/border12.jpg" 255,59,39,26
-  palette "textures/base_trim/border11light.tga" 255,87,77,67
-  palette "textures/base_trim/border11light.glow.tga" 255,5,4,4
-  palette "textures/base_trim/border11c_pulse1b.tga" 255,8,5,14
-  palette "textures/base_trim/border11c_pulse1b.jpg" 255,8,5,14
-  palette "textures/base_trim/border11c_light.tga" 255,1,1,1
-  palette "textures/base_trim/border11c_light.jpg" 255,1,1,1
-  palette "textures/base_trim/border11c.tga" 255,66,59,51
-  palette "textures/base_trim/border11c.jpg" 255,66,59,51
-  palette "textures/base_trim/border11b.tga" 255,93,84,75
-  palette "textures/base_trim/border11.tga" 255,85,76,67
-  palette "textures/base_trim/border11.jpg" 255,85,76,67
   palette "textures/base_trim/blues1_1.tga" 255,18,18,65
-  palette "textures/base_trim/blues1_1.jpg" 255,20,19,63
-  palette "textures/base_trim/basemetalsupport.tga" 255,89,74,67
-  palette "textures/base_door/xdm2_right_e7fin.tga" 255,55,47,44
-  palette "textures/base_door/xdm2_right_e7fin.jpg" 255,55,47,44
-  palette "textures/base_door/xdm2_left_e7fin.tga" 255,54,47,43
-  palette "textures/base_door/xdm2_left_e7fin.jpg" 255,54,47,43
-  palette "textures/base_door/xdm2_left_e4fin.tga" 255,64,56,53
-  palette "textures/base_door/xdm2_left_e4fin.jpg" 255,64,56,53
-  palette "textures/base_door/xdm2_archsupport_sidea_fin.tga" 255,73,67,66
-  palette "textures/base_door/xdm2_archsupport_sidea_fin.jpg" 255,73,67,66
-  palette "textures/base_door/shinymetaldoor_outside3glow.tga" 156,10,7,5
-  palette "textures/base_door/shinymetaldoor_outside3glow.png" 156,10,7,5
-  palette "textures/base_door/shinymetaldoor_outside3a2.tga" 156,63,55,49
-  palette "textures/base_door/shinymetaldoor_outside3a2.png" 156,63,55,49
-  palette "textures/base_door/shinymetaldoor_outside.tga" 120,65,61,50
-  palette "textures/base_door/shinymetaldoor_outside.png" 120,65,61,50
-  palette "textures/base_door/shinymetaldoor.tga" 175,77,82,83
-  palette "textures/base_door/shinymetaldoor.png" 175,77,82,83
-  palette "textures/base_door/quake3sign_outside.tga" 199,14,11,1
-  palette "textures/base_door/quake3sign_outside.png" 199,14,11,1
-  palette "textures/base_door/quake3sign.tga" 194,15,13,1
-  palette "textures/base_door/quake3sign.png" 194,15,13,1
-  palette "textures/base_door/kcdm18talldoorpatch10top.tga" 255,82,70,62
-  palette "textures/base_door/kcdm18talldoorpatch10top.jpg" 255,82,70,62
-  palette "textures/base_door/kcdm18talldoorpatch10bottom.tga" 255,21,17,17
-  palette "textures/base_door/kcdm18talldoorpatch10bottom.jpg" 255,20,17,17
-  palette "textures/base_door/kcdm18talldoormetal_top.tga" 255,49,47,48
-  palette "textures/base_door/kcdm18talldoormetal_top.jpg" 255,49,47,48
-  palette "textures/base_door/kcdm18talldoormetal.tga" 255,17,14,16
-  palette "textures/base_door/kcdm18talldoormetal.jpg" 255,17,14,15
-  palette "textures/base_door/kcdm18door_top.tga" 255,61,49,47
-  palette "textures/base_door/kcdm18door_top.jpg" 255,61,49,47
-  palette "textures/base_door/kcdm18door_bot.tga" 255,18,14,15
-  palette "textures/base_door/kcdm18door_bot.jpg" 255,18,14,15
-  palette "textures/base_door/c_ggrate8_b.tga" 78,61,55,46
-  palette "textures/base_door/c_ggrate8_b.png" 78,61,55,46
-  palette "textures/base_light/xlight5.tga" 255,32,32,32
-  palette "textures/base_light/xlight5.jpg" 255,32,32,32
-  palette "textures/base_light/xlight5.blend.tga" 255,103,101,88
-  palette "textures/base_light/xlight5.blend.jpg" 255,102,101,88
-  palette "textures/base_light/wsupprt1_12.tga" 255,95,88,72
-  palette "textures/base_light/wsupprt1_12.jpg" 255,95,88,72
-  palette "textures/base_light/wsupprt1_12.blend.tga" 255,81,77,64
-  palette "textures/base_light/wsupprt1_12.blend.jpg" 255,81,77,64
+  palette "textures/base_trim/blues1_1.jpg" 255,17,17,63
   palette "textures/base_light/wstlt1_5.tga" 255,100,89,75
-  palette "textures/base_light/wstlt1_5.jpg" 255,98,88,78
+  palette "textures/base_light/wstlt1_5.jpg" 255,100,89,76
   palette "textures/base_light/wstlt1_5.blend.tga" 255,55,46,35
-  palette "textures/base_light/wstlt1_5.blend.jpg" 255,57,45,36
-  palette "textures/base_light/trianglelight.tga" 47,82,64,61
+  palette "textures/base_light/wstlt1_5.blend.jpg" 255,55,47,36
   palette "textures/base_light/trianglelight.png" 47,82,64,61
-  palette "textures/base_light/trianglelight.blend.tga" 44,230,222,218
   palette "textures/base_light/trianglelight.blend.png" 44,230,222,218
   palette "textures/base_light/sm_light1red.tga" 255,142,85,81
-  palette "textures/base_light/sm_light1red.jpg" 255,145,83,83
+  palette "textures/base_light/sm_light1red.jpg" 255,141,85,81
   palette "textures/base_light/sm_light1red.blend.tga" 255,123,76,78
-  palette "textures/base_light/sm_light1red.blend.jpg" 255,120,80,82
+  palette "textures/base_light/sm_light1red.blend.jpg" 255,123,78,80
   palette "textures/base_light/sm_light1blue.tga" 255,113,87,114
-  palette "textures/base_light/sm_light1blue.jpg" 255,113,87,112
+  palette "textures/base_light/sm_light1blue.jpg" 255,113,87,113
   palette "textures/base_light/sm_light1blue.blend.tga" 255,77,62,99
-  palette "textures/base_light/sm_light1blue.blend.jpg" 255,72,67,97
-  palette "textures/base_light/scrolllight2.tga" 255,14,11,8
-  palette "textures/base_light/scrolllight2.jpg" 255,14,11,8
-  palette "textures/base_light/scrolllight.tga" 255,22,17,14
-  palette "textures/base_light/scrolllight.jpg" 255,22,17,14
-  palette "textures/base_light/runwayb.tga" 255,29,17,4
-  palette "textures/base_light/runwayb.jpg" 255,29,17,4
-  palette "textures/base_light/runway_glow.tga" 255,8,7,0
-  palette "textures/base_light/runway_glow.jpg" 255,8,7,0
-  palette "textures/base_light/runway.tga" 203,70,66,61
+  palette "textures/base_light/sm_light1blue.blend.jpg" 255,77,63,100
   palette "textures/base_light/runway.png" 203,70,66,61
-  palette "textures/base_light/proto_lightred.tga" 255,150,29,23
-  palette "textures/base_light/proto_lightred.jpg" 255,150,29,23
-  palette "textures/base_light/proto_lightmap.tga" 255,49,37,35
-  palette "textures/base_light/proto_lightmap.jpg" 255,49,37,35
   palette "textures/base_light/proto_lightblue.tga" 255,52,52,120
-  palette "textures/base_light/proto_lightblue.jpg" 255,52,53,120
-  palette "textures/base_light/proto_light2.tga" 255,13,10,9
-  palette "textures/base_light/proto_light2.jpg" 255,13,10,9
-  palette "textures/base_light/proto_light.tga" 255,93,81,77
-  palette "textures/base_light/proto_light.jpg" 255,93,81,77
-  palette "textures/base_light/patch10_pj_lite2.tga" 255,110,105,93
-  palette "textures/base_light/patch10_pj_lite2.jpg" 255,110,105,93
-  palette "textures/base_light/patch10_pj_lite2.blend.tga" 255,41,41,37
-  palette "textures/base_light/patch10_pj_lite2.blend.jpg" 255,41,41,37
-  palette "textures/base_light/patch10_pj_lite.tga" 255,107,102,91
-  palette "textures/base_light/patch10_pj_lite.jpg" 255,107,102,91
-  palette "textures/base_light/patch10_pj_lite.blend.tga" 255,41,41,36
-  palette "textures/base_light/patch10_pj_lite.blend.jpg" 255,41,41,36
-  palette "textures/base_light/light5.tga" 255,133,133,117
-  palette "textures/base_light/light2.tga" 255,122,99,96
-  palette "textures/base_light/light2.blend.tga" 255,136,119,121
-  palette "textures/base_light/light1red.tga" 255,142,86,81
-  palette "textures/base_light/light1red.jpg" 255,142,86,81
-  palette "textures/base_light/light1red.blend.tga" 255,98,55,58
-  palette "textures/base_light/light1red.blend.jpg" 255,98,55,58
-  palette "textures/base_light/light1blue.tga" 255,113,88,114
-  palette "textures/base_light/light1blue.jpg" 255,113,88,114
-  palette "textures/base_light/light1blue.blend.tga" 255,98,87,114
-  palette "textures/base_light/light1blue.blend.jpg" 255,98,87,114
-  palette "textures/base_light/light1.tga" 255,121,93,89
-  palette "textures/base_light/light1.blend.tga" 255,94,67,71
-  palette "textures/base_light/jaildr1_3.tga" 255,65,33,24
-  palette "textures/base_light/jaildr1_3.jpg" 255,65,33,24
-  palette "textures/base_light/jaildr1_3.blend.tga" 255,49,19,13
-  palette "textures/base_light/jaildr1_3.blend.jpg" 255,48,19,13
-  palette "textures/base_light/jaildr03_2.tga" 255,50,49,41
-  palette "textures/base_light/jaildr03_2.jpg" 255,51,49,41
-  palette "textures/base_light/jaildr03_2.blend.tga" 255,25,32,14
-  palette "textures/base_light/jaildr03_2.blend.jpg" 255,25,32,14
-  palette "textures/base_light/jaildr03_1.tga" 255,51,48,49
-  palette "textures/base_light/jaildr03_1.jpg" 255,51,48,49
-  palette "textures/base_light/geolight_glow.tga" 255,55,47,49
-  palette "textures/base_light/geolight_glow.jpg" 255,55,47,49
-  palette "textures/base_light/geolight.tga" 55,82,70,63
+  palette "textures/base_light/proto_lightblue.jpg" 255,53,52,119
   palette "textures/base_light/geolight.png" 55,82,70,63
   palette "textures/base_light/dm18twr_glow.tga" 255,24,21,16
   palette "textures/base_light/dm18twr_glow.jpg" 255,24,21,16
   palette "textures/base_light/dm18twr.tga" 81,117,104,88
   palette "textures/base_light/dm18twr.png" 81,117,104,88
-  palette "textures/base_light/cornerlight.tga" 27,63,77,77
   palette "textures/base_light/cornerlight.png" 27,63,77,77
-  palette "textures/base_light/cornerlight.glow.tga" 27,166,168,173
   palette "textures/base_light/cornerlight.glow.png" 27,166,168,173
-  palette "textures/base_light/ceil1_4.tga" 255,108,87,26
-  palette "textures/base_light/ceil1_4.jpg" 255,109,87,27
-  palette "textures/base_light/ceil1_4.blend.tga" 255,86,41,26
-  palette "textures/base_light/ceil1_4.blend.jpg" 255,86,41,26
-  palette "textures/base_light/ceil1_39.tga" 255,101,86,57
-  palette "textures/base_light/ceil1_39.blend.tga" 255,74,65,43
-  palette "textures/base_light/ceil1_38.tga" 255,103,96,77
-  palette "textures/base_light/ceil1_38.blend.tga" 255,75,74,63
-  palette "textures/base_light/ceil1_37.tga" 255,80,98,99
-  palette "textures/base_light/ceil1_37.blend.tga" 255,54,76,85
-  palette "textures/base_light/ceil1_34.tga" 255,68,117,101
-  palette "textures/base_light/ceil1_34.jpg" 255,68,117,101
-  palette "textures/base_light/ceil1_34.blend.tga" 255,43,96,86
-  palette "textures/base_light/ceil1_34.blend.jpg" 255,44,96,86
-  palette "textures/base_light/ceil1_30.tga" 255,51,68,128
-  palette "textures/base_light/ceil1_30.jpg" 255,50,68,128
-  palette "textures/base_light/ceil1_30.blend.tga" 255,25,47,114
-  palette "textures/base_light/ceil1_30.blend.jpg" 255,25,47,113
-  palette "textures/base_light/ceil1_22a.tga" 255,140,68,39
-  palette "textures/base_light/ceil1_22a.jpg" 255,140,68,39
-  palette "textures/base_light/ceil1_22a.blend.tga" 255,114,47,26
-  palette "textures/base_light/ceil1_22a.blend.jpg" 255,113,48,26
-  palette "textures/base_light/border7_ceil50glow.tga" 255,1,1,1
-  palette "textures/base_light/border7_ceil50glow.jpg" 255,1,1,1
-  palette "textures/base_light/border7_ceil50.tga" 255,56,56,51
-  palette "textures/base_light/border7_ceil50.jpg" 255,56,56,51
-  palette "textures/base_light/border11light.tga" 255,95,85,74
-  palette "textures/base_light/border11light.jpg" 255,95,85,74
-  palette "textures/base_light/border11light.blend.tga" 255,18,18,18
-  palette "textures/base_light/border11light.blend.jpg" 255,18,18,18
-  palette "textures/base_light/baslt4_1.tga" 255,111,99,81
-  palette "textures/base_light/baslt4_1.blend.tga" 255,67,58,45
-  palette "textures/base_floor/tilefloor7_owfx.tga" 255,3,2,2
-  palette "textures/base_floor/tilefloor7_owfx.jpg" 255,3,2,2
-  palette "textures/base_floor/tilefloor7_ow.tga" 255,28,24,18
-  palette "textures/base_floor/tilefloor7_ow.jpg" 255,28,24,18
-  palette "textures/base_floor/tilefloor7.tga" 255,35,28,21
-  palette "textures/base_floor/tilefloor7.jpg" 255,35,28,21
-  palette "textures/base_floor/techfloor2.tga" 106,62,53,48
+  palette "textures/base_door/shinymetaldoor_outside3glow.png" 156,10,7,5
+  palette "textures/base_door/shinymetaldoor_outside3a2.png" 156,63,55,49
+  palette "textures/base_door/shinymetaldoor_outside.png" 120,65,61,50
+  palette "textures/base_door/shinymetaldoor.png" 175,77,82,83
+  palette "textures/base_door/quake3sign_outside.png" 199,14,11,1
+  palette "textures/base_door/quake3sign.png" 194,15,13,1
+  palette "textures/base_door/c_ggrate8_b.png" 78,61,55,46
   palette "textures/base_floor/techfloor2.png" 106,62,53,48
-  palette "textures/base_floor/techfloor.tga" 214,55,47,42
   palette "textures/base_floor/techfloor.png" 214,55,47,42
-  palette "textures/base_floor/smallstone.tga" 255,80,63,57
-  palette "textures/base_floor/smallstone.jpg" 255,80,63,57
-  palette "textures/base_floor/skylight_spec.tga" 169,33,33,32
   palette "textures/base_floor/skylight_spec.png" 169,33,33,32
-  palette "textures/base_floor/skylight1_lm.tga" 255,6,7,4
-  palette "textures/base_floor/skylight1_lm.jpg" 255,6,7,4
-  palette "textures/base_floor/skylight1.tga" 255,29,26,24
-  palette "textures/base_floor/skylight1.jpg" 255,29,26,24
-  palette "textures/base_floor/rusty_pentagrate.tga" 178,48,33,25
   palette "textures/base_floor/rusty_pentagrate.png" 178,48,33,25
-  palette "textures/base_floor/proto_rustygrate2.tga" 167,51,35,27
-  palette "textures/base_floor/proto_rustygrate.tga" 208,52,35,27
-  palette "textures/base_floor/proto_grill.tga" 255,44,36,31
-  palette "textures/base_floor/proto_grill.jpg" 255,44,35,31
-  palette "textures/base_floor/proto_grate4.tga" 146,50,36,30
+  palette "textures/base_floor/proto_rustygrate2.png" 167,51,35,27
+  palette "textures/base_floor/proto_rustygrate.png" 208,52,35,27
   palette "textures/base_floor/proto_grate4.png" 146,50,36,30
-  palette "textures/base_floor/proto_grate3.tga" 208,52,33,19
   palette "textures/base_floor/proto_grate3.png" 208,52,33,19
-  palette "textures/base_floor/proto_grate.tga" 208,33,30,27
   palette "textures/base_floor/proto_grate.png" 208,33,30,27
-  palette "textures/base_floor/pjgrate1.tga" 255,27,26,22
-  palette "textures/base_floor/pjgrate1.jpg" 255,27,27,27
-  palette "textures/base_floor/metfloor1.tga" 255,128,117,115
-  palette "textures/base_floor/metfloor1.jpg" 255,128,117,115
-  palette "textures/base_floor/metaltechfloor01final.tga" 255,108,102,102
-  palette "textures/base_floor/metaltechfloor01final.jpg" 255,108,102,102
-  palette "textures/base_floor/metalbridge06.tga" 255,66,61,59
-  palette "textures/base_floor/metalbridge04dbroke2.tga" 243,98,84,86
+  palette "textures/base_floor/pjgrate2.jpg" 255,25,15,11
+  palette "textures/base_floor/pjgrate1.jpg" 255,27,27,24
   palette "textures/base_floor/metalbridge04dbroke2.png" 243,98,84,86
-  palette "textures/base_floor/metalbridge04dbroke.tga" 243,100,86,88
   palette "textures/base_floor/metalbridge04dbroke.png" 243,100,86,88
-  palette "textures/base_floor/metalbridge04d.tga" 255,99,85,87
-  palette "textures/base_floor/metalbridge04d.jpg" 255,99,85,87
-  palette "textures/base_floor/manhole.tga" 255,45,32,24
-  palette "textures/base_floor/manhole.jpg" 255,45,32,24
-  palette "textures/base_floor/hfloor3.tga" 255,47,36,26
-  palette "textures/base_floor/hfloor3.jpg" 255,47,36,26
-  palette "textures/base_floor/floor3_3dark_ow.tga" 223,51,42,34
   palette "textures/base_floor/floor3_3dark_ow.png" 223,51,42,34
-  palette "textures/base_floor/floor3_3dark.tga" 255,82,70,60
-  palette "textures/base_floor/floor3_3dark.jpg" 255,82,70,61
-  palette "textures/base_floor/dirt.tga" 255,43,26,19
-  palette "textures/base_floor/dirt.jpg" 255,43,26,19
-  palette "textures/base_floor/diamond2cspot.tga" 146,55,52,51
   palette "textures/base_floor/diamond2cspot.png" 146,55,52,51
-  palette "textures/base_floor/diamond2c.tga" 255,58,58,58
-  palette "textures/base_floor/diamond2.tga" 255,58,58,58
-  palette "textures/base_floor/diamond2.jpg" 255,58,58,58
-  palette "textures/base_floor/cybergrate3.tga" 82,62,56,50
+  palette "textures/base_floor/diamond2c_ow.png" 244,61,57,54
   palette "textures/base_floor/cybergrate3.png" 82,62,56,50
-  palette "textures/base_floor/cybergrate2.tga" 101,64,57,50
   palette "textures/base_floor/cybergrate2.png" 101,64,57,50
-  palette "textures/base_floor/concretefloor1.tga" 91,97,89,81
   palette "textures/base_floor/concretefloor1.png" 91,97,89,81
-  palette "textures/base_floor/concrete.tga" 255,78,73,66
-  palette "textures/base_floor/concrete.jpg" 255,78,73,66
-  palette "textures/base_floor/clangspot2.tga" 121,77,64,53
   palette "textures/base_floor/clangspot2.png" 121,77,64,53
-  palette "textures/base_floor/clanggrate2.tga" 255,40,32,28
-  palette "textures/base_floor/clanggrate2.jpg" 255,40,32,28
-  palette "textures/base_floor/clanggrate.tga" 255,33,27,24
-  palette "textures/base_floor/clanggrate.jpg" 255,33,27,24
-  palette "textures/base_floor/clangdark_ow2.tga" 255,58,36,20
-  palette "textures/base_floor/clangdark_ow2.jpg" 255,58,36,20
-  palette "textures/base_floor/clangdark_ow.tga" 255,44,38,25
-  palette "textures/base_floor/clangdark_ow.jpg" 255,44,38,25
-  palette "textures/base_floor/clangdark.tga" 255,48,39,30
-  palette "textures/base_floor/clangdark.jpg" 255,48,39,30
-  palette "textures/base_floor/clang_floor_ow2.tga" 255,82,73,63
-  palette "textures/base_floor/clang_floor_ow2.jpg" 255,82,73,63
-  palette "textures/base_floor/clang_floor3bstairtop2.tga" 255,43,35,29
-  palette "textures/base_floor/clang_floor3bstairtop2.jpg" 255,42,35,29
-  palette "textures/base_floor/clang_floor3bstairtop.tga" 255,43,37,32
-  palette "textures/base_floor/clang_floor3bstairtop.jpg" 255,43,37,32
-  palette "textures/base_floor/clang_floor3blava.tga" 89,89,26,0
   palette "textures/base_floor/clang_floor3blava.png" 89,89,26,0
-  palette "textures/base_floor/clang_floor3b.tga" 255,70,62,57
-  palette "textures/base_floor/clang_floor3b.jpg" 255,70,62,57
-  palette "textures/base_floor/clang_floor2.tga" 255,35,29,24
-  palette "textures/base_floor/clang_floor2.jpg" 255,35,29,24
-  palette "textures/base_floor/clang_floor.tga" 255,81,71,61
-  palette "textures/base_floor/clang_floor.jpg" 255,81,71,61
-  palette "textures/base_floor/achtung_clang.tga" 255,47,20,12
-  palette "textures/base_floor/achtung_clang.jpg" 255,47,20,12
-  palette "textures/base_ceiling/metceil1d.tga" 255,145,142,136
-  palette "textures/base_ceiling/metceil1d.jpg" 255,145,142,136
-  palette "textures/base_button/shootme_glow.tga" 255,39,2,2
-  palette "textures/base_button/shootme_glow.jpg" 255,39,1,2
-  palette "textures/13gate_xt/sky.jpg" 255,70,8,2
-  palette "textures/14gate_xt/sky.jpg" 255,29,1,70
-  palette "textures/14gate_xt/fog3.jpg" 255,184,184,184
-  palette "textures/14gate_xt/fog2.jpg" 255,184,184,184
-  palette "textures/14gate_xt/fog.jpg" 255,184,184,184
-  palette "textures/base_wall/xian_q3dm12_leftwall4fin.tga" 255,41,38,37
-  palette "textures/base_wall/xian_q3dm12_leftwall4fin.jpg" 255,41,38,37
-  palette "textures/base_wall/xbasewall04.tga" 255,72,57,40
-  palette "textures/base_wall/xbasewall04.jpg" 255,72,57,40
-  palette "textures/base_wall/x_invertconcrete.tga" 255,67,59,52
-  palette "textures/base_wall/x_invertconcrete.jpg" 255,67,59,52
-  palette "textures/base_wall/x_concretelong.tga" 255,68,60,52
-  palette "textures/base_wall/x_concretelong.jpg" 255,68,60,52
-  palette "textures/base_wall/train1.tga" 167,186,166,156
   palette "textures/base_wall/train1.png" 167,186,166,156
-  palette "textures/base_wall/symbol_bluelt1_mask.tga" 255,14,14,15
-  palette "textures/base_wall/symbol_bluelt1_mask.jpg" 255,14,14,15
-  palette "textures/base_wall/symbol_bluelt1.tga" 255,56,48,47
-  palette "textures/base_wall/symbol_bluelt1.jpg" 255,56,48,47
-  palette "textures/base_wall/symbol_ball.tga" 255,49,45,42
-  palette "textures/base_wall/symbol_ball.jpg" 255,49,45,42
-  palette "textures/base_wall/steed2f.tga" 255,86,70,61
-  palette "textures/base_wall/steed2f.jpg" 255,86,70,61
-  palette "textures/base_wall/steed1ge.tga" 255,84,87,70
+  palette "textures/base_wall/steed1gf.png" 82,82,87,73
   palette "textures/base_wall/shinygrate1_4_glow_light2.tga" 255,93,80,64
-  palette "textures/base_wall/shinygrate1_4_glow_light2.jpg" 255,94,80,71
+  palette "textures/base_wall/shinygrate1_4_glow_light2.jpg" 255,93,81,66
   palette "textures/base_wall/shinygrate1_4_glow.tga" 89,12,10,9
   palette "textures/base_wall/shinygrate1_4_glow.png" 89,12,10,9
-  palette "textures/base_wall/shinygrate1_4.tga" 76,124,114,105
   palette "textures/base_wall/shinygrate1_4.png" 76,124,114,105
-  palette "textures/base_wall/shinybluemetal1.tga" 102,120,100,114
   palette "textures/base_wall/shinybluemetal1.png" 102,120,100,114
-  palette "textures/base_wall/shiny3.tga" 255,84,83,82
-  palette "textures/base_wall/shiny3.jpg" 255,84,83,82
-  palette "textures/base_wall/rusted3.tga" 255,58,39,24
-  palette "textures/base_wall/rusted3.jpg" 255,58,39,24
-  palette "textures/base_wall/rusted.tga" 255,56,37,23
-  palette "textures/base_wall/rusted.jpg" 255,56,37,23
-  palette "textures/base_wall/redpad.tga" 255,56,43,18
-  palette "textures/base_wall/redpad.jpg" 255,56,43,18
-  palette "textures/base_wall/redmet4small.tga" 255,77,31,32
-  palette "textures/base_wall/redmet4small.jpg" 255,77,31,32
-  palette "textures/base_wall/redmet.tga" 255,79,34,34
-  palette "textures/base_wall/redmet.jpg" 255,79,34,34
-  palette "textures/base_wall/q3tourney5.tga" 255,201,117,28
-  palette "textures/base_wall/q3tourney5.jpg" 255,201,117,28
-  palette "textures/base_wall/q3tourney4.tga" 255,103,82,74
-  palette "textures/base_wall/q3tourney4.jpg" 255,103,82,74
-  palette "textures/base_wall/q3tourney3.tga" 255,135,63,46
-  palette "textures/base_wall/q3tourney3.jpg" 255,135,63,46
-  palette "textures/base_wall/q3tourney2.tga" 255,83,32,22
-  palette "textures/base_wall/q3tourney2.jpg" 255,83,32,22
-  palette "textures/base_wall/q3tourney1.tga" 255,100,74,85
-  palette "textures/base_wall/q3tourney1.jpg" 255,100,74,85
-  palette "textures/base_wall/protobanner_ow.tga" 125,61,49,40
   palette "textures/base_wall/protobanner_ow.png" 125,61,49,40
+  palette "textures/base_wall/protobanner.png" 232,69,53,39
   palette "textures/base_wall/patch12.tga" 255,156,154,150
-  palette "textures/base_wall/patch12.jpg" 255,154,154,154
-  palette "textures/base_wall/patch10rusty5.tga" 255,111,84,69
-  palette "textures/base_wall/patch10rusty5.jpg" 255,111,84,69
+  palette "textures/base_wall/patch12.jpg" 255,157,153,150
   palette "textures/base_wall/patch10f.tga" 255,106,97,86
-  palette "textures/base_wall/patch10f.jpg" 255,103,100,82
-  palette "textures/base_wall/patch10_beatup4_alpha.tga" 69,82,69,61
+  palette "textures/base_wall/patch10f.jpg" 255,106,97,87
   palette "textures/base_wall/patch10_beatup4_alpha.png" 69,82,69,61
-  palette "textures/base_wall/patch10_beatup4.tga" 255,79,67,59
-  palette "textures/base_wall/patch10_beatup3.tga" 255,85,69,59
-  palette "textures/base_wall/patch10_beatup3.jpg" 255,85,69,59
-  palette "textures/base_wall/patch10_beatup2.tga" 255,72,63,49
-  palette "textures/base_wall/patch10.tga" 255,109,102,92
-  palette "textures/base_wall/patch10.jpg" 255,109,102,92
-  palette "textures/base_wall/metfloor_block_3.tga" 255,94,82,77
-  palette "textures/base_wall/metaltechgeomtrn2.tga" 65,60,51,46
   palette "textures/base_wall/metaltechgeomtrn2.png" 65,60,51,46
-  palette "textures/base_wall/metaltechgeomtrn.tga" 227,52,47,46
   palette "textures/base_wall/metaltechgeomtrn.png" 227,52,47,46
-  palette "textures/base_wall/metaltech17final.tga" 255,76,55,52
-  palette "textures/base_wall/metaltech17final.jpg" 255,76,55,52
-  palette "textures/base_wall/metaltech13final.tga" 255,94,88,86
-  palette "textures/base_wall/metaltech12final.tga" 255,65,62,63
-  palette "textures/base_wall/metaltech12darkfinal.tga" 255,47,45,45
-  palette "textures/base_wall/metaltech12dark_support.tga" 255,49,43,41
-  palette "textures/base_wall/metaltech12dark_support.jpg" 255,49,43,41
-  palette "textures/base_wall/metaltech10final.tga" 255,81,77,77
-  palette "textures/base_wall/metaltech10final.jpg" 255,81,77,77
-  palette "textures/base_wall/metaltech08final.tga" 255,72,87,93
-  palette "textures/base_wall/metaltech08final.jpg" 255,72,87,93
-  palette "textures/base_wall/metaltech06final.tga" 255,69,56,51
-  palette "textures/base_wall/metaltech04final.tga" 255,78,68,65
-  palette "textures/base_wall/metaltech04final.jpg" 255,78,68,65
-  palette "textures/base_wall/metalfloor_wall_3.tga" 255,90,76,70
-  palette "textures/base_wall/metalfloor_wall_3.jpg" 255,90,76,70
-  palette "textures/base_wall/metalfloor_wall_15.tga" 255,91,78,74
-  palette "textures/base_wall/metalfloor_wall_14_specular.tga" 11,117,132,143
+  palette "textures/base_wall/metalfloor_wall_15ow.png" 248,76,65,62
   palette "textures/base_wall/metalfloor_wall_14_specular.png" 11,117,132,143
-  palette "textures/base_wall/metalfloor_wall_14.tga" 255,74,83,92
-  palette "textures/base_wall/metalfloor_wall_14.jpg" 255,74,83,92
-  palette "textures/base_wall/metalfloor_wall_12.tga" 255,100,87,82
-  palette "textures/base_wall/metalfloor_wall_12.jpg" 255,100,87,82
-  palette "textures/base_wall/metalfloor_wall_11.tga" 255,123,111,104
-  palette "textures/base_wall/metalfloor_wall_11.jpg" 255,123,111,104
-  palette "textures/base_wall/metalfloor_wall_10.tga" 255,76,38,39
-  palette "textures/base_wall/metalblackbloody.tga" 255,48,32,28
-  palette "textures/base_wall/metalblackbloody.jpg" 255,48,32,28
-  palette "textures/base_wall/metalblack03.tga" 255,47,44,43
-  palette "textures/base_wall/medal_victory.tga" 92,5,61,23
   palette "textures/base_wall/medal_victory.png" 92,5,61,23
-  palette "textures/base_wall/medal_impressive.tga" 255,2,42,42
-  palette "textures/base_wall/medal_impressive.jpg" 255,3,41,42
-  palette "textures/base_wall/medal_gauntlet.tga" 255,69,31,2
-  palette "textures/base_wall/medal_gauntlet.jpg" 255,69,31,2
-  palette "textures/base_wall/medal_frags.tga" 101,75,0,0
   palette "textures/base_wall/medal_frags.png" 101,75,0,0
-  palette "textures/base_wall/medal_excellent.tga" 255,63,47,6
-  palette "textures/base_wall/medal_excellent.jpg" 255,63,47,7
-  palette "textures/base_wall/medal_accuracy.tga" 91,36,12,40
   palette "textures/base_wall/medal_accuracy.png" 91,36,12,40
-  palette "textures/base_wall/grill.tga" 19,75,76,73
+  palette "textures/base_wall/main_q3abanner.png" 50,238,1,1
   palette "textures/base_wall/grill.png" 19,75,76,73
-  palette "textures/base_wall/greenmet2b.tga" 255,57,50,46
-  palette "textures/base_wall/glass_frame.tga" 82,58,49,42
   palette "textures/base_wall/glass_frame.png" 82,58,49,42
-  palette "textures/base_wall/girders1i_yellodark_fin.tga" 171,90,66,31
   palette "textures/base_wall/girders1i_yellodark_fin.png" 171,90,66,31
-  palette "textures/base_wall/girders1i_128_yellofin.tga" 171,125,94,45
   palette "textures/base_wall/girders1i_128_yellofin.png" 171,125,94,45
-  palette "textures/base_wall/dooreyelight.tga" 255,2,1,1
-  palette "textures/base_wall/dooreyelight.jpg" 255,2,1,1
-  palette "textures/base_wall/dooreye3.tga" 255,80,56,60
-  palette "textures/base_wall/dooreye3.jpg" 255,80,56,60
-  palette "textures/base_wall/dooreye2.tga" 255,112,93,105
-  palette "textures/base_wall/dooreye2.jpg" 255,112,93,105
-  palette "textures/base_wall/dooreye.tga" 66,78,66,58
   palette "textures/base_wall/dooreye.png" 66,78,66,58
-  palette "textures/base_wall/concretepipe01.tga" 255,84,74,65
-  palette "textures/base_wall/concretepipe01.jpg" 255,84,74,65
-  palette "textures/base_wall/concreteb2.tga" 255,94,85,77
-  palette "textures/base_wall/concreteb2.jpg" 255,94,85,77
-  palette "textures/base_wall/concrete_ow2.tga" 243,84,74,66
   palette "textures/base_wall/concrete_ow2.png" 243,84,74,66
-  palette "textures/base_wall/concrete_ow.tga" 243,90,80,71
   palette "textures/base_wall/concrete_ow.png" 243,90,80,71
-  palette "textures/base_wall/concrete_dark2.tga" 255,67,58,51
-  palette "textures/base_wall/concrete_dark2.jpg" 255,67,58,51
-  palette "textures/base_wall/concrete_dark.tga" 255,69,61,54
-  palette "textures/base_wall/concrete_dark.jpg" 255,69,61,54
   palette "textures/base_wall/concrete2.tga" 255,85,77,69
-  palette "textures/base_wall/concrete2.jpg" 255,79,79,71
+  palette "textures/base_wall/concrete2.jpg" 255,84,77,70
   palette "textures/base_wall/concrete1.tga" 255,134,128,128
-  palette "textures/base_wall/concrete1.jpg" 255,130,130,130
-  palette "textures/base_wall/concrete.tga" 255,97,89,81
-  palette "textures/base_wall/concrete.jpg" 255,97,89,81
-  palette "textures/base_wall/comp3textd.tga" 255,26,24,25
-  palette "textures/base_wall/comp3textd.jpg" 255,25,23,24
-  palette "textures/base_wall/comp3textb.tga" 255,24,23,25
-  palette "textures/base_wall/comp3text.tga" 255,4,1,0
-  palette "textures/base_wall/comp3frame.tga" 96,62,58,54
+  palette "textures/base_wall/concrete1.jpg" 255,134,128,128
   palette "textures/base_wall/comp3frame.png" 96,62,58,54
-  palette "textures/base_wall/comp3env.tga" 255,49,55,58
-  palette "textures/base_wall/comp3env.jpg" 255,49,55,58
-  palette "textures/base_wall/comp3c.tga" 106,63,59,57
   palette "textures/base_wall/comp3c.png" 106,63,59,57
-  palette "textures/base_wall/comp3b.tga" 106,63,59,57
   palette "textures/base_wall/comp3b.png" 106,63,59,57
-  palette "textures/base_wall/comp3.tga" 106,63,59,57
   palette "textures/base_wall/comp3.png" 106,63,59,57
-  palette "textures/base_wall/chrome_metal.tga" 255,37,36,38
-  palette "textures/base_wall/chrome_metal.jpg" 255,37,36,38
-  palette "textures/base_wall/chrome_env2.tga" 255,77,77,77
-  palette "textures/base_wall/chrome_env2.jpg" 255,77,77,77
-  palette "textures/base_wall/chrome_env.tga" 255,146,146,146
-  palette "textures/base_wall/chrome_env.jpg" 255,146,146,146
-  palette "textures/base_wall/c_met7_2.tga" 255,73,67,61
-  palette "textures/base_wall/c_met5_2.tga" 255,73,68,62
-  palette "textures/base_wall/blumtlspt2b.tga" 62,93,80,67
   palette "textures/base_wall/blumtlspt2b.png" 62,93,80,67
-  palette "textures/base_wall/bluemetalsupport2ftv_glow.tga" 255,6,17,0
-  palette "textures/base_wall/bluemetalsupport2ftv_glow.jpg" 255,6,17,0
-  palette "textures/base_wall/bluemetalsupport2ftv.tga" 145,100,91,81
   palette "textures/base_wall/bluemetalsupport2ftv.png" 145,100,91,81
-  palette "textures/base_wall/bluemetalsupport2fline_glow.tga" 255,2,0,73
-  palette "textures/base_wall/bluemetalsupport2fline_glow.jpg" 255,2,0,73
-  palette "textures/base_wall/bluemetalsupport2fline.tga" 115,103,97,86
   palette "textures/base_wall/bluemetalsupport2fline.png" 115,103,97,86
-  palette "textures/base_wall/bluemetalsupport2f.tga" 74,100,93,80
   palette "textures/base_wall/bluemetalsupport2f.png" 74,100,93,80
-  palette "textures/base_wall/bluemetalsupport2eyel.tga" 255,7,5,4
-  palette "textures/base_wall/bluemetalsupport2eyel.jpg" 255,7,5,4
-  palette "textures/base_wall/bluemetalsupport2eye.tga" 184,100,93,82
   palette "textures/base_wall/bluemetalsupport2eye.png" 184,100,93,82
-  palette "textures/base_wall/bluemetalsupport2e2.tga" 181,104,98,86
   palette "textures/base_wall/bluemetalsupport2e2.png" 181,104,98,86
-  palette "textures/base_wall/bluemetalsupport2e.tga" 168,112,106,95
   palette "textures/base_wall/bluemetalsupport2e.png" 168,112,106,95
-  palette "textures/base_wall/bluemetalsupport2d_1.tga" 182,93,82,71
   palette "textures/base_wall/bluemetalsupport2d_1.png" 182,93,82,71
-  palette "textures/base_wall/bluemetalsupport2d.tga" 73,96,83,70
   palette "textures/base_wall/bluemetalsupport2d.png" 73,96,83,70
-  palette "textures/base_wall/bluemetalsupport2clight.tga" 215,84,84,78
   palette "textures/base_wall/bluemetalsupport2clight.png" 215,84,84,78
-  palette "textures/base_wall/bluemetalsupport2clight.glow.tga" 40,6,6,6
   palette "textures/base_wall/bluemetalsupport2clight.glow.png" 40,6,6,6
-  palette "textures/base_wall/bluemetalsupport2c_1vent.tga" 197,79,68,55
   palette "textures/base_wall/bluemetalsupport2c_1vent.png" 197,79,68,55
-  palette "textures/base_wall/bluemetalsupport2c_1.tga" 186,92,80,68
   palette "textures/base_wall/bluemetalsupport2c_1.png" 186,92,80,68
-  palette "textures/base_wall/bluemetalsupport2c.tga" 68,91,80,67
   palette "textures/base_wall/bluemetalsupport2c.png" 68,91,80,67
-  palette "textures/base_wall/bluemetalsupport2bglow.tga" 255,1,0,18
-  palette "textures/base_wall/bluemetalsupport2bglow.jpg" 255,1,0,18
-  palette "textures/base_wall/bluemetalsupport2b.tga" 62,93,80,67
   palette "textures/base_wall/bluemetalsupport2b.png" 62,93,80,67
-  palette "textures/base_wall/bluemetalsupport2.tga" 81,136,104,128
   palette "textures/base_wall/bluemetalsupport2.png" 81,136,104,128
-  palette "textures/base_wall/bluemetalsupport.tga" 255,115,95,108
-  palette "textures/base_wall/bluemetalsupport.jpg" 255,115,95,108
-  palette "textures/base_wall/bluemetal3b.tga" 255,115,88,86
-  palette "textures/base_wall/bluemetal3b.jpg" 255,115,88,86
-  palette "textures/base_wall/bluemetal3.tga" 255,113,87,85
-  palette "textures/base_wall/bluemetal3.jpg" 255,113,87,85
-  palette "textures/base_wall/bluemetal2_shiny.tga" 144,83,57,62
-  palette "textures/base_wall/bluemetal2.tga" 255,81,54,59
-  palette "textures/base_wall/bluemetal1b_shiny.tga" 160,117,100,114
+  palette "textures/base_wall/bluemetal2_shiny.png" 144,83,57,62
   palette "textures/base_wall/bluemetal1b_shiny.png" 160,117,100,114
-  palette "textures/base_wall/basewallbobbin.tga" 255,62,52,38
-  palette "textures/base_wall/basewallbobbin.jpg" 255,62,52,38
-  palette "textures/base_wall/basewall04.tga" 255,72,57,40
-  palette "textures/base_wall/basewall04.jpg" 255,72,57,40
-  palette "textures/base_wall/basewall03.tga" 255,69,55,38
-  palette "textures/base_wall/basewall03.jpg" 255,69,55,38
-  palette "textures/base_wall/basewall02.tga" 255,63,51,36
-  palette "textures/base_wall/basewall02.jpg" 255,63,51,36
-  palette "textures/base_wall/basewall01bitfx.tga" 255,12,9,6
-  palette "textures/base_wall/basewall01bitfx.jpg" 255,12,9,6
-  palette "textures/base_wall/basewall01bit.tga" 204,66,54,40
   palette "textures/base_wall/basewall01bit.png" 204,66,54,40
-  palette "textures/base_wall/basewall01_owfx.tga" 255,3,4,3
-  palette "textures/base_wall/basewall01_owfx.jpg" 255,3,4,3
-  palette "textures/base_wall/basewall01_ow.tga" 255,63,48,33
-  palette "textures/base_wall/basewall01_ow.jpg" 255,63,48,33
-  palette "textures/base_wall/basewall01.tga" 255,64,52,37
-  palette "textures/base_wall/basewall01.jpg" 255,64,52,37
-  palette "textures/base_wall/atechengine_ax.tga" 236,76,60,49
   palette "textures/base_wall/atechengine_ax.png" 236,76,60,49
-  palette "textures/base_wall/atechengine_a.tga" 255,73,58,47
-  palette "textures/base_wall/atechengine_a.jpg" 255,73,58,47
-  palette "textures/base_wall/atech3_a.tga" 255,56,43,38
-  palette "textures/base_wall/atech3_a.jpg" 255,56,43,38
-  palette "textures/base_wall/atech2_c.tga" 255,48,46,45
-  palette "textures/base_wall/atech2_c.jpg" 255,48,46,45
-  palette "textures/base_wall/atech1_e.tga" 255,60,48,42
-  palette "textures/base_wall/atech1_d.tga" 255,68,54,45
-  palette "textures/base_wall/atech1_d.jpg" 255,68,54,45
-  palette "textures/base_wall/atech1_b.tga" 255,69,56,46
-  palette "textures/base_wall/atech1_b.jpg" 255,69,56,46
-  palette "textures/base_wall/atech1_a.tga" 255,58,41,28
-  palette "textures/base_wall/archpipe2_k_tall3fin.tga" 255,39,23,20
-  palette "textures/base_wall/archpipe2_k_tall3fin.jpg" 255,39,23,20
-  palette "textures/base_wall/archpipe2_ifin.tga" 255,45,33,29
-  palette "textures/base_wall/archpipe2_ifin.jpg" 255,45,33,29
+  palette "textures/base_wall/atech1_alpha.png" 244,59,42,29
+  palette "sprites/explode1/fs2-0022.jpg" 255,1,1,1
+  palette "sprites/explode1/fs2-0021.jpg" 255,2,1,1
+  palette "sprites/explode1/fs2-0020.jpg" 255,8,1,1
+  palette "sprites/explode1/fs2-0019.jpg" 255,12,1,1
+  palette "sprites/explode1/fs2-0018.jpg" 255,16,1,1
+  palette "sprites/explode1/fs2-0017.jpg" 255,21,1,1
+  palette "sprites/explode1/fs2-0016.jpg" 255,25,1,1
+  palette "sprites/explode1/fs2-0015.jpg" 255,26,2,2
+  palette "sprites/explode1/fs2-0014.jpg" 255,29,2,1
+  palette "sprites/explode1/fs2-0013.jpg" 255,35,2,2
+  palette "sprites/explode1/fs2-0012.jpg" 255,37,2,2
+  palette "sprites/explode1/fs2-0011.jpg" 255,35,2,2
+  palette "sprites/explode1/fs2-0010.jpg" 255,36,3,2
+  palette "sprites/explode1/fs2-0009.jpg" 255,39,5,2
+  palette "sprites/explode1/fs2-0008.jpg" 255,42,9,2
+  palette "sprites/explode1/fs2-0007.jpg" 255,45,12,2
+  palette "sprites/explode1/fs2-0006.jpg" 255,40,14,3
+  palette "sprites/explode1/fs2-0005.jpg" 255,39,17,3
+  palette "sprites/explode1/fs2-0004.jpg" 255,33,18,3
+  palette "sprites/explode1/fs2-0003.jpg" 255,34,21,3
+  palette "sprites/explode1/fs2-0002.jpg" 255,25,19,3
+  palette "sprites/explode1/fs2-0001.jpg" 255,24,21,3
+  palette "sprites/explode1/fs2-0000.jpg" 255,0,0,0
+  palette "models/weaphits5/kamiwave02.jpg" 255,20,16,15
+  palette "models/weaphits5/kamiwave01.jpg" 255,37,14,7
+  palette "models/weaphits5/kamik01.jpg" 255,71,33,17
+  palette "models/weaphits5/kam03b.jpg" 255,38,18,9
+  palette "models/weaphits5/kam03.jpg" 255,38,18,9
+  palette "models/weaphits5/bfg05.jpg" 255,12,47,11
+  palette "models/weaphits5/bfg04.jpg" 255,19,40,18
   palette "models/weaphits3/spark.tga" 255,12,10,15
   palette "models/weaphits3/spark.jpg" 255,12,10,15
   palette "models/weaphits3/smokering2.tga" 255,12,12,12
-  palette "models/weaphits3/smokering2.jpg" 255,12,12,12
+  palette "models/weaphits3/smokering2.jpg" 255,13,12,12
   palette "models/weaphits3/smokering.tga" 255,43,42,41
-  palette "models/weaphits3/smokering.jpg" 255,43,43,43
+  palette "models/weaphits3/smokering.jpg" 255,43,43,42
   palette "models/weaphits3/ring02_4.tga" 255,3,4,4
   palette "models/weaphits3/ring02_4.jpg" 255,4,4,4
   palette "models/weaphits3/ring02_3.tga" 255,13,17,18
-  palette "models/weaphits3/ring02_3.jpg" 255,16,16,16
+  palette "models/weaphits3/ring02_3.jpg" 255,13,17,19
   palette "models/weaphits3/ring02_2.tga" 255,15,20,23
-  palette "models/weaphits3/ring02_2.jpg" 255,15,21,22
+  palette "models/weaphits3/ring02_2.jpg" 255,15,20,23
   palette "models/weaphits3/ring02_1.tga" 255,1,29,33
-  palette "models/weaphits3/ring02_1.jpg" 255,5,29,31
+  palette "models/weaphits3/ring02_1.jpg" 255,3,30,34
   palette "models/weaphits3/ring01_1.tga" 255,2,56,64
-  palette "models/weaphits3/ring01_1.jpg" 255,7,56,64
+  palette "models/weaphits3/ring01_1.jpg" 255,4,56,64
   palette "models/weaphits3/railscroll.tga" 255,13,13,13
   palette "models/weaphits3/railscroll.jpg" 255,13,13,13
   palette "models/weaphits3/plasscroll2.tga" 255,2,15,32
-  palette "models/weaphits3/plasscroll2.jpg" 255,2,16,32
+  palette "models/weaphits3/plasscroll2.jpg" 255,2,15,32
   palette "models/weaphits3/plasscroll.tga" 255,3,3,12
-  palette "models/weaphits3/plasscroll.jpg" 255,4,4,12
+  palette "models/weaphits3/plasscroll.jpg" 255,3,3,12
   palette "models/weaphits3/plasring.tga" 255,3,5,6
-  palette "models/weaphits3/plasring.jpg" 255,3,5,7
+  palette "models/weaphits3/plasring.jpg" 255,3,5,6
   palette "models/weaphits3/plasmaboom.jpg" 255,86,28,8
   palette "models/weaphits3/newexplo1.jpg" 255,105,94,21
   palette "models/weaphits3/electric.jpg" 255,14,66,73
   palette "models/weaphits3/elecscroll.tga" 255,20,55,57
-  palette "models/weaphits3/elecscroll.jpg" 255,24,56,58
+  palette "models/weaphits3/elecscroll.jpg" 255,22,56,58
   palette "models/weaphits3/bulletscroll2.tga" 255,4,2,1
   palette "models/weaphits3/bulletscroll2.jpg" 255,4,2,1
   palette "models/weaphits3/bulletscroll.tga" 255,8,5,3
-  palette "models/weaphits3/bulletscroll.jpg" 255,8,5,4
+  palette "models/weaphits3/bulletscroll.jpg" 255,8,5,3
   palette "models/weaphits3/bullet_0007.tga" 0,0,0,0
-  palette "models/weaphits3/bullet_0007.png" 0,0,0,0
+  palette "models/weaphits3/bullet_0007.jpg" 255,0,0,0
   palette "models/weaphits3/bullet_0006.tga" 0,8,3,1
-  palette "models/weaphits3/bullet_0006.png" 0,8,3,1
+  palette "models/weaphits3/bullet_0006.jpg" 255,0,0,0
   palette "models/weaphits3/bullet_0005.tga" 1,28,12,6
   palette "models/weaphits3/bullet_0005.png" 1,28,12,6
   palette "models/weaphits3/bullet_0004.tga" 3,50,24,12
@@ -5798,162 +5624,237 @@ palettes/default
   palette "models/weaphits3/bullet2.jpg" 255,9,5,3
   palette "models/weaphits3/bullet1.jpg" 255,14,9,6
   palette "models/weaphits3/blood205.tga" 255,21,3,0
-  palette "models/weaphits3/blood205.jpg" 255,21,5,4
+  palette "models/weaphits3/blood205.jpg" 255,22,4,3
   palette "models/weaphits3/blood204.tga" 255,25,3,0
-  palette "models/weaphits3/blood204.jpg" 255,29,4,6
+  palette "models/weaphits3/blood204.jpg" 255,26,4,3
   palette "models/weaphits3/blood203.tga" 255,21,3,0
-  palette "models/weaphits3/blood203.jpg" 255,22,5,5
+  palette "models/weaphits3/blood203.jpg" 255,22,4,3
   palette "models/weaphits3/blood202.tga" 255,28,4,0
-  palette "models/weaphits3/blood202.jpg" 255,27,6,4
+  palette "models/weaphits3/blood202.jpg" 255,29,5,3
   palette "models/weaphits3/blood201.tga" 255,63,7,0
-  palette "models/weaphits3/blood201.jpg" 255,67,9,6
+  palette "models/weaphits3/blood201.jpg" 255,64,9,3
   palette "models/weaphits3/bfgscroll.tga" 255,47,77,30
-  palette "models/weaphits3/bfgscroll.jpg" 255,47,77,32
+  palette "models/weaphits3/bfgscroll.jpg" 255,48,77,31
   palette "models/weaphits3/bfg3.tga" 255,18,35,13
-  palette "models/weaphits3/bfg3.jpg" 255,19,35,14
+  palette "models/weaphits3/bfg3.jpg" 255,18,35,13
   palette "models/weaphits3/bfg2.tga" 255,7,14,5
-  palette "models/weaphits3/bfg2.jpg" 255,9,14,6
+  palette "models/weaphits3/bfg2.jpg" 255,7,14,5
   palette "models/weaphits3/bfg03.jpg" 255,77,56,7
   palette "models/weaphits3/bfg02.jpg" 255,25,23,3
   palette "models/weaphits3/bfg01.jpg" 255,63,45,4
   palette "models/weaphits3/bfg.tga" 255,40,63,31
-  palette "models/weaphits3/bfg.jpg" 255,40,63,32
+  palette "models/weaphits3/bfg.jpg" 255,40,63,31
+  palette "models/runes/resist_fluid.jpg" 255,155,3,136
   palette "models/runes/backpack.tga" 241,70,45,12
   palette "models/runes/backpack.png" 241,70,45,12
+  palette "models/tanks/tanks_panzer_tracks.tga" 255,246,246,246
+  palette "models/tanks/tanks_panzer_tracks.jpg" 255,246,246,246
+  palette "models/tanks/tanks_panzer_body.tga" 255,235,234,234
+  palette "models/tanks/tanks_panzer_body.jpg" 255,234,233,233
+  palette "models/tanks/tanks_cromwell_tracks.tga" 255,246,246,246
+  palette "models/tanks/tanks_cromwell_tracks.jpg" 255,245,245,245
+  palette "models/tanks/tanks_cromwell_body.tga" 255,237,237,237
+  palette "models/tanks/tanks_cromwell_body.jpg" 255,236,236,236
+  palette "models/tanks/tanks_churchill_tracks.tga" 255,244,244,244
+  palette "models/tanks/tanks_churchill_tracks.jpg" 255,243,243,243
+  palette "models/tanks/tanks_churchill_body.tga" 255,236,236,236
+  palette "models/tanks/tanks_churchill_body.jpg" 255,235,235,235
+  palette "models/tanks/tanks_carrier_tracks.tga" 255,247,247,247
+  palette "models/tanks/tanks_carrier_tracks.jpg" 255,246,246,246
+  palette "models/tanks/tanks_carrier_body.tga" 255,240,239,239
+  palette "models/tanks/tanks_carrier_body.jpg" 255,239,239,239
+  palette "models/tanks/tanks_M5A1_tracks.tga" 255,247,247,247
+  palette "models/tanks/tanks_M5A1_tracks.jpg" 255,246,246,246
+  palette "models/tanks/tanks_M5A1_body.tga" 255,238,238,238
+  palette "models/tanks/tanks_M5A1_body.jpg" 255,237,237,237
+  palette "models/tanks/panzer_tracksAO.tga" 255,23,23,23
+  palette "models/tanks/panzer_tracksAO.jpg" 255,23,23,23
+  palette "models/tanks/panzer_tracks.tga" 255,184,184,184
+  palette "models/tanks/panzer_tracks.jpg" 255,184,184,184
+  palette "models/tanks/panzer_bodyAO.tga" 255,43,43,43
+  palette "models/tanks/panzer_bodyAO.jpg" 255,43,43,43
+  palette "models/tanks/panzer_body.tga" 255,186,186,186
+  palette "models/tanks/panzer_body.jpg" 255,186,186,186
+  palette "models/tanks/m5a1_tracksAO.tga" 255,18,18,18
+  palette "models/tanks/m5a1_tracksAO.jpg" 255,18,18,18
+  palette "models/tanks/m5a1_bodyAO.tga" 255,42,42,42
+  palette "models/tanks/m5a1_bodyAO.jpg" 255,42,42,42
+  palette "models/tanks/cromwell_tracksAO.tga" 255,19,19,19
+  palette "models/tanks/cromwell_tracksAO.jpg" 255,19,19,19
+  palette "models/tanks/cromwell_tracks.tga" 255,182,182,182
+  palette "models/tanks/cromwell_tracks.jpg" 255,182,182,182
+  palette "models/tanks/cromwell_bodyAO.tga" 255,42,42,42
+  palette "models/tanks/cromwell_bodyAO.jpg" 255,42,42,42
+  palette "models/tanks/cromwell_body.tga" 255,186,186,186
+  palette "models/tanks/cromwell_body.jpg" 255,186,186,186
+  palette "models/tanks/churchill_tracksAO.tga" 255,12,12,12
+  palette "models/tanks/churchill_tracksAO.jpg" 255,12,12,12
+  palette "models/tanks/churchill_tracks.tga" 255,179,179,179
+  palette "models/tanks/churchill_tracks.jpg" 255,179,179,179
+  palette "models/tanks/churchill_bodyAO.tga" 255,45,45,45
+  palette "models/tanks/churchill_bodyAO.jpg" 255,46,46,46
+  palette "models/tanks/churchill_body.tga" 255,187,187,187
+  palette "models/tanks/churchill_body.jpg" 255,187,187,187
+  palette "models/tanks/carrier_tracksAO.tga" 255,14,14,14
+  palette "models/tanks/carrier_tracksAO.jpg" 255,14,14,14
+  palette "models/tanks/carrier_tracks.tga" 255,181,181,181
+  palette "models/tanks/carrier_tracks.jpg" 255,181,181,181
+  palette "models/tanks/carrier_bodyAO.tga" 255,35,35,35
+  palette "models/tanks/carrier_bodyAO.jpg" 255,35,35,35
+  palette "models/tanks/carrier_body.tga" 255,185,185,185
+  palette "models/tanks/carrier_body.jpg" 255,185,185,185
+  palette "models/tanks/M5A1_tracks.tga" 255,182,182,182
+  palette "models/tanks/M5A1_tracks.jpg" 255,182,182,182
+  palette "models/tanks/M5A1_body.tga" 255,186,186,186
+  palette "models/tanks/M5A1_body.jpg" 255,186,186,186
+  palette "models/weaphits/ring02_4.png" 9,160,125,108
+  palette "models/weaphits/ring02_3.png" 14,165,130,115
+  palette "models/weaphits/ring02_2.png" 20,172,137,122
+  palette "models/weaphits/ring02_1.png" 16,182,148,135
+  palette "models/weaphits/ring01_1.png" 44,77,87,156
   palette "models/weaphits/proxminebt.tga" 255,0,7,11
-  palette "models/weaphits/proxminebt.jpg" 255,4,7,11
+  palette "models/weaphits/proxminebt.jpg" 255,3,8,12
   palette "models/weaphits/proxmineb.tga" 255,11,0,0
-  palette "models/weaphits/proxmineb.jpg" 255,11,2,2
+  palette "models/weaphits/proxmineb.jpg" 255,12,2,2
   palette "models/weaphits/proxmine2t.tga" 255,0,34,52
-  palette "models/weaphits/proxmine2t.jpg" 255,7,34,55
+  palette "models/weaphits/proxmine2t.jpg" 255,4,35,53
   palette "models/weaphits/proxmine2.tga" 255,52,0,0
-  palette "models/weaphits/proxmine2.jpg" 255,51,4,4
+  palette "models/weaphits/proxmine2.jpg" 255,52,2,3
   palette "models/weaphits/proxmine.tga" 255,47,37,28
-  palette "models/weaphits/proxmine.jpg" 255,45,38,30
+  palette "models/weaphits/proxmine.jpg" 255,47,37,29
+  palette "models/weaphits/newexplo1.jpeg" 255,48,22,20
   palette "models/weaphits/nailtrail.tga" 255,10,8,6
-  palette "models/weaphits/nailtrail.jpg" 255,8,8,8
+  palette "models/weaphits/nailtrail.jpg" 255,10,8,6
   palette "models/weaphits/kamiwave02.tga" 255,20,17,15
-  palette "models/weaphits/kamiwave02.jpg" 255,20,17,14
+  palette "models/weaphits/kamiwave02.jpg" 255,20,17,15
   palette "models/weaphits/kamiwave01.tga" 255,25,20,16
-  palette "models/weaphits/kamiwave01.jpg" 255,24,20,18
+  palette "models/weaphits/kamiwave01.jpg" 255,25,20,16
   palette "models/weaphits/kamik02r.tga" 255,45,1,1
-  palette "models/weaphits/kamik02r.jpg" 255,46,5,6
+  palette "models/weaphits/kamik02r.jpg" 255,46,4,5
   palette "models/weaphits/kamik02b.tga" 255,1,34,45
-  palette "models/weaphits/kamik02b.jpg" 255,8,35,47
+  palette "models/weaphits/kamik02b.jpg" 255,7,35,46
   palette "models/weaphits/kamik02.tga" 255,11,6,4
   palette "models/weaphits/kamik02.jpg" 255,11,7,4
   palette "models/weaphits/kamik01.tga" 255,7,7,7
   palette "models/weaphits/kamik01.jpg" 255,7,7,7
   palette "models/weaphits/kam03b.tga" 255,16,11,9
-  palette "models/weaphits/kam03b.jpg" 255,15,12,10
+  palette "models/weaphits/kam03b.jpg" 255,16,12,9
   palette "models/weaphits/kam03.tga" 255,18,12,8
-  palette "models/weaphits/kam03.jpg" 255,18,13,9
-  palette "models/gibs/gibs.tga" 255,68,32,23
+  palette "models/weaphits/kam03.jpg" 255,18,12,9
+  palette "models/weaphits/flechettetrail.tga" 255,10,8,6
+  palette "models/weaphits/flechettetrail.jpg" 255,10,8,6
+  palette "models/weaphits/flamethrower.jpg" 255,38,17,6
+  palette "models/weaphits/electric.jpeg" 255,14,25,23
+  palette "models/weaphits/bullet3.jpeg" 255,24,13,9
+  palette "models/weaphits/bullet2.jpeg" 255,42,23,13
+  palette "models/weaphits/bullet1.jpeg" 255,38,22,12
+  palette "models/weaphits/blood205.png" 8,88,7,5
+  palette "models/weaphits/blood204.png" 25,85,7,4
+  palette "models/weaphits/blood203.png" 33,84,7,4
+  palette "models/weaphits/blood202.png" 47,82,6,4
+  palette "models/weaphits/blood201.png" 34,80,6,4
+  palette "models/weaphits/bfg03.jpeg" 255,15,18,13
+  palette "models/weaphits/bfg02.jpeg" 255,13,11,10
+  palette "models/weaphits/bfg01.jpeg" 255,18,41,27
   palette "models/powerups/shield_map.tga" 255,45,45,55
-  palette "models/powerups/shield_map.jpg" 255,46,45,52
+  palette "models/powerups/shield_map.jpg" 255,45,45,55
   palette "models/powerups/shield_fx.tga" 255,91,4,151
-  palette "models/powerups/shield_fx.jpg" 255,91,7,152
+  palette "models/powerups/shield_fx.jpg" 255,91,6,151
   palette "models/powerups/scout2.tga" 0,0,0,0
-  palette "models/powerups/scout2.png" 0,0,0,0
+  palette "models/powerups/scout2.jpg" 255,6,43,11
   palette "models/powerups/regen2.tga" 255,45,35,28
-  palette "models/powerups/regen2.jpg" 255,45,36,30
+  palette "models/powerups/regen2.jpg" 255,45,36,28
   palette "models/powerups/regen1.tga" 255,70,0,7
-  palette "models/powerups/regen1.jpg" 255,71,4,9
+  palette "models/powerups/regen1.jpg" 255,70,3,8
   palette "models/powerups/porter_map.tga" 255,48,44,55
-  palette "models/powerups/porter_map.jpg" 255,48,45,52
+  palette "models/powerups/porter_map.jpg" 255,47,45,55
   palette "models/powerups/porter_fx.tga" 255,133,4,151
-  palette "models/powerups/porter_fx.jpg" 255,132,9,151
+  palette "models/powerups/porter_fx.jpg" 255,133,7,151
   palette "models/powerups/pop_bw.tga" 255,17,17,17
   palette "models/powerups/pop_bw.jpg" 255,17,17,17
   palette "models/powerups/pop2.tga" 255,16,6,2
-  palette "models/powerups/pop2.jpg" 255,15,7,5
+  palette "models/powerups/pop2.jpg" 255,16,7,4
   palette "models/powerups/pop.tga" 255,29,14,4
-  palette "models/powerups/pop.jpg" 255,28,15,9
+  palette "models/powerups/pop.jpg" 255,29,14,6
   palette "models/powerups/overload_mapbw.tga" 255,46,50,52
-  palette "models/powerups/overload_mapbw.jpg" 255,49,49,51
+  palette "models/powerups/overload_mapbw.jpg" 255,46,50,52
   palette "models/powerups/overload_map.tga" 255,56,44,32
-  palette "models/powerups/overload_map.jpg" 255,59,43,32
+  palette "models/powerups/overload_map.jpg" 255,56,44,32
   palette "models/powerups/overload_lights.tga" 255,149,149,149
   palette "models/powerups/overload_lights.jpg" 255,149,149,149
   palette "models/powerups/kamitrail.tga" 255,26,31,20
-  palette "models/powerups/kamitrail.jpg" 255,27,31,21
+  palette "models/powerups/kamitrail.jpg" 255,27,31,20
   palette "models/powerups/kamikazi_f.tga" 255,151,106,4
-  palette "models/powerups/kamikazi_f.jpg" 255,152,105,12
+  palette "models/powerups/kamikazi_f.jpg" 255,151,106,8
   palette "models/powerups/guard2.tga" 0,0,0,0
-  palette "models/powerups/guard2.png" 0,0,0,0
+  palette "models/powerups/guard2.jpg" 255,11,2,37
   palette "models/powerups/doubler2.tga" 0,0,0,0
-  palette "models/powerups/doubler2.png" 0,0,0,0
+  palette "models/powerups/doubler2.jpg" 255,48,8,5
   palette "models/powerups/ammo2.tga" 255,38,28,0
-  palette "models/powerups/ammo2.jpg" 255,39,28,10
+  palette "models/powerups/ammo2.jpg" 255,39,28,7
   palette "models/flag/skull.tga" 255,79,68,62
-  palette "models/flag/skull.jpg" 255,80,69,60
+  palette "models/flag/skull.jpg" 255,79,69,62
   palette "models/flag/r_flag2.tga" 167,158,5,4
   palette "models/flag/r_flag2.png" 167,158,5,4
   palette "models/flag/pole.tga" 255,34,34,34
-  palette "models/flag/pole.jpg" 255,36,36,36
-  palette "models/flags/skull.tga" 255,79,69,62
-  palette "models/flags/skull.jpg" 255,79,69,62
-  palette "models/flags/red_fx.tga" 255,144,8,10
-  palette "models/flags/red_fx.jpg" 255,144,8,10
-  palette "models/flags/r_flag2.tga" 167,158,5,4
+  palette "models/flag/pole.jpg" 255,34,34,34
+  palette "models/flag2/w_flag2.tga" 167,222,222,222
+  palette "models/flag2/w_flag2.png" 167,222,222,222
+  palette "models/flag2/red_fx.tga" 255,145,7,9
+  palette "models/flag2/red_fx.jpg" 255,143,9,10
+  palette "models/flag2/r_flag2.tga" 167,158,5,4
+  palette "models/flag2/r_flag2.png" 167,158,5,4
+  palette "models/flag2/neutral_fx.tga" 255,80,75,68
+  palette "models/flag2/neutral_fx.jpg" 255,79,75,68
+  palette "models/flag2/blue_fx.tga" 255,4,60,145
+  palette "models/flag2/blue_fx.jpg" 255,6,60,144
+  palette "models/flag2/b_flag2.tga" 167,8,82,135
+  palette "models/flag2/b_flag2.png" 167,8,82,135
+  palette "models/flags/w_flag2.tga" 167,222,222,222
+  palette "models/flags/w_flag2.png" 167,222,222,222
   palette "models/flags/r_flag2.png" 167,158,5,4
   palette "models/flags/neutral_fx.tga" 255,80,75,68
-  palette "models/flags/neutral_fx.jpg" 255,76,77,71
+  palette "models/flags/neutral_fx.jpg" 255,79,75,68
   palette "models/flags/n_flag2.tga" 167,167,159,148
   palette "models/flags/n_flag2.png" 167,167,159,148
   palette "models/flags/k_flag2.tga" 167,135,102,8
   palette "models/flags/k_flag2.png" 167,135,102,8
   palette "models/flags/green_fx.tga" 255,17,144,6
-  palette "models/flags/green_fx.jpg" 255,17,144,6
+  palette "models/flags/green_fx.jpg" 255,17,144,9
   palette "models/flags/gold_fx.tga" 255,143,132,5
-  palette "models/flags/gold_fx.jpg" 255,142,132,6
+  palette "models/flags/gold_fx.jpg" 255,142,132,8
   palette "models/flags/g_flag2.tga" 167,42,135,8
   palette "models/flags/g_flag2.png" 167,42,135,8
-  palette "models/flags/flagbits.tga" 95,80,66,57
   palette "models/flags/flagbits.png" 95,80,66,57
-  palette "models/flags/blue_fx.tga" 255,5,60,144
-  palette "models/flags/blue_fx.jpg" 255,5,60,144
-  palette "models/flags/b_flag2.tga" 167,8,82,135
   palette "models/flags/b_flag2.png" 167,8,82,135
-  palette "models/flag2/w_flag2.tga" 167,222,222,222
-  palette "models/flag2/w_flag2.png" 167,222,222,222
-  palette "models/flag2/red_fx.tga" 255,145,7,9
-  palette "models/flag2/red_fx.jpg" 255,144,10,14
-  palette "models/flag2/r_flag2.tga" 167,158,5,4
-  palette "models/flag2/r_flag2.png" 167,158,5,4
-  palette "models/flag2/neutral_fx.tga" 255,80,75,68
-  palette "models/flag2/neutral_fx.jpg" 255,76,77,71
-  palette "models/flag2/blue_fx.tga" 255,4,60,145
-  palette "models/flag2/blue_fx.jpg" 255,7,60,145
-  palette "models/flag2/b_flag2.tga" 167,8,82,135
-  palette "models/flag2/b_flag2.png" 167,8,82,135
-  palette "models/ctftree/ctftree.tga" 130,47,65,30
-  palette "models/ctftree/ctftree.png" 130,47,65,30
-  palette "models/mapobjects/wall_lamp3.tga" 255,32,23,18
-  palette "models/mapobjects/visor_st.tga" 255,67,56,47
+  palette "models/mapobjects/treebark.tga" 255,46,17,6
+  palette "models/mapobjects/treebark.jpg" 255,46,17,6
   palette "models/mapobjects/standlamp.tga" 255,64,33,20
-  palette "models/mapobjects/standlamp.jpg" 255,67,33,23
-  palette "models/mapobjects/pj_light.tga" 255,183,123,103
-  palette "models/mapobjects/pj_light.jpg" 255,183,123,103
-  palette "models/mapobjects/pj_lamp.tga" 255,63,50,42
-  palette "models/mapobjects/pj_lamp.jpg" 255,63,50,42
-  palette "models/mapobjects/pitted_rust_ps.tga" 255,62,48,39
-  palette "models/mapobjects/major_st.tga" 255,80,66,57
-  palette "models/mapobjects/major_h_st.tga" 255,96,83,70
+  palette "models/mapobjects/standlamp.jpg" 255,65,33,21
+  palette "models/mapobjects/new model list.jpg" 255,239,234,233
+  palette "models/mapobjects/naterock2.tga" 255,142,118,100
+  palette "models/mapobjects/naterock2.jpg" 255,142,118,100
+  palette "models/mapobjects/naterock1.tga" 255,124,124,124
+  palette "models/mapobjects/naterock1.jpg" 255,124,124,124
   palette "models/mapobjects/leafb.tga" 109,127,158,23
   palette "models/mapobjects/leafb.png" 109,127,158,23
   palette "models/mapobjects/leafa.tga" 148,72,101,45
   palette "models/mapobjects/leafa.png" 148,72,101,45
   palette "models/mapobjects/lamplight_y2.tga" 255,144,104,45
-  palette "models/mapobjects/lamplight_y2.jpg" 255,146,102,50
-  palette "models/mapobjects/kmlamp1.tga" 255,69,62,45
-  palette "models/mapobjects/gargoyle.tga" 255,37,37,42
+  palette "models/mapobjects/lamplight_y2.jpg" 255,144,104,46
   palette "models/mapobjects/ferna.tga" 82,75,110,40
   palette "models/mapobjects/ferna.png" 82,75,110,40
-  palette "models/mapobjects/eagleban.tga" 255,64,55,45
-  palette "menu/medals/medal_defend.tga" 81,0,77,229
-  palette "menu/medals/medal_capture.tga" 94,160,73,93
-  palette "menu/medals/medal_assist.tga" 86,100,140,135
+  palette "models/mapobjects/Nateshroom1.tga" 255,214,145,135
+  palette "models/mapobjects/Nateshroom1.jpg" 255,213,144,135
+  palette "models/ctftree/ctftree.tga" 130,47,65,30
+  palette "models/ctftree/ctftree.png" 130,47,65,30
+  palette "models/breakables/glassfx.jpg" 255,13,13,13
+  palette "models/backpack/backpack.jpg" 255,66,48,37
+  palette "models/ammo/strogg_grenade2.jpg" 255,86,42,23
+  palette "models/ammo/slipgate_grenade.jpg" 255,64,17,9
+  palette "models/ammo/grenade_r.jpeg" 255,8,3,4
+  palette "models/ammo/grenade_g.jpeg" 255,10,5,6
+  palette "models/ammo/grenade.jpeg" 255,46,32,27
   palette "models/enhanced/zombie.pcx" 255,64,43,36
   palette "models/enhanced/wizard.pcx" 255,82,66,54
   palette "models/enhanced/v_shot2.pcx" 255,41,28,21
@@ -5997,11 +5898,166 @@ palettes/default
   palette "models/enhanced/dog.pcx" 255,28,17,11
   palette "models/enhanced/demon.pcx" 255,53,26,20
   palette "models/enhanced/boss.pcx" 255,47,5,4
-  palette "gfx/colors/black.tga" 255,0,0,0
-  palette "gfx/2d/net.tga" 255,116,125,151
-  palette "gfx/2d/lag.tga" 255,110,3,3
-  palette "gfx/2d/colorbar.tga" 255,75,75,75
-  palette "gfx/2d/backtile.tga" 255,27,18,12
+  palette "menu/tab/time.png" 105,157,0,0
+  palette "menu/tab/score.png" 141,158,0,0
+  palette "menu/tab/ping.png" 110,160,0,0
+  palette "menu/tab/name.png" 126,164,0,0
+  palette "menu/medals/medal_victory.png" 93,21,229,88
+  palette "menu/medals/medal_impressive.png" 76,0,213,213
+  palette "menu/medals/medal_gauntlet.png" 128,232,97,0
+  palette "menu/medals/medal_frags.png" 101,219,0,0
+  palette "menu/medals/medal_excellent.png" 114,241,181,18
+  palette "menu/medals/medal_defend.tga" 81,0,77,229
+  palette "menu/medals/medal_defend.png" 81,0,77,229
+  palette "menu/medals/medal_capture.tga" 94,160,73,93
+  palette "menu/medals/medal_capture.png" 94,160,73,93
+  palette "menu/medals/medal_assist.tga" 86,100,140,135
+  palette "menu/medals/medal_assist.png" 86,100,140,135
+  palette "menu/medals/medal_accuracy.png" 91,194,57,222
+  palette "menu/art/unknownmap.jpeg" 255,73,25,16
+  palette "menu/art/switch_on.png" 108,180,146,42
+  palette "menu/art/switch_off.png" 73,99,53,23
+  palette "menu/art/specify_1.png" 141,92,57,1
+  palette "menu/art/specify_0.png" 141,71,11,7
+  palette "menu/art/sliderbutt_1.png" 185,135,5,5
+  palette "menu/art/sliderbutt_0.png" 203,82,6,6
+  palette "menu/art/slider2.png" 103,208,208,208
+  palette "menu/art/skirmish_1.png" 141,95,59,1
+  palette "menu/art/skirmish_0.png" 141,75,11,7
+  palette "menu/art/skill5.png" 132,129,113,97
+  palette "menu/art/skill4.png" 72,204,0,0
+  palette "menu/art/skill3.png" 72,204,44,38
+  palette "menu/art/skill2.png" 72,204,94,82
+  palette "menu/art/skill1.png" 72,204,139,121
+  palette "menu/art/save_1.png" 141,114,71,1
+  palette "menu/art/save_0.png" 141,86,14,10
+  palette "menu/art/reset_1.png" 141,90,56,1
+  palette "menu/art/reset_0.png" 141,68,11,8
+  palette "menu/art/replay_1.png" 141,83,55,1
+  palette "menu/art/replay_0.png" 141,70,10,7
+  palette "menu/art/refresh_1.png" 141,93,58,1
+  palette "menu/art/refresh_0.png" 141,72,11,8
+  palette "menu/art/player_models_ports.png" 251,69,16,14
+  palette "menu/art/play_1.png" 141,86,53,1
+  palette "menu/art/play_0.png" 141,68,10,6
+  palette "menu/art/pblogo.jpg" 255,49,35,70
+  palette "menu/art/opponents_selected.png" 11,255,255,255
+  palette "menu/art/opponents_select.png" 9,255,255,255
+  palette "menu/art/next_1.png" 141,112,70,1
+  palette "menu/art/next_0.png" 141,86,14,10
+  palette "menu/art/narrow_1.png" 119,164,1,0
+  palette "menu/art/narrow_0.png" 130,82,0,0
+  palette "menu/art/model_1.png" 141,101,62,1
+  palette "menu/art/model_0.png" 141,78,12,8
+  palette "menu/art/menu_1.png" 141,83,56,1
+  palette "menu/art/menu_0.png" 141,69,11,8
+  palette "menu/art/maps_selected.png" 6,255,0,0
+  palette "menu/art/maps_select.png" 9,255,0,0
+  palette "menu/art/load_1.png" 141,114,70,1
+  palette "menu/art/load_0.png" 141,86,14,10
+  palette "menu/art/level_complete5.png" 87,101,69,48
+  palette "menu/art/level_complete4.png" 46,103,1,3
+  palette "menu/art/level_complete3.png" 46,107,20,18
+  palette "menu/art/level_complete2.png" 46,104,46,42
+  palette "menu/art/level_complete1.png" 46,106,66,58
+  palette "menu/art/gs_arrows_r.png" 159,122,1,1
+  palette "menu/art/gs_arrows_l.png" 158,126,2,2
+  palette "menu/art/gs_arrows_0.png" 161,79,3,3
+  palette "menu/art/fx_yel.png" 185,210,197,0
+  palette "menu/art/fx_white.png" 185,201,190,195
+  palette "menu/art/fx_teal.png" 185,24,201,198
+  palette "menu/art/fx_red.png" 185,208,21,0
+  palette "menu/art/fx_grn.png" 185,11,209,18
+  palette "menu/art/fx_cyan.png" 185,210,19,208
+  palette "menu/art/fx_blue.png" 185,41,11,209
+  palette "menu/art/fx_base.png" 202,54,61,62
+  palette "menu/art/fx_base.jpeg" 255,86,87,91
+  palette "menu/art/frame2_l.png" 24,91,49,39
+  palette "menu/art/frame1_r.png" 25,104,60,45
+  palette "menu/art/frame1_l.png" 207,139,97,82
+  palette "menu/art/font2_prop.png" 69,191,0,0
+  palette "menu/art/font1_prop_glo.png" 81,209,209,209
+  palette "menu/art/font1_prop.png" 48,255,255,255
+  palette "menu/art/fight_1.png" 141,143,89,2
+  palette "menu/art/fight_0.png" 141,100,21,17
+  palette "menu/art/delete_1.png" 141,88,56,1
+  palette "menu/art/delete_0.png" 141,65,12,10
+  palette "menu/art/cut_frame.png" 86,28,21,17
+  palette "menu/art/create_1.png" 141,95,59,1
+  palette "menu/art/create_0.png" 141,71,12,9
+  palette "menu/art/back_1.png" 141,117,73,2
+  palette "menu/art/back_0.png" 141,88,15,11
+  palette "menu/art/arrows_vert_top.png" 131,99,1,1
+  palette "menu/art/arrows_vert_bot.png" 132,93,0,0
+  palette "menu/art/arrows_vert_0.png" 137,63,0,0
+  palette "menu/art/arrows_horz_right.png" 133,99,0,0
+  palette "menu/art/arrows_horz_left.png" 132,99,2,2
+  palette "menu/art/arrows_horz_0.png" 138,67,1,1
+  palette "menu/art/addbotframe.png" 99,29,21,17
+  palette "menu/art/accept_1.png" 141,122,75,2
+  palette "menu/art/accept_0.png" 141,90,16,12
+  palette "menu/art/3_cursor2.png" 49,255,0,0
+  palette "gfx/ice/icechunks.jpg" 255,32,75,122
+  palette "gfx/misc/teleporteffect2.jpg" 255,59,39,35
+  palette "gfx/misc/snowflake.tga" 45,249,255,255
+  palette "gfx/misc/snowflake.png" 45,249,255,255
+  palette "gfx/misc/smokepuffragepro.png" 5,255,255,255
+  palette "gfx/misc/smokepuff3.png" 83,168,134,119
+  palette "gfx/misc/smokepuff2b.png" 50,167,133,117
+  palette "gfx/misc/raindrop.tga" 12,70,78,92
+  palette "gfx/misc/raindrop.png" 12,70,78,92
+  palette "gfx/misc/plaguepuff.tga" 83,0,134,63
+  palette "gfx/misc/plaguepuff.png" 83,0,134,63
+  palette "gfx/misc/lightning3newnpm.tga" 255,11,17,26
+  palette "gfx/misc/lightning3newnpm.jpg" 255,11,17,26
+  palette "gfx/misc/lightning3new.tga" 255,11,17,26
+  palette "gfx/misc/lightning3new.jpg" 255,11,17,26
+  palette "gfx/misc/grappleflare.jpg" 255,32,24,32
+  palette "gfx/misc/console01.png" 232,35,0,5
+  palette "gfx/misc/chainlightningnew.jpg" 255,26,17,11
+  palette "gfx/misc/chainlightning.jpg" 255,29,8,14
+  palette "gfx/misc/bbox.jpg" 255,47,47,47
+  palette "gfx/effects/invismap3.tga" 255,35,35,35
+  palette "gfx/effects/invismap3.jpg" 255,35,35,35
+  palette "gfx/effects/invismap2.tga" 255,52,52,52
+  palette "gfx/effects/invismap2.jpg" 255,53,53,53
+  palette "gfx/damage/shadow.png" 109,175,175,175
+  palette "gfx/damage/plasma_mrk.png" 44,61,59,97
+  palette "gfx/damage/hole_lg_mrk.jpeg" 255,87,87,87
+  palette "gfx/damage/freeze_stain.tga" 70,209,209,217
+  palette "gfx/damage/freeze_stain.png" 70,209,209,217
+  palette "gfx/damage/burn_med_mrk.jpeg" 255,70,70,70
+  palette "gfx/damage/bullet_mrk.jpeg" 255,80,80,80
+  palette "gfx/damage/blood_stain.png" 70,80,0,1
+  palette "gfx/damage/blood_spurt.png" 77,65,0,0
+  palette "gfx/damage/blood_screen.png" 22,100,6,6
+  palette "gfx/2d/speccrosshair.tga" 32,255,255,255
+  palette "gfx/2d/speccrosshair.png" 32,255,255,255
+  palette "gfx/2d/select.png" 60,245,222,94
+  palette "gfx/2d/numbers_64.tga" 100,190,190,190
+  palette "gfx/2d/numbers_64.png" 100,190,190,190
+  palette "gfx/2d/numbers_32.tga" 100,191,191,191
+  palette "gfx/2d/numbers_32.png" 100,191,191,191
+  palette "gfx/2d/numbers_128.tga" 100,191,191,191
+  palette "gfx/2d/numbers_128.png" 100,191,191,191
+  palette "gfx/2d/defer.png" 109,180,0,0
+  palette "gfx/2d/crosshairj.png" 13,255,255,255
+  palette "gfx/2d/crosshairi.png" 13,255,255,255
+  palette "gfx/2d/crosshairh.png" 5,255,255,255
+  palette "gfx/2d/crosshairg.png" 12,255,255,255
+  palette "gfx/2d/crosshairf.png" 1,255,255,255
+  palette "gfx/2d/crosshaire.png" 4,255,255,255
+  palette "gfx/2d/crosshaird.png" 27,255,255,255
+  palette "gfx/2d/crosshairc.png" 8,255,255,255
+  palette "gfx/2d/crosshairb.png" 10,255,255,255
+  palette "gfx/2d/crosshaira.png" 10,255,255,255
+  palette "gfx/2d/bigchars_64.tga" 68,255,255,255
+  palette "gfx/2d/bigchars_64.png" 68,255,255,255
+  palette "gfx/2d/bigchars_32.tga" 68,255,255,255
+  palette "gfx/2d/bigchars_32.png" 68,255,255,255
+  palette "gfx/2d/bigchars_16.tga" 68,255,255,255
+  palette "gfx/2d/bigchars_16.png" 68,255,255,255
+  palette "gfx/2d/bigchars.png" 57,255,255,255
   palette "maps/Weatherford1/Wood_Plywood_Knots.jpg" 255,137,123,41
   palette "maps/Weatherford1/Wood_Floor_Dark.jpg" 255,154,95,41
   palette "maps/Weatherford1/Wood_Floor_0.jpg" 255,156,105,61
@@ -6035,9 +6091,9 @@ palettes/default
   palette "ui/assets/statusbar/follow.tga" 83,243,160,0
   palette "ui/assets/statusbar/follow.png" 83,243,160,0
   palette "ui/assets/statusbar/flag_missing.tga" 255,110,110,110
-  palette "ui/assets/statusbar/flag_missing.jpg" 255,113,113,113
+  palette "ui/assets/statusbar/flag_missing.jpg" 255,111,111,111
   palette "ui/assets/statusbar/flag_in_base.tga" 255,155,155,155
-  palette "ui/assets/statusbar/flag_in_base.jpg" 255,153,153,153
+  palette "ui/assets/statusbar/flag_in_base.jpg" 255,154,154,154
   palette "ui/assets/statusbar/flag_capture.tga" 255,138,138,138
   palette "ui/assets/statusbar/flag_capture.jpg" 255,138,138,138
   palette "ui/assets/statusbar/escort.tga" 119,0,238,239
@@ -6054,2371 +6110,96 @@ palettes/default
   palette "textures/wvwq3dm7/foghull/wvw7hull_ft.jpg" 255,39,72,63
   palette "textures/wvwq3dm7/foghull/wvw7hull_dn.jpg" 255,39,72,63
   palette "textures/wvwq3dm7/foghull/wvw7hull_bk.jpg" 255,39,72,63
-  palette "textures/skies2/env/nebulax_up.tga" 255,0,16,12
-  palette "textures/skies2/env/nebulax_up.jpg" 255,3,16,11
-  palette "textures/skies2/env/nebulax_rt.tga" 255,0,14,10
-  palette "textures/skies2/env/nebulax_rt.jpg" 255,3,14,10
-  palette "textures/skies2/env/nebulax_lf.tga" 255,0,17,13
-  palette "textures/skies2/env/nebulax_lf.jpg" 255,3,18,12
-  palette "textures/skies2/env/nebulax_ft.tga" 255,0,6,4
-  palette "textures/skies2/env/nebulax_ft.jpg" 255,2,6,4
-  palette "textures/skies2/env/nebulax_dn.tga" 255,0,20,15
-  palette "textures/skies2/env/nebulax_dn.jpg" 255,2,20,13
-  palette "textures/skies2/env/nebulax_bk.tga" 255,0,28,20
-  palette "textures/skies2/env/nebulax_bk.jpg" 255,3,28,19
-  palette "textures/skies2/env/nebula_up.tga" 255,56,49,45
+  palette "textures/skies2/env/nebulax_up.jpg" 255,2,16,12
+  palette "textures/skies2/env/nebulax_rt.jpg" 255,1,14,10
+  palette "textures/skies2/env/nebulax_lf.jpg" 255,2,18,13
+  palette "textures/skies2/env/nebulax_ft.jpg" 255,1,6,4
+  palette "textures/skies2/env/nebulax_dn.jpg" 255,1,20,14
+  palette "textures/skies2/env/nebulax_bk.jpg" 255,2,28,20
   palette "textures/skies2/env/nebula_up.jpg" 255,56,49,45
-  palette "textures/skies2/env/nebula_rt.tga" 255,26,25,23
-  palette "textures/skies2/env/nebula_rt.jpg" 255,27,24,23
-  palette "textures/skies2/env/nebula_lf.tga" 255,6,5,9
-  palette "textures/skies2/env/nebula_lf.jpg" 255,6,5,9
-  palette "textures/skies2/env/nebula_ft.tga" 255,7,5,8
-  palette "textures/skies2/env/nebula_ft.jpg" 255,7,5,7
-  palette "textures/skies2/env/nebula_dn.tga" 255,21,12,27
+  palette "textures/skies2/env/nebula_rt.jpg" 255,27,25,23
+  palette "textures/skies2/env/nebula_lf.jpg" 255,7,5,9
+  palette "textures/skies2/env/nebula_ft.jpg" 255,7,5,8
   palette "textures/skies2/env/nebula_dn.jpg" 255,21,13,27
-  palette "textures/skies2/env/nebula_bk.tga" 255,19,14,27
-  palette "textures/skies2/env/nebula_bk.jpg" 255,18,15,26
-  palette "textures/skies2/env/nebula3_up.tga" 255,25,18,11
-  palette "textures/skies2/env/nebula3_up.jpg" 255,25,18,12
-  palette "textures/skies2/env/nebula3_rt.tga" 255,23,12,7
-  palette "textures/skies2/env/nebula3_rt.jpg" 255,22,12,8
-  palette "textures/skies2/env/nebula3_lf.tga" 255,32,16,9
+  palette "textures/skies2/env/nebula_bk.jpg" 255,19,14,27
+  palette "textures/skies2/env/nebula3_up.jpg" 255,25,18,11
+  palette "textures/skies2/env/nebula3_rt.jpg" 255,23,12,7
   palette "textures/skies2/env/nebula3_lf.jpg" 255,32,16,9
-  palette "textures/skies2/env/nebula3_ft.tga" 255,6,3,2
-  palette "textures/skies2/env/nebula3_ft.jpg" 255,6,3,3
-  palette "textures/skies2/env/nebula3_dn.tga" 255,38,25,12
-  palette "textures/skies2/env/nebula3_dn.jpg" 255,38,25,12
-  palette "textures/skies2/env/nebula3_bk.tga" 255,53,29,17
-  palette "textures/skies2/env/nebula3_bk.jpg" 255,53,30,17
-  palette "textures/skies2/env/nebula2_up.tga" 255,55,45,39
+  palette "textures/skies2/env/nebula3_ft.jpg" 255,6,4,2
+  palette "textures/skies2/env/nebula3_dn.jpg" 255,38,25,13
+  palette "textures/skies2/env/nebula3_bk.jpg" 255,53,29,17
   palette "textures/skies2/env/nebula2_up.jpg" 255,55,45,39
-  palette "textures/skies2/env/nebula2_rt.tga" 255,26,25,23
-  palette "textures/skies2/env/nebula2_rt.jpg" 255,27,24,23
-  palette "textures/skies2/env/nebula2_lf.tga" 255,6,5,9
-  palette "textures/skies2/env/nebula2_lf.jpg" 255,6,5,9
-  palette "textures/skies2/env/nebula2_ft.tga" 255,7,5,8
-  palette "textures/skies2/env/nebula2_ft.jpg" 255,7,5,7
-  palette "textures/skies2/env/nebula2_dn.tga" 255,21,12,27
+  palette "textures/skies2/env/nebula2_rt.jpg" 255,27,25,23
+  palette "textures/skies2/env/nebula2_lf.jpg" 255,7,5,9
+  palette "textures/skies2/env/nebula2_ft.jpg" 255,7,5,8
   palette "textures/skies2/env/nebula2_dn.jpg" 255,21,13,27
-  palette "textures/skies2/env/nebula2_bk.tga" 255,20,15,25
-  palette "textures/skies2/env/nebula2_bk.jpg" 255,19,16,24
+  palette "textures/skies2/env/nebula2_bk.jpg" 255,20,16,25
+  palette "textures/portal/red/portalfog.jpg" 255,184,118,57
+  palette "textures/portal/red/portal_sfx_ring_electric.jpg" 255,13,8,14
+  palette "textures/portal/red/portal_sfx_ring_blue1.tga" 135,255,233,124
+  palette "textures/portal/red/portal_sfx_ring_blue1.png" 135,255,233,124
+  palette "textures/portal/red/portal_sfx_ring.jpg" 255,135,60,1
+  palette "textures/portal/red/portal_sfx3.tga" 121,255,196,116
+  palette "textures/portal/red/portal_sfx3.png" 121,255,196,116
+  palette "textures/portal/red/portal_sfx1.tga" 109,255,228,231
+  palette "textures/portal/red/portal_sfx1.png" 109,255,228,231
+  palette "textures/portal/red/portal_sfx.jpg" 255,148,64,1
+  palette "textures/portal/blue/portalfog.jpg" 255,56,120,184
+  palette "textures/portal/blue/portal_sfx_ring_electric.jpg" 255,13,8,14
+  palette "textures/portal/blue/portal_sfx_ring_blue1.tga" 135,239,233,252
+  palette "textures/portal/blue/portal_sfx_ring_blue1.png" 135,239,233,252
+  palette "textures/portal/blue/portal_sfx_ring.jpg" 255,1,59,135
+  palette "textures/portal/blue/portal_sfx3.tga" 121,200,196,244
+  palette "textures/portal/blue/portal_sfx3.png" 121,200,196,244
+  palette "textures/portal/blue/portal_sfx1.tga" 109,235,228,255
+  palette "textures/portal/blue/portal_sfx1.png" 109,235,228,255
+  palette "textures/portal/blue/portal_sfx.jpg" 255,1,64,147
+  palette "textures/oa/muzzle/muz8.tga" 255,23,23,23
+  palette "textures/oa/muzzle/muz8.jpg" 255,24,24,24
+  palette "textures/oa/muzzle/muz7.tga" 255,30,30,30
+  palette "textures/oa/muzzle/muz7.jpg" 255,31,31,31
+  palette "textures/oa/muzzle/muz6.tga" 255,25,25,25
+  palette "textures/oa/muzzle/muz6.jpg" 255,25,25,25
+  palette "textures/oa/muzzle/muz5.tga" 255,45,45,45
+  palette "textures/oa/muzzle/muz5.jpg" 255,46,46,46
+  palette "textures/oa/muzzle/muz4.tga" 255,33,33,33
+  palette "textures/oa/muzzle/muz4.jpg" 255,33,33,33
+  palette "textures/oa/muzzle/muz3.tga" 255,40,40,40
+  palette "textures/oa/muzzle/muz3.jpg" 255,40,40,40
+  palette "textures/oa/muzzle/muz2.tga" 255,19,19,19
+  palette "textures/oa/muzzle/muz2.jpg" 255,19,19,19
+  palette "textures/oa/muzzle/muz1.tga" 255,27,27,27
+  palette "textures/oa/muzzle/muz1.jpg" 255,27,27,27
+  palette "textures/sfx/compscreen/letters4.png" 6,199,42,40
+  palette "textures/sfx/compscreen/letters3.png" 4,164,30,29
+  palette "textures/sfx/compscreen/letters2.png" 6,74,14,13
+  palette "textures/sfx/compscreen/letters1.png" 4,179,33,32
   palette "textures/models/elglight2/elglight2.tga" 220,36,35,34
   palette "textures/models/elglight2/elglight2.png" 220,36,35,34
-  palette "textures/sfx/compscreen/letters5.tga" 255,0,0,0
-  palette "textures/13gate_xt/env/filter_up.tga" 255,255,255,255
-  palette "textures/13gate_xt/env/filter_up.jpg" 255,255,255,255
-  palette "textures/13gate_xt/env/filter_rt.tga" 255,125,125,125
-  palette "textures/13gate_xt/env/filter_rt.jpg" 255,125,125,125
-  palette "textures/13gate_xt/env/filter_lf.tga" 255,125,125,125
-  palette "textures/13gate_xt/env/filter_lf.jpg" 255,125,125,125
-  palette "textures/13gate_xt/env/filter_ft.tga" 255,125,125,125
-  palette "textures/13gate_xt/env/filter_ft.jpg" 255,125,125,125
-  palette "textures/13gate_xt/env/filter_dn.tga" 255,0,0,0
-  palette "textures/13gate_xt/env/filter_dn.jpg" 255,0,0,0
-  palette "textures/13gate_xt/env/filter_bk.tga" 255,125,125,125
-  palette "textures/13gate_xt/env/filter_bk.jpg" 255,125,125,125
-  palette "textures/14gate_xt/env/filter_up.tga" 255,255,255,255
+  palette "textures/chili_skies/env/sky_up.tga" 255,131,148,172
+  palette "textures/chili_skies/env/sky_up.jpg" 255,131,149,173
+  palette "textures/chili_skies/env/sky_rt.tga" 255,131,148,172
+  palette "textures/chili_skies/env/sky_rt.jpg" 255,131,149,173
+  palette "textures/chili_skies/env/sky_lf.tga" 255,131,148,172
+  palette "textures/chili_skies/env/sky_lf.jpg" 255,131,149,173
+  palette "textures/chili_skies/env/sky_ft.tga" 255,131,148,172
+  palette "textures/chili_skies/env/sky_ft.jpg" 255,131,149,173
+  palette "textures/chili_skies/env/sky_dn.tga" 255,131,148,172
+  palette "textures/chili_skies/env/sky_dn.jpg" 255,131,149,173
+  palette "textures/chili_skies/env/sky_bk.tga" 255,131,148,172
+  palette "textures/chili_skies/env/sky_bk.jpg" 255,131,149,173
   palette "textures/14gate_xt/env/filter_up.jpg" 255,255,255,255
-  palette "textures/14gate_xt/env/filter_rt.tga" 255,125,125,125
   palette "textures/14gate_xt/env/filter_rt.jpg" 255,125,125,125
-  palette "textures/14gate_xt/env/filter_lf.tga" 255,125,125,125
   palette "textures/14gate_xt/env/filter_lf.jpg" 255,125,125,125
-  palette "textures/14gate_xt/env/filter_ft.tga" 255,125,125,125
   palette "textures/14gate_xt/env/filter_ft.jpg" 255,125,125,125
-  palette "textures/14gate_xt/env/filter_dn.tga" 255,0,0,0
   palette "textures/14gate_xt/env/filter_dn.jpg" 255,0,0,0
-  palette "textures/14gate_xt/env/filter_bk.tga" 255,125,125,125
   palette "textures/14gate_xt/env/filter_bk.jpg" 255,125,125,125
-  palette "models/weapons3/shotgun/skinoa.tga" 255,44,41,36
-  palette "models/weapons3/shotgun/skinoa.jpg" 255,41,41,41
-  palette "models/weapons3/shotgun/shotgun_spec.jpg" 255,12,12,12
-  palette "models/weapons3/shotgun/shotgun_laser.jpg" 255,100,1,3
-  palette "models/weapons3/shotgun/shotgun_flashside.tga" 255,82,69,36
-  palette "models/weapons3/shotgun/shotgun_flashside.jpg" 255,81,69,37
-  palette "models/weapons3/shotgun/shotgun_flash.tga" 255,100,87,55
-  palette "models/weapons3/shotgun/shotgun_flash.jpg" 255,99,87,57
-  palette "models/weapons3/shotgun/shotgun.tga" 255,44,41,37
-  palette "models/weapons3/shotgun/shotgun.jpg" 255,42,42,39
-  palette "models/weapons3/shotgun/muzzley.tga" 255,48,29,10
-  palette "models/weapons3/shotgun/muzzley.jpg" 255,47,29,13
-  palette "models/weapons3/shells/sgunshell_2.tga" 255,54,22,10
-  palette "models/weapons3/shells/sgunshell_2.jpg" 255,57,24,12
-  palette "models/weapons3/shells/sgunshell.tga" 255,104,38,18
-  palette "models/weapons3/shells/sgunshell.jpg" 255,106,39,20
-  palette "models/weapons3/shells/mgunshell_2.tga" 255,33,22,4
-  palette "models/weapons3/shells/mgunshell_2.jpg" 255,35,23,9
-  palette "models/weapons3/shells/mgunshell.tga" 255,135,87,11
-  palette "models/weapons3/shells/mgunshell.jpg" 255,135,87,14
-  palette "models/weapons3/rocketl/skin.tga" 255,28,22,19
-  palette "models/weapons3/rocketl/skin.jpg" 255,28,23,19
-  palette "models/weapons3/rocketl/muzzy.tga" 255,87,69,27
-  palette "models/weapons3/rocketl/muzzy.jpg" 255,86,69,29
-  palette "models/weapons3/rocketl/muzzlside.tga" 255,48,6,3
-  palette "models/weapons3/rocketl/muzzlside.jpg" 255,48,7,6
-  palette "models/weapons3/rocketl/flare.tga" 255,53,10,10
-  palette "models/weapons3/rocketl/flare.jpg" 255,50,10,17
-  palette "models/weapons3/rocketl/f_rocketl.jpg" 255,82,34,19
-  palette "models/weapons3/rocketl/blackhandle.tga" 255,88,97,107
-  palette "models/weapons3/rocketl/blackhandle.jpg" 255,87,98,109
-  palette "models/weapons3/rocketl/blackchrome.tga" 255,78,78,78
-  palette "models/weapons3/rocketl/blackchrome.jpg" 255,77,77,77
-  palette "models/weapons3/railgun/skin.tga" 255,67,64,62
-  palette "models/weapons3/railgun/skin.jpg" 255,67,64,62
-  palette "models/weapons3/railgun/scrolly.tga" 255,23,29,38
-  palette "models/weapons3/railgun/scrolly.jpg" 255,24,29,38
-  palette "models/weapons3/railgun/railcore.tga" 255,22,22,22
-  palette "models/weapons3/railgun/railcore.jpg" 255,22,22,22
-  palette "models/weapons3/railgun/f_railgun3.jpg" 255,23,23,23
-  palette "models/weapons3/railgun/f_railgun2.jpg" 255,83,83,83
-  palette "models/weapons3/railgun/blackhandle.tga" 255,114,102,80
-  palette "models/weapons3/railgun/blackhandle.jpg" 255,116,101,81
-  palette "models/weapons3/railgun/blackchrome.tga" 255,77,77,77
-  palette "models/weapons3/railgun/blackchrome.jpg" 255,76,76,76
-  palette "models/weapons3/plasma/skin.tga" 251,30,33,38
-  palette "models/weapons3/plasma/skin.png" 251,30,33,38
-  palette "models/weapons3/plasma/muzzlside.tga" 255,3,30,48
-  palette "models/weapons3/plasma/muzzlside.jpg" 255,7,30,47
-  palette "models/weapons3/plasma/flare.tga" 255,10,38,53
-  palette "models/weapons3/plasma/flare.jpg" 255,10,39,53
-  palette "models/weapons3/plasma/f_plasma.jpg" 255,1,22,60
-  palette "models/weapons3/plasma/blackhandle.tga" 255,88,97,107
-  palette "models/weapons3/plasma/blackhandle.jpg" 255,87,98,109
-  palette "models/weapons3/plasma/blackchrome.tga" 255,78,78,78
-  palette "models/weapons3/plasma/blackchrome.jpg" 255,77,77,77
-  palette "models/weapons3/lightning/skinlightning.tga" 255,34,45,54
-  palette "models/weapons3/lightning/skinlightning.jpg" 255,34,45,54
-  palette "models/weapons3/lightning/muzzle3.tga" 255,1,3,8
-  palette "models/weapons3/lightning/muzzle3.jpg" 255,2,3,8
-  palette "models/weapons3/lightning/muzzle2.tga" 255,2,3,9
-  palette "models/weapons3/lightning/muzzle2.jpg" 255,3,4,9
-  palette "models/weapons3/lightning/muzzle1.tga" 255,2,4,9
-  palette "models/weapons3/lightning/muzzle1.jpg" 255,3,4,10
-  palette "models/weapons3/lightning/f_lightning.jpg" 255,17,32,42
-  palette "models/weapons3/machinegun/sight.tga" 204,93,81,74
-  palette "models/weapons3/machinegun/sight.png" 204,93,81,74
-  palette "models/weapons3/machinegun/muzzlside.tga" 255,24,13,1
-  palette "models/weapons3/machinegun/muzzlside.jpg" 255,24,14,4
-  palette "models/weapons3/machinegun/muzzley.tga" 255,43,24,9
-  palette "models/weapons3/machinegun/muzzley.jpg" 255,43,24,10
-  palette "models/weapons3/machinegun/mgun.tga" 255,59,45,38
-  palette "models/weapons3/machinegun/mgun.jpg" 255,59,45,40
-  palette "models/weapons3/machinegun/flare.tga" 255,63,3,0
-  palette "models/weapons3/machinegun/flare.jpg" 255,60,7,4
-  palette "models/weapons3/machinegun/f_machinegun3.jpg" 255,10,8,5
-  palette "models/weapons3/machinegun/f_machinegun2.tga" 255,21,19,13
-  palette "models/weapons3/machinegun/f_machinegun2.jpg" 255,21,19,14
-  palette "models/weapons3/machinegun/f_machinegun.jpg" 255,10,8,5
-  palette "models/weapons3/grenadel/newgren.tga" 255,43,37,31
-  palette "models/weapons3/grenadel/newgren.jpg" 255,43,38,31
-  palette "models/weapons3/grenadel/muzzlside.tga" 255,52,0,0
-  palette "models/weapons3/grenadel/muzzlside.jpg" 255,51,2,4
-  palette "models/weapons3/grenadel/grenadel.tga" 255,60,64,56
-  palette "models/weapons3/grenadel/grenadel.jpg" 255,60,64,57
-  palette "models/weapons3/grenadel/flare.tga" 255,63,0,0
-  palette "models/weapons3/grenadel/flare.jpg" 255,63,2,2
-  palette "models/weapons3/grenadel/f_plasma.jpg" 255,111,10,10
-  palette "models/weapons3/grenadel/f_grenadel.jpg" 255,78,50,15
-  palette "models/weapons3/grenadel/chromey.tga" 255,35,37,39
-  palette "models/weapons3/grenadel/chromey.jpg" 255,37,37,37
-  palette "models/weapons3/grenadel/blackhandle.tga" 255,88,97,107
-  palette "models/weapons3/grenadel/blackhandle.jpg" 255,87,98,109
-  palette "models/weapons3/grenadel/blackchrome.tga" 255,78,78,78
-  palette "models/weapons3/grenadel/blackchrome.jpg" 255,77,77,77
-  palette "models/weapons3/bfg/f_bfg3.tga" 255,18,35,13
-  palette "models/weapons3/bfg/f_bfg3.jpg" 255,19,35,14
-  palette "models/weapons3/bfg/f_bfg2.tga" 255,22,34,17
-  palette "models/weapons3/bfg/f_bfg2.jpg" 255,23,34,18
-  palette "models/weapons3/bfg/f_bfg.tga" 255,18,35,13
-  palette "models/weapons3/bfg/f_bfg.jpg" 255,19,35,14
-  palette "models/weapons3/bfg/bubbles.tga" 12,0,135,86
-  palette "models/weapons3/bfg/bubbles.png" 12,0,135,86
-  palette "models/weapons3/bfg/bfgtube.tga" 255,30,176,146
-  palette "models/weapons3/bfg/bfgtube.jpg" 255,30,177,145
-  palette "models/weapons3/bfg/bfgbody.tga" 255,15,21,20
-  palette "models/weapons3/bfg/bfgbody.jpg" 255,15,21,20
-  palette "models/weapons/vulcan/vulcan.tga" 255,40,37,35
-  palette "models/weapons/vulcan/vulcan.jpg" 255,38,38,37
-  palette "models/weapons/vulcan/f_vulcan.tga" 255,49,48,34
-  palette "models/weapons/vulcan/f_vulcan.jpg" 255,48,47,36
-  palette "models/weapons/proxmine/proxmine3.tga" 255,36,28,22
-  palette "models/weapons/proxmine/proxmine3.jpg" 255,37,28,24
-  palette "models/weapons/proxmine/proxmine2b.tga" 255,21,1,1
-  palette "models/weapons/proxmine/proxmine2b.jpg" 255,21,2,3
-  palette "models/weapons/proxmine/proxmine2.tga" 255,35,36,34
-  palette "models/weapons/proxmine/proxmine2.jpg" 255,35,35,35
-  palette "models/weapons/proxmine/proxmine1b.tga" 255,54,45,37
-  palette "models/weapons/proxmine/proxmine1b.jpg" 255,54,46,39
-  palette "models/weapons/proxmine/proxmine1.tga" 134,61,58,53
-  palette "models/weapons/proxmine/proxmine1.png" 134,61,58,53
-  palette "models/weapons/proxmine/f_proxmine.tga" 255,8,7,5
-  palette "models/weapons/proxmine/f_proxmine.jpg" 255,7,7,6
-  palette "models/weapons/nailgun/nailgun_env.tga" 255,126,118,118
-  palette "models/weapons/nailgun/nailgun_env.jpg" 255,125,117,119
-  palette "models/weapons/nailgun/nailgun.tga" 233,36,32,27
-  palette "models/weapons/nailgun/nailgun.png" 233,36,32,27
-  palette "models/weapons/nailgun/f_nailgun.tga" 255,57,40,23
-  palette "models/weapons/nailgun/f_nailgun.jpg" 255,57,40,25
-  palette "models/ships/viper/skin.tga" 255,31,30,29
-  palette "models/ships/viper/skin.pcx" 255,31,30,29
-  palette "models/ships/viper/skin.jpg" 255,31,31,31
-  palette "models/ships/bigviper/skin.tga" 255,31,30,29
-  palette "models/ships/bigviper/skin.pcx" 255,31,30,29
-  palette "models/ships/bigviper/skin.jpg" 255,31,31,31
-  palette "models/ships/strogg1/skin.tga" 255,18,13,9
-  palette "models/ships/strogg1/skin.pcx" 255,18,13,9
-  palette "models/ships/strogg1/skin.jpg" 255,18,13,11
-  palette "models/weaphits3/rlboom/rlboom_8.jpg" 255,1,1,1
-  palette "models/weaphits3/rlboom/rlboom_7.jpg" 255,5,5,5
-  palette "models/weaphits3/rlboom/rlboom_6.jpg" 255,6,5,5
-  palette "models/weaphits3/rlboom/rlboom_5.jpg" 255,16,9,7
-  palette "models/weaphits3/rlboom/rlboom_4.jpg" 255,43,19,13
-  palette "models/weaphits3/rlboom/rlboom_3.jpg" 255,46,22,14
-  palette "models/weaphits3/rlboom/rlboom_2.jpg" 255,23,12,7
-  palette "models/weaphits3/rlboom/rlboom_1.jpg" 255,15,8,5
-  palette "models/weaphits3/bfgboom/bfgboom_3.jpg" 255,44,5,1
-  palette "models/weaphits3/bfgboom/bfgboom_2.jpg" 255,100,66,1
-  palette "models/weaphits3/bfgboom/bfgboom_1.jpg" 255,139,119,23
-  palette "models/weaphits3/glboom/glboom_3.jpg" 255,33,27,3
-  palette "models/weaphits3/glboom/glboom_2.jpg" 255,83,74,31
-  palette "models/weaphits3/glboom/glboom_1.jpg" 255,146,148,18
-  palette "models/powerup3/ammo/shotammo2.tga" 255,52,26,1
-  palette "models/powerup3/ammo/shotammo2.jpg" 255,55,28,11
-  palette "models/powerup3/ammo/rockammo2.tga" 255,54,0,0
-  palette "models/powerup3/ammo/rockammo2.jpg" 255,56,5,6
-  palette "models/powerup3/ammo/railammo2.tga" 255,0,52,0
-  palette "models/powerup3/ammo/railammo2.jpg" 255,10,55,10
-  palette "models/powerup3/ammo/plasammo2.tga" 255,50,0,62
-  palette "models/powerup3/ammo/plasammo2.jpg" 255,53,7,65
-  palette "models/powerup3/ammo/machammo2.tga" 255,56,56,0
-  palette "models/powerup3/ammo/machammo2.jpg" 255,58,59,15
-  palette "models/powerup3/ammo/lighammo2.tga" 255,59,59,41
-  palette "models/powerup3/ammo/lighammo2.jpg" 255,59,61,46
-  palette "models/powerup3/ammo/grenammo2.tga" 255,0,30,0
-  palette "models/powerup3/ammo/grenammo2.jpg" 255,6,32,8
-  palette "models/powerup3/ammo/bfgammo2.tga" 255,0,24,60
-  palette "models/powerup3/ammo/bfgammo2.jpg" 255,7,27,62
-  palette "models/powerup3/ammo/ammolights.tga" 13,255,255,255
-  palette "models/powerup3/ammo/ammolights.png" 13,255,255,255
-  palette "models/powerup3/ammo/ammobox.tga" 232,65,66,66
-  palette "models/powerup3/ammo/ammobox.png" 232,65,66,66
-  palette "models/lighting/toxiclight/toxiclight.jpg" 255,41,39,31
-  palette "models/lighting/toxiclight/lamp.jpg" 255,137,128,92
-  palette "models/lighting/landscapelighting/lanscape1.jpg" 255,56,54,47
-  palette "models/lighting/landscapelighting/lamp3.jpg" 255,171,161,140
-  palette "models/lighting/landscapelighting/lamp2.jpg" 255,146,146,135
-  palette "models/lighting/landscapelighting/lamp1.jpg" 255,182,176,153
-  palette "models/lighting/spotlamp1/spotlamp.tga" 183,135,135,135
-  palette "models/lighting/spotlamp1/spotlamp.png" 183,135,135,135
-  palette "models/lighting/spotlamp1/beam_red.tga" 255,172,0,0
-  palette "models/lighting/spotlamp1/beam_red.jpg" 255,167,0,0
-  palette "models/lighting/spotlamp1/beam_blue.jpg" 255,3,27,43
-  palette "models/lighting/spotlamp1/beam.tga" 255,238,238,238
-  palette "models/lighting/spotlamp1/beam.jpg" 255,238,238,238
-  palette "models/lighting/torches/torch2.jpg" 255,37,35,35
-  palette "models/lighting/torches/torch1.jpg" 255,104,98,73
-  palette "models/lighting/gothl/gothl_glow.jpg" 255,64,32,13
-  palette "models/lighting/gothl/gothl_base_1.jpg" 255,57,56,56
-  palette "models/lighting/gothl/gothl_base.jpg" 255,73,75,77
-  palette "models/lighting/gothl/gothl_LampScreen.jpg" 255,47,39,15
-  palette "models/lighting/gothl/gothl_Bulp.jpg" 255,232,193,32
-  palette "models/lighting/elglight2/elglight2.tga" 220,36,35,34
-  palette "models/lighting/elglight2/elglight2.png" 220,36,35,34
-  palette "models/lighting/egyptlamp/egyptlampmap.tga" 249,181,149,101
-  palette "models/lighting/egyptlamp/egyptlampmap.png" 249,181,149,101
-  palette "models/powerups/shield/shield2.tga" 255,16,8,27
-  palette "models/powerups/shield/shield2.jpg" 255,16,9,28
-  palette "models/powerups/shield/shield.tga" 255,79,27,109
-  palette "models/powerups/shield/shield.jpg" 255,77,28,109
-  palette "models/powerups/shield/juicer.tga" 255,67,4,2
-  palette "models/powerups/shield/juicer.jpg" 255,67,6,5
-  palette "models/powerups/orb/redfx.tga" 255,19,0,2
-  palette "models/powerups/orb/redfx.jpg" 255,22,0,7
-  palette "models/powerups/orb/red.tga" 255,35,11,0
-  palette "models/powerups/orb/red.jpg" 255,36,11,3
-  palette "models/powerups/orb/bluefx.tga" 255,0,18,16
-  palette "models/powerups/orb/bluefx.jpg" 255,3,20,13
-  palette "models/powerups/orb/blue.tga" 255,0,28,35
-  palette "models/powerups/orb/blue.jpg" 255,5,29,36
-  palette "models/powerups/obelisk/ob_twirl2.tga" 255,56,56,56
-  palette "models/powerups/obelisk/ob_twirl2.jpg" 255,57,57,57
-  palette "models/powerups/obelisk/ob_twirl.tga" 255,56,56,56
-  palette "models/powerups/obelisk/ob_twirl.jpg" 255,57,57,57
-  palette "models/powerups/obelisk/ob_trns.tga" 75,70,61,54
-  palette "models/powerups/obelisk/ob_trns.png" 75,70,61,54
-  palette "models/powerups/obelisk/ob_top.tga" 255,58,53,49
-  palette "models/powerups/obelisk/ob_top.jpg" 255,55,55,55
-  palette "models/powerups/obelisk/ob_sft2.tga" 255,134,134,134
-  palette "models/powerups/obelisk/ob_sft2.jpg" 255,134,134,134
-  palette "models/powerups/obelisk/ob_sft.tga" 238,58,52,47
-  palette "models/powerups/obelisk/ob_sft.png" 238,58,52,47
-  palette "models/powerups/obelisk/ob_flare2.tga" 255,12,12,12
-  palette "models/powerups/obelisk/ob_flare2.jpg" 255,12,12,12
-  palette "models/powerups/obelisk/ob_flare.tga" 255,10,10,11
-  palette "models/powerups/obelisk/ob_flare.jpg" 255,11,11,11
-  palette "models/powerups/obelisk/ob_cyl.tga" 255,46,46,46
-  palette "models/powerups/obelisk/ob_cyl.jpg" 255,46,46,46
-  palette "models/powerups/harvester/red_hb.tga" 255,7,4,2
-  palette "models/powerups/harvester/red_hb.jpg" 255,7,4,4
-  palette "models/powerups/harvester/red_h2.tga" 255,70,0,7
-  palette "models/powerups/harvester/red_h2.jpg" 255,71,4,9
-  palette "models/powerups/harvester/red_h.tga" 255,57,1,1
-  palette "models/powerups/harvester/red_h.jpg" 255,57,2,2
-  palette "models/powerups/harvester/harvester2.tga" 220,49,47,42
-  palette "models/powerups/harvester/harvester2.png" 220,49,47,42
-  palette "models/powerups/harvester/harvester.tga" 255,42,39,37
-  palette "models/powerups/harvester/harvester.jpg" 255,40,40,40
-  palette "models/powerups/harvester/blue_h2.tga" 255,0,51,83
-  palette "models/powerups/harvester/blue_h2.jpg" 255,8,51,83
-  palette "models/powerups/harvester/blue_h.tga" 255,0,46,57
-  palette "models/powerups/harvester/blue_h.jpg" 255,2,46,57
-  palette "models/powerups/adren/skin_nm.tga" 40,128,128,255
-  palette "models/powerups/adren/skin_nm.png" 40,128,128,255
-  palette "models/powerups/adren/skin_glow.png" 255,0,5,1
-  palette "models/powerups/adren/skin.tga" 255,19,22,21
-  palette "models/powerups/adren/skin.jpg" 255,19,22,21
-  palette "models/powerups/ammo/proxammo2.tga" 255,82,0,40
-  palette "models/powerups/ammo/proxammo2.jpg" 255,86,8,46
-  palette "models/powerups/ammo/proxammo.tga" 196,66,21,66
-  palette "models/powerups/ammo/proxammo.png" 196,66,21,66
-  palette "models/powerups/ammo/nailgammo2.tga" 255,0,76,53
-  palette "models/powerups/ammo/nailgammo2.jpg" 255,14,78,52
-  palette "models/powerups/ammo/nailgammo.tga" 196,45,75,57
-  palette "models/powerups/ammo/nailgammo.png" 196,45,75,57
-  palette "models/powerups/ammo/chaingammo2.tga" 255,92,92,92
-  palette "models/powerups/ammo/chaingammo2.jpg" 255,95,95,95
-  palette "models/powerups/ammo/chaingammo.tga" 196,133,121,115
-  palette "models/powerups/ammo/chaingammo.png" 196,133,121,115
-  palette "models/players/xaero/xaero_q.tga" 20,90,64,50
-  palette "models/players/xaero/xaero_q.png" 20,90,64,50
-  palette "models/players/xaero/xaero_h.tga" 254,149,101,65
-  palette "models/players/xaero/xaero_h.png" 254,149,101,65
-  palette "models/players/xaero/xaero_a.tga" 248,40,27,19
-  palette "models/players/xaero/xaero_a.png" 248,40,27,19
-  palette "models/players/xaero/xaero.tga" 20,124,48,3
-  palette "models/players/xaero/xaero.png" 20,124,48,3
-  palette "models/players/xaero/red_h.tga" 254,142,75,47
-  palette "models/players/xaero/red_h.png" 254,142,75,47
-  palette "models/players/xaero/red.tga" 255,84,26,18
-  palette "models/players/xaero/red.jpg" 255,84,28,21
-  palette "models/players/xaero/icon_red.tga" 208,180,82,51
-  palette "models/players/xaero/icon_red.png" 208,180,82,51
-  palette "models/players/xaero/icon_default.tga" 184,175,121,79
-  palette "models/players/xaero/icon_default.png" 184,175,121,79
-  palette "models/players/xaero/icon_blue.tga" 162,147,88,110
-  palette "models/players/xaero/icon_blue.png" 162,147,88,110
-  palette "models/players/xaero/blue_h.tga" 255,119,73,79
-  palette "models/players/xaero/blue_h.jpg" 255,119,74,80
-  palette "models/players/xaero/blue.tga" 255,53,25,72
-  palette "models/players/xaero/blue.jpg" 255,53,27,73
-  palette "models/players/widow/skin.png" 255,19,12,9
-  palette "models/players/widow/skin.pcx" 255,19,12,9
-  palette "models/players/widow/pain.pcx" 255,19,11,8
-  palette "models/players/widow/icon_default.tga" 255,66,50,40
-  palette "models/players/widow/icon_default.jpg" 255,69,49,37
-  palette "models/players/wrath/wrthgib3.pcx" 255,16,5,3
-  palette "models/players/wrath/wrthgib2.pcx" 255,9,2,1
-  palette "models/players/wrath/wrthgib1.pcx" 255,31,19,12
-  palette "models/players/wrath/wrath.pcx" 255,18,12,10
-  palette "models/players/tyrant/level4.jpg" 255,17,16,17
-  palette "models/players/tyrant/icon_default.tga" 255,255,255,255
-  palette "models/players/tyrant/icon_default.jpg" 255,255,255,255
-  palette "models/players/visor/visor.tga" 255,57,33,18
-  palette "models/players/visor/red.tga" 255,87,27,22
-  palette "models/players/visor/icon_gorre.tga" 241,89,42,16
-  palette "models/players/visor/icon_gorre.png" 241,89,42,16
-  palette "models/players/visor/gorre.tga" 243,68,39,25
-  palette "models/players/visor/gorre.png" 243,68,39,25
-  palette "models/players/visor/blue.tga" 255,38,45,62
-  palette "models/players/trooper/ee_en_trooper.pcx" 255,35,30,27
-  palette "models/players/swark/ee_en_swark.pcx" 255,61,44,36
-  palette "models/players/uriel/zael_h.tga" 255,71,55,22
-  palette "models/players/uriel/zael_h.jpg" 255,71,54,26
-  palette "models/players/uriel/zael.tga" 50,96,77,40
-  palette "models/players/uriel/zael.png" 50,96,77,40
-  palette "models/players/uriel/uriel_w.tga" 132,77,43,22
-  palette "models/players/uriel/uriel_w.png" 132,77,43,22
-  palette "models/players/uriel/uriel_h.tga" 243,76,59,37
-  palette "models/players/uriel/uriel_h.png" 243,76,59,37
-  palette "models/players/uriel/uriel.tga" 255,78,54,28
-  palette "models/players/uriel/uriel.jpg" 255,78,54,31
-  palette "models/players/uriel/red_w.tga" 132,65,43,31
-  palette "models/players/uriel/red_w.png" 132,65,43,31
-  palette "models/players/uriel/red_h.tga" 255,102,82,60
-  palette "models/players/uriel/red_h.jpg" 255,103,82,64
-  palette "models/players/uriel/red.tga" 255,80,28,20
-  palette "models/players/uriel/red.jpg" 255,81,29,23
-  palette "models/players/uriel/null.tga" 255,0,0,0
-  palette "models/players/uriel/null.jpg" 255,0,0,0
-  palette "models/players/uriel/icon_zael.tga" 215,90,99,52
-  palette "models/players/uriel/icon_zael.png" 215,90,99,52
-  palette "models/players/uriel/icon_red.tga" 192,155,19,14
-  palette "models/players/uriel/icon_red.png" 192,155,19,14
-  palette "models/players/uriel/icon_default.tga" 190,163,94,50
-  palette "models/players/uriel/icon_default.png" 190,163,94,50
-  palette "models/players/uriel/icon_blue.tga" 187,88,20,181
-  palette "models/players/uriel/icon_blue.png" 187,88,20,181
-  palette "models/players/uriel/blue_w.tga" 132,60,44,36
-  palette "models/players/uriel/blue_w.png" 132,60,44,36
-  palette "models/players/uriel/blue.tga" 255,54,27,76
-  palette "models/players/uriel/blue.jpg" 255,54,28,76
-  palette "models/players/tankjr/tankjr.tga" 18,94,65,53
-  palette "models/players/tankjr/tankjr.png" 18,94,65,53
-  palette "models/players/tankjr/red.tga" 255,81,27,16
-  palette "models/players/tankjr/red.jpg" 255,81,28,20
-  palette "models/players/tankjr/icon_red.tga" 177,190,80,46
-  palette "models/players/tankjr/icon_red.png" 177,190,80,46
-  palette "models/players/tankjr/icon_default.tga" 196,180,128,86
-  palette "models/players/tankjr/icon_default.png" 196,180,128,86
-  palette "models/players/tankjr/icon_blue.tga" 167,87,115,147
-  palette "models/players/tankjr/icon_blue.png" 167,87,115,147
-  palette "models/players/tankjr/blue.tga" 255,31,42,64
-  palette "models/players/tankjr/blue.jpg" 255,34,42,65
-  palette "models/players/tank/skin.tga" 255,27,22,17
-  palette "models/players/tank/skin.pcx" 255,27,22,17
-  palette "models/players/tank/skin.jpg" 255,26,23,20
-  palette "models/players/tank/pain.tga" 255,27,20,15
-  palette "models/players/tank/pain.pcx" 255,27,20,15
-  palette "models/players/tank/pain.jpg" 255,26,21,19
-  palette "models/players/tank/icon_default.tga" 255,30,27,23
-  palette "models/players/tank/icon_default.jpg" 255,29,29,24
-  palette "models/players/starman/torso.tga" 255,99,61,31
-  palette "models/players/starman/torso.jpg" 255,99,61,32
-  palette "models/players/starman/legs.tga" 247,99,66,36
-  palette "models/players/starman/legs.png" 247,99,66,36
-  palette "models/players/starman/icon_default.tga" 213,86,67,50
-  palette "models/players/starman/icon_default.png" 213,86,67,50
-  palette "models/players/starman/head.tga" 228,97,71,49
-  palette "models/players/starman/head.png" 228,97,71,49
-  palette "models/players/starman/dark_torso.tga" 240,46,42,47
-  palette "models/players/starman/dark_torso.png" 240,46,42,47
-  palette "models/players/starman/dark_legs.tga" 255,30,27,31
-  palette "models/players/starman/dark_legs.jpg" 255,29,28,28
-  palette "models/players/starman/dark_head.tga" 242,36,33,38
-  palette "models/players/starman/dark_head.png" 242,36,33,38
-  palette "models/players/starman/dark_eyes.tga" 1,133,0,0
-  palette "models/players/starman/dark_eyes.png" 1,133,0,0
-  palette "models/players/starman/dark_arms.tga" 255,40,36,40
-  palette "models/players/starman/dark_arms.jpg" 255,39,38,38
-  palette "models/players/soldier/soldier1_legs.tga" 255,42,31,23
-  palette "models/players/soldier/soldier1_legs.jpg" 255,41,32,21
-  palette "models/players/soldier/soldier1_head.tga" 255,101,103,99
-  palette "models/players/soldier/soldier1_head.jpg" 255,103,103,103
-  palette "models/players/soldier/soldier1_goggle.tga" 193,46,33,26
-  palette "models/players/soldier/soldier1_goggle.png" 193,46,33,26
-  palette "models/players/soldier/soldier1_body.tga" 255,86,68,44
-  palette "models/players/soldier/soldier1_body.jpg" 255,84,70,42
-  palette "models/players/soldier/soldier1_arms.tga" 255,75,56,37
-  palette "models/players/soldier/soldier1_arms.jpg" 255,74,58,37
-  palette "models/players/slipgate/player.png" 255,63,43,30
-  palette "models/players/slipgate/player.pcx" 255,63,43,30
-  palette "models/players/slipgate/icon_default.tga" 255,75,52,33
-  palette "models/players/slipgate/icon_default.jpg" 255,75,53,35
-  palette "models/players/sorlag/sorlag_t.tga" 255,74,45,37
-  palette "models/players/sorlag/sorlag_t.jpg" 255,75,46,38
-  palette "models/players/sorlag/sorlag.tga" 255,67,43,35
-  palette "models/players/sorlag/sorlag.jpg" 255,67,44,37
-  palette "models/players/sorlag/red_t.tga" 255,96,6,2
-  palette "models/players/sorlag/red_t.jpg" 255,97,8,7
-  palette "models/players/sorlag/red.tga" 255,73,29,20
-  palette "models/players/sorlag/red.jpg" 255,74,30,23
-  palette "models/players/sorlag/icon_red.tga" 131,150,90,68
-  palette "models/players/sorlag/icon_red.png" 131,150,90,68
-  palette "models/players/sorlag/icon_default.tga" 129,142,120,106
-  palette "models/players/sorlag/icon_default.png" 129,142,120,106
-  palette "models/players/sorlag/icon_blue.tga" 253,108,64,179
-  palette "models/players/sorlag/icon_blue.png" 253,108,64,179
-  palette "models/players/sorlag/blue_t.tga" 255,38,5,112
-  palette "models/players/sorlag/blue_t.jpg" 255,38,7,112
-  palette "models/players/sorlag/blue.tga" 255,47,28,62
-  palette "models/players/sorlag/blue.jpg" 255,47,29,64
-  palette "models/players/shambler/skin0.png" 255,81,53,41
-  palette "models/players/shambler/skin0.pcx" 255,81,53,41
-  palette "models/players/shambler/icon_default.tga" 255,37,12,10
-  palette "models/players/shambler/icon_default.jpg" 255,37,14,13
-  palette "models/players/shalrath/shalrath.png" 255,55,44,36
-  palette "models/players/shalrath/shalrath.pcx" 255,55,44,36
-  palette "models/players/shalrath/icon_vore.tga" 255,41,28,20
-  palette "models/players/shalrath/icon_vore.jpg" 255,42,29,24
-  palette "models/players/shalrath/icon_default.tga" 255,41,28,20
-  palette "models/players/shalrath/icon_default.jpg" 255,42,29,24
-  palette "models/players/sealord/torso_sealord.tga" 255,119,94,87
-  palette "models/players/sealord/torso_sealord.jpg" 255,119,95,88
-  palette "models/players/sealord/lower_sealord.tga" 224,112,99,92
-  palette "models/players/sealord/lower_sealord.png" 224,112,99,92
-  palette "models/players/sealord/head_sealord.tga" 206,112,65,57
-  palette "models/players/sealord/head_sealord.png" 206,112,65,57
-  palette "models/players/sealord/arm_sealord.tga" 254,140,133,123
-  palette "models/players/sealord/arm_sealord.png" 254,140,133,123
-  palette "models/players/riffle/ee_en_rifleman.pcx" 255,35,27,25
-  palette "models/players/slash/yurikoskate.tga" 83,168,134,119
-  palette "models/players/slash/yurikoskate.png" 83,168,134,119
-  palette "models/players/slash/yuriko_h.tga" 212,35,33,28
-  palette "models/players/slash/yuriko_h.png" 212,35,33,28
-  palette "models/players/slash/yuriko.tga" 186,100,75,58
-  palette "models/players/slash/yuriko.png" 186,100,75,58
-  palette "models/players/slash/slashskate.tga" 255,43,63,89
-  palette "models/players/slash/slashskate.jpg" 255,52,64,89
-  palette "models/players/slash/slash_h.tga" 255,50,37,33
-  palette "models/players/slash/slash_h.jpg" 255,50,38,34
-  palette "models/players/slash/slash.tga" 255,76,49,37
-  palette "models/players/slash/slash.jpg" 255,77,50,40
-  palette "models/players/slash/red_h.tga" 255,66,32,18
-  palette "models/players/slash/red_h.jpg" 255,66,33,19
-  palette "models/players/slash/red.tga" 255,83,15,11
-  palette "models/players/slash/red.jpg" 255,84,17,14
-  palette "models/players/slash/icon_yuriko.tga" 215,96,66,52
-  palette "models/players/slash/icon_yuriko.png" 215,96,66,52
-  palette "models/players/slash/icon_red.tga" 191,149,54,31
-  palette "models/players/slash/icon_red.png" 191,149,54,31
-  palette "models/players/slash/icon_grrl.tga" 199,122,71,52
-  palette "models/players/slash/icon_grrl.png" 199,122,71,52
-  palette "models/players/slash/icon_default.tga" 160,119,97,86
-  palette "models/players/slash/icon_default.png" 160,119,97,86
-  palette "models/players/slash/icon_blue.tga" 170,76,88,132
-  palette "models/players/slash/icon_blue.png" 170,76,88,132
-  palette "models/players/slash/grrl_h.tga" 250,64,35,26
-  palette "models/players/slash/grrl_h.png" 250,64,35,26
-  palette "models/players/slash/grrl.tga" 255,65,37,27
-  palette "models/players/slash/grrl.jpg" 255,65,37,28
-  palette "models/players/slash/blue_h.tga" 255,42,37,41
-  palette "models/players/slash/blue_h.jpg" 255,43,37,41
-  palette "models/players/slash/blue.tga" 255,21,34,74
-  palette "models/players/slash/blue.jpg" 255,24,34,75
-  palette "models/players/sarge/roderic.tga" 252,69,41,33
-  palette "models/players/sarge/red.tga" 255,77,24,18
-  palette "models/players/sarge/null.tga" 255,0,0,0
-  palette "models/players/sarge/icon_roderic.tga" 178,120,68,53
-  palette "models/players/sarge/icon_krusade.tga" 193,126,87,61
-  palette "models/players/sarge/cigar.tga" 255,63,36,17
-  palette "models/players/sarge/cigar.glow.tga" 255,43,21,10
-  palette "models/players/sarge/blue.tga" 255,37,41,58
-  palette "models/players/sarge/band.tga" 255,76,51,38
-  palette "models/players/pilot/pilot_legs.tga" 255,38,34,29
-  palette "models/players/pilot/pilot_legs.jpg" 255,39,34,29
-  palette "models/players/pilot/pilot_head.tga" 251,135,125,118
-  palette "models/players/pilot/pilot_head.png" 251,135,125,118
-  palette "models/players/pilot/pilot_body.tga" 255,77,61,43
-  palette "models/players/pilot/pilot_body.jpg" 255,78,61,44
-  palette "models/players/pilot/pilot_arms.tga" 255,59,46,39
-  palette "models/players/pilot/pilot_arms.jpg" 255,59,46,40
-  palette "models/players/razor/red.tga" 255,82,21,17
-  palette "models/players/razor/red.jpg" 255,82,22,20
-  palette "models/players/razor/razor_gogs_fx.tga" 255,43,44,43
-  palette "models/players/razor/razor_gogs_fx.jpg" 255,44,44,44
-  palette "models/players/razor/razor_gogs.tga" 255,24,26,38
-  palette "models/players/razor/razor_gogs.jpg" 255,25,22,44
-  palette "models/players/razor/razor.tga" 255,65,49,43
-  palette "models/players/razor/razor.jpg" 255,65,50,44
-  palette "models/players/razor/patriot.tga" 22,96,73,61
-  palette "models/players/razor/patriot.png" 22,96,73,61
-  palette "models/players/razor/id.tga" 163,64,32,25
-  palette "models/players/razor/id.png" 163,64,32,25
-  palette "models/players/razor/icon_red.tga" 189,154,47,42
-  palette "models/players/razor/icon_red.png" 189,154,47,42
-  palette "models/players/razor/icon_patriot.tga" 191,144,124,125
-  palette "models/players/razor/icon_patriot.png" 191,144,124,125
-  palette "models/players/razor/icon_id.tga" 225,87,81,75
-  palette "models/players/razor/icon_id.png" 225,87,81,75
-  palette "models/players/razor/icon_default.tga" 199,159,120,110
-  palette "models/players/razor/icon_default.png" 199,159,120,110
-  palette "models/players/razor/icon_blue.tga" 169,84,73,121
-  palette "models/players/razor/icon_blue.png" 169,84,73,121
-  palette "models/players/razor/h_red.tga" 255,95,13,11
-  palette "models/players/razor/h_red.jpg" 255,96,15,14
-  palette "models/players/razor/h_razor.tga" 255,82,56,50
-  palette "models/players/razor/h_razor.jpg" 255,82,56,51
-  palette "models/players/razor/h_patriot.tga" 255,58,46,48
-  palette "models/players/razor/h_patriot.jpg" 255,59,46,49
-  palette "models/players/razor/h_id.tga" 98,67,53,46
-  palette "models/players/razor/h_id.png" 98,67,53,46
-  palette "models/players/razor/h_blue.tga" 255,17,15,85
-  palette "models/players/razor/h_blue.jpg" 255,19,16,86
-  palette "models/players/razor/blue.tga" 255,20,36,79
-  palette "models/players/razor/blue.jpg" 255,23,36,80
-  palette "models/players/ranger/wrack_h.tga" 255,44,30,23
-  palette "models/players/ranger/wrack_h.jpg" 255,42,32,24
-  palette "models/players/ranger/wrack.tga" 32,83,65,54
-  palette "models/players/ranger/wrack.png" 32,83,65,54
-  palette "models/players/ranger/red_h.tga" 255,78,58,40
-  palette "models/players/ranger/red_h.jpg" 255,78,58,41
-  palette "models/players/ranger/red.tga" 255,57,22,17
-  palette "models/players/ranger/red.jpg" 255,57,24,20
-  palette "models/players/ranger/ranger_statue.tga" 255,93,85,80
-  palette "models/players/ranger/ranger_statue.jpg" 255,92,85,82
-  palette "models/players/ranger/ranger_h_statue.tga" 255,94,87,82
-  palette "models/players/ranger/ranger_h_statue.jpg" 255,88,89,87
-  palette "models/players/ranger/ranger_h.tga" 255,85,57,43
-  palette "models/players/ranger/ranger_h.jpg" 255,84,57,46
-  palette "models/players/ranger/ranger.tga" 255,46,28,18
-  palette "models/players/ranger/ranger.jpg" 255,46,28,19
-  palette "models/players/ranger/icon_wrack.tga" 222,71,50,31
-  palette "models/players/ranger/icon_wrack.png" 222,71,50,31
-  palette "models/players/ranger/icon_red.tga" 185,115,45,33
-  palette "models/players/ranger/icon_red.png" 185,115,45,33
-  palette "models/players/ranger/icon_default.tga" 217,105,70,46
-  palette "models/players/ranger/icon_default.png" 217,105,70,46
-  palette "models/players/ranger/icon_blue.tga" 201,63,73,93
-  palette "models/players/ranger/icon_blue.png" 201,63,73,93
-  palette "models/players/ranger/blue.tga" 255,32,34,45
-  palette "models/players/ranger/blue.jpg" 255,33,35,46
-  palette "models/players/pi/piston.tga" 135,112,74,30
-  palette "models/players/pi/piston.png" 135,112,74,30
-  palette "models/players/pi/pi_t2.tga" 42,88,75,62
-  palette "models/players/pi/pi_t2.png" 42,88,75,62
-  palette "models/players/pi/pi_t.tga" 106,84,60,45
-  palette "models/players/pi/pi_t.png" 106,84,60,45
-  palette "models/players/pi/pi_h.tga" 255,107,84,74
-  palette "models/players/pi/pi_h.jpg" 255,107,85,74
-  palette "models/players/pi/pi.tga" 26,173,139,119
-  palette "models/players/pi/pi.png" 26,173,139,119
-  palette "models/players/pi/icon_red.tga" 168,193,156,141
-  palette "models/players/pi/icon_red.png" 168,193,156,141
-  palette "models/players/pi/icon_default.tga" 168,193,156,141
-  palette "models/players/pi/icon_default.png" 168,193,156,141
-  palette "models/players/pi/icon_blue.tga" 168,193,156,141
-  palette "models/players/pi/icon_blue.png" 168,193,156,141
-  palette "models/players/pi/gear01.tga" 172,77,68,61
-  palette "models/players/pi/gear01.png" 172,77,68,61
-  palette "models/players/pi/endcap.tga" 207,91,61,32
-  palette "models/players/pi/endcap.png" 207,91,61,32
-  palette "models/players/pi/beam2.tga" 255,68,3,3
-  palette "models/players/pi/beam2.jpg" 255,71,5,7
-  palette "models/players/pi/beam.tga" 255,34,0,0
-  palette "models/players/pi/beam.jpg" 255,36,5,8
-  palette "models/players/oldone/oldone.pcx" 255,77,59,44
-  palette "models/players/ogre/ogre.png" 255,45,27,20
-  palette "models/players/ogre/ogre.pcx" 255,45,27,20
-  palette "models/players/ogre/icon_default.tga" 255,52,33,23
-  palette "models/players/ogre/icon_default.jpg" 255,52,34,28
-  palette "models/players/orbb/red_h.tga" 255,145,31,30
-  palette "models/players/orbb/red_h.jpg" 255,145,32,28
-  palette "models/players/orbb/red.tga" 255,88,35,32
-  palette "models/players/orbb/red.jpg" 255,88,36,34
-  palette "models/players/orbb/orbb_tail_blue.tga" 255,7,9,179
-  palette "models/players/orbb/orbb_tail_blue.jpg" 255,14,8,179
-  palette "models/players/orbb/orbb_tail.tga" 255,179,16,0
-  palette "models/players/orbb/orbb_tail.jpg" 255,179,23,14
-  palette "models/players/orbb/orbb_light_blue.tga" 255,0,4,255
-  palette "models/players/orbb/orbb_light_blue.jpg" 255,0,0,253
-  palette "models/players/orbb/orbb_light.tga" 255,255,0,0
-  palette "models/players/orbb/orbb_light.jpg" 255,255,2,4
-  palette "models/players/orbb/orbb_h2.tga" 120,107,73,52
-  palette "models/players/orbb/orbb_h2.png" 120,107,73,52
-  palette "models/players/orbb/orbb.tga" 255,75,57,49
-  palette "models/players/orbb/orbb.jpg" 255,74,57,50
-  palette "models/players/orbb/icon_red.tga" 215,78,8,6
-  palette "models/players/orbb/icon_red.png" 215,78,8,6
-  palette "models/players/orbb/icon_default.tga" 189,177,141,116
-  palette "models/players/orbb/icon_default.png" 189,177,141,116
-  palette "models/players/orbb/icon_blue.tga" 208,65,62,130
-  palette "models/players/orbb/icon_blue.png" 208,65,62,130
-  palette "models/players/orbb/blue_h.tga" 255,30,75,154
-  palette "models/players/orbb/blue_h.jpg" 255,30,75,154
-  palette "models/players/orbb/blue.tga" 255,41,48,78
-  palette "models/players/orbb/blue.jpg" 255,43,48,79
-  palette "models/players/mynx/red_s.tga" 255,84,3,3
-  palette "models/players/mynx/red_s.jpg" 255,84,6,7
-  palette "models/players/mynx/red_h.tga" 255,55,34,21
-  palette "models/players/mynx/red_h.jpg" 255,55,34,22
-  palette "models/players/mynx/mynx_shiny.tga" 211,45,35,13
-  palette "models/players/mynx/mynx_shiny.png" 211,45,35,13
-  palette "models/players/mynx/mynx_h.tga" 255,56,23,18
-  palette "models/players/mynx/mynx_h.jpg" 255,56,24,20
-  palette "models/players/mynx/mynx.tga" 255,72,52,44
-  palette "models/players/mynx/mynx.jpg" 255,73,52,46
-  palette "models/players/mynx/icon_red.tga" 209,132,56,34
-  palette "models/players/mynx/icon_red.png" 209,132,56,34
-  palette "models/players/mynx/icon_default.tga" 226,97,50,37
-  palette "models/players/mynx/icon_default.png" 226,97,50,37
-  palette "models/players/mynx/icon_blue.tga" 191,94,57,67
-  palette "models/players/mynx/icon_blue.png" 191,94,57,67
-  palette "models/players/mynx/blue_s.tga" 255,8,8,99
-  palette "models/players/mynx/blue_s.jpg" 255,10,8,101
-  palette "models/players/mummy/zombie.png" 255,64,43,36
-  palette "models/players/mummy/zombie.pcx" 255,64,43,36
-  palette "models/players/mummy/icon_default.tga" 255,50,28,16
-  palette "models/players/mummy/icon_default.jpg" 255,50,28,19
-  palette "models/players/mutant/skin.tga" 255,31,22,15
-  palette "models/players/mutant/skin.pcx" 255,31,22,15
-  palette "models/players/mutant/skin.jpg" 255,32,22,14
-  palette "models/players/mutant/pain.tga" 255,30,20,13
-  palette "models/players/mutant/pain.pcx" 255,30,20,13
-  palette "models/players/mutant/pain.jpg" 255,31,20,13
-  palette "models/players/mutant/icon_default.tga" 255,91,73,53
-  palette "models/players/mutant/icon_default.jpg" 255,90,74,52
-  palette "models/players/metlar/me_body&head.tga" 255,38,36,45
-  palette "models/players/metlar/me_body&head.jpg" 255,40,34,47
-  palette "models/players/metlar/me_arms&legs.tga" 255,30,31,41
-  palette "models/players/metlar/me_arms&legs.jpg" 255,32,30,44
-  palette "models/players/monsters/zombie_0.jpg" 255,29,21,16
-  palette "models/players/monsters/wizard_0.jpg" 255,17,10,9
-  palette "models/players/monsters/tarbaby_0.jpg" 255,7,11,22
-  palette "models/players/monsters/soldier_0.jpg" 255,19,15,11
-  palette "models/players/monsters/shambler_0.jpg" 255,31,16,12
-  palette "models/players/monsters/shalrath_0.jpg" 255,18,12,11
-  palette "models/players/monsters/oldone_0.tga" 254,32,17,12
-  palette "models/players/monsters/oldone_0.png" 254,32,17,12
-  palette "models/players/monsters/ogre_0.jpg" 255,31,19,11
-  palette "models/players/monsters/knight_0.jpg" 255,22,12,10
-  palette "models/players/monsters/hknight_0.jpg" 255,13,10,9
-  palette "models/players/monsters/h_zombie_0.jpg" 255,20,12,10
-  palette "models/players/monsters/h_wizard_0.jpg" 255,25,8,8
-  palette "models/players/monsters/h_shams_0.jpg" 255,41,20,16
-  palette "models/players/monsters/h_shal_0.jpg" 255,21,14,12
-  palette "models/players/monsters/h_ogre_0.jpg" 255,37,17,12
-  palette "models/players/monsters/h_mega_0.jpg" 255,8,3,2
-  palette "models/players/monsters/h_knight_0.jpg" 255,32,13,12
-  palette "models/players/monsters/h_hellkn_0.jpg" 255,8,6,5
-  palette "models/players/monsters/h_guard_0.jpg" 255,9,4,3
-  palette "models/players/monsters/h_dog_0.jpg" 255,13,5,3
-  palette "models/players/monsters/h_demon_0.jpg" 255,18,2,2
-  palette "models/players/monsters/fish_0.jpg" 255,29,13,9
-  palette "models/players/monsters/enforcer_0.jpg" 255,36,25,17
-  palette "models/players/monsters/dog_0.jpg" 255,12,5,3
-  palette "models/players/monsters/demon_0.jpg" 255,48,19,12
-  palette "models/players/monsters/boss_0.jpg" 255,48,27,15
-  palette "models/players/medic/skin.tga" 255,27,23,19
-  palette "models/players/medic/skin.pcx" 255,27,23,19
-  palette "models/players/medic/skin.jpg" 255,26,24,22
-  palette "models/players/medic/pain.tga" 255,26,21,17
-  palette "models/players/medic/pain.pcx" 255,26,21,17
-  palette "models/players/medic/pain.jpg" 255,25,22,20
-  palette "models/players/marauder/null.tga" 0,0,0,0
-  palette "models/players/marauder/null.png" 0,0,0,0
-  palette "models/players/marauder/lvl2_fx.tga" 255,51,56,117
-  palette "models/players/marauder/lvl2_fx.jpg" 255,50,58,116
-  palette "models/players/marauder/icon_default.tga" 255,255,255,255
-  palette "models/players/marauder/icon_default.jpg" 255,255,255,255
-  palette "models/players/marauder/electric.jpg" 255,15,28,28
-  palette "models/players/marauder/default.tga" 255,53,28,25
-  palette "models/players/marauder/default.jpg" 255,54,29,26
-  palette "models/players/marauder/adv.tga" 248,55,31,28
-  palette "models/players/marauder/adv.png" 248,55,31,28
-  palette "models/players/ltn/ee_en_ltn.pcx" 255,44,29,19
-  palette "models/players/lavaman/boss.pcx" 255,47,5,4
-  palette "models/players/lancer/ee_en_lancer.pcx" 255,40,34,32
-  palette "models/players/major/red_h.tga" 255,66,47,33
-  palette "models/players/major/red.tga" 255,70,24,15
-  palette "models/players/major/major_h.tga" 255,68,44,33
-  palette "models/players/major/major.tga" 255,58,35,20
-  palette "models/players/major/daemia2_h.tga" 255,73,35,18
-  palette "models/players/major/blue_h.tga" 255,76,43,34
-  palette "models/players/major/blue.tga" 255,27,38,57
-  palette "models/players/knight/knight.pcx" 255,61,41,32
-  palette "models/players/knight/icon_default.tga" 255,33,25,18
-  palette "models/players/knight/icon_default.jpg" 255,34,25,18
-  palette "models/players/knight/hknight.png" 255,43,30,20
-  palette "models/players/knight/hknight.pcx" 255,43,30,20
-  palette "models/players/lucy/red_h.tga" 255,50,36,28
-  palette "models/players/lucy/red_h.jpg" 255,49,36,31
-  palette "models/players/lucy/red.tga" 255,62,17,13
-  palette "models/players/lucy/red.jpg" 255,62,18,15
-  palette "models/players/lucy/lucy_h.tga" 255,71,49,39
-  palette "models/players/lucy/lucy_h.jpg" 255,70,50,41
-  palette "models/players/lucy/lucy.tga" 255,43,28,22
-  palette "models/players/lucy/lucy.jpg" 255,43,29,23
-  palette "models/players/lucy/icon_red.tga" 179,145,75,58
-  palette "models/players/lucy/icon_red.png" 179,145,75,58
-  palette "models/players/lucy/icon_default.tga" 160,147,107,88
-  palette "models/players/lucy/icon_default.png" 160,147,107,88
-  palette "models/players/lucy/icon_blue.tga" 180,75,67,87
-  palette "models/players/lucy/icon_blue.png" 180,75,67,87
-  palette "models/players/lucy/icon_angel.tga" 172,87,71,64
-  palette "models/players/lucy/icon_angel.png" 172,87,71,64
-  palette "models/players/lucy/blue_h.tga" 255,45,38,33
-  palette "models/players/lucy/blue_h.jpg" 255,44,38,34
-  palette "models/players/lucy/blue.tga" 255,22,20,53
-  palette "models/players/lucy/blue.jpg" 255,23,21,54
-  palette "models/players/lucy/angel_h.tga" 255,46,37,32
-  palette "models/players/lucy/angel_h.jpg" 255,47,37,36
-  palette "models/players/lucy/angel.tga" 127,56,41,33
-  palette "models/players/lucy/angel.png" 127,56,41,33
-  palette "models/players/kahn/ee_boss_shield.pcx" 255,76,63,32
-  palette "models/players/kahn/ee_boss_base.pcx" 255,38,15,13
-  palette "models/players/kahn/ee_boss.pcx" 255,38,15,13
-  palette "models/players/janet/icon_red.tga" 196,130,82,72
-  palette "models/players/janet/icon_red.png" 196,130,82,72
-  palette "models/players/janet/icon_default.tga" 223,145,98,87
-  palette "models/players/janet/icon_default.png" 223,145,98,87
-  palette "models/players/janet/icon_blue.tga" 184,105,131,127
-  palette "models/players/janet/icon_blue.png" 184,105,131,127
-  palette "models/players/keel/red_h.tga" 255,36,28,24
-  palette "models/players/keel/red_h.jpg" 255,33,30,28
-  palette "models/players/keel/red.tga" 255,73,15,10
-  palette "models/players/keel/red.jpg" 255,74,16,14
-  palette "models/players/keel/keel_h.tga" 255,52,27,17
-  palette "models/players/keel/keel_h.jpg" 255,53,27,19
-  palette "models/players/keel/keel.tga" 255,68,46,31
-  palette "models/players/keel/keel.jpg" 255,68,46,33
-  palette "models/players/keel/icon_red.tga" 208,104,46,34
-  palette "models/players/keel/icon_red.png" 208,104,46,34
-  palette "models/players/keel/icon_default.tga" 203,135,91,59
-  palette "models/players/keel/icon_default.png" 203,135,91,59
-  palette "models/players/keel/icon_blue.tga" 204,43,57,107
-  palette "models/players/keel/icon_blue.png" 204,43,57,107
-  palette "models/players/keel/blue_h.tga" 255,35,28,26
-  palette "models/players/keel/blue_h.jpg" 255,32,30,30
-  palette "models/players/keel/blue.tga" 255,19,29,69
-  palette "models/players/keel/blue.jpg" 255,22,28,71
-  palette "models/players/klesk/red_h.tga" 255,68,30,18
-  palette "models/players/klesk/red_h.jpg" 255,68,31,22
-  palette "models/players/klesk/red.tga" 255,57,23,15
-  palette "models/players/klesk/red.jpg" 255,57,25,17
-  palette "models/players/klesk/klesk_h.tga" 255,81,35,20
-  palette "models/players/klesk/klesk_h.jpg" 255,81,36,22
-  palette "models/players/klesk/klesk_g.tga" 255,1,2,2
-  palette "models/players/klesk/klesk_g.jpg" 255,1,2,1
-  palette "models/players/klesk/klesk.tga" 255,68,26,16
-  palette "models/players/klesk/klesk.jpg" 255,69,28,19
-  palette "models/players/klesk/icon_red.tga" 234,143,39,25
-  palette "models/players/klesk/icon_red.png" 234,143,39,25
-  palette "models/players/klesk/icon_flisk.tga" 211,92,82,75
-  palette "models/players/klesk/icon_flisk.png" 211,92,82,75
-  palette "models/players/klesk/icon_default.tga" 195,131,57,36
-  palette "models/players/klesk/icon_default.png" 195,131,57,36
-  palette "models/players/klesk/icon_blue.tga" 188,67,58,87
-  palette "models/players/klesk/icon_blue.png" 188,67,58,87
-  palette "models/players/klesk/flisk_h.tga" 241,40,47,44
-  palette "models/players/klesk/flisk_h.png" 241,40,47,44
-  palette "models/players/klesk/flisk.tga" 15,89,71,60
-  palette "models/players/klesk/flisk.png" 15,89,71,60
-  palette "models/players/klesk/blue_h.tga" 255,51,34,35
-  palette "models/players/klesk/blue_h.jpg" 255,53,34,39
-  palette "models/players/klesk/blue.tga" 255,37,30,34
-  palette "models/players/klesk/blue.jpg" 255,39,30,36
-  palette "models/players/jackal/ee_en_jackal.pcx" 255,86,44,36
-  palette "models/players/infantry/skin.tga" 255,35,24,18
-  palette "models/players/infantry/skin.pcx" 255,35,24,18
-  palette "models/players/infantry/skin.jpg" 255,33,25,21
-  palette "models/players/infantry/pain.tga" 255,35,23,17
-  palette "models/players/infantry/pain.pcx" 255,35,23,17
-  palette "models/players/infantry/pain.jpg" 255,33,23,19
-  palette "models/players/infantry/icon_default.tga" 255,82,69,59
-  palette "models/players/infantry/icon_default.jpg" 255,82,70,60
-  palette "models/players/insane/icon_default.tga" 255,76,55,40
-  palette "models/players/insane/icon_default.jpg" 255,75,56,42
-  palette "models/players/insane/i_skin03.pcx" 255,35,25,18
-  palette "models/players/insane/i_skin02.pcx" 255,34,27,20
-  palette "models/players/insane/i_skin.png" 255,37,29,21
-  palette "models/players/insane/i_skin.pcx" 255,37,29,21
-  palette "models/players/james/red2.tga" 255,133,0,29
-  palette "models/players/james/red2.jpg" 255,132,3,29
-  palette "models/players/james/red.tga" 255,72,19,17
-  palette "models/players/james/red.jpg" 255,72,20,21
-  palette "models/players/james/icon_red.tga" 164,148,57,45
-  palette "models/players/james/icon_red.png" 164,148,57,45
-  palette "models/players/james/icon_default.tga" 176,139,81,70
-  palette "models/players/james/icon_default.png" 176,139,81,70
-  palette "models/players/james/icon_blue.tga" 209,59,103,99
-  palette "models/players/james/icon_blue.png" 209,59,103,99
-  palette "models/players/james/blue2.tga" 255,0,113,133
-  palette "models/players/james/blue2.jpg" 255,5,114,134
-  palette "models/players/james/blue.tga" 255,8,52,65
-  palette "models/players/james/blue.jpg" 255,13,51,66
-  palette "models/players/hunter/red_h.tga" 255,63,18,12
-  palette "models/players/hunter/red_h.jpg" 255,63,20,14
-  palette "models/players/hunter/red_f.tga" 72,68,42,34
-  palette "models/players/hunter/red_f.png" 72,68,42,34
-  palette "models/players/hunter/red.tga" 255,77,17,13
-  palette "models/players/hunter/red.jpg" 255,78,18,16
-  palette "models/players/hunter/icon_red.tga" 187,114,48,36
-  palette "models/players/hunter/icon_red.png" 187,114,48,36
-  palette "models/players/hunter/icon_harpy.tga" 188,99,56,37
-  palette "models/players/hunter/icon_harpy.png" 188,99,56,37
-  palette "models/players/hunter/icon_default.tga" 207,84,85,69
-  palette "models/players/hunter/icon_default.png" 207,84,85,69
-  palette "models/players/hunter/icon_blue.tga" 195,88,47,75
-  palette "models/players/hunter/icon_blue.png" 195,88,47,75
-  palette "models/players/hunter/hunter_h.tga" 51,94,60,38
-  palette "models/players/hunter/hunter_h.png" 51,94,60,38
-  palette "models/players/hunter/hunter_f.tga" 125,54,46,41
-  palette "models/players/hunter/hunter_f.png" 125,54,46,41
-  palette "models/players/hunter/hunter2.tga" 109,59,39,27
-  palette "models/players/hunter/hunter2.png" 109,59,39,27
-  palette "models/players/hunter/blue_h.tga" 255,39,18,48
-  palette "models/players/hunter/blue_h.jpg" 255,39,19,47
-  palette "models/players/hunter/blue.tga" 255,37,15,70
-  palette "models/players/hunter/blue.jpg" 255,37,16,72
-  palette "models/players/hover/skin.tga" 255,40,23,17
-  palette "models/players/hover/skin.pcx" 255,40,23,17
-  palette "models/players/hover/skin.jpg" 255,38,24,19
-  palette "models/players/hover/pain.tga" 255,33,19,14
-  palette "models/players/hover/pain.pcx" 255,33,19,14
-  palette "models/players/hover/pain.jpg" 255,32,20,16
-  palette "models/players/hover/icon_default.tga" 255,62,50,45
-  palette "models/players/hover/icon_default.jpg" 255,60,51,46
-  palette "models/players/hulk/hulk_legs.tga" 255,72,72,82
-  palette "models/players/hulk/hulk_legs.jpg" 255,74,71,84
-  palette "models/players/hulk/hulk_head.tga" 227,81,74,80
-  palette "models/players/hulk/hulk_head.png" 227,81,74,80
-  palette "models/players/hulk/hulk_body.tga" 255,63,62,72
-  palette "models/players/hulk/hulk_body.jpg" 255,64,61,74
-  palette "models/players/hulk/hulk_arms.tga" 255,75,75,87
-  palette "models/players/hulk/hulk_arms.jpg" 255,77,74,89
-  palette "models/players/gunner/ee_en_gunner.pcx" 255,40,34,28
-  palette "models/players/human/shoulderpads.tga" 255,64,59,55
-  palette "models/players/human/shoulderpads.jpg" 255,61,60,58
-  palette "models/players/human/light.tga" 255,43,40,33
-  palette "models/players/human/light.jpg" 255,43,40,35
-  palette "models/players/human/jetpack_flash.jpg" 255,100,136,160
-  palette "models/players/human/jetpack.jpg" 255,56,31,33
-  palette "models/players/human/icon_default.tga" 255,96,87,82
-  palette "models/players/human/icon_default.jpg" 255,95,87,82
-  palette "models/players/human/h_helmet.tga" 225,41,33,26
-  palette "models/players/human/h_helmet.png" 225,41,33,26
-  palette "models/players/human/h_base.tga" 215,67,44,34
-  palette "models/players/human/h_base.png" 215,67,44,34
-  palette "models/players/human/battpack.jpg" 255,65,65,63
-  palette "models/players/human/base.tga" 255,48,42,34
-  palette "models/players/human/base.jpg" 255,48,42,37
-  palette "models/players/human/armour.tga" 255,58,51,46
-  palette "models/players/human/armour.jpg" 255,56,52,50
-  palette "models/players/gladiatr/skin.tga" 255,37,25,17
-  palette "models/players/gladiatr/skin.pcx" 255,37,25,17
-  palette "models/players/gladiatr/skin.jpg" 255,36,25,20
-  palette "models/players/gladiatr/pain.tga" 255,37,23,16
-  palette "models/players/gladiatr/pain.pcx" 255,37,23,16
-  palette "models/players/gladiatr/pain.jpg" 255,37,23,19
-  palette "models/players/gladiatr/icon_default.tga" 255,76,55,41
-  palette "models/players/gladiatr/icon_default.jpg" 255,76,55,41
-  palette "models/players/enyo/ee_pl_wings.pcx" 255,39,30,26
-  palette "models/players/enyo/ee_pl.pcx" 255,39,30,26
-  palette "models/players/fritzkrieg/icon_red.tga" 219,89,82,70
-  palette "models/players/fritzkrieg/icon_red.png" 219,89,82,70
-  palette "models/players/fritzkrieg/icon_default.tga" 219,89,82,70
-  palette "models/players/fritzkrieg/icon_default.png" 219,89,82,70
-  palette "models/players/fritzkrieg/icon_blue.tga" 219,89,82,70
-  palette "models/players/fritzkrieg/icon_blue.png" 219,89,82,70
-  palette "models/players/fritzkrieg/fritz_fx2.tga" 0,0,0,0
-  palette "models/players/fritzkrieg/fritz_fx2.png" 0,0,0,0
-  palette "models/players/fritzkrieg/fritz_fx.tga" 235,33,29,24
-  palette "models/players/fritzkrieg/fritz_fx.png" 235,33,29,24
-  palette "models/players/fritzkrieg/fritz_c.tga" 211,67,56,31
-  palette "models/players/fritzkrieg/fritz_c.png" 211,67,56,31
-  palette "models/players/fritzkrieg/fritz.tga" 255,51,42,28
-  palette "models/players/fritzkrieg/fritz.jpg" 255,51,42,30
-  palette "models/players/fritzkrieg/beam2.tga" 255,3,68,55
-  palette "models/players/fritzkrieg/beam2.jpg" 255,7,70,47
-  palette "models/players/fritzkrieg/beam.tga" 255,0,0,0
-  palette "models/players/fritzkrieg/beam.jpg" 255,0,0,0
-  palette "models/players/enforcer/icon_default.tga" 255,44,31,22
-  palette "models/players/enforcer/icon_default.jpg" 255,44,31,23
-  palette "models/players/enforcer/enforcer.png" 255,47,34,23
-  palette "models/players/enforcer/enforcer.pcx" 255,47,34,23
-  palette "models/players/grunt/stripe.tga" 255,66,37,23
-  palette "models/players/grunt/red_h.tga" 255,109,65,54
-  palette "models/players/grunt/red.tga" 255,82,29,20
-  palette "models/players/grunt/grunt_h.tga" 255,111,74,61
-  palette "models/players/grunt/grunt.tga" 255,62,47,35
-  palette "models/players/grunt/blue_h.tga" 255,96,67,67
-  palette "models/players/grunt/blue.tga" 255,38,26,65
-  palette "models/players/dragoon/level3adv.tga" 255,19,19,21
-  palette "models/players/dragoon/level3adv.jpg" 255,20,19,19
-  palette "models/players/dragoon/level3.tga" 255,24,19,22
-  palette "models/players/dragoon/level3.jpg" 255,25,20,20
-  palette "models/players/dragoon/icon_default.tga" 255,255,255,255
-  palette "models/players/dragoon/icon_default.jpg" 255,255,255,255
-  palette "models/players/dretch/level0.jpg" 255,37,19,7
-  palette "models/players/dretch/icon_default.tga" 255,158,146,136
-  palette "models/players/dretch/icon_default.jpg" 255,154,144,136
-  palette "models/players/dog/icon_default.tga" 255,19,8,5
-  palette "models/players/dog/icon_default.jpg" 255,18,8,6
-  palette "models/players/dog/dog.png" 255,28,17,11
-  palette "models/players/dog/dog.pcx" 255,28,17,11
-  palette "models/players/demon/icon_default.tga" 255,56,17,13
-  palette "models/players/demon/icon_default.jpg" 255,56,18,12
-  palette "models/players/demon/demon.png" 255,53,26,20
-  palette "models/players/demon/demon.pcx" 255,53,26,20
-  palette "models/players/colonel/ee_en_ltcol.pcx" 255,44,29,19
-  palette "models/players/dragon/icon_default.tga" 255,48,35,23
-  palette "models/players/dragon/icon_default.jpg" 255,49,35,25
-  palette "models/players/dragon/drggib03.pcx" 255,17,5,3
-  palette "models/players/dragon/drggib02.pcx" 255,20,9,5
-  palette "models/players/dragon/drggib01.pcx" 255,19,8,4
-  palette "models/players/dragon/dragon.png" 255,65,53,39
-  palette "models/players/dragon/dragon.pcx" 255,65,53,39
-  palette "models/players/bwark/ee_en_bwark.pcx" 255,43,40,37
-  palette "models/players/crash/red_t.tga" 255,88,21,14
-  palette "models/players/crash/red.tga" 255,70,22,18
-  palette "models/players/crash/icon_red.tga" 193,138,34,28
-  palette "models/players/crash/icon_default.tga" 190,101,95,81
-  palette "models/players/crash/icon_blue.tga" 180,59,30,149
-  palette "models/players/crash/crash_t.tga" 217,52,47,38
-  palette "models/players/crash/crash.tga" 238,52,44,35
-  palette "models/players/crash/blue_t.tga" 255,54,18,102
-  palette "models/players/crash/blue.tga" 255,38,22,83
-  palette "models/players/builder/icon_default.tga" 255,104,108,106
-  palette "models/players/builder/icon_default.jpg" 255,106,106,106
-  palette "models/players/builder/icon_advanced.tga" 255,255,255,255
-  palette "models/players/builder/icon_advanced.jpg" 255,255,255,255
-  palette "models/players/builder/builder.jpg" 255,17,20,19
-  palette "models/players/doom/red.tga" 255,71,21,15
-  palette "models/players/doom/red.jpg" 255,71,23,18
-  palette "models/players/doom/phobos_fx.tga" 255,40,27,21
-  palette "models/players/doom/phobos_fx.jpg" 255,42,27,23
-  palette "models/players/doom/phobos_f.tga" 76,76,52,10
-  palette "models/players/doom/phobos_f.png" 76,76,52,10
-  palette "models/players/doom/phobos.tga" 243,62,36,14
-  palette "models/players/doom/phobos.png" 243,62,36,14
-  palette "models/players/doom/icon_red.tga" 205,159,33,24
-  palette "models/players/doom/icon_red.png" 205,159,33,24
-  palette "models/players/doom/icon_phobos.tga" 188,156,87,37
-  palette "models/players/doom/icon_phobos.png" 188,156,87,37
-  palette "models/players/doom/icon_default.tga" 191,103,103,74
-  palette "models/players/doom/icon_default.png" 191,103,103,74
-  palette "models/players/doom/icon_blue.tga" 190,50,24,146
-  palette "models/players/doom/icon_blue.png" 190,50,24,146
-  palette "models/players/doom/doom_statue.tga" 255,95,86,77
-  palette "models/players/doom/doom_statue.jpg" 255,96,87,74
-  palette "models/players/doom/doom_fx.tga" 255,22,21,21
-  palette "models/players/doom/doom_fx.jpg" 255,24,24,24
-  palette "models/players/doom/doom_f_statue.tga" 255,92,84,75
-  palette "models/players/doom/doom_f_statue.jpg" 255,91,84,72
-  palette "models/players/doom/doom_f.tga" 255,38,39,40
-  palette "models/players/doom/doom_f.jpg" 255,40,40,40
-  palette "models/players/doom/doom.tga" 255,48,45,24
-  palette "models/players/doom/doom.jpg" 255,48,46,26
-  palette "models/players/doom/blue.tga" 255,33,19,68
-  palette "models/players/doom/blue.jpg" 255,32,21,68
-  palette "models/players/camaro/lines2_white.tga" 255,255,255,255
-  palette "models/players/camaro/lines2_white.jpg" 255,255,255,255
-  palette "models/players/camaro/lines2_red.tga" 255,255,0,0
-  palette "models/players/camaro/lines2_red.jpg" 255,255,2,4
-  palette "models/players/camaro/lines2_grey.tga" 255,127,127,127
-  palette "models/players/camaro/lines2_grey.jpg" 255,128,128,128
-  palette "models/players/camaro/lines2_green.tga" 255,0,255,0
-  palette "models/players/camaro/lines2_green.jpg" 255,0,253,0
-  palette "models/players/camaro/lines2_brown.tga" 255,131,97,85
-  palette "models/players/camaro/lines2_brown.jpg" 255,137,97,89
-  palette "models/players/camaro/lines2_blue.tga" 255,0,0,255
-  palette "models/players/camaro/lines2_blue.jpg" 255,0,0,253
-  palette "models/players/camaro/lines2_black.tga" 255,0,0,0
-  palette "models/players/camaro/lines2_black.jpg" 255,0,0,0
-  palette "models/players/camaro/lines2.tga" 255,255,255,0
-  palette "models/players/camaro/lines2.jpg" 255,255,255,3
-  palette "models/players/camaro/lines1_white.tga" 255,255,255,255
-  palette "models/players/camaro/lines1_white.jpg" 255,255,255,255
-  palette "models/players/camaro/lines1_red.tga" 255,255,0,0
-  palette "models/players/camaro/lines1_red.jpg" 255,255,2,4
-  palette "models/players/camaro/lines1_grey.tga" 255,127,127,127
-  palette "models/players/camaro/lines1_grey.jpg" 255,128,128,128
-  palette "models/players/camaro/lines1_green.tga" 255,0,255,0
-  palette "models/players/camaro/lines1_green.jpg" 255,0,253,0
-  palette "models/players/camaro/lines1_brown.tga" 255,131,97,85
-  palette "models/players/camaro/lines1_brown.jpg" 255,137,97,89
-  palette "models/players/camaro/lines1_blue.tga" 255,0,0,255
-  palette "models/players/camaro/lines1_blue.jpg" 255,0,0,253
-  palette "models/players/camaro/lines1_black.tga" 255,0,0,0
-  palette "models/players/camaro/lines1_black.jpg" 255,0,0,0
-  palette "models/players/camaro/lines1.tga" 255,255,255,0
-  palette "models/players/camaro/lines1.jpg" 255,255,255,3
-  palette "models/players/camaro/icon_yellow.tga" 116,206,187,154
-  palette "models/players/camaro/icon_yellow.png" 116,206,187,154
-  palette "models/players/camaro/icon_white.tga" 116,206,187,196
-  palette "models/players/camaro/icon_white.png" 116,206,187,196
-  palette "models/players/camaro/icon_red.tga" 116,206,145,154
-  palette "models/players/camaro/icon_red.png" 116,206,145,154
-  palette "models/players/camaro/icon_grey.tga" 116,185,166,175
-  palette "models/players/camaro/icon_grey.png" 116,185,166,175
-  palette "models/players/camaro/icon_green.tga" 116,165,187,154
-  palette "models/players/camaro/icon_green.png" 116,165,187,154
-  palette "models/players/camaro/icon_brown.tga" 116,186,161,168
-  palette "models/players/camaro/icon_brown.png" 116,186,161,168
-  palette "models/players/camaro/icon_blue.tga" 116,165,145,196
-  palette "models/players/camaro/icon_blue.png" 116,165,145,196
-  palette "models/players/camaro/icon_black.tga" 116,165,145,154
-  palette "models/players/camaro/icon_black.png" 116,165,145,154
-  palette "models/players/camaro/glass.tga" 255,132,147,150
-  palette "models/players/camaro/glass.jpg" 255,133,146,147
-  palette "models/players/camaro/doorline.tga" 55,38,38,38
-  palette "models/players/camaro/doorline.png" 55,38,38,38
-  palette "models/players/camaro/chrome.tga" 255,227,222,219
-  palette "models/players/camaro/chrome.jpg" 255,228,228,228
-  palette "models/players/camaro/camarom.tga" 255,104,103,98
-  palette "models/players/camaro/camarom.jpg" 255,105,103,98
-  palette "models/players/camaro/camaroh.tga" 255,60,60,59
-  palette "models/players/camaro/camaroh.jpg" 255,60,60,60
-  palette "models/players/camaro/camarob.tga" 255,87,26,21
-  palette "models/players/camaro/camarob.jpg" 255,88,24,24
-  palette "models/players/camaro/bottom.tga" 255,38,38,39
-  palette "models/players/camaro/bottom.jpg" 255,39,39,39
-  palette "models/players/camaro/body_white.tga" 255,255,255,255
-  palette "models/players/camaro/body_white.jpg" 255,255,255,255
-  palette "models/players/camaro/body_red.tga" 255,255,0,0
-  palette "models/players/camaro/body_red.jpg" 255,255,2,4
-  palette "models/players/camaro/body_grey.tga" 255,127,127,127
-  palette "models/players/camaro/body_grey.jpg" 255,128,128,128
-  palette "models/players/camaro/body_green.tga" 255,0,255,0
-  palette "models/players/camaro/body_green.jpg" 255,0,253,0
-  palette "models/players/camaro/body_brown.tga" 255,131,97,85
-  palette "models/players/camaro/body_brown.jpg" 255,137,97,89
-  palette "models/players/camaro/body_blue.tga" 255,0,0,255
-  palette "models/players/camaro/body_blue.jpg" 255,0,0,253
-  palette "models/players/camaro/body_black.tga" 255,0,0,0
-  palette "models/players/camaro/body_black.jpg" 255,0,0,0
-  palette "models/players/camaro/body.tga" 255,255,255,0
-  palette "models/players/camaro/body.jpg" 255,255,255,3
-  palette "models/players/camaro/black.tga" 255,0,0,0
-  palette "models/players/camaro/black.jpg" 255,0,0,0
-  palette "models/players/bitch/skin.tga" 255,29,21,16
-  palette "models/players/bitch/skin.pcx" 255,29,21,16
-  palette "models/players/bitch/skin.jpg" 255,28,22,19
-  palette "models/players/bitch/pain.tga" 255,28,19,14
-  palette "models/players/bitch/pain.pcx" 255,28,19,14
-  palette "models/players/bitch/pain.jpg" 255,27,20,17
-  palette "models/players/bitch/icon_default.tga" 255,82,61,47
-  palette "models/players/bitch/icon_default.jpg" 255,83,61,46
-  palette "models/players/bones/xray.tga" 159,12,86,65
-  palette "models/players/bones/xray.png" 159,12,86,65
-  palette "models/players/bones/stiff.tga" 159,107,81,61
-  palette "models/players/bones/stiff.png" 159,107,81,61
-  palette "models/players/bones/red.tga" 186,132,18,11
-  palette "models/players/bones/red.png" 186,132,18,11
-  palette "models/players/bones/icon_red.tga" 168,163,30,19
-  palette "models/players/bones/icon_red.png" 168,163,30,19
-  palette "models/players/bones/icon_default.tga" 167,28,131,104
-  palette "models/players/bones/icon_default.png" 167,28,131,104
-  palette "models/players/bones/icon_bones.tga" 155,128,95,67
-  palette "models/players/bones/icon_bones.png" 155,128,95,67
-  palette "models/players/bones/icon_blue.tga" 156,50,14,142
-  palette "models/players/bones/icon_blue.png" 156,50,14,142
-  palette "models/players/bones/blue.tga" 186,43,12,160
-  palette "models/players/bones/blue.png" 186,43,12,160
-  palette "models/players/bitterman/red.tga" 255,62,14,11
-  palette "models/players/bitterman/red.jpg" 255,62,16,15
-  palette "models/players/bitterman/icon_red.tga" 174,172,19,12
-  palette "models/players/bitterman/icon_red.png" 174,172,19,12
-  palette "models/players/bitterman/icon_default.tga" 167,195,182,114
-  palette "models/players/bitterman/icon_default.png" 167,195,182,114
-  palette "models/players/bitterman/icon_blue.tga" 181,60,49,96
-  palette "models/players/bitterman/icon_blue.png" 181,60,49,96
-  palette "models/players/bitterman/h_red.tga" 255,119,15,10
-  palette "models/players/bitterman/h_red.jpg" 255,120,17,13
-  palette "models/players/bitterman/h_blue.tga" 255,17,27,112
-  palette "models/players/bitterman/h_blue.jpg" 255,19,28,113
-  palette "models/players/bitterman/h_bitterman.tga" 255,92,81,45
-  palette "models/players/bitterman/h_bitterman.jpg" 255,92,82,47
-  palette "models/players/bitterman/blue.tga" 255,23,13,55
-  palette "models/players/bitterman/blue.jpg" 255,24,14,56
-  palette "models/players/bitterman/bitterman.tga" 255,67,57,35
-  palette "models/players/bitterman/bitterman.jpg" 255,67,57,36
-  palette "models/players/bat/legs.tga" 255,53,26,22
-  palette "models/players/bat/legs.jpg" 255,53,27,25
-  palette "models/players/bat/head.tga" 255,54,30,25
-  palette "models/players/bat/head.jpg" 255,54,31,29
-  palette "models/players/bat/body.tga" 234,58,30,26
-  palette "models/players/bat/body.png" 234,58,30,26
-  palette "models/players/battle/icon_default.tga" 255,101,83,76
-  palette "models/players/battle/icon_default.jpg" 255,100,84,79
-  palette "models/players/battle/human_bsuit.jpg" 255,53,43,42
-  palette "models/players/basilisk/level1upg.jpg" 255,105,91,88
-  palette "models/players/basilisk/level1.jpg" 255,112,91,87
-  palette "models/players/basilisk/icon_default.tga" 255,255,255,255
-  palette "models/players/basilisk/icon_default.jpg" 255,255,255,255
-  palette "models/players/berserker/skin.tga" 255,28,21,19
-  palette "models/players/berserker/skin.jpg" 255,27,22,20
-  palette "models/players/berserker/pain.tga" 255,27,19,17
-  palette "models/players/berserker/pain.jpg" 255,25,19,18
-  palette "models/players/berserker/icon_default.tga" 255,63,50,40
-  palette "models/players/berserker/icon_default.jpg" 255,65,49,41
-  palette "models/players/ank/ank_legs.tga" 255,124,69,45
-  palette "models/players/ank/ank_legs.jpg" 255,125,70,48
-  palette "models/players/ank/ank_body.tga" 255,81,48,35
-  palette "models/players/ank/ank_body.jpg" 255,81,49,36
-  palette "models/players/ank/ank_arms.tga" 255,117,64,41
-  palette "models/players/ank/ank_arms.jpg" 255,117,65,43
-  palette "models/players/biker/stroggo_h.tga" 255,101,73,59
-  palette "models/players/biker/stroggo_h.jpg" 255,99,74,61
-  palette "models/players/biker/stroggo.tga" 255,113,70,71
-  palette "models/players/biker/stroggo.jpg" 255,113,70,72
-  palette "models/players/biker/slammer_h.tga" 255,70,48,69
-  palette "models/players/biker/slammer_h.jpg" 255,69,48,68
-  palette "models/players/biker/slammer.tga" 255,114,79,83
-  palette "models/players/biker/slammer.jpg" 255,113,79,85
-  palette "models/players/biker/red_h.tga" 255,89,32,24
-  palette "models/players/biker/red_h.jpg" 255,90,32,28
-  palette "models/players/biker/red.tga" 255,66,31,26
-  palette "models/players/biker/red.jpg" 255,67,31,28
-  palette "models/players/biker/icon_stroggo.tga" 233,147,122,105
-  palette "models/players/biker/icon_stroggo.png" 233,147,122,105
-  palette "models/players/biker/icon_slammer.tga" 183,185,135,141
-  palette "models/players/biker/icon_slammer.png" 183,185,135,141
-  palette "models/players/biker/icon_red.tga" 199,158,69,55
-  palette "models/players/biker/icon_red.png" 199,158,69,55
-  palette "models/players/biker/icon_hossman.tga" 221,129,106,93
-  palette "models/players/biker/icon_hossman.png" 221,129,106,93
-  palette "models/players/biker/icon_default.tga" 192,147,112,94
-  palette "models/players/biker/icon_default.png" 192,147,112,94
-  palette "models/players/biker/icon_cadavre.tga" 195,166,109,76
-  palette "models/players/biker/icon_cadavre.png" 195,166,109,76
-  palette "models/players/biker/icon_blue.tga" 213,60,94,151
-  palette "models/players/biker/icon_blue.png" 213,60,94,151
-  palette "models/players/biker/hossman_h.tga" 255,52,41,36
-  palette "models/players/biker/hossman_h.jpg" 255,53,41,37
-  palette "models/players/biker/hossman.tga" 255,77,60,53
-  palette "models/players/biker/hossman.jpg" 255,77,60,54
-  palette "models/players/biker/cadaver_h.tga" 255,79,56,43
-  palette "models/players/biker/cadaver_h.jpg" 255,79,57,44
-  palette "models/players/biker/cadaver.tga" 23,90,47,31
-  palette "models/players/biker/cadaver.png" 23,90,47,31
-  palette "models/players/biker/blue_h.tga" 255,29,49,84
-  palette "models/players/biker/blue_h.jpg" 255,30,49,84
-  palette "models/players/biker/blue.tga" 255,40,40,52
-  palette "models/players/biker/blue.jpg" 255,42,40,54
-  palette "models/players/biker/biker_h.tga" 255,86,66,56
-  palette "models/players/biker/biker_h.jpg" 255,86,67,59
-  palette "models/players/biker/biker.tga" 255,58,47,41
-  palette "models/players/biker/biker.jpg" 255,57,47,42
-  palette "models/players/anarki/red_h.tga" 255,47,23,15
-  palette "models/players/anarki/red_h.jpg" 255,47,22,17
-  palette "models/players/anarki/red_g.tga" 255,89,7,5
-  palette "models/players/anarki/red_g.jpg" 255,95,9,12
-  palette "models/players/anarki/red.tga" 255,68,18,13
-  palette "models/players/anarki/red.jpg" 255,68,20,16
-  palette "models/players/anarki/icon_red.tga" 154,100,42,28
-  palette "models/players/anarki/icon_red.png" 154,100,42,28
-  palette "models/players/anarki/icon_default.tga" 179,97,68,55
-  palette "models/players/anarki/icon_default.png" 179,97,68,55
-  palette "models/players/anarki/icon_blue.tga" 180,64,44,49
-  palette "models/players/anarki/icon_blue.png" 180,64,44,49
-  palette "models/players/anarki/blue_g.tga" 255,8,44,87
-  palette "models/players/anarki/blue_g.jpg" 255,12,45,89
-  palette "models/players/anarki/blue.tga" 255,26,38,58
-  palette "models/players/anarki/blue.jpg" 255,29,39,59
-  palette "models/players/anarki/anarki_h.tga" 255,52,33,25
-  palette "models/players/anarki/anarki_h.jpg" 255,51,33,27
-  palette "models/players/anarki/anarki_g_fx.tga" 255,14,21,19
-  palette "models/players/anarki/anarki_g_fx.jpg" 255,14,21,18
-  palette "models/players/anarki/anarki_g.tga" 255,48,37,32
-  palette "models/players/anarki/anarki_g.jpg" 255,49,36,33
-  palette "models/players/anarki/anarki_b.tga" 172,55,39,32
-  palette "models/players/anarki/anarki_b.png" 172,55,39,32
-  palette "models/players/anarki/anarki.tga" 255,64,50,36
-  palette "models/players/anarki/anarki.jpg" 255,64,51,38
-  palette "models/furniture/gym/weightbench.jpg" 255,45,44,42
-  palette "models/furniture/pooltable/wood.jpg" 255,138,45,36
-  palette "models/furniture/pooltable/tree.jpg" 255,86,66,42
-  palette "models/furniture/pooltable/sides.jpg" 255,209,164,143
-  palette "models/furniture/pooltable/pockets2.jpg" 255,38,13,10
-  palette "models/furniture/pooltable/pockets.jpg" 255,56,54,54
-  palette "models/furniture/pooltable/green.jpg" 255,17,109,72
-  palette "models/furniture/pooltable/cue.jpg" 255,180,175,171
-  palette "models/furniture/pooltable/bumpers.jpg" 255,114,150,149
-  palette "models/furniture/pooltable/ball.jpg" 255,102,107,115
-  palette "models/furniture/nuclearfurniture/watercooler.jpg" 255,104,106,116
-  palette "models/furniture/nuclearfurniture/table1.jpg" 255,115,103,105
-  palette "models/furniture/nuclearfurniture/redchair.jpg" 255,96,30,29
-  palette "models/furniture/nuclearfurniture/pc1.jpg" 255,124,125,130
-  palette "models/furniture/nuclearfurniture/filing.jpg" 255,171,167,161
-  palette "models/furniture/nuclearfurniture/desk1.jpg" 255,104,90,86
-  palette "models/furniture/nuclearfurniture/bluechair.jpg" 255,30,32,89
-  palette "models/furniture/couches/leather.jpg" 255,81,70,68
-  palette "models/furniture/couches/fabric.jpg" 255,79,76,84
-  palette "models/furniture/couches/couch3.jpg" 255,124,117,103
-  palette "models/furniture/couches/couch2.jpg" 255,96,79,71
-  palette "models/furniture/couches/couch1.jpg" 255,119,97,96
-  palette "models/furniture/couches/colors.jpg" 255,134,60,40
-  palette "models/furniture/nimrod/worldmap.jpg" 255,70,111,119
-  palette "models/furniture/nimrod/wood004.jpg" 255,73,27,18
-  palette "models/furniture/nimrod/tapestry.jpg" 255,146,109,103
-  palette "models/furniture/nimrod/seat1.jpg" 255,144,52,37
-  palette "models/furniture/nimrod/red.jpg" 255,124,11,17
-  palette "models/furniture/nimrod/pianotop.jpg" 255,84,70,57
-  palette "models/furniture/nimrod/paintings.jpg" 255,87,69,45
-  palette "models/furniture/nimrod/maroon.jpg" 255,84,36,26
-  palette "models/furniture/nimrod/marble.jpg" 255,120,124,131
-  palette "models/furniture/nimrod/map.jpg" 255,64,107,115
-  palette "models/furniture/nimrod/jb125.jpg" 255,69,119,151
-  palette "models/furniture/nimrod/gold2.jpg" 255,150,148,1
-  palette "models/furniture/nimrod/gold1.jpg" 255,123,96,43
-  palette "models/furniture/nimrod/gold.jpg" 255,223,167,60
-  palette "models/furniture/nimrod/antique2.jpg" 255,120,82,66
-  palette "models/furniture/nimrod/antique1.jpg" 255,136,90,71
-  palette "models/mapobjects/xlamp/xlamp_red.tga" 255,93,6,6
-  palette "models/mapobjects/xlamp/xlamp_red.jpg" 255,94,9,14
-  palette "models/mapobjects/xlamp/xlamp_ntrl.tga" 255,59,32,12
-  palette "models/mapobjects/xlamp/xlamp_ntrl.jpg" 255,55,33,18
-  palette "models/mapobjects/xlamp/xlamp_grate.tga" 119,100,98,101
-  palette "models/mapobjects/xlamp/xlamp_grate.png" 119,100,98,101
-  palette "models/mapobjects/xlamp/xlamp_blue.tga" 255,6,43,93
-  palette "models/mapobjects/xlamp/xlamp_blue.jpg" 255,11,46,95
-  palette "models/mapobjects/xlamp/xlamp.tga" 219,67,62,61
-  palette "models/mapobjects/xlamp/xlamp.png" 219,67,62,61
-  palette "models/mapobjects/weeds/weed02.tga" 23,45,28,8
-  palette "models/mapobjects/weeds/weed02.png" 23,45,28,8
-  palette "models/mapobjects/wallhead/wallhead02.tga" 255,56,38,29
-  palette "models/mapobjects/wallhead/lion.tga" 255,42,32,27
-  palette "models/mapobjects/videocamera/videocamerasupport.tga" 183,47,44,43
-  palette "models/mapobjects/videocamera/videocamerasupport.png" 183,47,44,43
-  palette "models/mapobjects/videocamera/videocamera.tga" 255,75,107,123
-  palette "models/mapobjects/videocamera/videocamera.jpg" 255,75,107,122
-  palette "models/mapobjects/thunderbolt/thunder.jpg" 255,67,74,57
-  palette "models/mapobjects/techlamp/techlamp_rail2b.tga" 177,60,52,46
-  palette "models/mapobjects/techlamp/techlamp_rail2b.png" 177,60,52,46
-  palette "models/mapobjects/techlamp/techlamp_rail2.tga" 177,60,52,46
-  palette "models/mapobjects/techlamp/techlamp_rail2.png" 177,60,52,46
-  palette "models/mapobjects/techlamp/techlamp_rail.tga" 115,64,54,48
-  palette "models/mapobjects/techlamp/techlamp_rail.png" 115,64,54,48
-  palette "models/mapobjects/techlamp/techlamp_pole2.tga" 255,229,160,106
-  palette "models/mapobjects/techlamp/techlamp_pole2.jpg" 255,228,160,105
-  palette "models/mapobjects/techlamp/techlamp_pole.tga" 218,57,49,44
-  palette "models/mapobjects/techlamp/techlamp_pole.png" 218,57,49,44
-  palette "models/mapobjects/tv/wood.jpg" 255,193,130,90
-  palette "models/mapobjects/tv/tv.jpg" 255,45,45,45
-  palette "models/mapobjects/tv/speaker3.jpg" 255,72,72,78
-  palette "models/mapobjects/tv/speaker2.jpg" 255,74,74,71
-  palette "models/mapobjects/tv/speaker1.jpg" 255,189,152,122
-  palette "models/mapobjects/tv/remote.jpg" 255,100,101,108
-  palette "models/mapobjects/tv/reciever.jpg" 255,43,40,47
-  palette "models/mapobjects/tv/recblack.jpg" 255,23,22,30
-  palette "models/mapobjects/tv/gray.jpg" 255,70,68,69
-  palette "models/mapobjects/tv/gold.jpg" 255,157,158,21
-  palette "models/mapobjects/tv/front.jpg" 255,36,33,32
-  palette "models/mapobjects/tv/dvdgray.jpg" 255,116,121,127
-  palette "models/mapobjects/tv/dvd.jpg" 255,122,124,133
-  palette "models/mapobjects/tv/black1.jpg" 255,58,58,55
-  palette "models/mapobjects/tv/black.jpg" 255,0,0,0
-  palette "models/mapobjects/teleporter/widget.tga" 255,5,5,5
-  palette "models/mapobjects/teleporter/transparency2.tga" 255,155,70,8
-  palette "models/mapobjects/teleporter/transparency.tga" 255,5,5,5
-  palette "models/mapobjects/teleporter/teleporter_edge2.tga" 255,28,14,6
-  palette "models/mapobjects/teleporter/teleporter_edge.tga" 255,72,67,62
-  palette "models/mapobjects/teleporter/teleporter.tga" 255,84,71,62
-  palette "models/mapobjects/teleporter/pad.tga" 255,50,44,39
-  palette "models/mapobjects/teleporter/energy3.tga" 255,18,14,15
-  palette "models/mapobjects/teleporter/energy2.tga" 255,15,11,10
-  palette "models/mapobjects/teleporter/energy.tga" 255,34,25,24
-  palette "models/mapobjects/table/wood2.jpg" 255,86,38,30
-  palette "models/mapobjects/table/wood1.jpg" 255,82,52,33
-  palette "models/mapobjects/table/wood007.jpg" 255,87,37,2
-  palette "models/mapobjects/table/wood004.jpg" 255,73,27,18
-  palette "models/mapobjects/table/seat1.jpg" 255,144,52,37
-  palette "models/mapobjects/table/red.jpg" 255,128,14,22
-  palette "models/mapobjects/table/newspaper.jpg" 255,141,130,119
-  palette "models/mapobjects/table/mag.jpg" 255,171,132,117
-  palette "models/mapobjects/table/crest.jpg" 255,72,64,41
-  palette "models/mapobjects/storch/storch_tall.tga" 255,68,43,32
-  palette "models/mapobjects/storch/storch.tga" 255,62,40,31
-  palette "models/mapobjects/spotlamp/spotlamp_l.tga" 255,101,86,83
-  palette "models/mapobjects/spotlamp/beam.tga" 255,30,24,20
-  palette "models/mapobjects/spawn/spawn3_r.tga" 175,94,0,0
-  palette "models/mapobjects/spawn/spawn3_r.png" 175,94,0,0
-  palette "models/mapobjects/spawn/spawn3_b.tga" 175,0,80,117
-  palette "models/mapobjects/spawn/spawn3_b.png" 175,0,80,117
-  palette "models/mapobjects/spawn/spawn3.tga" 220,49,47,42
-  palette "models/mapobjects/spawn/spawn3.png" 220,49,47,42
-  palette "models/mapobjects/slamp/slamp3x.tga" 255,33,28,30
-  palette "models/mapobjects/slamp/slamp3x.jpg" 255,31,30,30
-  palette "models/mapobjects/slamp/slamp3.tga" 255,33,29,30
-  palette "models/mapobjects/slamp/slamp3.jpg" 255,33,29,29
-  palette "models/mapobjects/slamp/slamp2.tga" 255,61,33,33
-  palette "models/mapobjects/slamp/slamp2.jpg" 255,61,33,33
-  palette "models/mapobjects/slamp/slamp.tga" 255,49,46,41
-  palette "models/mapobjects/slamp/slamp.jpg" 255,49,46,41
-  palette "models/mapobjects/starfleet/treetrunk.jpg" 255,20,13,5
-  palette "models/mapobjects/starfleet/tallbush.tga" 134,5,26,0
-  palette "models/mapobjects/starfleet/tallbush.png" 134,5,26,0
-  palette "models/mapobjects/starfleet/leaves-alpha.tga" 167,0,24,0
-  palette "models/mapobjects/starfleet/leaves-alpha.png" 167,0,24,0
-  palette "models/mapobjects/starfleet/fleetfrod.tga" 182,11,20,7
-  palette "models/mapobjects/starfleet/fleetfrod.png" 182,11,20,7
-  palette "models/mapobjects/starfleet/fern_1.tga" 87,51,88,37
-  palette "models/mapobjects/starfleet/fern_1.png" 87,51,88,37
-  palette "models/mapobjects/starfleet/bush_2_trunk.jpg" 255,30,25,14
-  palette "models/mapobjects/starfleet/bush_2_outer.tga" 174,61,87,41
-  palette "models/mapobjects/starfleet/bush_2_outer.png" 174,61,87,41
-  palette "models/mapobjects/starfleet/bush_2_inner.jpg" 255,32,42,11
-  palette "models/mapobjects/skull/skull.tga" 255,94,66,49
-  palette "models/mapobjects/skull/ribcage.tga" 95,115,87,67
-  palette "models/mapobjects/skull/ribcage.png" 95,115,87,67
-  palette "models/mapobjects/skull/monkeyheadb.tga" 255,87,44,34
-  palette "models/mapobjects/skull/monkeyheadb.jpg" 255,87,44,34
-  palette "models/mapobjects/skull/monkeyhead2.tga" 34,105,96,93
-  palette "models/mapobjects/skull/monkeyhead2.png" 34,105,96,93
-  palette "models/mapobjects/skull/monkeyhead.tga" 255,90,46,36
-  palette "models/mapobjects/skull/monkeyhead.jpg" 255,90,46,36
-  palette "models/mapobjects/skull/half_skull.tga" 255,81,60,47
-  palette "models/mapobjects/skull/half_skull.jpg" 255,80,60,48
-  palette "models/mapobjects/skel/xray.tga" 159,12,86,65
-  palette "models/mapobjects/skel/xray.png" 159,12,86,65
-  palette "models/mapobjects/satdish/sat2.jpg" 255,85,85,85
-  palette "models/mapobjects/satdish/sat1.jpg" 255,74,73,75
-  palette "models/mapobjects/signs/bioh.tga" 255,132,96,27
-  palette "models/mapobjects/signs/bioh.jpg" 255,132,96,28
-  palette "models/mapobjects/prowler/prowler1.jpg" 255,31,21,34
-  palette "models/mapobjects/statues/skull_stat.tga" 255,118,109,101
-  palette "models/mapobjects/statues/skull_stat.jpg" 255,116,112,95
-  palette "models/mapobjects/statues/r_flag2_stat.tga" 255,114,106,97
-  palette "models/mapobjects/statues/r_flag2_stat.jpg" 255,112,108,91
-  palette "models/mapobjects/statues/pole_stst.tga" 255,101,93,83
-  palette "models/mapobjects/statues/pole_stst.jpg" 255,101,94,75
-  palette "models/mapobjects/statues/janeth_stat2.tga" 255,100,89,80
-  palette "models/mapobjects/statues/janeth_stat2.jpg" 255,103,89,73
-  palette "models/mapobjects/statues/janet_stat2.tga" 255,109,99,89
-  palette "models/mapobjects/statues/janet_stat2.jpg" 255,111,99,82
-  palette "models/mapobjects/statues/jamesh_stat2.tga" 255,111,99,88
-  palette "models/mapobjects/statues/jamesh_stat2.jpg" 255,116,98,82
-  palette "models/mapobjects/statues/jamese_stat2.tga" 255,92,82,71
-  palette "models/mapobjects/statues/jamese_stat2.jpg" 255,98,79,64
-  palette "models/mapobjects/statues/james_stat2.tga" 255,115,102,91
-  palette "models/mapobjects/statues/james_stat2.jpg" 255,120,101,86
-  palette "models/mapobjects/statues/flagbits_stat.tga" 95,103,94,85
-  palette "models/mapobjects/statues/flagbits_stat.png" 95,103,94,85
-  palette "models/mapobjects/podium/podskullfx.tga" 255,0,3,2
-  palette "models/mapobjects/podium/podiumfx1b.tga" 255,5,3,2
-  palette "models/mapobjects/podium/podiumfx1.tga" 255,7,6,5
-  palette "models/mapobjects/pipe/pipe02.tga" 192,48,44,34
-  palette "models/mapobjects/pipe/pipe02.png" 192,48,44,34
-  palette "models/mapobjects/portal_2/portal_3_glo.tga" 255,15,6,12
-  palette "models/mapobjects/portal_2/portal_3_edge_glo.tga" 255,27,16,29
-  palette "models/mapobjects/portal_2/portal_3_edge.tga" 255,57,54,52
-  palette "models/mapobjects/portal_2/portal_3.tga" 255,73,66,59
-  palette "models/mapobjects/plane1/prop.tga" 200,178,178,178
-  palette "models/mapobjects/plane1/prop.png" 200,178,178,178
-  palette "models/mapobjects/plane1/plane1.jpg" 255,113,110,126
-  palette "models/mapobjects/plane2/plane3.jpg" 255,92,111,134
-  palette "models/mapobjects/plane2/plane2.jpg" 255,52,42,39
-  palette "models/mapobjects/pc/side.jpg" 255,129,130,126
-  palette "models/mapobjects/pc/keyboard.jpg" 255,72,74,81
-  palette "models/mapobjects/pc/front.jpg" 255,61,64,69
-  palette "models/mapobjects/pc/dna2.jpg" 255,76,102,129
-  palette "models/mapobjects/pc/dna1.jpg" 255,154,144,138
-  palette "models/mapobjects/pc/dna.jpg" 255,80,83,86
-  palette "models/mapobjects/pc/cd.jpg" 255,87,87,85
-  palette "models/mapobjects/pc/black.jpg" 255,33,36,41
-  palette "models/mapobjects/pc/back.jpg" 255,200,201,198
-  palette "models/mapobjects/mustang/mustang2.jpg" 255,103,103,103
-  palette "models/mapobjects/mustang/mustang.jpg" 255,77,77,79
-  palette "models/mapobjects/lt1_cooper/lt1_cooper2.jpg" 255,30,34,74
-  palette "models/mapobjects/lt1_cooper/lt1_cooper.jpg" 255,71,32,38
-  palette "models/mapobjects/lt1_cooper/cooperwin.tga" 0,0,0,0
-  palette "models/mapobjects/lt1_cooper/cooperwin.png" 0,0,0,0
-  palette "models/mapobjects/lamps/spikylamp.tga" 255,20,19,17
-  palette "models/mapobjects/lamps/spikylamp.jpg" 255,20,19,17
-  palette "models/mapobjects/lamps/flare03.tga" 255,36,31,21
-  palette "models/mapobjects/lamps/bot_wing2.tga" 152,66,57,52
-  palette "models/mapobjects/lamps/bot_wing2.png" 152,66,57,52
-  palette "models/mapobjects/lamps/bot_light.tga" 255,141,106,76
-  palette "models/mapobjects/lamps/bot_light.jpg" 255,141,106,76
-  palette "models/mapobjects/lamps/bot_lamp2b.tga" 203,56,45,39
-  palette "models/mapobjects/lamps/bot_lamp2b.png" 203,56,45,39
-  palette "models/mapobjects/lamps/bot_lamp2.tga" 255,85,74,68
-  palette "models/mapobjects/lamps/bot_lamp.tga" 255,45,38,34
-  palette "models/mapobjects/lamps/bot_flare2.tga" 255,28,20,21
-  palette "models/mapobjects/lamps/bot_flare.tga" 255,32,25,26
-  palette "models/mapobjects/lamps/beam.tga" 255,24,22,19
-  palette "models/mapobjects/lamps/beam.jpg" 255,24,22,19
-  palette "models/mapobjects/machine nest/bag3.jpg" 255,221,192,171
-  palette "models/mapobjects/jets/jet_as.tga" 255,51,42,45
-  palette "models/mapobjects/jets/jet_as.jpg" 255,51,42,45
-  palette "models/mapobjects/jets/jet_2.tga" 255,10,9,8
-  palette "models/mapobjects/jets/jet_2.jpg" 255,10,9,8
-  palette "models/mapobjects/jets/jet_1.tga" 255,30,22,25
-  palette "models/mapobjects/jets/jet_1.jpg" 255,30,22,25
-  palette "models/mapobjects/kitchen/top.jpg" 255,146,146,146
-  palette "models/mapobjects/kitchen/toastertop.jpg" 255,183,181,181
-  palette "models/mapobjects/kitchen/toasterside.jpg" 255,251,240,231
-  palette "models/mapobjects/kitchen/toasterend.jpg" 255,242,200,148
-  palette "models/mapobjects/kitchen/teapot.jpg" 255,212,0,0
-  palette "models/mapobjects/kitchen/steel.jpg" 255,210,203,199
-  palette "models/mapobjects/kitchen/sides.jpg" 255,147,147,147
-  palette "models/mapobjects/kitchen/ovenfront.jpg" 255,145,139,137
-  palette "models/mapobjects/kitchen/micro2.jpg" 255,131,120,109
-  palette "models/mapobjects/kitchen/micro1.jpg" 255,115,108,106
-  palette "models/mapobjects/kitchen/metal.jpg" 255,182,183,193
-  palette "models/mapobjects/kitchen/guage2.jpg" 255,54,57,39
-  palette "models/mapobjects/kitchen/guage1.jpg" 255,47,49,42
-  palette "models/mapobjects/kitchen/gray.jpg" 255,91,88,84
-  palette "models/mapobjects/kitchen/cup.jpg" 255,248,249,250
-  palette "models/mapobjects/kitchen/coffemaker.jpg" 255,135,133,134
-  palette "models/mapobjects/kitchen/coffee.jpg" 255,116,80,28
-  palette "models/mapobjects/kitchen/burners.jpg" 255,80,78,77
-  palette "models/mapobjects/kitchen/bread.jpg" 255,189,126,63
-  palette "models/mapobjects/kitchen/black.jpg" 255,12,11,7
-  palette "models/mapobjects/jesus/jesuswall.tga" 38,52,41,35
-  palette "models/mapobjects/jesus/jesuswall.png" 38,52,41,35
-  palette "models/mapobjects/lt1_computers/speakers.jpg" 255,116,116,115
-  palette "models/mapobjects/lt1_computers/silverpc.jpg" 255,181,180,185
-  palette "models/mapobjects/lt1_computers/scanner.jpg" 255,101,97,92
-  palette "models/mapobjects/lt1_computers/pcscreens.jpg" 255,99,95,96
-  palette "models/mapobjects/lt1_computers/mousepads.jpg" 255,65,62,62
-  palette "models/mapobjects/lt1_computers/mouse1.jpg" 255,80,82,81
-  palette "models/mapobjects/lt1_computers/monitor.jpg" 255,96,96,95
-  palette "models/mapobjects/lt1_computers/mice.jpg" 255,94,92,95
-  palette "models/mapobjects/lt1_computers/laserprinter.jpg" 255,187,186,187
-  palette "models/mapobjects/lt1_computers/laptopscreen.jpg" 255,23,22,18
-  palette "models/mapobjects/lt1_computers/inkprinter.jpg" 255,103,103,102
-  palette "models/mapobjects/lt1_computers/greenpc.jpg" 255,93,150,85
-  palette "models/mapobjects/lt1_computers/blackpc.jpg" 255,70,69,71
-  palette "models/mapobjects/lt1_computers/blacklaptop.jpg" 255,87,87,94
-  palette "models/mapobjects/horned/horned.tga" 251,71,50,40
-  palette "models/mapobjects/horned/horned.png" 251,71,50,40
-  palette "models/mapobjects/haxbox/top.jpg" 255,65,85,81
-  palette "models/mapobjects/haxbox/side.jpg" 255,40,42,43
-  palette "models/mapobjects/haxbox/gray.jpg" 255,48,48,46
-  palette "models/mapobjects/haxbox/front.jpg" 255,53,61,66
-  palette "models/mapobjects/haxbox/controller.jpg" 255,58,63,52
-  palette "models/mapobjects/haxbox/back.jpg" 255,33,39,45
-  palette "models/mapobjects/grenadel/grenadelx.tga" 131,43,40,37
-  palette "models/mapobjects/grenadel/grenadelx.png" 131,43,40,37
-  palette "models/mapobjects/grenadel/grenadel.tga" 255,68,64,58
-  palette "models/mapobjects/grenadel/grenadel.jpg" 255,68,64,58
-  palette "models/mapobjects/flares/electric.tga" 255,13,25,23
-  palette "models/mapobjects/gratelamp/lightbulb.tga" 255,224,211,182
-  palette "models/mapobjects/gratelamp/lightbulb.jpg" 255,226,213,186
-  palette "models/mapobjects/gratelamp/lightbase.tga" 255,106,96,86
-  palette "models/mapobjects/gratelamp/lightbase.jpg" 255,104,96,86
-  palette "models/mapobjects/gratelamp/gratetorch2.tga" 255,52,32,18
-  palette "models/mapobjects/gratelamp/gratelight_flare.tga" 255,28,25,21
-  palette "models/mapobjects/gratelamp/gratelight_flare.jpg" 255,27,26,22
-  palette "models/mapobjects/gratelamp/gratelight.tga" 119,129,106,85
-  palette "models/mapobjects/gratelamp/gratelight.png" 119,129,106,85
-  palette "models/mapobjects/gratelamp/gratelamp_flare.tga" 255,30,29,29
-  palette "models/mapobjects/gratelamp/gratelamp_flare.jpg" 255,30,29,29
-  palette "models/mapobjects/gratelamp/gratelamp_b.tga" 255,50,43,39
-  palette "models/mapobjects/gratelamp/gratelamp_b.jpg" 255,50,43,39
-  palette "models/mapobjects/gratelamp/gratelamp.tga" 139,53,45,40
-  palette "models/mapobjects/gratelamp/gratelamp.png" 139,53,45,40
-  palette "models/mapobjects/f-117/skin.jpg" 255,24,24,27
-  palette "models/mapobjects/ctftree/ctftree.tga" 130,47,65,30
-  palette "models/mapobjects/ctftree/ctftree.png" 130,47,65,30
-  palette "models/mapobjects/flagbase/swirl_red.tga" 255,125,0,0
-  palette "models/mapobjects/flagbase/swirl_red.jpg" 255,125,2,3
-  palette "models/mapobjects/flagbase/swirl_ntrl.tga" 255,125,71,0
-  palette "models/mapobjects/flagbase/swirl_ntrl.jpg" 255,126,71,5
-  palette "models/mapobjects/flagbase/swirl_blue.tga" 255,0,68,125
-  palette "models/mapobjects/flagbase/swirl_blue.jpg" 255,4,68,125
-  palette "models/mapobjects/flagbase/env_red.tga" 255,105,13,12
-  palette "models/mapobjects/flagbase/env_red.jpg" 255,103,15,13
-  palette "models/mapobjects/flagbase/env_ntrl.tga" 255,110,63,6
-  palette "models/mapobjects/flagbase/env_ntrl.jpg" 255,108,62,14
-  palette "models/mapobjects/flagbase/env_blue.tga" 255,11,69,105
-  palette "models/mapobjects/flagbase/env_blue.jpg" 255,16,69,104
-  palette "models/mapobjects/flagbase/beam_red.tga" 255,102,0,0
-  palette "models/mapobjects/flagbase/beam_red.jpg" 255,103,2,5
-  palette "models/mapobjects/flagbase/beam_ntrl.tga" 255,102,56,0
-  palette "models/mapobjects/flagbase/beam_ntrl.jpg" 255,106,56,4
-  palette "models/mapobjects/flagbase/beam_blue.tga" 255,0,64,102
-  palette "models/mapobjects/flagbase/beam_blue.jpg" 255,3,64,101
-  palette "models/mapobjects/flagbase/base_r.tga" 209,49,44,39
-  palette "models/mapobjects/flagbase/base_r.png" 209,49,44,39
-  palette "models/mapobjects/flagbase/base_e.tga" 222,28,25,22
-  palette "models/mapobjects/flagbase/base_e.png" 222,28,25,22
-  palette "models/mapobjects/corvette/tire.jpg" 255,38,34,39
-  palette "models/mapobjects/corvette/skin.jpg" 255,111,61,47
-  palette "models/mapobjects/cross/cross_skull.tga" 103,113,93,77
-  palette "models/mapobjects/cross/cross_skull.png" 103,113,93,77
-  palette "models/mapobjects/cross/cross.tga" 216,59,41,27
-  palette "models/mapobjects/cross/cross.png" 216,59,41,27
-  palette "models/mapobjects/dantooine_enclave/workbench_glow.jpg" 255,3,3,3
-  palette "models/mapobjects/dantooine_enclave/workbench.jpg" 255,44,50,46
-  palette "models/mapobjects/dantooine_enclave/tree_leaves.tga" 94,38,36,20
-  palette "models/mapobjects/dantooine_enclave/tree_leaves.png" 94,38,36,20
-  palette "models/mapobjects/dantooine_enclave/tree_bark.jpg" 255,173,142,93
-  palette "models/mapobjects/dantooine_enclave/console_glow.jpg" 255,5,9,13
-  palette "models/mapobjects/dantooine_enclave/console_back.jpg" 255,29,35,47
-  palette "models/mapobjects/dantooine_enclave/console.jpg" 255,27,36,48
-  palette "models/mapobjects/dantooine_enclave/chair_2.jpg" 255,55,66,68
-  palette "models/mapobjects/dantooine_enclave/chair_1.jpg" 255,131,135,111
-  palette "models/mapobjects/corpse/torso.tga" 134,73,44,34
-  palette "models/mapobjects/corpse/torso.png" 134,73,44,34
-  palette "models/mapobjects/corpse/spine.tga" 130,59,28,11
-  palette "models/mapobjects/corpse/spine.png" 130,59,28,11
-  palette "models/mapobjects/corpse/intestine2.tga" 149,58,36,26
-  palette "models/mapobjects/corpse/intestine2.png" 149,58,36,26
-  palette "models/mapobjects/corpse/intestine.tga" 132,65,42,31
-  palette "models/mapobjects/corpse/intestine.png" 132,65,42,31
-  palette "models/mapobjects/corpse/corpse.tga" 255,62,38,30
-  palette "models/mapobjects/corpse/chain.tga" 102,76,51,43
-  palette "models/mapobjects/corpse/chain.png" 102,76,51,43
-  palette "models/mapobjects/copymachine/copymachine.jpg" 255,148,148,146
-  palette "models/mapobjects/colua0/colua0_flare.tga" 255,23,13,13
-  palette "models/mapobjects/colua0/colua0_flare.jpg" 255,23,13,13
-  palette "models/mapobjects/colua0/colua0.tga" 255,45,39,27
-  palette "models/mapobjects/colua0/colua0.jpg" 255,45,39,27
-  palette "models/mapobjects/console/under.tga" 0,0,0,0
-  palette "models/mapobjects/console/under.png" 0,0,0,0
-  palette "models/mapobjects/console/spherex2.tga" 255,6,53,34
-  palette "models/mapobjects/console/spherex2.jpg" 255,6,53,34
-  palette "models/mapobjects/console/spherex.tga" 255,53,8,5
-  palette "models/mapobjects/console/spherex.jpg" 255,53,8,6
-  palette "models/mapobjects/console/sphere4.tga" 0,0,0,0
-  palette "models/mapobjects/console/sphere4.png" 0,0,0,0
-  palette "models/mapobjects/console/sphere3.tga" 38,1,0,0
-  palette "models/mapobjects/console/sphere3.png" 38,1,0,0
-  palette "models/mapobjects/console/sphere2.tga" 38,55,46,40
-  palette "models/mapobjects/console/sphere2.png" 38,55,46,40
-  palette "models/mapobjects/console/scrolltext.tga" 255,4,4,4
-  palette "models/mapobjects/console/scrolltext.jpg" 255,4,4,4
-  palette "models/mapobjects/console/rotate.tga" 255,32,2,1
-  palette "models/mapobjects/console/rotate.jpg" 255,32,3,1
-  palette "models/mapobjects/console/console2.tga" 255,2,1,0
-  palette "models/mapobjects/console/console2.jpg" 255,2,1,0
-  palette "models/mapobjects/console/console.tga" 100,41,39,38
-  palette "models/mapobjects/console/console.png" 100,41,39,38
-  palette "models/mapobjects/console/centercon.tga" 255,3,70,45
-  palette "models/mapobjects/console/centercon.jpg" 255,3,70,45
-  palette "models/mapobjects/clothing/tshirt6.jpg" 255,47,42,38
-  palette "models/mapobjects/clothing/tshirt5.jpg" 255,124,121,120
-  palette "models/mapobjects/clothing/tshirt3.jpg" 255,28,29,83
-  palette "models/mapobjects/clothing/tshirt1.jpg" 255,128,126,125
-  palette "models/mapobjects/clothing/hat1.jpg" 255,14,19,22
-  palette "models/mapobjects/bitch/orb.tga" 255,32,26,27
-  palette "models/mapobjects/bitch/hologirl2.tga" 255,14,17,16
-  palette "models/mapobjects/bitch/hologirl.tga" 88,83,69,61
-  palette "models/mapobjects/bitch/hologirl.png" 88,83,69,61
-  palette "models/mapobjects/bitch/forearm02.tga" 255,67,39,33
-  palette "models/mapobjects/bitch/forearm01.tga" 255,92,58,45
-  palette "models/mapobjects/bitch/forearm.tga" 255,91,81,75
-  palette "models/mapobjects/bitch/bitch.tga" 255,41,33,28
-  palette "models/mapobjects/cling_ons/skeleton.tga" 87,120,106,76
-  palette "models/mapobjects/cling_ons/skeleton.png" 87,120,106,76
-  palette "models/mapobjects/cling_ons/rock_top.jpg" 255,40,37,45
-  palette "models/mapobjects/cling_ons/rock_glow.jpg" 255,6,5,7
-  palette "models/mapobjects/cling_ons/rock.jpg" 255,34,32,40
-  palette "models/mapobjects/cling_ons/glow.jpg" 255,64,45,77
-  palette "models/mapobjects/cling_ons/aura_overlay2.jpg" 255,45,32,32
-  palette "models/mapobjects/cling_ons/aura_overlay.jpg" 255,45,33,54
-  palette "models/mapobjects/cling_ons/aura.jpg" 255,2,1,3
-  palette "models/mapobjects/bentree1/bush2.tga" 76,44,35,4
-  palette "models/mapobjects/bentree1/bush2.png" 76,44,35,4
-  palette "models/mapobjects/bentree1/bentree1.tga" 45,87,111,49
-  palette "models/mapobjects/bentree1/bentree1.png" 45,87,111,49
-  palette "models/mapobjects/bentree1/bark.jpg" 255,131,86,60
-  palette "models/mapobjects/bathroom/tubsideblood.jpg" 255,153,148,152
-  palette "models/mapobjects/bathroom/tubclean.jpg" 255,143,143,139
-  palette "models/mapobjects/bathroom/tub2blood.jpg" 255,236,232,235
-  palette "models/mapobjects/bathroom/tolietinside.jpg" 255,169,167,161
-  palette "models/mapobjects/bathroom/tolietbase.jpg" 255,238,236,236
-  palette "models/mapobjects/bathroom/sink2.jpg" 255,205,202,198
-  palette "models/mapobjects/bathroom/sidesinside.jpg" 255,178,170,172
-  palette "models/mapobjects/bathroom/side2clean.jpg" 255,151,150,153
-  palette "models/mapobjects/bathroom/seat2.jpg" 255,231,231,228
-  palette "models/mapobjects/bathroom/pedestal.jpg" 255,186,186,185
-  palette "models/mapobjects/bathroom/brass.jpg" 255,230,225,42
-  palette "models/mapobjects/barrel/barrelq32.tga" 255,75,59,48
-  palette "models/mapobjects/barrel/barrelq32.jpg" 255,75,59,48
-  palette "models/mapobjects/barrel/barrelq3.tga" 255,73,45,33
-  palette "models/mapobjects/barrel/barrelq3.jpg" 255,73,45,33
-  palette "models/mapobjects/barrel/barrel2fx.tga" 255,77,50,11
-  palette "models/mapobjects/barrel/barrel2fx.jpg" 255,77,50,11
-  palette "models/mapobjects/barrel/barrel2.tga" 255,57,33,23
-  palette "models/mapobjects/barrel/barrel2.jpg" 255,57,33,23
-  palette "models/mapobjects/barrel/barrel.tga" 255,66,51,40
-  palette "models/mapobjects/barrel/barrel.jpg" 255,66,51,40
-  palette "models/mapobjects/LDA/LDAtree04b.jpg" 255,38,48,18
-  palette "models/mapobjects/LDA/LDAtree04.tga" 110,56,66,46
-  palette "models/mapobjects/LDA/LDAtree04.png" 110,56,66,46
-  palette "models/mapobjects/LDA/LDAtree03b.jpg" 255,32,42,20
-  palette "models/mapobjects/LDA/LDAtree03.tga" 96,48,59,44
-  palette "models/mapobjects/LDA/LDAtree03.png" 96,48,59,44
-  palette "models/mapobjects/LDA/LDAtree02b.jpg" 255,31,45,21
-  palette "models/mapobjects/LDA/LDAtree02.tga" 94,43,52,40
-  palette "models/mapobjects/LDA/LDAtree02.png" 94,43,52,40
-  palette "models/mapobjects/LDA/LDAtree01b.jpg" 255,33,43,19
-  palette "models/mapobjects/LDA/LDAtree01.tga" 103,45,56,39
-  palette "models/mapobjects/LDA/LDAtree01.png" 103,45,56,39
-  palette "models/mapobjects/GR_trees/tree6.tga" 101,42,91,10
-  palette "models/mapobjects/GR_trees/tree6.png" 101,42,91,10
-  palette "models/mapobjects/GR_trees/stamm.jpg" 255,70,40,14
-  palette "models/mapobjects/baph/wrist.tga" 255,47,35,23
-  palette "models/mapobjects/baph/wrist.jpg" 255,47,35,23
-  palette "models/mapobjects/baph/baphomet.tga" 251,50,39,31
-  palette "models/mapobjects/baph/baphomet.png" 251,50,39,31
-  palette "models/mapobjects/baph/bapholamp_fx2.tga" 255,51,33,15
-  palette "models/mapobjects/baph/bapholamp_fx2.jpg" 255,51,33,15
-  palette "models/mapobjects/baph/bapholamp_fx.tga" 255,49,34,16
-  palette "models/mapobjects/baph/bapholamp_fx.jpg" 255,49,34,16
-  palette "models/mapobjects/baph/bapho_lamp.tga" 234,56,38,26
-  palette "models/mapobjects/baph/bapho_lamp.png" 234,56,38,26
-  palette "models/powerup3/ammo2/rocket/thrustc3.tga" 255,45,31,9
-  palette "models/powerup3/ammo2/rocket/thrustc3.jpg" 255,45,31,12
-  palette "models/powerup3/ammo2/rocket/thrustc2.tga" 255,35,25,8
-  palette "models/powerup3/ammo2/rocket/thrustc2.jpg" 255,34,25,10
-  palette "models/powerup3/ammo2/rocket/thrustc1.tga" 255,33,23,6
-  palette "models/powerup3/ammo2/rocket/thrustc1.jpg" 255,34,23,9
-  palette "models/powerup3/ammo2/rocket/rocket.tga" 255,61,61,61
-  palette "models/powerup3/ammo2/rocket/rocket.jpg" 255,61,61,61
-  palette "models/players/widow/gib4/skin.pcx" 255,6,5,5
-  palette "models/players/widow/gib3/skin.pcx" 255,8,3,2
-  palette "models/players/widow/gib2/skin.pcx" 255,4,2,2
-  palette "models/players/widow/gib1/skin.pcx" 255,1,1,0
-  palette "models/players/tank/ctank/skin.tga" 255,21,16,14
-  palette "models/players/tank/ctank/skin.pcx" 255,21,16,14
-  palette "models/players/tank/ctank/skin.jpg" 255,20,17,17
-  palette "models/players/tank/ctank/pain.tga" 255,19,13,11
-  palette "models/players/tank/ctank/pain.pcx" 255,19,13,11
-  palette "models/players/tank/ctank/pain.jpg" 255,18,14,14
-  palette "models/players/monsters/tank/skin_rgh.tga" 255,128,0,0
-  palette "models/players/monsters/tank/skin_rgh.jpg" 255,129,1,2
-  palette "models/players/monsters/tank/skin_light.tga" 1,26,78,94
-  palette "models/players/monsters/tank/skin_light.png" 1,26,78,94
-  palette "models/players/monsters/tank/skin_bump.tga" 18,127,124,242
-  palette "models/players/monsters/tank/skin_bump.png" 18,127,124,242
-  palette "models/players/monsters/tank/skin.tga" 255,26,25,19
-  palette "models/players/monsters/tank/skin.jpg" 255,26,25,20
-  palette "models/players/monsters/tank/pain_rgh.tga" 255,115,0,0
-  palette "models/players/monsters/tank/pain_rgh.jpg" 255,116,2,3
-  palette "models/players/monsters/tank/pain_light.tga" 0,0,0,0
-  palette "models/players/monsters/tank/pain_light.png" 0,0,0,0
-  palette "models/players/monsters/tank/pain_bump.tga" 16,127,126,243
-  palette "models/players/monsters/tank/pain_bump.png" 16,127,126,243
-  palette "models/players/monsters/tank/pain.tga" 255,23,20,15
-  palette "models/players/monsters/tank/pain.jpg" 255,23,20,16
-  palette "models/players/monsters/parasite/skin_rgh.tga" 255,128,0,0
-  palette "models/players/monsters/parasite/skin_rgh.jpg" 255,128,1,2
-  palette "models/players/monsters/parasite/skin_light.tga" 0,142,58,33
-  palette "models/players/monsters/parasite/skin_light.png" 0,142,58,33
-  palette "models/players/monsters/parasite/skin_bump.tga" 25,128,127,240
-  palette "models/players/monsters/parasite/skin_bump.png" 25,128,127,240
-  palette "models/players/monsters/parasite/skin.tga" 255,42,27,22
-  palette "models/players/monsters/parasite/skin.jpg" 255,42,28,23
-  palette "models/players/monsters/parasite/pain_rgh.tga" 255,120,0,0
-  palette "models/players/monsters/parasite/pain_rgh.jpg" 255,120,1,2
-  palette "models/players/monsters/parasite/pain_light.tga" 0,0,0,0
-  palette "models/players/monsters/parasite/pain_light.png" 0,0,0,0
-  palette "models/players/monsters/parasite/pain_bump.tga" 30,128,126,237
-  palette "models/players/monsters/parasite/pain_bump.png" 30,128,126,237
-  palette "models/players/monsters/parasite/pain.tga" 255,39,24,19
-  palette "models/players/monsters/parasite/pain.jpg" 255,39,25,20
-  palette "models/players/monsters/stalker/untitled_Mesh.tga" 255,229,229,229
-  palette "models/players/monsters/stalker/untitled_Mesh.jpg" 255,225,225,225
-  palette "models/players/monsters/stalker/skin_rgh.tga" 255,128,0,0
-  palette "models/players/monsters/stalker/skin_rgh.jpg" 255,128,1,2
-  palette "models/players/monsters/stalker/skin_light.tga" 0,78,83,19
-  palette "models/players/monsters/stalker/skin_light.png" 0,78,83,19
-  palette "models/players/monsters/stalker/skin_bump.tga" 27,128,127,243
-  palette "models/players/monsters/stalker/skin_bump.png" 27,128,127,243
-  palette "models/players/monsters/stalker/skin.tga" 255,34,21,18
-  palette "models/players/monsters/stalker/skin.png" 255,19,13,10
-  palette "models/players/monsters/stalker/skin.pcx" 255,19,13,10
-  palette "models/players/monsters/stalker/skin.jpg" 255,34,21,19
-  palette "models/players/monsters/stalker/pain_rgh.tga" 255,123,0,0
-  palette "models/players/monsters/stalker/pain_rgh.jpg" 255,123,2,2
-  palette "models/players/monsters/stalker/pain_bump.tga" 26,128,127,243
-  palette "models/players/monsters/stalker/pain_bump.png" 26,128,127,243
-  palette "models/players/monsters/stalker/pain.tga" 255,48,30,26
-  palette "models/players/monsters/stalker/pain.jpg" 255,48,30,27
-  palette "models/players/monsters/soldier/skin_ssp_rgh.tga" 255,102,0,0
-  palette "models/players/monsters/soldier/skin_ssp_rgh.jpg" 255,103,2,4
-  palette "models/players/monsters/soldier/skin_ssp_light.tga" 0,0,0,0
-  palette "models/players/monsters/soldier/skin_ssp_light.png" 0,0,0,0
-  palette "models/players/monsters/soldier/skin_ssp_bump.tga" 31,128,126,239
-  palette "models/players/monsters/soldier/skin_ssp_bump.png" 31,128,126,239
-  palette "models/players/monsters/soldier/skin_ssp.tga" 255,44,34,27
-  palette "models/players/monsters/soldier/skin_ssp.jpg" 255,43,35,30
-  palette "models/players/monsters/soldier/skin_ss_rgh.tga" 255,114,11,9
-  palette "models/players/monsters/soldier/skin_ss_rgh.jpg" 255,114,12,10
-  palette "models/players/monsters/soldier/skin_ss_light.tga" 0,152,75,91
-  palette "models/players/monsters/soldier/skin_ss_light.png" 0,152,75,91
-  palette "models/players/monsters/soldier/skin_ss_bump.tga" 33,128,125,232
-  palette "models/players/monsters/soldier/skin_ss_bump.png" 33,128,125,232
-  palette "models/players/monsters/soldier/skin_ss.tga" 255,48,40,31
-  palette "models/players/monsters/soldier/skin_ss.jpg" 255,47,40,33
-  palette "models/players/monsters/soldier/skin_rgh.tga" 255,119,20,21
-  palette "models/players/monsters/soldier/skin_rgh.jpg" 255,117,20,17
-  palette "models/players/monsters/soldier/skin_ltp_rgh.tga" 255,113,15,17
-  palette "models/players/monsters/soldier/skin_ltp_rgh.jpg" 255,111,16,14
-  palette "models/players/monsters/soldier/skin_ltp_light.tga" 0,0,0,0
-  palette "models/players/monsters/soldier/skin_ltp_light.png" 0,0,0,0
-  palette "models/players/monsters/soldier/skin_ltp_bump.tga" 43,128,124,229
-  palette "models/players/monsters/soldier/skin_ltp_bump.png" 43,128,124,229
-  palette "models/players/monsters/soldier/skin_ltp.tga" 255,61,50,43
-  palette "models/players/monsters/soldier/skin_ltp.jpg" 255,59,50,43
-  palette "models/players/monsters/soldier/skin_lt_rgh.tga" 255,119,0,0
-  palette "models/players/monsters/soldier/skin_lt_rgh.jpg" 255,119,1,3
-  palette "models/players/monsters/soldier/skin_lt_light.tga" 1,103,187,220
-  palette "models/players/monsters/soldier/skin_lt_light.png" 1,103,187,220
-  palette "models/players/monsters/soldier/skin_lt_bump.tga" 45,127,123,229
-  palette "models/players/monsters/soldier/skin_lt_bump.png" 45,127,123,229
-  palette "models/players/monsters/soldier/skin_lt.tga" 255,63,53,46
-  palette "models/players/monsters/soldier/skin_lt.jpg" 255,61,53,46
-  palette "models/players/monsters/soldier/skin_light.tga" 1,155,83,77
-  palette "models/players/monsters/soldier/skin_light.png" 1,155,83,77
-  palette "models/players/monsters/soldier/skin_bump.tga" 35,127,124,229
-  palette "models/players/monsters/soldier/skin_bump.png" 35,127,124,229
-  palette "models/players/monsters/soldier/skin.tga" 255,48,43,33
-  palette "models/players/monsters/soldier/skin.jpg" 255,48,43,34
-  palette "models/players/monsters/soldier/pain_rgh.tga" 255,113,15,17
-  palette "models/players/monsters/soldier/pain_rgh.jpg" 255,111,16,14
-  palette "models/players/monsters/soldier/pain_light.tga" 0,0,0,0
-  palette "models/players/monsters/soldier/pain_light.png" 0,0,0,0
-  palette "models/players/monsters/soldier/pain_bump.tga" 33,126,125,229
-  palette "models/players/monsters/soldier/pain_bump.png" 33,126,125,229
-  palette "models/players/monsters/soldier/pain.tga" 255,48,39,30
-  palette "models/players/monsters/soldier/pain.jpg" 255,47,39,31
-  palette "models/players/monsters/medic/skin_rgh.tga" 255,127,0,0
-  palette "models/players/monsters/medic/skin_rgh.jpg" 255,128,1,2
-  palette "models/players/monsters/medic/skin_light.tga" 2,67,121,157
-  palette "models/players/monsters/medic/skin_light.png" 2,67,121,157
-  palette "models/players/monsters/medic/skin_bump.tga" 27,128,126,240
-  palette "models/players/monsters/medic/skin_bump.png" 27,128,126,240
-  palette "models/players/monsters/medic/skin.tga" 255,38,33,27
-  palette "models/players/monsters/medic/skin.jpg" 255,37,33,29
-  palette "models/players/monsters/medic/pain_rgh.tga" 255,126,11,9
-  palette "models/players/monsters/medic/pain_rgh.jpg" 255,127,12,10
-  palette "models/players/monsters/medic/pain_light.tga" 0,0,0,0
-  palette "models/players/monsters/medic/pain_light.png" 0,0,0,0
-  palette "models/players/monsters/medic/pain_bump.tga" 25,128,124,231
-  palette "models/players/monsters/medic/pain_bump.png" 25,128,124,231
-  palette "models/players/monsters/medic/pain.tga" 255,36,30,25
-  palette "models/players/monsters/medic/pain.jpg" 255,36,30,27
-  palette "models/players/monsters/mutant/skin_rgh.tga" 255,22,0,0
-  palette "models/players/monsters/mutant/skin_rgh.jpg" 255,20,2,2
-  palette "models/players/monsters/mutant/skin_bump.tga" 29,127,126,247
-  palette "models/players/monsters/mutant/skin_bump.png" 29,127,126,247
-  palette "models/players/monsters/mutant/skin.tga" 255,52,35,20
-  palette "models/players/monsters/mutant/skin.jpg" 255,51,35,22
-  palette "models/players/monsters/mutant/pain_rgh.tga" 255,21,0,0
-  palette "models/players/monsters/mutant/pain_rgh.jpg" 255,20,1,2
-  palette "models/players/monsters/mutant/pain_bump.tga" 24,127,126,246
-  palette "models/players/monsters/mutant/pain_bump.png" 24,127,126,246
-  palette "models/players/monsters/mutant/pain.tga" 255,44,27,15
-  palette "models/players/monsters/mutant/pain.jpg" 255,44,27,18
-  palette "models/players/monsters/insane/i_skin_rgh.tga" 255,127,0,0
-  palette "models/players/monsters/insane/i_skin_rgh.jpg" 255,127,1,2
-  palette "models/players/monsters/insane/i_skin_bump.tga" 59,127,125,235
-  palette "models/players/monsters/insane/i_skin_bump.png" 59,127,125,235
-  palette "models/players/monsters/insane/i_skin03_rgh.tga" 255,127,0,0
-  palette "models/players/monsters/insane/i_skin03_rgh.jpg" 255,127,1,2
-  palette "models/players/monsters/insane/i_skin03_bump.tga" 57,127,125,234
-  palette "models/players/monsters/insane/i_skin03_bump.png" 57,127,125,234
-  palette "models/players/monsters/insane/i_skin03.tga" 255,71,49,31
-  palette "models/players/monsters/insane/i_skin03.jpg" 255,71,49,32
-  palette "models/players/monsters/insane/i_skin02_rgh.tga" 255,126,0,0
-  palette "models/players/monsters/insane/i_skin02_rgh.jpg" 255,127,1,2
-  palette "models/players/monsters/insane/i_skin02_bump.tga" 42,127,125,235
-  palette "models/players/monsters/insane/i_skin02_bump.png" 42,127,125,235
-  palette "models/players/monsters/insane/i_skin02.tga" 255,62,34,17
-  palette "models/players/monsters/insane/i_skin02.jpg" 255,62,34,19
-  palette "models/players/monsters/insane/i_skin.tga" 255,74,51,32
-  palette "models/players/monsters/insane/i_skin.jpg" 255,74,51,34
-  palette "models/players/monsters/infantry/skin_rgh.tga" 255,102,3,4
-  palette "models/players/monsters/infantry/skin_rgh.jpg" 255,103,2,7
-  palette "models/players/monsters/infantry/skin_bump.tga" 25,127,125,245
-  palette "models/players/monsters/infantry/skin_bump.png" 25,127,125,245
-  palette "models/players/monsters/infantry/skin.tga" 255,40,32,26
-  palette "models/players/monsters/infantry/skin.jpg" 255,40,32,27
-  palette "models/players/monsters/infantry/pain_rgh.tga" 255,111,15,17
-  palette "models/players/monsters/infantry/pain_rgh.jpg" 255,109,16,14
-  palette "models/players/monsters/infantry/pain_light.tga" 0,0,0,0
-  palette "models/players/monsters/infantry/pain_light.png" 0,0,0,0
-  palette "models/players/monsters/infantry/pain_bump.tga" 25,127,125,231
-  palette "models/players/monsters/infantry/pain_bump.png" 25,127,125,231
-  palette "models/players/monsters/infantry/pain.tga" 255,39,27,23
-  palette "models/players/monsters/infantry/pain.jpg" 255,39,28,24
-  palette "models/players/monsters/gunner/skin_rgh.tga" 255,128,0,0
-  palette "models/players/monsters/gunner/skin_rgh.jpg" 255,129,1,2
-  palette "models/players/monsters/gunner/skin_light.tga" 1,177,5,5
-  palette "models/players/monsters/gunner/skin_light.png" 1,177,5,5
-  palette "models/players/monsters/gunner/skin_bump.tga" 18,127,126,244
-  palette "models/players/monsters/gunner/skin_bump.png" 18,127,126,244
-  palette "models/players/monsters/gunner/skin.tga" 255,27,23,20
-  palette "models/players/monsters/gunner/skin.jpg" 255,26,23,21
-  palette "models/players/monsters/gunner/pain_rgh.tga" 255,118,15,17
-  palette "models/players/monsters/gunner/pain_rgh.jpg" 255,116,16,14
-  palette "models/players/monsters/gunner/pain_light.tga" 0,0,0,0
-  palette "models/players/monsters/gunner/pain_light.png" 0,0,0,0
-  palette "models/players/monsters/gunner/pain_bump.tga" 17,127,126,234
-  palette "models/players/monsters/gunner/pain_bump.png" 17,127,126,234
-  palette "models/players/monsters/gunner/pain.tga" 255,25,19,17
-  palette "models/players/monsters/gunner/pain.jpg" 255,25,20,18
-  palette "models/players/monsters/hover/skin_rgh.tga" 255,134,0,0
-  palette "models/players/monsters/hover/skin_rgh.jpg" 255,132,1,3
-  palette "models/players/monsters/hover/skin_light.tga" 13,251,145,11
-  palette "models/players/monsters/hover/skin_light.png" 13,251,145,11
-  palette "models/players/monsters/hover/skin_bump.tga" 32,127,126,232
-  palette "models/players/monsters/hover/skin_bump.png" 32,127,126,232
-  palette "models/players/monsters/hover/skin.tga" 255,88,27,12
-  palette "models/players/monsters/hover/skin.jpg" 255,87,28,16
-  palette "models/players/monsters/hover/pain_rgh.tga" 255,134,0,0
-  palette "models/players/monsters/hover/pain_rgh.jpg" 255,132,1,3
-  palette "models/players/monsters/hover/pain_light.tga" 0,0,0,0
-  palette "models/players/monsters/hover/pain_light.png" 0,0,0,0
-  palette "models/players/monsters/hover/pain_bump.tga" 31,127,126,233
-  palette "models/players/monsters/hover/pain_bump.png" 31,127,126,233
-  palette "models/players/monsters/hover/pain.tga" 255,85,23,11
-  palette "models/players/monsters/hover/pain.jpg" 255,85,24,15
-  palette "models/players/monsters/gladiatr/skin_rgh.tga" 255,127,0,0
-  palette "models/players/monsters/gladiatr/skin_rgh.jpg" 255,127,2,2
-  palette "models/players/monsters/gladiatr/skin_light.tga" 1,212,78,60
-  palette "models/players/monsters/gladiatr/skin_light.png" 1,212,78,60
-  palette "models/players/monsters/gladiatr/skin_bump.tga" 30,130,124,227
-  palette "models/players/monsters/gladiatr/skin_bump.png" 30,130,124,227
-  palette "models/players/monsters/gladiatr/skin.tga" 255,46,33,28
-  palette "models/players/monsters/gladiatr/skin.jpg" 255,46,33,29
-  palette "models/players/monsters/gladiatr/pain_rgh.tga" 255,121,0,0
-  palette "models/players/monsters/gladiatr/pain_rgh.jpg" 255,121,2,3
-  palette "models/players/monsters/gladiatr/pain_light.tga" 1,0,0,0
-  palette "models/players/monsters/gladiatr/pain_light.png" 1,0,0,0
-  palette "models/players/monsters/gladiatr/pain_bump.tga" 28,130,124,228
-  palette "models/players/monsters/gladiatr/pain_bump.png" 28,130,124,228
-  palette "models/players/monsters/gladiatr/pain.tga" 255,46,29,25
-  palette "models/players/monsters/gladiatr/pain.jpg" 255,46,30,26
-  palette "models/players/monsters/flyer/skin_rgh.tga" 255,128,0,0
-  palette "models/players/monsters/flyer/skin_rgh.jpg" 255,128,1,2
-  palette "models/players/monsters/flyer/skin_bump.tga" 24,126,127,230
-  palette "models/players/monsters/flyer/skin_bump.png" 24,126,127,230
-  palette "models/players/monsters/flyer/skin.tga" 255,40,26,22
-  palette "models/players/monsters/flyer/skin.jpg" 255,40,27,22
-  palette "models/players/monsters/flyer/pain_rgh.tga" 255,122,0,0
-  palette "models/players/monsters/flyer/pain_rgh.jpg" 255,122,2,2
-  palette "models/players/monsters/flyer/pain_light.tga" 0,0,0,0
-  palette "models/players/monsters/flyer/pain_light.png" 0,0,0,0
-  palette "models/players/monsters/flyer/pain_bump.tga" 23,126,127,229
-  palette "models/players/monsters/flyer/pain_bump.png" 23,126,127,229
-  palette "models/players/monsters/flyer/pain.tga" 255,39,25,21
-  palette "models/players/monsters/flyer/pain.jpg" 255,39,26,21
-  palette "models/players/monsters/float/skin_rgh.tga" 255,123,0,0
-  palette "models/players/monsters/float/skin_rgh.jpg" 255,124,1,2
-  palette "models/players/monsters/float/skin_light.tga" 1,67,24,7
-  palette "models/players/monsters/float/skin_light.png" 1,67,24,7
-  palette "models/players/monsters/float/skin_bump.tga" 14,127,126,249
-  palette "models/players/monsters/float/skin_bump.png" 14,127,126,249
-  palette "models/players/monsters/float/skin.tga" 255,30,16,11
-  palette "models/players/monsters/float/skin.jpg" 255,30,17,13
-  palette "models/players/monsters/float/pain_rgh.tga" 255,122,0,0
-  palette "models/players/monsters/float/pain_rgh.jpg" 255,122,1,2
-  palette "models/players/monsters/float/pain_light.tga" 0,0,0,0
-  palette "models/players/monsters/float/pain_light.png" 0,0,0,0
-  palette "models/players/monsters/float/pain_bump.tga" 14,127,127,237
-  palette "models/players/monsters/float/pain_bump.png" 14,127,127,237
-  palette "models/players/monsters/float/pain.tga" 255,29,17,12
-  palette "models/players/monsters/float/pain.jpg" 255,29,17,13
-  palette "models/players/monsters/flipper/skin_rgh.tga" 255,51,0,0
-  palette "models/players/monsters/flipper/skin_rgh.jpg" 255,55,2,6
-  palette "models/players/monsters/flipper/skin_bump.tga" 42,127,127,255
-  palette "models/players/monsters/flipper/skin_bump.png" 42,127,127,255
-  palette "models/players/monsters/flipper/skin.tga" 255,54,50,47
-  palette "models/players/monsters/flipper/skin.jpg" 255,52,49,46
-  palette "models/players/monsters/flipper/pain_rgh.tga" 255,49,0,0
-  palette "models/players/monsters/flipper/pain_rgh.jpg" 255,53,2,6
-  palette "models/players/monsters/flipper/pain_bump.tga" 41,126,127,242
-  palette "models/players/monsters/flipper/pain_bump.png" 41,126,127,242
-  palette "models/players/monsters/flipper/pain.tga" 255,54,48,45
-  palette "models/players/monsters/flipper/pain.jpg" 255,53,47,44
-  palette "models/players/monsters/brain/skin_rgh.tga" 255,128,0,0
-  palette "models/players/monsters/brain/skin_rgh.jpg" 255,128,1,2
-  palette "models/players/monsters/brain/skin_bump.tga" 26,126,126,247
-  palette "models/players/monsters/brain/skin_bump.png" 26,126,126,247
-  palette "models/players/monsters/brain/skin.tga" 255,48,30,23
-  palette "models/players/monsters/brain/skin.jpg" 255,48,30,24
-  palette "models/players/monsters/brain/pain_rgh.tga" 255,121,19,19
-  palette "models/players/monsters/brain/pain_rgh.jpg" 255,119,19,15
-  palette "models/players/monsters/brain/pain_light.tga" 0,0,0,0
-  palette "models/players/monsters/brain/pain_light.png" 0,0,0,0
-  palette "models/players/monsters/brain/pain_bump.tga" 26,126,125,236
-  palette "models/players/monsters/brain/pain_bump.png" 26,126,125,236
-  palette "models/players/monsters/brain/pain.tga" 255,47,28,21
-  palette "models/players/monsters/brain/pain.jpg" 255,47,28,23
-  palette "models/players/monsters/boss1/skin_rgh.tga" 255,128,0,0
-  palette "models/players/monsters/boss1/skin_rgh.jpg" 255,128,1,2
-  palette "models/players/monsters/boss1/skin_light.tga" 2,210,78,7
-  palette "models/players/monsters/boss1/skin_light.png" 2,210,78,7
-  palette "models/players/monsters/boss1/skin_bump.tga" 27,128,127,240
-  palette "models/players/monsters/boss1/skin_bump.png" 27,128,127,240
-  palette "models/players/monsters/boss1/skin.tga" 255,45,34,27
-  palette "models/players/monsters/boss1/skin.jpg" 255,43,35,29
-  palette "models/players/monsters/boss1/pain_rgh.tga" 255,123,0,0
-  palette "models/players/monsters/boss1/pain_rgh.jpg" 255,123,1,2
-  palette "models/players/monsters/boss1/pain_light.tga" 0,0,0,0
-  palette "models/players/monsters/boss1/pain_light.png" 0,0,0,0
-  palette "models/players/monsters/boss1/pain_bump.tga" 27,127,126,238
-  palette "models/players/monsters/boss1/pain_bump.png" 27,127,126,238
-  palette "models/players/monsters/boss1/pain.tga" 255,43,31,25
-  palette "models/players/monsters/boss1/pain.jpg" 255,42,32,27
-  palette "models/players/monsters/boss2/skin_rgh.tga" 255,128,0,0
-  palette "models/players/monsters/boss2/skin_rgh.jpg" 255,129,1,2
-  palette "models/players/monsters/boss2/skin_light.tga" 1,90,121,145
-  palette "models/players/monsters/boss2/skin_light.png" 1,90,121,145
-  palette "models/players/monsters/boss2/skin_bump.tga" 23,128,126,242
-  palette "models/players/monsters/boss2/skin_bump.png" 23,128,126,242
-  palette "models/players/monsters/boss2/skin.tga" 255,35,25,21
-  palette "models/players/monsters/boss2/skin.jpg" 255,35,26,22
-  palette "models/players/monsters/boss2/pain_rgh.tga" 255,123,0,0
-  palette "models/players/monsters/boss2/pain_rgh.jpg" 255,123,2,2
-  palette "models/players/monsters/boss2/pain_light.tga" 0,0,0,0
-  palette "models/players/monsters/boss2/pain_light.png" 0,0,0,0
-  palette "models/players/monsters/boss2/pain_bump.tga" 22,128,126,239
-  palette "models/players/monsters/boss2/pain_bump.png" 22,128,126,239
-  palette "models/players/monsters/boss2/pain.tga" 255,35,23,19
-  palette "models/players/monsters/boss2/pain.jpg" 255,35,24,20
-  palette "models/players/monsters/berserk/skin_rgh.tga" 255,103,0,0
-  palette "models/players/monsters/berserk/skin_rgh.jpg" 255,101,2,1
-  palette "models/players/monsters/berserk/skin_light.tga" 0,202,1,1
-  palette "models/players/monsters/berserk/skin_light.png" 0,202,1,1
-  palette "models/players/monsters/berserk/skin_bump.tga" 18,127,126,250
-  palette "models/players/monsters/berserk/skin_bump.png" 18,127,126,250
-  palette "models/players/monsters/berserk/skin.tga" 255,28,21,19
-  palette "models/players/monsters/berserk/skin.jpg" 255,27,22,20
-  palette "models/players/monsters/berserk/pain_rgh.tga" 255,120,15,17
-  palette "models/players/monsters/berserk/pain_rgh.jpg" 255,118,16,13
-  palette "models/players/monsters/berserk/pain_light.tga" 0,0,0,0
-  palette "models/players/monsters/berserk/pain_light.png" 0,0,0,0
-  palette "models/players/monsters/berserk/pain_bump.tga" 17,127,126,243
-  palette "models/players/monsters/berserk/pain_bump.png" 17,127,126,243
-  palette "models/players/monsters/berserk/pain.tga" 255,27,19,17
-  palette "models/players/monsters/berserk/pain.jpg" 255,25,19,18
-  palette "models/players/monsters/bitch/skin_rgh.tga" 255,128,0,0
-  palette "models/players/monsters/bitch/skin_rgh.jpg" 255,128,1,2
-  palette "models/players/monsters/bitch/skin_light.tga" 0,159,40,15
-  palette "models/players/monsters/bitch/skin_light.png" 0,159,40,15
-  palette "models/players/monsters/bitch/skin_bump.tga" 27,127,126,231
-  palette "models/players/monsters/bitch/skin_bump.png" 27,127,126,231
-  palette "models/players/monsters/bitch/skin.tga" 255,42,31,24
-  palette "models/players/monsters/bitch/skin.jpg" 255,42,32,24
-  palette "models/players/monsters/bitch/pain_rgh.tga" 255,122,0,0
-  palette "models/players/monsters/bitch/pain_rgh.jpg" 255,122,2,3
-  palette "models/players/monsters/bitch/pain_light.tga" 0,0,0,0
-  palette "models/players/monsters/bitch/pain_light.png" 0,0,0,0
-  palette "models/players/monsters/bitch/pain_bump.tga" 24,126,127,239
-  palette "models/players/monsters/bitch/pain_bump.png" 24,126,127,239
-  palette "models/players/monsters/bitch/pain.tga" 255,38,27,20
-  palette "models/players/monsters/bitch/pain.jpg" 255,38,27,21
-  palette "models/players/janet/Stroggs/stroggs_red.tga" 208,84,53,45
-  palette "models/players/janet/Stroggs/stroggs_red.png" 208,84,53,45
-  palette "models/players/janet/Stroggs/stroggs_blu.tga" 208,68,66,61
-  palette "models/players/janet/Stroggs/stroggs_blu.png" 208,68,66,61
-  palette "models/players/janet/The Fallen/thefallen_red.tga" 231,87,37,29
-  palette "models/players/janet/The Fallen/thefallen_red.png" 231,87,37,29
-  palette "models/players/janet/Pagans/pagans_red.tga" 222,89,63,53
-  palette "models/players/janet/Pagans/pagans_red.png" 222,89,63,53
-  palette "models/players/janet/Pagans/pagans_blu.tga" 222,77,76,70
-  palette "models/players/janet/Pagans/pagans_blu.png" 222,77,76,70
-  palette "models/players/janet/Intruders/intruders_red.tga" 230,112,69,57
-  palette "models/players/janet/Intruders/intruders_red.png" 230,112,69,57
-  palette "models/players/janet/Intruders/intruders_blu.tga" 230,97,99,88
-  palette "models/players/janet/Intruders/intruders_blu.png" 230,97,99,88
-  palette "models/players/janet/Crusaders/crusaders_red.tga" 220,101,52,39
-  palette "models/players/janet/Crusaders/crusaders_red.png" 220,101,52,39
-  palette "models/players/janet/Crusaders/crusaders_blu.tga" 220,59,73,83
-  palette "models/players/janet/Crusaders/crusaders_blu.png" 220,59,73,83
-  palette "models/players/james/Stroggs/stroggs_red.tga" 215,92,59,51
-  palette "models/players/james/Stroggs/stroggs_red.png" 215,92,59,51
-  palette "models/players/james/Stroggs/stroggs_blu.tga" 215,74,74,68
-  palette "models/players/james/Stroggs/stroggs_blu.png" 215,74,74,68
-  palette "models/players/james/The Fallen/thefallen_red.tga" 193,91,44,33
-  palette "models/players/james/The Fallen/thefallen_red.png" 193,91,44,33
-  palette "models/players/james/The Fallen/thefallen_blu.tga" 193,51,67,72
-  palette "models/players/james/The Fallen/thefallen_blu.png" 193,51,67,72
-  palette "models/players/james/Pagans/pagans_red.tga" 216,104,70,52
-  palette "models/players/james/Pagans/pagans_red.png" 216,104,70,52
-  palette "models/players/james/Pagans/pagans_blu.tga" 216,85,82,69
-  palette "models/players/james/Pagans/pagans_blu.png" 216,85,82,69
-  palette "models/players/james/Intruders/intruders_red.tga" 237,108,59,53
-  palette "models/players/james/Intruders/intruders_red.png" 237,108,59,53
-  palette "models/players/james/Intruders/intruders_blu.tga" 237,81,88,82
-  palette "models/players/james/Intruders/intruders_blu.png" 237,81,88,82
-  palette "models/players/james/Crusaders/crusaders_red.tga" 216,86,41,35
-  palette "models/players/james/Crusaders/crusaders_red.png" 216,86,41,35
-  palette "models/players/james/Crusaders/crusaders_blu.tga" 216,59,59,62
-  palette "models/players/james/Crusaders/crusaders_blu.png" 216,59,59,62
-  palette "models/players/heads/james/james_red.tga" 204,50,35,30
-  palette "models/players/heads/james/james_red.png" 204,50,35,30
-  palette "models/players/heads/james/james_e_red.tga" 198,10,1,0
-  palette "models/players/heads/james/james_e_red.png" 198,10,1,0
-  palette "models/players/heads/james/james_e_blu.tga" 198,0,9,10
-  palette "models/players/heads/james/james_e_blu.png" 198,0,9,10
-  palette "models/players/heads/james/james_blu.tga" 164,22,43,40
-  palette "models/players/heads/james/james_blu.png" 164,22,43,40
-  palette "models/players/heads/james/icon_red.tga" 164,148,57,45
-  palette "models/players/heads/james/icon_red.png" 164,148,57,45
-  palette "models/players/heads/james/icon_default.tga" 176,139,81,70
-  palette "models/players/heads/james/icon_default.png" 176,139,81,70
-  palette "models/players/heads/james/icon_blue.tga" 209,59,103,99
-  palette "models/players/heads/james/icon_blue.png" 209,59,103,99
-  palette "models/players/heads/flayer/icon_red.tga" 174,137,79,60
-  palette "models/players/heads/flayer/icon_red.png" 174,137,79,60
-  palette "models/players/heads/flayer/icon_default.tga" 174,137,79,60
-  palette "models/players/heads/flayer/icon_default.png" 174,137,79,60
-  palette "models/players/heads/flayer/icon_blue.tga" 199,96,119,117
-  palette "models/players/heads/flayer/icon_blue.png" 199,96,119,117
-  palette "models/players/heads/flayer/flayereye.tga" 195,173,124,56
-  palette "models/players/heads/flayer/flayereye.png" 195,173,124,56
-  palette "models/players/heads/flayer/flayer_t_red.tga" 255,89,76,58
-  palette "models/players/heads/flayer/flayer_t_red.jpg" 255,90,78,60
-  palette "models/players/heads/flayer/flayer_t_blue.tga" 255,75,85,91
-  palette "models/players/heads/flayer/flayer_t_blue.jpg" 255,76,86,87
-  palette "models/players/heads/flayer/flayer_h_red.tga" 255,86,46,39
-  palette "models/players/heads/flayer/flayer_h_red.jpg" 255,85,46,39
-  palette "models/players/heads/flayer/flayer_h_blue.tga" 255,52,55,53
-  palette "models/players/heads/flayer/flayer_h_blue.jpg" 255,52,56,54
-  palette "models/players/heads/Ursula/ursula_red.tga" 255,119,57,38
-  palette "models/players/heads/Ursula/ursula_red.jpg" 255,118,57,39
-  palette "models/players/heads/Ursula/ursula_e.tga" 255,7,8,7
-  palette "models/players/heads/Ursula/ursula_e.jpg" 255,8,8,8
-  palette "models/players/heads/Ursula/ursula_blu.tga" 255,71,79,72
-  palette "models/players/heads/Ursula/ursula_blu.jpg" 255,71,79,73
-  palette "models/players/heads/Ursula/icon_red.tga" 188,128,69,51
-  palette "models/players/heads/Ursula/icon_red.png" 188,128,69,51
-  palette "models/players/heads/Ursula/icon_default.tga" 188,128,69,51
-  palette "models/players/heads/Ursula/icon_default.png" 188,128,69,51
-  palette "models/players/heads/Ursula/icon_blue.tga" 204,98,129,125
-  palette "models/players/heads/Ursula/icon_blue.png" 204,98,129,125
-  palette "models/players/heads/Morgan/morgan_red.tga" 204,73,73,70
-  palette "models/players/heads/Morgan/morgan_red.png" 204,73,73,70
-  palette "models/players/heads/Morgan/morgan_f.tga" 255,117,92,81
-  palette "models/players/heads/Morgan/morgan_f.jpg" 255,116,92,81
-  palette "models/players/heads/Morgan/morgan_blu.tga" 204,71,74,72
-  palette "models/players/heads/Morgan/morgan_blu.png" 204,71,74,72
-  palette "models/players/heads/Morgan/icon_red.tga" 219,103,64,58
-  palette "models/players/heads/Morgan/icon_red.png" 219,103,64,58
-  palette "models/players/heads/Morgan/icon_default.tga" 219,103,64,58
-  palette "models/players/heads/Morgan/icon_default.png" 219,103,64,58
-  palette "models/players/heads/Morgan/icon_blue.tga" 229,64,86,89
-  palette "models/players/heads/Morgan/icon_blue.png" 229,64,86,89
-  palette "models/players/heads/Megan/megan2.tga" 159,58,69,76
-  palette "models/players/heads/Megan/megan2.png" 159,58,69,76
-  palette "models/players/heads/Megan/megan1_red.tga" 214,67,65,67
-  palette "models/players/heads/Megan/megan1_red.png" 214,67,65,67
-  palette "models/players/heads/Megan/megan1_blu.tga" 214,63,65,70
-  palette "models/players/heads/Megan/megan1_blu.png" 214,63,65,70
-  palette "models/players/heads/Megan/icon_red.tga" 208,101,95,95
-  palette "models/players/heads/Megan/icon_red.png" 208,101,95,95
-  palette "models/players/heads/Megan/icon_default.tga" 208,101,95,95
-  palette "models/players/heads/Megan/icon_default.png" 208,101,95,95
-  palette "models/players/heads/Megan/icon_blue.tga" 236,78,80,79
-  palette "models/players/heads/Megan/icon_blue.png" 236,78,80,79
-  palette "models/players/heads/Neptune/neptune_red.tga" 255,131,59,37
-  palette "models/players/heads/Neptune/neptune_red.jpg" 255,133,59,42
-  palette "models/players/heads/Neptune/neptune_blue.tga" 255,60,91,91
-  palette "models/players/heads/Neptune/neptune_blue.jpg" 255,61,91,91
-  palette "models/players/heads/Neptune/neptune2.tga" 92,40,37,32
-  palette "models/players/heads/Neptune/neptune2.png" 92,40,37,32
-  palette "models/players/heads/Neptune/icon_red.tga" 201,143,70,49
-  palette "models/players/heads/Neptune/icon_red.png" 201,143,70,49
-  palette "models/players/heads/Neptune/icon_default.tga" 201,143,70,49
-  palette "models/players/heads/Neptune/icon_default.png" 201,143,70,49
-  palette "models/players/heads/Neptune/icon_blue.tga" 181,72,111,112
-  palette "models/players/heads/Neptune/icon_blue.png" 181,72,111,112
-  palette "models/players/heads/Khan/khan_red.tga" 255,126,96,80
-  palette "models/players/heads/Khan/khan_red.jpg" 255,125,97,81
-  palette "models/players/heads/Khan/khan_f.tga" 36,43,42,40
-  palette "models/players/heads/Khan/khan_f.png" 36,43,42,40
-  palette "models/players/heads/Khan/khan_blu.tga" 255,115,105,93
-  palette "models/players/heads/Khan/khan_blu.jpg" 255,113,106,93
-  palette "models/players/heads/Khan/icon_red.tga" 175,157,94,75
-  palette "models/players/heads/Khan/icon_red.png" 175,157,94,75
-  palette "models/players/heads/Khan/icon_default.tga" 175,157,94,75
-  palette "models/players/heads/Khan/icon_default.png" 175,157,94,75
-  palette "models/players/heads/Khan/icon_blue.tga" 168,94,110,104
-  palette "models/players/heads/Khan/icon_blue.png" 168,94,110,104
-  palette "models/players/heads/Janet/janet_red.tga" 177,83,56,46
-  palette "models/players/heads/Janet/janet_red.png" 177,83,56,46
-  palette "models/players/heads/Janet/janet_blu.tga" 177,69,76,69
-  palette "models/players/heads/Janet/janet_blu.png" 177,69,76,69
-  palette "models/players/heads/Janet/icon_red.tga" 196,130,82,72
-  palette "models/players/heads/Janet/icon_red.png" 196,130,82,72
-  palette "models/players/heads/Janet/icon_default.tga" 223,145,98,87
-  palette "models/players/heads/Janet/icon_default.png" 223,145,98,87
-  palette "models/players/heads/Janet/icon_blue.tga" 184,105,131,127
-  palette "models/players/heads/Janet/icon_blue.png" 184,105,131,127
-  palette "models/players/heads/Gaunt/icon_red.tga" 206,164,90,64
-  palette "models/players/heads/Gaunt/icon_red.png" 206,164,90,64
-  palette "models/players/heads/Gaunt/icon_default.tga" 206,164,90,64
-  palette "models/players/heads/Gaunt/icon_default.png" 206,164,90,64
-  palette "models/players/heads/Gaunt/icon_blue.tga" 173,116,136,140
-  palette "models/players/heads/Gaunt/icon_blue.png" 173,116,136,140
-  palette "models/players/heads/Gaunt/gaunt_red.tga" 255,138,76,54
-  palette "models/players/heads/Gaunt/gaunt_red.jpg" 255,140,75,58
-  palette "models/players/heads/Gaunt/gaunt_e.tga" 255,14,17,15
-  palette "models/players/heads/Gaunt/gaunt_e.jpg" 255,14,16,16
-  palette "models/players/heads/Gaunt/gaunt_blu.tga" 255,95,107,111
-  palette "models/players/heads/Gaunt/gaunt_blu.jpg" 255,95,107,111
-  palette "models/players/heads/Gammy/icon_red.tga" 183,125,78,61
-  palette "models/players/heads/Gammy/icon_red.png" 183,125,78,61
-  palette "models/players/heads/Gammy/icon_default.tga" 183,125,78,61
-  palette "models/players/heads/Gammy/icon_default.png" 183,125,78,61
-  palette "models/players/heads/Gammy/icon_blue.tga" 179,83,103,101
-  palette "models/players/heads/Gammy/icon_blue.png" 179,83,103,101
-  palette "models/players/heads/Gammy/gammy_blu.tga" 255,66,74,71
-  palette "models/players/heads/Gammy/gammy_blu.jpg" 255,65,75,71
-  palette "models/players/heads/Gammy/gammy3.tga" 146,49,40,35
-  palette "models/players/heads/Gammy/gammy3.png" 146,49,40,35
-  palette "models/players/heads/Gammy/gammy2.tga" 122,66,58,52
-  palette "models/players/heads/Gammy/gammy2.png" 122,66,58,52
-  palette "models/players/heads/Gammy/gamm_red.tga" 255,97,56,41
-  palette "models/players/heads/Gammy/gamm_red.jpg" 255,98,56,42
-  palette "models/players/heads/Callisto/icon_red.tga" 229,177,83,78
-  palette "models/players/heads/Callisto/icon_red.png" 229,177,83,78
-  palette "models/players/heads/Callisto/icon_default.tga" 229,177,83,78
-  palette "models/players/heads/Callisto/icon_default.png" 229,177,83,78
-  palette "models/players/heads/Callisto/icon_blue.tga" 230,107,109,137
-  palette "models/players/heads/Callisto/icon_blue.png" 230,107,109,137
-  palette "models/players/heads/Callisto/callisto_red.tga" 255,130,34,34
-  palette "models/players/heads/Callisto/callisto_red.jpg" 255,128,36,31
-  palette "models/players/heads/Callisto/callisto_blu.tga" 255,49,75,137
-  palette "models/players/heads/Callisto/callisto_blu.jpg" 255,50,75,138
-  palette "models/players/heads/Callisto/callisto2.tga" 255,123,90,78
-  palette "models/players/heads/Callisto/callisto2.jpg" 255,121,91,79
-  palette "models/players/heads/Callisto/callisto.tga" 255,122,89,77
-  palette "models/players/heads/Callisto/callisto.jpg" 255,120,90,78
-  palette "models/mapobjects/finko/standing_lights/standing_lightg.jpg" 255,1,1,1
-  palette "models/mapobjects/finko/standing_lights/standing_light2.tga" 255,49,47,46
-  palette "models/mapobjects/finko/standing_lights/standing_light2.jpg" 255,49,48,47
-  palette "models/mapobjects/finko/standing_lights/standing_light1_g.jpg" 255,8,7,6
-  palette "models/mapobjects/finko/standing_lights/standing_light1.tga" 255,49,47,46
-  palette "models/mapobjects/finko/standing_lights/standing_light1.jpg" 255,49,48,47
-  palette "models/players/monsters/boss3/jorg/skin_rgh.tga" 255,128,0,0
-  palette "models/players/monsters/boss3/jorg/skin_rgh.jpg" 255,128,1,2
-  palette "models/players/monsters/boss3/jorg/skin_bump.tga" 29,127,126,241
-  palette "models/players/monsters/boss3/jorg/skin_bump.png" 29,127,126,241
-  palette "models/players/monsters/boss3/jorg/skin.tga" 255,52,35,26
-  palette "models/players/monsters/boss3/jorg/skin.jpg" 255,51,36,27
-  palette "models/players/monsters/boss3/rider/skin_rgh.tga" 255,127,0,0
-  palette "models/players/monsters/boss3/rider/skin_rgh.jpg" 255,127,1,1
-  palette "models/players/monsters/boss3/rider/skin_light.tga" 2,225,82,66
-  palette "models/players/monsters/boss3/rider/skin_light.png" 2,225,82,66
-  palette "models/players/monsters/boss3/rider/skin_bump.tga" 20,127,127,247
-  palette "models/players/monsters/boss3/rider/skin_bump.png" 20,127,127,247
-  palette "models/players/monsters/boss3/rider/skin.tga" 255,36,25,18
-  palette "models/players/monsters/boss3/rider/skin.jpg" 255,36,25,20
-  palette "models/players/monsters/boss3/rider/pain_rgh.tga" 255,126,0,0
-  palette "models/players/monsters/boss3/rider/pain_rgh.jpg" 255,126,1,2
-  palette "models/players/monsters/boss3/rider/pain_light.tga" 0,0,0,0
-  palette "models/players/monsters/boss3/rider/pain_light.png" 0,0,0,0
-  palette "models/players/monsters/boss3/rider/pain_bump.tga" 22,127,127,247
-  palette "models/players/monsters/boss3/rider/pain_bump.png" 22,127,127,247
-  palette "models/players/monsters/boss3/rider/pain.tga" 255,39,24,18
-  palette "models/players/monsters/boss3/rider/pain.jpg" 255,38,24,19
-  palette "textures/oa/water.jpg" 255,2,28,39
-  palette "textures/oa/oldfiar2.jpg" 255,85,54,14
-  palette "textures/oa/grenfiar.jpg" 255,89,43,23
-  palette "textures/oa/flamelet.jpg" 255,83,15,15
-  palette "textures/oa/fiar2.jpg" 255,61,30,2
-  palette "textures/oa/fiar.jpg" 255,48,11,3
-  palette "textures/oa/bloodbg.jpg" 255,74,21,20
-  palette "textures/oa/bfgfiar.jpg" 255,28,60,9
-  palette "textures/liquids/lavahelldark.tga" 255,126,35,13
-  palette "textures/liquids/lavahelldark.jpg" 255,126,35,13
-  palette "gfx/damage/hole_lg_mrk.tga" 255,86,86,86
-  palette "gfx/damage/hole_lg_mrk.jpeg" 255,87,87,87
-  palette "gfx/damage/burn_med_mrk.tga" 255,69,69,69
-  palette "gfx/damage/burn_med_mrk.jpeg" 255,70,70,70
-  palette "gfx/damage/bullet_mrk.tga" 255,79,78,78
-  palette "gfx/damage/bullet_mrk.jpeg" 255,80,80,80
-  palette "textures/oa/muzzle/muz8.tga" 255,23,23,23
-  palette "textures/oa/muzzle/muz7.tga" 255,30,30,30
-  palette "textures/oa/muzzle/muz6.tga" 255,25,25,25
-  palette "textures/oa/muzzle/muz5.tga" 255,45,45,45
-  palette "textures/oa/muzzle/muz4.tga" 255,33,33,33
-  palette "textures/oa/muzzle/muz3.tga" 255,40,40,40
-  palette "textures/oa/muzzle/muz2.tga" 255,19,19,19
-  palette "textures/oa/muzzle/muz1.tga" 255,27,27,27
-  palette "models/powerups/ammo/flamammo copy 2.tga" 255,151,67,20
-  palette "models/players/wrath/icon_default.tga" 255,17,16,14
-  palette "models/players/sealord/icon_default.tga" 255,124,74,65
-  palette "models/players/metlar/icon_default.tga" 255,55,54,66
-  palette "models/players/enyo/icon_default.tga" 255,47,34,34
-  palette "textures/oa/muzzle/muz8.jpg" 255,24,24,24
-  palette "textures/oa/muzzle/muz7.jpg" 255,31,31,31
-  palette "textures/oa/muzzle/muz6.jpg" 255,25,25,25
-  palette "textures/oa/muzzle/muz5.jpg" 255,46,46,46
-  palette "textures/oa/muzzle/muz4.jpg" 255,33,33,33
-  palette "textures/oa/muzzle/muz3.jpg" 255,40,40,40
-  palette "textures/oa/muzzle/muz2.jpg" 255,19,19,19
-  palette "textures/oa/muzzle/muz1.jpg" 255,27,27,27
-  palette "models/powerups/ammo/flamammo copy 2.jpg" 255,151,67,23
-  palette "models/players/wrath/icon_default.jpg" 255,17,16,15
-  palette "models/players/sealord/icon_default.jpg" 255,124,74,65
-  palette "models/players/metlar/icon_default.jpg" 255,55,54,67
-  palette "models/players/enyo/icon_default.jpg" 255,48,34,35
-  palette "fonts/fontImage_1_20.jpg" 255,255,255,255
-  palette "icons/norune.jpg" 255,254,126,0
-  palette "maps/terrain_45x512_end_tracemap.jpg" 255,94,244,3
-  palette "maps/terrain-test_tracemap.jpg" 255,70,181,2
-  palette "maps/q3dm1_tracemap.jpg" 255,24,34,53
-  palette "maps/mpterrax_tracemap.jpg" 255,43,43,3
-  palette "ui2/assets/scrollbar.jpg" 255,0,0,0
-  palette "textures/wvwq3dm7/wvw_splash.jpg" 255,22,36,41
-  palette "textures/wvwq3dm7/wvw7_weapflare.jpg" 255,20,20,19
-  palette "textures/skies/nightsky_nocloud.jpg" 255,19,19,24
-  palette "textures/liquids/proto_gruel2.jpg" 255,14,25,26
-  palette "textures/sfx/launchpad_blocks17.jpg" 255,95,85,82
-  palette "textures/sfx/hologirl2.jpg" 255,27,33,31
-  palette "textures/sfx/electricslime_old.jpg" 255,116,34,38
-  palette "textures/sfx/bounce_dirt.jpg" 255,71,59,50
-  palette "textures/sfx/blocks17g_jumpad.jpg" 255,79,69,59
-  palette "textures/gothic_wall/jumptower_top.jpg" 255,68,53,46
-  palette "textures/gothic_wall/jumptower_bottom.jpg" 255,54,37,32
-  palette "textures/gothic_wall/iron01_f2.jpg" 255,60,45,40
-  palette "textures/gothic_door/tim_dmarch03.jpg" 255,22,18,16
-  palette "textures/gothic_door/skullarch_c.jpg" 255,20,10,6
-  palette "textures/gothic_door/skullarch_a.jpg" 255,61,49,44
-  palette "textures/gothic_door/skull_door_f.jpg" 255,70,65,65
-  palette "textures/gothic_door/skull_door_e.jpg" 255,77,69,66
-  palette "textures/gothic_door/skull_door_d.jpg" 255,78,72,71
-  palette "textures/gothic_door/skull_door_c.jpg" 255,71,63,60
-  palette "textures/gothic_door/skull_door_b.jpg" 255,66,55,50
-  palette "textures/gothic_door/skull_door_a.jpg" 255,78,69,66
-  palette "textures/gothic_door/metal_door_d.jpg" 255,75,66,64
-  palette "textures/gothic_door/metal_door_c.jpg" 255,63,52,48
-  palette "textures/gothic_door/metal_door_b.jpg" 255,70,62,59
-  palette "textures/gothic_door/metal_door_a.jpg" 255,74,66,64
-  palette "textures/proto2/lightbulb2.jpg" 255,28,26,26
-  palette "textures/gothic_trim/metalsupport4small.jpg" 255,60,53,44
-  palette "textures/gothic_trim/km_arena1tower_short.jpg" 255,92,63,67
-  palette "textures/gothic_block/largerblock3b.jpg" 255,88,59,40
-  palette "textures/gothic_block/gkc14e.jpg" 255,70,55,46
-  palette "textures/common/mirror1.jpg" 255,0,0,0
-  palette "textures/common/invisible.jpg" 255,0,0,0
-  palette "textures/chili_sfx/mirror.jpg" 255,0,0,0
-  palette "textures/effects/redflagmap.jpg" 255,15,16,48
-  palette "textures/effects/blueflagmap.jpg" 255,59,8,7
-  palette "textures/ctf/towerback.jpg" 255,48,43,44
-  palette "textures/ctf/test2.jpg" 255,31,30,82
-  palette "textures/base_support/cable_trans.jpg" 255,41,36,29
-  palette "models/powerups/scout2.jpg" 255,6,43,11
-  palette "models/powerups/guard2.jpg" 255,11,2,37
-  palette "models/powerups/doubler2.jpg" 255,48,8,5
-  palette "models/weaphits3/bullet_0007.jpg" 255,0,0,0
-  palette "models/weaphits3/bullet_0006.jpg" 255,0,0,0
-  palette "models/weapons2/machinegun2/machinegun.jpg" 255,27,24,23
-  palette "models/players/uriel/color_h.jpg" 255,102,82,60
-  palette "models/players/ranger/color_h.jpg" 255,85,57,43
-  palette "models/players/mynx/color_x.jpg" 255,73,53,45
-  palette "models/players/mynx/color_h.jpg" 255,55,34,22
-  palette "models/players/marauder/null.jpg" 255,0,0,0
-  palette "models/players/fritzkrieg/fritz_fx2.jpg" 255,126,117,118
-  palette "models/players/anarki/color_h.jpg" 255,52,33,25
-  palette "models/mapobjects/lt1_cooper/cooperwin.jpg" 255,112,116,118
-  palette "models/mapobjects/multiplant/invisible.jpg" 255,0,0,0
-  palette "models/mapobjects/console/under.jpg" 255,10,8,7
-  palette "models/mapobjects/console/sphere4.jpg" 255,3,27,16
-  palette "models/mapobjects/banner/q3banner02x.jpg" 255,19,12,3
-  palette "models/players/monsters/tank/skin_light.jpg" 255,0,1,1
-  palette "models/players/monsters/tank/pain_light.jpg" 255,0,0,0
-  palette "models/players/monsters/stalker/skin_light.jpg" 255,0,0,0
-  palette "models/players/monsters/parasite/skin_light.jpg" 255,0,0,0
-  palette "models/players/monsters/parasite/pain_light.jpg" 255,0,0,0
-  palette "models/players/monsters/soldier/skin_ssp_light.jpg" 255,0,0,0
-  palette "models/players/monsters/soldier/skin_ss_light.jpg" 255,0,0,0
-  palette "models/players/monsters/soldier/skin_ltp_light.jpg" 255,0,0,0
-  palette "models/players/monsters/soldier/pain_light.jpg" 255,0,0,0
-  palette "models/players/monsters/medic/pain_light.jpg" 255,0,0,0
-  palette "models/players/monsters/infantry/pain_light.jpg" 255,0,0,0
-  palette "models/players/monsters/gunner/pain_light.jpg" 255,0,0,0
-  palette "models/players/monsters/hover/pain_light.jpg" 255,0,0,0
-  palette "models/players/monsters/flyer/pain_light.jpg" 255,0,0,0
-  palette "models/players/monsters/brain/pain_light.jpg" 255,0,0,0
-  palette "models/players/monsters/float/pain_light.jpg" 255,0,0,0
-  palette "models/players/monsters/boss2/pain_light.jpg" 255,0,0,0
-  palette "models/players/monsters/berserk/skin_light.jpg" 255,0,0,0
-  palette "models/players/monsters/berserk/pain_light.jpg" 255,0,0,0
-  palette "models/players/monsters/bitch/skin_light.jpg" 255,0,0,0
-  palette "models/players/monsters/bitch/pain_light.jpg" 255,0,0,0
-  palette "models/players/monsters/boss1/pain_light.jpg" 255,0,0,0
-  palette "models/players/monsters/boss3/rider/pain_light.jpg" 255,0,0,0
-  palette "models/weaphits5/kamiwave02.jpg" 255,20,16,15
-  palette "models/weaphits5/kamiwave01.jpg" 255,37,14,7
-  palette "models/weaphits5/kamik01.jpg" 255,71,33,17
-  palette "models/weaphits5/kam03b.jpg" 255,38,18,9
-  palette "models/weaphits5/kam03.jpg" 255,38,18,9
-  palette "models/weaphits5/bfg05.jpg" 255,12,47,11
-  palette "models/weaphits5/bfg04.jpg" 255,19,40,18
-  palette "models/backpack/backpack.jpg" 255,66,48,37
-  palette "models/ammo/strogg_grenade2.jpg" 255,86,42,23
-  palette "models/ammo/slipgate_grenade.jpg" 255,64,17,9
+  palette "textures/13gate_xt/env/filter_up.jpg" 255,255,255,255
+  palette "textures/13gate_xt/env/filter_rt.jpg" 255,125,125,125
+  palette "textures/13gate_xt/env/filter_lf.jpg" 255,125,125,125
+  palette "textures/13gate_xt/env/filter_ft.jpg" 255,125,125,125
+  palette "textures/13gate_xt/env/filter_dn.jpg" 255,0,0,0
+  palette "textures/13gate_xt/env/filter_bk.jpg" 255,125,125,125
   palette "models/weapons5/shotgun/slipshotgun.jpg" 255,46,42,38
   palette "models/weapons5/shotgun/shotgunstrogg.jpg" 255,39,34,34
   palette "models/weapons5/shotgun/gatgun.jpg" 255,36,35,39
@@ -8430,26 +6211,47 @@ palettes/default
   palette "models/weapons5/shotgun/doomssg.jpg" 255,29,23,22
   palette "models/weapons5/shotgun/ammobelt.jpg" 255,32,19,14
   palette "models/weapons5/railgun/topglass.tga" 80,94,81,70
+  palette "models/weapons5/railgun/topglass.png" 80,94,81,70
   palette "models/weapons5/railgun/smalltubes_gun.jpg" 255,38,29,28
   palette "models/weapons5/railgun/smalltubes.jpg" 255,38,29,28
   palette "models/weapons5/railgun/sideglass.tga" 87,102,90,79
+  palette "models/weapons5/railgun/sideglass.png" 87,102,90,79
   palette "models/weapons5/railgun/railgun_energy.jpg" 255,60,54,61
   palette "models/weapons5/railgun/outertube.tga" 83,94,89,85
+  palette "models/weapons5/railgun/outertube.png" 83,94,89,85
   palette "models/weapons5/railgun/lights.jpg" 255,89,43,14
   palette "models/weapons5/railgun/innertube.jpg" 255,69,39,32
   palette "models/weapons5/railgun/hexrod.jpg" 255,28,21,20
   palette "models/weapons5/railgun/f_stroggrailgun.jpg" 255,29,29,29
   palette "models/weapons5/railgun/earth_sniper.tga" 255,32,29,27
+  palette "models/weapons5/railgun/earth_sniper.jpg" 255,32,29,27
   palette "models/weapons5/railgun/corelight.tga" 58,91,91,91
+  palette "models/weapons5/railgun/corelight.png" 58,91,91,91
   palette "models/weapons5/railgun/body.jpg" 255,42,31,28
   palette "models/weapons5/railgun/bigtubes_gun.jpg" 255,36,22,16
   palette "models/weapons5/railgun/bigtubes.jpg" 255,36,22,16
   palette "models/weapons5/railgun/attachment.jpg" 255,48,41,38
+  palette "models/weapons5/rocketl/strogg_rocket.jpg" 255,37,31,30
+  palette "models/weapons5/rocketl/slipgate_rocket_parts.jpg" 255,50,32,23
+  palette "models/weapons5/rocketl/slipgate_rocket.jpg" 255,36,25,20
+  palette "models/weapons5/rocketl/rocketlstrogg.jpg" 255,36,30,25
+  palette "models/weapons5/rocketl/f_stroggrocketl.jpg" 255,71,31,19
+  palette "models/weapons5/rocketl/f_sliprocketl.jpg" 255,71,31,19
+  palette "models/weapons5/rocketl/f_earthrocketl.jpg" 255,71,31,19
+  palette "models/weapons5/rocketl/earth_mortar_sight.tga" 111,91,91,91
+  palette "models/weapons5/rocketl/earth_mortar_sight.png" 111,91,91,91
+  palette "models/weapons5/rocketl/earth_mortar_parts.jpg" 255,33,29,27
+  palette "models/weapons5/rocketl/earth_mortar_drum.jpg" 255,19,16,15
+  palette "models/weapons5/rocketl/earth_mortar.jpg" 255,38,35,34
+  palette "models/weapons5/rocketl/drock02.jpg" 255,29,24,24
+  palette "models/weapons5/rocketl/drock01.jpg" 255,31,26,25
   palette "models/weapons5/plasma/upperlight.jpg" 255,95,6,9
   palette "models/weapons5/plasma/super_nailgun.jpg" 255,35,26,23
   palette "models/weapons5/plasma/slipsupernailgun_f.jpg" 255,21,11,2
   palette "models/weapons5/plasma/plasmatube_elect.tga" 91,130,130,130
+  palette "models/weapons5/plasma/plasmatube_elect.png" 91,130,130,130
   palette "models/weapons5/plasma/plasmatube2.tga" 79,60,60,60
+  palette "models/weapons5/plasma/plasmatube2.png" 79,60,60,60
   palette "models/weapons5/plasma/plasmatube.jpg" 255,64,62,65
   palette "models/weapons5/plasma/plasmagun_glow.jpg" 255,4,4,5
   palette "models/weapons5/plasma/plasmagun.jpg" 255,24,22,24
@@ -8461,9 +6263,28 @@ palettes/default
   palette "models/weapons5/plasma/hyperparts.jpg" 255,30,29,30
   palette "models/weapons5/plasma/hyper.jpg" 255,45,39,37
   palette "models/weapons5/plasma/heat_shield.tga" 75,4,4,3
+  palette "models/weapons5/plasma/heat_shield.png" 75,4,4,3
   palette "models/weapons5/plasma/f_slipplasma.jpg" 255,26,17,5
   palette "models/weapons5/plasma/f_machinegun.jpg" 255,26,17,5
   palette "models/weapons5/plasma/doom_plasma_f.jpg" 255,39,38,40
+  palette "models/weapons5/grenades/strogg_grenade.jpg" 255,47,39,31
+  palette "models/weapons5/grenades/earth_handgrenade.jpg" 255,23,21,22
+  palette "models/weapons5/machinegun/strogg_fist.jpg" 255,33,20,17
+  palette "models/weapons5/machinegun/strogg_bolthandle.jpg" 255,13,13,14
+  palette "models/weapons5/machinegun/slipnailgun_f.jpg" 255,21,11,2
+  palette "models/weapons5/machinegun/slipgate_nailgun_tube_r.jpg" 255,30,25,24
+  palette "models/weapons5/machinegun/slipgate_nailgun_tube_l.jpg" 255,30,24,23
+  palette "models/weapons5/machinegun/slipgate_nailgun.jpg" 255,36,28,26
+  palette "models/weapons5/machinegun/mp40_parts.jpg" 255,24,21,23
+  palette "models/weapons5/machinegun/mp40_bolt.jpg" 255,11,10,12
+  palette "models/weapons5/machinegun/mp40_body.jpg" 255,25,23,24
+  palette "models/weapons5/machinegun/machinegunstrogg.jpg" 255,39,35,31
+  palette "models/weapons5/machinegun/fist.jpg" 255,21,14,13
+  palette "models/weapons5/machinegun/f_earthmachinegun.jpg" 255,26,17,5
+  palette "models/weapons5/machinegun/doomchainsawc.tga" 150,40,34,35
+  palette "models/weapons5/machinegun/doomchainsawc.png" 150,40,34,35
+  palette "models/weapons5/machinegun/doomchainsaw_muffler.jpg" 255,25,23,25
+  palette "models/weapons5/machinegun/doomchainsaw.jpg" 255,67,36,12
   palette "models/weapons5/pistol/slide.jpg" 255,23,23,26
   palette "models/weapons5/pistol/parts.jpg" 255,17,16,19
   palette "models/weapons5/pistol/frame.jpg" 255,17,16,19
@@ -8484,23 +6305,11 @@ palettes/default
   palette "models/weapons5/pistol/blaster_light.jpg" 255,2,1,0
   palette "models/weapons5/pistol/blaster_fist.jpg" 255,33,20,17
   palette "models/weapons5/pistol/blaster.jpg" 255,34,32,32
-  palette "models/weapons5/machinegun/strogg_fist.jpg" 255,33,20,17
-  palette "models/weapons5/machinegun/strogg_bolthandle.jpg" 255,13,13,14
-  palette "models/weapons5/machinegun/slipnailgun_f.jpg" 255,21,11,2
-  palette "models/weapons5/machinegun/slipgate_nailgun_tube_r.jpg" 255,30,25,24
-  palette "models/weapons5/machinegun/slipgate_nailgun_tube_l.jpg" 255,30,24,23
-  palette "models/weapons5/machinegun/slipgate_nailgun.jpg" 255,36,28,26
-  palette "models/weapons5/machinegun/mp40_parts.jpg" 255,24,21,23
-  palette "models/weapons5/machinegun/mp40_bolt.jpg" 255,11,10,12
-  palette "models/weapons5/machinegun/mp40_body.jpg" 255,25,23,24
-  palette "models/weapons5/machinegun/machinegunstrogg.jpg" 255,39,35,31
-  palette "models/weapons5/machinegun/fist.jpg" 255,21,14,13
-  palette "models/weapons5/machinegun/f_earthmachinegun.jpg" 255,26,17,5
-  palette "models/weapons5/machinegun/doomchainsawc.tga" 150,40,34,35
-  palette "models/weapons5/machinegun/doomchainsaw_muffler.jpg" 255,25,23,25
-  palette "models/weapons5/machinegun/doomchainsaw.jpg" 255,67,36,12
-  palette "models/weapons5/grenades/strogg_grenade.jpg" 255,47,39,31
-  palette "models/weapons5/grenades/earth_handgrenade.jpg" 255,23,21,22
+  palette "models/weapons5/grapple/hooktex.jpg" 255,24,23,24
+  palette "models/weapons5/grapple/grapple.jpg" 255,30,30,29
+  palette "models/weapons5/grapple/f_grapple.jpg" 255,8,7,5
+  palette "models/weapons5/grapple/c_grapple.tga" 72,61,47,27
+  palette "models/weapons5/grapple/c_grapple.png" 72,61,47,27
   palette "models/weapons5/grenadel/slipgate_grenade_shields.jpg" 255,23,13,9
   palette "models/weapons5/grenadel/slipgate_grenade.jpg" 255,28,21,20
   palette "models/weapons5/grenadel/grenadelstrogg.jpg" 255,49,38,35
@@ -8517,10 +6326,12 @@ palettes/default
   palette "models/weapons5/lightning/stroggchaingun_barrel.jpg" 255,41,40,41
   palette "models/weapons5/lightning/stroggchaingun.jpg" 255,45,40,39
   palette "models/weapons5/lightning/sliptube.tga" 63,107,91,79
+  palette "models/weapons5/lightning/sliptube.png" 63,107,91,79
   palette "models/weapons5/lightning/slipglass.jpg" 255,90,103,164
   palette "models/weapons5/lightning/sidelight.jpg" 255,126,45,3
   palette "models/weapons5/lightning/shaft.jpg" 255,49,44,34
   palette "models/weapons5/lightning/feeder.tga" 87,47,47,47
+  palette "models/weapons5/lightning/feeder.png" 87,47,47,47
   palette "models/weapons5/lightning/f_stroggchaingun.jpg" 255,26,17,5
   palette "models/weapons5/lightning/f_sliplightning.jpg" 255,0,0,0
   palette "models/weapons5/lightning/elec6.jpg" 255,22,28,56
@@ -8531,34 +6342,25 @@ palettes/default
   palette "models/weapons5/lightning/elec1.jpg" 255,24,30,60
   palette "models/weapons5/lightning/dchain.jpg" 255,38,36,32
   palette "models/weapons5/lightning/dcbarrel.tga" 144,67,68,60
+  palette "models/weapons5/lightning/dcbarrel.png" 144,67,68,60
   palette "models/weapons5/lightning/coronapoles.jpg" 255,1,0,185
   palette "models/weapons5/lightning/coronacenter.jpg" 255,56,54,190
   palette "models/weapons5/lightning/arcs.jpg" 255,4,5,9
-  palette "models/weapons5/rocketl/strogg_rocket.jpg" 255,37,31,30
-  palette "models/weapons5/rocketl/slipgate_rocket_parts.jpg" 255,50,32,23
-  palette "models/weapons5/rocketl/slipgate_rocket.jpg" 255,36,25,20
-  palette "models/weapons5/rocketl/rocketlstrogg.jpg" 255,36,30,25
-  palette "models/weapons5/rocketl/f_stroggrocketl.jpg" 255,71,31,19
-  palette "models/weapons5/rocketl/f_sliprocketl.jpg" 255,71,31,19
-  palette "models/weapons5/rocketl/f_earthrocketl.jpg" 255,71,31,19
-  palette "models/weapons5/rocketl/earth_mortar_sight.tga" 111,91,91,91
-  palette "models/weapons5/rocketl/earth_mortar_parts.jpg" 255,33,29,27
-  palette "models/weapons5/rocketl/earth_mortar_drum.jpg" 255,19,16,15
-  palette "models/weapons5/rocketl/earth_mortar.jpg" 255,38,35,34
-  palette "models/weapons5/rocketl/drock02.jpg" 255,29,24,24
-  palette "models/weapons5/rocketl/drock01.jpg" 255,31,26,25
   palette "models/weapons5/gauntlet/spikes.jpg" 255,31,10,11
   palette "models/weapons5/gauntlet/fist.jpg" 255,33,20,17
   palette "models/weapons5/gauntlet/earthknife.jpg" 255,57,51,49
   palette "models/weapons5/gauntlet/axe.jpg" 255,56,41,35
-  palette "models/weapons5/grapple/hooktex.jpg" 255,24,23,24
-  palette "models/weapons5/grapple/grapple.jpg" 255,30,30,29
-  palette "models/weapons5/grapple/f_grapple.jpg" 255,8,7,5
-  palette "models/weapons5/grapple/c_grapple.tga" 72,61,47,27
+  palette "models/weapons5/boomstick/slipshotgun.jpg" 255,32,28,28
+  palette "models/weapons5/boomstick/f_rangershot.jpg" 255,49,29,4
+  palette "models/weapons5/boomstick/f_doomshot.jpg" 255,49,29,4
+  palette "models/weapons5/boomstick/doomboomstick.jpg" 255,32,27,26
+  palette "models/weapons5/boomstick/boomstickstrogg_g.jpg" 255,0,0,0
+  palette "models/weapons5/boomstick/boomstickstrogg.jpg" 255,56,52,54
   palette "models/weapons5/bfg/topl.jpg" 255,166,20,21
   palette "models/weapons5/bfg/stroggflash02a.jpg" 255,19,88,20
   palette "models/weapons5/bfg/stroggflash02.jpg" 255,42,131,42
   palette "models/weapons5/bfg/stroggflash01.tga" 96,70,186,70
+  palette "models/weapons5/bfg/stroggflash01.png" 96,70,186,70
   palette "models/weapons5/bfg/flash03.jpg" 255,31,94,3
   palette "models/weapons5/bfg/flash02B.jpg" 255,33,32,1
   palette "models/weapons5/bfg/flash01.jpg" 255,54,108,15
@@ -8568,58 +6370,35 @@ palettes/default
   palette "models/weapons5/bfg/f_stroggbfg.jpg" 255,11,60,19
   palette "models/weapons5/bfg/f_earthbfg.jpg" 255,26,17,5
   palette "models/weapons5/bfg/elect02.tga" 79,9,12,57
+  palette "models/weapons5/bfg/elect02.png" 79,9,12,57
   palette "models/weapons5/bfg/elect01.tga" 91,78,87,183
+  palette "models/weapons5/bfg/elect01.png" 91,78,87,183
   palette "models/weapons5/bfg/doombfg.tga" 226,84,90,89
+  palette "models/weapons5/bfg/doombfg.png" 226,84,90,89
   palette "models/weapons5/bfg/clipfx.tga" 11,0,44,0
+  palette "models/weapons5/bfg/clipfx.png" 11,0,44,0
   palette "models/weapons5/bfg/cellclip.tga" 161,27,27,27
+  palette "models/weapons5/bfg/cellclip.png" 161,27,27,27
   palette "models/weapons5/bfg/bfgplas2.jpg" 255,11,27,98
   palette "models/weapons5/bfg/bfgplas1.jpg" 255,40,96,12
   palette "models/weapons5/bfg/bfgparts.tga" 220,99,103,105
+  palette "models/weapons5/bfg/bfgparts.png" 220,99,103,105
   palette "models/weapons5/bfg/bfgfx01a.jpg" 255,56,55,3
   palette "models/weapons5/bfg/bfgfx01.jpg" 255,12,76,2
   palette "models/weapons5/bfg/bcshose.tga" 221,73,75,76
+  palette "models/weapons5/bfg/bcshose.png" 221,73,75,76
   palette "models/weapons5/bfg/10k_parts_glow.jpg" 255,0,0,30
   palette "models/weapons5/bfg/10k_parts.jpg" 255,46,47,66
   palette "models/weapons5/bfg/10k_glass.jpg" 255,41,1,62
   palette "models/weapons5/bfg/10k_front_glass_fx.jpg" 255,4,9,38
   palette "models/weapons5/bfg/10k_front_glass.jpg" 255,2,53,105
   palette "models/weapons5/bfg/10k_energy_grill.tga" 102,31,31,31
+  palette "models/weapons5/bfg/10k_energy_grill.png" 102,31,31,31
   palette "models/weapons5/bfg/10k_energy.jpg" 255,3,65,83
   palette "models/weapons5/bfg/10k_drums.jpg" 255,47,41,41
   palette "models/weapons5/bfg/10k_body_glow.jpg" 255,1,3,6
   palette "models/weapons5/bfg/10k_body.jpg" 255,43,39,42
   palette "models/weapons5/bfg/10k_back_glass.jpg" 255,8,31,198
-  palette "models/weapons5/boomstick/slipshotgun.jpg" 255,32,28,28
-  palette "models/weapons5/boomstick/f_rangershot.jpg" 255,49,29,4
-  palette "models/weapons5/boomstick/f_doomshot.jpg" 255,49,29,4
-  palette "models/weapons5/boomstick/doomboomstick.jpg" 255,32,27,26
-  palette "models/weapons5/boomstick/boomstickstrogg_g.jpg" 255,0,0,0
-  palette "models/weapons5/boomstick/boomstickstrogg.jpg" 255,56,52,54
-  palette "models/weapons4/railgun/rg_malediction_metal.png" 255,238,238,238
-  palette "models/weapons4/railgun/rg_malediction_glow.png" 255,2,1,0
-  palette "models/weapons4/railgun/rg_malediction_gloss.png" 255,149,149,149
-  palette "models/weapons4/railgun/rg_malediction_diffuse.png" 255,115,115,119
-  palette "models/weapons4/railgun/rg_malediction_2_metal.png" 255,255,255,255
-  palette "models/weapons4/railgun/rg_malediction_2_gloss.png" 255,185,185,185
-  palette "models/weapons4/railgun/rg_malediction_2_diffuse.png" 255,144,149,164
-  palette "models/weapons4/railgun/rg_crossbow_metal.png" 255,188,188,188
-  palette "models/weapons4/railgun/rg_crossbow_glow.png" 255,4,0,1
-  palette "models/weapons4/railgun/rg_crossbow_gloss.png" 255,196,196,196
-  palette "models/weapons4/railgun/rg_crossbow_diffuse.png" 255,196,168,83
-  palette "models/weapons4/nailgun/ng_perforator_ao.png" 255,204,204,204
-  palette "models/weapons4/nailgun/ng_oscillator_shader_mask_2.png" 255,171,171,171
-  palette "models/weapons4/nailgun/ng_oscillator_shader_mask_1.png" 255,20,20,20
-  palette "models/weapons4/nailgun/ng_oscillator_shader_mask_0.png" 255,152,152,152
-  palette "models/weapons4/nailgun/ng_oscillator_normal.png" 255,126,128,243
-  palette "models/weapons4/nailgun/ng_oscillator_metal.png" 255,166,166,166
-  palette "models/weapons4/nailgun/ng_oscillator_gloss.png" 255,105,105,105
-  palette "models/weapons4/nailgun/ng_oscillator_diffuse.png" 255,84,80,76
-  palette "models/weapons4/nailgun/ng_oscillator_detailmask.png" 255,56,56,56
-  palette "models/weapons4/nailgun/ng_oscillator_ao.png" 255,187,187,187
-  palette "models/weapons4/nailgun/ng_executioner_metal.png" 255,237,237,237
-  palette "models/weapons4/nailgun/ng_executioner_glow.png" 255,0,0,0
-  palette "models/weapons4/nailgun/ng_executioner_gloss.png" 255,134,134,134
-  palette "models/weapons4/nailgun/ng_executioner_diffuse.png" 255,116,108,96
   palette "models/weapons4/shotgun/sg_trespasser_shader_mask_2.png" 255,163,163,163
   palette "models/weapons4/shotgun/sg_trespasser_shader_mask_0.png" 255,123,123,123
   palette "models/weapons4/shotgun/sg_trespasser_metal.png" 255,215,215,215
@@ -8631,12 +6410,6 @@ palettes/default
   palette "models/weapons4/shotgun/sg_bitterman_glow.png" 255,0,0,0
   palette "models/weapons4/shotgun/sg_bitterman_gloss.png" 255,176,176,176
   palette "models/weapons4/shotgun/sg_bitterman_diffuse.png" 255,121,128,136
-  palette "models/weapons4/machinegun/mg_annihilator_shader_mask_2.png" 255,91,91,91
-  palette "models/weapons4/machinegun/mg_annihilator_shader_mask_0.png" 255,68,68,68
-  palette "models/weapons4/machinegun/mg_annihilator_metal.png" 255,151,151,151
-  palette "models/weapons4/machinegun/mg_annihilator_gloss.png" 255,154,154,154
-  palette "models/weapons4/machinegun/mg_annihilator_diffuse.png" 255,77,77,73
-  palette "models/weapons4/machinegun/mg_annihilator_ao.png" 255,200,200,200
   palette "models/weapons4/rl/rl_peacemaker_shader_mask_0.png" 255,118,118,118
   palette "models/weapons4/rl/rl_peacemaker_metal.png" 255,126,126,126
   palette "models/weapons4/rl/rl_peacemaker_gloss.png" 255,125,125,125
@@ -8654,6 +6427,37 @@ palettes/default
   palette "models/weapons4/rl/rl_frostgore_glow.png" 255,0,7,10
   palette "models/weapons4/rl/rl_frostgore_gloss.png" 255,171,171,171
   palette "models/weapons4/rl/rl_frostgore_diffuse.png" 255,85,109,120
+  palette "models/weapons4/railgun/rg_malediction_metal.png" 255,238,238,238
+  palette "models/weapons4/railgun/rg_malediction_glow.png" 255,2,1,0
+  palette "models/weapons4/railgun/rg_malediction_gloss.png" 255,149,149,149
+  palette "models/weapons4/railgun/rg_malediction_diffuse.png" 255,115,115,119
+  palette "models/weapons4/railgun/rg_malediction_2_metal.png" 255,255,255,255
+  palette "models/weapons4/railgun/rg_malediction_2_gloss.png" 255,185,185,185
+  palette "models/weapons4/railgun/rg_malediction_2_diffuse.png" 255,144,149,164
+  palette "models/weapons4/railgun/rg_crossbow_metal.png" 255,188,188,188
+  palette "models/weapons4/railgun/rg_crossbow_glow.png" 255,4,0,1
+  palette "models/weapons4/railgun/rg_crossbow_gloss.png" 255,196,196,196
+  palette "models/weapons4/railgun/rg_crossbow_diffuse.png" 255,196,168,83
+  palette "models/weapons4/machinegun/mg_annihilator_shader_mask_2.png" 255,91,91,91
+  palette "models/weapons4/machinegun/mg_annihilator_shader_mask_0.png" 255,68,68,68
+  palette "models/weapons4/machinegun/mg_annihilator_metal.png" 255,151,151,151
+  palette "models/weapons4/machinegun/mg_annihilator_gloss.png" 255,154,154,154
+  palette "models/weapons4/machinegun/mg_annihilator_diffuse.png" 255,77,77,73
+  palette "models/weapons4/machinegun/mg_annihilator_ao.png" 255,200,200,200
+  palette "models/weapons4/nailgun/ng_perforator_ao.png" 255,204,204,204
+  palette "models/weapons4/nailgun/ng_oscillator_shader_mask_2.png" 255,171,171,171
+  palette "models/weapons4/nailgun/ng_oscillator_shader_mask_1.png" 255,20,20,20
+  palette "models/weapons4/nailgun/ng_oscillator_shader_mask_0.png" 255,152,152,152
+  palette "models/weapons4/nailgun/ng_oscillator_normal.png" 255,126,128,243
+  palette "models/weapons4/nailgun/ng_oscillator_metal.png" 255,166,166,166
+  palette "models/weapons4/nailgun/ng_oscillator_gloss.png" 255,105,105,105
+  palette "models/weapons4/nailgun/ng_oscillator_diffuse.png" 255,84,80,76
+  palette "models/weapons4/nailgun/ng_oscillator_detailmask.png" 255,56,56,56
+  palette "models/weapons4/nailgun/ng_oscillator_ao.png" 255,187,187,187
+  palette "models/weapons4/nailgun/ng_executioner_metal.png" 255,237,237,237
+  palette "models/weapons4/nailgun/ng_executioner_glow.png" 255,0,0,0
+  palette "models/weapons4/nailgun/ng_executioner_gloss.png" 255,134,134,134
+  palette "models/weapons4/nailgun/ng_executioner_diffuse.png" 255,116,108,96
   palette "models/weapons4/lightning/skinpage.pcx" 255,81,81,81
   palette "models/weapons4/lightning/pngout_noesisdupname_003.png" 255,255,128,204
   palette "models/weapons4/lightning/pngout_noesisdupname_002.png" 255,79,81,83
@@ -8682,6 +6486,135 @@ palettes/default
   palette "models/weapons4/lightning/lg_conductor_gradient.png" 255,13,13,13
   palette "models/weapons4/lightning/lg_conductor_glow.png" 255,0,1,1
   palette "models/weapons4/lightning/lg_conductor_diffuse.png" 151,43,43,43
+  palette "models/weapons3/shells/sgunshell_2.tga" 255,54,22,10
+  palette "models/weapons3/shells/sgunshell_2.jpg" 255,56,24,12
+  palette "models/weapons3/shells/sgunshell.tga" 255,104,38,18
+  palette "models/weapons3/shells/sgunshell.jpg" 255,104,39,19
+  palette "models/weapons3/shells/mgunshell_2.tga" 255,33,22,4
+  palette "models/weapons3/shells/mgunshell_2.jpg" 255,34,23,7
+  palette "models/weapons3/shells/mgunshell.tga" 255,135,87,11
+  palette "models/weapons3/shells/mgunshell.jpg" 255,134,87,12
+  palette "models/weapons3/rocketl/skin.tga" 255,28,22,19
+  palette "models/weapons3/rocketl/skin.jpg" 255,28,22,20
+  palette "models/weapons3/rocketl/muzzy.tga" 255,87,69,27
+  palette "models/weapons3/rocketl/muzzy.jpg" 255,87,69,27
+  palette "models/weapons3/rocketl/muzzlside.tga" 255,48,6,3
+  palette "models/weapons3/rocketl/muzzlside.jpg" 255,48,6,4
+  palette "models/weapons3/rocketl/flare.tga" 255,53,10,10
+  palette "models/weapons3/rocketl/flare.jpg" 255,53,10,11
+  palette "models/weapons3/rocketl/f_rocketl.jpg" 255,82,34,19
+  palette "models/weapons3/rocketl/blackhandle.tga" 255,88,97,107
+  palette "models/weapons3/rocketl/blackhandle.jpg" 255,88,97,107
+  palette "models/weapons3/rocketl/blackchrome.tga" 255,78,78,78
+  palette "models/weapons3/rocketl/blackchrome.jpg" 255,78,78,78
+  palette "models/weapons3/shotgun/skinoa.tga" 255,44,41,36
+  palette "models/weapons3/shotgun/skinoa.jpg" 255,44,40,37
+  palette "models/weapons3/shotgun/shotgun_spec.jpg" 255,12,12,12
+  palette "models/weapons3/shotgun/shotgun_laser.jpg" 255,100,1,3
+  palette "models/weapons3/shotgun/shotgun_flashside.tga" 255,82,69,36
+  palette "models/weapons3/shotgun/shotgun_flashside.jpg" 255,82,69,37
+  palette "models/weapons3/shotgun/shotgun_flash.tga" 255,100,87,55
+  palette "models/weapons3/shotgun/shotgun_flash.jpg" 255,100,87,55
+  palette "models/weapons3/shotgun/shotgun.tga" 255,44,41,37
+  palette "models/weapons3/shotgun/shotgun.jpg" 255,44,41,37
+  palette "models/weapons3/shotgun/muzzley.tga" 255,48,29,10
+  palette "models/weapons3/shotgun/muzzley.jpg" 255,47,29,11
+  palette "models/weapons3/railgun/skin.tga" 255,67,64,62
+  palette "models/weapons3/railgun/skin.jpg" 255,67,64,62
+  palette "models/weapons3/railgun/scrolly.tga" 255,23,29,38
+  palette "models/weapons3/railgun/scrolly.jpg" 255,23,29,38
+  palette "models/weapons3/railgun/railcore.tga" 255,22,22,22
+  palette "models/weapons3/railgun/railcore.jpg" 255,23,23,23
+  palette "models/weapons3/railgun/f_railgun3.jpg" 255,23,23,23
+  palette "models/weapons3/railgun/f_railgun2.jpg" 255,83,83,83
+  palette "models/weapons3/railgun/blackhandle.tga" 255,114,102,80
+  palette "models/weapons3/railgun/blackhandle.jpg" 255,115,102,81
+  palette "models/weapons3/railgun/blackchrome.tga" 255,77,77,77
+  palette "models/weapons3/railgun/blackchrome.jpg" 255,76,76,76
+  palette "models/weapons3/plasma/skin.tga" 251,30,33,38
+  palette "models/weapons3/plasma/skin.png" 251,30,33,38
+  palette "models/weapons3/plasma/muzzlside.tga" 255,3,30,48
+  palette "models/weapons3/plasma/muzzlside.jpg" 255,4,30,48
+  palette "models/weapons3/plasma/flare.tga" 255,10,38,53
+  palette "models/weapons3/plasma/flare.jpg" 255,10,39,54
+  palette "models/weapons3/plasma/f_plasma.jpg" 255,1,22,60
+  palette "models/weapons3/plasma/blackhandle.tga" 255,88,97,107
+  palette "models/weapons3/plasma/blackhandle.jpg" 255,88,97,107
+  palette "models/weapons3/plasma/blackchrome.tga" 255,78,78,78
+  palette "models/weapons3/plasma/blackchrome.jpg" 255,78,78,78
+  palette "models/weapons3/lightning/skinlightning.tga" 255,34,45,54
+  palette "models/weapons3/lightning/skinlightning.jpg" 255,34,45,54
+  palette "models/weapons3/lightning/muzzle3.tga" 255,1,3,8
+  palette "models/weapons3/lightning/muzzle3.jpg" 255,2,3,8
+  palette "models/weapons3/lightning/muzzle2.tga" 255,2,3,9
+  palette "models/weapons3/lightning/muzzle2.jpg" 255,2,4,9
+  palette "models/weapons3/lightning/muzzle1.tga" 255,2,4,9
+  palette "models/weapons3/lightning/muzzle1.jpg" 255,2,4,9
+  palette "models/weapons3/lightning/f_lightning.jpg" 255,17,32,42
+  palette "models/weapons3/machinegun/sight.tga" 204,93,81,74
+  palette "models/weapons3/machinegun/sight.png" 204,93,81,74
+  palette "models/weapons3/machinegun/muzzlside.tga" 255,24,13,1
+  palette "models/weapons3/machinegun/muzzlside.jpg" 255,24,14,2
+  palette "models/weapons3/machinegun/muzzley.tga" 255,43,24,9
+  palette "models/weapons3/machinegun/muzzley.jpg" 255,43,24,9
+  palette "models/weapons3/machinegun/mgun.tga" 255,59,45,38
+  palette "models/weapons3/machinegun/mgun.jpg" 255,59,47,40
+  palette "models/weapons3/machinegun/flare.tga" 255,63,3,0
+  palette "models/weapons3/machinegun/flare.jpg" 255,63,4,2
+  palette "models/weapons3/machinegun/f_machinegun3.jpg" 255,10,8,5
+  palette "models/weapons3/machinegun/f_machinegun2.tga" 255,21,19,13
+  palette "models/weapons3/machinegun/f_machinegun2.jpg" 255,21,19,13
+  palette "models/weapons3/machinegun/f_machinegun.jpg" 255,10,8,5
+  palette "models/weapons3/grenadel/newgren.tga" 255,43,37,31
+  palette "models/weapons3/grenadel/newgren.jpg" 255,43,38,32
+  palette "models/weapons3/grenadel/muzzlside.tga" 255,52,0,0
+  palette "models/weapons3/grenadel/muzzlside.jpg" 255,51,1,1
+  palette "models/weapons3/grenadel/grenadel.tga" 255,60,64,56
+  palette "models/weapons3/grenadel/grenadel.jpg" 255,60,64,56
+  palette "models/weapons3/grenadel/flare.tga" 255,63,0,0
+  palette "models/weapons3/grenadel/flare.jpg" 255,63,1,1
+  palette "models/weapons3/grenadel/f_plasma.jpg" 255,111,10,10
+  palette "models/weapons3/grenadel/f_grenadel.jpg" 255,78,50,15
+  palette "models/weapons3/grenadel/chromey.tga" 255,35,37,39
+  palette "models/weapons3/grenadel/chromey.jpg" 255,35,37,39
+  palette "models/weapons3/grenadel/blackhandle.tga" 255,88,97,107
+  palette "models/weapons3/grenadel/blackhandle.jpg" 255,88,97,107
+  palette "models/weapons3/grenadel/blackchrome.tga" 255,78,78,78
+  palette "models/weapons3/grenadel/blackchrome.jpg" 255,78,78,78
+  palette "models/weapons3/bfg/f_bfg3.tga" 255,18,35,13
+  palette "models/weapons3/bfg/f_bfg3.jpg" 255,18,35,13
+  palette "models/weapons3/bfg/f_bfg2.tga" 255,22,34,17
+  palette "models/weapons3/bfg/f_bfg2.jpg" 255,22,34,18
+  palette "models/weapons3/bfg/f_bfg.tga" 255,18,35,13
+  palette "models/weapons3/bfg/f_bfg.jpg" 255,18,35,13
+  palette "models/weapons3/bfg/bubbles.tga" 12,0,135,86
+  palette "models/weapons3/bfg/bubbles.png" 12,0,135,86
+  palette "models/weapons3/bfg/bfgtube.tga" 255,30,176,146
+  palette "models/weapons3/bfg/bfgtube.jpg" 255,31,176,147
+  palette "models/weapons3/bfg/bfgbody.tga" 255,15,21,20
+  palette "models/weapons3/bfg/bfgbody.jpg" 255,15,21,20
+  palette "models/weapons2/machinegun2/machinegun.tga" 0,0,0,0
+  palette "models/weapons2/machinegun2/machinegun.jpg" 255,27,24,23
+  palette "models/weapons2/plasma/plasma_glo.jpeg" 255,20,86,108
+  palette "models/weapons2/plasma/plasma.jpeg" 255,67,66,59
+  palette "models/weapons2/railgun/railgun4.jpeg" 255,145,145,145
+  palette "models/weapons2/railgun/railgun3.jpeg" 255,41,36,33
+  palette "models/weapons2/railgun/railgun3.glow.jpeg" 255,17,17,17
+  palette "models/weapons2/railgun/railgun2.glow.jpeg" 255,42,42,42
+  palette "models/weapons2/railgun/railgun1.jpeg" 255,61,47,39
+  palette "models/weapons2/railgun/f_railgun2.jpeg" 255,29,29,29
+  palette "models/weapons2/lightning2/f_lightning.jpg" 255,6,8,10
+  palette "models/weapons2/grenadel2/grenadel.jpg" 255,62,55,48
+  palette "models/weapons2/lightning/trail2.jpeg" 255,49,60,60
+  palette "models/weapons2/lightning/lightning2.jpeg" 255,45,54,50
+  palette "models/weapons2/lightning/glass.jpeg" 255,107,27,26
+  palette "models/weapons2/lightning/f_lightning.jpeg" 255,5,10,9
+  palette "models/weapons2/lightning/button.jpeg" 255,244,49,58
+  palette "models/weapons2/flamethrower/flamethr.tga" 255,64,48,40
+  palette "models/weapons2/flamethrower/flamethr.jpg" 255,64,48,40
+  palette "models/weapons2/flamethrower/f_flamethrower.tga" 255,28,11,0
+  palette "models/weapons2/flamethrower/f_flamethrower.jpg" 255,28,11,1
+  palette "models/weapons2/gauntlet/gauntlet2.png" 196,26,19,16
   palette "models/weaphits5/rocket/doomrocketexp03.jpg" 255,32,1,5
   palette "models/weaphits5/rocket/doomrocketexp02.jpg" 255,46,8,6
   palette "models/weaphits5/rocket/doomrocketexp01.jpg" 255,51,12,7
@@ -8692,38 +6625,15 @@ palettes/default
   palette "models/weaphits5/napalm/flamestream_outer.jpg" 255,107,55,20
   palette "models/weaphits5/napalm/flamestream_inner.jpg" 255,161,64,6
   palette "models/weaphits5/napalm/flamestream_flare.jpg" 255,77,47,18
+  palette "models/weapons2/bfg/f_bfg2.jpeg" 255,13,49,5
+  palette "models/weapons2/bfg/f_bfg.jpeg" 255,13,60,20
+  palette "models/weapons2/bfg/bfg_k.png" 227,15,15,13
+  palette "models/weapons2/bfg/bfg.png" 92,87,75,62
   palette "models/weaphits5/nail/nail.jpg" 255,69,67,70
   palette "models/weaphits5/bolt/slipgate_bolt_core.jpg" 255,195,193,195
   palette "models/weaphits5/bolt/slipgate_bolt.jpg" 255,1,0,57
   palette "models/weaphits5/blasterbolt/blasterbolt_fx.jpg" 255,155,39,8
   palette "models/weaphits5/blasterbolt/blasterbolt.jpg" 255,225,113,1
-  palette "models/weaphits5/bfg9000/bfgexp_6.jpg" 255,1,2,1
-  palette "models/weaphits5/bfg9000/bfgexp_5.jpg" 255,6,9,4
-  palette "models/weaphits5/bfg9000/bfgexp_4.jpg" 255,18,28,12
-  palette "models/weaphits5/bfg9000/bfgexp_3.jpg" 255,50,78,35
-  palette "models/weaphits5/bfg9000/bfgexp_2.jpg" 255,24,38,19
-  palette "models/weaphits5/bfg9000/bfgexp_1.jpg" 255,16,25,11
-  palette "models/weaphits5/bfg9000/bfg_flash05.jpg" 255,0,0,0
-  palette "models/weaphits5/bfg9000/bfg_flash04.jpg" 255,0,1,0
-  palette "models/weaphits5/bfg9000/bfg_flash03.jpg" 255,4,7,2
-  palette "models/weaphits5/bfg9000/bfg_flash02.jpg" 255,9,18,3
-  palette "models/weaphits5/bfg9000/bfg_flash01.jpg" 255,16,25,11
-  palette "models/weaphits5/bfg10k/particle.jpg" 255,90,90,91
-  palette "models/weaphits5/bfg10k/bfgplasma.jpg" 255,1,6,1
-  palette "models/weaphits5/bfg10k/bfgflare.jpg" 255,16,11,13
-  palette "models/weaphits5/bfg10k/bfgexp_6.jpg" 255,1,2,1
-  palette "models/weaphits5/bfg10k/bfgexp_5.jpg" 255,6,9,4
-  palette "models/weaphits5/bfg10k/bfgexp_4.jpg" 255,18,28,12
-  palette "models/weaphits5/bfg10k/bfgexp_3.jpg" 255,50,78,35
-  palette "models/weaphits5/bfg10k/bfgexp_2.jpg" 255,24,38,19
-  palette "models/weaphits5/bfg10k/bfgexp_1.jpg" 255,16,25,11
-  palette "models/weaphits5/bfg10k/bfgelectric.jpg" 255,6,8,1
-  palette "models/weaphits5/bfg10k/bfgcloud.jpg" 255,2,19,10
-  palette "models/weaphits5/bfg10k/bfg_flash05.jpg" 255,0,0,0
-  palette "models/weaphits5/bfg10k/bfg_flash04.jpg" 255,0,1,0
-  palette "models/weaphits5/bfg10k/bfg_flash03.jpg" 255,4,7,2
-  palette "models/weaphits5/bfg10k/bfg_flash02.jpg" 255,9,18,3
-  palette "models/weaphits5/bfg10k/bfg_flash01.jpg" 255,16,25,11
   palette "models/weaphits5/plasma/doomplasmaexp5_yellow.jpg" 255,7,4,1
   palette "models/weaphits5/plasma/doomplasmaexp5_white.jpg" 255,3,3,4
   palette "models/weaphits5/plasma/doomplasmaexp5_red.jpg" 255,7,0,1
@@ -8794,8 +6704,86 @@ palettes/default
   palette "models/weaphits5/plasma/doomplasma_cloud_green.jpg" 255,6,22,3
   palette "models/weaphits5/plasma/doomplasma_cloud_cyan.jpg" 255,3,21,24
   palette "models/weaphits5/plasma/doomplasma_cloud.jpg" 255,2,6,21
+  palette "models/weaphits5/bfg9000/bfgexp_6.jpg" 255,1,2,1
+  palette "models/weaphits5/bfg9000/bfgexp_5.jpg" 255,6,9,4
+  palette "models/weaphits5/bfg9000/bfgexp_4.jpg" 255,18,28,12
+  palette "models/weaphits5/bfg9000/bfgexp_3.jpg" 255,50,78,35
+  palette "models/weaphits5/bfg9000/bfgexp_2.jpg" 255,24,38,19
+  palette "models/weaphits5/bfg9000/bfgexp_1.jpg" 255,16,25,11
+  palette "models/weaphits5/bfg9000/bfg_flash05.jpg" 255,0,0,0
+  palette "models/weaphits5/bfg9000/bfg_flash04.jpg" 255,0,1,0
+  palette "models/weaphits5/bfg9000/bfg_flash03.jpg" 255,4,7,2
+  palette "models/weaphits5/bfg9000/bfg_flash02.jpg" 255,9,18,3
+  palette "models/weaphits5/bfg9000/bfg_flash01.jpg" 255,16,25,11
+  palette "models/weaphits5/bfg10k/particle.jpg" 255,90,90,91
+  palette "models/weaphits5/bfg10k/bfgplasma.jpg" 255,1,6,1
+  palette "models/weaphits5/bfg10k/bfgflare.jpg" 255,16,11,13
+  palette "models/weaphits5/bfg10k/bfgexp_6.jpg" 255,1,2,1
+  palette "models/weaphits5/bfg10k/bfgexp_5.jpg" 255,6,9,4
+  palette "models/weaphits5/bfg10k/bfgexp_4.jpg" 255,18,28,12
+  palette "models/weaphits5/bfg10k/bfgexp_3.jpg" 255,50,78,35
+  palette "models/weaphits5/bfg10k/bfgexp_2.jpg" 255,24,38,19
+  palette "models/weaphits5/bfg10k/bfgexp_1.jpg" 255,16,25,11
+  palette "models/weaphits5/bfg10k/bfgelectric.jpg" 255,6,8,1
+  palette "models/weaphits5/bfg10k/bfgcloud.jpg" 255,2,19,10
+  palette "models/weaphits5/bfg10k/bfg_flash05.jpg" 255,0,0,0
+  palette "models/weaphits5/bfg10k/bfg_flash04.jpg" 255,0,1,0
+  palette "models/weaphits5/bfg10k/bfg_flash03.jpg" 255,4,7,2
+  palette "models/weaphits5/bfg10k/bfg_flash02.jpg" 255,9,18,3
+  palette "models/weaphits5/bfg10k/bfg_flash01.jpg" 255,16,25,11
+  palette "models/weapons/vulcan/vulcan.tga" 255,40,37,35
+  palette "models/weapons/vulcan/vulcan.jpg" 255,40,37,35
+  palette "models/weapons/vulcan/f_vulcan.tga" 255,49,48,34
+  palette "models/weapons/vulcan/f_vulcan.jpg" 255,49,48,34
+  palette "models/ships/viper/skin.tga" 255,31,30,29
+  palette "models/ships/viper/skin.pcx" 255,31,30,29
+  palette "models/ships/viper/skin.jpg" 255,32,31,30
+  palette "models/weapons/proxmine/proxmine3.tga" 255,36,28,22
+  palette "models/weapons/proxmine/proxmine3.jpg" 255,37,28,23
+  palette "models/weapons/proxmine/proxmine2b.tga" 255,21,1,1
+  palette "models/weapons/proxmine/proxmine2b.jpg" 255,22,2,3
+  palette "models/weapons/proxmine/proxmine2.tga" 255,35,36,34
+  palette "models/weapons/proxmine/proxmine2.jpg" 255,36,35,34
+  palette "models/weapons/proxmine/proxmine1b.tga" 255,54,45,37
+  palette "models/weapons/proxmine/proxmine1b.jpg" 255,54,46,38
+  palette "models/weapons/proxmine/proxmine1.tga" 134,61,58,53
+  palette "models/weapons/proxmine/proxmine1.png" 134,61,58,53
+  palette "models/weapons/proxmine/f_proxmine.tga" 255,8,7,5
+  palette "models/weapons/proxmine/f_proxmine.jpg" 255,8,6,5
+  palette "models/weapons/nailgun/nailgun_env.tga" 255,126,118,118
+  palette "models/weapons/nailgun/nailgun_env.jpg" 255,125,117,118
+  palette "models/weapons/nailgun/nailgun.tga" 233,36,32,27
+  palette "models/weapons/nailgun/nailgun.png" 233,36,32,27
+  palette "models/weapons/nailgun/nail2.tga" 33,75,69,61
+  palette "models/weapons/nailgun/nail2.png" 33,75,69,61
+  palette "models/weapons/nailgun/nail.tga" 59,82,73,64
+  palette "models/weapons/nailgun/nail.png" 59,82,73,64
+  palette "models/weapons/nailgun/f_nailgun.tga" 255,57,40,23
+  palette "models/weapons/nailgun/f_nailgun.jpg" 255,57,40,24
+  palette "models/ships/strogg1/skin.tga" 255,18,13,9
+  palette "models/ships/strogg1/skin.pcx" 255,18,13,9
+  palette "models/ships/strogg1/skin.jpg" 255,19,13,10
+  palette "models/weaphits3/glboom/glboom_3.jpg" 255,33,27,3
+  palette "models/weaphits3/glboom/glboom_2.jpg" 255,83,74,31
+  palette "models/weaphits3/glboom/glboom_1.jpg" 255,146,148,18
+  palette "models/ships/bigviper/skin.tga" 255,31,30,29
+  palette "models/ships/bigviper/skin.pcx" 255,31,30,29
+  palette "models/ships/bigviper/skin.jpg" 255,32,31,30
+  palette "models/weaphits3/rlboom/rlboom_8.jpg" 255,1,1,1
+  palette "models/weaphits3/rlboom/rlboom_7.jpg" 255,5,5,5
+  palette "models/weaphits3/rlboom/rlboom_6.jpg" 255,6,5,5
+  palette "models/weaphits3/rlboom/rlboom_5.jpg" 255,16,9,7
+  palette "models/weaphits3/rlboom/rlboom_4.jpg" 255,43,19,13
+  palette "models/weaphits3/rlboom/rlboom_3.jpg" 255,46,22,14
+  palette "models/weaphits3/rlboom/rlboom_2.jpg" 255,23,12,7
+  palette "models/weaphits3/rlboom/rlboom_1.jpg" 255,15,8,5
+  palette "models/weaphits3/bfgboom/bfgboom_3.jpg" 255,44,5,1
+  palette "models/weaphits3/bfgboom/bfgboom_2.jpg" 255,100,66,1
+  palette "models/weaphits3/bfgboom/bfgboom_1.jpg" 255,139,119,23
   palette "models/powerups5/flags/r_flag.tga" 255,66,11,11
+  palette "models/powerups5/flags/r_flag.jpg" 255,67,13,13
   palette "models/powerups5/flags/b_flag.tga" 255,33,33,76
+  palette "models/powerups5/flags/b_flag.jpg" 255,35,34,76
   palette "models/powerups5/holdable/slip_berserk_g.jpg" 255,7,3,0
   palette "models/powerups5/holdable/slip_berserk.jpg" 255,53,39,33
   palette "models/powerups5/holdable/skull_glow.jpg" 255,8,2,0
@@ -8803,14 +6791,77 @@ palettes/default
   palette "models/powerups5/holdable/horns.jpg" 255,52,50,52
   palette "models/powerups5/holdable/flames.jpg" 255,84,40,3
   palette "models/powerups5/holdable/earth_booze_liquid.tga" 255,75,47,28
+  palette "models/powerups5/holdable/earth_booze_liquid.jpg" 255,73,47,29
   palette "models/powerups5/holdable/earth_booze_cork.tga" 255,33,27,24
+  palette "models/powerups5/holdable/earth_booze_cork.jpg" 255,33,28,25
   palette "models/powerups5/holdable/earth_booze_bottle_label.tga" 25,177,148,125
+  palette "models/powerups5/holdable/earth_booze_bottle_label.png" 25,177,148,125
   palette "models/powerups5/holdable/earth_booze_bottle.tga" 255,54,46,42
+  palette "models/powerups5/holdable/earth_booze_bottle.jpg" 255,53,47,42
   palette "models/powerups5/holdable/doom_berserk_fx.jpg" 255,1,0,0
   palette "models/powerups5/holdable/doom_berserk.jpg" 255,11,10,11
   palette "models/powerups5/holdable/adrenaline_parts.jpg" 255,31,29,31
   palette "models/powerups5/holdable/adrenaline_glow.jpg" 255,1,11,15
   palette "models/powerups5/holdable/adrenaline.jpg" 255,54,47,48
+  palette "models/powerups5/eyes/eye.jpg" 255,115,88,73
+  palette "models/powerups5/instant/strogg_wing_regen.jpg" 255,84,23,18
+  palette "models/powerups5/instant/strogg_wing_haste.jpg" 255,89,44,4
+  palette "models/powerups5/instant/strogg_wing_flight.jpg" 255,47,16,50
+  palette "models/powerups5/instant/strogg_wing.jpg" 255,48,1,1
+  palette "models/powerups5/instant/strogg_regen_g.jpg" 255,15,3,1
+  palette "models/powerups5/instant/strogg_regen.jpg" 255,79,25,19
+  palette "models/powerups5/instant/strogg_invul.jpg" 255,85,47,33
+  palette "models/powerups5/instant/strogg_haste.jpg" 255,71,36,8
+  palette "models/powerups5/instant/strogg_flight.jpg" 255,62,25,64
+  palette "models/powerups5/instant/slip_regen_g.jpg" 255,29,15,2
+  palette "models/powerups5/instant/slip_regen.jpg" 255,83,20,10
+  palette "models/powerups5/instant/slip_invul.jpg" 255,51,1,1
+  palette "models/powerups5/instant/slip_invis_g.tga" 9,151,114,31
+  palette "models/powerups5/instant/slip_invis_g.png" 9,151,114,31
+  palette "models/powerups5/instant/slip_invis.tga" 246,72,61,44
+  palette "models/powerups5/instant/slip_invis.png" 246,72,61,44
+  palette "models/powerups5/instant/slip_haste_g.jpg" 255,8,4,2
+  palette "models/powerups5/instant/slip_haste.jpg" 255,88,56,4
+  palette "models/powerups5/instant/slip_flight_wings.jpg" 255,62,37,56
+  palette "models/powerups5/instant/slip_flight.jpg" 255,73,47,68
+  palette "models/powerups5/instant/earth_regen_ruby_g.jpg" 255,121,77,40
+  palette "models/powerups5/instant/earth_regen_ruby.jpg" 255,105,4,3
+  palette "models/powerups5/instant/earth_regen_liquid.jpg" 255,70,0,1
+  palette "models/powerups5/instant/earth_regen.jpg" 255,107,75,35
+  palette "models/powerups5/instant/earth_invul.jpg" 255,96,73,53
+  palette "models/powerups5/instant/earth_invis.jpg" 255,58,40,38
+  palette "models/powerups5/instant/earth_haste_stones.jpg" 255,92,64,22
+  palette "models/powerups5/instant/earth_haste.jpg" 255,119,97,79
+  palette "models/powerups5/instant/earth_flight.jpg" 255,83,62,54
+  palette "models/powerups5/instant/doom_sphere_outside_invis.tga" 46,51,50,49
+  palette "models/powerups5/instant/doom_sphere_outside_invis.png" 46,51,50,49
+  palette "models/powerups5/instant/doom_sphere_inside_regen.jpg" 255,68,12,19
+  palette "models/powerups5/instant/doom_sphere_inside_invul.jpg" 255,47,102,2
+  palette "models/powerups5/instant/doom_sphere_inside_invis.jpg" 255,94,1,3
+  palette "models/powerups5/instant/doom_sphere_inside_haste.jpg" 255,95,46,1
+  palette "models/powerups5/instant/doom_sphere_inside_flight.jpg" 255,89,18,106
+  palette "models/powerups5/instant/doom_regen_heart.jpg" 255,82,20,11
+  palette "models/powerups5/instant/doom_regen_glowplane.jpg" 255,68,2,21
+  palette "models/powerups5/instant/doom_invul_skull.jpg" 255,34,69,8
+  palette "models/powerups5/instant/doom_invul_eyes.jpg" 255,83,19,2
+  palette "models/powerups5/instant/doom_invis_spiral_old.tga" 184,30,30,30
+  palette "models/powerups5/instant/doom_invis_spiral_old.png" 184,30,30,30
+  palette "models/powerups5/instant/doom_invis_spiral.tga" 184,77,9,9
+  palette "models/powerups5/instant/doom_invis_spiral.png" 184,77,9,9
+  palette "models/powerups5/instant/doom_invis_iris.tga" 108,34,7,1
+  palette "models/powerups5/instant/doom_invis_iris.png" 108,34,7,1
+  palette "models/powerups5/instant/doom_invis_eyeball.jpg" 255,10,23,106
+  palette "models/powerups5/instant/doom_haste_head.jpg" 255,98,60,5
+  palette "models/powerups5/instant/doom_haste_elecfront3.jpg" 255,10,6,2
+  palette "models/powerups5/instant/doom_haste_elecfront2.jpg" 255,13,8,2
+  palette "models/powerups5/instant/doom_haste_elecfront1.jpg" 255,13,8,2
+  palette "models/powerups5/instant/doom_haste_elecback4.jpg" 255,33,21,5
+  palette "models/powerups5/instant/doom_haste_elecback3.jpg" 255,12,8,2
+  palette "models/powerups5/instant/doom_haste_elecback2.jpg" 255,21,14,3
+  palette "models/powerups5/instant/doom_haste_elecback1.jpg" 255,24,16,4
+  palette "models/powerups5/instant/doom_flight_g.jpg" 255,3,1,3
+  palette "models/powerups5/instant/doom_flight.tga" 234,56,22,64
+  palette "models/powerups5/instant/doom_flight.png" 234,56,22,64
   palette "models/powerups5/health/strogg_smallhealth.jpg" 255,70,64,63
   palette "models/powerups5/health/strogg_smallarmor.jpg" 255,58,38,34
   palette "models/powerups5/health/strogg_megahealth.jpg" 255,58,55,55
@@ -8836,6 +6887,7 @@ palettes/default
   palette "models/powerups5/health/earth_mediumhealth.jpg" 255,89,78,68
   palette "models/powerups5/health/earth_largehealth.jpg" 255,47,37,57
   palette "models/powerups5/health/doom_sphere_outside.tga" 97,46,45,44
+  palette "models/powerups5/health/doom_sphere_outside.png" 97,46,45,44
   palette "models/powerups5/health/doom_sphere_inside.jpg" 255,4,0,93
   palette "models/powerups5/health/doom_smallhealth_vial.jpg" 255,1,30,82
   palette "models/powerups5/health/doom_smallhealth_fluid2.jpg" 255,17,55,115
@@ -8846,63 +6898,12 @@ palettes/default
   palette "models/powerups5/health/doom_mh_face.jpg" 255,4,6,68
   palette "models/powerups5/health/doom_mediumhealth.jpg" 255,39,37,37
   palette "models/powerups5/health/doom_largehealth.jpg" 255,56,53,53
-  palette "models/powerups5/eyes/eye.jpg" 255,115,88,73
-  palette "models/powerups5/instant/strogg_wing_regen.jpg" 255,84,23,18
-  palette "models/powerups5/instant/strogg_wing_haste.jpg" 255,89,44,4
-  palette "models/powerups5/instant/strogg_wing_flight.jpg" 255,47,16,50
-  palette "models/powerups5/instant/strogg_wing.jpg" 255,48,1,1
-  palette "models/powerups5/instant/strogg_regen_g.jpg" 255,15,3,1
-  palette "models/powerups5/instant/strogg_regen.jpg" 255,79,25,19
-  palette "models/powerups5/instant/strogg_invul.jpg" 255,85,47,33
-  palette "models/powerups5/instant/strogg_haste.jpg" 255,71,36,8
-  palette "models/powerups5/instant/strogg_flight.jpg" 255,62,25,64
-  palette "models/powerups5/instant/slip_regen_g.jpg" 255,29,15,2
-  palette "models/powerups5/instant/slip_regen.jpg" 255,83,20,10
-  palette "models/powerups5/instant/slip_invul.jpg" 255,51,1,1
-  palette "models/powerups5/instant/slip_invis_g.tga" 9,151,114,31
-  palette "models/powerups5/instant/slip_invis.tga" 246,72,61,44
-  palette "models/powerups5/instant/slip_haste_g.jpg" 255,8,4,2
-  palette "models/powerups5/instant/slip_haste.jpg" 255,88,56,4
-  palette "models/powerups5/instant/slip_flight_wings.jpg" 255,62,37,56
-  palette "models/powerups5/instant/slip_flight.jpg" 255,73,47,68
-  palette "models/powerups5/instant/earth_regen_ruby_g.jpg" 255,121,77,40
-  palette "models/powerups5/instant/earth_regen_ruby.jpg" 255,105,4,3
-  palette "models/powerups5/instant/earth_regen_liquid.jpg" 255,70,0,1
-  palette "models/powerups5/instant/earth_regen.jpg" 255,107,75,35
-  palette "models/powerups5/instant/earth_invul.jpg" 255,96,73,53
-  palette "models/powerups5/instant/earth_invis.jpg" 255,58,40,38
-  palette "models/powerups5/instant/earth_haste_stones.jpg" 255,92,64,22
-  palette "models/powerups5/instant/earth_haste.jpg" 255,119,97,79
-  palette "models/powerups5/instant/earth_flight.jpg" 255,83,62,54
-  palette "models/powerups5/instant/doom_sphere_outside_invis.tga" 46,51,50,49
-  palette "models/powerups5/instant/doom_sphere_inside_regen.jpg" 255,68,12,19
-  palette "models/powerups5/instant/doom_sphere_inside_invul.jpg" 255,47,102,2
-  palette "models/powerups5/instant/doom_sphere_inside_invis.jpg" 255,94,1,3
-  palette "models/powerups5/instant/doom_sphere_inside_haste.jpg" 255,95,46,1
-  palette "models/powerups5/instant/doom_sphere_inside_flight.jpg" 255,89,18,106
-  palette "models/powerups5/instant/doom_regen_heart.jpg" 255,82,20,11
-  palette "models/powerups5/instant/doom_regen_glowplane.jpg" 255,68,2,21
-  palette "models/powerups5/instant/doom_invul_skull.jpg" 255,34,69,8
-  palette "models/powerups5/instant/doom_invul_eyes.jpg" 255,83,19,2
-  palette "models/powerups5/instant/doom_invis_spiral_old.tga" 184,30,30,30
-  palette "models/powerups5/instant/doom_invis_spiral.tga" 184,77,9,9
-  palette "models/powerups5/instant/doom_invis_iris.tga" 108,34,7,1
-  palette "models/powerups5/instant/doom_invis_eyeball.jpg" 255,10,23,106
-  palette "models/powerups5/instant/doom_haste_head.jpg" 255,98,60,5
-  palette "models/powerups5/instant/doom_haste_elecfront3.jpg" 255,10,6,2
-  palette "models/powerups5/instant/doom_haste_elecfront2.jpg" 255,13,8,2
-  palette "models/powerups5/instant/doom_haste_elecfront1.jpg" 255,13,8,2
-  palette "models/powerups5/instant/doom_haste_elecback4.jpg" 255,33,21,5
-  palette "models/powerups5/instant/doom_haste_elecback3.jpg" 255,12,8,2
-  palette "models/powerups5/instant/doom_haste_elecback2.jpg" 255,21,14,3
-  palette "models/powerups5/instant/doom_haste_elecback1.jpg" 255,24,16,4
-  palette "models/powerups5/instant/doom_flight_g.jpg" 255,3,1,3
-  palette "models/powerups5/instant/doom_flight.tga" 234,56,22,64
   palette "models/powerups5/armor/strogg_smallarmor.jpg" 255,58,38,34
   palette "models/powerups5/armor/strogg_combat_armor.jpg" 255,87,64,24
   palette "models/powerups5/armor/strogg_body_glow2.jpg" 255,2,0,0
   palette "models/powerups5/armor/strogg_body_glow1.jpg" 255,1,1,2
   palette "models/powerups5/armor/strogg_body_armor.tga" 253,41,25,20
+  palette "models/powerups5/armor/strogg_body_armor.png" 253,41,25,20
   palette "models/powerups5/armor/slipgate_yellow_armor.jpg" 255,48,34,20
   palette "models/powerups5/armor/slipgate_smallarmor.jpg" 255,35,25,33
   palette "models/powerups5/armor/slipgate_red_armor.jpg" 255,50,21,17
@@ -8923,7 +6924,9 @@ palettes/default
   palette "models/powerups5/ammo/strogg_cells2.jpg" 255,44,74,18
   palette "models/powerups5/ammo/strogg_cells1.jpg" 255,4,31,1
   palette "models/powerups5/ammo/strogg_cellpack_screen.tga" 179,0,0,0
+  palette "models/powerups5/ammo/strogg_cellpack_screen.png" 179,0,0,0
   palette "models/powerups5/ammo/strogg_cellpack_fx.tga" 179,27,48,11
+  palette "models/powerups5/ammo/strogg_cellpack_fx.png" 179,27,48,11
   palette "models/powerups5/ammo/strogg_cellpack.jpg" 255,36,36,37
   palette "models/powerups5/ammo/strogg_bullets.jpg" 255,61,44,33
   palette "models/powerups5/ammo/slip_shells.jpg" 255,43,39,19
@@ -8957,60 +6960,1957 @@ palettes/default
   palette "models/powerups5/ammo/doom_bigcellpack_e2.jpg" 255,69,39,10
   palette "models/powerups5/ammo/doom_bigcellpack_e1.jpg" 255,105,62,17
   palette "models/powerups5/ammo/doom_bigcellpack.jpg" 255,26,23,24
+  palette "models/powerup3/ammo/shotammo2.tga" 255,52,26,1
+  palette "models/powerup3/ammo/shotammo2.jpg" 255,53,27,8
+  palette "models/powerup3/ammo/rockammo2.tga" 255,54,0,0
+  palette "models/powerup3/ammo/rockammo2.jpg" 255,55,3,4
+  palette "models/powerup3/ammo/railammo2.tga" 255,0,52,0
+  palette "models/powerup3/ammo/railammo2.jpg" 255,6,53,7
+  palette "models/powerup3/ammo/plasammo2.tga" 255,50,0,62
+  palette "models/powerup3/ammo/plasammo2.jpg" 255,52,5,64
+  palette "models/powerup3/ammo/machammo2.tga" 255,56,56,0
+  palette "models/powerup3/ammo/machammo2.jpg" 255,58,57,10
+  palette "models/powerup3/ammo/lighammo2.tga" 255,59,59,41
+  palette "models/powerup3/ammo/lighammo2.jpg" 255,60,60,44
+  palette "models/powerup3/ammo/grenammo2.tga" 255,0,30,0
+  palette "models/powerup3/ammo/grenammo2.jpg" 255,5,31,5
+  palette "models/powerup3/ammo/bfgammo2.tga" 255,0,24,60
+  palette "models/powerup3/ammo/bfgammo2.jpg" 255,5,25,61
+  palette "models/powerup3/ammo/ammolights.tga" 13,255,255,255
+  palette "models/powerup3/ammo/ammolights.png" 13,255,255,255
+  palette "models/powerup3/ammo/ammobox.tga" 232,65,66,66
+  palette "models/powerup3/ammo/ammobox.png" 232,65,66,66
+  palette "models/lighting/toxiclight/toxiclight.jpg" 255,41,39,31
+  palette "models/lighting/toxiclight/lamp.jpg" 255,137,128,92
+  palette "models/lighting/torches/torch2.jpg" 255,37,35,35
+  palette "models/lighting/torches/torch1.jpg" 255,104,98,73
+  palette "models/lighting/landscapelighting/lanscape1.jpg" 255,56,54,47
+  palette "models/lighting/landscapelighting/lamp3.jpg" 255,171,161,140
+  palette "models/lighting/landscapelighting/lamp2.jpg" 255,146,146,135
+  palette "models/lighting/landscapelighting/lamp1.jpg" 255,182,176,153
+  palette "models/lighting/spotlamp1/spotlamp.tga" 183,135,135,135
+  palette "models/lighting/spotlamp1/spotlamp.png" 183,135,135,135
+  palette "models/lighting/spotlamp1/beam_red.tga" 255,172,0,0
+  palette "models/lighting/spotlamp1/beam_red.jpg" 255,169,0,0
+  palette "models/lighting/spotlamp1/beam_blue.jpg" 255,3,27,43
+  palette "models/lighting/spotlamp1/beam.tga" 255,238,238,238
+  palette "models/lighting/spotlamp1/beam.jpg" 255,238,238,238
+  palette "models/lighting/egyptlamp/egyptlampmap.tga" 249,181,149,101
+  palette "models/lighting/egyptlamp/egyptlampmap.png" 249,181,149,101
+  palette "models/lighting/elglight2/elglight2.tga" 220,36,35,34
+  palette "models/lighting/elglight2/elglight2.png" 220,36,35,34
+  palette "models/lighting/gothl/gothl_glow.jpg" 255,64,32,13
+  palette "models/lighting/gothl/gothl_base_1.jpg" 255,57,56,56
+  palette "models/lighting/gothl/gothl_base.jpg" 255,73,75,77
+  palette "models/lighting/gothl/gothl_LampScreen.jpg" 255,47,39,15
+  palette "models/lighting/gothl/gothl_Bulp.jpg" 255,232,193,32
+  palette "models/powerups/shield/shield2.tga" 255,16,8,27
+  palette "models/powerups/shield/shield2.jpg" 255,16,9,27
+  palette "models/powerups/shield/shield.tga" 255,79,27,109
+  palette "models/powerups/shield/shield.jpg" 255,78,27,109
+  palette "models/powerups/shield/juicer.tga" 255,67,4,2
+  palette "models/powerups/shield/juicer.jpg" 255,66,6,4
+  palette "models/powerups/orb/redfx.tga" 255,19,0,2
+  palette "models/powerups/orb/redfx.jpg" 255,19,2,3
+  palette "models/powerups/orb/red.tga" 255,35,11,0
+  palette "models/powerups/orb/red.jpg" 255,35,11,2
+  palette "models/powerups/orb/bluefx.tga" 255,0,18,16
+  palette "models/powerups/orb/bluefx.jpg" 255,4,18,17
+  palette "models/powerups/orb/blue.tga" 255,0,28,35
+  palette "models/powerups/orb/blue.jpg" 255,3,29,35
+  palette "models/powerups/obelisk/ob_twirl2.tga" 255,56,56,56
+  palette "models/powerups/obelisk/ob_twirl2.jpg" 255,56,56,56
+  palette "models/powerups/obelisk/ob_twirl.tga" 255,56,56,56
+  palette "models/powerups/obelisk/ob_twirl.jpg" 255,56,56,56
+  palette "models/powerups/obelisk/ob_trns.tga" 75,70,61,54
+  palette "models/powerups/obelisk/ob_trns.png" 75,70,61,54
+  palette "models/powerups/obelisk/ob_top.tga" 255,58,53,49
+  palette "models/powerups/obelisk/ob_top.jpg" 255,58,53,49
+  palette "models/powerups/obelisk/ob_sft2.tga" 255,134,134,134
+  palette "models/powerups/obelisk/ob_sft2.jpg" 255,134,134,134
+  palette "models/powerups/obelisk/ob_sft.tga" 238,58,52,47
+  palette "models/powerups/obelisk/ob_sft.png" 238,58,52,47
+  palette "models/powerups/obelisk/ob_flare2.tga" 255,12,12,12
+  palette "models/powerups/obelisk/ob_flare2.jpg" 255,12,12,12
+  palette "models/powerups/obelisk/ob_flare.tga" 255,10,10,11
+  palette "models/powerups/obelisk/ob_flare.jpg" 255,10,10,11
+  palette "models/powerups/obelisk/ob_cyl.tga" 255,46,46,46
+  palette "models/powerups/obelisk/ob_cyl.jpg" 255,46,46,46
+  palette "models/powerups/holdable/teleport_fluid.jpeg" 255,10,151,149
+  palette "models/powerups/holdable/medkit_fluid.jpeg" 255,151,7,9
+  palette "models/powerups/harvester/red_hb.tga" 255,7,4,2
+  palette "models/powerups/harvester/red_hb.jpg" 255,7,4,3
+  palette "models/powerups/harvester/red_h2.tga" 255,70,0,7
+  palette "models/powerups/harvester/red_h2.jpg" 255,70,3,8
+  palette "models/powerups/harvester/red_h.tga" 255,57,1,1
+  palette "models/powerups/harvester/red_h.jpg" 255,57,1,1
+  palette "models/powerups/harvester/harvester2.tga" 220,49,47,42
+  palette "models/powerups/harvester/harvester2.png" 220,49,47,42
+  palette "models/powerups/harvester/harvester.tga" 255,42,39,37
+  palette "models/powerups/harvester/harvester.jpg" 255,42,40,37
+  palette "models/powerups/harvester/blue_h2.tga" 255,0,51,83
+  palette "models/powerups/harvester/blue_h2.jpg" 255,5,52,83
+  palette "models/powerups/harvester/blue_h.tga" 255,0,46,57
+  palette "models/powerups/harvester/blue_h.jpg" 255,1,46,58
+  palette "models/powerups/armor/shard_sphere.jpeg" 255,82,70,84
+  palette "models/powerups/armor/shard2.png" 156,84,81,90
+  palette "models/powerups/armor/newyellow.png" 227,117,66,4
+  palette "models/powerups/armor/newred.png" 229,89,6,8
+  palette "models/powerups/armor/energy_yel3.jpeg" 255,19,17,9
+  palette "models/powerups/armor/energy_red1.jpeg" 255,20,5,6
+  palette "models/powerups/adren/skin_nm.tga" 40,128,128,255
+  palette "models/powerups/adren/skin_nm.png" 40,128,128,255
+  palette "models/powerups/adren/skin_glow.png" 255,0,5,1
+  palette "models/powerups/adren/skin.tga" 255,19,22,21
+  palette "models/powerups/adren/skin.jpg" 255,19,22,21
+  palette "models/powerups/ammo/shotammo2.jpeg" 255,76,41,23
+  palette "models/powerups/ammo/shotammo.png" 166,87,51,13
+  palette "models/powerups/ammo/rockammo2.jpeg" 255,67,8,9
+  palette "models/powerups/ammo/rockammo.png" 166,87,14,13
+  palette "models/powerups/ammo/railammo2.jpeg" 255,17,55,18
+  palette "models/powerups/ammo/railammo.png" 196,12,62,28
+  palette "models/powerups/ammo/proxammo2.tga" 255,82,0,40
+  palette "models/powerups/ammo/proxammo2.jpg" 255,83,6,41
+  palette "models/powerups/ammo/proxammo.tga" 196,66,21,66
+  palette "models/powerups/ammo/proxammo.png" 196,66,21,66
+  palette "models/powerups/ammo/plasammo2.jpeg" 255,55,10,67
+  palette "models/powerups/ammo/plasammo.png" 196,91,12,56
+  palette "models/powerups/ammo/nailgammo2.tga" 255,0,76,53
+  palette "models/powerups/ammo/nailgammo2.jpg" 255,9,77,54
+  palette "models/powerups/ammo/nailgammo.tga" 196,45,75,57
+  palette "models/powerups/ammo/nailgammo.png" 196,45,75,57
+  palette "models/powerups/ammo/machammo2.png" 93,236,236,0
+  palette "models/powerups/ammo/machammo.png" 166,87,76,13
+  palette "models/powerups/ammo/lighammo2.jpeg" 255,94,95,71
+  palette "models/powerups/ammo/lighammo.png" 196,81,70,41
+  palette "models/powerups/ammo/grenammo2.jpeg" 255,11,40,12
+  palette "models/powerups/ammo/grenammo.png" 166,40,44,23
+  palette "models/powerups/ammo/flamammo2.jpg" 255,85,45,7
+  palette "models/powerups/ammo/flamammo.tga" 255,151,67,20
+  palette "models/powerups/ammo/flamammo.jpg" 255,151,67,23
+  palette "models/powerups/ammo/flamammo copy 2.tga" 255,151,67,20
+  palette "models/powerups/ammo/flamammo copy 2.jpg" 255,151,67,23
+  palette "models/powerups/ammo/chaingammo2.tga" 255,92,92,92
+  palette "models/powerups/ammo/chaingammo2.jpg" 255,92,92,92
+  palette "models/powerups/ammo/chaingammo.tga" 196,133,121,115
+  palette "models/powerups/ammo/chaingammo.png" 196,133,121,115
+  palette "models/powerups/ammo/bfgammo2.jpeg" 255,11,36,83
+  palette "models/powerups/ammo/bfgammo.png" 196,50,41,36
+  palette "models/players/widow/skin.png" 255,19,12,9
+  palette "models/players/widow/skin.pcx" 255,19,12,9
+  palette "models/players/widow/pain.pcx" 255,19,11,8
+  palette "models/players/widow/icon_default.tga" 255,66,50,40
+  palette "models/players/widow/icon_default.jpg" 255,66,50,40
+  palette "models/players/wrath/wrthgib3.pcx" 255,16,5,3
+  palette "models/players/wrath/wrthgib2.pcx" 255,9,2,1
+  palette "models/players/wrath/wrthgib1.pcx" 255,31,19,12
+  palette "models/players/wrath/wrath.pcx" 255,18,12,10
+  palette "models/players/wrath/icon_default.tga" 255,17,16,14
+  palette "models/players/wrath/icon_default.jpg" 255,17,16,15
+  palette "models/players/xaero/xaero_q.png" 20,90,64,50
+  palette "models/players/xaero/xaero_h.png" 254,149,101,65
+  palette "models/players/xaero/xaero_a.png" 248,40,27,19
+  palette "models/players/xaero/xaero.png" 20,124,48,3
+  palette "models/players/xaero/red_h.png" 254,142,75,47
+  palette "models/players/xaero/red.jpg" 255,84,27,19
+  palette "models/players/xaero/icon_red.png" 208,180,82,51
+  palette "models/players/xaero/icon_pm.tga" 162,189,147,104
+  palette "models/players/xaero/icon_pm.png" 162,189,147,104
+  palette "models/players/xaero/icon_default.png" 184,175,121,79
+  palette "models/players/xaero/icon_blue.png" 162,147,88,110
+  palette "models/players/xaero/color_h.tga" 46,178,178,178
+  palette "models/players/xaero/color_h.png" 46,178,178,178
+  palette "models/players/xaero/color.tga" 114,122,122,122
+  palette "models/players/xaero/color.png" 114,122,122,122
+  palette "models/players/xaero/blue_h.jpg" 255,119,74,79
+  palette "models/players/xaero/blue.jpg" 255,53,26,72
+  palette "models/players/tyrant/level4.jpg" 255,17,16,17
+  palette "models/players/tyrant/icon_default.tga" 255,255,255,255
+  palette "models/players/tyrant/icon_default.jpg" 255,255,255,255
+  palette "models/players/visor/visor.jpg" 255,58,33,20
+  palette "models/players/visor/red.jpg" 255,87,28,24
+  palette "models/players/visor/icon_red.png" 186,160,35,25
+  palette "models/players/visor/icon_pm.tga" 175,122,109,91
+  palette "models/players/visor/icon_pm.png" 175,122,109,91
+  palette "models/players/visor/icon_gorre.png" 241,89,42,16
+  palette "models/players/visor/icon_default.png" 175,82,60,45
+  palette "models/players/visor/icon_blue.png" 175,58,70,97
+  palette "models/players/visor/gorre.png" 243,68,39,25
+  palette "models/players/visor/color.tga" 97,110,110,110
+  palette "models/players/visor/color.png" 97,110,110,110
+  palette "models/players/visor/blue.jpg" 255,39,45,62
+  palette "models/players/uriel/zael_h.jpg" 255,71,55,24
+  palette "models/players/uriel/zael.png" 50,96,77,40
+  palette "models/players/uriel/uriel_w.png" 132,77,43,22
+  palette "models/players/uriel/uriel_h.png" 243,76,59,37
+  palette "models/players/uriel/uriel.jpg" 255,78,54,29
+  palette "models/players/uriel/red_w.png" 132,65,43,31
+  palette "models/players/uriel/red_h.jpg" 255,102,82,60
+  palette "models/players/uriel/red.jpg" 255,81,29,21
+  palette "models/players/uriel/null.jpg" 255,0,0,0
+  palette "models/players/uriel/icon_zael.png" 215,90,99,52
+  palette "models/players/uriel/icon_red.png" 192,155,19,14
+  palette "models/players/uriel/icon_pm.tga" 187,180,178,163
+  palette "models/players/uriel/icon_pm.png" 187,180,178,163
+  palette "models/players/uriel/icon_default.png" 190,163,94,50
+  palette "models/players/uriel/icon_blue.png" 187,88,20,181
+  palette "models/players/uriel/color_x.tga" 111,81,58,44
+  palette "models/players/uriel/color_x.png" 111,81,58,44
+  palette "models/players/uriel/color_h.tga" 0,0,0,0
+  palette "models/players/uriel/color_h.jpg" 255,102,82,60
+  palette "models/players/uriel/color.tga" 123,118,118,118
+  palette "models/players/uriel/color.png" 123,118,118,118
+  palette "models/players/uriel/blue_w.png" 132,60,44,36
+  palette "models/players/uriel/blue.jpg" 255,54,28,76
+  palette "models/players/trooper/ee_en_trooper.pcx" 255,35,30,27
+  palette "models/players/swark/ee_en_swark.pcx" 255,61,44,36
+  palette "models/players/tank/skin.tga" 255,27,22,17
+  palette "models/players/tank/skin.pcx" 255,27,22,17
+  palette "models/players/tank/skin.jpg" 255,28,23,18
+  palette "models/players/tank/pain.tga" 255,27,20,15
+  palette "models/players/tank/pain.pcx" 255,27,20,15
+  palette "models/players/tank/pain.jpg" 255,27,21,16
+  palette "models/players/tank/icon_default.tga" 255,30,27,23
+  palette "models/players/tank/icon_default.jpg" 255,30,28,23
+  palette "models/players/tankjr/tankjr.png" 18,94,65,53
+  palette "models/players/tankjr/red.jpg" 255,81,28,19
+  palette "models/players/tankjr/icon_red.png" 177,190,80,46
+  palette "models/players/tankjr/icon_pm.tga" 167,180,154,124
+  palette "models/players/tankjr/icon_pm.png" 167,180,154,124
+  palette "models/players/tankjr/icon_default.png" 196,180,128,86
+  palette "models/players/tankjr/icon_blue.png" 167,87,115,147
+  palette "models/players/tankjr/color.tga" 103,121,121,121
+  palette "models/players/tankjr/color.png" 103,121,121,121
+  palette "models/players/tankjr/blue.jpg" 255,33,42,65
+  palette "models/players/soldier/soldier1_legs.tga" 255,42,31,23
+  palette "models/players/soldier/soldier1_legs.jpg" 255,42,31,23
+  palette "models/players/soldier/soldier1_head.tga" 255,101,103,99
+  palette "models/players/soldier/soldier1_head.jpg" 255,102,104,99
+  palette "models/players/soldier/soldier1_goggle.tga" 193,46,33,26
+  palette "models/players/soldier/soldier1_goggle.png" 193,46,33,26
+  palette "models/players/soldier/soldier1_body.tga" 255,86,68,44
+  palette "models/players/soldier/soldier1_body.jpg" 255,86,68,44
+  palette "models/players/soldier/soldier1_arms.tga" 255,75,56,37
+  palette "models/players/soldier/soldier1_arms.jpg" 255,75,56,38
+  palette "models/players/starman/torso.tga" 255,99,61,31
+  palette "models/players/starman/torso.jpg" 255,99,61,32
+  palette "models/players/starman/legs.tga" 247,99,66,36
+  palette "models/players/starman/legs.png" 247,99,66,36
+  palette "models/players/starman/icon_default.tga" 213,86,67,50
+  palette "models/players/starman/icon_default.png" 213,86,67,50
+  palette "models/players/starman/head.tga" 228,97,71,49
+  palette "models/players/starman/head.png" 228,97,71,49
+  palette "models/players/starman/dark_torso.tga" 240,46,42,47
+  palette "models/players/starman/dark_torso.png" 240,46,42,47
+  palette "models/players/starman/dark_legs.tga" 255,30,27,31
+  palette "models/players/starman/dark_legs.jpg" 255,30,27,31
+  palette "models/players/starman/dark_head.tga" 242,36,33,38
+  palette "models/players/starman/dark_head.png" 242,36,33,38
+  palette "models/players/starman/dark_eyes.tga" 1,133,0,0
+  palette "models/players/starman/dark_eyes.png" 1,133,0,0
+  palette "models/players/starman/dark_arms.tga" 255,40,36,40
+  palette "models/players/starman/dark_arms.jpg" 255,40,36,41
+  palette "models/players/sorlag/sorlag_t.jpg" 255,75,46,38
+  palette "models/players/sorlag/sorlag.jpg" 255,67,44,36
+  palette "models/players/sorlag/red_t.jpg" 255,97,7,5
+  palette "models/players/sorlag/red.jpg" 255,73,29,22
+  palette "models/players/sorlag/icon_red.png" 131,150,90,68
+  palette "models/players/sorlag/icon_pm.tga" 253,191,187,167
+  palette "models/players/sorlag/icon_pm.png" 253,191,187,167
+  palette "models/players/sorlag/icon_default.png" 129,142,120,106
+  palette "models/players/sorlag/icon_blue.png" 253,108,64,179
+  palette "models/players/sorlag/color_t.tga" 216,132,132,132
+  palette "models/players/sorlag/color_t.png" 216,132,132,132
+  palette "models/players/sorlag/color.tga" 100,109,109,109
+  palette "models/players/sorlag/color.png" 100,109,109,109
+  palette "models/players/sorlag/blue_t.jpg" 255,38,6,112
+  palette "models/players/sorlag/blue.jpg" 255,47,29,63
+  palette "models/players/slipgate/player.png" 255,63,43,30
+  palette "models/players/slipgate/player.pcx" 255,63,43,30
+  palette "models/players/slipgate/icon_default.tga" 255,75,52,33
+  palette "models/players/slipgate/icon_default.jpg" 255,75,52,33
+  palette "models/players/shambler/skin0.png" 255,81,53,41
+  palette "models/players/shambler/skin0.pcx" 255,81,53,41
+  palette "models/players/shambler/icon_default.tga" 255,37,12,10
+  palette "models/players/shambler/icon_default.jpg" 255,37,13,11
+  palette "models/players/shalrath/shalrath.png" 255,55,44,36
+  palette "models/players/shalrath/shalrath.pcx" 255,55,44,36
+  palette "models/players/shalrath/icon_vore.tga" 255,41,28,20
+  palette "models/players/shalrath/icon_vore.jpg" 255,42,28,21
+  palette "models/players/shalrath/icon_default.tga" 255,41,28,20
+  palette "models/players/shalrath/icon_default.jpg" 255,42,28,21
+  palette "models/players/sealord/torso_sealord.tga" 255,119,94,87
+  palette "models/players/sealord/torso_sealord.jpg" 255,119,95,87
+  palette "models/players/sealord/lower_sealord.tga" 224,112,99,92
+  palette "models/players/sealord/lower_sealord.png" 224,112,99,92
+  palette "models/players/sealord/icon_default.tga" 255,124,74,65
+  palette "models/players/sealord/icon_default.jpg" 255,124,74,65
+  palette "models/players/sealord/head_sealord.tga" 206,112,65,57
+  palette "models/players/sealord/head_sealord.png" 206,112,65,57
+  palette "models/players/sealord/arm_sealord.tga" 254,140,133,123
+  palette "models/players/sealord/arm_sealord.png" 254,140,133,123
+  palette "models/players/slash/yurikoskate.png" 83,168,134,119
+  palette "models/players/slash/yuriko_h.png" 212,35,33,28
+  palette "models/players/slash/yuriko.png" 186,100,75,58
+  palette "models/players/slash/slashskate.jpg" 255,45,63,88
+  palette "models/players/slash/slash_h.jpg" 255,49,37,33
+  palette "models/players/slash/slash.jpg" 255,76,50,38
+  palette "models/players/slash/red_h.jpg" 255,66,32,19
+  palette "models/players/slash/red.jpg" 255,84,16,13
+  palette "models/players/slash/icon_yuriko.png" 215,96,66,52
+  palette "models/players/slash/icon_red.png" 191,149,54,31
+  palette "models/players/slash/icon_pm.tga" 177,170,151,119
+  palette "models/players/slash/icon_pm.png" 177,170,151,119
+  palette "models/players/slash/icon_grrl.png" 199,122,71,52
+  palette "models/players/slash/icon_default.png" 160,119,97,86
+  palette "models/players/slash/icon_blue.png" 170,76,88,132
+  palette "models/players/slash/grrl_h.png" 250,64,35,26
+  palette "models/players/slash/grrl.jpg" 255,65,37,27
+  palette "models/players/slash/color_skates.tga" 255,44,44,44
+  palette "models/players/slash/color_skates.jpg" 255,45,45,45
+  palette "models/players/slash/color_h.tga" 81,79,79,79
+  palette "models/players/slash/color_h.png" 81,79,79,79
+  palette "models/players/slash/color.tga" 125,133,133,133
+  palette "models/players/slash/color.png" 125,133,133,133
+  palette "models/players/slash/blue_h.jpg" 255,43,37,42
+  palette "models/players/slash/blue.jpg" 255,22,34,75
+  palette "models/players/riffle/ee_en_rifleman.pcx" 255,35,27,25
+  palette "models/players/pilot/pilot_legs.tga" 255,38,34,29
+  palette "models/players/pilot/pilot_legs.jpg" 255,38,34,29
+  palette "models/players/pilot/pilot_head.tga" 251,135,125,118
+  palette "models/players/pilot/pilot_head.png" 251,135,125,118
+  palette "models/players/pilot/pilot_body.tga" 255,77,61,43
+  palette "models/players/pilot/pilot_body.jpg" 255,78,61,44
+  palette "models/players/pilot/pilot_arms.tga" 255,59,46,39
+  palette "models/players/pilot/pilot_arms.jpg" 255,60,46,40
+  palette "models/players/sarge/roderic.png" 252,69,41,33
+  palette "models/players/sarge/red.jpg" 255,77,25,20
+  palette "models/players/sarge/null.jpg" 255,0,0,0
+  palette "models/players/sarge/krusade.png" 251,64,41,27
+  palette "models/players/sarge/icon_roderic.png" 178,120,68,53
+  palette "models/players/sarge/icon_red.png" 204,180,84,66
+  palette "models/players/sarge/icon_pm.tga" 208,158,125,99
+  palette "models/players/sarge/icon_pm.png" 208,158,125,99
+  palette "models/players/sarge/icon_krusade.png" 193,126,87,61
+  palette "models/players/sarge/icon_default.png" 175,175,133,98
+  palette "models/players/sarge/icon_default.jpeg" 255,119,92,69
+  palette "models/players/sarge/icon_blue.png" 200,117,103,109
   palette "models/players/sarge/default.tga" 255,35,28,21
+  palette "models/players/sarge/default.jpg" 255,35,29,21
+  palette "models/players/sarge/color.tga" 109,95,95,95
+  palette "models/players/sarge/color.png" 109,95,95,95
+  palette "models/players/sarge/cigar.jpg" 255,64,35,19
+  palette "models/players/sarge/cigar.glow.jpg" 255,47,21,12
+  palette "models/players/sarge/blue.jpg" 255,38,41,58
+  palette "models/players/sarge/band.jpg" 255,75,51,38
+  palette "models/players/ranger/wrack_h.jpg" 255,44,30,24
+  palette "models/players/ranger/wrack.png" 32,83,65,54
+  palette "models/players/ranger/red_h.jpg" 255,78,58,41
+  palette "models/players/ranger/red.jpg" 255,57,23,18
+  palette "models/players/ranger/ranger_statue.jpg" 255,93,85,80
+  palette "models/players/ranger/ranger_h_statue.jpg" 255,94,87,82
+  palette "models/players/ranger/ranger_h.jpg" 255,85,57,43
+  palette "models/players/ranger/ranger.jpg" 255,46,28,19
+  palette "models/players/ranger/icon_wrack.png" 222,71,50,31
+  palette "models/players/ranger/icon_red.png" 185,115,45,33
+  palette "models/players/ranger/icon_pm.tga" 201,113,100,81
+  palette "models/players/ranger/icon_pm.png" 201,113,100,81
+  palette "models/players/ranger/icon_default.png" 217,105,70,46
+  palette "models/players/ranger/icon_blue.png" 201,63,73,93
+  palette "models/players/ranger/color_h.tga" 0,0,0,0
+  palette "models/players/ranger/color_h.jpg" 255,85,57,43
+  palette "models/players/ranger/color.tga" 96,77,77,77
+  palette "models/players/ranger/color.png" 96,77,77,77
+  palette "models/players/ranger/blue.jpg" 255,33,35,46
+  palette "models/players/pi/piston.tga" 135,112,74,30
+  palette "models/players/pi/piston.png" 135,112,74,30
+  palette "models/players/pi/pi_t2.tga" 42,88,75,62
+  palette "models/players/pi/pi_t2.png" 42,88,75,62
+  palette "models/players/pi/pi_t.tga" 106,84,60,45
+  palette "models/players/pi/pi_t.png" 106,84,60,45
+  palette "models/players/pi/pi_h.tga" 255,107,84,74
+  palette "models/players/pi/pi_h.jpg" 255,107,85,74
+  palette "models/players/pi/pi.tga" 26,173,139,119
+  palette "models/players/pi/pi.png" 26,173,139,119
+  palette "models/players/pi/icon_red.tga" 168,193,156,141
+  palette "models/players/pi/icon_red.png" 168,193,156,141
+  palette "models/players/pi/icon_default.tga" 168,193,156,141
+  palette "models/players/pi/icon_default.png" 168,193,156,141
+  palette "models/players/pi/icon_blue.tga" 168,193,156,141
+  palette "models/players/pi/icon_blue.png" 168,193,156,141
+  palette "models/players/pi/gear01.tga" 172,77,68,61
+  palette "models/players/pi/gear01.png" 172,77,68,61
+  palette "models/players/pi/endcap.tga" 207,91,61,32
+  palette "models/players/pi/endcap.png" 207,91,61,32
+  palette "models/players/pi/beam2.tga" 255,68,3,3
+  palette "models/players/pi/beam2.jpg" 255,67,5,5
+  palette "models/players/pi/beam.tga" 255,34,0,0
+  palette "models/players/pi/beam.jpg" 255,35,2,4
+  palette "models/players/razor/red.jpg" 255,82,22,19
+  palette "models/players/razor/razor_gogs_fx.jpg" 255,43,43,43
+  palette "models/players/razor/razor_gogs.jpg" 255,22,26,38
+  palette "models/players/razor/razor.jpg" 255,65,50,44
+  palette "models/players/razor/patriot.png" 22,96,73,61
+  palette "models/players/razor/id.png" 163,64,32,25
+  palette "models/players/razor/icon_red.png" 189,154,47,42
+  palette "models/players/razor/icon_pm.tga" 169,137,122,105
+  palette "models/players/razor/icon_pm.png" 169,137,122,105
+  palette "models/players/razor/icon_patriot.png" 191,144,124,125
+  palette "models/players/razor/icon_id.png" 225,87,81,75
+  palette "models/players/razor/icon_default.png" 199,159,120,110
+  palette "models/players/razor/icon_blue.png" 169,84,73,121
+  palette "models/players/razor/h_red.jpg" 255,95,14,13
+  palette "models/players/razor/h_razor.jpg" 255,82,56,50
+  palette "models/players/razor/h_patriot.jpg" 255,58,46,48
+  palette "models/players/razor/h_id.png" 98,67,53,46
+  palette "models/players/razor/h_blue.jpg" 255,18,16,86
+  palette "models/players/razor/color_h.tga" 131,145,145,145
+  palette "models/players/razor/color_h.png" 131,145,145,145
+  palette "models/players/razor/color.tga" 143,117,117,117
+  palette "models/players/razor/color.png" 143,117,117,117
+  palette "models/players/razor/blue.jpg" 255,22,36,79
+  palette "models/players/oldone/oldone.pcx" 255,77,59,44
+  palette "models/players/ogre/ogre.png" 255,45,27,20
+  palette "models/players/ogre/ogre.pcx" 255,45,27,20
+  palette "models/players/ogre/icon_default.tga" 255,52,33,23
+  palette "models/players/ogre/icon_default.jpg" 255,52,33,24
+  palette "models/players/orbb/red_h.jpg" 255,144,31,30
+  palette "models/players/orbb/red.jpg" 255,88,36,33
+  palette "models/players/orbb/orbb_tail_blue.jpg" 255,11,10,178
+  palette "models/players/orbb/orbb_tail.jpg" 255,178,24,13
+  palette "models/players/orbb/orbb_light_blue.jpg" 255,1,2,252
+  palette "models/players/orbb/orbb_light.jpg" 255,254,0,2
+  palette "models/players/orbb/orbb_h2.png" 120,107,73,52
+  palette "models/players/orbb/orbb.jpg" 255,75,57,49
+  palette "models/players/orbb/icon_red.png" 215,78,8,6
+  palette "models/players/orbb/icon_pm.tga" 211,134,132,121
+  palette "models/players/orbb/icon_pm.png" 211,134,132,121
+  palette "models/players/orbb/icon_default.png" 189,177,141,116
+  palette "models/players/orbb/icon_blue.png" 208,65,62,130
+  palette "models/players/orbb/color_h.tga" 197,182,182,182
+  palette "models/players/orbb/color_h.png" 197,182,182,182
+  palette "models/players/orbb/color.tga" 95,136,136,136
+  palette "models/players/orbb/color.png" 95,136,136,136
+  palette "models/players/orbb/blue_h.jpg" 255,30,75,153
+  palette "models/players/orbb/blue.jpg" 255,42,48,78
+  palette "models/players/mutant/skin.tga" 255,31,22,15
+  palette "models/players/mutant/skin.pcx" 255,31,22,15
+  palette "models/players/mutant/skin.jpg" 255,31,22,15
+  palette "models/players/mutant/pain.tga" 255,30,20,13
+  palette "models/players/mutant/pain.pcx" 255,30,20,13
+  palette "models/players/mutant/pain.jpg" 255,30,20,14
+  palette "models/players/mutant/icon_default.tga" 255,91,73,53
+  palette "models/players/mutant/icon_default.jpg" 255,91,73,54
+  palette "models/players/mummy/zombie.png" 255,64,43,36
+  palette "models/players/mummy/zombie.pcx" 255,64,43,36
+  palette "models/players/mummy/icon_default.tga" 255,50,28,16
+  palette "models/players/mummy/icon_default.jpg" 255,50,28,18
+  palette "models/players/mynx/red_s.jpg" 255,84,5,5
+  palette "models/players/mynx/red_h.jpg" 255,55,34,22
+  palette "models/players/mynx/mynx_shiny.png" 211,45,35,13
+  palette "models/players/mynx/mynx_h.jpg" 255,56,24,19
+  palette "models/players/mynx/mynx.jpg" 255,73,53,45
+  palette "models/players/mynx/icon_red.png" 209,132,56,34
+  palette "models/players/mynx/icon_pm.tga" 194,122,90,60
+  palette "models/players/mynx/icon_pm.png" 194,122,90,60
+  palette "models/players/mynx/icon_default.png" 226,97,50,37
+  palette "models/players/mynx/icon_blue.png" 191,94,57,67
+  palette "models/players/mynx/color_x.tga" 0,0,0,0
+  palette "models/players/mynx/color_x.jpg" 255,73,53,45
+  palette "models/players/mynx/color_h.tga" 0,0,0,0
+  palette "models/players/mynx/color_h.jpg" 255,55,34,22
+  palette "models/players/mynx/color.tga" 197,125,125,125
+  palette "models/players/mynx/color.png" 197,125,125,125
+  palette "models/players/mynx/blue_s.jpg" 255,8,8,99
+  palette "models/players/metlar/me_body&head.tga" 255,38,36,45
+  palette "models/players/metlar/me_body&head.jpg" 255,38,35,45
+  palette "models/players/metlar/me_arms&legs.tga" 255,30,31,41
+  palette "models/players/metlar/me_arms&legs.jpg" 255,30,31,41
+  palette "models/players/metlar/icon_default.tga" 255,55,54,66
+  palette "models/players/metlar/icon_default.jpg" 255,55,54,67
+  palette "models/players/medic/skin.tga" 255,27,23,19
+  palette "models/players/medic/skin.pcx" 255,27,23,19
+  palette "models/players/medic/skin.jpg" 255,28,23,20
+  palette "models/players/medic/pain.tga" 255,26,21,17
+  palette "models/players/medic/pain.pcx" 255,26,21,17
+  palette "models/players/medic/pain.jpg" 255,27,22,18
+  palette "models/players/marauder/null.tga" 0,0,0,0
+  palette "models/players/marauder/null.jpg" 255,0,0,0
+  palette "models/players/marauder/lvl2_fx.tga" 255,51,56,117
+  palette "models/players/marauder/lvl2_fx.jpg" 255,51,56,116
+  palette "models/players/marauder/icon_default.tga" 255,255,255,255
+  palette "models/players/marauder/icon_default.jpg" 255,255,255,255
+  palette "models/players/marauder/electric.jpg" 255,15,28,28
+  palette "models/players/marauder/default.tga" 255,53,28,25
+  palette "models/players/marauder/default.jpg" 255,54,29,26
+  palette "models/players/marauder/adv.tga" 248,55,31,28
+  palette "models/players/marauder/adv.png" 248,55,31,28
+  palette "models/players/ltn/ee_en_ltn.pcx" 255,44,29,19
+  palette "models/players/monsters/zombie_0.jpg" 255,29,21,16
+  palette "models/players/monsters/wizard_0.jpg" 255,17,10,9
+  palette "models/players/monsters/tarbaby_0.jpg" 255,7,11,22
+  palette "models/players/monsters/soldier_0.jpg" 255,19,15,11
+  palette "models/players/monsters/shambler_0.jpg" 255,31,16,12
+  palette "models/players/monsters/shalrath_0.jpg" 255,18,12,11
+  palette "models/players/monsters/oldone_0.tga" 254,32,17,12
+  palette "models/players/monsters/oldone_0.png" 254,32,17,12
+  palette "models/players/monsters/ogre_0.jpg" 255,31,19,11
+  palette "models/players/monsters/knight_0.jpg" 255,22,12,10
+  palette "models/players/monsters/hknight_0.jpg" 255,13,10,9
+  palette "models/players/monsters/h_zombie_0.jpg" 255,20,12,10
+  palette "models/players/monsters/h_wizard_0.jpg" 255,25,8,8
+  palette "models/players/monsters/h_shams_0.jpg" 255,41,20,16
+  palette "models/players/monsters/h_shal_0.jpg" 255,21,14,12
+  palette "models/players/monsters/h_ogre_0.jpg" 255,37,17,12
+  palette "models/players/monsters/h_mega_0.jpg" 255,8,3,2
+  palette "models/players/monsters/h_knight_0.jpg" 255,32,13,12
+  palette "models/players/monsters/h_hellkn_0.jpg" 255,8,6,5
+  palette "models/players/monsters/h_guard_0.jpg" 255,9,4,3
+  palette "models/players/monsters/h_dog_0.jpg" 255,13,5,3
+  palette "models/players/monsters/h_demon_0.jpg" 255,18,2,2
+  palette "models/players/monsters/fish_0.jpg" 255,29,13,9
+  palette "models/players/monsters/enforcer_0.jpg" 255,36,25,17
+  palette "models/players/monsters/dog_0.jpg" 255,12,5,3
+  palette "models/players/monsters/demon_0.jpg" 255,48,19,12
+  palette "models/players/monsters/boss_0.jpg" 255,48,27,15
+  palette "models/players/lavaman/boss.pcx" 255,47,5,4
+  palette "models/players/lucy/red_h.jpg" 255,50,36,29
+  palette "models/players/lucy/red.jpg" 255,62,18,14
+  palette "models/players/lucy/lucy_h.jpg" 255,71,49,39
+  palette "models/players/lucy/lucy.jpg" 255,43,29,22
+  palette "models/players/lucy/icon_red.png" 179,145,75,58
+  palette "models/players/lucy/icon_pm.tga" 184,110,99,74
+  palette "models/players/lucy/icon_pm.png" 184,110,99,74
+  palette "models/players/lucy/icon_default.png" 160,147,107,88
+  palette "models/players/lucy/icon_blue.png" 180,75,67,87
+  palette "models/players/lucy/icon_angel.png" 172,87,71,64
+  palette "models/players/lucy/color_h.tga" 23,56,56,56
+  palette "models/players/lucy/color_h.png" 23,56,56,56
+  palette "models/players/lucy/color.tga" 117,91,91,91
+  palette "models/players/lucy/color.png" 117,91,91,91
+  palette "models/players/lucy/blue_h.jpg" 255,45,38,33
+  palette "models/players/lucy/blue.jpg" 255,23,21,53
+  palette "models/players/lucy/angel_h.jpg" 255,46,37,32
+  palette "models/players/lucy/angel.png" 127,56,41,33
+  palette "models/players/major/red_h.jpg" 255,66,47,33
+  palette "models/players/major/red.jpg" 255,70,24,17
+  palette "models/players/major/major_h.jpg" 255,68,44,33
+  palette "models/players/major/major.jpg" 255,58,35,21
+  palette "models/players/major/icon_red.png" 180,143,81,55
+  palette "models/players/major/icon_pm.tga" 179,146,104,77
+  palette "models/players/major/icon_pm.png" 179,146,104,77
+  palette "models/players/major/icon_default.png" 186,146,89,65
+  palette "models/players/major/icon_daemia.png" 191,129,79,50
+  palette "models/players/major/icon_blue.png" 179,114,86,88
+  palette "models/players/major/daemia2_h.jpg" 255,73,35,20
+  palette "models/players/major/daemia.png" 249,60,45,36
+  palette "models/players/major/color_h.tga" 1,48,48,48
+  palette "models/players/major/color_h.png" 1,48,48,48
+  palette "models/players/major/color.tga" 121,92,92,92
+  palette "models/players/major/color.png" 121,92,92,92
+  palette "models/players/major/blue_h.jpg" 255,76,43,34
+  palette "models/players/major/blue.jpg" 255,28,38,58
+  palette "models/players/lancer/ee_en_lancer.pcx" 255,40,34,32
+  palette "models/players/knight/knight.pcx" 255,61,41,32
+  palette "models/players/knight/icon_default.tga" 255,33,25,18
+  palette "models/players/knight/icon_default.jpg" 255,33,26,19
+  palette "models/players/knight/hknight.png" 255,43,30,20
+  palette "models/players/knight/hknight.pcx" 255,43,30,20
+  palette "models/players/kahn/ee_boss_shield.pcx" 255,76,63,32
+  palette "models/players/kahn/ee_boss_base.pcx" 255,38,15,13
+  palette "models/players/kahn/ee_boss.pcx" 255,38,15,13
+  palette "models/players/janet/icon_red.tga" 196,130,82,72
+  palette "models/players/janet/icon_red.png" 196,130,82,72
+  palette "models/players/janet/icon_default.tga" 223,145,98,87
+  palette "models/players/janet/icon_default.png" 223,145,98,87
+  palette "models/players/janet/icon_blue.tga" 184,105,131,127
+  palette "models/players/janet/icon_blue.png" 184,105,131,127
+  palette "models/players/keel/red_h.jpg" 255,37,29,25
+  palette "models/players/keel/red.jpg" 255,73,16,12
+  palette "models/players/keel/keel_h.jpg" 255,53,27,18
+  palette "models/players/keel/keel.jpg" 255,68,46,31
+  palette "models/players/keel/icon_red.png" 208,104,46,34
+  palette "models/players/keel/icon_pm.tga" 204,115,108,94
+  palette "models/players/keel/icon_pm.png" 204,115,108,94
+  palette "models/players/keel/icon_default.png" 203,135,91,59
+  palette "models/players/keel/icon_blue.png" 204,43,57,107
+  palette "models/players/keel/color_h.tga" 7,84,84,84
+  palette "models/players/keel/color_h.png" 7,84,84,84
+  palette "models/players/keel/color.tga" 152,103,103,103
+  palette "models/players/keel/color.png" 152,103,103,103
+  palette "models/players/keel/blue_h.jpg" 255,35,29,27
+  palette "models/players/keel/blue.jpg" 255,21,29,70
+  palette "models/players/klesk/red_h.jpg" 255,69,31,19
+  palette "models/players/klesk/red.jpg" 255,57,24,16
+  palette "models/players/klesk/klesk_h.jpg" 255,81,36,21
+  palette "models/players/klesk/klesk_g.jpg" 255,1,2,2
+  palette "models/players/klesk/klesk.jpg" 255,69,27,17
+  palette "models/players/klesk/icon_red.png" 234,143,39,25
+  palette "models/players/klesk/icon_pm.tga" 188,127,105,81
+  palette "models/players/klesk/icon_pm.png" 188,127,105,81
+  palette "models/players/klesk/icon_flisk.png" 211,92,82,75
+  palette "models/players/klesk/icon_default.png" 195,131,57,36
+  palette "models/players/klesk/icon_blue.png" 188,67,58,87
+  palette "models/players/klesk/flisk_h.png" 241,40,47,44
+  palette "models/players/klesk/flisk.png" 15,89,71,60
+  palette "models/players/klesk/color_h.tga" 41,111,111,111
+  palette "models/players/klesk/color_h.png" 41,111,111,111
+  palette "models/players/klesk/color.tga" 51,99,99,99
+  palette "models/players/klesk/color.png" 51,99,99,99
+  palette "models/players/klesk/blue_h.jpg" 255,52,34,36
+  palette "models/players/klesk/blue.jpg" 255,39,30,35
+  palette "models/players/jackal/ee_en_jackal.pcx" 255,86,44,36
+  palette "models/players/insane/icon_default.tga" 255,76,55,40
+  palette "models/players/insane/icon_default.jpg" 255,77,55,41
+  palette "models/players/insane/i_skin03.pcx" 255,35,25,18
+  palette "models/players/insane/i_skin02.pcx" 255,34,27,20
+  palette "models/players/insane/i_skin.png" 255,37,29,21
+  palette "models/players/insane/i_skin.pcx" 255,37,29,21
+  palette "models/players/james/red2.tga" 255,133,0,29
+  palette "models/players/james/red2.jpg" 255,133,2,28
+  palette "models/players/james/red.tga" 255,72,19,17
+  palette "models/players/james/red.jpg" 255,72,20,18
+  palette "models/players/james/icon_red.tga" 164,148,57,45
+  palette "models/players/james/icon_red.png" 164,148,57,45
+  palette "models/players/james/icon_default.tga" 176,139,81,70
+  palette "models/players/james/icon_default.png" 176,139,81,70
+  palette "models/players/james/icon_blue.tga" 209,59,103,99
+  palette "models/players/james/icon_blue.png" 209,59,103,99
+  palette "models/players/james/blue2.tga" 255,0,113,133
+  palette "models/players/james/blue2.jpg" 255,4,113,133
+  palette "models/players/james/blue.tga" 255,8,52,65
+  palette "models/players/james/blue.jpg" 255,11,52,65
+  palette "models/players/infantry/skin.tga" 255,35,24,18
+  palette "models/players/infantry/skin.pcx" 255,35,24,18
+  palette "models/players/infantry/skin.jpg" 255,35,24,18
+  palette "models/players/infantry/pain.tga" 255,35,23,17
+  palette "models/players/infantry/pain.pcx" 255,35,23,17
+  palette "models/players/infantry/pain.jpg" 255,35,23,17
+  palette "models/players/infantry/icon_default.tga" 255,82,69,59
+  palette "models/players/infantry/icon_default.jpg" 255,82,70,60
+  palette "models/players/hulk/hulk_legs.tga" 255,72,72,82
+  palette "models/players/hulk/hulk_legs.jpg" 255,72,72,83
+  palette "models/players/hulk/hulk_head.tga" 227,81,74,80
+  palette "models/players/hulk/hulk_head.png" 227,81,74,80
+  palette "models/players/hulk/hulk_body.tga" 255,63,62,72
+  palette "models/players/hulk/hulk_body.jpg" 255,63,62,72
+  palette "models/players/hulk/hulk_arms.tga" 255,75,75,87
+  palette "models/players/hulk/hulk_arms.jpg" 255,75,75,87
+  palette "models/players/human/shoulderpads.tga" 255,64,59,55
+  palette "models/players/human/shoulderpads.jpg" 255,64,59,55
+  palette "models/players/human/light.tga" 255,43,40,33
+  palette "models/players/human/light.jpg" 255,43,40,33
+  palette "models/players/human/jetpack_flash.jpg" 255,100,136,160
+  palette "models/players/human/jetpack.jpg" 255,56,31,33
+  palette "models/players/human/icon_default.tga" 255,96,87,82
+  palette "models/players/human/icon_default.jpg" 255,96,87,82
+  palette "models/players/human/h_helmet.tga" 225,41,33,26
+  palette "models/players/human/h_helmet.png" 225,41,33,26
+  palette "models/players/human/h_base.tga" 215,67,44,34
+  palette "models/players/human/h_base.png" 215,67,44,34
+  palette "models/players/human/battpack.jpg" 255,65,65,63
+  palette "models/players/human/base.tga" 255,48,42,34
+  palette "models/players/human/base.jpg" 255,48,42,35
+  palette "models/players/human/armour.tga" 255,58,51,46
+  palette "models/players/human/armour.jpg" 255,58,51,47
+  palette "models/players/hover/skin.tga" 255,40,23,17
+  palette "models/players/hover/skin.pcx" 255,40,23,17
+  palette "models/players/hover/skin.jpg" 255,40,23,18
+  palette "models/players/hover/pain.tga" 255,33,19,14
+  palette "models/players/hover/pain.pcx" 255,33,19,14
+  palette "models/players/hover/pain.jpg" 255,33,19,15
+  palette "models/players/hover/icon_default.tga" 255,62,50,45
+  palette "models/players/hover/icon_default.jpg" 255,62,50,45
+  palette "models/players/hunter/red_h.jpg" 255,64,19,14
+  palette "models/players/hunter/red_f.png" 72,68,42,34
+  palette "models/players/hunter/red.jpg" 255,78,18,15
+  palette "models/players/hunter/icon_red.png" 187,114,48,36
+  palette "models/players/hunter/icon_pm.tga" 196,109,81,58
+  palette "models/players/hunter/icon_pm.png" 196,109,81,58
+  palette "models/players/hunter/icon_harpy.png" 188,99,56,37
+  palette "models/players/hunter/icon_default.png" 207,84,85,69
+  palette "models/players/hunter/icon_blue.png" 195,88,47,75
+  palette "models/players/hunter/hunter_h.png" 51,94,60,38
+  palette "models/players/hunter/hunter_f.png" 125,54,46,41
+  palette "models/players/hunter/hunter2.png" 109,59,39,27
+  palette "models/players/hunter/color_x.tga" 71,69,43,35
+  palette "models/players/hunter/color_x.png" 71,69,43,35
+  palette "models/players/hunter/color_h.tga" 121,76,76,76
+  palette "models/players/hunter/color_h.png" 121,76,76,76
+  palette "models/players/hunter/color.tga" 127,116,116,116
+  palette "models/players/hunter/color.png" 127,116,116,116
+  palette "models/players/hunter/blue_h.jpg" 255,39,18,48
+  palette "models/players/hunter/blue.jpg" 255,37,16,71
+  palette "models/players/gunner/ee_en_gunner.pcx" 255,40,34,28
+  palette "models/players/gladiatr/skin.tga" 255,37,25,17
+  palette "models/players/gladiatr/skin.pcx" 255,37,25,17
+  palette "models/players/gladiatr/skin.jpg" 255,37,25,18
+  palette "models/players/gladiatr/pain.tga" 255,37,23,16
+  palette "models/players/gladiatr/pain.pcx" 255,37,23,16
+  palette "models/players/gladiatr/pain.jpg" 255,37,23,17
+  palette "models/players/gladiatr/icon_default.tga" 255,76,55,41
+  palette "models/players/gladiatr/icon_default.jpg" 255,76,55,41
+  palette "models/players/grunt/stripe_h.png" 254,95,56,45
+  palette "models/players/grunt/stripe.jpg" 255,66,37,24
+  palette "models/players/grunt/red_h.jpg" 255,109,65,54
+  palette "models/players/grunt/red.jpg" 255,82,30,22
+  palette "models/players/grunt/icon_stripe.png" 181,156,103,88
+  palette "models/players/grunt/icon_red.png" 205,172,101,84
+  palette "models/players/grunt/icon_pm.tga" 158,155,123,98
+  palette "models/players/grunt/icon_pm.png" 158,155,123,98
+  palette "models/players/grunt/icon_default.png" 179,180,127,108
+  palette "models/players/grunt/icon_blue.png" 158,135,103,108
+  palette "models/players/grunt/grunt_h.jpg" 255,111,74,62
+  palette "models/players/grunt/grunt.jpg" 255,62,47,36
+  palette "models/players/grunt/color_h.tga" 28,129,129,129
+  palette "models/players/grunt/color_h.png" 28,129,129,129
+  palette "models/players/grunt/color.tga" 98,119,119,119
+  palette "models/players/grunt/color.png" 98,119,119,119
+  palette "models/players/grunt/blue_h.jpg" 255,96,67,67
+  palette "models/players/grunt/blue.jpg" 255,39,26,65
+  palette "models/players/enforcer/icon_default.tga" 255,44,31,22
+  palette "models/players/enforcer/icon_default.jpg" 255,44,31,23
+  palette "models/players/enforcer/enforcer.png" 255,47,34,23
+  palette "models/players/enforcer/enforcer.pcx" 255,47,34,23
+  palette "models/players/enyo/icon_default.tga" 255,47,34,34
+  palette "models/players/enyo/icon_default.jpg" 255,48,34,35
+  palette "models/players/enyo/ee_pl_wings.pcx" 255,39,30,26
+  palette "models/players/enyo/ee_pl.pcx" 255,39,30,26
+  palette "models/players/fritzkrieg/icon_red.tga" 219,89,82,70
+  palette "models/players/fritzkrieg/icon_red.png" 219,89,82,70
+  palette "models/players/fritzkrieg/icon_default.tga" 219,89,82,70
+  palette "models/players/fritzkrieg/icon_default.png" 219,89,82,70
+  palette "models/players/fritzkrieg/icon_blue.tga" 219,89,82,70
+  palette "models/players/fritzkrieg/icon_blue.png" 219,89,82,70
+  palette "models/players/fritzkrieg/fritz_fx2.tga" 0,0,0,0
+  palette "models/players/fritzkrieg/fritz_fx2.jpg" 255,126,117,118
+  palette "models/players/fritzkrieg/fritz_fx.tga" 235,33,29,24
+  palette "models/players/fritzkrieg/fritz_fx.png" 235,33,29,24
+  palette "models/players/fritzkrieg/fritz_c.tga" 211,67,56,31
+  palette "models/players/fritzkrieg/fritz_c.png" 211,67,56,31
+  palette "models/players/fritzkrieg/fritz.tga" 255,51,42,28
+  palette "models/players/fritzkrieg/fritz.jpg" 255,51,42,29
+  palette "models/players/fritzkrieg/beam2.tga" 255,3,68,55
+  palette "models/players/fritzkrieg/beam2.jpg" 255,5,68,56
+  palette "models/players/fritzkrieg/beam.tga" 255,0,0,0
+  palette "models/players/fritzkrieg/beam.jpg" 255,0,0,0
+  palette "models/players/dretch/level0.jpg" 255,37,19,7
+  palette "models/players/dretch/icon_default.tga" 255,158,146,136
+  palette "models/players/dretch/icon_default.jpg" 255,157,145,135
+  palette "models/players/dragoon/level3adv.tga" 255,19,19,21
+  palette "models/players/dragoon/level3adv.jpg" 255,20,19,21
+  palette "models/players/dragoon/level3.tga" 255,24,19,22
+  palette "models/players/dragoon/level3.jpg" 255,24,19,22
+  palette "models/players/dragoon/icon_default.tga" 255,255,255,255
+  palette "models/players/dragoon/icon_default.jpg" 255,255,255,255
+  palette "models/players/dog/icon_default.tga" 255,19,8,5
+  palette "models/players/dog/icon_default.jpg" 255,18,9,6
+  palette "models/players/dog/dog.png" 255,28,17,11
+  palette "models/players/dog/dog.pcx" 255,28,17,11
+  palette "models/players/dragon/icon_default.tga" 255,48,35,23
+  palette "models/players/dragon/icon_default.jpg" 255,48,35,23
+  palette "models/players/dragon/drggib03.pcx" 255,17,5,3
+  palette "models/players/dragon/drggib02.pcx" 255,20,9,5
+  palette "models/players/dragon/drggib01.pcx" 255,19,8,4
+  palette "models/players/dragon/dragon.png" 255,65,53,39
+  palette "models/players/dragon/dragon.pcx" 255,65,53,39
+  palette "models/players/demon/icon_default.tga" 255,56,17,13
+  palette "models/players/demon/icon_default.jpg" 255,56,17,15
+  palette "models/players/demon/demon.png" 255,53,26,20
+  palette "models/players/demon/demon.pcx" 255,53,26,20
+  palette "models/players/colonel/ee_en_ltcol.pcx" 255,44,29,19
+  palette "models/players/doom/red.jpg" 255,71,22,17
+  palette "models/players/doom/phobos_fx.jpg" 255,40,27,22
+  palette "models/players/doom/phobos_f.png" 76,76,52,10
+  palette "models/players/doom/phobos.png" 243,62,36,14
+  palette "models/players/doom/icon_red.png" 205,159,33,24
+  palette "models/players/doom/icon_pm.tga" 190,145,144,131
+  palette "models/players/doom/icon_pm.png" 190,145,144,131
+  palette "models/players/doom/icon_phobos.png" 188,156,87,37
+  palette "models/players/doom/icon_default.png" 191,103,103,74
+  palette "models/players/doom/icon_blue.png" 190,50,24,146
+  palette "models/players/doom/doom_statue.jpg" 255,95,86,77
+  palette "models/players/doom/doom_fx.jpg" 255,22,22,22
+  palette "models/players/doom/doom_f_statue.jpg" 255,92,84,76
+  palette "models/players/doom/doom_f.jpg" 255,39,40,40
+  palette "models/players/doom/doom.jpg" 255,48,45,25
+  palette "models/players/doom/color.tga" 127,109,109,109
+  palette "models/players/doom/color.png" 127,109,109,109
+  palette "models/players/doom/blue.jpg" 255,33,20,68
+  palette "models/players/bwark/ee_en_bwark.pcx" 255,43,40,37
+  palette "models/players/crash/red_t.jpg" 255,88,22,16
+  palette "models/players/crash/red.jpg" 255,70,23,19
+  palette "models/players/crash/icon_red.png" 193,138,34,28
+  palette "models/players/crash/icon_pm.tga" 189,150,149,136
+  palette "models/players/crash/icon_pm.png" 189,150,149,136
+  palette "models/players/crash/icon_default.png" 190,101,95,81
+  palette "models/players/crash/icon_blue.png" 180,59,30,149
+  palette "models/players/crash/crash_t.png" 217,52,47,38
+  palette "models/players/crash/crash.png" 238,52,44,35
+  palette "models/players/crash/color_t.tga" 130,179,179,179
+  palette "models/players/crash/color_t.png" 130,179,179,179
+  palette "models/players/crash/color.tga" 117,146,146,146
+  palette "models/players/crash/color.png" 117,146,146,146
+  palette "models/players/crash/blue_t.jpg" 255,55,19,102
+  palette "models/players/crash/blue.jpg" 255,38,23,83
+  palette "models/players/builder/icon_default.tga" 255,104,108,106
+  palette "models/players/builder/icon_default.jpg" 255,104,107,106
+  palette "models/players/builder/icon_advanced.tga" 255,255,255,255
+  palette "models/players/builder/icon_advanced.jpg" 255,255,255,255
+  palette "models/players/builder/builder.jpg" 255,17,20,19
+  palette "models/players/bones/xray.png" 159,12,86,65
+  palette "models/players/bones/stiff.png" 159,107,81,61
+  palette "models/players/bones/red.png" 186,132,18,11
+  palette "models/players/bones/icon_red.png" 168,163,30,19
+  palette "models/players/bones/icon_pm.tga" 170,153,147,130
+  palette "models/players/bones/icon_pm.png" 170,153,147,130
+  palette "models/players/bones/icon_default.png" 167,28,131,104
+  palette "models/players/bones/icon_bones.png" 155,128,95,67
+  palette "models/players/bones/icon_blue.png" 156,50,14,142
+  palette "models/players/bones/color.tga" 185,160,160,160
+  palette "models/players/bones/color.png" 185,160,160,160
+  palette "models/players/bones/blue.png" 186,43,12,160
+  palette "models/players/bitch/skin.tga" 255,29,21,16
+  palette "models/players/bitch/skin.pcx" 255,29,21,16
+  palette "models/players/bitch/skin.jpg" 255,29,21,17
+  palette "models/players/bitch/pain.tga" 255,28,19,14
+  palette "models/players/bitch/pain.pcx" 255,28,19,14
+  palette "models/players/bitch/pain.jpg" 255,28,19,15
+  palette "models/players/bitch/icon_default.tga" 255,82,61,47
+  palette "models/players/bitch/icon_default.jpg" 255,82,61,48
+  palette "models/players/bitterman/red.jpg" 255,62,16,13
+  palette "models/players/bitterman/icon_red.png" 174,172,19,12
+  palette "models/players/bitterman/icon_pm.tga" 181,116,101,81
+  palette "models/players/bitterman/icon_pm.png" 181,116,101,81
+  palette "models/players/bitterman/icon_default.png" 167,195,182,114
+  palette "models/players/bitterman/icon_blue.png" 181,60,49,96
+  palette "models/players/bitterman/h_red.jpg" 255,120,16,12
+  palette "models/players/bitterman/h_blue.jpg" 255,18,28,113
+  palette "models/players/bitterman/h_bitterman.jpg" 255,92,81,46
+  palette "models/players/bitterman/color_h.tga" 170,155,155,155
+  palette "models/players/bitterman/color_h.png" 170,155,155,155
+  palette "models/players/bitterman/color.tga" 102,112,112,112
+  palette "models/players/bitterman/color.png" 102,112,112,112
+  palette "models/players/bitterman/blue.jpg" 255,24,14,55
+  palette "models/players/bitterman/bitterman.jpg" 255,68,57,36
+  palette "models/players/camaro/lines2_white.tga" 255,255,255,255
+  palette "models/players/camaro/lines2_white.jpg" 255,255,255,255
+  palette "models/players/camaro/lines2_red.tga" 255,255,0,0
+  palette "models/players/camaro/lines2_red.jpg" 255,254,0,2
+  palette "models/players/camaro/lines2_grey.tga" 255,127,127,127
+  palette "models/players/camaro/lines2_grey.jpg" 255,126,126,126
+  palette "models/players/camaro/lines2_green.tga" 255,0,255,0
+  palette "models/players/camaro/lines2_green.jpg" 255,1,255,0
+  palette "models/players/camaro/lines2_brown.tga" 255,131,97,85
+  palette "models/players/camaro/lines2_brown.jpg" 255,130,98,83
+  palette "models/players/camaro/lines2_blue.tga" 255,0,0,255
+  palette "models/players/camaro/lines2_blue.jpg" 255,0,0,253
+  palette "models/players/camaro/lines2_black.tga" 255,0,0,0
+  palette "models/players/camaro/lines2_black.jpg" 255,0,0,0
+  palette "models/players/camaro/lines2.tga" 255,255,255,0
+  palette "models/players/camaro/lines2.jpg" 255,255,255,1
+  palette "models/players/camaro/lines1_white.tga" 255,255,255,255
+  palette "models/players/camaro/lines1_white.jpg" 255,255,255,255
+  palette "models/players/camaro/lines1_red.tga" 255,255,0,0
+  palette "models/players/camaro/lines1_red.jpg" 255,254,0,2
+  palette "models/players/camaro/lines1_grey.tga" 255,127,127,127
+  palette "models/players/camaro/lines1_grey.jpg" 255,126,126,126
+  palette "models/players/camaro/lines1_green.tga" 255,0,255,0
+  palette "models/players/camaro/lines1_green.jpg" 255,1,255,0
+  palette "models/players/camaro/lines1_brown.tga" 255,131,97,85
+  palette "models/players/camaro/lines1_brown.jpg" 255,130,98,83
+  palette "models/players/camaro/lines1_blue.tga" 255,0,0,255
+  palette "models/players/camaro/lines1_blue.jpg" 255,0,0,253
+  palette "models/players/camaro/lines1_black.tga" 255,0,0,0
+  palette "models/players/camaro/lines1_black.jpg" 255,0,0,0
+  palette "models/players/camaro/lines1.tga" 255,255,255,0
+  palette "models/players/camaro/lines1.jpg" 255,255,255,1
+  palette "models/players/camaro/icon_yellow.tga" 116,206,187,154
+  palette "models/players/camaro/icon_yellow.png" 116,206,187,154
+  palette "models/players/camaro/icon_white.tga" 116,206,187,196
+  palette "models/players/camaro/icon_white.png" 116,206,187,196
+  palette "models/players/camaro/icon_red.tga" 116,206,145,154
+  palette "models/players/camaro/icon_red.png" 116,206,145,154
+  palette "models/players/camaro/icon_grey.tga" 116,185,166,175
+  palette "models/players/camaro/icon_grey.png" 116,185,166,175
+  palette "models/players/camaro/icon_green.tga" 116,165,187,154
+  palette "models/players/camaro/icon_green.png" 116,165,187,154
+  palette "models/players/camaro/icon_brown.tga" 116,186,161,168
+  palette "models/players/camaro/icon_brown.png" 116,186,161,168
+  palette "models/players/camaro/icon_blue.tga" 116,165,145,196
+  palette "models/players/camaro/icon_blue.png" 116,165,145,196
+  palette "models/players/camaro/icon_black.tga" 116,165,145,154
+  palette "models/players/camaro/icon_black.png" 116,165,145,154
+  palette "models/players/camaro/glass.tga" 255,132,147,150
+  palette "models/players/camaro/glass.jpg" 255,132,147,150
+  palette "models/players/camaro/doorline.tga" 55,38,38,38
+  palette "models/players/camaro/doorline.png" 55,38,38,38
+  palette "models/players/camaro/chrome.tga" 255,227,222,219
+  palette "models/players/camaro/chrome.jpg" 255,227,223,220
+  palette "models/players/camaro/camarom.tga" 255,104,103,98
+  palette "models/players/camaro/camarom.jpg" 255,104,103,98
+  palette "models/players/camaro/camaroh.tga" 255,60,60,59
+  palette "models/players/camaro/camaroh.jpg" 255,60,60,59
+  palette "models/players/camaro/camarob.tga" 255,87,26,21
+  palette "models/players/camaro/camarob.jpg" 255,87,26,22
+  palette "models/players/camaro/bottom.tga" 255,38,38,39
+  palette "models/players/camaro/bottom.jpg" 255,38,38,39
+  palette "models/players/camaro/body_white.tga" 255,255,255,255
+  palette "models/players/camaro/body_white.jpg" 255,255,255,255
+  palette "models/players/camaro/body_red.tga" 255,255,0,0
+  palette "models/players/camaro/body_red.jpg" 255,254,0,2
+  palette "models/players/camaro/body_grey.tga" 255,127,127,127
+  palette "models/players/camaro/body_grey.jpg" 255,126,126,126
+  palette "models/players/camaro/body_green.tga" 255,0,255,0
+  palette "models/players/camaro/body_green.jpg" 255,1,255,0
+  palette "models/players/camaro/body_brown.tga" 255,131,97,85
+  palette "models/players/camaro/body_brown.jpg" 255,130,98,83
+  palette "models/players/camaro/body_blue.tga" 255,0,0,255
+  palette "models/players/camaro/body_blue.jpg" 255,0,0,253
+  palette "models/players/camaro/body_black.tga" 255,0,0,0
+  palette "models/players/camaro/body_black.jpg" 255,0,0,0
+  palette "models/players/camaro/body.tga" 255,255,255,0
+  palette "models/players/camaro/body.jpg" 255,255,255,1
+  palette "models/players/camaro/black.tga" 255,0,0,0
+  palette "models/players/camaro/black.jpg" 255,0,0,0
+  palette "models/players/berserker/skin.tga" 255,28,21,19
+  palette "models/players/berserker/skin.jpg" 255,28,22,19
+  palette "models/players/berserker/pain.tga" 255,27,19,17
+  palette "models/players/berserker/pain.jpg" 255,27,19,17
+  palette "models/players/berserker/icon_default.tga" 255,63,50,40
+  palette "models/players/berserker/icon_default.jpg" 255,63,50,40
+  palette "models/players/bat/legs.tga" 255,53,26,22
+  palette "models/players/bat/legs.jpg" 255,54,27,23
+  palette "models/players/bat/head.tga" 255,54,30,25
+  palette "models/players/bat/head.jpg" 255,54,31,26
+  palette "models/players/bat/body.tga" 234,58,30,26
+  palette "models/players/bat/body.png" 234,58,30,26
+  palette "models/players/battle/icon_default.tga" 255,101,83,76
+  palette "models/players/battle/icon_default.jpg" 255,100,84,76
+  palette "models/players/battle/human_bsuit.jpg" 255,53,43,42
+  palette "models/players/biker/stroggo_h.jpg" 255,100,73,60
+  palette "models/players/biker/stroggo.jpg" 255,113,70,71
+  palette "models/players/biker/slammer_h.jpg" 255,70,48,69
+  palette "models/players/biker/slammer.jpg" 255,114,79,83
+  palette "models/players/biker/red_h.jpg" 255,89,32,25
+  palette "models/players/biker/red.jpg" 255,66,31,27
+  palette "models/players/biker/icon_stroggo.png" 233,147,122,105
+  palette "models/players/biker/icon_slammer.png" 183,185,135,141
+  palette "models/players/biker/icon_red.png" 199,158,69,55
+  palette "models/players/biker/icon_pm.tga" 213,171,159,144
+  palette "models/players/biker/icon_pm.png" 213,171,159,144
+  palette "models/players/biker/icon_hossman.png" 221,129,106,93
+  palette "models/players/biker/icon_default.png" 192,147,112,94
+  palette "models/players/biker/icon_cadavre.png" 195,166,109,76
+  palette "models/players/biker/icon_blue.png" 213,60,94,151
+  palette "models/players/biker/hossman_h.jpg" 255,52,41,37
+  palette "models/players/biker/hossman.jpg" 255,78,61,53
+  palette "models/players/biker/color_h.tga" 142,118,118,118
+  palette "models/players/biker/color_h.png" 142,118,118,118
+  palette "models/players/biker/color.tga" 78,92,92,92
+  palette "models/players/biker/color.png" 78,92,92,92
+  palette "models/players/biker/cadaver_h.jpg" 255,80,56,43
+  palette "models/players/biker/cadaver.png" 23,90,47,31
+  palette "models/players/biker/blue_h.jpg" 255,30,49,84
+  palette "models/players/biker/blue.jpg" 255,41,40,53
+  palette "models/players/biker/biker_h.jpg" 255,86,66,56
+  palette "models/players/biker/biker.jpg" 255,58,47,42
+  palette "models/players/basilisk/level1upg.jpg" 255,105,91,88
+  palette "models/players/basilisk/level1.jpg" 255,112,91,87
+  palette "models/players/basilisk/icon_default.tga" 255,255,255,255
+  palette "models/players/basilisk/icon_default.jpg" 255,255,255,255
+  palette "models/players/ank/ank_legs.tga" 255,124,69,45
+  palette "models/players/ank/ank_legs.jpg" 255,124,69,47
+  palette "models/players/ank/ank_body.tga" 255,81,48,35
+  palette "models/players/ank/ank_body.jpg" 255,81,49,36
+  palette "models/players/ank/ank_arms.tga" 255,117,64,41
+  palette "models/players/ank/ank_arms.jpg" 255,117,64,42
+  palette "models/furniture/pooltable/wood.jpg" 255,138,45,36
+  palette "models/furniture/pooltable/tree.jpg" 255,86,66,42
+  palette "models/furniture/pooltable/sides.jpg" 255,209,164,143
+  palette "models/furniture/pooltable/pockets2.jpg" 255,38,13,10
+  palette "models/furniture/pooltable/pockets.jpg" 255,56,54,54
+  palette "models/furniture/pooltable/green.jpg" 255,17,109,72
+  palette "models/furniture/pooltable/cue.jpg" 255,180,175,171
+  palette "models/furniture/pooltable/bumpers.jpg" 255,114,150,149
+  palette "models/furniture/pooltable/ball.jpg" 255,102,107,115
+  palette "models/furniture/gym/weightbench.jpg" 255,45,44,42
+  palette "models/players/anarki/red_h.jpg" 255,47,23,15
+  palette "models/players/anarki/red_g.jpg" 255,90,9,8
+  palette "models/players/anarki/red.jpg" 255,68,19,15
+  palette "models/players/anarki/icon_red.png" 154,100,42,28
+  palette "models/players/anarki/icon_pm.tga" 180,92,60,38
+  palette "models/players/anarki/icon_pm.png" 180,92,60,38
+  palette "models/players/anarki/icon_default.png" 179,97,68,55
+  palette "models/players/anarki/icon_blue.png" 180,64,44,49
+  palette "models/players/anarki/color_x.tga" 208,102,102,102
+  palette "models/players/anarki/color_x.png" 208,102,102,102
+  palette "models/players/anarki/color_h.tga" 0,0,0,0
+  palette "models/players/anarki/color_h.jpg" 255,52,33,25
+  palette "models/players/anarki/color.tga" 134,86,86,86
+  palette "models/players/anarki/color.png" 134,86,86,86
+  palette "models/players/anarki/blue_g.jpg" 255,11,44,87
+  palette "models/players/anarki/blue.jpg" 255,28,39,58
+  palette "models/players/anarki/anarki_h.jpg" 255,52,33,25
+  palette "models/players/anarki/anarki_g_fx.jpg" 255,14,21,19
+  palette "models/players/anarki/anarki_g.jpg" 255,48,37,32
+  palette "models/players/anarki/anarki_b.png" 172,55,39,32
+  palette "models/players/anarki/anarki.jpg" 255,64,50,37
+  palette "models/furniture/nuclearfurniture/watercooler.jpg" 255,104,106,116
+  palette "models/furniture/nuclearfurniture/table1.jpg" 255,115,103,105
+  palette "models/furniture/nuclearfurniture/redchair.jpg" 255,96,30,29
+  palette "models/furniture/nuclearfurniture/pc1.jpg" 255,124,125,130
+  palette "models/furniture/nuclearfurniture/filing.jpg" 255,171,167,161
+  palette "models/furniture/nuclearfurniture/desk1.jpg" 255,104,90,86
+  palette "models/furniture/nuclearfurniture/bluechair.jpg" 255,30,32,89
+  palette "models/furniture/nimrod/worldmap.jpg" 255,70,111,119
+  palette "models/furniture/nimrod/wood004.jpg" 255,73,27,18
+  palette "models/furniture/nimrod/tapestry.jpg" 255,146,109,103
+  palette "models/furniture/nimrod/seat1.jpg" 255,144,52,37
+  palette "models/furniture/nimrod/red.jpg" 255,124,11,17
+  palette "models/furniture/nimrod/pianotop.jpg" 255,84,70,57
+  palette "models/furniture/nimrod/paintings.jpg" 255,87,69,45
+  palette "models/furniture/nimrod/maroon.jpg" 255,84,36,26
+  palette "models/furniture/nimrod/marble.jpg" 255,120,124,131
+  palette "models/furniture/nimrod/map.jpg" 255,64,107,115
+  palette "models/furniture/nimrod/jb125.jpg" 255,69,119,151
+  palette "models/furniture/nimrod/gold2.jpg" 255,150,148,1
+  palette "models/furniture/nimrod/gold1.jpg" 255,123,96,43
+  palette "models/furniture/nimrod/gold.jpg" 255,223,167,60
+  palette "models/furniture/nimrod/antique2.jpg" 255,120,82,66
+  palette "models/furniture/nimrod/antique1.jpg" 255,136,90,71
+  palette "models/mapobjects/xlamp/xlamp_red.tga" 255,93,6,6
+  palette "models/mapobjects/xlamp/xlamp_red.jpg" 255,92,8,7
+  palette "models/mapobjects/xlamp/xlamp_ntrl.tga" 255,59,32,12
+  palette "models/mapobjects/xlamp/xlamp_ntrl.jpg" 255,59,33,13
+  palette "models/mapobjects/xlamp/xlamp_grate.tga" 119,100,98,101
+  palette "models/mapobjects/xlamp/xlamp_grate.png" 119,100,98,101
+  palette "models/mapobjects/xlamp/xlamp_blue.tga" 255,6,43,93
+  palette "models/mapobjects/xlamp/xlamp_blue.jpg" 255,7,43,93
+  palette "models/mapobjects/xlamp/xlamp.tga" 219,67,62,61
+  palette "models/mapobjects/xlamp/xlamp.png" 219,67,62,61
+  palette "models/furniture/couches/leather.jpg" 255,81,70,68
+  palette "models/furniture/couches/fabric.jpg" 255,79,76,84
+  palette "models/furniture/couches/couch3.jpg" 255,124,117,103
+  palette "models/furniture/couches/couch2.jpg" 255,96,79,71
+  palette "models/furniture/couches/couch1.jpg" 255,119,97,96
+  palette "models/furniture/couches/colors.jpg" 255,134,60,40
+  palette "models/mapobjects/weeds/weed02.png" 23,45,28,8
+  palette "models/mapobjects/videocamera/videocamerasupport.tga" 183,47,44,43
+  palette "models/mapobjects/videocamera/videocamerasupport.png" 183,47,44,43
+  palette "models/mapobjects/videocamera/videocamera.tga" 255,75,107,123
+  palette "models/mapobjects/videocamera/videocamera.jpg" 255,75,107,123
+  palette "models/mapobjects/wallhead/lion_m.png" 218,16,11,9
+  palette "models/mapobjects/timlamp/timlamp.png" 196,42,23,16
+  palette "models/mapobjects/tree2/trunk2.tga" 255,32,24,17
+  palette "models/mapobjects/tree2/trunk2.jpg" 255,31,24,17
+  palette "models/mapobjects/tree2/branch2.tga" 255,38,40,48
+  palette "models/mapobjects/tree2/branch2.jpg" 255,39,41,49
+  palette "models/mapobjects/thunderbolt/thunder.jpg" 255,67,74,57
+  palette "models/mapobjects/tv/wood.jpg" 255,193,130,90
+  palette "models/mapobjects/tv/tv.jpg" 255,45,45,45
+  palette "models/mapobjects/tv/speaker3.jpg" 255,72,72,78
+  palette "models/mapobjects/tv/speaker2.jpg" 255,74,74,71
+  palette "models/mapobjects/tv/speaker1.jpg" 255,189,152,122
+  palette "models/mapobjects/tv/remote.jpg" 255,100,101,108
+  palette "models/mapobjects/tv/reciever.jpg" 255,43,40,47
+  palette "models/mapobjects/tv/recblack.jpg" 255,23,22,30
+  palette "models/mapobjects/tv/gray.jpg" 255,70,68,69
+  palette "models/mapobjects/tv/gold.jpg" 255,157,158,21
+  palette "models/mapobjects/tv/front.jpg" 255,36,33,32
+  palette "models/mapobjects/tv/dvdgray.jpg" 255,116,121,127
+  palette "models/mapobjects/tv/dvd.jpg" 255,122,124,133
+  palette "models/mapobjects/tv/black1.jpg" 255,58,58,55
+  palette "models/mapobjects/tv/black.jpg" 255,0,0,0
+  palette "models/mapobjects/techlamp/techlamp_rail2b.tga" 177,60,52,46
+  palette "models/mapobjects/techlamp/techlamp_rail2b.png" 177,60,52,46
+  palette "models/mapobjects/techlamp/techlamp_rail2.tga" 177,60,52,46
+  palette "models/mapobjects/techlamp/techlamp_rail2.png" 177,60,52,46
+  palette "models/mapobjects/techlamp/techlamp_rail.tga" 115,64,54,48
+  palette "models/mapobjects/techlamp/techlamp_rail.png" 115,64,54,48
+  palette "models/mapobjects/techlamp/techlamp_pole2.tga" 255,229,160,106
+  palette "models/mapobjects/techlamp/techlamp_pole2.jpg" 255,229,160,106
+  palette "models/mapobjects/techlamp/techlamp_pole.tga" 218,57,49,44
+  palette "models/mapobjects/techlamp/techlamp_pole.png" 218,57,49,44
+  palette "models/mapobjects/table/wood2.jpg" 255,86,38,30
+  palette "models/mapobjects/table/wood1.jpg" 255,82,52,33
+  palette "models/mapobjects/table/wood007.jpg" 255,87,37,2
+  palette "models/mapobjects/table/wood004.jpg" 255,73,27,18
+  palette "models/mapobjects/table/seat1.jpg" 255,144,52,37
+  palette "models/mapobjects/table/red.jpg" 255,128,14,22
+  palette "models/mapobjects/table/newspaper.jpg" 255,141,130,119
+  palette "models/mapobjects/table/mag.jpg" 255,171,132,117
+  palette "models/mapobjects/table/crest.jpg" 255,72,64,41
+  palette "models/mapobjects/statues/skull_stat.tga" 255,118,109,101
+  palette "models/mapobjects/statues/skull_stat.jpg" 255,117,109,100
+  palette "models/mapobjects/statues/r_flag2_stat.tga" 255,114,106,97
+  palette "models/mapobjects/statues/r_flag2_stat.jpg" 255,114,106,97
+  palette "models/mapobjects/statues/pole_stst.tga" 255,101,93,83
+  palette "models/mapobjects/statues/pole_stst.jpg" 255,101,93,83
+  palette "models/mapobjects/statues/janeth_stat2.tga" 255,100,89,80
+  palette "models/mapobjects/statues/janeth_stat2.jpg" 255,99,89,80
+  palette "models/mapobjects/statues/janet_stat2.tga" 255,109,99,89
+  palette "models/mapobjects/statues/janet_stat2.jpg" 255,108,99,89
+  palette "models/mapobjects/statues/jamesh_stat2.tga" 255,111,99,88
+  palette "models/mapobjects/statues/jamesh_stat2.jpg" 255,110,99,89
+  palette "models/mapobjects/statues/jamese_stat2.tga" 255,92,82,71
+  palette "models/mapobjects/statues/jamese_stat2.jpg" 255,92,82,73
+  palette "models/mapobjects/statues/james_stat2.tga" 255,115,102,91
+  palette "models/mapobjects/statues/james_stat2.jpg" 255,115,102,92
+  palette "models/mapobjects/statues/flagbits_stat.tga" 95,103,94,85
+  palette "models/mapobjects/statues/flagbits_stat.png" 95,103,94,85
+  palette "models/mapobjects/spotlamp/spotlamp.png" 183,47,44,43
+  palette "models/mapobjects/starfleet/treetrunk.jpg" 255,20,13,5
+  palette "models/mapobjects/starfleet/tallbush.tga" 134,5,26,0
+  palette "models/mapobjects/starfleet/tallbush.png" 134,5,26,0
+  palette "models/mapobjects/starfleet/leaves-alpha.tga" 167,0,24,0
+  palette "models/mapobjects/starfleet/leaves-alpha.png" 167,0,24,0
+  palette "models/mapobjects/starfleet/fleetfrod.tga" 182,11,20,7
+  palette "models/mapobjects/starfleet/fleetfrod.png" 182,11,20,7
+  palette "models/mapobjects/starfleet/fern_1.tga" 87,51,88,37
+  palette "models/mapobjects/starfleet/fern_1.png" 87,51,88,37
+  palette "models/mapobjects/starfleet/bush_2_trunk.jpg" 255,30,25,14
+  palette "models/mapobjects/starfleet/bush_2_outer.tga" 174,61,87,41
+  palette "models/mapobjects/starfleet/bush_2_outer.png" 174,61,87,41
+  palette "models/mapobjects/starfleet/bush_2_inner.jpg" 255,32,42,11
+  palette "models/mapobjects/spawn/spawn3_r.tga" 175,94,0,0
+  palette "models/mapobjects/spawn/spawn3_r.png" 175,94,0,0
+  palette "models/mapobjects/spawn/spawn3_b.tga" 175,0,80,117
+  palette "models/mapobjects/spawn/spawn3_b.png" 175,0,80,117
+  palette "models/mapobjects/spawn/spawn3.tga" 220,49,47,42
+  palette "models/mapobjects/spawn/spawn3.png" 220,49,47,42
+  palette "models/mapobjects/slamp/slamp3x.tga" 255,33,28,30
+  palette "models/mapobjects/slamp/slamp3x.jpg" 255,33,29,29
+  palette "models/mapobjects/skel/xray.png" 159,12,86,65
+  palette "models/mapobjects/skel/skel.png" 159,107,81,61
+  palette "models/mapobjects/satdish/sat2.jpg" 255,85,85,85
+  palette "models/mapobjects/satdish/sat1.jpg" 255,74,73,75
+  palette "models/mapobjects/prowler/prowler1.jpg" 255,31,21,34
+  palette "models/mapobjects/plane2/plane3.jpg" 255,92,111,134
+  palette "models/mapobjects/plane2/plane2.jpg" 255,52,42,39
+  palette "models/mapobjects/podium/podskull.png" 225,18,13,10
+  palette "models/mapobjects/podium/podiumglo.png" 50,0,1,0
+  palette "models/mapobjects/podium/podium.png" 206,31,22,18
+  palette "models/mapobjects/plane1/prop.tga" 200,178,178,178
+  palette "models/mapobjects/plane1/prop.png" 200,178,178,178
+  palette "models/mapobjects/plane1/plane1.jpg" 255,113,110,126
+  palette "models/mapobjects/pipe/pipe02.png" 192,48,44,34
+  palette "models/mapobjects/palm3/palmtop.tga" 167,24,44,20
+  palette "models/mapobjects/palm3/palmtop.png" 167,24,44,20
+  palette "models/mapobjects/palm3/palmbark.tga" 255,61,56,59
+  palette "models/mapobjects/palm3/palmbark.jpg" 255,61,56,59
+  palette "models/mapobjects/palm2/trunk.tga" 165,49,32,18
+  palette "models/mapobjects/palm2/trunk.png" 165,49,32,18
+  palette "models/mapobjects/pc/side.jpg" 255,129,130,126
+  palette "models/mapobjects/pc/keyboard.jpg" 255,72,74,81
+  palette "models/mapobjects/pc/front.jpg" 255,61,64,69
+  palette "models/mapobjects/pc/dna2.jpg" 255,76,102,129
+  palette "models/mapobjects/pc/dna1.jpg" 255,154,144,138
+  palette "models/mapobjects/pc/dna.jpg" 255,80,83,86
+  palette "models/mapobjects/pc/cd.jpg" 255,87,87,85
+  palette "models/mapobjects/pc/black.jpg" 255,33,36,41
+  palette "models/mapobjects/pc/back.jpg" 255,200,201,198
+  palette "models/mapobjects/palm1/palm1.tga" 87,30,38,18
+  palette "models/mapobjects/palm1/palm1.png" 87,30,38,18
+  palette "models/mapobjects/nateleaf1/tree2.tga" 97,72,88,31
+  palette "models/mapobjects/nateleaf1/tree2.png" 97,72,88,31
+  palette "models/mapobjects/mustang/mustang2.jpg" 255,103,103,103
+  palette "models/mapobjects/mustang/mustang.jpg" 255,77,77,79
+  palette "models/mapobjects/lt1_cooper/lt1_cooper2.jpg" 255,30,34,74
+  palette "models/mapobjects/lt1_cooper/lt1_cooper.jpg" 255,71,32,38
+  palette "models/mapobjects/lt1_cooper/cooperwin.tga" 0,0,0,0
+  palette "models/mapobjects/lt1_cooper/cooperwin.jpg" 255,112,116,118
+  palette "models/mapobjects/machine nest/bag3.jpg" 255,221,192,171
+  palette "models/mapobjects/multiplant/pleaf3.tga" 128,51,52,28
+  palette "models/mapobjects/multiplant/pleaf3.png" 128,51,52,28
+  palette "models/mapobjects/multiplant/pleaf2.tga" 97,46,43,7
+  palette "models/mapobjects/multiplant/pleaf2.png" 97,46,43,7
+  palette "models/mapobjects/multiplant/pleaf1.tga" 96,48,43,6
+  palette "models/mapobjects/multiplant/pleaf1.png" 96,48,43,6
+  palette "models/mapobjects/multiplant/palmfrond.tga" 114,40,45,26
+  palette "models/mapobjects/multiplant/palmfrond.png" 114,40,45,26
+  palette "models/mapobjects/multiplant/leaf3.tga" 54,20,46,22
+  palette "models/mapobjects/multiplant/leaf3.png" 54,20,46,22
+  palette "models/mapobjects/multiplant/leaf2.tga" 85,23,47,16
+  palette "models/mapobjects/multiplant/leaf2.png" 85,23,47,16
+  palette "models/mapobjects/multiplant/leaf1.tga" 75,20,48,16
+  palette "models/mapobjects/multiplant/leaf1.png" 75,20,48,16
+  palette "models/mapobjects/multiplant/invisible.tga" 0,0,0,0
+  palette "models/mapobjects/multiplant/invisible.jpg" 255,0,0,0
+  palette "models/mapobjects/multiplant/fern.tga" 92,4,45,21
+  palette "models/mapobjects/multiplant/fern.png" 92,4,45,21
+  palette "models/mapobjects/multiplant/batleaf2veins.tga" 54,105,0,0
+  palette "models/mapobjects/multiplant/batleaf2veins.png" 54,105,0,0
+  palette "models/mapobjects/multiplant/batleaf2.tga" 171,22,31,21
+  palette "models/mapobjects/multiplant/batleaf2.png" 171,22,31,21
+  palette "models/mapobjects/multiplant/batleaf.tga" 168,22,31,20
+  palette "models/mapobjects/multiplant/batleaf.png" 168,22,31,20
+  palette "models/mapobjects/multiplant/bannanaleaf.tga" 199,20,33,19
+  palette "models/mapobjects/multiplant/bannanaleaf.png" 199,20,33,19
+  palette "models/mapobjects/lamps/bot_wing2.png" 152,66,57,52
+  palette "models/mapobjects/lamps/bot_wing.png" 128,69,56,48
+  palette "models/mapobjects/lamps/bot_lamp2b.png" 203,56,45,39
+  palette "models/mapobjects/lt1_computers/speakers.jpg" 255,116,116,115
+  palette "models/mapobjects/lt1_computers/silverpc.jpg" 255,181,180,185
+  palette "models/mapobjects/lt1_computers/scanner.jpg" 255,101,97,92
+  palette "models/mapobjects/lt1_computers/pcscreens.jpg" 255,99,95,96
+  palette "models/mapobjects/lt1_computers/mousepads.jpg" 255,65,62,62
+  palette "models/mapobjects/lt1_computers/mouse1.jpg" 255,80,82,81
+  palette "models/mapobjects/lt1_computers/monitor.jpg" 255,96,96,95
+  palette "models/mapobjects/lt1_computers/mice.jpg" 255,94,92,95
+  palette "models/mapobjects/lt1_computers/laserprinter.jpg" 255,187,186,187
+  palette "models/mapobjects/lt1_computers/laptopscreen.jpg" 255,23,22,18
+  palette "models/mapobjects/lt1_computers/inkprinter.jpg" 255,103,103,102
+  palette "models/mapobjects/lt1_computers/greenpc.jpg" 255,93,150,85
+  palette "models/mapobjects/lt1_computers/blackpc.jpg" 255,70,69,71
+  palette "models/mapobjects/lt1_computers/blacklaptop.jpg" 255,87,87,94
+  palette "models/mapobjects/kitchen/top.jpg" 255,146,146,146
+  palette "models/mapobjects/kitchen/toastertop.jpg" 255,183,181,181
+  palette "models/mapobjects/kitchen/toasterside.jpg" 255,251,240,231
+  palette "models/mapobjects/kitchen/toasterend.jpg" 255,242,200,148
+  palette "models/mapobjects/kitchen/teapot.jpg" 255,212,0,0
+  palette "models/mapobjects/kitchen/steel.jpg" 255,210,203,199
+  palette "models/mapobjects/kitchen/sides.jpg" 255,147,147,147
+  palette "models/mapobjects/kitchen/ovenfront.jpg" 255,145,139,137
+  palette "models/mapobjects/kitchen/micro2.jpg" 255,131,120,109
+  palette "models/mapobjects/kitchen/micro1.jpg" 255,115,108,106
+  palette "models/mapobjects/kitchen/metal.jpg" 255,182,183,193
+  palette "models/mapobjects/kitchen/guage2.jpg" 255,54,57,39
+  palette "models/mapobjects/kitchen/guage1.jpg" 255,47,49,42
+  palette "models/mapobjects/kitchen/gray.jpg" 255,91,88,84
+  palette "models/mapobjects/kitchen/cup.jpg" 255,248,249,250
+  palette "models/mapobjects/kitchen/coffemaker.jpg" 255,135,133,134
+  palette "models/mapobjects/kitchen/coffee.jpg" 255,116,80,28
+  palette "models/mapobjects/kitchen/burners.jpg" 255,80,78,77
+  palette "models/mapobjects/kitchen/bread.jpg" 255,189,126,63
+  palette "models/mapobjects/kitchen/black.jpg" 255,12,11,7
+  palette "models/mapobjects/jesus/jesuswall.png" 38,52,41,35
+  palette "models/mapobjects/horned/horned.png" 251,71,50,40
+  palette "models/mapobjects/grenadel/grenadelx.png" 131,43,40,37
+  palette "models/mapobjects/haxbox/top.jpg" 255,65,85,81
+  palette "models/mapobjects/haxbox/side.jpg" 255,40,42,43
+  palette "models/mapobjects/haxbox/gray.jpg" 255,48,48,46
+  palette "models/mapobjects/haxbox/front.jpg" 255,53,61,66
+  palette "models/mapobjects/haxbox/controller.jpg" 255,58,63,52
+  palette "models/mapobjects/haxbox/back.jpg" 255,33,39,45
+  palette "models/mapobjects/flag/banner_strgg.png" 192,102,17,7
+  palette "models/mapobjects/gratelamp/lightbulb.tga" 255,224,211,182
+  palette "models/mapobjects/gratelamp/lightbulb.jpg" 255,225,211,181
+  palette "models/mapobjects/gratelamp/lightbase.tga" 255,106,96,86
+  palette "models/mapobjects/gratelamp/lightbase.jpg" 255,106,95,85
+  palette "models/mapobjects/gratelamp/gratetorch2b.png" 189,54,44,36
+  palette "models/mapobjects/gratelamp/gratelight_flare.tga" 255,28,25,21
+  palette "models/mapobjects/gratelamp/gratelight_flare.jpg" 255,28,25,21
+  palette "models/mapobjects/gratelamp/gratelight.tga" 119,129,106,85
+  palette "models/mapobjects/gratelamp/gratelight.png" 119,129,106,85
+  palette "models/mapobjects/gratelamp/gratelamp.png" 139,53,45,40
+  palette "models/mapobjects/f-117/skin.jpg" 255,24,24,27
+  palette "models/mapobjects/flagbase/swirl_red.tga" 255,125,0,0
+  palette "models/mapobjects/flagbase/swirl_red.jpg" 255,125,1,2
+  palette "models/mapobjects/flagbase/swirl_ntrl.tga" 255,125,71,0
+  palette "models/mapobjects/flagbase/swirl_ntrl.jpg" 255,125,71,3
+  palette "models/mapobjects/flagbase/swirl_blue.tga" 255,0,68,125
+  palette "models/mapobjects/flagbase/swirl_blue.jpg" 255,2,68,125
+  palette "models/mapobjects/flagbase/env_red.tga" 255,105,13,12
+  palette "models/mapobjects/flagbase/env_red.jpg" 255,104,15,13
+  palette "models/mapobjects/flagbase/env_ntrl.tga" 255,110,63,6
+  palette "models/mapobjects/flagbase/env_ntrl.jpg" 255,109,63,11
+  palette "models/mapobjects/flagbase/env_blue.tga" 255,11,69,105
+  palette "models/mapobjects/flagbase/env_blue.jpg" 255,14,69,104
+  palette "models/mapobjects/flagbase/beam_red.tga" 255,102,0,0
+  palette "models/mapobjects/flagbase/beam_red.jpg" 255,103,1,1
+  palette "models/mapobjects/flagbase/beam_ntrl.tga" 255,102,56,0
+  palette "models/mapobjects/flagbase/beam_ntrl.jpg" 255,102,56,1
+  palette "models/mapobjects/flagbase/beam_blue.tga" 255,0,64,102
+  palette "models/mapobjects/flagbase/beam_blue.jpg" 255,2,64,102
+  palette "models/mapobjects/flagbase/base_r.tga" 209,49,44,39
+  palette "models/mapobjects/flagbase/base_r.png" 209,49,44,39
+  palette "models/mapobjects/flagbase/base_e.tga" 222,28,25,22
+  palette "models/mapobjects/flagbase/base_e.png" 222,28,25,22
+  palette "models/mapobjects/elspawn/elspawn.tga" 255,35,35,33
+  palette "models/mapobjects/elspawn/elspawn.jpg" 255,35,35,33
+  palette "models/mapobjects/elspawn/elspawn.jpeg" 255,35,35,35
+  palette "models/mapobjects/el_tele/el_tele_blend.jpg" 255,4,6,6
+  palette "models/mapobjects/el_tele/el_tele.jpg" 255,59,55,49
+  palette "models/mapobjects/el_tele/beam_fx2.jpg" 255,16,30,30
+  palette "models/mapobjects/el_tele/beam_fx.jpg" 255,3,5,6
+  palette "models/mapobjects/el_tele/beam.jpg" 255,6,10,10
+  palette "models/mapobjects/ctftree/ctftree.tga" 130,47,65,30
+  palette "models/mapobjects/ctftree/ctftree.png" 130,47,65,30
+  palette "models/mapobjects/cross/cross_skull.png" 103,113,93,77
+  palette "models/mapobjects/cross/cross.png" 216,59,41,27
+  palette "models/mapobjects/corvette/tire.jpg" 255,38,34,39
+  palette "models/mapobjects/corvette/skin.jpg" 255,111,61,47
+  palette "models/mapobjects/copymachine/copymachine.jpg" 255,148,148,146
+  palette "models/mapobjects/dantooine_enclave/workbench_glow.jpg" 255,3,3,3
+  palette "models/mapobjects/dantooine_enclave/workbench.jpg" 255,44,50,46
+  palette "models/mapobjects/dantooine_enclave/tree_leaves.tga" 94,38,36,20
+  palette "models/mapobjects/dantooine_enclave/tree_leaves.png" 94,38,36,20
+  palette "models/mapobjects/dantooine_enclave/tree_bark.jpg" 255,173,142,93
+  palette "models/mapobjects/dantooine_enclave/console_glow.jpg" 255,5,9,13
+  palette "models/mapobjects/dantooine_enclave/console_back.jpg" 255,29,35,47
+  palette "models/mapobjects/dantooine_enclave/console.jpg" 255,27,36,48
+  palette "models/mapobjects/dantooine_enclave/chair_2.jpg" 255,55,66,68
+  palette "models/mapobjects/dantooine_enclave/chair_1.jpg" 255,131,135,111
+  palette "models/mapobjects/corpse/torso.png" 134,73,44,34
+  palette "models/mapobjects/corpse/spine.png" 130,59,28,11
+  palette "models/mapobjects/corpse/intestine2.png" 149,58,36,26
+  palette "models/mapobjects/corpse/intestine.png" 132,65,42,31
+  palette "models/mapobjects/corpse/chain.png" 102,76,51,43
+  palette "models/mapobjects/console/under.jpg" 255,10,8,7
+  palette "models/mapobjects/console/sphere4.jpg" 255,3,27,16
+  palette "models/mapobjects/console/sphere3.png" 38,1,0,0
+  palette "models/mapobjects/console/sphere2.png" 38,55,46,40
+  palette "models/mapobjects/console/console.png" 100,41,39,38
+  palette "models/mapobjects/clothing/tshirt6.jpg" 255,47,42,38
+  palette "models/mapobjects/clothing/tshirt5.jpg" 255,124,121,120
+  palette "models/mapobjects/clothing/tshirt3.jpg" 255,28,29,83
+  palette "models/mapobjects/clothing/tshirt1.jpg" 255,128,126,125
+  palette "models/mapobjects/clothing/hat1.jpg" 255,14,19,22
+  palette "models/mapobjects/chain/chain.png" 180,93,76,64
+  palette "models/mapobjects/cling_ons/skeleton.tga" 87,120,106,76
+  palette "models/mapobjects/cling_ons/skeleton.png" 87,120,106,76
+  palette "models/mapobjects/cling_ons/rock_top.jpg" 255,40,37,45
+  palette "models/mapobjects/cling_ons/rock_glow.jpg" 255,6,5,7
+  palette "models/mapobjects/cling_ons/rock.jpg" 255,34,32,40
+  palette "models/mapobjects/cling_ons/glow.jpg" 255,64,45,77
+  palette "models/mapobjects/cling_ons/aura_overlay2.jpg" 255,45,32,32
+  palette "models/mapobjects/cling_ons/aura_overlay.jpg" 255,45,33,54
+  palette "models/mapobjects/cling_ons/aura.jpg" 255,2,1,3
+  palette "models/mapobjects/bitch/hologirl.png" 88,83,69,61
+  palette "models/mapobjects/bentree1/bush2.tga" 76,44,35,4
+  palette "models/mapobjects/bentree1/bush2.png" 76,44,35,4
+  palette "models/mapobjects/bentree1/bentree1.tga" 45,87,111,49
+  palette "models/mapobjects/bentree1/bentree1.png" 45,87,111,49
+  palette "models/mapobjects/bentree1/bark.jpg" 255,131,86,60
+  palette "models/mapobjects/bathroom/tubsideblood.jpg" 255,153,148,152
+  palette "models/mapobjects/bathroom/tubclean.jpg" 255,143,143,139
+  palette "models/mapobjects/bathroom/tub2blood.jpg" 255,236,232,235
+  palette "models/mapobjects/bathroom/tolietinside.jpg" 255,169,167,161
+  palette "models/mapobjects/bathroom/tolietbase.jpg" 255,238,236,236
+  palette "models/mapobjects/bathroom/sink2.jpg" 255,205,202,198
+  palette "models/mapobjects/bathroom/sidesinside.jpg" 255,178,170,172
+  palette "models/mapobjects/bathroom/side2clean.jpg" 255,151,150,153
+  palette "models/mapobjects/bathroom/seat2.jpg" 255,231,231,228
+  palette "models/mapobjects/bathroom/pedestal.jpg" 255,186,186,185
+  palette "models/mapobjects/bathroom/brass.jpg" 255,230,225,42
+  palette "models/mapobjects/banner/q3banner02x.jpg" 255,19,12,3
+  palette "models/mapobjects/banner/q3banner02.jpg" 255,44,16,2
+  palette "models/mapobjects/baph/baphomet_gold.png" 251,68,46,28
+  palette "models/mapobjects/baph/baphomet.png" 251,50,39,31
+  palette "models/mapobjects/baph/bapho_lamp.png" 234,56,38,26
+  palette "models/mapobjects/atlantis/water04.tga" 122,121,142,146
+  palette "models/mapobjects/atlantis/water04.png" 122,121,142,146
+  palette "models/mapobjects/GR_trees/tree6.tga" 101,42,91,10
+  palette "models/mapobjects/GR_trees/tree6.png" 101,42,91,10
+  palette "models/mapobjects/GR_trees/stamm.jpg" 255,70,40,14
+  palette "models/mapobjects/Skull/ribcage.png" 95,115,87,67
+  palette "models/mapobjects/Skull/monkeyhead2.png" 34,105,96,93
+  palette "models/mapobjects/Skull/half_skull.tga" 255,81,60,47
+  palette "models/mapobjects/Skull/half_skull.jpg" 255,81,60,47
   palette "models/ammo/soul/skullfire.tga" 75,208,111,25
+  palette "models/ammo/soul/skullfire.png" 75,208,111,25
   palette "models/ammo/soul/fire.tga" 0,0,0,0
+  palette "models/ammo/soul/fire.jpg" 255,196,95,20
+  palette "models/mapobjects/LDA/LDAtree04b.jpg" 255,38,48,18
+  palette "models/mapobjects/LDA/LDAtree04.tga" 110,56,66,46
+  palette "models/mapobjects/LDA/LDAtree04.png" 110,56,66,46
+  palette "models/mapobjects/LDA/LDAtree03b.jpg" 255,32,42,20
+  palette "models/mapobjects/LDA/LDAtree03.tga" 96,48,59,44
+  palette "models/mapobjects/LDA/LDAtree03.png" 96,48,59,44
+  palette "models/mapobjects/LDA/LDAtree02b.jpg" 255,31,45,21
+  palette "models/mapobjects/LDA/LDAtree02.tga" 94,43,52,40
+  palette "models/mapobjects/LDA/LDAtree02.png" 94,43,52,40
+  palette "models/mapobjects/LDA/LDAtree01b.jpg" 255,33,43,19
+  palette "models/mapobjects/LDA/LDAtree01.tga" 103,45,56,39
+  palette "models/mapobjects/LDA/LDAtree01.png" 103,45,56,39
   palette "models/ammo/rocket/strogg_rocket.jpg" 255,37,31,30
   palette "models/ammo/rocket/strogg_outerflare.jpg" 255,104,22,1
   palette "models/ammo/rocket/strogg_innerflare.jpg" 255,104,41,1
   palette "models/ammo/rocket/strogg_fins.jpg" 255,45,39,40
   palette "models/ammo/rocket/slipgate_rocket.jpg" 255,50,34,26
   palette "models/ammo/rocket/slipgate_fins.jpg" 255,53,38,30
+  palette "models/ammo/rocket/rockfls2.jpeg" 255,94,40,26
+  palette "models/ammo/rocket/rockfls1.jpeg" 255,94,40,26
+  palette "models/ammo/rocket/rockflar.jpeg" 255,112,45,25
+  palette "models/ammo/rocket/rocketfn.jpeg" 255,111,16,7
+  palette "models/ammo/rocket/rocket.jpeg" 255,79,65,30
   palette "models/ammo/rocket/mortarshell.jpg" 255,26,22,14
   palette "models/ammo/rocket/lavaball.jpg" 255,127,32,15
-  palette "models/weapons5/railgun/topglass.png" 80,94,81,70
-  palette "models/weapons5/railgun/sideglass.png" 87,102,90,79
-  palette "models/weapons5/railgun/outertube.png" 83,94,89,85
-  palette "models/weapons5/railgun/earth_sniper.jpg" 255,32,29,27
-  palette "models/weapons5/railgun/corelight.png" 58,91,91,91
-  palette "models/weapons5/rocketl/earth_mortar_sight.png" 111,91,91,91
-  palette "models/weapons5/plasma/plasmatube_elect.png" 91,130,130,130
-  palette "models/weapons5/plasma/plasmatube2.png" 79,60,60,60
-  palette "models/weapons5/plasma/heat_shield.png" 75,4,4,3
-  palette "models/weapons5/machinegun/doomchainsawc.png" 150,40,34,35
-  palette "models/weapons5/grapple/c_grapple.png" 72,61,47,27
-  palette "models/weapons5/lightning/sliptube.png" 63,107,91,79
-  palette "models/weapons5/lightning/feeder.png" 87,47,47,47
-  palette "models/weapons5/lightning/dcbarrel.png" 144,67,68,60
-  palette "models/weapons5/bfg/stroggflash01.png" 96,70,186,70
-  palette "models/weapons5/bfg/elect02.png" 79,9,12,57
-  palette "models/weapons5/bfg/elect01.png" 91,78,87,183
-  palette "models/weapons5/bfg/doombfg.png" 226,84,90,89
-  palette "models/weapons5/bfg/clipfx.png" 11,0,44,0
-  palette "models/weapons5/bfg/cellclip.png" 161,27,27,27
-  palette "models/weapons5/bfg/bfgparts.png" 220,99,103,105
-  palette "models/weapons5/bfg/bcshose.png" 221,73,75,76
-  palette "models/weapons5/bfg/10k_energy_grill.png" 102,31,31,31
-  palette "models/powerups5/flags/r_flag.jpg" 255,67,13,13
-  palette "models/powerups5/flags/b_flag.jpg" 255,35,34,76
-  palette "models/powerups5/health/doom_sphere_outside.png" 97,46,45,44
-  palette "models/powerups5/holdable/earth_booze_liquid.jpg" 255,73,47,29
-  palette "models/powerups5/holdable/earth_booze_cork.jpg" 255,33,28,25
-  palette "models/powerups5/holdable/earth_booze_bottle_label.png" 25,177,148,125
-  palette "models/powerups5/holdable/earth_booze_bottle.jpg" 255,53,47,42
-  palette "models/powerups5/armor/strogg_body_armor.png" 253,41,25,20
-  palette "models/powerups5/instant/slip_invis_g.png" 9,151,114,31
-  palette "models/powerups5/instant/slip_invis.png" 246,72,61,44
-  palette "models/powerups5/instant/doom_sphere_outside_invis.png" 46,51,50,49
-  palette "models/powerups5/instant/doom_invis_spiral_old.png" 184,30,30,30
-  palette "models/powerups5/instant/doom_invis_spiral.png" 184,77,9,9
-  palette "models/powerups5/instant/doom_invis_iris.png" 108,34,7,1
-  palette "models/powerups5/instant/doom_flight.png" 234,56,22,64
-  palette "models/powerups5/ammo/strogg_cellpack_screen.png" 179,0,0,0
-  palette "models/powerups5/ammo/strogg_cellpack_fx.png" 179,27,48,11
-  palette "models/players/sarge/default.jpg" 255,35,29,21
-  palette "models/ammo/soul/skullfire.png" 75,208,111,25
-  palette "models/ammo/soul/fire.jpg" 255,196,95,20
+  palette "menu/art/gr/grlogo.png" 103,249,151,43
+  palette "gfx/2d/timer/unknown.png" 6,106,106,106
+  palette "gfx/2d/timer/slice_7.png" 6,255,255,255
+  palette "gfx/2d/timer/slice_5.png" 9,255,255,255
+  palette "gfx/2d/timer/slice_24.png" 2,255,255,255
+  palette "gfx/2d/timer/slice_12.png" 4,255,255,255
+  palette "gfx/2d/timer/regen.png" 4,169,169,169
+  palette "gfx/2d/timer/quad.png" 3,168,168,168
+  palette "gfx/2d/timer/medkit.png" 3,175,175,175
+  palette "gfx/2d/timer/invis.png" 4,178,178,178
+  palette "gfx/2d/timer/health.png" 9,192,192,192
+  palette "gfx/2d/timer/haste.png" 2,165,165,165
+  palette "gfx/2d/timer/bs.png" 8,168,168,168
+  palette "gfx/2d/timer/armor.png" 6,174,174,174
+  palette "gfx/2d/numbers/zero_32b.png" 186,184,184,184
+  palette "gfx/2d/numbers/two_32b.png" 143,183,182,183
+  palette "gfx/2d/numbers/three_32b.png" 169,178,178,178
+  palette "gfx/2d/numbers/six_32b.png" 182,180,180,180
+  palette "gfx/2d/numbers/seven_32b.png" 126,185,185,184
+  palette "gfx/2d/numbers/one_32b.png" 132,185,185,185
+  palette "gfx/2d/numbers/nine_32b.png" 186,182,182,182
+  palette "gfx/2d/numbers/minus_32b.png" 34,146,146,146
+  palette "gfx/2d/numbers/four_32b.png" 150,185,185,185
+  palette "gfx/2d/numbers/five_32b.png" 167,176,176,176
+  palette "gfx/2d/numbers/eight_32b.png" 184,182,182,182
+  palette "models/powerup3/ammo2/rocket/thrustc3.tga" 255,45,31,9
+  palette "models/powerup3/ammo2/rocket/thrustc3.jpg" 255,45,31,10
+  palette "models/powerup3/ammo2/rocket/thrustc2.tga" 255,35,25,8
+  palette "models/powerup3/ammo2/rocket/thrustc2.jpg" 255,35,25,9
+  palette "models/powerup3/ammo2/rocket/thrustc1.tga" 255,33,23,6
+  palette "models/powerup3/ammo2/rocket/thrustc1.jpg" 255,33,23,7
+  palette "models/powerup3/ammo2/rocket/rocket.tga" 255,61,61,61
+  palette "models/powerup3/ammo2/rocket/rocket.jpg" 255,61,61,61
+  palette "models/players/widow/gib3/skin.pcx" 255,8,3,2
+  palette "models/players/widow/gib2/skin.pcx" 255,4,2,2
+  palette "models/players/widow/gib4/skin.pcx" 255,6,5,5
+  palette "models/players/widow/gib1/skin.pcx" 255,1,1,0
+  palette "models/players/tank/ctank/skin.tga" 255,21,16,14
+  palette "models/players/tank/ctank/skin.pcx" 255,21,16,14
+  palette "models/players/tank/ctank/skin.jpg" 255,21,17,15
+  palette "models/players/tank/ctank/pain.tga" 255,19,13,11
+  palette "models/players/tank/ctank/pain.pcx" 255,19,13,11
+  palette "models/players/tank/ctank/pain.jpg" 255,19,14,12
+  palette "models/players/monsters/tank/skin_rgh.tga" 255,128,0,0
+  palette "models/players/monsters/tank/skin_rgh.jpg" 255,128,1,1
+  palette "models/players/monsters/tank/skin_light.tga" 1,26,78,94
+  palette "models/players/monsters/tank/skin_light.jpg" 255,0,1,1
+  palette "models/players/monsters/tank/skin_bump.tga" 18,127,124,242
+  palette "models/players/monsters/tank/skin_bump.png" 18,127,124,242
+  palette "models/players/monsters/tank/skin.tga" 255,26,25,19
+  palette "models/players/monsters/tank/skin.jpg" 255,26,25,19
+  palette "models/players/monsters/tank/pain_rgh.tga" 255,115,0,0
+  palette "models/players/monsters/tank/pain_rgh.jpg" 255,115,1,2
+  palette "models/players/monsters/tank/pain_light.tga" 0,0,0,0
+  palette "models/players/monsters/tank/pain_light.jpg" 255,0,0,0
+  palette "models/players/monsters/tank/pain_bump.tga" 16,127,126,243
+  palette "models/players/monsters/tank/pain_bump.png" 16,127,126,243
+  palette "models/players/monsters/tank/pain.tga" 255,23,20,15
+  palette "models/players/monsters/tank/pain.jpg" 255,23,20,15
+  palette "models/players/monsters/stalker/untitled_Mesh.tga" 255,229,229,229
+  palette "models/players/monsters/stalker/untitled_Mesh.jpg" 255,227,227,227
+  palette "models/players/monsters/stalker/skin_rgh.tga" 255,128,0,0
+  palette "models/players/monsters/stalker/skin_rgh.jpg" 255,128,1,2
+  palette "models/players/monsters/stalker/skin_light.tga" 0,78,83,19
+  palette "models/players/monsters/stalker/skin_light.jpg" 255,0,0,0
+  palette "models/players/monsters/stalker/skin_bump.tga" 27,128,127,243
+  palette "models/players/monsters/stalker/skin_bump.png" 27,128,127,243
+  palette "models/players/monsters/stalker/skin.tga" 255,34,21,18
+  palette "models/players/monsters/stalker/skin.pcx" 255,19,13,10
+  palette "models/players/monsters/stalker/skin.jpg" 255,34,21,18
+  palette "models/players/monsters/stalker/pain_rgh.tga" 255,123,0,0
+  palette "models/players/monsters/stalker/pain_rgh.jpg" 255,123,2,2
+  palette "models/players/monsters/stalker/pain_bump.tga" 26,128,127,243
+  palette "models/players/monsters/stalker/pain_bump.png" 26,128,127,243
+  palette "models/players/monsters/stalker/pain.tga" 255,48,30,26
+  palette "models/players/monsters/stalker/pain.jpg" 255,47,30,27
+  palette "models/players/monsters/mutant/skin_rgh.tga" 255,22,0,0
+  palette "models/players/monsters/mutant/skin_rgh.jpg" 255,22,2,2
+  palette "models/players/monsters/mutant/skin_bump.tga" 29,127,126,247
+  palette "models/players/monsters/mutant/skin_bump.png" 29,127,126,247
+  palette "models/players/monsters/mutant/skin.tga" 255,52,35,20
+  palette "models/players/monsters/mutant/skin.jpg" 255,52,35,21
+  palette "models/players/monsters/mutant/pain_rgh.tga" 255,21,0,0
+  palette "models/players/monsters/mutant/pain_rgh.jpg" 255,21,2,2
+  palette "models/players/monsters/mutant/pain_bump.tga" 24,127,126,246
+  palette "models/players/monsters/mutant/pain_bump.png" 24,127,126,246
+  palette "models/players/monsters/mutant/pain.tga" 255,44,27,15
+  palette "models/players/monsters/mutant/pain.jpg" 255,44,27,16
+  palette "models/players/monsters/parasite/skin_rgh.tga" 255,128,0,0
+  palette "models/players/monsters/parasite/skin_rgh.jpg" 255,128,1,1
+  palette "models/players/monsters/parasite/skin_light.tga" 0,142,58,33
+  palette "models/players/monsters/parasite/skin_light.jpg" 255,0,0,0
+  palette "models/players/monsters/parasite/skin_bump.tga" 25,128,127,240
+  palette "models/players/monsters/parasite/skin_bump.png" 25,128,127,240
+  palette "models/players/monsters/parasite/skin.tga" 255,42,27,22
+  palette "models/players/monsters/parasite/skin.jpg" 255,42,28,23
+  palette "models/players/monsters/parasite/pain_rgh.tga" 255,120,0,0
+  palette "models/players/monsters/parasite/pain_rgh.jpg" 255,119,1,2
+  palette "models/players/monsters/parasite/pain_light.tga" 0,0,0,0
+  palette "models/players/monsters/parasite/pain_light.jpg" 255,0,0,0
+  palette "models/players/monsters/parasite/pain_bump.tga" 30,128,126,237
+  palette "models/players/monsters/parasite/pain_bump.png" 30,128,126,237
+  palette "models/players/monsters/parasite/pain.tga" 255,39,24,19
+  palette "models/players/monsters/parasite/pain.jpg" 255,39,24,20
+  palette "models/players/monsters/medic/skin_rgh.tga" 255,127,0,0
+  palette "models/players/monsters/medic/skin_rgh.jpg" 255,127,1,1
+  palette "models/players/monsters/medic/skin_light.tga" 2,67,121,157
+  palette "models/players/monsters/medic/skin_light.png" 2,67,121,157
+  palette "models/players/monsters/medic/skin_bump.tga" 27,128,126,240
+  palette "models/players/monsters/medic/skin_bump.png" 27,128,126,240
+  palette "models/players/monsters/medic/skin.tga" 255,38,33,27
+  palette "models/players/monsters/medic/skin.jpg" 255,38,33,28
+  palette "models/players/monsters/medic/pain_rgh.tga" 255,126,11,9
+  palette "models/players/monsters/medic/pain_rgh.jpg" 255,126,11,9
+  palette "models/players/monsters/medic/pain_light.tga" 0,0,0,0
+  palette "models/players/monsters/medic/pain_light.jpg" 255,0,0,0
+  palette "models/players/monsters/medic/pain_bump.tga" 25,128,124,231
+  palette "models/players/monsters/medic/pain_bump.png" 25,128,124,231
+  palette "models/players/monsters/medic/pain.tga" 255,36,30,25
+  palette "models/players/monsters/medic/pain.jpg" 255,37,30,26
+  palette "models/players/monsters/soldier/skin_ssp_rgh.tga" 255,102,0,0
+  palette "models/players/monsters/soldier/skin_ssp_rgh.jpg" 255,102,2,2
+  palette "models/players/monsters/soldier/skin_ssp_light.tga" 0,0,0,0
+  palette "models/players/monsters/soldier/skin_ssp_light.jpg" 255,0,0,0
+  palette "models/players/monsters/soldier/skin_ssp_bump.tga" 31,128,126,239
+  palette "models/players/monsters/soldier/skin_ssp_bump.png" 31,128,126,239
+  palette "models/players/monsters/soldier/skin_ssp.tga" 255,44,34,27
+  palette "models/players/monsters/soldier/skin_ssp.jpg" 255,44,34,28
+  palette "models/players/monsters/soldier/skin_ss_rgh.tga" 255,114,11,9
+  palette "models/players/monsters/soldier/skin_ss_rgh.jpg" 255,114,11,9
+  palette "models/players/monsters/soldier/skin_ss_light.tga" 0,152,75,91
+  palette "models/players/monsters/soldier/skin_ss_light.jpg" 255,0,0,0
+  palette "models/players/monsters/soldier/skin_ss_bump.tga" 33,128,125,232
+  palette "models/players/monsters/soldier/skin_ss_bump.png" 33,128,125,232
+  palette "models/players/monsters/soldier/skin_ss.tga" 255,48,40,31
+  palette "models/players/monsters/soldier/skin_ss.jpg" 255,48,40,32
+  palette "models/players/monsters/soldier/skin_rgh.tga" 255,119,20,21
+  palette "models/players/monsters/soldier/skin_rgh.jpg" 255,118,20,21
+  palette "models/players/monsters/soldier/skin_ltp_rgh.tga" 255,113,15,17
+  palette "models/players/monsters/soldier/skin_ltp_rgh.jpg" 255,113,15,17
+  palette "models/players/monsters/soldier/skin_ltp_light.tga" 0,0,0,0
+  palette "models/players/monsters/soldier/skin_ltp_light.jpg" 255,0,0,0
+  palette "models/players/monsters/soldier/skin_ltp_bump.tga" 43,128,124,229
+  palette "models/players/monsters/soldier/skin_ltp_bump.png" 43,128,124,229
+  palette "models/players/monsters/soldier/skin_ltp.tga" 255,61,50,43
+  palette "models/players/monsters/soldier/skin_ltp.jpg" 255,61,50,43
+  palette "models/players/monsters/soldier/skin_lt_rgh.tga" 255,119,0,0
+  palette "models/players/monsters/soldier/skin_lt_rgh.jpg" 255,119,1,2
+  palette "models/players/monsters/soldier/skin_lt_light.tga" 1,103,187,220
+  palette "models/players/monsters/soldier/skin_lt_light.png" 1,103,187,220
+  palette "models/players/monsters/soldier/skin_lt_bump.tga" 45,127,123,229
+  palette "models/players/monsters/soldier/skin_lt_bump.png" 45,127,123,229
+  palette "models/players/monsters/soldier/skin_lt.tga" 255,63,53,46
+  palette "models/players/monsters/soldier/skin_lt.jpg" 255,63,53,46
+  palette "models/players/monsters/soldier/skin_light.tga" 1,155,83,77
+  palette "models/players/monsters/soldier/skin_light.png" 1,155,83,77
+  palette "models/players/monsters/soldier/skin_bump.tga" 35,127,124,229
+  palette "models/players/monsters/soldier/skin_bump.png" 35,127,124,229
+  palette "models/players/monsters/soldier/skin.tga" 255,48,43,33
+  palette "models/players/monsters/soldier/skin.jpg" 255,48,43,33
+  palette "models/players/monsters/soldier/pain_rgh.tga" 255,113,15,17
+  palette "models/players/monsters/soldier/pain_rgh.jpg" 255,113,15,17
+  palette "models/players/monsters/soldier/pain_light.tga" 0,0,0,0
+  palette "models/players/monsters/soldier/pain_light.jpg" 255,0,0,0
+  palette "models/players/monsters/soldier/pain_bump.tga" 33,126,125,229
+  palette "models/players/monsters/soldier/pain_bump.png" 33,126,125,229
+  palette "models/players/monsters/soldier/pain.tga" 255,48,39,30
+  palette "models/players/monsters/soldier/pain.jpg" 255,48,39,30
+  palette "models/players/monsters/insane/i_skin_rgh.tga" 255,127,0,0
+  palette "models/players/monsters/insane/i_skin_rgh.jpg" 255,127,1,2
+  palette "models/players/monsters/insane/i_skin_bump.tga" 59,127,125,235
+  palette "models/players/monsters/insane/i_skin_bump.png" 59,127,125,235
+  palette "models/players/monsters/insane/i_skin03_rgh.tga" 255,127,0,0
+  palette "models/players/monsters/insane/i_skin03_rgh.jpg" 255,127,1,2
+  palette "models/players/monsters/insane/i_skin03_bump.tga" 57,127,125,234
+  palette "models/players/monsters/insane/i_skin03_bump.png" 57,127,125,234
+  palette "models/players/monsters/insane/i_skin03.tga" 255,71,49,31
+  palette "models/players/monsters/insane/i_skin03.jpg" 255,71,49,32
+  palette "models/players/monsters/insane/i_skin02_rgh.tga" 255,126,0,0
+  palette "models/players/monsters/insane/i_skin02_rgh.jpg" 255,126,1,2
+  palette "models/players/monsters/insane/i_skin02_bump.tga" 42,127,125,235
+  palette "models/players/monsters/insane/i_skin02_bump.png" 42,127,125,235
+  palette "models/players/monsters/insane/i_skin02.tga" 255,62,34,17
+  palette "models/players/monsters/insane/i_skin02.jpg" 255,62,34,19
+  palette "models/players/monsters/insane/i_skin.tga" 255,74,51,32
+  palette "models/players/monsters/insane/i_skin.jpg" 255,74,51,34
+  palette "models/players/monsters/infantry/skin_rgh.tga" 255,102,3,4
+  palette "models/players/monsters/infantry/skin_rgh.jpg" 255,102,5,5
+  palette "models/players/monsters/infantry/skin_bump.tga" 25,127,125,245
+  palette "models/players/monsters/infantry/skin_bump.png" 25,127,125,245
+  palette "models/players/monsters/infantry/skin.tga" 255,40,32,26
+  palette "models/players/monsters/infantry/skin.jpg" 255,40,32,27
+  palette "models/players/monsters/infantry/pain_rgh.tga" 255,111,15,17
+  palette "models/players/monsters/infantry/pain_rgh.jpg" 255,111,15,17
+  palette "models/players/monsters/infantry/pain_light.tga" 0,0,0,0
+  palette "models/players/monsters/infantry/pain_light.jpg" 255,0,0,0
+  palette "models/players/monsters/infantry/pain_bump.tga" 25,127,125,231
+  palette "models/players/monsters/infantry/pain_bump.png" 25,127,125,231
+  palette "models/players/monsters/infantry/pain.tga" 255,39,27,23
+  palette "models/players/monsters/infantry/pain.jpg" 255,39,28,23
+  palette "models/players/monsters/hover/skin_rgh.tga" 255,134,0,0
+  palette "models/players/monsters/hover/skin_rgh.jpg" 255,133,1,2
+  palette "models/players/monsters/hover/skin_light.tga" 13,251,145,11
+  palette "models/players/monsters/hover/skin_light.png" 13,251,145,11
+  palette "models/players/monsters/hover/skin_bump.tga" 32,127,126,232
+  palette "models/players/monsters/hover/skin_bump.png" 32,127,126,232
+  palette "models/players/monsters/hover/skin.tga" 255,88,27,12
+  palette "models/players/monsters/hover/skin.jpg" 255,87,28,15
+  palette "models/players/monsters/hover/pain_rgh.tga" 255,134,0,0
+  palette "models/players/monsters/hover/pain_rgh.jpg" 255,133,1,2
+  palette "models/players/monsters/hover/pain_light.tga" 0,0,0,0
+  palette "models/players/monsters/hover/pain_light.jpg" 255,0,0,0
+  palette "models/players/monsters/hover/pain_bump.tga" 31,127,126,233
+  palette "models/players/monsters/hover/pain_bump.png" 31,127,126,233
+  palette "models/players/monsters/hover/pain.tga" 255,85,23,11
+  palette "models/players/monsters/hover/pain.jpg" 255,85,24,13
+  palette "models/players/monsters/gunner/skin_rgh.tga" 255,128,0,0
+  palette "models/players/monsters/gunner/skin_rgh.jpg" 255,128,1,1
+  palette "models/players/monsters/gunner/skin_light.tga" 1,177,5,5
+  palette "models/players/monsters/gunner/skin_light.png" 1,177,5,5
+  palette "models/players/monsters/gunner/skin_bump.tga" 18,127,126,244
+  palette "models/players/monsters/gunner/skin_bump.png" 18,127,126,244
+  palette "models/players/monsters/gunner/skin.tga" 255,27,23,20
+  palette "models/players/monsters/gunner/skin.jpg" 255,27,23,20
+  palette "models/players/monsters/gunner/pain_rgh.tga" 255,118,15,17
+  palette "models/players/monsters/gunner/pain_rgh.jpg" 255,117,15,17
+  palette "models/players/monsters/gunner/pain_light.tga" 0,0,0,0
+  palette "models/players/monsters/gunner/pain_light.jpg" 255,0,0,0
+  palette "models/players/monsters/gunner/pain_bump.tga" 17,127,126,234
+  palette "models/players/monsters/gunner/pain_bump.png" 17,127,126,234
+  palette "models/players/monsters/gunner/pain.tga" 255,25,19,17
+  palette "models/players/monsters/gunner/pain.jpg" 255,25,19,17
+  palette "models/players/monsters/gladiatr/skin_rgh.tga" 255,127,0,0
+  palette "models/players/monsters/gladiatr/skin_rgh.jpg" 255,127,1,1
+  palette "models/players/monsters/gladiatr/skin_light.tga" 1,212,78,60
+  palette "models/players/monsters/gladiatr/skin_light.png" 1,212,78,60
+  palette "models/players/monsters/gladiatr/skin_bump.tga" 30,130,124,227
+  palette "models/players/monsters/gladiatr/skin_bump.png" 30,130,124,227
+  palette "models/players/monsters/gladiatr/skin.tga" 255,46,33,28
+  palette "models/players/monsters/gladiatr/skin.jpg" 255,46,33,28
+  palette "models/players/monsters/gladiatr/pain_rgh.tga" 255,121,0,0
+  palette "models/players/monsters/gladiatr/pain_rgh.jpg" 255,121,1,2
+  palette "models/players/monsters/gladiatr/pain_light.tga" 1,0,0,0
+  palette "models/players/monsters/gladiatr/pain_light.png" 1,0,0,0
+  palette "models/players/monsters/gladiatr/pain_bump.tga" 28,130,124,228
+  palette "models/players/monsters/gladiatr/pain_bump.png" 28,130,124,228
+  palette "models/players/monsters/gladiatr/pain.tga" 255,46,29,25
+  palette "models/players/monsters/gladiatr/pain.jpg" 255,46,29,25
+  palette "models/players/monsters/flyer/skin_rgh.tga" 255,128,0,0
+  palette "models/players/monsters/flyer/skin_rgh.jpg" 255,128,1,2
+  palette "models/players/monsters/flyer/skin_bump.tga" 24,126,127,230
+  palette "models/players/monsters/flyer/skin_bump.png" 24,126,127,230
+  palette "models/players/monsters/flyer/skin.tga" 255,40,26,22
+  palette "models/players/monsters/flyer/skin.jpg" 255,40,27,22
+  palette "models/players/monsters/flyer/pain_rgh.tga" 255,122,0,0
+  palette "models/players/monsters/flyer/pain_rgh.jpg" 255,122,1,2
+  palette "models/players/monsters/flyer/pain_light.tga" 0,0,0,0
+  palette "models/players/monsters/flyer/pain_light.jpg" 255,0,0,0
+  palette "models/players/monsters/flyer/pain_bump.tga" 23,126,127,229
+  palette "models/players/monsters/flyer/pain_bump.png" 23,126,127,229
+  palette "models/players/monsters/flyer/pain.tga" 255,39,25,21
+  palette "models/players/monsters/flyer/pain.jpg" 255,39,25,21
+  palette "models/players/monsters/float/skin_rgh.tga" 255,123,0,0
+  palette "models/players/monsters/float/skin_rgh.jpg" 255,123,1,1
+  palette "models/players/monsters/float/skin_light.tga" 1,67,24,7
+  palette "models/players/monsters/float/skin_light.png" 1,67,24,7
+  palette "models/players/monsters/float/skin_bump.tga" 14,127,126,249
+  palette "models/players/monsters/float/skin_bump.png" 14,127,126,249
+  palette "models/players/monsters/float/skin.tga" 255,30,16,11
+  palette "models/players/monsters/float/skin.jpg" 255,30,16,12
+  palette "models/players/monsters/float/pain_rgh.tga" 255,122,0,0
+  palette "models/players/monsters/float/pain_rgh.jpg" 255,122,1,1
+  palette "models/players/monsters/float/pain_light.tga" 0,0,0,0
+  palette "models/players/monsters/float/pain_light.jpg" 255,0,0,0
+  palette "models/players/monsters/float/pain_bump.tga" 14,127,127,237
+  palette "models/players/monsters/float/pain_bump.png" 14,127,127,237
+  palette "models/players/monsters/float/pain.tga" 255,29,17,12
+  palette "models/players/monsters/float/pain.jpg" 255,29,17,13
+  palette "models/players/monsters/flipper/skin_rgh.tga" 255,51,0,0
+  palette "models/players/monsters/flipper/skin_rgh.jpg" 255,50,1,1
+  palette "models/players/monsters/flipper/skin_bump.tga" 42,127,127,255
+  palette "models/players/monsters/flipper/skin_bump.png" 42,127,127,255
+  palette "models/players/monsters/flipper/skin.tga" 255,54,50,47
+  palette "models/players/monsters/flipper/skin.jpg" 255,54,50,47
+  palette "models/players/monsters/flipper/pain_rgh.tga" 255,49,0,0
+  palette "models/players/monsters/flipper/pain_rgh.jpg" 255,49,1,1
+  palette "models/players/monsters/flipper/pain_bump.tga" 41,126,127,242
+  palette "models/players/monsters/flipper/pain_bump.png" 41,126,127,242
+  palette "models/players/monsters/flipper/pain.tga" 255,54,48,45
+  palette "models/players/monsters/flipper/pain.jpg" 255,54,48,45
+  palette "models/players/monsters/brain/skin_rgh.tga" 255,128,0,0
+  palette "models/players/monsters/brain/skin_rgh.jpg" 255,128,1,1
+  palette "models/players/monsters/brain/skin_bump.tga" 26,126,126,247
+  palette "models/players/monsters/brain/skin_bump.png" 26,126,126,247
+  palette "models/players/monsters/brain/skin.tga" 255,48,30,23
+  palette "models/players/monsters/brain/skin.jpg" 255,48,30,23
+  palette "models/players/monsters/brain/pain_rgh.tga" 255,121,19,19
+  palette "models/players/monsters/brain/pain_rgh.jpg" 255,121,19,19
+  palette "models/players/monsters/brain/pain_light.tga" 0,0,0,0
+  palette "models/players/monsters/brain/pain_light.jpg" 255,0,0,0
+  palette "models/players/monsters/brain/pain_bump.tga" 26,126,125,236
+  palette "models/players/monsters/brain/pain_bump.png" 26,126,125,236
+  palette "models/players/monsters/brain/pain.tga" 255,47,28,21
+  palette "models/players/monsters/brain/pain.jpg" 255,47,28,22
+  palette "models/players/monsters/boss2/skin_rgh.tga" 255,128,0,0
+  palette "models/players/monsters/boss2/skin_rgh.jpg" 255,128,1,2
+  palette "models/players/monsters/boss2/skin_light.tga" 1,90,121,145
+  palette "models/players/monsters/boss2/skin_light.png" 1,90,121,145
+  palette "models/players/monsters/boss2/skin_bump.tga" 23,128,126,242
+  palette "models/players/monsters/boss2/skin_bump.png" 23,128,126,242
+  palette "models/players/monsters/boss2/skin.tga" 255,35,25,21
+  palette "models/players/monsters/boss2/skin.jpg" 255,35,25,21
+  palette "models/players/monsters/boss2/pain_rgh.tga" 255,123,0,0
+  palette "models/players/monsters/boss2/pain_rgh.jpg" 255,123,1,2
+  palette "models/players/monsters/boss2/pain_light.tga" 0,0,0,0
+  palette "models/players/monsters/boss2/pain_light.jpg" 255,0,0,0
+  palette "models/players/monsters/boss2/pain_bump.tga" 22,128,126,239
+  palette "models/players/monsters/boss2/pain_bump.png" 22,128,126,239
+  palette "models/players/monsters/boss2/pain.tga" 255,35,23,19
+  palette "models/players/monsters/boss2/pain.jpg" 255,35,24,19
+  palette "models/players/monsters/boss1/skin_rgh.tga" 255,128,0,0
+  palette "models/players/monsters/boss1/skin_rgh.jpg" 255,128,1,2
+  palette "models/players/monsters/boss1/skin_light.tga" 2,210,78,7
+  palette "models/players/monsters/boss1/skin_light.png" 2,210,78,7
+  palette "models/players/monsters/boss1/skin_bump.tga" 27,128,127,240
+  palette "models/players/monsters/boss1/skin_bump.png" 27,128,127,240
+  palette "models/players/monsters/boss1/skin.tga" 255,45,34,27
+  palette "models/players/monsters/boss1/skin.jpg" 255,44,34,27
+  palette "models/players/monsters/boss1/pain_rgh.tga" 255,123,0,0
+  palette "models/players/monsters/boss1/pain_rgh.jpg" 255,123,1,2
+  palette "models/players/monsters/boss1/pain_light.tga" 0,0,0,0
+  palette "models/players/monsters/boss1/pain_light.jpg" 255,0,0,0
+  palette "models/players/monsters/boss1/pain_bump.tga" 27,127,126,238
+  palette "models/players/monsters/boss1/pain_bump.png" 27,127,126,238
+  palette "models/players/monsters/boss1/pain.tga" 255,43,31,25
+  palette "models/players/monsters/boss1/pain.jpg" 255,43,32,25
+  palette "models/players/monsters/bitch/skin_rgh.tga" 255,128,0,0
+  palette "models/players/monsters/bitch/skin_rgh.jpg" 255,128,1,1
+  palette "models/players/monsters/bitch/skin_light.tga" 0,159,40,15
+  palette "models/players/monsters/bitch/skin_light.jpg" 255,0,0,0
+  palette "models/players/monsters/bitch/skin_bump.tga" 27,127,126,231
+  palette "models/players/monsters/bitch/skin_bump.png" 27,127,126,231
+  palette "models/players/monsters/bitch/skin.tga" 255,42,31,24
+  palette "models/players/monsters/bitch/skin.jpg" 255,42,31,24
+  palette "models/players/monsters/bitch/pain_rgh.tga" 255,122,0,0
+  palette "models/players/monsters/bitch/pain_rgh.jpg" 255,121,1,2
+  palette "models/players/monsters/bitch/pain_light.tga" 0,0,0,0
+  palette "models/players/monsters/bitch/pain_light.jpg" 255,0,0,0
+  palette "models/players/monsters/bitch/pain_bump.tga" 24,126,127,239
+  palette "models/players/monsters/bitch/pain_bump.png" 24,126,127,239
+  palette "models/players/monsters/bitch/pain.tga" 255,38,27,20
+  palette "models/players/monsters/bitch/pain.jpg" 255,38,27,21
+  palette "models/players/monsters/berserk/skin_rgh.tga" 255,103,0,0
+  palette "models/players/monsters/berserk/skin_rgh.jpg" 255,103,1,1
+  palette "models/players/monsters/berserk/skin_light.tga" 0,202,1,1
+  palette "models/players/monsters/berserk/skin_light.jpg" 255,0,0,0
+  palette "models/players/monsters/berserk/skin_bump.tga" 18,127,126,250
+  palette "models/players/monsters/berserk/skin_bump.png" 18,127,126,250
+  palette "models/players/monsters/berserk/skin.tga" 255,28,21,19
+  palette "models/players/monsters/berserk/skin.jpg" 255,28,22,19
+  palette "models/players/monsters/berserk/pain_rgh.tga" 255,120,15,17
+  palette "models/players/monsters/berserk/pain_rgh.jpg" 255,120,15,17
+  palette "models/players/monsters/berserk/pain_light.tga" 0,0,0,0
+  palette "models/players/monsters/berserk/pain_light.jpg" 255,0,0,0
+  palette "models/players/monsters/berserk/pain_bump.tga" 17,127,126,243
+  palette "models/players/monsters/berserk/pain_bump.png" 17,127,126,243
+  palette "models/players/monsters/berserk/pain.tga" 255,27,19,17
+  palette "models/players/monsters/berserk/pain.jpg" 255,27,19,17
+  palette "models/players/janet/The Fallen/thefallen_red.tga" 231,87,37,29
+  palette "models/players/janet/The Fallen/thefallen_red.png" 231,87,37,29
+  palette "models/players/janet/Stroggs/stroggs_red.tga" 208,84,53,45
+  palette "models/players/janet/Stroggs/stroggs_red.png" 208,84,53,45
+  palette "models/players/janet/Stroggs/stroggs_blu.tga" 208,68,66,61
+  palette "models/players/janet/Stroggs/stroggs_blu.png" 208,68,66,61
+  palette "models/players/janet/Pagans/pagans_red.tga" 222,89,63,53
+  palette "models/players/janet/Pagans/pagans_red.png" 222,89,63,53
+  palette "models/players/janet/Pagans/pagans_blu.tga" 222,77,76,70
+  palette "models/players/janet/Pagans/pagans_blu.png" 222,77,76,70
+  palette "models/players/janet/Intruders/intruders_red.tga" 230,112,69,57
+  palette "models/players/janet/Intruders/intruders_red.png" 230,112,69,57
+  palette "models/players/janet/Intruders/intruders_blu.tga" 230,97,99,88
+  palette "models/players/janet/Intruders/intruders_blu.png" 230,97,99,88
+  palette "models/players/janet/Crusaders/crusaders_red.tga" 220,101,52,39
+  palette "models/players/janet/Crusaders/crusaders_red.png" 220,101,52,39
+  palette "models/players/janet/Crusaders/crusaders_blu.tga" 220,59,73,83
+  palette "models/players/janet/Crusaders/crusaders_blu.png" 220,59,73,83
+  palette "models/players/james/The Fallen/thefallen_red.tga" 193,91,44,33
+  palette "models/players/james/The Fallen/thefallen_red.png" 193,91,44,33
+  palette "models/players/james/The Fallen/thefallen_blu.tga" 193,51,67,72
+  palette "models/players/james/The Fallen/thefallen_blu.png" 193,51,67,72
+  palette "models/players/james/Stroggs/stroggs_red.tga" 215,92,59,51
+  palette "models/players/james/Stroggs/stroggs_red.png" 215,92,59,51
+  palette "models/players/james/Stroggs/stroggs_blu.tga" 215,74,74,68
+  palette "models/players/james/Stroggs/stroggs_blu.png" 215,74,74,68
+  palette "models/players/james/Pagans/pagans_red.tga" 216,104,70,52
+  palette "models/players/james/Pagans/pagans_red.png" 216,104,70,52
+  palette "models/players/james/Pagans/pagans_blu.tga" 216,85,82,69
+  palette "models/players/james/Pagans/pagans_blu.png" 216,85,82,69
+  palette "models/players/james/Intruders/intruders_red.tga" 237,108,59,53
+  palette "models/players/james/Intruders/intruders_red.png" 237,108,59,53
+  palette "models/players/james/Intruders/intruders_blu.tga" 237,81,88,82
+  palette "models/players/james/Intruders/intruders_blu.png" 237,81,88,82
+  palette "models/players/james/Crusaders/crusaders_red.tga" 216,86,41,35
+  palette "models/players/james/Crusaders/crusaders_red.png" 216,86,41,35
+  palette "models/players/james/Crusaders/crusaders_blu.tga" 216,59,59,62
+  palette "models/players/james/Crusaders/crusaders_blu.png" 216,59,59,62
+  palette "models/players/heads/james/james_red.tga" 204,50,35,30
+  palette "models/players/heads/james/james_red.png" 204,50,35,30
+  palette "models/players/heads/james/james_e_red.tga" 198,10,1,0
+  palette "models/players/heads/james/james_e_red.png" 198,10,1,0
+  palette "models/players/heads/james/james_e_blu.tga" 198,0,9,10
+  palette "models/players/heads/james/james_e_blu.png" 198,0,9,10
+  palette "models/players/heads/james/james_blu.tga" 164,22,43,40
+  palette "models/players/heads/james/james_blu.png" 164,22,43,40
+  palette "models/players/heads/james/icon_red.tga" 164,148,57,45
+  palette "models/players/heads/james/icon_red.png" 164,148,57,45
+  palette "models/players/heads/james/icon_default.tga" 176,139,81,70
+  palette "models/players/heads/james/icon_default.png" 176,139,81,70
+  palette "models/players/heads/james/icon_blue.tga" 209,59,103,99
+  palette "models/players/heads/james/icon_blue.png" 209,59,103,99
+  palette "models/players/heads/flayer/icon_red.tga" 174,137,79,60
+  palette "models/players/heads/flayer/icon_red.png" 174,137,79,60
+  palette "models/players/heads/flayer/icon_default.tga" 174,137,79,60
+  palette "models/players/heads/flayer/icon_default.png" 174,137,79,60
+  palette "models/players/heads/flayer/icon_blue.tga" 199,96,119,117
+  palette "models/players/heads/flayer/icon_blue.png" 199,96,119,117
+  palette "models/players/heads/flayer/flayereye.tga" 195,173,124,56
+  palette "models/players/heads/flayer/flayereye.png" 195,173,124,56
+  palette "models/players/heads/flayer/flayer_t_red.tga" 255,89,76,58
+  palette "models/players/heads/flayer/flayer_t_red.jpg" 255,89,77,59
+  palette "models/players/heads/flayer/flayer_t_blue.tga" 255,75,85,91
+  palette "models/players/heads/flayer/flayer_t_blue.jpg" 255,75,85,91
+  palette "models/players/heads/flayer/flayer_h_red.tga" 255,86,46,39
+  palette "models/players/heads/flayer/flayer_h_red.jpg" 255,86,46,39
+  palette "models/players/heads/flayer/flayer_h_blue.tga" 255,52,55,53
+  palette "models/players/heads/flayer/flayer_h_blue.jpg" 255,52,56,53
+  palette "models/players/heads/Ursula/ursula_red.tga" 255,119,57,38
+  palette "models/players/heads/Ursula/ursula_red.jpg" 255,119,57,39
+  palette "models/players/heads/Ursula/ursula_e.tga" 255,7,8,7
+  palette "models/players/heads/Ursula/ursula_e.jpg" 255,7,8,7
+  palette "models/players/heads/Ursula/ursula_blu.tga" 255,71,79,72
+  palette "models/players/heads/Ursula/ursula_blu.jpg" 255,71,79,72
+  palette "models/players/heads/Ursula/icon_red.tga" 188,128,69,51
+  palette "models/players/heads/Ursula/icon_red.png" 188,128,69,51
+  palette "models/players/heads/Ursula/icon_default.tga" 188,128,69,51
+  palette "models/players/heads/Ursula/icon_default.png" 188,128,69,51
+  palette "models/players/heads/Ursula/icon_blue.tga" 204,98,129,125
+  palette "models/players/heads/Ursula/icon_blue.png" 204,98,129,125
+  palette "models/players/heads/Neptune/neptune_red.tga" 255,131,59,37
+  palette "models/players/heads/Neptune/neptune_red.jpg" 255,132,59,39
+  palette "models/players/heads/Neptune/neptune_blue.tga" 255,60,91,91
+  palette "models/players/heads/Neptune/neptune_blue.jpg" 255,61,92,91
+  palette "models/players/heads/Neptune/neptune2.tga" 92,40,37,32
+  palette "models/players/heads/Neptune/neptune2.png" 92,40,37,32
+  palette "models/players/heads/Neptune/icon_red.tga" 201,143,70,49
+  palette "models/players/heads/Neptune/icon_red.png" 201,143,70,49
+  palette "models/players/heads/Neptune/icon_default.tga" 201,143,70,49
+  palette "models/players/heads/Neptune/icon_default.png" 201,143,70,49
+  palette "models/players/heads/Neptune/icon_blue.tga" 181,72,111,112
+  palette "models/players/heads/Neptune/icon_blue.png" 181,72,111,112
+  palette "models/players/heads/Morgan/morgan_red.tga" 204,73,73,70
+  palette "models/players/heads/Morgan/morgan_red.png" 204,73,73,70
+  palette "models/players/heads/Morgan/morgan_f.tga" 255,117,92,81
+  palette "models/players/heads/Morgan/morgan_f.jpg" 255,118,92,82
+  palette "models/players/heads/Morgan/morgan_blu.tga" 204,71,74,72
+  palette "models/players/heads/Morgan/morgan_blu.png" 204,71,74,72
+  palette "models/players/heads/Morgan/icon_red.tga" 219,103,64,58
+  palette "models/players/heads/Morgan/icon_red.png" 219,103,64,58
+  palette "models/players/heads/Morgan/icon_default.tga" 219,103,64,58
+  palette "models/players/heads/Morgan/icon_default.png" 219,103,64,58
+  palette "models/players/heads/Morgan/icon_blue.tga" 229,64,86,89
+  palette "models/players/heads/Morgan/icon_blue.png" 229,64,86,89
+  palette "models/players/heads/Megan/megan2.tga" 159,58,69,76
+  palette "models/players/heads/Megan/megan2.png" 159,58,69,76
+  palette "models/players/heads/Megan/megan1_red.tga" 214,67,65,67
+  palette "models/players/heads/Megan/megan1_red.png" 214,67,65,67
+  palette "models/players/heads/Megan/megan1_blu.tga" 214,63,65,70
+  palette "models/players/heads/Megan/megan1_blu.png" 214,63,65,70
+  palette "models/players/heads/Megan/icon_red.tga" 208,101,95,95
+  palette "models/players/heads/Megan/icon_red.png" 208,101,95,95
+  palette "models/players/heads/Megan/icon_default.tga" 208,101,95,95
+  palette "models/players/heads/Megan/icon_default.png" 208,101,95,95
+  palette "models/players/heads/Megan/icon_blue.tga" 236,78,80,79
+  palette "models/players/heads/Megan/icon_blue.png" 236,78,80,79
+  palette "models/players/heads/Janet/janet_red.tga" 177,83,56,46
+  palette "models/players/heads/Janet/janet_red.png" 177,83,56,46
+  palette "models/players/heads/Janet/janet_blu.tga" 177,69,76,69
+  palette "models/players/heads/Janet/janet_blu.png" 177,69,76,69
+  palette "models/players/heads/Janet/icon_red.tga" 196,130,82,72
+  palette "models/players/heads/Janet/icon_red.png" 196,130,82,72
+  palette "models/players/heads/Janet/icon_default.tga" 223,145,98,87
+  palette "models/players/heads/Janet/icon_default.png" 223,145,98,87
+  palette "models/players/heads/Janet/icon_blue.tga" 184,105,131,127
+  palette "models/players/heads/Janet/icon_blue.png" 184,105,131,127
+  palette "models/players/heads/Khan/khan_red.tga" 255,126,96,80
+  palette "models/players/heads/Khan/khan_red.jpg" 255,126,96,80
+  palette "models/players/heads/Khan/khan_f.tga" 36,43,42,40
+  palette "models/players/heads/Khan/khan_f.png" 36,43,42,40
+  palette "models/players/heads/Khan/khan_blu.tga" 255,115,105,93
+  palette "models/players/heads/Khan/khan_blu.jpg" 255,115,105,93
+  palette "models/players/heads/Khan/icon_red.tga" 175,157,94,75
+  palette "models/players/heads/Khan/icon_red.png" 175,157,94,75
+  palette "models/players/heads/Khan/icon_default.tga" 175,157,94,75
+  palette "models/players/heads/Khan/icon_default.png" 175,157,94,75
+  palette "models/players/heads/Khan/icon_blue.tga" 168,94,110,104
+  palette "models/players/heads/Khan/icon_blue.png" 168,94,110,104
+  palette "models/players/heads/Gaunt/icon_red.tga" 206,164,90,64
+  palette "models/players/heads/Gaunt/icon_red.png" 206,164,90,64
+  palette "models/players/heads/Gaunt/icon_default.tga" 206,164,90,64
+  palette "models/players/heads/Gaunt/icon_default.png" 206,164,90,64
+  palette "models/players/heads/Gaunt/icon_blue.tga" 173,116,136,140
+  palette "models/players/heads/Gaunt/icon_blue.png" 173,116,136,140
+  palette "models/players/heads/Gaunt/gaunt_red.tga" 255,138,76,54
+  palette "models/players/heads/Gaunt/gaunt_red.jpg" 255,138,76,55
+  palette "models/players/heads/Gaunt/gaunt_e.tga" 255,14,17,15
+  palette "models/players/heads/Gaunt/gaunt_e.jpg" 255,14,17,15
+  palette "models/players/heads/Gaunt/gaunt_blu.tga" 255,95,107,111
+  palette "models/players/heads/Gaunt/gaunt_blu.jpg" 255,95,107,111
+  palette "models/players/heads/Gammy/icon_red.tga" 183,125,78,61
+  palette "models/players/heads/Gammy/icon_red.png" 183,125,78,61
+  palette "models/players/heads/Gammy/icon_default.tga" 183,125,78,61
+  palette "models/players/heads/Gammy/icon_default.png" 183,125,78,61
+  palette "models/players/heads/Gammy/icon_blue.tga" 179,83,103,101
+  palette "models/players/heads/Gammy/icon_blue.png" 179,83,103,101
+  palette "models/players/heads/Gammy/gammy_blu.tga" 255,66,74,71
+  palette "models/players/heads/Gammy/gammy_blu.jpg" 255,65,74,71
+  palette "models/players/heads/Gammy/gammy3.tga" 146,49,40,35
+  palette "models/players/heads/Gammy/gammy3.png" 146,49,40,35
+  palette "models/players/heads/Gammy/gammy2.tga" 122,66,58,52
+  palette "models/players/heads/Gammy/gammy2.png" 122,66,58,52
+  palette "models/players/heads/Gammy/gamm_red.tga" 255,97,56,41
+  palette "models/players/heads/Gammy/gamm_red.jpg" 255,97,56,42
+  palette "models/players/heads/Callisto/icon_red.tga" 229,177,83,78
+  palette "models/players/heads/Callisto/icon_red.png" 229,177,83,78
+  palette "models/players/heads/Callisto/icon_default.tga" 229,177,83,78
+  palette "models/players/heads/Callisto/icon_default.png" 229,177,83,78
+  palette "models/players/heads/Callisto/icon_blue.tga" 230,107,109,137
+  palette "models/players/heads/Callisto/icon_blue.png" 230,107,109,137
+  palette "models/players/heads/Callisto/callisto_red.tga" 255,130,34,34
+  palette "models/players/heads/Callisto/callisto_red.jpg" 255,130,34,34
+  palette "models/players/heads/Callisto/callisto_blu.tga" 255,49,75,137
+  palette "models/players/heads/Callisto/callisto_blu.jpg" 255,50,75,137
+  palette "models/players/heads/Callisto/callisto2.tga" 255,123,90,78
+  palette "models/players/heads/Callisto/callisto2.jpg" 255,123,90,78
+  palette "models/players/heads/Callisto/callisto.tga" 255,122,89,77
+  palette "models/players/heads/Callisto/callisto.jpg" 255,122,89,77
+  palette "models/mapobjects/finko/standing_lights/standing_lightg.jpg" 255,1,1,1
+  palette "models/mapobjects/finko/standing_lights/standing_light2.tga" 255,49,47,46
+  palette "models/mapobjects/finko/standing_lights/standing_light2.jpg" 255,49,47,47
+  palette "models/mapobjects/finko/standing_lights/standing_light1_g.jpg" 255,8,7,6
+  palette "models/mapobjects/finko/standing_lights/standing_light1.tga" 255,49,47,46
+  palette "models/mapobjects/finko/standing_lights/standing_light1.jpg" 255,49,47,47
+  palette "models/players/monsters/boss3/jorg/skin_rgh.tga" 255,128,0,0
+  palette "models/players/monsters/boss3/jorg/skin_rgh.jpg" 255,128,1,1
+  palette "models/players/monsters/boss3/jorg/skin_bump.tga" 29,127,126,241
+  palette "models/players/monsters/boss3/jorg/skin_bump.png" 29,127,126,241
+  palette "models/players/monsters/boss3/jorg/skin.tga" 255,52,35,26
+  palette "models/players/monsters/boss3/jorg/skin.jpg" 255,52,35,26
+  palette "models/players/monsters/boss3/rider/skin_rgh.tga" 255,127,0,0
+  palette "models/players/monsters/boss3/rider/skin_rgh.jpg" 255,127,1,1
+  palette "models/players/monsters/boss3/rider/skin_light.tga" 2,225,82,66
+  palette "models/players/monsters/boss3/rider/skin_light.png" 2,225,82,66
+  palette "models/players/monsters/boss3/rider/skin_bump.tga" 20,127,127,247
+  palette "models/players/monsters/boss3/rider/skin_bump.png" 20,127,127,247
+  palette "models/players/monsters/boss3/rider/skin.tga" 255,36,25,18
+  palette "models/players/monsters/boss3/rider/skin.jpg" 255,36,25,19
+  palette "models/players/monsters/boss3/rider/pain_rgh.tga" 255,126,0,0
+  palette "models/players/monsters/boss3/rider/pain_rgh.jpg" 255,126,1,1
+  palette "models/players/monsters/boss3/rider/pain_light.tga" 0,0,0,0
+  palette "models/players/monsters/boss3/rider/pain_light.jpg" 255,0,0,0
+  palette "models/players/monsters/boss3/rider/pain_bump.tga" 22,127,127,247
+  palette "models/players/monsters/boss3/rider/pain_bump.png" 22,127,127,247
+  palette "models/players/monsters/boss3/rider/pain.tga" 255,39,24,18
+  palette "models/players/monsters/boss3/rider/pain.jpg" 255,39,24,18
   palette "models/weapons4/lightning/sample_pbr_e3.dds" 
   }
   

@@ -16,7 +16,7 @@ function getQueryCommands() {
 		'+set', 'net_socksPort', window.location.port 
 			|| (window.location.protocol == 'https:' ? '443' : '80'),
 		'+set', 'sv_fps', '60',
-		'+set', 'com_hunkMegs', '256',
+		'+set', 'com_hunkMegs', '512',
 		'+set', 'snaps', '60',
 		// ISN'T HELPING STUPID NETWORK CRASH BUG
 		//'+set', 'cl_nodelta', '1',
@@ -57,7 +57,6 @@ function getQueryCommands() {
 		//'+set', 'r_deluxeMapping', '0',
 		//'+set', 'r_normalMapping', '0',
 		//'+set', 'r_specularMapping', '0',
-		'+map', 'loading-program',
 	]
 	startup.push.apply(startup, window.preStart)
 	// TODO: full screen by default? I suppose someone might 
@@ -126,6 +125,15 @@ function getQueryCommands() {
 		&& !startup.includes('spdevmap')) {
 		startup.push.apply(startup, [
 			'+connect', connectAddr[0],
+		])
+	}
+
+	if(!startup.includes('map') && !startup.includes('spmap')
+		&& !startup.includes('connect') && !startup.includes('devmap')
+		&& !startup.includes('spdevmap') && !startup.includes('disconnect')
+	) {
+		startup.push.apply(startup, [
+			'+map', 'loading-program',
 		])
 	}
 

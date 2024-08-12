@@ -327,7 +327,7 @@ models/players/heads/ursula/ursula_e
 {       	
         surfaceparm trans
 	{
-		map models/players/heads//ursula/ursula_e.tga
+		map models/players/heads/ursula/ursula_e.tga
 		blendFunc Add
 		rgbgen wave triangle 0.2 0.5 0 0.2
        	}

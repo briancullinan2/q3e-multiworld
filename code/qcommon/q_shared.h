@@ -1476,7 +1476,7 @@ typedef struct {
 typedef struct {
   glyphInfo_t glyphs [GLYPHS_PER_FONT];
   float glyphScale;
-  char name[MAX_QPATH];
+  char name[64];
 } fontInfo_t;
 
 #define Square(x) ((x)*(x))
