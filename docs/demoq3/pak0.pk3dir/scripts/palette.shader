@@ -8991,7 +8991,6 @@ palettes/default
   palette "models/weapons5/bfg/bfgparts.png" 220,99,103,105
   palette "models/weapons5/bfg/bcshose.png" 221,73,75,76
   palette "models/weapons5/bfg/10k_energy_grill.png" 102,31,31,31
-  palette "models/weapons4/lightning/sample_pbr_e3.dds" 
   palette "models/powerups5/flags/r_flag.jpg" 255,67,13,13
   palette "models/powerups5/flags/b_flag.jpg" 255,35,34,76
   palette "models/powerups5/health/doom_sphere_outside.png" 97,46,45,44
@@ -9012,5 +9011,6 @@ palettes/default
   palette "models/players/sarge/default.jpg" 255,35,29,21
   palette "models/ammo/soul/skullfire.png" 75,208,111,25
   palette "models/ammo/soul/fire.jpg" 255,196,95,20
+  palette "models/weapons4/lightning/sample_pbr_e3.dds" 
   }
   
